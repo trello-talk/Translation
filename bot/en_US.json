@@ -5,15 +5,15 @@
   },
 
   "reload": {
-    "reloading": "Reloading commands...",
+    "reloading": "Reloading commands…",
     "done": "Reloaded commands."
   },
   "reloadlocale": {
-    "reloading": "Reloading locales...",
+    "reloading": "Reloading locales…",
     "done": "Reloaded locales."
   },
   "responses": {
-    "restart": "Restarting shard...",
+    "restart": "Restarting shard…",
     "response": "I'm not a game bot.",
     "eval": "Took {{ms}} ms."
   },
@@ -136,7 +136,7 @@
     },
     "exec": {
       "description": "Utilizes `child_process.exec`.",
-      "usage": "<command> ..."
+      "usage": "<command> …"
     },
     "reload": {
       "description": "Reload commands."
