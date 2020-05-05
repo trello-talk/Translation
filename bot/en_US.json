@@ -166,5 +166,6 @@
     "shardinfo": {
       "description": "Gives the stats for every shard."
     }
-  }
+  },
+  "error": "An error occurred while processing that command!"
 }
