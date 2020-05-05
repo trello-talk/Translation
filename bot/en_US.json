@@ -32,7 +32,7 @@
       "fail": "The bot owner hasn't supplied any invite links!"
     },
     "serverinvite": {
-      "start": "Here are the links to invite me to other servers!",
+      "start": "Join the support server with any of these links!",
       "fail": "The bot owner hasn't supplied any support server links!"
     }
   },
