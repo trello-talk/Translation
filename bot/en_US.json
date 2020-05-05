@@ -14,7 +14,7 @@
   },
   "responses": {
     "restart": "Restarting shard…",
-    "response": "I'm not a game bot.",
+    "hangman": "I'm not a game bot.",
     "eval": "Took {{ms}} ms."
   },
   "links": {
