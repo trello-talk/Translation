@@ -81,13 +81,48 @@
       "one": "Trello Board",
       "many": "Trello Boards"
     },
-    "donate": "Donate"
+    "donate": "Donate",
+    "id": "ID",
+    "initials": "Initials",
+    "count": {
+      "one": "Count",
+      "many": "Counts"
+    },
+    "board": {
+      "one": "Board",
+      "many": "Boards"
+    },
+    "orgs": {
+      "one": "Organization",
+      "many": "Organizations"
+    },
+    "pref": {
+      "one": "Preference",
+      "many": "Preferences"
+    },
+    "product": {
+      "one": "Product",
+      "many": "Products"
+    },
+    "bio": "Bio"
+  },
+  "trello": {
+    "colorblind": "Color Blind Mode",
+    "summ": "Send Summaries",
+    "marketing": "Marketing E-mails (opt-in)",
+    "locale": "Locale (on Trello)",
+    "products": {
+      "10": "💼 Trello Gold from Buisness Class",
+      "37": "⭐ Monthly Trello Gold",
+      "38": "🌟 Yearly Trello Gold"
+    }
   },
   "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
   "bad_args": "Not enough arguments!",
   "command_permissions": {
     "attach": "I need the permission `Attach Files` to use this command!",
     "embed": "I need the permission `Embed Links` to use this command!",
+    "emoji": "I need the permission `Use External Emojis` to use this command!",
     "trelloRole": "This command requires you to be the server owner or have a role named `Trello`!",
     "elevated": "Only the elevated users of the bot can use this command!",
     "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
@@ -167,5 +202,10 @@
       "description": "Gives the stats for every shard."
     }
   },
-  "error": "An error occurred while processing that command!"
+  "error": "An error occurred while processing that command!",
+  "trello_response": {
+    "unauthorized": "The last token used has been invalidated or revoked! Reauthorize with the `{{&cleanPrefix}}auth` command!",
+    "ratelimit": "Too many request are being sent! Try again later!",
+    "internal": "An internal server error has occurred in Trello's end! Try again later!"
+  }
 }
