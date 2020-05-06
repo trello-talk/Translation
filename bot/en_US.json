@@ -214,7 +214,7 @@
         },
         "switch": {
             "description": "Selects a board to use for other commands. Use the `{{&cleanPrefix}}boards` command to see what boards you can select.",
-            "usage": "<boardID>"
+            "usage": "<boardID|boardName>"
         },
         "boards": {
             "description": "Lists all of the boards you can manage.",
@@ -231,12 +231,13 @@
         "list": "List Prompt",
         "choose": "Type the number of the item you want to use.",
         "cancel": "Typing \"cancel\" will close this prompt.",
-        "timeout": "Your last prompt was timed out."
+        "timeout": "Your last prompt was timed out.",
+        "no_search": "No results came up with that search."
     },
     "boards": {
         "none": "You are not assigned to any boards.",
         "header": "Use `{{&prefix}}switch <boardID>` to switch between boards.",
-        "switch": "Switched to \"{{&name}}\".",
+        "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
         "no_switch": "Could not find a board with that ID!"
     }
 }
