@@ -209,6 +209,17 @@
     },
     "shardinfo": {
       "description": "Gives the stats for every shard."
+    },
+    "me": {
+      "description": "View information about your Trello account."
+    },
+    "switch": {
+      "description": "Selects a board to use for other commands. Use the `{{&cleanPrefix}}boards` command to see what boards you can select.",
+      "usage": "<boardID>"
+    },
+    "boards": {
+      "description": "Lists all of the boards you can manage.",
+      "usage": "[page]"
     }
   },
   "error": "An error occurred while processing that command!",
@@ -222,5 +233,11 @@
     "choose": "Type the number of the item you want to use.",
     "cancel": "Typing \"cancel\" will close this prompt.",
     "timeout": "Your last prompt was timed out."
+  },
+  "boards": {
+    "none": "You are not assigned to any boards.",
+    "header": "Use `{{&prefix}}switch <boardID>` to switch between boards.",
+    "switch": "Switched to \"{{&name}}\".",
+    "no_switch": "Could not find a board with that ID!"
   }
 }
