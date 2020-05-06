@@ -112,7 +112,7 @@
     "marketing": "Marketing E-mails (opt-in)",
     "locale": "Locale (on Trello)",
     "products": {
-      "10": "💼 Trello Gold from Buisness Class",
+      "10": "💼 Trello Gold from Business Class",
       "37": "⭐ Monthly Trello Gold",
       "38": "🌟 Yearly Trello Gold"
     }
@@ -126,7 +126,8 @@
     "trelloRole": "This command requires you to be the server owner or have a role named `Trello`!",
     "elevated": "Only the elevated users of the bot can use this command!",
     "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
-    "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!"
+    "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
+    "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!"
   },
   "format": {
     "second": {
