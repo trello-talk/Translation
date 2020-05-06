@@ -1,1 +1,242 @@
-{}
+{
+    "words": {
+        "orgs": {
+            "many": "Organizations",
+            "one": "Organization"
+        },
+        "note": "Note",
+        "mem_usage": "Memory Usage",
+        "server": {
+            "one": "Server",
+            "many": "Servers"
+        },
+        "website": {
+            "one": "Website",
+            "many": "Websites"
+        },
+        "trello_board": {
+            "one": "Trello Board",
+            "many": "Trello Boards"
+        },
+        "donate": "Donate",
+        "id": "ID",
+        "usage": "Usage",
+        "cooldown": "Cooldown",
+        "alias": {
+            "one": "Alias",
+            "many": "Aliases"
+        },
+        "version": "Version",
+        "uptime": "Uptime",
+        "initials": "Initials",
+        "count": {
+            "one": "Count",
+            "many": "Counts"
+        },
+        "board": {
+            "one": "Board",
+            "many": "Boards"
+        },
+        "page": {
+            "one": "Page",
+            "many": "Pages"
+        },
+        "item": {
+            "one": "Item",
+            "many": "Items"
+        },
+        "pref": {
+            "one": "Preference",
+            "many": "Preferences"
+        },
+        "product": {
+            "one": "Product",
+            "many": "Products"
+        },
+        "bio": "Bio"
+    },
+    "format": {
+        "second": {
+            "one": "{{seconds}} second",
+            "many": "{{seconds}} seconds"
+        }
+    },
+    "trello_response": {
+        "internal": "An internal server error has occurred on Trello's end! Try again later!",
+        "unauthorized": "The last token used has been invalidated or revoked! Reauthorize with the `{{&cleanPrefix}}auth` command!",
+        "ratelimit": "Too many requests are being sent! Try again later!"
+    },
+    "trello": {
+        "locale": "Locale (on Trello)",
+        "colorblind": "Colour Blind Mode",
+        "summ": "Send Summaries",
+        "marketing": "Marketing E-mails (opt-in)",
+        "products": {
+            "10": "💼 Trello Gold from Business Class",
+            "37": "⭐ Monthly Trello Gold",
+            "38": "🌟 Yearly Trello Gold"
+        }
+    },
+    "commands": {
+        "auth": {
+            "description": "Get the auth link to connect your Discord account to your Trello account."
+        },
+        "asynceval": {
+            "note": "Due to the added async IIFE wrapper in this command, it is necessary to use the return statement to return a result.\ne.g. `{{&cleanPrefix}}aeval return 1`",
+            "description": "Evaluates code asynchronously.",
+            "usage": "<code>"
+        },
+        "locale": {
+            "description": "Shows a list of all locales."
+        },
+        "donate": {
+            "description": "Get the donation links for the developer."
+        },
+        "github": {
+            "description": "Sends the bot's open source link."
+        },
+        "invite": {
+            "description": "Sends the bot invite link."
+        },
+        "serverinvite": {
+            "description": "Get the invite for the support server."
+        },
+        "eval": {
+            "description": "Evaluates code.",
+            "usage": "<code>"
+        },
+        "exec": {
+            "description": "Utilizes `child_process.exec`.",
+            "usage": "<command> …"
+        },
+        "reload": {
+            "description": "Reload commands."
+        },
+        "reloadlocale": {
+            "description": "Reload locale files."
+        },
+        "restart": {
+            "description": "Restarts the bot."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "help": {
+            "description": "Shows the help message and gives information on commands.",
+            "usage": "[command]"
+        },
+        "info": {
+            "description": "Get information about the bot."
+        },
+        "ping": {
+            "description": "Pong!"
+        },
+        "shardinfo": {
+            "description": "Gives the stats for every shard."
+        },
+        "me": {
+            "description": "View information about your Trello account."
+        },
+        "switch": {
+            "usage": "<boardID>",
+            "description": "Selects a board to use for other commands. Use the `{{&cleanPrefix}}boards` command to see what boards you can select."
+        },
+        "boards": {
+            "description": "Lists all of the boards you can manage.",
+            "usage": "[page]"
+        }
+    },
+    "boards": {
+        "header": "Use `{{&prefix}}switch <boardID>` to switch between boards.",
+        "none": "You are not assigned to any boards.",
+        "switch": "Switched to \"{{&name}}\".",
+        "no_switch": "Could not find a board with that ID!"
+    },
+    "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
+    "command_permissions": {
+        "emoji": "I need the permission `Use External Emojis` to use this command!",
+        "attach": "I need the permission `Attach Files` to use this command!",
+        "embed": "I need the permission `Embed Links` to use this command!",
+        "trelloRole": "This command requires you to be the server owner or have a role named `Trello`!",
+        "elevated": "Only the elevated users of the bot can use this command!",
+        "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
+        "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
+        "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!"
+    },
+    "_": {
+        "emoji": "gb",
+        "name": "English (United Kingdom)"
+    },
+    "reload": {
+        "reloading": "Reloading commands…",
+        "done": "Reloaded commands."
+    },
+    "reloadlocale": {
+        "reloading": "Reloading locales…",
+        "done": "Reloaded locales."
+    },
+    "responses": {
+        "restart": "Restarting shard…",
+        "hangman": "I'm not a game bot.",
+        "eval": "Took {{ms}} ms."
+    },
+    "links": {
+        "auth": {
+            "fail": "The bot owner hasn't supplied an authorization link!",
+            "start": "Authorize your Trello account with your Discord here:"
+        },
+        "donate": {
+            "start": "Support development by donating!",
+            "fail": "The bot owner hasn't supplied any donation links!"
+        },
+        "invite": {
+            "start": "Here are the links to invite me to other servers!",
+            "fail": "The bot owner hasn't supplied any invite links!"
+        },
+        "serverinvite": {
+            "fail": "The bot owner hasn't supplied any support server links!",
+            "start": "Join the support server with any of these links!"
+        },
+        "github": "Here is the link to my source code:"
+    },
+    "help": {
+        "not_found": "The command `{{&command}}` was not found.",
+        "footer": "`{{&cleanPrefix}}help [command]` for more info.",
+        "header": "{{&username}} (Running Modified [Faux](https://github.com/Snazzah/Faux) By Snazzah)\nSupport Server: {{&link}}"
+    },
+    "info": {
+        "title": "Information about {{&username}}",
+        "faux": "This bot is using a modified version of [Faux](https://github.com/Snazzah/Faux)."
+    },
+    "ping": {
+        "message": "Pong!",
+        "ws": "WS: {{ms}} ms",
+        "rest": "REST: {{ms}} ms"
+    },
+    "shardinfo": {
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} guilds",
+        "title": "Information about {{&username}}'s Shards"
+    },
+    "locale": {
+        "start": "Available Locales:",
+        "footer": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` to set locale."
+    },
+    "bad_args": "Not enough arguments!",
+    "categories": {
+        "general": "General",
+        "dev": "Developer",
+        "user": "User Management",
+        "view": "Viewing",
+        "webhook": "Webhooks",
+        "edit": "Editing",
+        "hidden": "Hidden",
+        "misc": "Miscellaneous"
+    },
+    "error": "An error occurred while processing that command!",
+    "prompt": {
+        "list": "List Prompt",
+        "choose": "Type the number of the item you want to use.",
+        "cancel": "Typing \"cancel\" will close this prompt.",
+        "timeout": "Your last prompt was timed out."
+    }
+}
