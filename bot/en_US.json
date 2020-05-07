@@ -11,6 +11,11 @@
         "reloading": "Reloading locales…",
         "done": "Reloaded locales."
     },
+    "reloadone": {
+        "invalid": "Invalid command!",
+        "file": "A file that had a specified command no longer exists!",
+        "done": "Reloaded {{&commands}}."
+    },
     "responses": {
         "restart": "Restarting shard…",
         "hangman": "I'm not a game bot.",
@@ -186,6 +191,10 @@
         },
         "reloadlocale": {
             "description": "Reload locale files."
+        },
+        "reloadone": {
+            "description": "Reload singular commands.",
+            "usage": "<commandName> [commandName] …"
         },
         "restart": {
             "description": "Restarts the bot."
