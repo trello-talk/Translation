@@ -53,7 +53,48 @@
             "one": "Product",
             "many": "Products"
         },
-        "bio": "Bio"
+        "bio": "Bio",
+        "user_pref": {
+            "one": "User Preference",
+            "many": "User Preferences"
+        },
+        "info": "Information",
+        "bg_img": "Background Image",
+        "short_link": {
+            "one": "Short Link",
+            "many": "Short Links"
+        },
+        "list": {
+            "one": "List",
+            "many": "Lists"
+        },
+        "link": {
+            "one": "Link",
+            "many": "Links"
+        },
+        "card": {
+            "one": "Card",
+            "many": "Cards"
+        },
+        "arch_list": {
+            "one": "Archived List",
+            "many": "Archived Lists"
+        },
+        "arch_card": {
+            "many": "Archived Cards",
+            "one": "Archived Card"
+        },
+        "member": {
+            "one": "Member",
+            "many": "Members"
+        },
+        "comment": {
+            "one": "Comment",
+            "many": "Comments"
+        },
+        "visibility": "Visibility",
+        "in_lower": "in",
+        "in": "In"
     },
     "format": {
         "second": {
@@ -75,6 +116,42 @@
             "10": "💼 Trello Gold from Business Class",
             "37": "⭐ Monthly Trello Gold",
             "38": "🌟 Yearly Trello Gold"
+        },
+        "card_covers": "Card Cover Images",
+        "add_rem_members": "Add/Remove Members",
+        "vote_perms": {
+            "org": "Organization Members",
+            "disabled": "Disabled",
+            "members": "All Members",
+            "public": "Any Trello User"
+        },
+        "hide_votes": "Hide Votes",
+        "self_join": "Allow Team Members to Edit and Join",
+        "template": "Is template?",
+        "pinned": "Pinned",
+        "subbed": "Watched",
+        "starred": "Starred",
+        "voting": "Voting",
+        "due": "Due",
+        "perm_levels": {
+            "public": "Public",
+            "org": "Team Visible",
+            "private": "Private"
+        },
+        "invite_perms": {
+            "members": "All Members",
+            "admins": "Admins"
+        },
+        "comment_perms": {
+            "disabled": "Disabled",
+            "members": "All Members",
+            "org": "Organization Members",
+            "public": "Any Trello User"
+        },
+        "card_aging": "Card Aging",
+        "card_age": {
+            "regular": "Regular",
+            "pirate": "Pirate"
         }
     },
     "commands": {
@@ -144,13 +221,33 @@
         "boards": {
             "description": "Lists all of the boards you can manage.",
             "usage": "[page]"
+        },
+        "lists": {
+            "description": "Lists all of the open lists on the current board. You can see the list archive with `{{&cleanPrefix}}listarchive`.",
+            "usage": "[page]"
+        },
+        "reloadone": {
+            "usage": "<commandName> [commandName] …",
+            "description": "Reload singular commands."
+        },
+        "board": {
+            "description": "Gets information on the current board."
+        },
+        "list": {
+            "description": "Lists all cards in that list.",
+            "usage": "<listName|listID> [page]"
+        },
+        "listarchive": {
+            "description": "Lists all the archived lists in the current board.",
+            "usage": "<listName|listID> [page]"
         }
     },
     "boards": {
-        "header": "Use `{{&prefix}}switch <boardID>` to switch between boards.",
+        "header": "Use `{{&cleanPrefix}}switch <boardID|boardName>` to switch between boards.",
         "none": "You are not assigned to any boards.",
         "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
-        "no_switch": "Could not find a board with that ID!"
+        "no_switch": "Could not find a board with that ID!",
+        "gone": "This board no longer exists! Switch to another one with `{{&cleanPrefix}}switch`!"
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
     "command_permissions": {
@@ -239,5 +336,15 @@
         "cancel": "Typing \"cancel\" will close this prompt.",
         "timeout": "Your last prompt was timed out.",
         "no_search": "No results came up with that search."
+    },
+    "reloadone": {
+        "invalid": "Invalid command!",
+        "file": "A file that had a specified command no longer exists!",
+        "done": "Reloaded {{&commands}}."
+    },
+    "cards": {
+        "none": "This board has no cards.",
+        "arch_none": "This board has no archived cards.",
+        "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!"
     }
 }
