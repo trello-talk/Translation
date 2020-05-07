@@ -1,8 +1,8 @@
 {
     "words": {
         "orgs": {
-            "many": "Organizations",
-            "one": "Organization"
+            "many": "Organisations",
+            "one": "Organisation"
         },
         "note": "Note",
         "mem_usage": "Memory Usage",
@@ -104,7 +104,7 @@
     },
     "trello_response": {
         "internal": "An internal server error has occurred on Trello's end! Try again later!",
-        "unauthorized": "The last token used has been invalidated or revoked! Reauthorize with the `{{&cleanPrefix}}auth` command!",
+        "unauthorized": "The last token used has been invalidated or revoked! Reauthorise with the `{{&cleanPrefix}}auth` command!",
         "ratelimit": "Too many requests are being sent! Try again later!"
     },
     "trello": {
@@ -257,8 +257,8 @@
         "trelloRole": "This command requires you to be the server owner or have a role named `Trello`!",
         "elevated": "Only the elevated users of the bot can use this command!",
         "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
-        "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
-        "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!"
+        "discordAuth": "You haven't authorised your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
+        "auth": "You haven't authorised your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!"
     },
     "_": {
         "emoji": "gb",
@@ -279,8 +279,8 @@
     },
     "links": {
         "auth": {
-            "fail": "The bot owner hasn't supplied an authorization link!",
-            "start": "Authorize your Trello account with your Discord here:"
+            "fail": "The bot owner hasn't supplied an authorisation link!",
+            "start": "Authorise your Trello account with your Discord here:"
         },
         "donate": {
             "start": "Support development by donating!",
