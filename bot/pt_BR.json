@@ -1,0 +1,252 @@
+{
+    "_": {
+        "name": "Português (Brasil)",
+        "emoji": "br"
+    },
+    "reload": {
+        "reloading": "Recarregando comandos…",
+        "done": "Comandos recarregados."
+    },
+    "reloadlocale": {
+        "reloading": "Recarregando idiomas…",
+        "done": "Idiomas recarregados."
+    },
+    "reloadone": {
+        "invalid": "Comando inválido!",
+        "file": "A file that had a specified command no longer exists!",
+        "done": "{{&commands}} recarregados."
+    },
+    "responses": {
+        "restart": "Reiniciando shard…",
+        "hangman": "Eu não sou um bot de jogos.",
+        "eval": "Demorou {{ms}} ms para executar."
+    },
+    "links": {
+        "auth": {
+            "start": "Authorize your Trello account with your Discord here:",
+            "fail": "The bot owner hasn't supplied an authorization link!"
+        },
+        "donate": {
+            "start": "Suporte meu desenvolvimento com doações!",
+            "fail": "O proprietário do bot não inseriu nenhum link de doação!"
+        },
+        "github": "Aqui está o link para meu código fonte:",
+        "invite": {
+            "start": "Aqui está o link para me convidar a outros servidores!",
+            "fail": "O proprietário do bot não inseriu nenhum link de convite!"
+        },
+        "serverinvite": {
+            "start": "Entre em meu servidor de suporte com qualquer um desses links!",
+            "fail": "O proprietário do bot não inseriu nenhum link para um servidor de suporte!"
+        }
+    },
+    "help": {
+        "not_found": "O comando `{{&command}}` não foi encontrado.",
+        "header": "{{&username}} (Executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux) Criado por Snazzah)\nServidor de Suporte: {{&link}}",
+        "footer": "Use `{{&cleanPrefix}}help [command]` para mais informações."
+    },
+    "info": {
+        "title": "Informações sobre {{&username}}",
+        "faux": "Esse BOT está executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux)."
+    },
+    "ping": {
+        "message": "Pong!",
+        "ws": "WS: {{ms}} ms",
+        "rest": "REST: {{ms}} ms"
+    },
+    "shardinfo": {
+        "title": "Informações sobre os Shards do {{&username}}",
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} servidores"
+    },
+    "locale": {
+        "start": "Idiomas Disponíveis:",
+        "footer": "`{{&prefix}}locale setuser [locale]` ou `{{&prefix}}locale setserver [locale]` para definir o idioma."
+    },
+    "words": {
+        "usage": "Uso",
+        "cooldown": "Cooldown",
+        "alias": {
+            "one": "Alias",
+            "many": "Aliases"
+        },
+        "version": "Versão",
+        "uptime": "Tempo Online",
+        "note": "Nota",
+        "mem_usage": "Uso de Memória",
+        "server": {
+            "one": "Servidor",
+            "many": "Servidores"
+        },
+        "website": {
+            "one": "Website",
+            "many": "Websites"
+        },
+        "trello_board": {
+            "one": "Quadro do Trello",
+            "many": "Quadros do Trello"
+        },
+        "donate": "Doação",
+        "id": "ID",
+        "initials": "Iniciais",
+        "count": {
+            "one": "Conta",
+            "many": "Contas"
+        },
+        "board": {
+            "one": "Quadro",
+            "many": "Quadros"
+        },
+        "page": {
+            "one": "Página",
+            "many": "Páginas"
+        },
+        "item": {
+            "one": "Item",
+            "many": "Itens"
+        },
+        "orgs": {
+            "one": "Organização",
+            "many": "Organizações"
+        },
+        "pref": {
+            "one": "Preferência",
+            "many": "Preferências"
+        },
+        "product": {
+            "one": "Produto",
+            "many": "Produtos"
+        },
+        "bio": "Bio"
+    },
+    "trello": {
+        "colorblind": "Mode de Cores para Dautônicos",
+        "summ": "Enviar Resumos",
+        "marketing": "E-mails de Marketing (optar por participar)",
+        "locale": "Idioma (no Trello)",
+        "products": {
+            "10": "💼 Trello Gold para Business Class",
+            "37": "⭐ Trello Gold Mensal",
+            "38": "🌟 Trello Gold Anual"
+        }
+    },
+    "cooldown_msg": "Esse comando precisa de um intervalo! *({{seconds}})*",
+    "bad_args": "Faltam Argumentos!",
+    "command_permissions": {
+        "attach": "Eu preciso da permissão de `Anexar Arquivos` para usar esse comando!",
+        "embed": "Eu preciso da permissão de `Inserir Links` para usar esse comando!",
+        "emoji": "Eu preciso da permissão de `Usar Emojis Externos` para usar esse comando!",
+        "trelloRole": "Esse comando requer que você seja o dono do servidor ou possua o cargo `Trello`!",
+        "elevated": "Apenas usuários elevados do bot podem usar esse comando!",
+        "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
+        "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
+        "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!"
+    },
+    "format": {
+        "second": {
+            "one": "{{seconds}} second",
+            "many": "{{seconds}} seconds"
+        }
+    },
+    "categories": {
+        "general": "General",
+        "dev": "Developer",
+        "user": "User Management",
+        "view": "Viewing",
+        "webhook": "Webhooks",
+        "edit": "Editing",
+        "hidden": "Hidden",
+        "misc": "Miscellaneous"
+    },
+    "commands": {
+        "auth": {
+            "description": "Get the auth link to connect your Discord account to your Trello account."
+        },
+        "donate": {
+            "description": "Get the donation links for the developer."
+        },
+        "github": {
+            "description": "Sends the bot's open source link."
+        },
+        "invite": {
+            "description": "Sends the bot invite link."
+        },
+        "serverinvite": {
+            "description": "Get the invite for the support server."
+        },
+        "asynceval": {
+            "description": "Evaluates code asynchronously.",
+            "note": "Due to the added async IIFE wrapper in this command, it is necessary to use the return statement to return a result.\ne.g. `{{&cleanPrefix}}aeval return 1`",
+            "usage": "<code>"
+        },
+        "eval": {
+            "description": "Evaluates code.",
+            "usage": "<code>"
+        },
+        "exec": {
+            "description": "Utilizes `child_process.exec`.",
+            "usage": "<command> …"
+        },
+        "reload": {
+            "description": "Reload commands."
+        },
+        "reloadlocale": {
+            "description": "Reload locale files."
+        },
+        "reloadone": {
+            "description": "Reload singular commands.",
+            "usage": "<commandName> [commandName] …"
+        },
+        "restart": {
+            "description": "Restarts the bot."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "help": {
+            "description": "Shows the help message and gives information on commands.",
+            "usage": "[command]"
+        },
+        "info": {
+            "description": "Get information about the bot."
+        },
+        "ping": {
+            "description": "Pong!"
+        },
+        "locale": {
+            "description": "Shows a list of all locales."
+        },
+        "shardinfo": {
+            "description": "Gives the stats for every shard."
+        },
+        "me": {
+            "description": "View information about your Trello account."
+        },
+        "switch": {
+            "description": "Selects a board to use for other commands. Use the `{{&cleanPrefix}}boards` command to see what boards you can select.",
+            "usage": "<boardID|boardName>"
+        },
+        "boards": {
+            "description": "Lists all of the boards you can manage.",
+            "usage": "[page]"
+        }
+    },
+    "error": "An error occurred while processing that command!",
+    "trello_response": {
+        "unauthorized": "The last token used has been invalidated or revoked! Reauthorize with the `{{&cleanPrefix}}auth` command!",
+        "ratelimit": "Too many requests are being sent! Try again later!",
+        "internal": "An internal server error has occurred on Trello's end! Try again later!"
+    },
+    "prompt": {
+        "list": "List Prompt",
+        "choose": "Type the number of the item you want to use.",
+        "cancel": "Typing \"cancel\" will close this prompt.",
+        "timeout": "Your last prompt was timed out.",
+        "no_search": "No results came up with that search."
+    },
+    "boards": {
+        "none": "You are not assigned to any boards.",
+        "header": "Use `{{&prefix}}switch <boardID>` to switch between boards.",
+        "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
+        "no_switch": "Could not find a board with that ID!"
+    }
+}
