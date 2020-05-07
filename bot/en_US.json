@@ -88,6 +88,12 @@
         "donate": "Donate",
         "id": "ID",
         "initials": "Initials",
+        "info": "Information",
+        "bg_img": "Background Image",
+        "short_link": {
+            "one": "Short Link",
+            "many": "Short Links"
+        },
         "count": {
             "one": "Count",
             "many": "Counts"
@@ -104,6 +110,26 @@
             "one": "Item",
             "many": "Items"
         },
+        "list": {
+            "one": "List",
+            "many": "Lists"
+        },
+        "link": {
+            "one": "Link",
+            "many": "Links"
+        },
+        "card": {
+            "one": "Card",
+            "many": "Cards"
+        },
+        "arch_list": {
+            "one": "Archived List",
+            "many": "Archived Lists"
+        },
+        "arch_card": {
+            "one": "Archived Card",
+            "many": "Archived Cards"
+        },
         "orgs": {
             "one": "Organization",
             "many": "Organizations"
@@ -112,21 +138,72 @@
             "one": "Preference",
             "many": "Preferences"
         },
+        "user_pref": {
+            "one": "User Preference",
+            "many": "User Preferences"
+        },
         "product": {
             "one": "Product",
             "many": "Products"
         },
-        "bio": "Bio"
+        "member": {
+            "one": "Member",
+            "many": "Members"
+        },
+        "comment": {
+            "one": "Comment",
+            "many": "Comments"
+        },
+        "bio": "Bio",
+        "visibility": "Visibility",
+        "in_lower": "in",
+        "in": "In"
     },
     "trello": {
         "colorblind": "Color Blind Mode",
         "summ": "Send Summaries",
         "marketing": "Marketing E-mails (opt-in)",
         "locale": "Locale (on Trello)",
+        "card_covers": "Card Cover Images",
+        "hide_votes": "Hide Votes",
+        "self_join": "Allow Team Members to Edit and Join",
+        "template": "Is template?",
+        "pinned": "Pinned",
+        "subbed": "Watched",
+        "starred": "Starred",
+        "voting": "Voting",
+        "due": "Due",
+        "add_rem_members": "Add/Remove Members",
         "products": {
             "10": "💼 Trello Gold from Business Class",
             "37": "⭐ Monthly Trello Gold",
             "38": "🌟 Yearly Trello Gold"
+        },
+        "perm_levels": {
+            "public": "Public",
+            "org": "Team Visible",
+            "private": "Private"
+        },
+        "invite_perms": {
+            "members": "All Members",
+            "admins": "Admins"
+        },
+        "comment_perms": {
+            "disabled": "Disabled",
+            "members": "All Members",
+            "org": "Organization Members",
+            "public": "Any Trello User"
+        },
+        "vote_perms": {
+            "disabled": "Disabled",
+            "members": "All Members",
+            "org": "Organization Members",
+            "public": "Any Trello User"
+        },
+        "card_aging": "Card Aging",
+        "card_age": {
+            "regular": "Regular",
+            "pirate": "Pirate"
         }
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
@@ -228,6 +305,21 @@
         "boards": {
             "description": "Lists all of the boards you can manage.",
             "usage": "[page]"
+        },
+        "board": {
+            "description": "Gets information on the current board."
+        },
+        "lists": {
+            "description": "Lists all of the open lists on the current board. You can see the list archive with `{{&cleanPrefix}}listarchive`.",
+            "usage": "[page]"
+        },
+        "list": {
+            "description": "Lists all cards in that list.",
+            "usage": "<listName|listID> [page]"
+        },
+        "listarchive": {
+            "description": "Lists all the archived lists in the current board.",
+            "usage": "<listName|listID> [page]"
         }
     },
     "error": "An error occurred while processing that command!",
@@ -245,8 +337,13 @@
     },
     "boards": {
         "none": "You are not assigned to any boards.",
-        "header": "Use `{{&prefix}}switch <boardID>` to switch between boards.",
+        "header": "Use `{{&cleanPrefix}}switch <boardID|boardName>` to switch between boards.",
         "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
-        "no_switch": "Could not find a board with that ID!"
+        "gone": "This board no longer exists! Switch to another one with `{{&cleanPrefix}}switch`!"
+    },
+    "cards": {
+        "none": "This board has no cards.",
+        "arch_none": "This board has no archived cards.",
+        "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!"
     }
 }
