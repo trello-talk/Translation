@@ -1,1 +1,312 @@
-{}
+{
+    "trello": {
+        "card_covers": "Imagens de Capa de Cartão",
+        "colorblind": "Modo de Cores para Daltônicos",
+        "summ": "Enviar Resumos",
+        "marketing": "E-mails de Marketing (optar por participar)",
+        "locale": "Idioma (no Trello)",
+        "hide_votes": "Ocultar Votos",
+        "self_join": "Permitir Membros do Time Editar e Entrar",
+        "template": "É um template?",
+        "pinned": "Fixado",
+        "subbed": "Acompanhando",
+        "starred": "Favoritado",
+        "voting": "Votação",
+        "due": "Vencimento",
+        "add_rem_members": "Adicionar/Remover Membros",
+        "products": {
+            "37": "⭐ Trello Gold Mensal",
+            "38": "🌟 Trello Gold Anual",
+            "10": "💼 Trello Gold para Business Class"
+        },
+        "perm_levels": {
+            "public": "Público",
+            "org": "Time Visível",
+            "private": "Privado"
+        },
+        "comment_perms": {
+            "disabled": "Desativado",
+            "members": "Todos os Membros",
+            "org": "Membros da Organização",
+            "public": "Qualquer Usuário do Trello"
+        },
+        "vote_perms": {
+            "disabled": "Desativado",
+            "members": "Todos os Membros",
+            "org": "Membros da Organização",
+            "public": "Qualquer Usuário do Trello"
+        },
+        "card_aging": "Envelhecimento do cartão",
+        "card_age": {
+            "regular": "Regular",
+            "pirate": "Pirata"
+        },
+        "invite_perms": {
+            "members": "Todos os Membros",
+            "admins": "Admins"
+        }
+    },
+    "ping": {
+        "message": "Pong!",
+        "rest": "REST: {{ms}} ms",
+        "ws": "WS: {{ms}} ms"
+    },
+    "reload": {
+        "done": "Comandos recarregados.",
+        "reloading": "Recarregando comandos…"
+    },
+    "reloadlocale": {
+        "reloading": "Recarregando idiomas…",
+        "done": "Idiomas recarregados."
+    },
+    "reloadone": {
+        "invalid": "Comando inválido!",
+        "file": "O arquivo que contém o comando especificado não existe mais!",
+        "done": "Comando {{&commands}} recarregado."
+    },
+    "responses": {
+        "restart": "Reiniciando Shard…",
+        "eval": "Demorou {{ms}} ms para executar.",
+        "hangman": "Eu não sou um bot de jogos."
+    },
+    "links": {
+        "auth": {
+            "start": "Sincronize sua conta do discord com o trello aqui:",
+            "fail": "O proprietário do bot não inseriu um link de sincronização!"
+        },
+        "donate": {
+            "start": "Suporte meu desenvolvimento com doações!",
+            "fail": "O proprietário do bot não inseriu nenhum link de doação!"
+        },
+        "github": "Aqui está o link para meu código fonte:",
+        "invite": {
+            "start": "Aqui está o link para me convidar a outros servidores!",
+            "fail": "O proprietário do bot não inseriu nenhum link de convite!"
+        },
+        "serverinvite": {
+            "start": "Entre em meu servidor de suporte com qualquer um desses links!",
+            "fail": "O proprietário do bot não inseriu nenhum link para um servidor de suporte!"
+        }
+    },
+    "help": {
+        "footer": "Use `{{&cleanPrefix}}help [command]` para mais informações.",
+        "not_found": "O comando `{{&command}}` não foi encontrado.",
+        "header": "{{&username}} (Executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux) Criado por Snazzah)\nServidor de Suporte: {{&link}}"
+    },
+    "info": {
+        "title": "Informações sobre {{&username}}",
+        "faux": "Esse bot está executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux)."
+    },
+    "words": {
+        "short_link": {
+            "many": "Links Curtos",
+            "one": "Link Curto"
+        },
+        "usage": "Uso",
+        "cooldown": "Cooldown",
+        "alias": {
+            "one": "Alias",
+            "many": "Aliases"
+        },
+        "version": "Versão",
+        "uptime": "Tempo Online",
+        "note": "Nota",
+        "mem_usage": "Uso de Memória",
+        "server": {
+            "one": "Servidor",
+            "many": "Servidores"
+        },
+        "website": {
+            "one": "Website",
+            "many": "Websites"
+        },
+        "trello_board": {
+            "one": "Quadro do Trello",
+            "many": "Quadros do Trello"
+        },
+        "donate": "Doação",
+        "id": "ID",
+        "initials": "Iniciais",
+        "info": "Informação",
+        "bg_img": "Imagem de Fundo",
+        "member": {
+            "many": "Membros",
+            "one": "Membro"
+        },
+        "comment": {
+            "one": "Comentário",
+            "many": "Comentários"
+        },
+        "bio": "Biografia",
+        "visibility": "Visibilidade",
+        "in_lower": "em",
+        "in": "Em",
+        "count": {
+            "one": "Contagem",
+            "many": "Contagens"
+        },
+        "board": {
+            "one": "Quadro",
+            "many": "Quadros"
+        },
+        "page": {
+            "one": "Página",
+            "many": "Páginas"
+        },
+        "item": {
+            "one": "Item",
+            "many": "Itens"
+        },
+        "list": {
+            "one": "Lista",
+            "many": "Listas"
+        },
+        "link": {
+            "one": "Link",
+            "many": "Links"
+        },
+        "card": {
+            "one": "Cartão",
+            "many": "Cartões"
+        },
+        "arch_list": {
+            "one": "Lista Arquivada",
+            "many": "Listas Arquivadas"
+        },
+        "arch_card": {
+            "one": "Cartão Arquivado",
+            "many": "Cartões Arquivados"
+        },
+        "orgs": {
+            "one": "Organização",
+            "many": "Organizações"
+        },
+        "pref": {
+            "one": "Preferência",
+            "many": "Preferências"
+        },
+        "user_pref": {
+            "one": "Preferência do Usuário",
+            "many": "Preferências do Usuário"
+        },
+        "product": {
+            "one": "Produto",
+            "many": "Produtos"
+        }
+    },
+    "shardinfo": {
+        "title": "Informações sobre os Shards do {{&username}}",
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} servidores"
+    },
+    "locale": {
+        "start": "Idiomas Disponíveis:",
+        "footer": "`{{&prefix}}locale setuser [locale]` ou `{{&prefix}}locale setserver [locale]` para definir o idioma."
+    },
+    "cooldown_msg": "Esse comando precisa de um intervalo! *({{seconds}})*",
+    "bad_args": "Faltam Argumentos!",
+    "command_permissions": {
+        "embed": "Eu preciso da permissão de `Inserir Links` para usar esse comando!",
+        "emoji": "Eu preciso da permissão de `Usar Emojis Externos` para usar esse comando!",
+        "elevated": "Apenas usuários elevados do bot podem usar esse comando!",
+        "auth": "Você não sincronizou sua conta do discord com o trello!\nSincronize com o comando `{{&cleanPrefix}}auth`!",
+        "discordAuth": "Você não sincronizou sua conta do discord com o trello!\nSincronize com o comando `{{&cleanPrefix}}auth`!",
+        "selectedBoard": "Nenhum quadro selecionado!\nSelecione o quadro com o comando`{{&cleanPrefix}}switch`!",
+        "attach": "Eu preciso da permissão de `Anexar Arquivos` para usar esse comando!",
+        "trelloRole": "Esse comando requer que você seja o dono do servidor ou possua o cargo `Trello`!"
+    },
+    "format": {
+        "second": {
+            "one": "{{seconds}} segundo",
+            "many": "{{seconds}} segundos"
+        }
+    },
+    "categories": {
+        "general": "Geral",
+        "dev": "Desenvolvedor",
+        "user": "Gerenciamento de Usuário",
+        "view": "Visualização",
+        "edit": "Edição",
+        "hidden": "Oculto",
+        "misc": "Miscelânea",
+        "webhook": "Webhooks"
+    },
+    "commands": {
+        "auth": {
+            "description": "Obtém o link de sincronização da sua conta do Discord com sua conta do Trello."
+        },
+        "donate": {
+            "description": "Obtém um link de doação para o desenvolvedor."
+        },
+        "github": {
+            "description": "Envia um link para o código fonte do bot."
+        },
+        "serverinvite": {
+            "description": "Obtém o convite para o servidor de suporte."
+        },
+        "asynceval": {
+            "description": "Código eval com async.",
+            "usage": "<código>",
+            "note": "Devido ao async IIFE adicionado neste comando, é necessário usar o termo return para obter algum resultado.\nEx. `{{&cleanPrefix}}aeval return 1`"
+        },
+        "eval": {
+            "description": "Código Eval.",
+            "usage": "<código>"
+        },
+        "exec": {
+            "description": "Utilize `child_process.exec`.",
+            "usage": "<comando>…"
+        },
+        "reload": {
+            "description": "Recarrega os Comandos."
+        },
+        "reloadlocale": {
+            "description": "Recarrega os arquivos de tradução."
+        },
+        "reloadone": {
+            "description": "Recarrega comandos singulares.",
+            "usage": "<nomeDoComando>[nomeDoComando] …"
+        },
+        "ping": {
+            "description": "Pong!"
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "help": {
+            "usage": "[comando]",
+            "description": "Mostra a mensagem de ajuda e exibe mais informações sobre os comandos."
+        },
+        "info": {
+            "description": "Obtém informações do bot."
+        },
+        "shardinfo": {
+            "description": "Dá as estatísticas de cada shard."
+        },
+        "switch": {
+            "usage": "<idDoQuadro|nomeDoQuadro>",
+            "description": "Seleciona um quadro para usar em outro comandos. Veja todos os quadros que pode selecionar usando o comando `{{&cleanPrefix}}boards`."
+        },
+        "boards": {
+            "description": "Lista todos os quadros que você pode gerenciar.",
+            "usage": "[página]"
+        },
+        "board": {
+            "description": "Obtém as informações do quadro atual."
+        },
+        "locale": {
+            "description": "Mostra a lista de todas as traduções."
+        },
+        "restart": {
+            "description": "Reinicia o Bot."
+        },
+        "invite": {
+            "description": "Envia um link de convite do bot."
+        },
+        "me": {
+            "description": "Vê as informações sobre sua conta do Trello."
+        }
+    },
+    "_": {
+        "name": "Português (Brasil)"
+    }
+}
