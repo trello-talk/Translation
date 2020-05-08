@@ -125,7 +125,8 @@
     "trello_response": {
         "internal": "An internal server error has occurred on Trello's end! Try again later!",
         "unauthorized": "The last token used has been invalidated or revoked! Reauthorise with the `{{&cleanPrefix}}auth` command!",
-        "ratelimit": "Too many requests are being sent! Try again later!"
+        "ratelimit": "Too many requests are being sent! Try again later!",
+        "aborted": "Trello took too long to send a response! Try again later!"
     },
     "trello": {
         "locale": "Locale (on Trello)",
@@ -174,7 +175,20 @@
             "pirate": "Pirate"
         },
         "last_act": "Last Activity",
-        "voted": "Voted"
+        "voted": "Voted",
+        "archived_lower": "archived",
+        "label_color": {
+            "green": "Green",
+            "yellow": "Yellow",
+            "red": "Red",
+            "orange": "Orange",
+            "lime": "Lime Green",
+            "purple": "Purple",
+            "blue": "Blue",
+            "sky": "Sky Blue",
+            "pink": "Pink",
+            "black": "Black"
+        }
     },
     "commands": {
         "auth": {
@@ -367,6 +381,16 @@
     "cards": {
         "none": "This board has no cards.",
         "arch_none": "This board has no archived cards.",
-        "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!"
-    }
+        "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!",
+        "arch_header": "Use `{{&cleanPrefix}}opencard <listID|listName>` to open a card."
+    },
+    "lists": {
+        "arch_none": "This board has no archived lists.",
+        "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card.",
+        "none": "This board has no lists.",
+        "list_none": "This list has no cards.",
+        "header": "Use `{{&cleanPrefix}}list <listID|listName>` to switch between boards.",
+        "arch_header": "Use `{{&cleanPrefix}}openlist <listID|listName>` to open a list."
+    },
+    "and_more": "And {{count}} more…"
 }
