@@ -235,6 +235,14 @@
         "arch_board": {
             "many": "Quadros Arquivados",
             "one": "Quadro Arquivado"
+        },
+        "cmd": {
+            "one": "Comando",
+            "many": "Comandos"
+        },
+        "subcmd": {
+            "one": "Sub Comando",
+            "many": "Sub Comandos"
         }
     },
     "shardinfo": {
@@ -337,7 +345,7 @@
             "description": "Dá as estatísticas de cada shard."
         },
         "switch": {
-            "usage": "<idDoQuadro|nomeDoQuadro>",
+            "usage": "[idDoQuadro|nomeDoQuadro]",
             "description": "Seleciona um quadro para usar em outro comandos. Veja todos os quadros que pode selecionar usando o comando `{{&cleanPrefix}}boards`."
         },
         "boards": {
@@ -366,11 +374,11 @@
         },
         "list": {
             "description": "Lista todos os cartões de uma lista.",
-            "usage": "<nomeDaLista|idDaLista> [página]"
+            "usage": "[nomeDaLista|idDaLista] [página]"
         },
         "watchlist": {
             "description": "Altera o acompanhamento de uma lista.",
-            "usage": "<nomeDaLista|idDaLista>"
+            "usage": "[nomeDaLista|idDaLista]"
         },
         "watch": {
             "usage": "[nomeDoQuadro|idDoQuadro]",
@@ -382,7 +390,7 @@
         },
         "watchcard": {
             "description": "Altere o acompanhamento do cartão.",
-            "usage": "<nomeDoCartão|idDoCartão>"
+            "usage": "[nomeDoCartão|idDoCartão]"
         },
         "prefix": {
             "description": "Permite você definir o prefixo para você ou servidor.",
@@ -394,11 +402,38 @@
         },
         "card": {
             "description": "Obtém informações sobre um cartão específico.",
-            "usage": "<nomeDoCartão|idDoCartão>"
+            "usage": "[nomeDoCartão|idDoCartão]"
         },
         "cardarchive": {
             "description": "Lista todos os cartões arquivados no quadro atual.",
             "usage": "[página]"
+        },
+        "editboard": {
+            "note": "`name [novoNome]` - Renomear o quadro (administrador do quadro)\n`archive`, `unarchive` - Alterar o estado de arquivamento do quadro (administrador do quadro)\n`desc [novaDescrição]` - Definir descrição para o quadro\n`removedesc` - Remover a descrição do quadro",
+            "usage": "[sub comando]…",
+            "description": "Editar as propriedades do quadro atual. Verifique a nota para sub comandos e usos."
+        },
+        "editlist": {
+            "description": "Edita a lista de propriedades. Verifique a nota para sub comandos e usos.",
+            "usage": "[nomeDaLista|idDaLista] [sub comando]…",
+            "note": "`nome [novoNome]` - Renomeia a Lista\n`archive`, `unarchive` - Altera o arquivamento da lista"
+        },
+        "editcard": {
+            "description": "Edita as propriedades de um cartão. Verifique a nota para sub comandos e usos.",
+            "usage": "[nomeDoCartão|idDoCartão] [sub comando] …",
+            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão"
+        },
+        "addcard": {
+            "description": "Cria um cartão.",
+            "usage": "[nomeDaLista|idDaLista] [nome]"
+        },
+        "deletecard": {
+            "description": "Deleta o cartão.",
+            "usage": "[nomeDoCartão|idDoCartão]"
+        },
+        "addlist": {
+            "description": "Cria uma lista no quadro atual.",
+            "usage": "[nome]"
         }
     },
     "_": {
@@ -416,30 +451,89 @@
         "list": "Prompt da lista",
         "choose": "Digite o número do item que você deseja usar.",
         "timeout": "Seu último prompt teve o tempo esgotado.",
-        "no_search": "Nenhum resultado veio com essa pesquisa."
+        "no_search": "Nenhum resultado veio com essa pesquisa.",
+        "confirm": "Você tem certeza que deseja fazer isso?",
+        "no_confirm": "Confirmação cancelada.",
+        "cancel_confirm": "Digite `yes`para confirmar. Qualquer outra mensagem irá cancelar a confirmação.",
+        "input": "Digite a mensagem que deseja inserir.",
+        "cancel_input": "Digitando \"{{&cancelPrompt}}\" você cancelará a entrada.",
+        "input_canceled": "Sua última entrada foi cancelada."
     },
     "boards": {
         "header": "Use `{{&cleanPrefix}}switch <idDoQuadro|nomeDoQuadro>` para alternar entre quadros.",
         "none": "Você não está atribuído a nenhum quadro.",
         "switch": "Quadro alterado para \"{{&name}}\" (`{{&id}}`).",
         "choose": "Digite o número do quadro que você deseja usar.",
-        "gone": "Esse quadro não existe mais! Altere para outro com o comando `{{&cleanPrefix}}switch`!"
+        "gone": "Esse quadro não existe mais! Altere para outro com o comando `{{&cleanPrefix}}switch`!",
+        "input_name": "Digite o nome que deseja definir para o quadro.",
+        "removed_desc": "Descrição removida do quadro \"{{&name}}\".",
+        "wywtd": "Escolha o que você quer fazer com esse quadro.",
+        "menu": {
+            "name": "Editar nome do quadro",
+            "archive_on": "Fechar o quadro",
+            "archive_off": "Abrir quadro",
+            "desc": "Editar a descrição do quadro",
+            "remove_desc": "Remover a descrição do quadro",
+            "sub_on": "Acompanhar esse Quadro",
+            "sub_off": "Parar de acompanhar esse Quadro"
+        },
+        "set_name": "Quadro \"{{&old}}\" renomeado para \"{{&new}}\".",
+        "archived": "Quadro \"{{&name}}\" arquivado.",
+        "unarchived": "Quadro \"{{&name}}\" desarquivado.",
+        "set_desc": "Descrição do quadro definida para \"{{&name}}\".",
+        "input_desc": "Digite a nova descrição para o quadro.",
+        "need_admin": "Você precisa da permissão de administrador no quadro!"
     },
     "cards": {
-        "arch_header": "Use `{{&cleanPrefix}}opencard <idDaLista|nomeDaLista>` para abrir um cartão.",
+        "arch_header": "Use `{{&cleanPrefix}}editcard <idDaLista|nomeDaLista> unarchive` para desarquivar um cartão.",
         "none": "Esse quadro não possui cartões.",
         "arch_none": "Esse quadro não possui cartões arquivados.",
         "choose": "Digite o número do cartão que você deseja usar.",
-        "error": "Eu não pude obter os dados do cartão! A menos que alguém o tenha excluído antes da solicitação, isso pode ser um erro do Trello!"
+        "error": "Eu não pude obter os dados do cartão! A menos que alguém o tenha excluído antes da solicitação, isso pode ser um erro do Trello!",
+        "menu": {
+            "archive_off": "Desarquivar o cartão",
+            "desc": "Editar a descrição do cartão",
+            "remove_desc": "Remover a descrição do cartão",
+            "sub_on": "Acompanhar esse cartão",
+            "sub_off": "Parar de acompanhar esse cartão",
+            "name": "Editar nome do cartão",
+            "archive_on": "Arquivar cartão"
+        },
+        "set_name": "Cartão renomeado de \"{{&old}}\" para \"{{&new}}\".",
+        "input_name": "Digite um novo nome para o cartão.",
+        "archived": "O cartão \"{{&name}}\" foi arquivado.",
+        "unarchived": "O cartão \"{{&name}}\" foi desarquivado.",
+        "set_desc": "Descrição do cartão definida para \"{{&name}}\".",
+        "removed_desc": "Descrição removida do cartão \"{{&name}}\".",
+        "input_new": "Digite o nome do cartão que deseja adicionar.",
+        "created": "Cartão \"{{&name}}\" criado. (`{{id}}`)",
+        "remove_confirm": "Você tem certeza que deseja deletar o cartão \"{{&name}}\"? (`{{id}}`)",
+        "removed": "Cartão \"{{&name}}\" deletado. (`{{id}}`)",
+        "input_desc": "Digite uma nova descrição para o cartão.",
+        "wywtd": "Escolha o que você deseja fazer com esse cartão."
     },
     "lists": {
         "none": "Esse quadro não possui listas.",
         "list_none": "Essa lista não possui cartões.",
         "arch_none": "Esse quadro não possui listas arquivadas.",
         "header": "Use `{{&cleanPrefix}}list <idDaLista|nomeDaLista>` para alternar entre os cargos.",
-        "arch_header": "Use `{{&cleanPrefix}}openlist <idDaLista|nomeDaLista>` para abrir a lista.",
+        "arch_header": "Use `{{&cleanPrefix}}edirlist <idDaLista|nomeDaLista> unarchive` para desarquivar a lista.",
         "choose": "Digite o número da lista que deseja usar.",
-        "list_header": "Use `{{&cleanPrefix}}card <idDoCartão|nomeDoCartão>` para obter mais informações de um cartão."
+        "list_header": "Use `{{&cleanPrefix}}card <idDoCartão|nomeDoCartão>` para obter mais informações de um cartão.",
+        "wywtd": "Escolha o que você deseja fazer com essa lista.",
+        "menu": {
+            "name": "Editar nome da lista",
+            "archive_on": "Arquivar lista",
+            "archive_off": "Desarquivar lista",
+            "sub_on": "Acompanhar essa lista",
+            "sub_off": "Desacompanhar essa lista"
+        },
+        "set_name": "Lista renomeada de \"{{&old}}\" para \"{{&new}}\".",
+        "input_name": "Digite o novo nome da lista.",
+        "archived": "Lista \"{{&name}}\" arquivada.",
+        "unarchived": "Lista \"{{&name}}\" desarquivada.",
+        "input_new": "Digite o nome da lista que deseja criar.",
+        "created": "Lista \"{{&name}}\" criada.(`{{id}}`)"
     },
     "prefix": {
         "server": "Prefixo do Servidor",
