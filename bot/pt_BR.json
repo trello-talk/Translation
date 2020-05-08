@@ -199,7 +199,7 @@
         "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} servidores"
     },
     "locale": {
-        "start": "Idiomas Disponíveis:",
+        "start": "Idiomas Disponíveis",
         "footer": "`{{&prefix}}locale setuser [locale]` ou `{{&prefix}}locale setserver [locale]` para definir o idioma."
     },
     "cooldown_msg": "Esse comando precisa de um intervalo! *({{seconds}})*",
