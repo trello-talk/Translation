@@ -183,6 +183,14 @@
         "arch_board": {
             "many": "Arkiverede tavler",
             "one": "Arkiveret tavle"
+        },
+        "cmd": {
+            "one": "Kommando",
+            "many": "Kommandoer"
+        },
+        "subcmd": {
+            "one": "Underkommando",
+            "many": "Underkommandoer"
         }
     },
     "trello": {
@@ -294,7 +302,7 @@
         },
         "card": {
             "description": "Får oplysninger om et bestemt kort.",
-            "usage": "<kortnavn|kortID>"
+            "usage": "[kortnavn|kortID]"
         },
         "info": {
             "description": "Få oplysninger om botten."
@@ -313,7 +321,7 @@
             "description": "Giver statistikkerne for hver instans."
         },
         "watchlist": {
-            "usage": "<listenavn|listeID>",
+            "usage": "[listenavn|listeID]",
             "description": "Ændre overvågning af en liste."
         },
         "exec": {
@@ -322,7 +330,7 @@
         },
         "list": {
             "description": "Lister alle kortene i den liste.",
-            "usage": "<listenavn|listeID> {side]"
+            "usage": "[listenavn|listeID] [side]"
         },
         "listarchive": {
             "description": "Lister alle de arkiverede lister i den aktuelle tavle.",
@@ -332,7 +340,7 @@
             "description": "Få invitationslinket til supportserveren."
         },
         "switch": {
-            "usage": "<tavleID|tavlenavn>",
+            "usage": "{tavleID|tavlenavn]",
             "description": "Vælger en tavle at bruge for andre kommandoer. Brug `{{&cleanPrefix}}boards` kommandoen for at se hvilke tavler du kan vælge."
         },
         "boards": {
@@ -348,7 +356,7 @@
             "description": "Lister alle de åbne lister af den aktuelle tavle. Du kan se arkivet over lister med `{{&cleanPrefix}}listarchive`."
         },
         "watchcard": {
-            "usage": "<kortnavn|kortID>",
+            "usage": "[kortnavn|kortID]",
             "description": "Ændre overvågning af kort."
         },
         "auth": {
@@ -378,6 +386,13 @@
         "watch": {
             "usage": "{tavleNavn|tavleID]",
             "description": "Ændre overvågning af en tavle. Hvis ingen tavle er defineret, vil den aktuelle tavle blive brugt."
+        },
+        "editlist": {
+            "usage": "[listenavn|listeID] [underkommando]…",
+            "description": "Rediger en listes egenskaber. Tjek bemærkningen for underkommandoer og benyttelse."
+        },
+        "editboard": {
+            "usage": "[underkommando]…"
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -397,9 +412,12 @@
     "cards": {
         "none": "Denne tavle har ingen kort.",
         "arch_none": "Denne tavle har ingen arkiverede kort.",
-        "arch_header": "Brug `{{&cleanPrefix}}opencard <listID|listName>` for at åbne et kort.",
+        "arch_header": "Brug `{{&cleanPrefix}}editcard <listID|listName>unarchive` for at åbne et kort.",
         "choose": "Indtast nummeret på det kort du ønsker at bruge.",
-        "error": "Jeg kunne ikke hente data for kortet! Med mindre nogen slettede før anmodningen blev lavet, må det være en fejl på Trellos side!"
+        "error": "Jeg kunne ikke hente data for kortet! Med mindre nogen slettede før anmodningen blev lavet, må det være en fejl på Trellos side!",
+        "removed": "Slettede kortet \"{{&name}}\". (`{{id}}`)",
+        "set_desc": "Sæt kortbeskrivelsen for \"{{&name}}\".",
+        "unarchived": "Fjernede kortet \"{{&name}}\" fra arkivet."
     },
     "prompt": {
         "no_search": "Der kom ikke nogen resultater ud af den søgning.",
@@ -414,8 +432,22 @@
         "none": "Denne tavle har ingen lister.",
         "list_none": "Denne liste har ingen kort.",
         "arch_none": "Denne tavle har ingen arkiverede lister.",
-        "arch_header": "Brug `{{&cleanPrefix}}openlist <listID|listName>` for at åbne en liste.",
-        "choose": "Indtast nummeret på den liste du ønsker at bruge."
+        "arch_header": "Brug `{{&cleanPrefix}}editlist <listID|listName>unarchive` for at åbne en liste.",
+        "choose": "Indtast nummeret på den liste du ønsker at bruge.",
+        "unarchived": "Fjernede listen \"{{&name}}\" fra arkivet.",
+        "set_name": "Omdøbte listen fra \"{{&old}}\" til \"{{&new}}\".",
+        "menu": {
+            "sub_off": "Stop med at overvåge denne liste",
+            "sub_on": "Overvåg denne liste",
+            "archive_on": "Arkiver liste",
+            "archive_off": "Fjern liste fra arkivet",
+            "name": "Rediger listenavnet"
+        },
+        "input_new": "Indtast navnet på den liste du ønsker at tilføje.",
+        "wywtd": "Vælg hvad du vil gøre med denne liste.",
+        "input_name": "Indtast navnet du vil omdøbe listen til.",
+        "archived": "Arkiverede listen \"{{&name}}\".",
+        "created": "Oprettede listen \"{{&name}}\". (`{{id}}`)"
     },
     "info": {
         "faux": "Denne bot bruger en ændret version af [Faux](https://github.com/Snazzah/Faux).",
