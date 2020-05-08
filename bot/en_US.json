@@ -156,6 +156,10 @@
             "one": "Archived Card",
             "many": "Archived Cards"
         },
+        "arch_board": {
+            "one": "Archived Board",
+            "many": "Archived Boards"
+        },
         "orgs": {
             "one": "Organization",
             "many": "Organizations"
