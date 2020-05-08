@@ -1,1 +1,46 @@
-{}
+{
+    "reload": {
+        "done": "Genindlæste kommandoer.",
+        "reloading": "Genindlæser kommandoer…"
+    },
+    "links": {
+        "invite": {
+            "fail": "Botejeren har ikke angivet noget invitationslinks!",
+            "start": "Her er linksne til mine andre servere!"
+        },
+        "donate": {
+            "fail": "Botejeren har ikke angivet noget donationslink!",
+            "start": "Støt udviklingen ved at donere!"
+        },
+        "auth": {
+            "start": "Autoriser din Trellokonto med din Discord her:",
+            "fail": "Botejeren har ikke angivet et autoroseringslink!"
+        },
+        "github": "Her er linket til min kildekode:",
+        "serverinvite": {
+            "start": "Tilslut dig supportserveret ved hjælp af et af disse links!",
+            "fail": "Botejeren har ikke angivet noget supportserver link!"
+        }
+    },
+    "reloadone": {
+        "file": "En fil der havde en specifik kommando findes ikke længere!",
+        "invalid": "Ugyldig kommando!",
+        "done": "Genindlæste {{&commands}}."
+    },
+    "help": {
+        "header": "{{&username}} (Kører en ændret version af [Faux](https://github.com/Snazzah/Faux) af Snazzah)\nSupport Server: {{&link}}",
+        "not_found": "Kommandoen `{{&command}}` blev ikke fundet."
+    },
+    "_": {
+        "name": "Dansk"
+    },
+    "responses": {
+        "eval": "Tog {{ms}} ms.",
+        "hangman": "Jeg er ikke en spilbot.",
+        "restart": "Genstarter instans…"
+    },
+    "reloadlocale": {
+        "reloading": "Genindlæser sprog…",
+        "done": "Genindlæste sprog."
+    }
+}
