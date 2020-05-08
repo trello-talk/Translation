@@ -1,5 +1,24 @@
 {
     "_": {
-        "emoji": "se"
+        "emoji": "se",
+        "name": "Svenska (Sverige)"
+    },
+    "reload": {
+        "reloading": "Laddar om kommandon…",
+        "done": "Kommandon omladdade."
+    },
+    "reloadlocale": {
+        "reloading": "Laddar om språk…",
+        "done": "Språk omladdade."
+    },
+    "reloadone": {
+        "invalid": "Ogiltigt kommando!",
+        "file": "En fil som hade ett specificerat kommando finns inte längre!",
+        "done": "Laddade om {{&commands}}."
+    },
+    "responses": {
+        "restart": "Startar om instansen…",
+        "hangman": "Jag är inte en spelbot.",
+        "eval": "Tog {{ms}} ms."
     }
 }
