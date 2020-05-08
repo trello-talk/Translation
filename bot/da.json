@@ -29,7 +29,8 @@
     },
     "help": {
         "header": "{{&username}} (Kører en ændret version af [Faux](https://github.com/Snazzah/Faux) af Snazzah)\nSupport Server: {{&link}}",
-        "not_found": "Kommandoen `{{&command}}` blev ikke fundet."
+        "not_found": "Kommandoen `{{&command}}` blev ikke fundet.",
+        "footer": "`{{&cleanPrefix}}help [command]` for flere oplysninger."
     },
     "_": {
         "name": "Dansk",
@@ -43,5 +44,292 @@
     "reloadlocale": {
         "reloading": "Genindlæser sprog…",
         "done": "Genindlæste sprog."
-    }
+    },
+    "locale": {
+        "unset": "Usæt",
+        "choose": "Indtast nummeret på det sprog du ønsker at sætte.",
+        "no_arg": "Angiv koden eller navnet på det sprog du ønsker at bruge!",
+        "start": "Tilgængelige sprog",
+        "server_set": "Satte serverens sprog til **{{&name}}**.",
+        "no_guild": "Du bruger ikke kommandoen i et guild!",
+        "unset_l": "Usæt sprog",
+        "user_locale": "Sprog for bruger: {{&locale}}",
+        "server_locale": "Sprog for server: {{&locale}}",
+        "header": "`{{&prefix}}locale setuser [locale]` eller `{{&prefix}}locale setserver [locale]` for at sætte sprog.",
+        "user_set": "Satte brugerens sprog til **{{&name}}**."
+    },
+    "words": {
+        "mem_usage": "Brug af hukommelse",
+        "server": {
+            "many": "Servere",
+            "one": "Server"
+        },
+        "card": {
+            "one": "Kort",
+            "many": "Kort"
+        },
+        "member": {
+            "many": "Medlemmer",
+            "one": "Medlem"
+        },
+        "attachment": {
+            "one": "Vedhæftning",
+            "many": "Vedhæftninger"
+        },
+        "trello_board": {
+            "one": "Trellotavle",
+            "many": "Trellotavler"
+        },
+        "usage": "Brug",
+        "cooldown": "Nedkøling",
+        "alias": {
+            "one": "Alias",
+            "many": "Aliasser"
+        },
+        "user_pref": {
+            "one": "Brugerpræference",
+            "many": "Brugerpræferencer"
+        },
+        "version": "Version",
+        "uptime": "Oppetid",
+        "note": "Bemærkning",
+        "website": {
+            "one": "Webside",
+            "many": "Websider"
+        },
+        "donate": "Donér",
+        "id": "ID",
+        "initials": "Initialer",
+        "info": "Oplysninger",
+        "bg_img": "Baggrundsbillede",
+        "page": {
+            "one": "Side",
+            "many": "Sider"
+        },
+        "list": {
+            "one": "Liste",
+            "many": "Lister"
+        },
+        "label": {
+            "one": "Etiket",
+            "many": "Etiketter"
+        },
+        "checklist": {
+            "one": "Tjekliste",
+            "many": "Tjeklister"
+        },
+        "sticker": {
+            "one": "Klistermærke",
+            "many": "Klistermærker"
+        },
+        "comment": {
+            "one": "Kommentar",
+            "many": "Kommentarer"
+        },
+        "product": {
+            "one": "Produkt",
+            "many": "Produkter"
+        },
+        "vote_lower": {
+            "one": "stemme",
+            "many": "stemmer"
+        },
+        "bio": "Biografi",
+        "visibility": "Synlighed",
+        "in_lower": "i",
+        "in": "I",
+        "count": {
+            "one": "Optælling",
+            "many": "Optællinger"
+        },
+        "item": {
+            "one": "Emne",
+            "many": "Emner"
+        },
+        "arch_list": {
+            "one": "Arkiveret liste",
+            "many": "Arkiverede lister"
+        },
+        "arch_card": {
+            "one": "Arkiveret kort",
+            "many": "Arkiverede kort"
+        },
+        "board": {
+            "one": "Tavle",
+            "many": "Tavler"
+        },
+        "link": {
+            "one": "Link",
+            "many": "Links"
+        },
+        "short_link": {
+            "one": "Kort link",
+            "many": "Korte links"
+        },
+        "orgs": {
+            "one": "Organisation",
+            "many": "Organisationer"
+        },
+        "pref": {
+            "one": "Præference",
+            "many": "Præferencer"
+        }
+    },
+    "trello": {
+        "template": "Er skabelon?",
+        "archived_lower": "arkiveret",
+        "label_color": {
+            "orange": "Orange",
+            "green": "Grøn",
+            "yellow": "Gul",
+            "red": "Rød",
+            "purple": "Lilla",
+            "lime": "Lime grøn",
+            "blue": "Blå",
+            "sky": "Himmelblå",
+            "pink": "Lyserød",
+            "black": "Sort"
+        },
+        "products": {
+            "38": "🌟 Årlig Trello guld",
+            "37": "⭐ Månedlig Trello guld"
+        },
+        "self_join": "Tillad teammedlemmer at redigere og tilslutte sig",
+        "invite_perms": {
+            "admins": "Administratorer",
+            "members": "Alle medlemmer"
+        },
+        "colorblind": "Farveblindtilstand",
+        "summ": "Send sammendrag",
+        "pinned": "Fastgjort",
+        "subbed": "Overvåget",
+        "perm_levels": {
+            "public": "Offentlig",
+            "private": "Privat"
+        },
+        "comment_perms": {
+            "disabled": "Deaktiveret",
+            "members": "Alle medlemmer",
+            "org": "Medlemmer i organisationen",
+            "public": "Enhver Trellobruger"
+        },
+        "vote_perms": {
+            "disabled": "Deaktiveret",
+            "members": "Alle medlemmer",
+            "org": "Medlemmer i organisationen",
+            "public": "Enhver Trellobruger"
+        },
+        "last_act": "Sidste aktivitet",
+        "add_rem_members": "Tilføj/Fjern medlemmer",
+        "hide_votes": "Skjul stemmer",
+        "voting": "Afstemning",
+        "voted": "Stemt",
+        "card_age": {
+            "regular": "Regelmæssig",
+            "pirate": "Pirat"
+        }
+    },
+    "format": {
+        "second": {
+            "many": "{{seconds}} sekunder",
+            "one": "{{seconds}} sekund"
+        }
+    },
+    "categories": {
+        "user": "Brugerhåndtering",
+        "general": "Generelt",
+        "dev": "Udvikler",
+        "view": "Visning",
+        "edit": "Redigering",
+        "hidden": "Skjult",
+        "misc": "Diverse"
+    },
+    "commands": {
+        "board": {
+            "description": "Får oplysninger om den aktuelle tavle."
+        },
+        "restart": {
+            "description": "Genstarter botten."
+        },
+        "ping": {
+            "description": "Pong!"
+        },
+        "help": {
+            "description": "Viser hjælpebesked og giver oplysninger om kommandoer."
+        },
+        "asynceval": {
+            "description": "Evaluerer kode asynkront."
+        },
+        "eval": {
+            "description": "Evaluerer kode."
+        },
+        "reload": {
+            "description": "Genindlæs kommandoer."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "card": {
+            "description": "Får oplysninger om et bestemt kort."
+        },
+        "info": {
+            "description": "Få oplysninger om botten."
+        },
+        "invite": {
+            "description": "Sender bottens invitationslink."
+        },
+        "reloadone": {
+            "description": "Genindlæs enkelte kommandoer."
+        },
+        "me": {
+            "description": "Se oplysninger om din Trellokonto."
+        },
+        "shardinfo": {
+            "description": "Giver statistikkerne for hver instans."
+        }
+    },
+    "error": "Der opstod en fejl under behandlingen af den kommando!",
+    "trello_response": {
+        "aborted": "Trello var for længe om at svare! Prøv igen senere!",
+        "ratelimit": "For mange anmodninger bliver sendt! Prøv igen senere!",
+        "internal": "Der opstod en intern serverfejl hos Trello! Prøv igen senere!"
+    },
+    "boards": {
+        "switch": "Skiftet til \"{{&name}}\" (`{{&id}}`).",
+        "header": "Brug `{{&cleanPrefix}}switch <boardID|boardName>` for at springe mellem tavler.",
+        "gone": "Denne tavle findes ikke længere! Skift til en anden en med `{{&cleanPrefix}}switch`!",
+        "none": "Du er ikke tildelt nogen tavle."
+    },
+    "cards": {
+        "none": "Denne tavle har ingen kort.",
+        "arch_none": "Denne tavle har ingen arkiverede kort.",
+        "arch_header": "Brug `{{&cleanPrefix}}opencard <listID|listName>` for at åbne et kort."
+    },
+    "prompt": {
+        "no_search": "Der kom ikke nogen resultater ud af den søgning."
+    },
+    "lists": {
+        "list_header": "Brug `{{&cleanPrefix}}card <cardID|cardName>` for at få oplysninger om et kort.",
+        "header": "Brug `{{&cleanPrefix}}list <listID|listName>` for at hoppe mellem tavler.",
+        "none": "Denne tavle har ingen lister.",
+        "list_none": "Denne liste har ingen kort.",
+        "arch_none": "Denne tavle har ingen arkiverede lister.",
+        "arch_header": "Brug `{{&cleanPrefix}}openlist <listID|listName>` for at åbne en liste."
+    },
+    "info": {
+        "faux": "Denne bot bruger en ændret version af [Faux](https://github.com/Snazzah/Faux).",
+        "title": "Oplysninger om {{&username}}"
+    },
+    "ping": {
+        "message": "Pong!",
+        "ws": "WS: {{ms}} ms",
+        "rest": "REST: {{ms}} ms"
+    },
+    "shardinfo": {
+        "title": "Oplysninger om {{&username}}'s instanser",
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} guilds"
+    },
+    "bad_args": "For få argumenter!",
+    "cooldown_msg": "Denne kommando skal køle ned! *({{seconds}})*",
+    "and_more": "Og {{count}} mere…"
 }
