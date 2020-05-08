@@ -144,6 +144,14 @@
             "one": "Attachment",
             "many": "Attachments"
         },
+        "cmd": {
+            "one": "Command",
+            "many": "Commands"
+        },
+        "subcmd": {
+            "one": "Sub-command",
+            "many": "Sub-commands"
+        },
         "sticker": {
             "one": "Sticker",
             "many": "Stickers"
@@ -358,7 +366,7 @@
         },
         "switch": {
             "description": "Selects a board to use for other commands. Use the `{{&cleanPrefix}}boards` command to see what boards you can select.",
-            "usage": "<boardID|boardName>"
+            "usage": "[boardID|boardName]"
         },
         "boards": {
             "description": "Lists all of the boards you can manage.",
@@ -373,7 +381,7 @@
         },
         "list": {
             "description": "Lists all cards in that list.",
-            "usage": "<listName|listID> [page]"
+            "usage": "[listName|listID] [page]"
         },
         "listarchive": {
             "description": "Lists all the archived lists in the current board.",
@@ -381,7 +389,7 @@
         },
         "card": {
             "description": "Gets information about a specific card.",
-            "usage": "<cardName|cardID>"
+            "usage": "[cardName|cardID]"
         },
         "cardarchive": {
             "description": "Lists all the archived cards in the current board.",
@@ -389,11 +397,11 @@
         },
         "watchcard": {
             "description": "Toggle watching a card.",
-            "usage": "<cardName|cardID>"
+            "usage": "[cardName|cardID]"
         },
         "watchlist": {
             "description": "Toggle watching a list.",
-            "usage": "<listName|listID>"
+            "usage": "[listName|listID]"
         },
         "watch": {
             "description": "Toggle watching a board. If no board is defined, the current board is used.",
@@ -402,6 +410,33 @@
         "star": {
             "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on Trello.com.",
             "usage": "[boardName|boardID]"
+        },
+        "editlist": {
+            "description": "Edit a list's properties. Check the note for sub-commands and usages.",
+            "usage": "[listName|listID] [subcommand] …",
+            "note": "`name [newName]` - Rename the list\n`archive`, `unarchive` - Toggles the list archive"
+        },
+        "editcard": {
+            "description": "Edit a card's properties. Check the note for sub-commands and usages.",
+            "usage": "[cardName|cardID] [subcommand] …",
+            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's descriptionn\n`removedesc` - Removes the card's description"
+        },
+        "editboard": {
+            "description": "Edit the current board's properties. Check the note for sub-commands and usages.",
+            "usage": "[subcommand] …",
+            "note": "`name [newName]` - Rename the board (board admin)\n`archive`, `unarchive` - Toggles the board archive (board admin)\n`desc [newDescription]` - Sets the board's descriptionn\n`removedesc` - Removes the board's description"
+        },
+        "addcard": {
+            "description": "Creates a card.",
+            "usage": "[listName|listID] [name]"
+        },
+        "deletecard": {
+            "description": "Deletes a card.",
+            "usage": "[cardName|cardID]"
+        },
+        "addlist": {
+            "description": "Creates a list on the current board.",
+            "usage": "[name]"
         }
     },
     "error": "An error occurred while processing that command!",
@@ -414,32 +449,91 @@
     "prompt": {
         "list": "List Prompt",
         "choose": "Type the number of the item you want to use.",
+        "input": "Type the message you want to input.",
         "cancel": "Typing \"cancel\" will close this prompt.",
         "timeout": "Your last prompt was timed out.",
-        "no_search": "No results came up with that search."
+        "no_search": "No results came up with that search.",
+        "cancel_input": "Typing \"{{&cancelPrompt}}\" will cancel the input.",
+        "input_canceled": "Your last input was canceled.",
+        "confirm": "Are you sure you want to do this?",
+        "no_confirm": "Confirmation canceled.",
+        "cancel_confirm": "Type `yes` to confirm. Any other message will cancel the confirmation."
     },
     "boards": {
         "none": "You are not assigned to any boards.",
         "header": "Use `{{&cleanPrefix}}switch <boardID|boardName>` to switch between boards.",
         "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
         "gone": "This board no longer exists! Switch to another one with `{{&cleanPrefix}}switch`!",
-        "choose": "Type the number of the board you want to use."
+        "choose": "Type the number of the board you want to use.",
+        "wywtd": "Choose what you want to do with this board.",
+        "menu": {
+            "name": "Edit board name",
+            "archive_on": "Close board",
+            "archive_off": "Open board",
+            "desc": "Edit board description",
+            "remove_desc": "Remove board description",
+            "sub_on": "Watch this board",
+            "sub_off": "Stop watching this board"
+        },
+        "set_name": "Renamed board from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the board to.",
+        "archived": "Archived board \"{{&name}}\".",
+        "unarchived": "Removed board \"{{&name}}\" from the archive.",
+        "set_desc": "Set the board description for \"{{&name}}\".",
+        "input_desc": "Type the new description for the board.",
+        "removed_desc": "Removed the board description for \"{{&name}}\".",
+        "need_admin": "You need administrator permissions on the board!"
     },
     "cards": {
         "none": "This board has no cards.",
         "arch_none": "This board has no archived cards.",
-        "arch_header": "Use `{{&cleanPrefix}}opencard <listID|listName>` to open a card.",
+        "arch_header": "Use `{{&cleanPrefix}}editcard <listID|listName> unarchive` to open a card.",
         "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!",
-        "choose": "Type the number of the card you want to use."
+        "choose": "Type the number of the card you want to use.",
+        "wywtd": "Choose what you want to do with this card.",
+        "menu": {
+            "name": "Edit card name",
+            "archive_on": "Archive card",
+            "archive_off": "Remove card from archive",
+            "desc": "Edit card description",
+            "remove_desc": "Remove card description",
+            "sub_on": "Watch this card",
+            "sub_off": "Stop watching this card"
+        },
+        "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the card to.",
+        "archived": "Archived card \"{{&name}}\".",
+        "unarchived": "Removed card \"{{&name}}\" from the archive.",
+        "set_desc": "Set the card description for \"{{&name}}\".",
+        "input_desc": "Type the new description for the card.",
+        "removed_desc": "Removed the card description for \"{{&name}}\".",
+        "input_new": "Type the name of the card that you want to add.",
+        "created": "Created card \"{{&name}}\". (`{{id}}`)",
+        "remove_confirm": "Are you sure you want to delete \"{{&name}}\"? (`{{id}}`)",
+        "removed": "Deleted card \"{{&name}}\". (`{{id}}`)"
     },
     "lists": {
         "none": "This board has no lists.",
         "list_none": "This list has no cards.",
         "arch_none": "This board has no archived lists.",
         "header": "Use `{{&cleanPrefix}}list <listID|listName>` to switch between boards.",
-        "arch_header": "Use `{{&cleanPrefix}}openlist <listID|listName>` to open a list.",
+        "arch_header": "Use `{{&cleanPrefix}}editlist <listID|listName> unarchive` to open a list.",
         "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card.",
-        "choose": "Type the number of the list you want to use."
+        "choose": "Type the number of the list you want to use.",
+        "wywtd": "Choose what you want to do with this list.",
+        "menu": {
+            "name": "Edit list name",
+            "archive_on": "Archive list",
+            "archive_off": "Remove list from archive",
+            "sub_on": "Watch this list",
+            "sub_off": "Stop watching this list"
+        },
+        "set_name": "Renamed list from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the list to.",
+        "archived": "Archived list \"{{&name}}\".",
+        "unarchived": "Removed list \"{{&name}}\" from the archive.",
+        "input_new": "Type the name of the list that you want to add.",
+        "created": "Created list \"{{&name}}\". (`{{id}}`)"
     },
     "prefix": {
         "server": "Server prefix",
