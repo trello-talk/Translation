@@ -94,7 +94,27 @@
         },
         "visibility": "Visibility",
         "in_lower": "in",
-        "in": "In"
+        "in": "In",
+        "vote_lower": {
+            "many": "votes",
+            "one": "vote"
+        },
+        "sticker": {
+            "many": "Stickers",
+            "one": "Sticker"
+        },
+        "attachment": {
+            "many": "Attachments",
+            "one": "Attachment"
+        },
+        "checklist": {
+            "many": "Checklists",
+            "one": "Checklist"
+        },
+        "label": {
+            "many": "Labels",
+            "one": "Label"
+        }
     },
     "format": {
         "second": {
@@ -152,7 +172,9 @@
         "card_age": {
             "regular": "Regular",
             "pirate": "Pirate"
-        }
+        },
+        "last_act": "Last Activity",
+        "voted": "Voted"
     },
     "commands": {
         "auth": {
