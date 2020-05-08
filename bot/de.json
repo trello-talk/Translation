@@ -1,1 +1,56 @@
-{}
+{
+    "reload": {
+        "reloading": "Reloade Befehle…",
+        "done": "Befehle reloaded."
+    },
+    "reloadlocale": {
+        "reloading": "Reloade Sprachen…",
+        "done": "Sprachen reloaded."
+    },
+    "reloadone": {
+        "invalid": "Ungültiger Befehl!",
+        "file": "Eine Datei, die einen bestimmten Befehl hatte, existiert nicht mehr!",
+        "done": "{{&commands}} reloaded."
+    },
+    "responses": {
+        "hangman": "Ich bin kein Minigame-Bot.",
+        "eval": "Ausgeführt in {{ms}} ms.",
+        "restart": "Restarte Shard…"
+    },
+    "links": {
+        "auth": {
+            "start": "Autorisiere deinen Trello-Account mit Discord:",
+            "fail": "Der Bot-Besitzer hat keinen Autorisierungs-Link angegeben!"
+        },
+        "donate": {
+            "start": "Unterstütze die Entwicklung durch eine Spende!",
+            "fail": "Der Bot-Besitzer hat keine Spenden-Links angegeben!"
+        },
+        "github": "Hier ist der Link zu meinem Source Code:",
+        "serverinvite": {
+            "start": "Betritt den Support-Server mit einem dieser Links!",
+            "fail": "Der Bot-Besitzer hat keine Support-Server-Links angegeben!"
+        },
+        "invite": {
+            "start": "Hier sind die Links, um mich auf andere Server einzuladen!",
+            "fail": "Der Bot-Besitzer hat keine Einladungs-Links angegeben!"
+        }
+    },
+    "help": {
+        "not_found": "Der Befehl `{{&command}}` wurde nicht gefunden.",
+        "footer": "`{{&cleanPrefix}}help [Befehl]` für weitere Informationen.",
+        "header": "{{&username}} (Läuft einem modifzierten [Faux](https://github.com/Snazzah/Faux) von Snazzah)\nSupport-Server: {{&link}}"
+    },
+    "info": {
+        "title": "Informationen über {{&username}}",
+        "faux": "Dieser Bot verwendet eine modifizierte Version von [Faux](https://github.com/Snazzah/Faux)."
+    },
+    "ping": {
+        "message": "Pong!",
+        "ws": "WS: {{ms}} ms",
+        "rest": "REST: {{ms}} ms"
+    },
+    "_": {
+        "name": "Deutsch"
+    }
+}
