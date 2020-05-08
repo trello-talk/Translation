@@ -60,10 +60,9 @@
     },
     "locale": {
         "start": "Available Locales",
-        "unset": "Unset",
+        "unset": "Not set",
         "unset_l": "Unset locale",
         "choose": "Type the number of the locale you want to set to.",
-        "no_arg": "Provide the code or name of the lanugage you want to set!",
         "user_locale": "User locale: {{&locale}}",
         "server_locale": "Server locale: {{&locale}}",
         "header": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` to set locale.",
@@ -184,6 +183,10 @@
         "vote_lower": {
             "one": "vote",
             "many": "votes"
+        },
+        "prefix": {
+            "one": "Prefix",
+            "many": "Prefixes"
         },
         "bio": "Bio",
         "visibility": "Visibility",
@@ -339,6 +342,10 @@
             "description": "Lets you set the locale for you or the server. Run with no arguments for a list of locales.",
             "usage": "[\"userset\"|\"serverset\"] [locale]"
         },
+        "prefix": {
+            "description": "Lets you set the prefixes for you or the server.",
+            "usage": "[\"set\"|\"add\"|\"remove\"] [prefix]"
+        },
         "shardinfo": {
             "description": "Gives the stats for every shard."
         },
@@ -410,6 +417,26 @@
         "header": "Use `{{&cleanPrefix}}list <listID|listName>` to switch between boards.",
         "arch_header": "Use `{{&cleanPrefix}}openlist <listID|listName>` to open a list.",
         "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card."
+    },
+    "prefix": {
+        "server": "Server prefix",
+        "can_add": {
+            "zero": "You can't add any more prefixes.",
+            "one": "You can add {{count}} more prefix.",
+            "many": "You can add {{count}} more prefixes."
+        },
+        "no_arg_server": "Provide the prefix you want to set to the server!",
+        "no_arg": "Provide the prefix you want to add!",
+        "footer": "Prefixes with the 🔒 icon cannot be removed.",
+        "set_server": "Set the server's prefix to `{{&prefix}}`.",
+        "added": "Added `{{&prefix}}` as a prefix.",
+        "removed": "Removed `{{&prefix}}` as a prefix.",
+        "choose": "Type the number of the prefix you want to delete.",
+        "char_limit": "Prefixes can not be more than 32 characters!",
+        "limit": "You have too many prefixes! Remove at least one to be able to add any more!",
+        "mention": "You cannot have mentions in a prefix!",
+        "already": "That prefix already exists!",
+        "none": "You have no prefixes to remove!"
     },
     "and_more": "And {{count}} more…"
 }
