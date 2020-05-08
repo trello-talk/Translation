@@ -179,6 +179,10 @@
         "prefix": {
             "one": "Præfiks",
             "many": "Præfikser"
+        },
+        "arch_board": {
+            "many": "Arkiverede tavler",
+            "one": "Arkiveret tavle"
         }
     },
     "trello": {
