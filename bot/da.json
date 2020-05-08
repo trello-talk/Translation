@@ -32,7 +32,8 @@
         "not_found": "Kommandoen `{{&command}}` blev ikke fundet."
     },
     "_": {
-        "name": "Dansk"
+        "name": "Dansk",
+        "emoji": "dk"
     },
     "responses": {
         "eval": "Tog {{ms}} ms.",
