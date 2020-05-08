@@ -44,6 +44,21 @@
         "invite_perms": {
             "members": "Todos os Membros",
             "admins": "Admins"
+        },
+        "archived_lower": "arquivado",
+        "voted": "Votado",
+        "last_act": "Última Atividade",
+        "label_color": {
+            "green": "Verde",
+            "yellow": "Amarelo",
+            "red": "Vermelho",
+            "orange": "Laranja",
+            "lime": "Verde Limão",
+            "purple": "Roxo",
+            "blue": "Azul",
+            "sky": "Azul Céu",
+            "pink": "Rosa",
+            "black": "Preto"
         }
     },
     "ping": {
@@ -192,6 +207,30 @@
         "product": {
             "one": "Produto",
             "many": "Produtos"
+        },
+        "label": {
+            "one": "Etiqueta",
+            "many": "Etiquetas"
+        },
+        "checklist": {
+            "one": "Checklist",
+            "many": "Checklists"
+        },
+        "attachment": {
+            "one": "Anexo",
+            "many": "Anexos"
+        },
+        "sticker": {
+            "one": "Adesivo",
+            "many": "Adesivos"
+        },
+        "vote_lower": {
+            "one": "voto",
+            "many": "votos"
+        },
+        "prefix": {
+            "one": "Prefixo",
+            "many": "Prefixos"
         }
     },
     "shardinfo": {
@@ -200,7 +239,18 @@
     },
     "locale": {
         "start": "Idiomas Disponíveis",
-        "footer": "`{{&prefix}}locale setuser [locale]` ou `{{&prefix}}locale setserver [locale]` para definir o idioma."
+        "footer": "`{{&prefix}}locale setuser [locale]` ou `{{&prefix}}locale setserver [locale]` para definir o idioma.",
+        "server_set": "Idioma do Servidor definido para **{{&name}}**.",
+        "user_unset": "Idioma do usuário indefinido.",
+        "no_guild": "Você não está executando o comando em um servidor!",
+        "server_unset": "Idioma do Servidor Indefinido.",
+        "unset": "Não Definido",
+        "unset_l": "Idioma Não Definido",
+        "choose": "Digite o número do idioma que você deseja definir.",
+        "user_locale": "Idioma do Usuário: {{&locale}}",
+        "server_locale": "Idioma do Servidor: {{&locale}}",
+        "header": "`{{&prefix}}locale setuser [locale]` ou `{{&prefix}}locale setserver [locale]` para definir o idioma.",
+        "user_set": "Idioma do Usuário definido para **{{&name}}**."
     },
     "cooldown_msg": "Esse comando precisa de um intervalo! *({{seconds}})*",
     "bad_args": "Faltam Argumentos!",
@@ -263,7 +313,7 @@
             "description": "Recarrega os arquivos de tradução."
         },
         "reloadone": {
-            "description": "Recarrega comandos singulares.",
+            "description": "Recarrega comandos individualmente.",
             "usage": "<nomeDoComando>[nomeDoComando] …"
         },
         "ping": {
@@ -294,7 +344,8 @@
             "description": "Obtém as informações do quadro atual."
         },
         "locale": {
-            "description": "Mostra a lista de todas as traduções."
+            "description": "Permite você definir o idioma para você ou seu servidor. Execute sem argumentos para uma lista de idiomas.",
+            "usage": "[\"userset\"|\"serverset\"] [idioma]"
         },
         "restart": {
             "description": "Reinicia o Bot."
@@ -304,10 +355,119 @@
         },
         "me": {
             "description": "Vê as informações sobre sua conta do Trello."
+        },
+        "lists": {
+            "description": "Lista todas as listas abertas do quadro atual. Você pode ver as listas arquivadas com `{{&cleanPrefix}}listarchive`.",
+            "usage": "[página]"
+        },
+        "list": {
+            "description": "Lista todos os cartões de uma lista.",
+            "usage": "<nomeDaLista|idDaLista> [página]"
+        },
+        "watchlist": {
+            "description": "Altera o acompanhamento de uma lista.",
+            "usage": "<nomeDaLista|idDaLista>"
+        },
+        "watch": {
+            "usage": "[nomeDoQuadro|idDoQuadro]",
+            "description": "Altera o acompanhamento de um quadro. Se nenhum quadro for definido, o quadro atual será usado."
+        },
+        "star": {
+            "usage": "[nomeDoQuadro|idDoQuadro]",
+            "description": "Altera os quadros favoritos. Se nenhum quadro for definido, o quadro atual será usado. Quadros favoritos serão exibidos no topo da sua lista de quadros no Trello.com."
+        },
+        "watchcard": {
+            "description": "Altere o acompanhamento do cartão.",
+            "usage": "<nomeDoCartão|idDoCartão>"
+        },
+        "prefix": {
+            "description": "Permite você definir o prefixo para você ou servidor.",
+            "usage": "[\"set\"|\"add\"|\"remove\"] [prefixo]"
+        },
+        "listarchive": {
+            "description": "Lista todas as listas arquivadas do quadro atual.",
+            "usage": "[página]"
+        },
+        "card": {
+            "description": "Obtém informações sobre um cartão específico.",
+            "usage": "<nomeDoCartão|idDoCartão>"
+        },
+        "cardarchive": {
+            "description": "Lista todos os cartões arquivados no quadro atual.",
+            "usage": "[página]"
         }
     },
     "_": {
         "name": "Português (Brasil)",
         "emoji": "br"
-    }
+    },
+    "trello_response": {
+        "unauthorized": "O último token usado foi invalidado ou revogado! Re-autorize com o comando `{{&cleanPrefix}}auth`!",
+        "ratelimit": "Muitas requisições foram enviadas! Tente novamente mais tarde!",
+        "internal": "Ocorreu um erro interno no servidor no final do Trello! Tente novamente mais tarde!",
+        "aborted": "O Trello demorou muito para enviar uma resposta! Tente novamente mais tarde!"
+    },
+    "prompt": {
+        "cancel": "Digite \"cancel\" para fechar este prompt.",
+        "list": "Prompt da lista",
+        "choose": "Digite o número do item que você deseja usar.",
+        "timeout": "Seu último prompt teve o tempo esgotado.",
+        "no_search": "Nenhum resultado veio com essa pesquisa."
+    },
+    "boards": {
+        "header": "Use `{{&cleanPrefix}}switch <idDoQuadro|nomeDoQuadro>` para alternar entre quadros.",
+        "none": "Você não está atribuído a nenhum quadro.",
+        "switch": "Quadro alterado para \"{{&name}}\" (`{{&id}}`).",
+        "choose": "Digite o número do quadro que você deseja usar.",
+        "gone": "Esse quadro não existe mais! Altere para outro com o comando `{{&cleanPrefix}}switch`!"
+    },
+    "cards": {
+        "arch_header": "Use `{{&cleanPrefix}}opencard <idDaLista|nomeDaLista>` para abrir um cartão.",
+        "none": "Esse quadro não possui cartões.",
+        "arch_none": "Esse quadro não possui cartões arquivados.",
+        "choose": "Digite o número do cartão que você deseja usar.",
+        "error": "Eu não pude obter os dados do cartão! A menos que alguém o tenha excluído antes da solicitação, isso pode ser um erro do Trello!"
+    },
+    "lists": {
+        "none": "Esse quadro não possui listas.",
+        "list_none": "Essa lista não possui cartões.",
+        "arch_none": "Esse quadro não possui listas arquivadas.",
+        "header": "Use `{{&cleanPrefix}}list <idDaLista|nomeDaLista>` para alternar entre os cargos.",
+        "arch_header": "Use `{{&cleanPrefix}}openlist <idDaLista|nomeDaLista>` para abrir a lista.",
+        "choose": "Digite o número da lista que deseja usar.",
+        "list_header": "Use `{{&cleanPrefix}}card <idDoCartão|nomeDoCartão>` para obter mais informações de um cartão."
+    },
+    "prefix": {
+        "server": "Prefixo do Servidor",
+        "can_add": {
+            "zero": "Você não pode adicionar mais nenhum prefixo.",
+            "one": "Você pode adicionar mais {{count}} prefixo.",
+            "many": "Você pode adicionar mais {{count}} prefixos."
+        },
+        "footer": "Prefixos com 🔒 não podem ser removidos.",
+        "added": "Adicionado `{{&prefix}}` como um prefixo.",
+        "removed": "Removido `{{&prefix}}` como um prefixo.",
+        "choose": "Digite o número do prefixo que deseja deletar.",
+        "char_limit": "Prefixos não podem ter mais que 32 caracteres!",
+        "mention": "Você não pode usar menções como prefixo!",
+        "already": "Esse prefixo já existe!",
+        "none": "Você não possui prefixos para remover!",
+        "no_arg_server": "Insira o prefixo que deseja definir para o servidor!",
+        "set_server": "Prefixo do servidor definido para `{{&prefix}}`.",
+        "limit": "Você possui muitos prefixos! Remova ao menos um para poder adicionar mais!",
+        "no_arg": "Insira o prefixo que você deseja adicionar!"
+    },
+    "user_mgmt": {
+        "sub_list": "Acompanhando agora a lista \"{{&name}}\". (`{{id}}`)",
+        "unsub_board": "Não está mais acompanhando o quadro \"{{&name}}\". (`{{id}}`)",
+        "unstar_board": "Estrela removida do quadro \"{{&name}}\". (`{{id}}`)",
+        "sub_card": "Acompanhando agora o cartão \"{{&name}}\". (`{{id}}`)",
+        "unsub_list": "Não está mais acompanhando a lista \"{{&name}}\". (`{{id}}`)",
+        "sub_board": "Acompanhando agora o quadro \"{{&name}}\". (`{{id}}`)",
+        "star_board": "Estrela adicionada ao quadro \"{{&name}}\". (`{{id}}`)",
+        "unsub_card": "Não está mais acompanhando o cartão \"{{&name}}\". (`{{id}}`)",
+        "star_error": "O quadro com estrela não foi encontrado! Tente novamente mais tarde!"
+    },
+    "and_more": "E {{count}} mais…",
+    "error": "Um erro ocorreu enquanto processava este comando!"
 }
