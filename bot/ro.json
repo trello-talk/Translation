@@ -1,5 +1,472 @@
 {
     "_": {
-        "emoji": "ro"
+        "emoji": "ro",
+        "name": "Romana(Romania)"
+    },
+    "categories": {
+        "misc": "Diverse",
+        "view": "Vizualizare",
+        "webhook": "Carlige web",
+        "edit": "Editare",
+        "hidden": "Ascuns",
+        "general": "general",
+        "dev": "Dezvoltator",
+        "user": "Managementul utilizatorilor"
+    },
+    "words": {
+        "attachment": {
+            "many": "Atasamente",
+            "one": "Atasament"
+        },
+        "sticker": {
+            "one": "sticher",
+            "many": "stichere"
+        },
+        "orgs": {
+            "one": "Organizatie",
+            "many": "Organizati"
+        },
+        "pref": {
+            "one": "Preferinta",
+            "many": "Preferinte"
+        },
+        "user_pref": {
+            "many": "Preferintele utilizatorului",
+            "one": "Preferinta utilizatorului"
+        },
+        "product": {
+            "one": "Produs",
+            "many": "Produse"
+        },
+        "member": {
+            "many": "Membrii",
+            "one": "Membru"
+        },
+        "comment": {
+            "one": "Comentariu",
+            "many": "Comentarii"
+        },
+        "vote_lower": {
+            "one": "Vot",
+            "many": "Voturi"
+        },
+        "bio": "Biografie",
+        "visibility": "Vizibilitate",
+        "in_lower": "in",
+        "in": "in",
+        "arch_list": {
+            "one": "Lista arhivata",
+            "many": "Liste arhivate"
+        },
+        "link": {
+            "one": "Legatura",
+            "many": "Legaturi"
+        },
+        "mem_usage": "Memorie de uz",
+        "arch_card": {
+            "one": "Card arhivat",
+            "many": "Carduri arhivate"
+        },
+        "bg_img": "Imagine de fundal",
+        "prefix": {
+            "one": "Prestabilit",
+            "many": "Prestabilite"
+        },
+        "usage": "Folosire",
+        "cooldown": "Racire",
+        "alias": {
+            "one": "porecla",
+            "many": "porecle"
+        },
+        "version": "Versiune",
+        "uptime": "Timpul de functionare",
+        "note": "Nota",
+        "server": {
+            "one": "server",
+            "many": "servere"
+        },
+        "website": {
+            "one": "site web",
+            "many": "siteuri web"
+        },
+        "trello_board": {
+            "one": "Tabla Trello",
+            "many": "Table Trello"
+        },
+        "donate": "Doneaza",
+        "id": "id",
+        "initials": "Initiale",
+        "info": "Informatie",
+        "short_link": {
+            "one": "Legatura scurta",
+            "many": "Legaturi scurte"
+        },
+        "count": {
+            "one": "Numar",
+            "many": "Numere"
+        },
+        "board": {
+            "one": "Tabla",
+            "many": "Table"
+        },
+        "page": {
+            "one": "Pagina",
+            "many": "Pagini"
+        },
+        "item": {
+            "one": "Instrument",
+            "many": "Instrumente"
+        },
+        "list": {
+            "one": "Lista",
+            "many": "Liste"
+        },
+        "label": {
+            "one": "Eticheta",
+            "many": "Etichete"
+        },
+        "card": {
+            "one": "card",
+            "many": "carduri"
+        },
+        "checklist": {
+            "one": "Lista de verificare",
+            "many": "Liste de verificare"
+        }
+    },
+    "commands": {
+        "github": {
+            "description": "Trimite legatura deschisa a bot-ului."
+        },
+        "asynceval": {
+            "usage": "<cod>",
+            "description": "Evalueaza codul asincron.",
+            "note": "Datorita ambalajului async IIFE adaugat în aceasta comanda, este necesar sa folositi instructiunea returnare pentru a returna un rezultat.\nde exemplu.`{{& curatate prestabilite}} returnare valabilăa1 '"
+        },
+        "eval": {
+            "description": "Evalueaza cod.",
+            "usage": "<cod>"
+        },
+        "help": {
+            "description": "Arata mesajul de ajutor si ofera informatii sau comenzi.",
+            "usage": "[comanda]"
+        },
+        "donate": {
+            "description": "Obtine legatura de donatie pentru dezvoltator."
+        },
+        "invite": {
+            "description": "Trimite legatura de invitare la bot."
+        },
+        "serverinvite": {
+            "description": "Obtineti invitatia pentru serverul de asistenta."
+        },
+        "auth": {
+            "description": "Obțineti linkul de autentificare pentru a conecta contul Discord la contul dvs. Trello."
+        },
+        "exec": {
+            "usage": "<comanda>…",
+            "description": "Utilizeaza `child_process.exec`."
+        },
+        "reload": {
+            "description": "Reincarcati comenzile."
+        },
+        "reloadlocale": {
+            "description": "Reincarcati fisierele locale."
+        },
+        "reloadone": {
+            "description": "Reincarcati comenzile singulare.",
+            "usage": "<numele comenzi>[numele comenzi]…"
+        },
+        "restart": {
+            "description": "Restarteaza botul."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "info": {
+            "description": "Primeste informati despre bot."
+        },
+        "ping": {
+            "description": "pong!"
+        },
+        "locale": {
+            "usage": "[\"utilizator setat\"|\"server setat\"] [locatie]",
+            "description": "Va permite sa setati locale pentru dvs. sau server. Rulati fara argumente pentru o lista de localuri."
+        },
+        "prefix": {
+            "description": "Va permite sa setati prefixele pentru dvs. sau server.",
+            "usage": "[\"setati\"|\"adaugati\"|\"eliminati\"] [prestabilite]"
+        },
+        "shardinfo": {
+            "description": "Ofera statisticile pentru fiecare fragment."
+        },
+        "me": {
+            "description": "Vezi informatiile despre contul tau Trello."
+        },
+        "switch": {
+            "usage": "<IDTabel|NumeTabel>",
+            "description": "Selecteaza o placa pe care sa o folosesti pentru alte comenzi. Folositi comanda „{{& curata prestabilite}}” pentru a vedea ce placi puteti selecta."
+        },
+        "boards": {
+            "description": "Listeaza toate forumurile pe care le poti gestiona.",
+            "usage": "[pagina]"
+        },
+        "board": {
+            "description": "Obtineti informati despre tabelul curent."
+        },
+        "lists": {
+            "usage": "[pagina]",
+            "description": "Listeaza toate listele deschise de pe placa curenta. Puteti vedea arhiva cu lista cu {{& curata prefixx}} arhiva lista`."
+        },
+        "list": {
+            "description": "Listeaza toate cartile din aceasta lista.",
+            "usage": "<Numele listei|Id-ul listei>[pagina]"
+        },
+        "listarchive": {
+            "usage": "[pagina]",
+            "description": "Listeaza toate listele arhivate din tabla curenta."
+        },
+        "card": {
+            "description": "Obtine informati despre o carte specifica.",
+            "usage": "<Numele cartii|Id-ul cartii>"
+        },
+        "cardarchive": {
+            "description": "Listeaza toate cartile arhivate din tabloul curent.",
+            "usage": "[pagina]"
+        },
+        "watchcard": {
+            "description": "Comutati urmarind o carte.",
+            "usage": "<Numele cartii|Id-ul cartii>"
+        },
+        "watchlist": {
+            "description": "Comutati sa urmariti o lista.",
+            "usage": "<Numele listei|Id-ul listei>"
+        },
+        "watch": {
+            "description": "Comutati urmarind o placa. Daca nu este definita nicio placa, se foloseste placa curenta.",
+            "usage": "[Numele tabelului|Id-ul tabelului]"
+        },
+        "star": {
+            "usage": "[Numele tabelului|Id-ul tabelului]",
+            "description": "Comuta cu o placa. Dacă nu este definita nicio placa, se foloseste placa curenta. Placile stelate vor aparea in partea de sus a listei de forumuri pe Trello.com."
+        }
+    },
+    "trello_response": {
+        "unauthorized": "Ultimul simbol folosit a fost invalidat sau revocat! Autorizati cu comanda `{{Curata prefix}} auth`!",
+        "ratelimit": "Sunt trimise prea multe cereri! Incercati mai tarziu!",
+        "internal": "A aparut o eroare de server intern la sfarsitul lui Trello! Incercati mai tarziu!",
+        "aborted": "Trello a luat prea mult timp pentru a trimite un raspuns! Incercati mai tarziu!"
+    },
+    "error": "A aparut o eroare la procesarea acelei comenzi!",
+    "command_permissions": {
+        "discordAuth": "Nu ti-ai autorizat contul Trello cu Discord!\nAutorizati cu comanda `{{& curatati prestabilitele}} auth`!",
+        "attach": "Am nevoie de permisiunea „Ataseaza fisiere” pentru a utiliza aceasta comanda!",
+        "emoji": "Am nevoie de permisiunea `Utilizati Emoji externe` pentru a utiliza aceasta comanda!",
+        "trelloRole": "Aceasta comanda necesita sa fiti proprietarul serverului sau sa aveti un rol numit `Trello`!",
+        "selectedBoard": "Nu a fost selectat niciun consiliu!\nSelectați o placa cu comanda de schimbare{{&curatare prestabilite}}!",
+        "embed": "Am nevoie de permisiunea „Legaturi incorporate” pentru a folosi aceasta comanda!",
+        "elevated": "Doar utilizatorii crescuti ai bot-ului pot utiliza această comanda!",
+        "auth": "Nu ti-ai autorizat contul Trello cu Discord!\nAutorizati cu comanda `{{& curata presabilitele}} auth`!"
+    },
+    "trello": {
+        "colorblind": "Modul culoare oarba",
+        "locale": "Locatie (pe Trello)",
+        "self_join": "Ascunde voturi",
+        "template": "Este sablon ?",
+        "pinned": "Fixat",
+        "subbed": "Vazut",
+        "starred": "Instelat",
+        "voting": "Vot",
+        "due": "Datorat",
+        "voted": "Votat",
+        "hide_votes": "Ascunde Voturi",
+        "add_rem_members": "Adauga/Elimina Membrii",
+        "archived_lower": "Arhivat",
+        "products": {
+            "10": "💼 Aur Trello din clasa business",
+            "37": "⭐ Aur Trello lunar",
+            "38": "🌟Aur Trello anual"
+        },
+        "perm_levels": {
+            "public": "public",
+            "private": "Privat",
+            "org": "Echipa vizibila"
+        },
+        "invite_perms": {
+            "members": "Toti membrii",
+            "admins": "Admini"
+        },
+        "comment_perms": {
+            "disabled": "Dezactivat",
+            "members": "Toti membrii",
+            "org": "Membrii organizatiei",
+            "public": "Toti utilizatorii Trello"
+        },
+        "vote_perms": {
+            "disabled": "Dezactivat",
+            "members": "Toti membrii",
+            "org": "Membrii organizatiei",
+            "public": "Toti utilizatorii Trello"
+        },
+        "card_age": {
+            "regular": "Regulat",
+            "pirate": "Pirat"
+        },
+        "label_color": {
+            "green": "Verde",
+            "yellow": "Galben",
+            "red": "Rosu",
+            "orange": "Portocaliu",
+            "lime": "Verzui",
+            "purple": "Violet",
+            "blue": "albastru",
+            "sky": "Albastru deschis",
+            "pink": "Roz",
+            "black": "Negru"
+        },
+        "summ": "Trimite rezumate",
+        "card_aging": "Imbatranirea Cardului",
+        "marketing": "E-mailuri de marketing (opt-in)",
+        "card_covers": "Imagine de coperta card",
+        "last_act": "Ultima Activitate"
+    },
+    "bad_args": "Argumente insuficiente!",
+    "format": {
+        "second": {
+            "one": "{{secunde}} secunda",
+            "many": "{{secunde}} secunde"
+        }
+    },
+    "prompt": {
+        "list": "Lista prompta",
+        "choose": "Tastati numarul articolului pe care doriti sa il utilizati.",
+        "cancel": "Tastati „anulare” vor inchide acest prompt.",
+        "timeout": "Ultima dvs. solicitare a fost expusa.",
+        "no_search": "Nu a aparut niciun rezultat cu acea cautare."
+    },
+    "boards": {
+        "none": "Nu esti atribuit niciunui forum.",
+        "choose": "Tastati numarul placii pe care doriti sa o utilizati.",
+        "switch": "Schimbat catre \"{{&nume}}\" (`{{&id}}`).",
+        "gone": "Aceasta placa nu mai exista! Treceti la altul cu comutatorul `{{Prefix curat} }`!",
+        "header": "Folositi butonul „{{& curata prefix}} <ID placa| Nume placa>` pentru a comuta intre placi."
+    },
+    "cards": {
+        "none": "Acesta placa nu are carti.",
+        "arch_none": "Aceasta placa nu are nici o carte arhivata.",
+        "choose": "Tastati numarul cardului pe care doriti sa-l utilizati.",
+        "arch_header": "Folositi „{{& curata prefix} deschide card <ID-ul listei | Numele listei>` pentru a deschide un card.",
+        "error": "Nu am putut obtine datele cardului! Cu exceptia cazului in care cineva a fost sters inainte de solicitare, aceasta ar putea fi o eroare la sfarsitul lui Trello!"
+    },
+    "lists": {
+        "none": "Acest forum nu are nici o lista.",
+        "list_none": "Aceste liste nu au forumuri.",
+        "arch_none": "Acest forum nu are liste arhivate.",
+        "choose": "Tastati numarul listei pe care doriti sa o utilizati.",
+        "header": "Utilizati lista {{Prefix curat}} <Id lista| lista Nume> `pentru a comuta intre placi.",
+        "arch_header": "Folositi `{{& curata prefix}} lista deschisa <ID lista| Nume lista>` pentru a deschide o lista.",
+        "list_header": "Utilizati cardul {{& curatare prefix}} <ID card | Nume card> `pentru a obtine informatii pe un card."
+    },
+    "prefix": {
+        "server": "Prestabiliri server",
+        "can_add": {
+            "one": "Poti adauga {{numar}} mai multe prestabilite.",
+            "many": "Poti adauga {{numar}} mai multe prestabilite.",
+            "zero": "Nu poti sa mai adaugi alte prestabilite."
+        },
+        "no_arg": "Furnizati prestabilirile pe care doriti sa le adaugati!",
+        "footer": "Prefixele cu pictograma 🔒 nu pot fi eliminate.",
+        "choose": "Tastati numarul prefixului pe care doriti sa il stergeti.",
+        "limit": "Ai prea multe prefixe! Eliminați cel puțin unul pentru a putea adăuga inca!",
+        "mention": "Nu puteti avea mentiuni într-un prefix!",
+        "already": "Acest prefix exista deja!",
+        "none": "Nu aveti prefixe de eliminat!",
+        "set_server": "Setati prefixul serverului la `{{& prefix}}.",
+        "added": "A fost adaugat `{{& prefix}}` ca prefix.",
+        "removed": "Eliminat `{{& prefix}}` ca prefix.",
+        "no_arg_server": "Furnizati prestabilitul pe care doriti sa-l furnizati pe server!",
+        "char_limit": "Prefixele nu pot avea mai mult de 32 de caractere!"
+    },
+    "user_mgmt": {
+        "sub_card": "Acum urmariti cardul „{{& nume}}”. ( `{{Id}}`)",
+        "unsub_card": "Nu mai urmariti cardul „{{& nume}}”. ( `{{Id}}`)",
+        "sub_list": "Acum urmariti lista „{{& nume}}”. ( `{{Id}}`)",
+        "unsub_list": "Nu mai urmariti lista „{{& nume}}”. ( `{{Id}}`)",
+        "star_board": "Stea creata pentru bordul „{{& nume}}”. ( `{{Id}}`)",
+        "unstar_board": "Stea indepartata pentru bordul „{{& nume}}”. ( `{{Id}}`)",
+        "star_error": "Steaua bordului nu a fost gasita! Incercati mai tarziu!",
+        "sub_board": "Nu mai urmăriți forumul „{{& nume}}”. ( `{{Id}}`)",
+        "unsub_board": "Nu mai urmariti bordul „{{& nume}}”. ( `{{Id}}`)"
+    },
+    "links": {
+        "invite": {
+            "start": "Aici este linkul cu care ma poti invita pe alte servere!",
+            "fail": "Proprietarul botului nu a furnizat nici un link de invitatie!"
+        },
+        "serverinvite": {
+            "fail": "Proprietarul botului nu a furnizat nici un link pentru serverul de asistenta!",
+            "start": "Alaturati-va serverului de asistenta cu oricare dintre aceste legaturi!"
+        },
+        "donate": {
+            "start": "Sprijiniti dezvoltarea prin donatii!",
+            "fail": "Proprietarul botului nu a furnizat nici un link de donatie!"
+        },
+        "auth": {
+            "start": "Autorizati-va contul Trello cu cel de Discord aici :",
+            "fail": "Proprietarul botului nu a furnizat un link de autorizare!"
+        },
+        "github": "Aici este linkul catre codul sursa:"
+    },
+    "and_more": "Si {{numaratoare}} mai mult …",
+    "locale": {
+        "server_set": "Setati localizarea serverului la ** {{& nume}} **.",
+        "header": "`{{&prefix}}locatia utilizator [locatie]` or `{{&prefix}}locatia serverului [locatie]` pentru a seta locatia.",
+        "start": "Locatii disponibile",
+        "unset": "Nu este setat",
+        "unset_l": "Locatie nesetata",
+        "choose": "Tastati numarul locatiei pe care doriti sa o setati.",
+        "user_locale": "Locatia utilizatorului: {{&locatie}}",
+        "server_locale": "Locatia serverului: {{&locatie}}",
+        "user_set": "Setati locatia utilizatorului pentru**{{&nume}}**.",
+        "user_unset": "Debifeaza localizarea utilizatorului.",
+        "server_unset": "Debifeaza localizarea serverului.",
+        "no_guild": "Nu executati comanda intr-o breasla!"
+    },
+    "reload": {
+        "reloading": "Reincarcare comenzi…",
+        "done": "Comenzile reincarcate."
+    },
+    "help": {
+        "not_found": "Comanda `{{&comanda}}` nu a fost gasita.",
+        "header": "{{&nume utilizator}} (Modificare de rulare[Faux](https://github.com/Snazzah/Faux) By Snazzah)\nServer Asistenta: {{&link}}",
+        "footer": "`{{&Curata prefixul}}ajutor [comanda]` pentru mai multe informatii."
+    },
+    "reloadone": {
+        "file": "Un fisier care are o comanda specifica nu mai exista!",
+        "invalid": "Comanda invalida!",
+        "done": "Reincarcate {{&comenzi}}."
+    },
+    "cooldown_msg": "Aceasta comanda trebuie sa se termine! *({{secunde})*",
+    "info": {
+        "faux": "Acest bot foloseste o versiune modificata a [Faux](https://github.com/Snazzah/Faux).",
+        "title": "Informatii despre {{&nume utilizator}}"
+    },
+    "reloadlocale": {
+        "reloading": "Reincarcare locatii…",
+        "done": "Locati reincarcate."
+    },
+    "responses": {
+        "restart": "Reporneste fragmentul…",
+        "hangman": "Nu sunt un robot de joaca.",
+        "eval": "A luat {{ms}} ms."
+    },
+    "ping": {
+        "message": "pong!",
+        "ws": "ws: {{ms}} ms",
+        "rest": "Odihneste: {{ms}} ms"
+    },
+    "shardinfo": {
+        "title": "Informatii despre fragmentele lui {{&nume utilizator}}'",
+        "line": "**`{{id}}:`** {{stare}}, {{ms}} ms, {{bresle}} bresle"
     }
 }
