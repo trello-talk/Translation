@@ -231,6 +231,10 @@
         "prefix": {
             "one": "Prefixo",
             "many": "Prefixos"
+        },
+        "arch_board": {
+            "many": "Quadros Arquivados",
+            "one": "Quadro Arquivado"
         }
     },
     "shardinfo": {
