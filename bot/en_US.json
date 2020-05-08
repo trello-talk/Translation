@@ -118,9 +118,25 @@
             "one": "Link",
             "many": "Links"
         },
+        "label": {
+            "one": "Label",
+            "many": "Labels"
+        },
         "card": {
             "one": "Card",
             "many": "Cards"
+        },
+        "checklist": {
+            "one": "Checklist",
+            "many": "Checklists"
+        },
+        "attachment": {
+            "one": "Attachment",
+            "many": "Attachments"
+        },
+        "sticker": {
+            "one": "Sticker",
+            "many": "Stickers"
         },
         "arch_list": {
             "one": "Archived List",
@@ -154,6 +170,10 @@
             "one": "Comment",
             "many": "Comments"
         },
+        "vote_lower": {
+            "one": "vote",
+            "many": "votes"
+        },
         "bio": "Bio",
         "visibility": "Visibility",
         "in_lower": "in",
@@ -173,6 +193,8 @@
         "starred": "Starred",
         "voting": "Voting",
         "due": "Due",
+        "voted": "Voted",
+        "last_act": "Last Activity",
         "add_rem_members": "Add/Remove Members",
         "products": {
             "10": "💼 Trello Gold from Business Class",
@@ -204,6 +226,18 @@
         "card_age": {
             "regular": "Regular",
             "pirate": "Pirate"
+        },
+        "label_color": {
+            "green": "Green",
+            "yellow": "Yellow",
+            "red": "Red",
+            "orange": "Orange",
+            "lime": "Lime Green",
+            "purple": "Purple",
+            "blue": "Blue",
+            "sky": "Sky Blue",
+            "pink": "Pink",
+            "black": "Black"
         }
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
@@ -326,7 +360,8 @@
     "trello_response": {
         "unauthorized": "The last token used has been invalidated or revoked! Reauthorize with the `{{&cleanPrefix}}auth` command!",
         "ratelimit": "Too many requests are being sent! Try again later!",
-        "internal": "An internal server error has occurred on Trello's end! Try again later!"
+        "internal": "An internal server error has occurred on Trello's end! Try again later!",
+        "aborted": "Trello took too long to send a response! Try again later!"
     },
     "prompt": {
         "list": "List Prompt",
@@ -344,6 +379,16 @@
     "cards": {
         "none": "This board has no cards.",
         "arch_none": "This board has no archived cards.",
+        "arch_header": "Use `{{&cleanPrefix}}opencard <listID|listName>` to open a card.",
         "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!"
-    }
+    },
+    "lists": {
+        "none": "This board has no lists.",
+        "list_none": "This list has no cards.",
+        "arch_none": "This board has no archived lists.",
+        "header": "Use `{{&cleanPrefix}}list <listID|listName>` to switch between boards.",
+        "arch_header": "Use `{{&cleanPrefix}}openlist <listID|listName>` to open a list.",
+        "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card."
+    },
+    "and_more": "And {{count}} more…"
 }
