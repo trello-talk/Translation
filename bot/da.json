@@ -46,7 +46,7 @@
         "done": "Genindlæste sprog."
     },
     "locale": {
-        "unset": "Usæt",
+        "unset": "Ikke sat",
         "choose": "Indtast nummeret på det sprog du ønsker at sætte.",
         "no_arg": "Angiv koden eller navnet på det sprog du ønsker at bruge!",
         "start": "Tilgængelige sprog",
