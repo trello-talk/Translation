@@ -114,6 +114,10 @@
         "label": {
             "many": "Labels",
             "one": "Label"
+        },
+        "prefix": {
+            "many": "Prefixes",
+            "one": "Prefix"
         }
     },
     "format": {
@@ -285,6 +289,10 @@
         "cardarchive": {
             "description": "Lists all the archived cards in the current board.",
             "usage": "[page]"
+        },
+        "prefix": {
+            "usage": "[\"set\"|\"add\"|\"remove\"] [prefix]",
+            "description": "Lets you set the prefixes for you or the server."
         }
     },
     "boards": {
@@ -362,7 +370,7 @@
     "locale": {
         "start": "Available Locales",
         "footer": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` to set locale.",
-        "unset": "Unset",
+        "unset": "Not set",
         "choose": "Type the number of the locale you want to set to.",
         "header": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` to set locale.",
         "unset_l": "Unset locale",
@@ -413,5 +421,25 @@
         "header": "Use `{{&cleanPrefix}}list <listID|listName>` to switch between boards.",
         "arch_header": "Use `{{&cleanPrefix}}openlist <listID|listName>` to open a list."
     },
-    "and_more": "And {{count}} more…"
+    "and_more": "And {{count}} more…",
+    "prefix": {
+        "none": "You have no prefixes to remove!",
+        "already": "That prefix already exists!",
+        "mention": "You cannot have mentions in a prefix!",
+        "limit": "You have too many prefixes! Remove at least one to be able to add any more!",
+        "char_limit": "Prefixes can not be more than 32 characters!",
+        "choose": "Type the number of the prefix you want to delete.",
+        "removed": "Removed `{{&prefix}}` as a prefix.",
+        "added": "Added `{{&prefix}}` as a prefix.",
+        "set_server": "Set the server's prefix to `{{&prefix}}`.",
+        "footer": "Prefixes with the 🔒 icon cannot be removed.",
+        "no_arg": "Provide the prefix you want to add!",
+        "no_arg_server": "Provide the prefix you want to set to the server!",
+        "can_add": {
+            "many": "You can add {{count}} more prefixes.",
+            "one": "You can add {{count}} more prefix.",
+            "zero": "You can't add any more prefixes."
+        },
+        "server": "Server prefix"
+    }
 }
