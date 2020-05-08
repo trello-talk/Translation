@@ -51,6 +51,7 @@
         "rest": "REST: {{ms}} ms"
     },
     "_": {
-        "name": "Deutsch"
+        "name": "Deutsch",
+        "emoji": "de"
     }
 }
