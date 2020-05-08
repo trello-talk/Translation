@@ -382,6 +382,22 @@
         "cardarchive": {
             "description": "Lists all the archived cards in the current board.",
             "usage": "[page]"
+        },
+        "watchcard": {
+            "description": "Toggle watching a card.",
+            "usage": "<cardName|cardID>"
+        },
+        "watchlist": {
+            "description": "Toggle watching a list.",
+            "usage": "<listName|listID>"
+        },
+        "watch": {
+            "description": "Toggle watching a board. If no board is defined, the current board is used.",
+            "usage": "[boardName|boardID]"
+        },
+        "star": {
+            "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on Trello.com.",
+            "usage": "[boardName|boardID]"
         }
     },
     "error": "An error occurred while processing that command!",
@@ -402,13 +418,15 @@
         "none": "You are not assigned to any boards.",
         "header": "Use `{{&cleanPrefix}}switch <boardID|boardName>` to switch between boards.",
         "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
-        "gone": "This board no longer exists! Switch to another one with `{{&cleanPrefix}}switch`!"
+        "gone": "This board no longer exists! Switch to another one with `{{&cleanPrefix}}switch`!",
+        "choose": "Type the number of the board you want to use."
     },
     "cards": {
         "none": "This board has no cards.",
         "arch_none": "This board has no archived cards.",
         "arch_header": "Use `{{&cleanPrefix}}opencard <listID|listName>` to open a card.",
-        "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!"
+        "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!",
+        "choose": "Type the number of the card you want to use."
     },
     "lists": {
         "none": "This board has no lists.",
@@ -416,7 +434,8 @@
         "arch_none": "This board has no archived lists.",
         "header": "Use `{{&cleanPrefix}}list <listID|listName>` to switch between boards.",
         "arch_header": "Use `{{&cleanPrefix}}openlist <listID|listName>` to open a list.",
-        "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card."
+        "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card.",
+        "choose": "Type the number of the list you want to use."
     },
     "prefix": {
         "server": "Server prefix",
@@ -437,6 +456,17 @@
         "mention": "You cannot have mentions in a prefix!",
         "already": "That prefix already exists!",
         "none": "You have no prefixes to remove!"
+    },
+    "user_mgmt": {
+        "sub_card": "Now watching card \"{{&name}}\". (`{{id}}`)",
+        "unsub_card": "No longer watching card \"{{&name}}\". (`{{id}}`)",
+        "sub_list": "Now watching list \"{{&name}}\". (`{{id}}`)",
+        "unsub_list": "No longer watching list \"{{&name}}\". (`{{id}}`)",
+        "sub_board": "Now watching board \"{{&name}}\". (`{{id}}`)",
+        "unsub_board": "No longer watching board \"{{&name}}\". (`{{id}}`)",
+        "star_board": "Created star for board \"{{&name}}\". (`{{id}}`)",
+        "unstar_board": "Removed star for board \"{{&name}}\". (`{{id}}`)",
+        "star_error": "The board's star was not found! Try again later!"
     },
     "and_more": "And {{count}} more…"
 }
