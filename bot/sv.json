@@ -20,5 +20,41 @@
         "restart": "Startar om instansen…",
         "hangman": "Jag är inte en spelbot.",
         "eval": "Tog {{ms}} ms."
+    },
+    "links": {
+        "auth": {
+            "start": "Auktorisera ditt Trello-konto med din Discord här:",
+            "fail": "Botägaren har inte tillhandahållit en auktoriseringslänk!"
+        },
+        "donate": {
+            "start": "Stöd utvecklingen genom att donera!",
+            "fail": "Botägaren har inte tillhandahållit några donationslänkar!"
+        },
+        "github": "Här är länken till min källkod:",
+        "invite": {
+            "start": "Här är länkarna för att bjuda in mig till andra servrar!",
+            "fail": "Botägaren har inte tillhandahållit några inbjudningslänkar!"
+        },
+        "serverinvite": {
+            "start": "Gå med supportservern med en av dessa länkarna!",
+            "fail": "Botägaren har inte tillhandahållit några länkar till supportservern!"
+        }
+    },
+    "help": {
+        "not_found": "Kommandot `{{&command}}` hittades inte.",
+        "header": "{{&username}} (Kör modifierad [Faux](https://github.com/Snazzah/Faux) Av Snazzah)\nSupportserver: {{&link}}",
+        "footer": "`{{&cleanPrefix}}help [kommando]` för mer information."
+    },
+    "info": {
+        "title": "Information on {{&username}}",
+        "faux": "Denna bot använder en modifierad version av [Faux](https://github.com/Snazzah/Faux)."
+    },
+    "ping": {
+        "message": "Pong!",
+        "ws": "WS: {{ms}} ms",
+        "rest": "REST: {{ms}} ms"
+    },
+    "shardinfo": {
+        "title": "Information om {{&username}}:s instanser"
     }
 }
