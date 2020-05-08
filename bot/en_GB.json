@@ -200,7 +200,8 @@
             "usage": "<code>"
         },
         "locale": {
-            "description": "Shows a list of all locales."
+            "description": "Lets you set the locale for you or the server. Run with no arguments for a list of locales.",
+            "usage": "[\"userset\"|\"serverset\"] [locale]"
         },
         "donate": {
             "description": "Get the donation links for the developer."
@@ -275,7 +276,15 @@
         },
         "listarchive": {
             "description": "Lists all the archived lists in the current board.",
-            "usage": "<listName|listID> [page]"
+            "usage": "[page]"
+        },
+        "card": {
+            "description": "Gets information about a specific card.",
+            "usage": "<cardName|cardID>"
+        },
+        "cardarchive": {
+            "description": "Lists all the archived cards in the current board.",
+            "usage": "[page]"
         }
     },
     "boards": {
@@ -351,8 +360,20 @@
         "title": "Information about {{&username}}'s Shards"
     },
     "locale": {
-        "start": "Available Locales:",
-        "footer": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` to set locale."
+        "start": "Available Locales",
+        "footer": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` to set locale.",
+        "unset": "Unset",
+        "choose": "Type the number of the locale you want to set to.",
+        "header": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` to set locale.",
+        "unset_l": "Unset locale",
+        "no_arg": "Provide the code or name of the lanugage you want to set!",
+        "user_locale": "User locale: {{&locale}}",
+        "server_locale": "Server locale: {{&locale}}",
+        "user_set": "Set the user locale to **{{&name}}**.",
+        "server_set": "Set the server's locale to **{{&name}}**.",
+        "user_unset": "Unset the user locale.",
+        "server_unset": "Unset the server's locale.",
+        "no_guild": "You are not running the command in a guild!"
     },
     "bad_args": "Not enough arguments!",
     "categories": {
