@@ -56,7 +56,9 @@
         "user_locale": "Sprog for bruger: {{&locale}}",
         "server_locale": "Sprog for server: {{&locale}}",
         "header": "`{{&prefix}}locale setuser [locale]` eller `{{&prefix}}locale setserver [locale]` for at sætte sprog.",
-        "user_set": "Satte brugerens sprog til **{{&name}}**."
+        "user_set": "Satte brugerens sprog til **{{&name}}**.",
+        "user_unset": "Fjern sprogindstillingerne for bruger.",
+        "server_unset": "Fjern serverens sprogindstillinger."
     },
     "words": {
         "mem_usage": "Brug af hukommelse",
@@ -173,6 +175,10 @@
         "pref": {
             "one": "Præference",
             "many": "Præferencer"
+        },
+        "prefix": {
+            "one": "Præfiks",
+            "many": "Præfikser"
         }
     },
     "trello": {
@@ -192,7 +198,8 @@
         },
         "products": {
             "38": "🌟 Årlig Trello guld",
-            "37": "⭐ Månedlig Trello guld"
+            "37": "⭐ Månedlig Trello guld",
+            "10": "💼 Trello guld fra Business Class"
         },
         "self_join": "Tillad teammedlemmer at redigere og tilslutte sig",
         "invite_perms": {
@@ -205,7 +212,8 @@
         "subbed": "Overvåget",
         "perm_levels": {
             "public": "Offentlig",
-            "private": "Privat"
+            "private": "Privat",
+            "org": "Team synlig"
         },
         "comment_perms": {
             "disabled": "Deaktiveret",
@@ -227,7 +235,13 @@
         "card_age": {
             "regular": "Regelmæssig",
             "pirate": "Pirat"
-        }
+        },
+        "due": "Forfald",
+        "locale": "Sprogindstillinger (på Trello)",
+        "card_aging": "Aldring af kort",
+        "marketing": "Marketing e-mails (tilmeldelse)",
+        "starred": "Stjernemarkeret",
+        "card_covers": "Billeder af kortomslag"
     },
     "format": {
         "second": {
@@ -242,7 +256,8 @@
         "view": "Visning",
         "edit": "Redigering",
         "hidden": "Skjult",
-        "misc": "Diverse"
+        "misc": "Diverse",
+        "webhook": "Webhooks"
     },
     "commands": {
         "board": {
@@ -255,13 +270,17 @@
             "description": "Pong!"
         },
         "help": {
-            "description": "Viser hjælpebesked og giver oplysninger om kommandoer."
+            "description": "Viser hjælpebesked og giver oplysninger om kommandoer.",
+            "usage": "[kommando]"
         },
         "asynceval": {
-            "description": "Evaluerer kode asynkront."
+            "description": "Evaluerer kode asynkront.",
+            "usage": "<kode>",
+            "note": "Grundet den tilføjede asynkrone IIFE indpakning er det nødvendigt at bruge et return statement for at returnere et resultat. F.eks. `{{&cleanPrefix}}aeval return 1`"
         },
         "eval": {
-            "description": "Evaluerer kode."
+            "description": "Evaluerer kode.",
+            "usage": "<kode>"
         },
         "reload": {
             "description": "Genindlæs kommandoer."
@@ -270,7 +289,8 @@
             "description": "???"
         },
         "card": {
-            "description": "Får oplysninger om et bestemt kort."
+            "description": "Får oplysninger om et bestemt kort.",
+            "usage": "<kortnavn|kortID>"
         },
         "info": {
             "description": "Få oplysninger om botten."
@@ -279,13 +299,67 @@
             "description": "Sender bottens invitationslink."
         },
         "reloadone": {
-            "description": "Genindlæs enkelte kommandoer."
+            "description": "Genindlæs enkelte kommandoer.",
+            "usage": "<kommandonavn> [kommandonavn]…"
         },
         "me": {
             "description": "Se oplysninger om din Trellokonto."
         },
         "shardinfo": {
             "description": "Giver statistikkerne for hver instans."
+        },
+        "watchlist": {
+            "usage": "<listenavn|listeID>"
+        },
+        "exec": {
+            "description": "Udnytter `child_process.exec`.",
+            "usage": "<kommando>…"
+        },
+        "list": {
+            "description": "Lister alle kortene i den liste.",
+            "usage": "<listenavn|listeID> {side]"
+        },
+        "listarchive": {
+            "description": "Lister alle de arkiverede lister i den aktuelle tavle.",
+            "usage": "[side]"
+        },
+        "serverinvite": {
+            "description": "Få invitationslinket til supportserveren."
+        },
+        "switch": {
+            "usage": "<tavleID|tavlenavn>"
+        },
+        "boards": {
+            "description": "Lister alle de tavler du kan administrere.",
+            "usage": "[side]"
+        },
+        "cardarchive": {
+            "description": "Lister alle de arkiverede kort i den aktuelle tavle.",
+            "usage": "[side]"
+        },
+        "lists": {
+            "usage": "[side]"
+        },
+        "watchcard": {
+            "usage": "<kortnavn|kortID>"
+        },
+        "auth": {
+            "description": "Få authoriserings linket til at forbinde din Discordkonto med din Trellokonto."
+        },
+        "donate": {
+            "description": "Få donationslinksne til udvikleren."
+        },
+        "github": {
+            "description": "Sender linket til bottens kildekode."
+        },
+        "reloadlocale": {
+            "description": "Genindlæs landestandsfiler."
+        },
+        "prefix": {
+            "description": "Lader dig sætte præfikser for dig eller serveren."
+        },
+        "locale": {
+            "description": "Lader dig sætte sprogindstillingerne for dig eller serveren. Kør med ingen argumenter for en liste over sprogindstillinger."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -298,15 +372,21 @@
         "switch": "Skiftet til \"{{&name}}\" (`{{&id}}`).",
         "header": "Brug `{{&cleanPrefix}}switch <boardID|boardName>` for at springe mellem tavler.",
         "gone": "Denne tavle findes ikke længere! Skift til en anden en med `{{&cleanPrefix}}switch`!",
-        "none": "Du er ikke tildelt nogen tavle."
+        "none": "Du er ikke tildelt nogen tavle.",
+        "choose": "Indtast nummeret på den tavle du ønsker at bruge."
     },
     "cards": {
         "none": "Denne tavle har ingen kort.",
         "arch_none": "Denne tavle har ingen arkiverede kort.",
-        "arch_header": "Brug `{{&cleanPrefix}}opencard <listID|listName>` for at åbne et kort."
+        "arch_header": "Brug `{{&cleanPrefix}}opencard <listID|listName>` for at åbne et kort.",
+        "choose": "Indtast nummeret på det kort du ønsker at bruge.",
+        "error": "Jeg kunne ikke hente data for kortet! Med mindre nogen slettede før anmodningen blev lavet, må det være en fejl på Trellos side!"
     },
     "prompt": {
-        "no_search": "Der kom ikke nogen resultater ud af den søgning."
+        "no_search": "Der kom ikke nogen resultater ud af den søgning.",
+        "timeout": "Din tidligere meddelelse udløb.",
+        "choose": "Indtast nummeret på det emne du ønsker at bruge.",
+        "cancel": "Skriver du \"cancel\" vil denne besked blive lukket."
     },
     "lists": {
         "list_header": "Brug `{{&cleanPrefix}}card <cardID|cardName>` for at få oplysninger om et kort.",
@@ -314,7 +394,8 @@
         "none": "Denne tavle har ingen lister.",
         "list_none": "Denne liste har ingen kort.",
         "arch_none": "Denne tavle har ingen arkiverede lister.",
-        "arch_header": "Brug `{{&cleanPrefix}}openlist <listID|listName>` for at åbne en liste."
+        "arch_header": "Brug `{{&cleanPrefix}}openlist <listID|listName>` for at åbne en liste.",
+        "choose": "Indtast nummeret på den liste du ønsker at bruge."
     },
     "info": {
         "faux": "Denne bot bruger en ændret version af [Faux](https://github.com/Snazzah/Faux).",
@@ -331,5 +412,45 @@
     },
     "bad_args": "For få argumenter!",
     "cooldown_msg": "Denne kommando skal køle ned! *({{seconds}})*",
-    "and_more": "Og {{count}} mere…"
+    "and_more": "Og {{count}} mere…",
+    "prefix": {
+        "added": "Tilføjede `{{&prefix}}` som et præfiks.",
+        "no_arg": "Angiv det præfiks du ønsker at tilføje!",
+        "can_add": {
+            "one": "Du kan tilføje {{count}} mere præfiks.",
+            "many": "Du kan tilføje {{count}} flere præfikser.",
+            "zero": "Du kan ikke tilføje flere præfikser."
+        },
+        "server": "Serverpræfiks",
+        "no_arg_server": "Angiv det præfiks du ønsker at sætte for serveren!",
+        "footer": "Præfikser med 🔒 ikonet kan ikke fjernes.",
+        "set_server": "Satte serverens præfiks til at være `{{&prefix}}`.",
+        "choose": "Indtast nummeret på det præfiks du ønsker at slette.",
+        "limit": "Du har for mange præfikser! Fjern mindst en for at kunne tilføje flere!",
+        "mention": "Du kan ikke have omtaler i et præfiks!",
+        "none": "Du har ingen præfikser at fjerne!",
+        "already": "Dette præfiks findes allerede!",
+        "removed": "Fjernede `{{&prefix}}` som et præfiks.",
+        "char_limit": "Præfikser kan ikke være længere end 32 tegn!"
+    },
+    "user_mgmt": {
+        "unsub_card": "Overvåger ikke længere kortet \"{{&name}}\". (`{{id}}`)",
+        "sub_list": "Overvåger nu listen \"{{&name}}\". (`{{id}}`)",
+        "unsub_list": "Overvåger ikke længere \"{{&name}}\". (`{{id}}`)",
+        "sub_board": "Overvåger nu tavlen \"{{&name}}\". (`{{id}}`)",
+        "sub_card": "Overvåger nu kortet \"{{&name}}\". (`{{id}}`)",
+        "star_board": "Oprettede stjerne for tavlen \"{{&name}}\". (`{{id}}`)",
+        "star_error": "Tavlens stjerne blev ikke fundet! Prøv igen senere!",
+        "unstar_board": "Fjernede stjernen for tavlen \"{{&name}}\". (`{{id}}`)",
+        "unsub_board": "Overvåger ikke længere tavlen \"{{&name}}\". (`{{id}}`)"
+    },
+    "command_permissions": {
+        "discordAuth": "Du har ikke autoriseret din Trellokonto med Discord!\nAutoriser med `{{&cleanPrefix}}auth` kommandoen!",
+        "embed": "Jeg behøver `Indbyg links` tilladelsen for at kunne bruge denne kommando!",
+        "emoji": "Jeg behøver `Brug eksterne emojis` tilladelsen for at kunne bruge denne kommando!",
+        "auth": "Du har ikke autoriseret din Trellokonto med Discord!\nAutoriser med `{{&cleanPrefix}}auth` kommandoen!",
+        "attach": "Jeg behøver `Vedhæft filer` tilladelsen for at kunne bruge denne kommando!",
+        "selectedBoard": "Der er ikke blevet valgt nogen tavle!\nVælg en tavle med `{{&cleanPrefix}}switch` kommandoen!",
+        "trelloRole": "Denne kommando kræver du er ejeren af serveren eller du har en rolle der hedder `Trello`!"
+    }
 }
