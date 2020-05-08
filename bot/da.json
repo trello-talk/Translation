@@ -276,7 +276,7 @@
         "asynceval": {
             "description": "Evaluerer kode asynkront.",
             "usage": "<kode>",
-            "note": "Grundet den tilføjede asynkrone IIFE indpakning er det nødvendigt at bruge et return statement for at returnere et resultat. F.eks. `{{&cleanPrefix}}aeval return 1`"
+            "note": "Grundet den tilføjede asynkrone IIFE indpakning er det nødvendigt at bruge et return statement for at returnere et resultat. \nF.eks. `{{&cleanPrefix}}aeval return 1`"
         },
         "eval": {
             "description": "Evaluerer kode.",
@@ -309,7 +309,8 @@
             "description": "Giver statistikkerne for hver instans."
         },
         "watchlist": {
-            "usage": "<listenavn|listeID>"
+            "usage": "<listenavn|listeID>",
+            "description": "Ændre overvågning af en liste."
         },
         "exec": {
             "description": "Udnytter `child_process.exec`.",
@@ -327,7 +328,8 @@
             "description": "Få invitationslinket til supportserveren."
         },
         "switch": {
-            "usage": "<tavleID|tavlenavn>"
+            "usage": "<tavleID|tavlenavn>",
+            "description": "Vælger en tavle at bruge for andre kommandoer. Brug `{{&cleanPrefix}}boards` kommandoen for at se hvilke tavler du kan vælge."
         },
         "boards": {
             "description": "Lister alle de tavler du kan administrere.",
@@ -338,10 +340,12 @@
             "usage": "[side]"
         },
         "lists": {
-            "usage": "[side]"
+            "usage": "[side]",
+            "description": "Lister alle de åbne lister af den aktuelle tavle. Du kan se arkivet over lister med `{{&cleanPrefix}}listarchive`."
         },
         "watchcard": {
-            "usage": "<kortnavn|kortID>"
+            "usage": "<kortnavn|kortID>",
+            "description": "Ændre overvågning af kort."
         },
         "auth": {
             "description": "Få authoriserings linket til at forbinde din Discordkonto med din Trellokonto."
@@ -356,17 +360,28 @@
             "description": "Genindlæs landestandsfiler."
         },
         "prefix": {
-            "description": "Lader dig sætte præfikser for dig eller serveren."
+            "description": "Lader dig sætte præfikser for dig eller serveren.",
+            "usage": "[\"set\"|\"add\"|\"remove\"] [præfiks]"
         },
         "locale": {
-            "description": "Lader dig sætte sprogindstillingerne for dig eller serveren. Kør med ingen argumenter for en liste over sprogindstillinger."
+            "description": "Lader dig sætte sprogindstillingerne for dig eller serveren. Kør med ingen argumenter for en liste over sprogindstillinger.",
+            "usage": "[\"userset\"|\"serverset\"] [locale]"
+        },
+        "star": {
+            "usage": "[tavleNavn|tavleID]",
+            "description": "Ændrer stjernemarkeringen af en tavle. Hvis der ikke er defineret en tavle, vil den aktuelle tavle blive vist. Stjernemarkerede tavle vil blive vist i toppen af din tavleliste på Trello.com."
+        },
+        "watch": {
+            "usage": "{tavleNavn|tavleID]",
+            "description": "Ændre overvågning af en tavle. Hvis ingen tavle er defineret, vil den aktuelle tavle blive brugt."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
     "trello_response": {
         "aborted": "Trello var for længe om at svare! Prøv igen senere!",
         "ratelimit": "For mange anmodninger bliver sendt! Prøv igen senere!",
-        "internal": "Der opstod en intern serverfejl hos Trello! Prøv igen senere!"
+        "internal": "Der opstod en intern serverfejl hos Trello! Prøv igen senere!",
+        "unauthorized": "Den sidste nøgle der blev brugt er blevet ugyldiggjort eller tilbage trukket! Genautoriser med `{{&cleanPrefix}}auth` kommandoen!"
     },
     "boards": {
         "switch": "Skiftet til \"{{&name}}\" (`{{&id}}`).",
@@ -386,7 +401,8 @@
         "no_search": "Der kom ikke nogen resultater ud af den søgning.",
         "timeout": "Din tidligere meddelelse udløb.",
         "choose": "Indtast nummeret på det emne du ønsker at bruge.",
-        "cancel": "Skriver du \"cancel\" vil denne besked blive lukket."
+        "cancel": "Skriver du \"cancel\" vil denne besked blive lukket.",
+        "list": "Listeprompt"
     },
     "lists": {
         "list_header": "Brug `{{&cleanPrefix}}card <cardID|cardName>` for at få oplysninger om et kort.",
@@ -451,6 +467,7 @@
         "auth": "Du har ikke autoriseret din Trellokonto med Discord!\nAutoriser med `{{&cleanPrefix}}auth` kommandoen!",
         "attach": "Jeg behøver `Vedhæft filer` tilladelsen for at kunne bruge denne kommando!",
         "selectedBoard": "Der er ikke blevet valgt nogen tavle!\nVælg en tavle med `{{&cleanPrefix}}switch` kommandoen!",
-        "trelloRole": "Denne kommando kræver du er ejeren af serveren eller du har en rolle der hedder `Trello`!"
+        "trelloRole": "Denne kommando kræver du er ejeren af serveren eller du har en rolle der hedder `Trello`!",
+        "elevated": "Kun de hævede brugere af botten kan bruge denne kommando!"
     }
 }
