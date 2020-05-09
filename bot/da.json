@@ -312,7 +312,7 @@
         },
         "reloadone": {
             "description": "Genindlæs enkelte kommandoer.",
-            "usage": "<kommandonavn> [kommandonavn]…"
+            "usage": "<kommandonavn> [kommandonavn] …"
         },
         "me": {
             "description": "Se oplysninger om din Trellokonto."
@@ -326,7 +326,7 @@
         },
         "exec": {
             "description": "Udnytter `child_process.exec`.",
-            "usage": "<kommando>…"
+            "usage": "<kommando> …"
         },
         "list": {
             "description": "Lister alle kortene i den liste.",
@@ -388,11 +388,11 @@
             "description": "Ændre overvågning af en tavle. Hvis ingen tavle er defineret, vil den aktuelle tavle blive brugt."
         },
         "editlist": {
-            "usage": "[listenavn|listeID] [underkommando]…",
+            "usage": "[listenavn|listeID] [underkommando] …",
             "description": "Rediger en listes egenskaber. Tjek bemærkningen for underkommandoer og benyttelse."
         },
         "editboard": {
-            "usage": "[underkommando]…"
+            "usage": "[underkommando] …"
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
