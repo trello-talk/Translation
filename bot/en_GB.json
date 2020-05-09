@@ -130,6 +130,14 @@
         "arch_board": {
             "one": "Archived Board",
             "many": "Archived Boards"
+        },
+        "opt": {
+            "one": "Option",
+            "many": "Options"
+        },
+        "member_type": {
+            "one": "Member Type",
+            "many": "Member Types"
         }
     },
     "format": {
@@ -204,6 +212,10 @@
             "sky": "Sky Blue",
             "pink": "Pink",
             "black": "Black"
+        },
+        "member_type": {
+            "admin": "Admin",
+            "normal": "Normal"
         }
     },
     "commands": {
@@ -323,7 +335,7 @@
             "usage": "[cardName|cardID]"
         },
         "editcard": {
-            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's descriptionn\n`removedesc` - Removes the card's description",
+            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's description\n`removedesc` - Removes the card's description\n`duedone` - Toggles the card due date's completion\n`removedue` - Removes the card's due date",
             "description": "Edit a card's properties. Check the note for sub-commands and usages.",
             "usage": "[cardName|cardID] [subcommand] …"
         },
@@ -335,7 +347,7 @@
         "editboard": {
             "description": "Edit the current board's properties. Check the note for sub-commands and usages.",
             "usage": "[subcommand] …",
-            "note": "`name [newName]` - Rename the board (board admin)\n`archive`, `unarchive` - Toggles the board archive (board admin)\n`desc [newDescription]` - Sets the board's descriptionn\n`removedesc` - Removes the board's description"
+            "note": "`name [newName]` - Rename the board (board admin)\n`archive`, `unarchive` - Toggles the board archive (board admin)\n`desc [newDescription]` - Sets the board's description\n`removedesc` - Removes the board's description\n`commentperms` - Change commenting permissions (board admin)\n`voteperms` - Change voting permissions (board admin)\n`inviteperms` - Change invitation permissions (board admin)"
         },
         "addcard": {
             "description": "Creates a card.",
@@ -348,6 +360,10 @@
         "addlist": {
             "description": "Creates a list on the current board.",
             "usage": "[name]"
+        },
+        "comment": {
+            "description": "Comment on a card in the current board.",
+            "usage": "[cardName|cardID] [comment]"
         }
     },
     "boards": {
@@ -367,14 +383,20 @@
             "desc": "Edit board description",
             "remove_desc": "Remove board description",
             "sub_on": "Watch this board",
-            "sub_off": "Stop watching this board"
+            "sub_off": "Stop watching this board",
+            "comment": "Change comment permissions ({{&value}})",
+            "vote": "Change voting permissions ({{&value}})",
+            "invite": "Change add/remove member permissions ({{&value}})"
         },
         "set_name": "Renamed board from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the board to.",
         "archived": "Archived board \"{{&name}}\".",
         "set_desc": "Set the board description for \"{{&name}}\".",
         "input_desc": "Type the new description for the board.",
-        "removed_desc": "Removed the board description for \"{{&name}}\"."
+        "removed_desc": "Removed the board description for \"{{&name}}\".",
+        "set_comment_perms": "Set commenting permissions to {{&value}}.",
+        "set_invite_perms": "Set invite permissions to {{&value}}.",
+        "set_vote_perms": "Set voting permissions to {{&value}}."
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
     "command_permissions": {
@@ -507,7 +529,10 @@
             "desc": "Edit card description",
             "remove_desc": "Remove card description",
             "sub_on": "Watch this card",
-            "sub_off": "Stop watching this card"
+            "sub_off": "Stop watching this card",
+            "due_on": "Mark due date as complete",
+            "remove_due": "Remove due date",
+            "due_off": "Mark due date as incomplete"
         },
         "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the card to.",
@@ -517,7 +542,12 @@
         "removed_desc": "Removed the card description for \"{{&name}}\".",
         "created": "Created card \"{{&name}}\". (`{{id}}`)",
         "remove_confirm": "Are you sure you want to delete \"{{&name}}\"? (`{{id}}`)",
-        "removed": "Deleted card \"{{&name}}\". (`{{id}}`)"
+        "removed": "Deleted card \"{{&name}}\". (`{{id}}`)",
+        "due_off": "Marked due date as incomplete for card \"{{&name}}\".",
+        "removed_due": "Removed the due date for card \"{{&name}}\".",
+        "due_on": "Marked due date as complete for card \"{{&name}}\".",
+        "input_comment": "Type the message you want to comment on the card.",
+        "commented": "Created a comment on \"{{&name}}\"."
     },
     "lists": {
         "arch_none": "This board has no archived lists.",
