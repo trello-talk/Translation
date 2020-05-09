@@ -59,6 +59,10 @@
             "sky": "Azul Céu",
             "pink": "Rosa",
             "black": "Preto"
+        },
+        "member_type": {
+            "normal": "Normal",
+            "admin": "Admin"
         }
     },
     "ping": {
@@ -243,6 +247,14 @@
         "subcmd": {
             "one": "Sub Comando",
             "many": "Sub Comandos"
+        },
+        "opt": {
+            "one": "Opção",
+            "many": "Opções"
+        },
+        "member_type": {
+            "one": "Tipo de Membro",
+            "many": "Tipos de Membros"
         }
     },
     "shardinfo": {
@@ -421,7 +433,7 @@
         "editcard": {
             "description": "Edita as propriedades de um cartão. Verifique a nota para sub comandos e usos.",
             "usage": "[nomeDoCartão|idDoCartão] [sub comando] …",
-            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão"
+            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão\n`duedone` -  Altera a data de vencimento do cartão\n`removedue` - Remove a data de vencimento do cartão"
         },
         "addcard": {
             "description": "Cria um cartão.",
