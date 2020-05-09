@@ -457,7 +457,11 @@
         "input_canceled": "Your last input was canceled.",
         "confirm": "Are you sure you want to do this?",
         "no_confirm": "Confirmation canceled.",
-        "cancel_confirm": "Type `yes` to confirm. Any other message will cancel the confirmation."
+        "cancel_confirm": "Type `yes` to confirm. Any other message will cancel the confirmation.",
+        "select": "Type the number of the item to toggle its value.",
+        "select_cancel": "Type \"save\" to save the selection, otherwise type \"cancel\" to exit.",
+        "select_canceled": "Your last prompt was canceled. All changes have been lost.",
+        "select_timeout": "Your last prompt was timed out. All changes have been lost."
     },
     "boards": {
         "none": "You are not assigned to any boards.",
