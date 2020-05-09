@@ -164,7 +164,7 @@
             "description": "Obțineti linkul de autentificare pentru a conecta contul Discord la contul dvs. Trello."
         },
         "exec": {
-            "usage": "<comanda>…",
+            "usage": "<comanda> …",
             "description": "Utilizeaza `child_process.exec`."
         },
         "reload": {
@@ -175,7 +175,7 @@
         },
         "reloadone": {
             "description": "Reincarcati comenzile singulare.",
-            "usage": "<numele comenzi>[numele comenzi]…"
+            "usage": "<numele comenzi>[numele comenzi] …"
         },
         "restart": {
             "description": "Restarteaza botul."
