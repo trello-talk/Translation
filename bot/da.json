@@ -417,7 +417,13 @@
         "error": "Jeg kunne ikke hente data for kortet! Med mindre nogen slettede før anmodningen blev lavet, må det være en fejl på Trellos side!",
         "removed": "Slettede kortet \"{{&name}}\". (`{{id}}`)",
         "set_desc": "Sæt kortbeskrivelsen for \"{{&name}}\".",
-        "unarchived": "Fjernede kortet \"{{&name}}\" fra arkivet."
+        "unarchived": "Fjernede kortet \"{{&name}}\" fra arkivet.",
+        "archived": "Arkiverede kortet \"{{&name}}\".",
+        "created": "Oprettede kortet \"{{&name}}\". (`{{id}}`)",
+        "input_new": "Indtast navnet på det kort du ønsker at tilføje.",
+        "removed_desc": "Fjernede kortbeskrivelsen for \"{{&name}}\".",
+        "input_desc": "Indtast ny beskrivelse for kortet.",
+        "remove_confirm": "Er du sikker på du vil slette \"{{&name}}\"? (`{{id}}`)"
     },
     "prompt": {
         "no_search": "Der kom ikke nogen resultater ud af den søgning.",
