@@ -480,7 +480,11 @@
         "input": "Type the message you want to input.",
         "input_canceled": "Your last input was canceled.",
         "confirm": "Are you sure you want to do this?",
-        "no_confirm": "Confirmation canceled."
+        "no_confirm": "Confirmation canceled.",
+        "select_timeout": "Your last prompt was timed out. All changes have been lost.",
+        "select_canceled": "Your last prompt was canceled. All changes have been lost.",
+        "select_cancel": "Type \"save\" to save the selection, otherwise type \"cancel\" to exit.",
+        "select": "Type the number of the item to toggle its value."
     },
     "reloadone": {
         "invalid": "Invalid command!",
