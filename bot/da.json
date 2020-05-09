@@ -191,6 +191,14 @@
         "subcmd": {
             "one": "Underkommando",
             "many": "Underkommandoer"
+        },
+        "member_type": {
+            "one": "Medlemstype",
+            "many": "Medlemstyper"
+        },
+        "opt": {
+            "one": "Indstilling",
+            "many": "Indstillinger"
         }
     },
     "trello": {
@@ -253,7 +261,11 @@
         "card_aging": "Aldring af kort",
         "marketing": "Marketing e-mails (tilmeldelse)",
         "starred": "Stjernemarkeret",
-        "card_covers": "Billeder af kortomslag"
+        "card_covers": "Billeder af kortomslag",
+        "member_type": {
+            "admin": "Administrator",
+            "normal": "Normal"
+        }
     },
     "format": {
         "second": {
