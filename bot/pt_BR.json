@@ -316,7 +316,7 @@
         },
         "exec": {
             "description": "Utilize `child_process.exec`.",
-            "usage": "<comando>…"
+            "usage": "<comando> …"
         },
         "reload": {
             "description": "Recarrega os Comandos."
@@ -410,12 +410,12 @@
         },
         "editboard": {
             "note": "`name [novoNome]` - Renomear o quadro (administrador do quadro)\n`archive`, `unarchive` - Alterar o estado de arquivamento do quadro (administrador do quadro)\n`desc [novaDescrição]` - Definir descrição para o quadro\n`removedesc` - Remover a descrição do quadro",
-            "usage": "[sub comando]…",
+            "usage": "[sub comando] …",
             "description": "Editar as propriedades do quadro atual. Verifique a nota para sub comandos e usos."
         },
         "editlist": {
             "description": "Edita a lista de propriedades. Verifique a nota para sub comandos e usos.",
-            "usage": "[nomeDaLista|idDaLista] [sub comando]…",
+            "usage": "[nomeDaLista|idDaLista] [sub comando] …",
             "note": "`nome [novoNome]` - Renomeia a Lista\n`archive`, `unarchive` - Altera o arquivamento da lista"
         },
         "editcard": {
