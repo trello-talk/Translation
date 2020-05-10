@@ -58,12 +58,26 @@
             "blue": "Azul",
             "sky": "Azul Céu",
             "pink": "Rosa",
-            "black": "Preto"
+            "black": "Preto",
+            "none": "Sem Cor"
         },
         "member_type": {
             "normal": "Normal",
             "admin": "Admin"
-        }
+        },
+        "prev_list": "Lista Anterior",
+        "new_name": "Novo Nome",
+        "from_board": "Do Quadro",
+        "old_desc": "Descrição Antiga",
+        "new_desc": "Nova Descrição",
+        "curr_list": "Lista Atual",
+        "old_name": "Nome Antigo",
+        "old_comment": "Comentário Antigo",
+        "new_comment": "Comentário Novo",
+        "old_due": "Data de Entrega Antiga",
+        "new_due": "Data de Entrega Nova",
+        "item_src": "Fonte do Item",
+        "to_board": "Para o Quadro"
     },
     "ping": {
         "message": "Pong!",
@@ -255,6 +269,10 @@
         "member_type": {
             "one": "Tipo de Membro",
             "many": "Tipos de Membros"
+        },
+        "checklist_item": {
+            "one": "Item da Checklist",
+            "many": "Itens da Checklist"
         }
     },
     "shardinfo": {
@@ -421,7 +439,7 @@
             "usage": "[página]"
         },
         "editboard": {
-            "note": "`name [novoNome]` - Renomear o quadro (administrador do quadro)\n`archive`, `unarchive` - Alterar o estado de arquivamento do quadro (administrador do quadro)\n`desc [novaDescrição]` - Definir descrição para o quadro\n`removedesc` - Remover a descrição do quadro",
+            "note": "`name [novoNome]` - Renomear o quadro (administrador do quadro)\n`archive`, `unarchive` - Alterar o estado de arquivamento do quadro (administrador do quadro)\n`desc [novaDescrição]` - Definir descrição para o quadro\n`removedesc` - Remover a descrição do quadro\n`commentperms` - Altera as permissões de comentário (administrador do quadro)\n`voteperms` - Altera as permissões de votação (administrador do quadro)\n`inviteperms` - Altera as permissões de convite (administrador do quadro)",
             "usage": "[sub comando] …",
             "description": "Editar as propriedades do quadro atual. Verifique a nota para sub comandos e usos."
         },
@@ -433,7 +451,7 @@
         "editcard": {
             "description": "Edita as propriedades de um cartão. Verifique a nota para sub comandos e usos.",
             "usage": "[nomeDoCartão|idDoCartão] [sub comando] …",
-            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão\n`duedone` -  Altera a data de vencimento do cartão\n`removedue` - Remove a data de vencimento do cartão"
+            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão\n`duedone` - Altera a data de vencimento do cartão\n`removedue` - Remove a data de vencimento do cartão"
         },
         "addcard": {
             "description": "Cria um cartão.",
@@ -446,6 +464,13 @@
         "addlist": {
             "description": "Cria uma lista no quadro atual.",
             "usage": "[nome]"
+        },
+        "reloadwebserver": {
+            "description": "Reinicia o webserver."
+        },
+        "comment": {
+            "description": "Comenta em um cartão do quadro atual.",
+            "usage": "[nomeDoCartão|idDoCartão] [comentário]"
         }
     },
     "_": {
@@ -469,7 +494,11 @@
         "cancel_confirm": "Digite `yes`para confirmar. Qualquer outra mensagem irá cancelar a confirmação.",
         "input": "Digite a mensagem que deseja inserir.",
         "cancel_input": "Digitando \"{{&cancelPrompt}}\" você cancelará a entrada.",
-        "input_canceled": "Sua última entrada foi cancelada."
+        "input_canceled": "Sua última entrada foi cancelada.",
+        "select": "Digite o número do item para alterar o valor.",
+        "select_cancel": "Digite \"save\" para salvar a seleção, ou digite \"cancel\" para sair.",
+        "select_canceled": "Seu último prompt foi cancelado. Todas as alterações foram perdidas.",
+        "select_timeout": "Seu último prompt atingiu o tempo limite. Todas as alterações foram perdidas."
     },
     "boards": {
         "header": "Use `{{&cleanPrefix}}switch <idDoQuadro|nomeDoQuadro>` para alternar entre quadros.",
@@ -509,7 +538,10 @@
             "sub_on": "Acompanhar esse cartão",
             "sub_off": "Parar de acompanhar esse cartão",
             "name": "Editar nome do cartão",
-            "archive_on": "Arquivar cartão"
+            "archive_on": "Arquivar cartão",
+            "remove_due": "Remover data de entrega",
+            "due_on": "Marcar a data de entrega como completa",
+            "due_off": "Marcar a data de entrega como incompleta"
         },
         "set_name": "Cartão renomeado de \"{{&old}}\" para \"{{&new}}\".",
         "input_name": "Digite um novo nome para o cartão.",
@@ -522,7 +554,12 @@
         "remove_confirm": "Você tem certeza que deseja deletar o cartão \"{{&name}}\"? (`{{id}}`)",
         "removed": "Cartão \"{{&name}}\" deletado. (`{{id}}`)",
         "input_desc": "Digite uma nova descrição para o cartão.",
-        "wywtd": "Escolha o que você deseja fazer com esse cartão."
+        "wywtd": "Escolha o que você deseja fazer com esse cartão.",
+        "due_on": "Data de entrega marcada como completa para o cartão \"{{&name}}\".",
+        "removed_due": "Data de entrega removida do cartão \"{{&name}}\".",
+        "due_off": "Data de entrega marcada como incompleta para o cartão \"{{&name}}\".",
+        "input_comment": "Digite a mensagem que você deseja comentar no cartão.",
+        "commented": "Comentário criado em \"{{&name}}\"."
     },
     "lists": {
         "none": "Esse quadro não possui listas.",
@@ -579,5 +616,17 @@
         "star_error": "O quadro com estrela não foi encontrado! Tente novamente mais tarde!"
     },
     "and_more": "E {{count}} mais…",
-    "error": "Um erro ocorreu enquanto processava este comando!"
+    "error": "Um erro ocorreu enquanto processava este comando!",
+    "reloadwebserver": {
+        "no": "Não existe nenhum webserver nesta instância!",
+        "done": "Webserver reiniciado.",
+        "reloading": "Reiniciando webserver…"
+    },
+    "webhooks": {
+        "commented": "{{&member}} comentou no cartão \"{{&card}}\"",
+        "unarchive_board": "{{&member}} desarquivou o quadro",
+        "archive_board": "{{&member}} arquivou o quadro",
+        "copy_card": "{{&member}} copiou o conteúdo do cartão \"{{&sourceCard}}\" para o cartão \"{{&card}}\"",
+        "copy_checklist": "{{&member}} copiou o conteúdo da checklist \"{{&sourceChecklist}}\" para a checklist \"{{&checklist}}\""
+    }
 }
