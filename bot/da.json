@@ -265,7 +265,13 @@
         "member_type": {
             "admin": "Administrator",
             "normal": "Normal"
-        }
+        },
+        "old_desc": "Gammel beskrivelse",
+        "curr_list": "Aktuelle liste",
+        "new_desc": "Ny beskrivelse",
+        "prev_list": "Tidligere liste",
+        "old_name": "Gammelt navn",
+        "new_name": "Nyt navn"
     },
     "format": {
         "second": {
@@ -523,5 +529,9 @@
         "selectedBoard": "Der er ikke blevet valgt nogen tavle!\nVælg en tavle med `{{&cleanPrefix}}switch` kommandoen!",
         "trelloRole": "Denne kommando kræver du er ejeren af serveren eller du har en rolle der hedder `Trello`!",
         "elevated": "Kun de hævede brugere af botten kan bruge denne kommando!"
+    },
+    "reloadwebserver": {
+        "no": "Der er ingen webserver på denne instans!",
+        "reloading": "Genstarter webserver…"
     }
 }
