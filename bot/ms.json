@@ -9,7 +9,8 @@
         "github": "Inilah pautan ke kod sumber saya:"
     },
     "_": {
-        "name": "Bahasa Inggeris (Amerika Syarikat)"
+        "name": "Bahasa Melayu",
+        "emoji": "my"
     },
     "ping": {
         "message": "Pong!"
