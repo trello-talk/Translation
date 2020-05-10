@@ -1,1 +1,17 @@
-{}
+{
+    "reloadone": {
+        "invalid": "Perintah tidak sah!"
+    },
+    "responses": {
+        "hangman": "Saya bukan bot permainan."
+    },
+    "links": {
+        "github": "Inilah pautan ke kod sumber saya:"
+    },
+    "_": {
+        "name": "Bahasa Inggeris (Amerika Syarikat)"
+    },
+    "ping": {
+        "message": "Pong!"
+    }
+}
