@@ -16,6 +16,11 @@
         "file": "A file that had a specified command no longer exists!",
         "done": "Reloaded {{&commands}}."
     },
+    "reloadwebserver": {
+        "no": "There is no webserver on this instance!",
+        "reloading": "Restarting webserver…",
+        "done": "Webserver restarted."
+    },
     "responses": {
         "restart": "Restarting shard…",
         "hangman": "I'm not a game bot.",
@@ -148,6 +153,10 @@
             "one": "Checklist",
             "many": "Checklists"
         },
+        "checklist_item": {
+            "one": "Checklist Item",
+            "many": "Checklist Items"
+        },
         "attachment": {
             "one": "Attachment",
             "many": "Attachments"
@@ -231,6 +240,21 @@
         "last_act": "Last Activity",
         "add_rem_members": "Add/Remove Members",
         "archived_lower": "archived",
+        "old_desc": "Old Description",
+        "new_desc": "New Description",
+        "prev_list": "Previous List",
+        "curr_list": "Current List",
+        "old_name": "Old Name",
+        "new_name": "New Name",
+        "old_comment": "Old Comment",
+        "new_comment": "New Comment",
+        "old_due": "Old Due Date",
+        "new_due": "New Due Date",
+        "one_chkitem_name": "Old Checklist Item Name",
+        "one_chklist_name": "Old Checklist Name",
+        "item_src": "Item Source",
+        "to_board": "To Board",
+        "from_board": "From Board",
         "products": {
             "10": "💼 Trello Gold from Business Class",
             "37": "⭐ Monthly Trello Gold",
@@ -272,7 +296,8 @@
             "blue": "Blue",
             "sky": "Sky Blue",
             "pink": "Pink",
-            "black": "Black"
+            "black": "Black",
+            "none": "No Color"
         },
         "member_type": {
             "normal": "Normal",
@@ -345,6 +370,9 @@
         "reloadone": {
             "description": "Reload singular commands.",
             "usage": "<commandName> [commandName] …"
+        },
+        "reloadwebserver": {
+            "description": "Restarts the webserver."
         },
         "restart": {
             "description": "Restarts the bot."
@@ -600,5 +628,78 @@
         "unstar_board": "Removed star for board \"{{&name}}\". (`{{id}}`)",
         "star_error": "The board's star was not found! Try again later!"
     },
-    "and_more": "And {{count}} more…"
+    "and_more": "And {{count}} more…",
+    "webhooks": {
+        "commented": "{{&member}} commented on \"{{&card}}\"",
+        "update_comment": "{{&member}} updated their comment on \"{{&card}}\"",
+        "delete_comment": "{{&member}} deleted their comment on \"{{&card}}\"",
+        "add_card_desc": "{{&member}} added a description to card \"{{&card}}\"",
+        "edit_card_desc": "{{&member}} changed the description for card \"{{&card}}\"",
+        "rem_card_desc": "{{&member}} removed the description for card \"{{&card}}\"",
+        "move_card_in_list": "{{&member}} moved \"{{&card}}\" to a different position in the list",
+        "move_card": "{{&member}} moved card \"{{&card}}\" to list \"{{&list}}\"",
+        "rename_card": "{{&member}} renamed card \"{{&oldName}}\" to \"{{&card}}\"",
+        "due_on": "{{&member}} completed due date on card \"{{&card}}\"",
+        "due_off": "{{&member}} marked due date as incomplete on card \"{{&card}}\"",
+        "due_change": "{{&member}} changed the due date on card \"{{&card}}\"",
+        "due_add": "{{&member}} added a due date on card \"{{&card}}\"",
+        "due_remove": "{{&member}} removed the due date from card \"{{&card}}\"",
+        "archive_card": "{{&member}} archived card \"{{&card}}\"",
+        "unarchive_card": "{{&member}} removed card \"{{&card}}\" from the archive",
+        "create_card": "{{&member}} created card \"{{&card}}\"",
+        "delete_card": "{{&member}} deleted card {{&cardID}}",
+        "vote_card": "{{&member}} voted on card \"{{&card}}\"",
+        "unvote_card": "{{&member}} removed their vote on card \"{{&card}}\"",
+        "checkitem_state_on": "{{&member}} completed \"{{&checklistItem}}\" on card \"{{&card}}\"",
+        "checkitem_state_off": "{{&member}} marked \"{{&checklistItem}}\" as incomplete on card \"{{&card}}\"",
+        "checkitem_create": "{{&member}} created a checklist item on \"{{&card}}\"",
+        "checkitem_delete": "{{&member}} removed a checklist item from \"{{&card}}\"",
+        "checkitem_tocard": "{{&member}} converted checklist item \"{{&card}}\" into a card",
+        "checkitem_move": "{{&member}} moved a checklist item in \"{{&card}}\" to a different position",
+        "checkitem_rename": "{{&member}} renamed a checklist item in card \"{{&card}}\"",
+        "checklist_move": "{{&member}} moved a checklist in \"{{&card}}\" to a different position",
+        "checklist_rename": "{{&member}} renamed a checklist in card \"{{&card}}\"",
+        "checklist_create": "{{&member}} created checklist \"{{&checklist}}\" on \"{{&card}}\"",
+        "checklist_delete": "{{&member}} removed checklist \"{{&checklist}}\" from \"{{&card}}\"",
+        "create_list": "{{&member}} created list \"{{&list}}\"",
+        "archive_list": "{{&member}} archived list \"{{&list}}\"",
+        "unarchive_list": "{{&member}} removed list \"{{&list}}\" from the archive",
+        "list_rename": "{{&member}} renamed list \"{{&oldName}}\" to \"{{&list}}\"",
+        "list_move": "{{&member}} moved list \"{{&list}}\" to a different position",
+        "create_label": "{{&member}} created label \"{{&label}}\"",
+        "label_rename": "{{&member}} renamed label \"{{&oldName}}\" to \"{{&label}}\"",
+        "label_recolor": "{{&member}} changed label \"{{&label}}\" color from {{&oldColor}} to {{&color}}",
+        "delete_label": "{{&member}} deleted label {{&labelID}}",
+        "attach_card": "{{&member}} attached \"{{&attachment}}\" to card \"{{&card}}\"",
+        "unattach_card": "{{&member}} removed attachment \"{{&attachment}}\" from card \"{{&card}}\"",
+        "card_add_label": "{{&member}} added label \"{{&label}}\" to card \"{{&card}}\"",
+        "card_remove_label": "{{&member}} removed label \"{{&label}}\" from card \"{{&card}}\"",
+        "card_add_member": "{{&member}} added {{&member2}} to card \"{{&card}}\"",
+        "card_remove_member": "{{&member}} removed {{&member2}} from card \"{{&card}}\"",
+        "card_add_self": "{{&member}} added themselves to card \"{{&card}}\"",
+        "card_remove_self": "{{&member}} removed themselves from card \"{{&card}}\"",
+        "board_add_member": "{{&member}} added {{&member2}} to the board",
+        "board_remove_member": "{{&member}} removed {{&member2}} from the board",
+        "board_left": "{{&member}} left the board",
+        "board_join": "{{&member}} joined the board",
+        "board_to_admin": "{{&member}} made {{&member2}} an admin of the board",
+        "board_to_normal": "{{&member}} made {{&member2}} a regular member of the board",
+        "board_to_normal_self": "{{&member}} made themselves a regular member of the board",
+        "board_rename": "{{&member}} renamed board from \"{{&oldName}}\" to \"{{&board}}\"",
+        "add_board_desc": "{{&member}} added a description to the board",
+        "edit_board_desc": "{{&member}} changed the description of the board",
+        "rem_board_desc": "{{&member}} removed the description from the board",
+        "archive_board": "{{&member}} closed the board",
+        "unarchive_board": "{{&member}} opened the board",
+        "board_set_invite_perms": "{{&member}} set invitation permissions from {{&oldPerm}} to {{&perm}}",
+        "board_set_comment_perms": "{{&member}} set commenting permissions from {{&oldPerm}} to {{&perm}}",
+        "board_set_vote_perms": "{{&member}} set voting permissions from {{&oldPerm}} to {{&perm}}",
+        "board_set_perm_levels": "{{&member}} set visibility from {{&oldPerm}} to {{&perm}}",
+        "move_out_list": "{{&member}} transferred list \"{{&list}}\" to another board",
+        "move_out_card": "{{&member}} transferred card \"{{&card}}\" to another board",
+        "move_in_list": "{{&member}} transferred list \"{{&list}}\" from another board",
+        "move_in_card": "{{&member}} transferred card \"{{&card}}\" from another board",
+        "copy_checklist": "{{&member}} copied checklist contents from \"{{&sourceChecklist}}\" to \"{{&checklist}}\"",
+        "copy_card": "{{&member}} copied card contents from \"{{&sourceCard}}\" to \"{{&card}}\""
+    }
 }
