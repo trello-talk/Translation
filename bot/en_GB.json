@@ -169,7 +169,7 @@
         "card_covers": "Card Cover Images",
         "add_rem_members": "Add/Remove Members",
         "vote_perms": {
-            "org": "Organization Members",
+            "org": "Organisation Members",
             "disabled": "Disabled",
             "members": "All Members",
             "public": "Any Trello User"
@@ -194,7 +194,7 @@
         "comment_perms": {
             "disabled": "Disabled",
             "members": "All Members",
-            "org": "Organization Members",
+            "org": "Organisation Members",
             "public": "Any Trello User"
         },
         "card_aging": "Card Aging",
@@ -268,7 +268,7 @@
             "usage": "<code>"
         },
         "exec": {
-            "description": "Utilizes `child_process.exec`.",
+            "description": "Utilises `child_process.exec`.",
             "usage": "<command> …"
         },
         "reload": {
