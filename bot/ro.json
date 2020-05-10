@@ -216,7 +216,7 @@
             "description": "Vezi informatiile despre contul tau Trello."
         },
         "switch": {
-            "usage": "<IDTabel|NumeTabel>",
+            "usage": "[IDTabel|NumeTabel]",
             "description": "Selecteaza o placa pe care sa o folosesti pentru alte comenzi. Folositi comanda „{{& curata prestabilite}}” pentru a vedea ce placi puteti selecta."
         },
         "boards": {
@@ -232,7 +232,7 @@
         },
         "list": {
             "description": "Listeaza toate cartile din aceasta lista.",
-            "usage": "<Numele listei|Id-ul listei>[pagina]"
+            "usage": "[Numele listei|Id-ul listei] [pagina]"
         },
         "listarchive": {
             "usage": "[pagina]",
@@ -240,7 +240,7 @@
         },
         "card": {
             "description": "Obtine informati despre o carte specifica.",
-            "usage": "<Numele cartii|Id-ul cartii>"
+            "usage": "[Numele cartii|Id-ul cartii]"
         },
         "cardarchive": {
             "description": "Listeaza toate cartile arhivate din tabloul curent.",
@@ -248,11 +248,11 @@
         },
         "watchcard": {
             "description": "Comutati urmarind o carte.",
-            "usage": "<Numele cartii|Id-ul cartii>"
+            "usage": "[Numele cartii|Id-ul cartii]"
         },
         "watchlist": {
             "description": "Comutati sa urmariti o lista.",
-            "usage": "<Numele listei|Id-ul listei>"
+            "usage": "[Numele listei|Id-ul listei]"
         },
         "watch": {
             "description": "Comutati urmarind o placa. Daca nu este definita nicio placa, se foloseste placa curenta.",
