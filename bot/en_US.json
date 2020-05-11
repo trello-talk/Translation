@@ -78,6 +78,7 @@
         "no_guild": "You are not running the command in a guild!"
     },
     "words": {
+        "active": "Active",
         "usage": "Usage",
         "cooldown": "Cooldown",
         "alias": {
@@ -217,6 +218,18 @@
             "one": "Prefix",
             "many": "Prefixes"
         },
+        "webhook": {
+            "one": "Webhook",
+            "many": "Webhooks"
+        },
+        "name": {
+            "one": "Name",
+            "many": "Names"
+        },
+        "channel": {
+            "one": "Channel",
+            "many": "Channels"
+        },
         "bio": "Bio",
         "visibility": "Visibility",
         "in_lower": "in",
@@ -303,6 +316,50 @@
             "normal": "Normal",
             "admin": "Admin"
         }
+    },
+    "webhook_cmd": {
+        "header": "Use `{{&cleanPrefix}}webhook <webhookID>` to view a webhook and `{{&cleanPrefix}}editwebhook <webhookID>` to edit it.",
+        "none": "There are no webhooks on this server connected to Trello.",
+        "invalid": "Invalid webhook ID!",
+        "not_found": "That webhook does not exist!",
+        "model_filter": "List/Card Filter Mode",
+        "whitelist": "Whitelist",
+        "blacklist": "Blacklist",
+        "filtered_list": {
+            "one": "Filtered List",
+            "many": "Filtered Lists"
+        },
+        "filtered_card": {
+            "one": "Filtered Card",
+            "many": "Filtered Cards"
+        },
+        "allowed_actions": {
+            "one": "Allowed Action",
+            "many": "Allowed Actions"
+        },
+        "dwh": {
+            "one": "Discord Webhook",
+            "many": "Discord Webhooks"
+        },
+        "discord_webhook": "Discord Webhook",
+        "trello_webhook": "Trello Webhook",
+        "owned_by": "Owned By",
+        "dwh_missing": "The Discord webhook connected to this webhook is missing!",
+        "twh_missing": "The user who setup the webhook is missing, this may stop the webhook from sending!",
+        "try_repair": "You can repair this issue with `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "add_header": "How would you want your webhook to be set up?",
+        "menu": {
+            "add": "Add webhook",
+            "exist": "Use existing webhook",
+            "link": "Use webhook link"
+        },
+        "no_channels": "No channels have been found that allows me to manage webhooks.",
+        "choose_channel": "Choose which channel that the webhook will post in.",
+        "couldnt_create": "I could not create the webhook! This is probably due to some sudden permission change in the process!",
+        "created": "Created the webhook for \"{{&name}}\".",
+        "create_confirm": "This webhook for the Trello board \"{{&name}}\" has started! Actions should be showing up shortly…",
+        "no_dwh": "You have no Discord webhooks to link to!",
+        "choose_existwh": "Choose which webhook to use."
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
     "bad_args": "Not enough arguments!",
@@ -482,6 +539,18 @@
         "comment": {
             "description": "Comment on a card in the current board.",
             "usage": "[cardName|cardID] [comment]"
+        },
+        "webhooks": {
+            "description": "Lists the webhooks on your server.",
+            "usage": "[page]"
+        },
+        "webhook": {
+            "description": "Get information about a specific webhook.",
+            "usage": "<webhookID>"
+        },
+        "addwebhook": {
+            "description": "Creates a webhook on your server.",
+            "usage": "[boardID|boardName]"
         }
     },
     "error": "An error occurred while processing that command!",
@@ -579,7 +648,7 @@
         "none": "This board has no lists.",
         "list_none": "This list has no cards.",
         "arch_none": "This board has no archived lists.",
-        "header": "Use `{{&cleanPrefix}}list <listID|listName>` to switch between boards.",
+        "header": "Use `{{&cleanPrefix}}list <listID|listName>` to view a list.",
         "arch_header": "Use `{{&cleanPrefix}}editlist <listID|listName> unarchive` to open a list.",
         "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card.",
         "choose": "Type the number of the list you want to use.",
@@ -633,7 +702,7 @@
     "webhooks": {
         "commented": "{{&member}} commented on \"{{&card}}\"",
         "update_comment": "{{&member}} updated their comment on \"{{&card}}\"",
-        "delete_comment": "{{&member}} deleted their comment on \"{{&card}}\"",
+        "delete_comment": "{{&member}} had their comment deleted on \"{{&card}}\"",
         "add_card_desc": "{{&member}} added a description to card \"{{&card}}\"",
         "edit_card_desc": "{{&member}} changed the description for card \"{{&card}}\"",
         "rem_card_desc": "{{&member}} removed the description for card \"{{&card}}\"",
@@ -702,5 +771,57 @@
         "move_in_card": "{{&member}} transferred card \"{{&card}}\" from another board",
         "copy_checklist": "{{&member}} copied checklist contents from \"{{&sourceChecklist}}\" to \"{{&checklist}}\"",
         "copy_card": "{{&member}} copied card contents from \"{{&sourceCard}}\" to \"{{&card}}\""
+    },
+    "webhook_filters": {
+        "ADD_ATTACHMENT_TO_CARD": "Attachment additions to cards",
+        "ADD_CHECKLIST_TO_CARD": "Checklist additions to cards",
+        "ADD_LABEL_TO_CARD": "Label additions to cards",
+        "ADD_MEMBER_TO_BOARD": "Member additions to board",
+        "ADD_MEMBER_TO_CARD": "Member additions to cards",
+        "COMMENT_CARD": "New comments on cards",
+        "CONVERT_TO_CARD_FROM_CHECK_ITEM": "Checklist items converted into cards",
+        "COPY_CARD": "Card duplications",
+        "COPY_CHECKLIST": "Checklist duplications",
+        "CREATE_LABEL": "Label creations",
+        "CREATE_CARD": "Card creations",
+        "CREATE_LIST": "List creations",
+        "DELETE_ATTACHMENT_FROM_CARD": "Attachments removals from cards",
+        "DELETE_CARD": "Card deletions",
+        "DELETE_CHECK_ITEM": "Checklist item deletions",
+        "DELETE_LABEL": "Label deletions",
+        "MAKE_ADMIN_OF_BOARD": "Board members promoted to admin",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Board admins demoted to normal member",
+        "MOVE_CARD_FROM_BOARD": "Card transfers out of the board",
+        "MOVE_CARD_TO_BOARD": "Card transfers into the board",
+        "MOVE_LIST_FROM_BOARD": "List transfers out of the board",
+        "MOVE_LIST_TO_BOARD": "List transfers into the board",
+        "REMOVE_CHECKLIST_FROM_CARD": "Checklist removals from cards",
+        "REMOVE_LABEL_FROM_CARD": "Label removals from cards",
+        "REMOVE_MEMBER_FROM_BOARD": "Member removals from the board",
+        "REMOVE_MEMBER_FROM_CARD": "Member removals from cards",
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Checklist item state updates (checked/unchecked)",
+        "VOTE_ON_CARD": "Card votes",
+        "CREATE_CHECK_ITEM": "Checklist item creations",
+        "DELETE_COMMENT": "Comments deletes",
+        "UPDATE_COMMENT": "Comment updates",
+        "UPDATE_BOARD_NAME": "Board name updates",
+        "UPDATE_BOARD_DESC": "Board description updates",
+        "UPDATE_BOARD_PREFS": "Board preference updates",
+        "UPDATE_BOARD_CLOSED": "Board archive state updates (closed/open)",
+        "UPDATE_CARD_NAME": "Card name updates",
+        "UPDATE_CARD_DESC": "Card description updates",
+        "UPDATE_CARD_LIST": "Card listing updatse",
+        "UPDATE_CARD_POS": "Card position updates (within a list)",
+        "UPDATE_CARD_CLOSED": "Cards archive state updates (archived/unarchived)",
+        "UPDATE_CARD_DUE": "Card due date updates",
+        "UPDATE_CHECK_ITEM_NAME": "Checklist item name updates",
+        "UPDATE_CHECK_ITEM_POS": "Checklist item position updates",
+        "UPDATE_CHECKLIST_NAME": "Checklist name updates",
+        "UPDATE_CHECKLIST_POS": "Checklist position updates",
+        "UPDATE_LABEL_NAME": "Label name updates",
+        "UPDATE_LABEL_COLOR": "Label color updates",
+        "UPDATE_LIST_NAME": "List name updates",
+        "UPDATE_LIST_POS": "List position updates",
+        "UPDATE_LIST_CLOSED": "List archive state updates (archived/unarchived)"
     }
 }
