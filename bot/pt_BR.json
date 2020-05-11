@@ -77,7 +77,9 @@
         "old_due": "Data de Entrega Antiga",
         "new_due": "Data de Entrega Nova",
         "item_src": "Fonte do Item",
-        "to_board": "Para o Quadro"
+        "to_board": "Para o Quadro",
+        "one_chklist_name": "Nome anterior da Checklist",
+        "one_chkitem_name": "Nome anterior do item da Checklist"
     },
     "ping": {
         "message": "Pong!",
@@ -516,14 +518,20 @@
             "desc": "Editar a descrição do quadro",
             "remove_desc": "Remover a descrição do quadro",
             "sub_on": "Acompanhar esse Quadro",
-            "sub_off": "Parar de acompanhar esse Quadro"
+            "sub_off": "Parar de acompanhar esse Quadro",
+            "invite": "Alterar adicionar/remover permissões de membros ({{&value}})",
+            "vote": "Alterar a permissão de votação ({{&value}})",
+            "comment": "Alterar a permissão de comentários ({{&value}})"
         },
         "set_name": "Quadro \"{{&old}}\" renomeado para \"{{&new}}\".",
         "archived": "Quadro \"{{&name}}\" arquivado.",
         "unarchived": "Quadro \"{{&name}}\" desarquivado.",
         "set_desc": "Descrição do quadro definida para \"{{&name}}\".",
         "input_desc": "Digite a nova descrição para o quadro.",
-        "need_admin": "Você precisa da permissão de administrador no quadro!"
+        "need_admin": "Você precisa da permissão de administrador no quadro!",
+        "set_vote_perms": "Definir permissões de votação para ({{&value}}).",
+        "set_invite_perms": "Definir permissão de convites para ({{&value}}).",
+        "set_comment_perms": "Definir permissões para comentar para ({{&value}})."
     },
     "cards": {
         "arch_header": "Use `{{&cleanPrefix}}editcard <idDaLista|nomeDaLista> unarchive` para desarquivar um cartão.",
@@ -627,6 +635,32 @@
         "unarchive_board": "{{&member}} desarquivou o quadro",
         "archive_board": "{{&member}} arquivou o quadro",
         "copy_card": "{{&member}} copiou o conteúdo do cartão \"{{&sourceCard}}\" para o cartão \"{{&card}}\"",
-        "copy_checklist": "{{&member}} copiou o conteúdo da checklist \"{{&sourceChecklist}}\" para a checklist \"{{&checklist}}\""
+        "copy_checklist": "{{&member}} copiou o conteúdo da checklist \"{{&sourceChecklist}}\" para a checklist \"{{&checklist}}\"",
+        "checkitem_rename": "{{&member}} renomeou um item da checklist do cartão \"{{&card}}\"",
+        "checkitem_move": "{{&member}} moveu um item da checklist \"{{&card}}\" para uma posição diferente",
+        "checkitem_tocard": "{{&member}} converteu um item da checklist do cartão \"{{&card}}\" em um cartão",
+        "checkitem_delete": "{{&member}} removeu um item da checklist do cartão \"{{&card}}\"",
+        "checkitem_create": "{{&member}} criou um item na checklist do cartão \"{{&card}}\"",
+        "checkitem_state_off": "{{&member}} definiu o item \"{{&checklistItem}}\" como incompleto no cartão \"{{&card}}\"",
+        "checkitem_state_on": "{{&member}} completou o item \"{{&checklistItem}}\" no cartão \"{{&card}}\"",
+        "unvote_card": "{{&member}} removeu sua votação do cartão \"{{&card}}\"",
+        "vote_card": "{{&member}} cotou no cartão \"{{&card}}\"",
+        "delete_card": "{{&member}} deletou o cartão {{&cardID}}",
+        "create_card": "{{&member}} criou o cartão \"{{&card}}\"",
+        "unarchive_card": "{{&member}} desarquivou o cartão \"{{&card}}\"",
+        "archive_card": "{{&member}} arquivou o cartão \"{{&card}}\"",
+        "due_remove": "{{&member}} removeu a data de entrega do cartão \"{{&card}}\"",
+        "due_add": "{{&member}} adicionou uma data de entrega no cartão \"{{&card}}\"",
+        "due_change": "{{&member}} alterou a data de entrega do cartão \"{{&card}}\"",
+        "due_off": "{{&member}} definiu como incompleta a data de entrega do cartão \"{{&card}}\"",
+        "due_on": "{{&member}} completou a data de entrega do cartão \"{{&card}}\"",
+        "rename_card": "{{&member}} renomeou o cartão \"{{&oldName}}\" para \"{{&card}}\"",
+        "move_card": "{{&member}} moveu o cartão \"{{&card}}\" para a lista \"{{&list}}\"",
+        "move_card_in_list": "{{&member}} moveu o cartão \"{{&card}}\" para uma posição diferente na lista",
+        "rem_card_desc": "{{&member}} removeu a descrição do cartão \"{{&card}}\"",
+        "edit_card_desc": "{{&member}} alterou a descrição do cartão \"{{&card}}\"",
+        "add_card_desc": "{{&member}} adicionou descrição ao cartão \"{{&card}}\"",
+        "delete_comment": "{{&member}} deletou seu comentário no cartão \"{{&card}}\"",
+        "update_comment": "{{&member}} atualizou seu comentário no cartão \"{{&card}}\""
     }
 }
