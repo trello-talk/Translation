@@ -566,7 +566,7 @@
         "list_none": "Essa lista não possui cartões.",
         "arch_none": "Esse quadro não possui listas arquivadas.",
         "header": "Use `{{&cleanPrefix}}list <idDaLista|nomeDaLista>` para alternar entre os cargos.",
-        "arch_header": "Use `{{&cleanPrefix}}edirlist <idDaLista|nomeDaLista> unarchive` para desarquivar a lista.",
+        "arch_header": "Use `{{&cleanPrefix}}editlist <idDaLista|nomeDaLista> unarchive` para desarquivar a lista.",
         "choose": "Digite o número da lista que deseja usar.",
         "list_header": "Use `{{&cleanPrefix}}card <idDoCartão|nomeDoCartão>` para obter mais informações de um cartão.",
         "wywtd": "Escolha o que você deseja fazer com essa lista.",
