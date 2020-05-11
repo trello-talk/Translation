@@ -314,7 +314,8 @@
         "elevated": "Only the elevated users of the bot can use this command!",
         "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
         "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
-        "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!"
+        "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
+        "webhooks": "I need the permission `Manage Webhooks` to use this command!"
     },
     "format": {
         "second": {
