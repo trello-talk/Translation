@@ -26,5 +26,65 @@
     },
     "help": {
         "not_found": "Perintah `{{&command}}`tidak dijumpai."
+    },
+    "words": {
+        "sticker": {
+            "many": "Stiker-stiker",
+            "one": "Stiker"
+        },
+        "short_link": {
+            "many": "Pautan-pautan Pendek",
+            "one": "Pautan Pendek"
+        },
+        "info": "Informasi",
+        "id": "ID",
+        "donate": "Derma",
+        "website": {
+            "many": "Laman-laman Web",
+            "one": "Laman Web"
+        },
+        "version": "Versi",
+        "alias": {
+            "many": "Alias-alias",
+            "one": "Alias"
+        },
+        "active": "Aktif"
+    },
+    "trello": {
+        "member_type": {
+            "admin": "Pentadbir",
+            "normal": "Biasa"
+        },
+        "label_color": {
+            "none": "Tiada Warna",
+            "black": "Hitam",
+            "pink": "Merah Jambu",
+            "sky": "Biru Langit",
+            "blue": "Biru",
+            "purple": "Ungu",
+            "lime": "Hijau Limau",
+            "orange": "Jingga",
+            "red": "Merah",
+            "yellow": "Kuning",
+            "green": "Hijau"
+        },
+        "new_comment": "Komen Baru",
+        "old_comment": "Komen Lama",
+        "new_name": "Nama Baru",
+        "old_name": "Nama Lama",
+        "new_desc": "Deskripsi Baru",
+        "old_desc": "Deskripsi Lama"
+    },
+    "webhook_cmd": {
+        "whitelist": "Senarai Izin",
+        "blacklist": "Senarai Hitam"
+    },
+    "locale": {
+        "server_locale": "Lokal Server: {{&locale}}",
+        "user_locale": "Lokal Pengguna: {{&locale}}",
+        "choose": "Pilih nombor lokal anda.",
+        "unset_l": "Lokal tidak ditetapkan",
+        "unset": "Tidak ditetapkan",
+        "start": "Pilihan Lokal"
     }
 }
