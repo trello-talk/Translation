@@ -214,7 +214,8 @@
             "blue": "Blå",
             "sky": "Himmelblå",
             "pink": "Lyserød",
-            "black": "Sort"
+            "black": "Sort",
+            "none": "Ingen farve"
         },
         "products": {
             "38": "🌟 Årlig Trello guld",
@@ -271,7 +272,13 @@
         "new_desc": "Ny beskrivelse",
         "prev_list": "Tidligere liste",
         "old_name": "Gammelt navn",
-        "new_name": "Nyt navn"
+        "new_name": "Nyt navn",
+        "from_board": "Fra tavle",
+        "to_board": "Til tavle",
+        "new_due": "Ny forfaldsdato",
+        "old_due": "Gammel forfaldsdato",
+        "new_comment": "Ny kommentar",
+        "old_comment": "Gammel kommentar"
     },
     "format": {
         "second": {
@@ -411,6 +418,9 @@
         },
         "editboard": {
             "usage": "[underkommando] …"
+        },
+        "reloadwebserver": {
+            "description": "Genstarter webserveren."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -532,6 +542,7 @@
     },
     "reloadwebserver": {
         "no": "Der er ingen webserver på denne instans!",
-        "reloading": "Genstarter webserver…"
+        "reloading": "Genstarter webserver…",
+        "done": "Webserver genstartet."
     }
 }
