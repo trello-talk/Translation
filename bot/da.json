@@ -421,6 +421,12 @@
         },
         "reloadwebserver": {
             "description": "Genstarter webserveren."
+        },
+        "deletecard": {
+            "description": "Sletter et kort."
+        },
+        "addcard": {
+            "description": "Opretter et kort."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -435,7 +441,14 @@
         "header": "Brug `{{&cleanPrefix}}switch <boardID|boardName>` for at springe mellem tavler.",
         "gone": "Denne tavle findes ikke længere! Skift til en anden en med `{{&cleanPrefix}}switch`!",
         "none": "Du er ikke tildelt nogen tavle.",
-        "choose": "Indtast nummeret på den tavle du ønsker at bruge."
+        "choose": "Indtast nummeret på den tavle du ønsker at bruge.",
+        "menu": {
+            "sub_on": "Overvåg denne tavle",
+            "archive_off": "Åbn tavle",
+            "archive_on": "Luk tavle",
+            "name": "Redigér navn på tavle"
+        },
+        "wywtd": "Vælg hvad du vil gøre med denne tavle."
     },
     "cards": {
         "none": "Denne tavle har ingen kort.",
@@ -458,7 +471,9 @@
         "timeout": "Din tidligere meddelelse udløb.",
         "choose": "Indtast nummeret på det emne du ønsker at bruge.",
         "cancel": "Skriver du \"cancel\" vil denne besked blive lukket.",
-        "list": "Listeprompt"
+        "list": "Listeprompt",
+        "no_confirm": "Bekræftelse annulleret.",
+        "confirm": "Er du sikker på du ønsker at gøre dette?"
     },
     "lists": {
         "list_header": "Brug `{{&cleanPrefix}}card <cardID|cardName>` for at få oplysninger om et kort.",
