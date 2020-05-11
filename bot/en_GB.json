@@ -142,7 +142,20 @@
         "checklist_item": {
             "one": "Checklist Item",
             "many": "Checklist Items"
-        }
+        },
+        "channel": {
+            "many": "Channels",
+            "one": "Channel"
+        },
+        "name": {
+            "many": "Names",
+            "one": "Name"
+        },
+        "webhook": {
+            "many": "Webhooks",
+            "one": "Webhook"
+        },
+        "active": "Active"
     },
     "format": {
         "second": {
@@ -387,6 +400,18 @@
         },
         "reloadwebserver": {
             "description": "Restarts the webserver."
+        },
+        "addwebhook": {
+            "usage": "[boardID|boardName]",
+            "description": "Creates a webhook on your server."
+        },
+        "webhook": {
+            "usage": "<webhookID>",
+            "description": "Get information about a specific webhook."
+        },
+        "webhooks": {
+            "usage": "[page]",
+            "description": "Lists the webhooks on your server."
         }
     },
     "boards": {
@@ -578,7 +603,7 @@
         "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card.",
         "none": "This board has no lists.",
         "list_none": "This list has no cards.",
-        "header": "Use `{{&cleanPrefix}}list <listID|listName>` to switch between boards.",
+        "header": "Use `{{&cleanPrefix}}list <listID|listName>` to view a list.",
         "arch_header": "Use `{{&cleanPrefix}}editlist <listID|listName> unarchive` to open a list.",
         "choose": "Type the number of the list you want to use.",
         "menu": {
@@ -635,7 +660,7 @@
     },
     "webhooks": {
         "commented": "{{&member}} commented on \"{{&card}}\"",
-        "delete_comment": "{{&member}} deleted their comment on \"{{&card}}\"",
+        "delete_comment": "{{&member}} had their comment deleted on \"{{&card}}\"",
         "move_card_in_list": "{{&member}} moved \"{{&card}}\" to a different position in the list",
         "due_on": "{{&member}} completed due date on card \"{{&card}}\"",
         "due_remove": "{{&member}} removed the due date from card \"{{&card}}\"",
@@ -705,5 +730,101 @@
         "move_in_list": "{{&member}} transferred list \"{{&list}}\" from another board",
         "move_in_card": "{{&member}} transferred card \"{{&card}}\" from another board",
         "copy_card": "{{&member}} copied card contents from \"{{&sourceCard}}\" to \"{{&card}}\""
+    },
+    "webhook_filters": {
+        "UPDATE_LIST_CLOSED": "List archive state updates (archived/unarchived)",
+        "UPDATE_LIST_POS": "List position updates",
+        "UPDATE_LIST_NAME": "List name updates",
+        "UPDATE_LABEL_COLOR": "Label colour updates",
+        "UPDATE_LABEL_NAME": "Label name updates",
+        "UPDATE_CHECKLIST_POS": "Checklist position updates",
+        "UPDATE_CHECKLIST_NAME": "Checklist name updates",
+        "UPDATE_CHECK_ITEM_POS": "Checklist item position updates",
+        "UPDATE_CHECK_ITEM_NAME": "Checklist item name updates",
+        "UPDATE_CARD_DUE": "Card due date updates",
+        "UPDATE_CARD_CLOSED": "Cards archive state updates (archived/unarchived)",
+        "UPDATE_CARD_POS": "Card position updates (within a list)",
+        "UPDATE_CARD_LIST": "Card listing updatse",
+        "UPDATE_CARD_DESC": "Card description updates",
+        "UPDATE_CARD_NAME": "Card name updates",
+        "UPDATE_BOARD_CLOSED": "Board archive state updates (closed/open)",
+        "UPDATE_BOARD_PREFS": "Board preference updates",
+        "UPDATE_BOARD_DESC": "Board description updates",
+        "UPDATE_BOARD_NAME": "Board name updates",
+        "UPDATE_COMMENT": "Comment updates",
+        "DELETE_COMMENT": "Comments deletes",
+        "CREATE_CHECK_ITEM": "Checklist item creations",
+        "VOTE_ON_CARD": "Card votes",
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Checklist item state updates (checked/unchecked)",
+        "REMOVE_MEMBER_FROM_CARD": "Member removals from cards",
+        "REMOVE_MEMBER_FROM_BOARD": "Member removals from the board",
+        "REMOVE_LABEL_FROM_CARD": "Label removals from cards",
+        "REMOVE_CHECKLIST_FROM_CARD": "Checklist removals from cards",
+        "MOVE_LIST_TO_BOARD": "List transfers into the board",
+        "MOVE_LIST_FROM_BOARD": "List transfers out of the board",
+        "MOVE_CARD_TO_BOARD": "Card transfers into the board",
+        "MOVE_CARD_FROM_BOARD": "Card transfers out of the board",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Board admins demoted to normal member",
+        "MAKE_ADMIN_OF_BOARD": "Board members promoted to admin",
+        "DELETE_LABEL": "Label deletions",
+        "DELETE_CHECK_ITEM": "Checklist item deletions",
+        "DELETE_CARD": "Card deletions",
+        "DELETE_ATTACHMENT_FROM_CARD": "Attachments removals from cards",
+        "CREATE_LIST": "List creations",
+        "CREATE_CARD": "Card creations",
+        "CREATE_LABEL": "Label creations",
+        "COPY_CHECKLIST": "Checklist duplications",
+        "COPY_CARD": "Card duplications",
+        "CONVERT_TO_CARD_FROM_CHECK_ITEM": "Checklist items converted into cards",
+        "COMMENT_CARD": "New comments on cards",
+        "ADD_MEMBER_TO_CARD": "Member additions to cards",
+        "ADD_MEMBER_TO_BOARD": "Member additions to board",
+        "ADD_LABEL_TO_CARD": "Label additions to cards",
+        "ADD_CHECKLIST_TO_CARD": "Checklist additions to cards",
+        "ADD_ATTACHMENT_TO_CARD": "Attachment additions to cards"
+    },
+    "webhook_cmd": {
+        "choose_existwh": "Choose which webhook to use.",
+        "no_dwh": "You have no Discord webhooks to link to!",
+        "create_confirm": "This webhook for the Trello board \"{{&name}}\" has started! Actions should be showing up shortly…",
+        "created": "Created the webhook for \"{{&name}}\".",
+        "couldnt_create": "I could not create the webhook! This is probably due to some sudden permission change in the process!",
+        "choose_channel": "Choose which channel that the webhook will post in.",
+        "no_channels": "No channels have been found that allows me to manage webhooks.",
+        "menu": {
+            "link": "Use webhook link",
+            "exist": "Use existing webhook",
+            "add": "Add webhook"
+        },
+        "add_header": "How would you want your webhook to be set up?",
+        "try_repair": "You can repair this issue with `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "twh_missing": "The user who setup the webhook is missing, this may stop the webhook from sending!",
+        "dwh_missing": "The Discord webhook connected to this webhook is missing!",
+        "owned_by": "Owned By",
+        "trello_webhook": "Trello Webhook",
+        "discord_webhook": "Discord Webhook",
+        "dwh": {
+            "many": "Discord Webhooks",
+            "one": "Discord Webhook"
+        },
+        "allowed_actions": {
+            "many": "Allowed Actions",
+            "one": "Allowed Action"
+        },
+        "filtered_card": {
+            "many": "Filtered Cards",
+            "one": "Filtered Card"
+        },
+        "filtered_list": {
+            "many": "Filtered Lists",
+            "one": "Filtered List"
+        },
+        "blacklist": "Blacklist",
+        "whitelist": "Whitelist",
+        "model_filter": "List/Card Filter Mode",
+        "not_found": "That webhook does not exist!",
+        "invalid": "Invalid webhook ID!",
+        "none": "There are no webhooks on this server connected to Trello.",
+        "header": "Use `{{&cleanPrefix}}webhook <webhookID>` to view a webhook and `{{&cleanPrefix}}editwebhook <webhookID>` to edit it."
     }
 }
