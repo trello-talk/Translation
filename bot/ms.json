@@ -3,10 +3,19 @@
         "invalid": "Perintah tidak sah!"
     },
     "responses": {
-        "hangman": "Saya bukan bot permainan."
+        "hangman": "Saya bukan bot permainan.",
+        "eval": "Mengambil masa {{ms}} ms."
     },
     "links": {
-        "github": "Inilah pautan ke kod sumber saya:"
+        "github": "Inilah pautan ke kod sumber saya:",
+        "donate": {
+            "fail": "Pemilik bot belum memberikan pautan dermaan!",
+            "start": "Sokonglah perkembangan dengan menderma!"
+        },
+        "auth": {
+            "fail": "Pemilik bot belum memberikan pautan pengesahkuasaan!",
+            "start": "Kuat-kuasakan akaun Trello anda dengan Discord disini:"
+        }
     },
     "_": {
         "name": "Bahasa Melayu",
@@ -14,5 +23,8 @@
     },
     "ping": {
         "message": "Pong!"
+    },
+    "help": {
+        "not_found": "Perintah `{{&command}}`tidak dijumpai."
     }
 }
