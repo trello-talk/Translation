@@ -1,10 +1,12 @@
 {
     "reloadone": {
-        "invalid": "Perintah tidak sah!"
+        "invalid": "Perintah tidak sah!",
+        "done": "{{&commands}} telah dimuatkan."
     },
     "responses": {
         "hangman": "Saya bukan bot permainan.",
-        "eval": "Mengambil masa {{ms}} ms."
+        "eval": "Mengambil masa {{ms}} ms.",
+        "restart": "Memulakan semula shard…"
     },
     "links": {
         "github": "Inilah pautan ke kod sumber saya:",
@@ -15,6 +17,14 @@
         "auth": {
             "fail": "Pemilik bot belum memberikan pautan pengesahkuasaan!",
             "start": "Kuat-kuasakan akaun Trello anda dengan Discord disini:"
+        },
+        "serverinvite": {
+            "fail": "Pemilik bot belum membekalkan pautan server bantuan!",
+            "start": "Sertai server bantuan dengan mana-mana pautan ini!"
+        },
+        "invite": {
+            "fail": "Pemilik bot belum membekalkan pautan jemputan!",
+            "start": "Inilah pautan untuk menjemput saya ke server lain!"
         }
     },
     "_": {
@@ -22,10 +32,13 @@
         "emoji": "my"
     },
     "ping": {
-        "message": "Pong!"
+        "message": "Pong!",
+        "rest": "REST: {{ms}} ms",
+        "ws": "WS: {{ms}} ms"
     },
     "help": {
-        "not_found": "Perintah `{{&command}}`tidak dijumpai."
+        "not_found": "Perintah `{{&command}}` tidak dijumpai.",
+        "footer": "Taip `{{&cleanPrefix}}help [command]` untuk lebih lanjut."
     },
     "words": {
         "sticker": {
@@ -48,7 +61,32 @@
             "many": "Alias-alias",
             "one": "Alias"
         },
-        "active": "Aktif"
+        "active": "Aktif",
+        "link": {
+            "one": "Pautan",
+            "many": "Pautan"
+        },
+        "item": {
+            "one": "Item",
+            "many": "Item"
+        },
+        "count": {
+            "one": "Bilangan",
+            "many": "Bilangan"
+        },
+        "board": {
+            "many": "Board",
+            "one": "Board"
+        },
+        "bg_img": "Imej Later Belakang",
+        "initials": "Inisial",
+        "server": {
+            "many": "Bilangan Server",
+            "one": "Server"
+        },
+        "mem_usage": "Penggunaan Memori",
+        "note": "Nota",
+        "usage": "Penggunaan"
     },
     "trello": {
         "member_type": {
@@ -85,6 +123,29 @@
         "choose": "Pilih nombor lokal anda.",
         "unset_l": "Lokal tidak ditetapkan",
         "unset": "Tidak ditetapkan",
-        "start": "Pilihan Lokal"
+        "start": "Pilihan Lokal",
+        "no_guild": "Anda tidak melaksanakan perintah itu dalam guild (persatuan)!",
+        "server_unset": "Nyahtetapkan lokal server.",
+        "user_unset": "Nyahtetapkan lokal pengguna.",
+        "server_set": "Tetapkan the lokal server ke **{{&name}}**.",
+        "user_set": "Tetapkan lokal ke **{{&name}}**."
+    },
+    "shardinfo": {
+        "title": "Informasi mengenai Shard {{&username}}"
+    },
+    "info": {
+        "title": "Informasi mengenai {{&username}}"
+    },
+    "reloadwebserver": {
+        "done": "Webserver telah dimulakan semula.",
+        "reloading": "Mulakan semula webserver…"
+    },
+    "reloadlocale": {
+        "done": "Lokal the dimuatkan.",
+        "reloading": "Memuat lokal…"
+    },
+    "reload": {
+        "done": "Perintah telah dimuatkan.",
+        "reloading": "Memuat semula perintah…"
     }
 }
