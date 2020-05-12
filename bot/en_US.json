@@ -494,19 +494,19 @@
             "usage": "[page]"
         },
         "watchcard": {
-            "description": "Toggle watching a card.",
+            "description": "Toggle watching a card. Watched cards will give you update notifications on [Trello}(https://trello.com/).",
             "usage": "[cardName|cardID]"
         },
         "watchlist": {
-            "description": "Toggle watching a list.",
+            "description": "Toggle watching a list. Watched lists will give you update notifications on [Trello}(https://trello.com/).",
             "usage": "[listName|listID]"
         },
         "watch": {
-            "description": "Toggle watching a board. If no board is defined, the current board is used.",
+            "description": "Toggle watching a board. If no board is defined, the current board is used. Watched boards will give you update notifications on [Trello}(https://trello.com/).",
             "usage": "[boardName|boardID]"
         },
         "star": {
-            "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on Trello.com.",
+            "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on [Trello}(https://trello.com/).",
             "usage": "[boardName|boardID]"
         },
         "editlist": {
@@ -578,7 +578,7 @@
         "select_timeout": "Your last prompt was timed out. All changes have been lost."
     },
     "boards": {
-        "none": "You are not assigned to any boards.",
+        "none": "You are not assigned to any boards. You can create one on <https://trello.com/>.",
         "header": "Use `{{&cleanPrefix}}switch <boardID|boardName>` to switch between boards.",
         "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
         "gone": "This board no longer exists! Switch to another one with `{{&cleanPrefix}}switch`!",
