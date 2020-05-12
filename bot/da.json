@@ -199,7 +199,23 @@
         "opt": {
             "one": "Indstilling",
             "many": "Indstillinger"
-        }
+        },
+        "checklist_item": {
+            "many": "Tjeklisteemner",
+            "one": "Tjeklisteemne"
+        },
+        "webhook": {
+            "one": "Webhook"
+        },
+        "channel": {
+            "many": "Kanaler",
+            "one": "Kanal"
+        },
+        "name": {
+            "many": "Navne",
+            "one": "Navn"
+        },
+        "active": "Aktiv"
     },
     "trello": {
         "template": "Er skabelon?",
@@ -347,7 +363,7 @@
         },
         "watchlist": {
             "usage": "[listenavn|listeID]",
-            "description": "Ændre overvågning af en liste."
+            "description": "Ændre overvågning af en liste. Overvågede lister vil give dig besked om opdateringer på [Trello}(https://trello.com/)."
         },
         "exec": {
             "description": "Udnytter `child_process.exec`.",
@@ -382,7 +398,7 @@
         },
         "watchcard": {
             "usage": "[kortnavn|kortID]",
-            "description": "Ændre overvågning af kort."
+            "description": "Ændre overvågning af kort. Overvågede kort vil give dig besked om opdateringer på [Trello}(https://trello.com/)."
         },
         "auth": {
             "description": "Få authoriserings linket til at forbinde din Discordkonto med din Trellokonto."
@@ -406,11 +422,11 @@
         },
         "star": {
             "usage": "[tavleNavn|tavleID]",
-            "description": "Ændrer stjernemarkeringen af en tavle. Hvis der ikke er defineret en tavle, vil den aktuelle tavle blive vist. Stjernemarkerede tavle vil blive vist i toppen af din tavleliste på Trello.com."
+            "description": "Ændrer stjernemarkeringen af en tavle. Hvis der ikke er defineret en tavle, vil den aktuelle tavle blive vist. Stjernemarkerede tavle vil blive vist i toppen af din tavleliste på [Trello}(https://trello.com/)."
         },
         "watch": {
             "usage": "{tavleNavn|tavleID]",
-            "description": "Ændre overvågning af en tavle. Hvis ingen tavle er defineret, vil den aktuelle tavle blive brugt."
+            "description": "Ændre overvågning af en tavle. Hvis ingen tavle er defineret, vil den aktuelle tavle blive brugt. Overvågede tavler vil give dig besked om opdateringer på [Trello}(https://trello.com/)."
         },
         "editlist": {
             "usage": "[listenavn|listeID] [underkommando] …",
@@ -440,7 +456,7 @@
         "switch": "Skiftet til \"{{&name}}\" (`{{&id}}`).",
         "header": "Brug `{{&cleanPrefix}}switch <boardID|boardName>` for at springe mellem tavler.",
         "gone": "Denne tavle findes ikke længere! Skift til en anden en med `{{&cleanPrefix}}switch`!",
-        "none": "Du er ikke tildelt nogen tavle.",
+        "none": "Du er ikke tildelt nogen tavle. Du kan oprette en på <https://trello.com/>.",
         "choose": "Indtast nummeret på den tavle du ønsker at bruge.",
         "menu": {
             "sub_on": "Overvåg denne tavle",
@@ -464,7 +480,17 @@
         "input_new": "Indtast navnet på det kort du ønsker at tilføje.",
         "removed_desc": "Fjernede kortbeskrivelsen for \"{{&name}}\".",
         "input_desc": "Indtast ny beskrivelse for kortet.",
-        "remove_confirm": "Er du sikker på du vil slette \"{{&name}}\"? (`{{id}}`)"
+        "remove_confirm": "Er du sikker på du vil slette \"{{&name}}\"? (`{{id}}`)",
+        "menu": {
+            "sub_on": "Overvåg dette kort",
+            "remove_desc": "Fjern kortbeskrivelse",
+            "desc": "Redigér kortbeskrivelse",
+            "archive_off": "Fjernede kort fra arkivet",
+            "archive_on": "Arkiver kort",
+            "name": "Rediger kortnavn",
+            "sub_off": "Stop med at overvåge dette kort"
+        },
+        "set_name": "Omdøbte kort fra \"{{&old}}\" til \"{{&new}}\"."
     },
     "prompt": {
         "no_search": "Der kom ikke nogen resultater ud af den søgning.",
@@ -477,7 +503,7 @@
     },
     "lists": {
         "list_header": "Brug `{{&cleanPrefix}}card <cardID|cardName>` for at få oplysninger om et kort.",
-        "header": "Brug `{{&cleanPrefix}}list <listID|listName>` for at hoppe mellem tavler.",
+        "header": "Brug `{{&cleanPrefix}}list <listID|listName>` for at se en liste.",
         "none": "Denne tavle har ingen lister.",
         "list_none": "Denne liste har ingen kort.",
         "arch_none": "Denne tavle har ingen arkiverede lister.",
@@ -559,5 +585,53 @@
         "no": "Der er ingen webserver på denne instans!",
         "reloading": "Genstarter webserver…",
         "done": "Webserver genstartet."
+    },
+    "webhooks": {
+        "delete_label": "{{&member}} slettede etiketten {{&labelID}}",
+        "label_rename": "{{&member}} omdøbte etiketten \"{{&oldName}}\" til \"{{&label}}\"",
+        "create_label": "{{&member}} oprettede etiketten \"{{&label}}\"",
+        "list_move": "{{&member}} flyttede listen \"{{&oldName}}\" til en anden stilling",
+        "list_rename": "{{&member}} omdøbte listen \"{{&oldName}}\" til \"{{&list}}\"",
+        "unarchive_list": "{{&member}} fjernede listen \"{{&list}}\" fra arkivet",
+        "archive_list": "{{&member}} arkiverede listen \"{{&list}}\"",
+        "create_list": "{{&member}} oprettede listen \"{{&list}}\"",
+        "unarchive_card": "{{&member}} fjernede kortet \"{{&card}}\" fra arkivet",
+        "archive_card": "{{&member}} arkiverede kortet \"{{&card}}\"",
+        "due_remove": "{{&member}} fjernede forfaldsdatoen for kortet \"{{&card}}\"",
+        "due_add": "{{&member}} tilføjede en forfaldsdato for kortet \"{{&card}}\"",
+        "due_change": "{{&member}} ændrede forfaldsdatoen for kortet \"{{&card}}\"",
+        "create_card": "{{&member}} oprettede kortet {{&cardID}}",
+        "delete_card": "{{&member}} slettede kortet {{&cardID}}",
+        "unvote_card": "{{&member}} stemte sin stemme på kortet \"{{&card}}\"",
+        "vote_card": "{{&member}} stemte på kortet \"{{&card}}\"",
+        "rem_card_desc": "{{&member}} fjernede beskrivelsen for kortet \"{{&card}}\"",
+        "edit_card_desc": "{{&member}} ændrede beskrivelsen for kortet \"{{&card}}\"",
+        "add_card_desc": "{{&member}} tilføjede en beskrivelse til kortet \"{{&card}}\"",
+        "update_comment": "{{&member}} opdaterede sin kommentar på \"{{&card}}\""
+    },
+    "webhook_filters": {
+        "DELETE_LABEL": "Sletninger af etiketter"
+    },
+    "webhook_cmd": {
+        "menu": {
+            "link": "Brug webhook-link",
+            "exist": "Brug eksisterende webhook",
+            "add": "Tilføj webhook"
+        },
+        "owned_by": "Ejet af",
+        "allowed_actions": {
+            "many": "Tilladte handlinger",
+            "one": "Tilladt handling"
+        },
+        "filtered_card": {
+            "many": "Filtrerede kort",
+            "one": "Filtreret kort"
+        },
+        "filtered_list": {
+            "many": "Filtrerede lister",
+            "one": "Filtreret liste"
+        },
+        "blacklist": "Sortliste",
+        "whitelist": "Hvidliste"
     }
 }
