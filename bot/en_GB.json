@@ -353,18 +353,18 @@
         },
         "watchlist": {
             "usage": "[listName|listID]",
-            "description": "Toggle watching a list."
+            "description": "Toggle watching a list. Watched lists will give you update notifications on [Trello}(https://trello.com/)."
         },
         "watch": {
-            "description": "Toggle watching a board. If no board is defined, the current board is used.",
+            "description": "Toggle watching a board. If no board is defined, the current board is used. Watched boards will give you update notifications on [Trello}(https://trello.com/).",
             "usage": "[boardName|boardID]"
         },
         "star": {
             "usage": "[boardName|boardID]",
-            "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on Trello.com."
+            "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on [Trello}(https://trello.com/)."
         },
         "watchcard": {
-            "description": "Toggle watching a card.",
+            "description": "Toggle watching a card. Watched cards will give you update notifications on [Trello}(https://trello.com/).",
             "usage": "[cardName|cardID]"
         },
         "editcard": {
@@ -416,7 +416,7 @@
     },
     "boards": {
         "header": "Use `{{&cleanPrefix}}switch <boardID|boardName>` to switch between boards.",
-        "none": "You are not assigned to any boards.",
+        "none": "You are not assigned to any boards. You can create one on <https://trello.com/>.",
         "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
         "no_switch": "Could not find a board with that ID!",
         "gone": "This board no longer exists! Switch to another one with `{{&cleanPrefix}}switch`!",
@@ -825,6 +825,7 @@
         "not_found": "That webhook does not exist!",
         "invalid": "Invalid webhook ID!",
         "none": "There are no webhooks on this server connected to Trello.",
-        "header": "Use `{{&cleanPrefix}}webhook <webhookID>` to view a webhook and `{{&cleanPrefix}}editwebhook <webhookID>` to edit it."
+        "header": "Use `{{&cleanPrefix}}webhook <webhookID>` to view a webhook and `{{&cleanPrefix}}editwebhook <webhookID>` to edit it.",
+        "unknown": "unknown"
     }
 }
