@@ -359,7 +359,8 @@
         "created": "Created the webhook for \"{{&name}}\".",
         "create_confirm": "This webhook for the Trello board \"{{&name}}\" has started! Actions should be showing up shortly…",
         "no_dwh": "You have no Discord webhooks to link to!",
-        "choose_existwh": "Choose which webhook to use."
+        "choose_existwh": "Choose which webhook to use.",
+        "unknown": "unknown"
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
     "bad_args": "Not enough arguments!",
