@@ -205,7 +205,8 @@
             "one": "Tjeklisteemne"
         },
         "webhook": {
-            "one": "Webhook"
+            "one": "Webhook",
+            "many": "Webhooks"
         },
         "channel": {
             "many": "Kanaler",
@@ -443,6 +444,13 @@
         },
         "addcard": {
             "description": "Opretter et kort."
+        },
+        "webhooks": {
+            "usage": "[side]"
+        },
+        "addlist": {
+            "usage": "[navn]",
+            "description": "Opretter en liste på den aktuelle tavle."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -462,9 +470,17 @@
             "sub_on": "Overvåg denne tavle",
             "archive_off": "Åbn tavle",
             "archive_on": "Luk tavle",
-            "name": "Redigér navn på tavle"
+            "name": "Redigér navn på tavle",
+            "sub_off": "Stop med at overvåge denne tavle",
+            "remove_desc": "Fjern tavlebeskrivelse",
+            "desc": "Redigér tavlebeskrivelse"
         },
-        "wywtd": "Vælg hvad du vil gøre med denne tavle."
+        "wywtd": "Vælg hvad du vil gøre med denne tavle.",
+        "set_name": "Omdøbte tavlen fra \"{{&old}}\" til \"{{&new}}\".",
+        "input_desc": "Indtast den nye beskrivelse for tavlen.",
+        "unarchived": "Fjernede tavlen \"{{&name}}\" fra arkivet.",
+        "archived": "Arkiverede tavlen \"{{&name}}\".",
+        "input_name": "Indtast det navn du ønsker at omdøbe tavlen til."
     },
     "cards": {
         "none": "Denne tavle har ingen kort.",
@@ -607,7 +623,8 @@
         "rem_card_desc": "{{&member}} fjernede beskrivelsen for kortet \"{{&card}}\"",
         "edit_card_desc": "{{&member}} ændrede beskrivelsen for kortet \"{{&card}}\"",
         "add_card_desc": "{{&member}} tilføjede en beskrivelse til kortet \"{{&card}}\"",
-        "update_comment": "{{&member}} opdaterede sin kommentar på \"{{&card}}\""
+        "update_comment": "{{&member}} opdaterede sin kommentar på \"{{&card}}\"",
+        "board_set_perm_levels": "{{&member}} satte synligheden fra {{&oldPerm}} til {{&perm}}"
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter"
@@ -632,6 +649,9 @@
             "one": "Filtreret liste"
         },
         "blacklist": "Sortliste",
-        "whitelist": "Hvidliste"
+        "whitelist": "Hvidliste",
+        "invalid": "Ugyldigt webhook-ID!",
+        "unknown": "ukendt",
+        "not_found": "Dette webhook findes ikke!"
     }
 }
