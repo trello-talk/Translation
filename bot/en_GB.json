@@ -155,7 +155,11 @@
             "many": "Webhooks",
             "one": "Webhook"
         },
-        "active": "Active"
+        "active": "Active",
+        "flag": {
+            "many": "Flags",
+            "one": "Flag"
+        }
     },
     "format": {
         "second": {
@@ -555,7 +559,8 @@
         "select_timeout": "Your last prompt was timed out. All changes have been lost.",
         "select_canceled": "Your last prompt was canceled. All changes have been lost.",
         "select_cancel": "Type \"save\" to save the selection, otherwise type \"cancel\" to exit.",
-        "select": "Type the number of the item to toggle its value."
+        "select": "Type the number of the item to toggle its value.",
+        "canceled": "Your last prompt was canceled."
     },
     "reloadone": {
         "invalid": "Invalid command!",
@@ -826,6 +831,40 @@
         "invalid": "Invalid webhook ID!",
         "none": "There are no webhooks on this server connected to Trello.",
         "header": "Use `{{&cleanPrefix}}webhook <webhookID>` to view a webhook and `{{&cleanPrefix}}editwebhook <webhookID>` to edit it.",
-        "unknown": "unknown"
+        "unknown": "unknown",
+        "repaired": "Any issues with the webhook have been repaired.",
+        "repaired_wh": "Repaired Webhook",
+        "repair_dwh_header": "The Discord webhook is missing. How do you want to create a new one?",
+        "filter_update": "Updated the webhook's filters.",
+        "deleted": "Deleted the webhook.",
+        "confirm_delete": "Are you sure you want to delete this webhook?",
+        "wh_on": "The webhook has been turned on.",
+        "wh_off": "The webhook has been turned off.",
+        "wywtd": "Choose what you want to do with this webhook.",
+        "no_server_link": "That webhook is not on this server!",
+        "no_link": "I couldn't find a webhook URL in the input!",
+        "input_link": "Paste the link of the webhook you want to use.",
+        "edit_menu": {
+            "repair": "Repair webhook",
+            "delete": "Delete webhook",
+            "filter": "Edit filters",
+            "off": "Deactivate",
+            "on": "Activate"
+        }
+    },
+    "webhook_filter_group": {
+        "listUpdate": "List Updates",
+        "list": "Lists",
+        "checkItemUpdate": "Checklist Item Updates",
+        "checkItem": "Checklist Items",
+        "checklistUpdate": "Checklist Updates",
+        "checklist": "Checklists",
+        "comment": "Comments",
+        "cardUpdate": "Card Updates",
+        "card": "Cards",
+        "labelUpdate": "Label Updates",
+        "label": "Labels",
+        "boardUpdate": "Board Updates",
+        "board": "Board"
     }
 }
