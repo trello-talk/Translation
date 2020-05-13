@@ -195,7 +195,9 @@
         "new_desc": "Deskripsi Baru",
         "old_desc": "Deskripsi Lama",
         "perm_levels": {
-            "public": "Awam"
+            "public": "Awam",
+            "private": "Peribadi",
+            "org": "Ahli Tampak"
         },
         "products": {
             "38": "🌟 Trello Gold Tahunan",
@@ -213,11 +215,29 @@
         "hide_votes": "Sorok undian",
         "locale": "Lokal (dalam Trello)",
         "summ": "Hantar Rumusan",
-        "colorblind": "Mod Buta Warna"
+        "colorblind": "Mod Buta Warna",
+        "vote_perms": {
+            "public": "Mana-mana Pengguna Trello",
+            "org": "Ahli Organisasi",
+            "members": "Semua Ahli",
+            "disabled": "Dinyahdayakan"
+        },
+        "comment_perms": {
+            "public": "Mana-mana Pengguna Trello",
+            "org": "Ahli Organisasi",
+            "members": "Semua Ahli",
+            "disabled": "Dinyahdayakan"
+        },
+        "invite_perms": {
+            "admins": "Pentadbir",
+            "members": "Semua Ahli"
+        }
     },
     "webhook_cmd": {
         "whitelist": "Senarai Izin",
-        "blacklist": "Senarai Hitam"
+        "blacklist": "Senarai Hitam",
+        "not_found": "Webhook itu tidak wujud!",
+        "invalid": "Webhook ID tidah sah!"
     },
     "locale": {
         "server_locale": "Lokal Server: {{&locale}}",
