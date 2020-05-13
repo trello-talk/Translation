@@ -1,7 +1,8 @@
 {
     "reloadone": {
         "invalid": "Perintah tidak sah!",
-        "done": "{{&commands}} telah dimuatkan."
+        "done": "{{&commands}} telah dimuatkan.",
+        "file": "Fail yang mengandungi perintah yang ditentukan tidak wujud lagi!"
     },
     "responses": {
         "hangman": "Saya bukan bot permainan.",
@@ -38,11 +39,12 @@
     },
     "help": {
         "not_found": "Perintah `{{&command}}` tidak dijumpai.",
-        "footer": "Taip `{{&cleanPrefix}}help [command]` untuk lebih lanjut."
+        "footer": "Taip `{{&cleanPrefix}}help [command]` untuk lebih lanjut.",
+        "header": "{{&username}} (Menjalankan [Faux](https://github.com/Snazzah/Faux) terubahsuai dari Snazzah)\nServer Bantuan: {{&link}}"
     },
     "words": {
         "sticker": {
-            "many": "Stiker-stiker",
+            "many": "Stiker",
             "one": "Stiker"
         },
         "short_link": {
@@ -86,7 +88,87 @@
         },
         "mem_usage": "Penggunaan Memori",
         "note": "Nota",
-        "usage": "Penggunaan"
+        "usage": "Penggunaan",
+        "visibility": "Keterlihatan",
+        "bio": "Bio",
+        "flag": {
+            "many": "Bendera",
+            "one": "Bendera"
+        },
+        "channel": {
+            "many": "Saluran",
+            "one": "Saluran"
+        },
+        "name": {
+            "many": "Nama",
+            "one": "Nama"
+        },
+        "vote_lower": {
+            "many": "undian",
+            "one": "undian"
+        },
+        "comment": {
+            "many": "Komen",
+            "one": "Komen"
+        },
+        "member": {
+            "many": "Ahli",
+            "one": "Ahli"
+        },
+        "user_pref": {
+            "many": "Keutamaan Pengguna",
+            "one": "Keutamaan Pengguna"
+        },
+        "pref": {
+            "many": "Keutamaan",
+            "one": "Keutamaan"
+        },
+        "orgs": {
+            "many": "Organisasi",
+            "one": "Organisasi"
+        },
+        "arch_board": {
+            "many": "Board Dalam Arkib",
+            "one": "Board Dalam Arkib"
+        },
+        "arch_card": {
+            "many": "Kad Dalam Arkib",
+            "one": "Kad Dalam Arkib"
+        },
+        "subcmd": {
+            "many": "Sub-perintah",
+            "one": "Sub-perintah"
+        },
+        "cmd": {
+            "many": "Perintah",
+            "one": "Perintah"
+        },
+        "attachment": {
+            "many": "Lampiran",
+            "one": "Lampiran"
+        },
+        "member_type": {
+            "many": "Jenis-jenis Member",
+            "one": "Jenis Member"
+        },
+        "opt": {
+            "many": "Opsyen",
+            "one": "Opsyen"
+        },
+        "card": {
+            "many": "Kad-kad",
+            "one": "Kad"
+        },
+        "label": {
+            "many": "Label-label",
+            "one": "Label"
+        },
+        "trello_board": {
+            "many": "Trello Board",
+            "one": "Trello Board"
+        },
+        "uptime": "Uptime",
+        "locale": "Lokal"
     },
     "trello": {
         "member_type": {
@@ -111,7 +193,27 @@
         "new_name": "Nama Baru",
         "old_name": "Nama Lama",
         "new_desc": "Deskripsi Baru",
-        "old_desc": "Deskripsi Lama"
+        "old_desc": "Deskripsi Lama",
+        "perm_levels": {
+            "public": "Awam"
+        },
+        "products": {
+            "38": "🌟 Trello Gold Tahunan",
+            "37": "⭐ Trello Gold Bulanan",
+            "10": "💼 Trello Emas dari Kelas Bisnes"
+        },
+        "from_board": "Daripada Board",
+        "to_board": "Kepada Board",
+        "archived_lower": "diarkibkan",
+        "add_rem_members": "Tambah/Buang Ahli",
+        "last_act": "Aktivity Terakhir",
+        "subbed": "Dilihat",
+        "template": "Ini templat?",
+        "self_join": "Benarkan ahli pasukan untuk Sunting atau Sertai",
+        "hide_votes": "Sorok undian",
+        "locale": "Lokal (dalam Trello)",
+        "summ": "Hantar Rumusan",
+        "colorblind": "Mod Buta Warna"
     },
     "webhook_cmd": {
         "whitelist": "Senarai Izin",
@@ -131,14 +233,17 @@
         "user_set": "Tetapkan lokal ke **{{&name}}**."
     },
     "shardinfo": {
-        "title": "Informasi mengenai Shard {{&username}}"
+        "title": "Informasi mengenai Shard {{&username}}",
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} guilds"
     },
     "info": {
-        "title": "Informasi mengenai {{&username}}"
+        "title": "Informasi mengenai {{&username}}",
+        "faux": "Bot ini menggunakan versi [Faux](https://github.com/Snazzah/Faux) yang telah diubahsuai."
     },
     "reloadwebserver": {
         "done": "Webserver telah dimulakan semula.",
-        "reloading": "Mulakan semula webserver…"
+        "reloading": "Mulakan semula webserver…",
+        "no": "Tiada webserver dalam instance ini!"
     },
     "reloadlocale": {
         "done": "Lokal the dimuatkan.",
