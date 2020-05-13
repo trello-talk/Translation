@@ -672,7 +672,8 @@
             "sub_off": "Stop watching this card",
             "remove_due": "Remove due date",
             "due_on": "Mark due date as complete",
-            "due_off": "Mark due date as incomplete"
+            "due_off": "Mark due date as incomplete",
+            "attach": "Create attachment"
         },
         "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the card to.",
@@ -689,7 +690,10 @@
         "due_on": "Marked due date as complete for card \"{{&name}}\".",
         "due_off": "Marked due date as incomplete for card \"{{&name}}\".",
         "input_comment": "Type the message you want to comment on the card.",
-        "commented": "Created a comment on \"{{&name}}\"."
+        "commented": "Created a comment on \"{{&name}}\".",
+        "input_attach": "Paste the URL of the attachment you want to add to the card.",
+        "bad_attach": "Invalid attachment URL!",
+        "add_attach": "Created an attachment to \"{{&name}}\"."
     },
     "lists": {
         "none": "This board has no lists.",
