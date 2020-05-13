@@ -230,6 +230,10 @@
             "one": "Channel",
             "many": "Channels"
         },
+        "flag": {
+            "one": "Flag",
+            "many": "Flags"
+        },
         "bio": "Bio",
         "visibility": "Visibility",
         "in_lower": "in",
@@ -353,6 +357,13 @@
             "exist": "Use existing webhook",
             "link": "Use webhook link"
         },
+        "edit_menu": {
+            "on": "Activate",
+            "off": "Deactivate",
+            "filter": "Edit filters",
+            "delete": "Delete webhook",
+            "repair": "Repair webhook"
+        },
         "no_channels": "No channels have been found that allows me to manage webhooks.",
         "choose_channel": "Choose which channel that the webhook will post in.",
         "couldnt_create": "I could not create the webhook! This is probably due to some sudden permission change in the process!",
@@ -360,6 +371,18 @@
         "create_confirm": "This webhook for the Trello board \"{{&name}}\" has started! Actions should be showing up shortly…",
         "no_dwh": "You have no Discord webhooks to link to!",
         "choose_existwh": "Choose which webhook to use.",
+        "input_link": "Paste the link of the webhook you want to use.",
+        "no_link": "I couldn't find a webhook URL in the input!",
+        "no_server_link": "That webhook is not on this server!",
+        "wywtd": "Choose what you want to do with this webhook.",
+        "wh_off": "The webhook has been turned off.",
+        "wh_on": "The webhook has been turned on.",
+        "confirm_delete": "Are you sure you want to delete this webhook?",
+        "deleted": "Deleted the webhook.",
+        "filter_update": "Updated the webhook's filters.",
+        "repair_dwh_header": "The Discord webhook is missing. How do you want to create a new one?",
+        "repaired_wh": "Repaired Webhook",
+        "repaired": "Any issues with the webhook have been repaired.",
         "unknown": "unknown"
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
@@ -567,6 +590,7 @@
         "input": "Type the message you want to input.",
         "cancel": "Typing \"cancel\" will close this prompt.",
         "timeout": "Your last prompt was timed out.",
+        "canceled": "Your last prompt was canceled.",
         "no_search": "No results came up with that search.",
         "cancel_input": "Typing \"{{&cancelPrompt}}\" will cancel the input.",
         "input_canceled": "Your last input was canceled.",
@@ -824,5 +848,20 @@
         "UPDATE_LIST_NAME": "List name updates",
         "UPDATE_LIST_POS": "List position updates",
         "UPDATE_LIST_CLOSED": "List archive updates (archived/unarchived)"
+    },
+    "webhook_filter_group": {
+        "board": "Board",
+        "boardUpdate": "Board Updates",
+        "label": "Labels",
+        "labelUpdate": "Label Updates",
+        "card": "Cards",
+        "cardUpdate": "Card Updates",
+        "comment": "Comments",
+        "checklist": "Checklists",
+        "checklistUpdate": "Checklist Updates",
+        "checkItem": "Checklist Items",
+        "checkItemUpdate": "Checklist Item Updates",
+        "list": "Lists",
+        "listUpdate": "List Updates"
     }
 }
