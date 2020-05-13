@@ -398,6 +398,7 @@
         "no_access": "Either this board no longer exists or you do not have access to it!",
         "locale_unset": "Unset the webhook locale.",
         "locale_set": "Set the webhook locale to **{{&name}}**.",
+        "max_wh": "You have reached your maximum webhooks for this server! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
         "unknown": "unknown"
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
