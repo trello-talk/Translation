@@ -362,7 +362,11 @@
             "off": "Deactivate",
             "filter": "Edit filters",
             "delete": "Delete webhook",
-            "repair": "Repair webhook"
+            "repair": "Repair webhook",
+            "lists": "Change filtered lists",
+            "cards": "Change filtered cards",
+            "wlist": "Change filter to whitelist",
+            "blist": "Change filter to blacklist"
         },
         "no_channels": "No channels have been found that allows me to manage webhooks.",
         "choose_channel": "Choose which channel that the webhook will post in.",
@@ -383,6 +387,13 @@
         "repair_dwh_header": "The Discord webhook is missing. How do you want to create a new one?",
         "repaired_wh": "Repaired Webhook",
         "repaired": "Any issues with the webhook have been repaired.",
+        "to_wlist": "Changed filtering policy to whitelist.",
+        "to_blist": "Changed filtering policy to blacklist.",
+        "lists_updated": "The filtered lists were saved.",
+        "cards_updated": "The filtered cards were saved.",
+        "choose_lists": "Choose which lists will be filtered. Choosing no lists will disable list filtering.",
+        "choose_cards": "Choose which cards will be filtered. Choosing no cards will disable card filtering.",
+        "no_access": "Either this board no longer exists or you do not have access to it!",
         "unknown": "unknown"
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
