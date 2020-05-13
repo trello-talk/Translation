@@ -159,7 +159,8 @@
         "flag": {
             "many": "Flags",
             "one": "Flag"
-        }
+        },
+        "locale": "Locale"
     },
     "format": {
         "second": {
@@ -425,7 +426,8 @@
         },
         "editwebhook": {
             "usage": "<webhookID> [subcommand]",
-            "description": "Edits a webhook on your server."
+            "description": "Edits a webhook on your server.  Check the note for sub-commands and usages.",
+            "note": "`activate`, `deactivate` - Activates or deactivates the webhook\n`filters` - Edit the filters (formerly \"Webhook Bits\") for this webhook\n`locale [locale]` - Sets the locale for the webhook\n`repair` - Repairs any issues with the webhook\n`delete` - Deletes the webhook\n`whitelist`, `blacklist` - Changes the filter policy of the webhook\n`lists` - Edit filtered lists\n`cards` - Edit filtered cards"
         }
     },
     "boards": {
@@ -872,7 +874,8 @@
             "blist": "Change filter to blacklist",
             "wlist": "Change filter to whitelist",
             "cards": "Change filtered cards",
-            "lists": "Change filtered lists"
+            "lists": "Change filtered lists",
+            "locale": "Change locale"
         },
         "no_access": "Either this board no longer exists or you do not have access to it!",
         "choose_cards": "Choose which cards will be filtered. Choosing no cards will disable card filtering.",
@@ -880,7 +883,10 @@
         "cards_updated": "The filtered cards were saved.",
         "lists_updated": "The filtered lists were saved.",
         "to_blist": "Changed filtering policy to blacklist.",
-        "to_wlist": "Changed filtering policy to whitelist."
+        "to_wlist": "Changed filtering policy to whitelist.",
+        "max_wh": "You have reached your maximum webhooks for this server! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
+        "locale_set": "Set the webhook locale to **{{&name}}**.",
+        "locale_unset": "Unset the webhook locale."
     },
     "webhook_filter_group": {
         "listUpdate": "List Updates",
