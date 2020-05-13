@@ -81,6 +81,7 @@
         "active": "Active",
         "usage": "Usage",
         "cooldown": "Cooldown",
+        "locale": "Locale",
         "alias": {
             "one": "Alias",
             "many": "Aliases"
@@ -363,6 +364,7 @@
             "filter": "Edit filters",
             "delete": "Delete webhook",
             "repair": "Repair webhook",
+            "locale": "Change locale",
             "lists": "Change filtered lists",
             "cards": "Change filtered cards",
             "wlist": "Change filter to whitelist",
@@ -394,6 +396,8 @@
         "choose_lists": "Choose which lists will be filtered. Choosing no lists will disable list filtering.",
         "choose_cards": "Choose which cards will be filtered. Choosing no cards will disable card filtering.",
         "no_access": "Either this board no longer exists or you do not have access to it!",
+        "locale_unset": "Unset the webhook locale.",
+        "locale_set": "Set the webhook locale to **{{&name}}**.",
         "unknown": "unknown"
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
@@ -589,8 +593,9 @@
             "usage": "[boardID|boardName]"
         },
         "editwebhook": {
-            "description": "Edits a webhook on your server.",
-            "usage": "<webhookID> [subcommand]"
+            "description": "Edits a webhook on your server.  Check the note for sub-commands and usages.",
+            "usage": "<webhookID> [subcommand]",
+            "note": "`activate`, `deactivate` - Activates or deactivates the webhook\n`filters` - Edit the filters (formerly \"Webhook Bits\") for this webhook\n`locale [locale]` - Sets the locale for the webhook\n`repair` - Repairs any issues with the webhook\n`delete` - Deletes the webhook\n`whitelist`, `blacklist` - Changes the filter policy of the webhook\n`lists` - Edit filtered lists\n`cards` - Edit filtered cards"
         },
         "clearauth": {
             "description": "Clears your Trello authorization. Do not run this unless you really need to."
