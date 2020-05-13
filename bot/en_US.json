@@ -407,7 +407,8 @@
         "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
         "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
         "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
-        "webhooks": "I need the permission `Manage Webhooks` to use this command!"
+        "webhooks": "I need the permission `Manage Webhooks` to use this command!",
+        "userData": "Your settings is not in the database!"
     },
     "format": {
         "second": {
@@ -586,6 +587,16 @@
         "addwebhook": {
             "description": "Creates a webhook on your server.",
             "usage": "[boardID|boardName]"
+        },
+        "editwebhook": {
+            "description": "Edits a webhook on your server.",
+            "usage": "<webhookID> [subcommand]"
+        },
+        "clearauth": {
+            "description": "Clears your Trello authorization. Do not run this unless you really need to."
+        },
+        "cleardata": {
+            "description": "Removes your user data from Taco."
         }
     },
     "error": "An error occurred while processing that command!",
@@ -732,7 +743,11 @@
         "unsub_board": "No longer watching board \"{{&name}}\". (`{{id}}`)",
         "star_board": "Created star for board \"{{&name}}\". (`{{id}}`)",
         "unstar_board": "Removed star for board \"{{&name}}\". (`{{id}}`)",
-        "star_error": "The board's star was not found! Try again later!"
+        "star_error": "The board's star was not found! Try again later!",
+        "clearauth_confirm": "Are you sure you want to clear your authorization? The following will happen:\n- Your Trello token will be invalidated.\n- Any webhooks you created will no longer work and will be required to be repaired.",
+        "clearauth": "Your authorization has been cleared.",
+        "cleardata_confirm": "Are you sure you want to remove your data? The following will happen:\n- Your prefixes and locale settings will be removed.\n- Your authorization credentials will be removed.\n- Your Trello token will be invalidated.\n- Any webhooks you created will no longer work and will be required to be repaired.",
+        "cleardata": "Your user data has been cleared."
     },
     "and_more": "And {{count}} more…",
     "webhooks": {
