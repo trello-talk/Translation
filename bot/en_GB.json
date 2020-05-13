@@ -421,7 +421,7 @@
             "description": "Removes your user data from Taco."
         },
         "clearauth": {
-            "description": "Clears your Trello authorization. Do not run this unless you really need to."
+            "description": "Clears your Trello authorisation. Do not run this unless you really need to."
         },
         "editwebhook": {
             "usage": "<webhookID> [subcommand]",
@@ -597,7 +597,8 @@
             "sub_off": "Stop watching this card",
             "due_on": "Mark due date as complete",
             "remove_due": "Remove due date",
-            "due_off": "Mark due date as incomplete"
+            "due_off": "Mark due date as incomplete",
+            "attach": "Create attachment"
         },
         "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the card to.",
@@ -612,7 +613,10 @@
         "removed_due": "Removed the due date for card \"{{&name}}\".",
         "due_on": "Marked due date as complete for card \"{{&name}}\".",
         "input_comment": "Type the message you want to comment on the card.",
-        "commented": "Created a comment on \"{{&name}}\"."
+        "commented": "Created a comment on \"{{&name}}\".",
+        "add_attach": "Created an attachment to \"{{&name}}\".",
+        "bad_attach": "Invalid attachment URL!",
+        "input_attach": "Paste the URL of the attachment you want to add to the card."
     },
     "lists": {
         "arch_none": "This board has no archived lists.",
@@ -669,9 +673,9 @@
         "unsub_list": "No longer watching list \"{{&name}}\". (`{{id}}`)",
         "star_error": "The board's star was not found! Try again later!",
         "cleardata": "Your user data has been cleared.",
-        "cleardata_confirm": "Are you sure you want to remove your data? The following will happen:\n- Your prefixes and locale settings will be removed.\n- Your authorization credentials will be removed.\n- Your Trello token will be invalidated.\n- Any webhooks you created will no longer work and will be required to be repaired.",
-        "clearauth": "Your authorization has been cleared.",
-        "clearauth_confirm": "Are you sure you want to clear your authorization? The following will happen:\n- Your Trello token will be invalidated.\n- Any webhooks you created will no longer work and will be required to be repaired."
+        "cleardata_confirm": "Are you sure you want to remove your data? The following will happen:\n- Your prefixes and locale settings will be removed.\n- Your authorisation credentials will be removed.\n- Your Trello token will be invalidated.\n- Any webhooks you created will no longer work and will be required to be repaired.",
+        "clearauth": "Your authorisation has been cleared.",
+        "clearauth_confirm": "Are you sure you want to clear your authorisation? The following will happen:\n- Your Trello token will be invalidated.\n- Any webhooks you created will no longer work and will be required to be repaired."
     },
     "reloadwebserver": {
         "no": "There is no webserver on this instance!",
