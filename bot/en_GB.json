@@ -849,8 +849,19 @@
             "delete": "Delete webhook",
             "filter": "Edit filters",
             "off": "Deactivate",
-            "on": "Activate"
-        }
+            "on": "Activate",
+            "blist": "Change filter to blacklist",
+            "wlist": "Change filter to whitelist",
+            "cards": "Change filtered cards",
+            "lists": "Change filtered lists"
+        },
+        "no_access": "Either this board no longer exists or you do not have access to it!",
+        "choose_cards": "Choose which cards will be filtered. Choosing no cards will disable card filtering.",
+        "choose_lists": "Choose which lists will be filtered. Choosing no lists will disable list filtering.",
+        "cards_updated": "The filtered cards were saved.",
+        "lists_updated": "The filtered lists were saved.",
+        "to_blist": "Changed filtering policy to blacklist.",
+        "to_wlist": "Changed filtering policy to whitelist."
     },
     "webhook_filter_group": {
         "listUpdate": "List Updates",
