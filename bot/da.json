@@ -216,7 +216,11 @@
             "many": "Navne",
             "one": "Navn"
         },
-        "active": "Aktiv"
+        "active": "Aktiv",
+        "flag": {
+            "many": "Flag",
+            "one": "Flag"
+        }
     },
     "trello": {
         "template": "Er skabelon?",
@@ -627,7 +631,8 @@
         "board_set_perm_levels": "{{&member}} satte synligheden fra {{&oldPerm}} til {{&perm}}"
     },
     "webhook_filters": {
-        "DELETE_LABEL": "Sletninger af etiketter"
+        "DELETE_LABEL": "Sletninger af etiketter",
+        "UPDATE_CARD_NAME": "Opdateringer af kortnavne"
     },
     "webhook_cmd": {
         "menu": {
@@ -653,5 +658,20 @@
         "invalid": "Ugyldigt webhook-ID!",
         "unknown": "ukendt",
         "not_found": "Dette webhook findes ikke!"
+    },
+    "webhook_filter_group": {
+        "listUpdate": "Opdateringer af lister",
+        "checkItemUpdate": "Opdateringer af tjeklisteemner",
+        "label": "Etiketter",
+        "board": "Tavle",
+        "boardUpdate": "Tavleopdateringer",
+        "card": "Kort",
+        "labelUpdate": "Etiketopdateringer",
+        "cardUpdate": "Kortopdateringer",
+        "checkItem": "Tjeklisteemner",
+        "checklistUpdate": "Tjeklisteopdateringer",
+        "checklist": "Tjeklister",
+        "comment": "Kommentarer",
+        "list": "Lister"
     }
 }
