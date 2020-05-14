@@ -275,7 +275,25 @@
         "checklist_item": {
             "one": "Item da Checklist",
             "many": "Itens da Checklist"
-        }
+        },
+        "flag": {
+            "many": "Flags",
+            "one": "Flag"
+        },
+        "channel": {
+            "many": "Canais",
+            "one": "Canal"
+        },
+        "name": {
+            "many": "Nomes",
+            "one": "Nome"
+        },
+        "webhook": {
+            "many": "Webhooks",
+            "one": "Webhook"
+        },
+        "locale": "Idioma",
+        "active": "Ativo"
     },
     "shardinfo": {
         "title": "Informações sobre os Shards do {{&username}}",
@@ -409,19 +427,19 @@
             "usage": "[nomeDaLista|idDaLista] [página]"
         },
         "watchlist": {
-            "description": "Altera o acompanhamento de uma lista.",
+            "description": "Altera o acompanhamento de uma lista. As listas acompanhadas fornecerão notificações de atualização no [Trello}(https://trello.com/).",
             "usage": "[nomeDaLista|idDaLista]"
         },
         "watch": {
             "usage": "[nomeDoQuadro|idDoQuadro]",
-            "description": "Altera o acompanhamento de um quadro. Se nenhum quadro for definido, o quadro atual será usado."
+            "description": "Altera o acompanhamento de um quadro. Se nenhum quadro for definido, o quadro atual será usado. Os quadros acompanhados fornecerão notificações de atualização no [Trello}(https://trello.com/)."
         },
         "star": {
             "usage": "[nomeDoQuadro|idDoQuadro]",
-            "description": "Altera os quadros favoritos. Se nenhum quadro for definido, o quadro atual será usado. Quadros favoritos serão exibidos no topo da sua lista de quadros no Trello.com."
+            "description": "Altera os quadros favoritos. Se nenhum quadro for definido, o quadro atual será usado. Quadros favoritos serão exibidos no topo da sua lista de quadros no [Trello}(https://trello.com/)."
         },
         "watchcard": {
-            "description": "Altere o acompanhamento do cartão.",
+            "description": "Altere o acompanhamento do cartão. Os cartões acompanhados fornecerão notificações de atualização no [Trello}(https://trello.com/).",
             "usage": "[nomeDoCartão|idDoCartão]"
         },
         "prefix": {
@@ -504,7 +522,7 @@
     },
     "boards": {
         "header": "Use `{{&cleanPrefix}}switch <idDoQuadro|nomeDoQuadro>` para alternar entre quadros.",
-        "none": "Você não está atribuído a nenhum quadro.",
+        "none": "Você não está atribuído a nenhum quadro. Você pode criar um em <https://trello.com/>.",
         "switch": "Quadro alterado para \"{{&name}}\" (`{{&id}}`).",
         "choose": "Digite o número do quadro que você deseja usar.",
         "gone": "Esse quadro não existe mais! Altere para outro com o comando `{{&cleanPrefix}}switch`!",
@@ -573,7 +591,7 @@
         "none": "Esse quadro não possui listas.",
         "list_none": "Essa lista não possui cartões.",
         "arch_none": "Esse quadro não possui listas arquivadas.",
-        "header": "Use `{{&cleanPrefix}}list <idDaLista|nomeDaLista>` para alternar entre os cargos.",
+        "header": "Use `{{&cleanPrefix}}list <idDaLista|nomeDaLista>` para ver a lista.",
         "arch_header": "Use `{{&cleanPrefix}}editlist <idDaLista|nomeDaLista> unarchive` para desarquivar a lista.",
         "choose": "Digite o número da lista que deseja usar.",
         "list_header": "Use `{{&cleanPrefix}}card <idDoCartão|nomeDoCartão>` para obter mais informações de um cartão.",
@@ -660,7 +678,12 @@
         "rem_card_desc": "{{&member}} removeu a descrição do cartão \"{{&card}}\"",
         "edit_card_desc": "{{&member}} alterou a descrição do cartão \"{{&card}}\"",
         "add_card_desc": "{{&member}} adicionou descrição ao cartão \"{{&card}}\"",
-        "delete_comment": "{{&member}} deletou seu comentário no cartão \"{{&card}}\"",
+        "delete_comment": "{{&member}} teve seu comentário no cartão \"{{&card}}\" removido",
         "update_comment": "{{&member}} atualizou seu comentário no cartão \"{{&card}}\""
+    },
+    "webhook_cmd": {
+        "not_found": "Esse webhook não existe!",
+        "invalid": "ID do webhook inválido!",
+        "header": "Use `{{&cleanPrefix}}webhook <IdDoWebhook>` para ver um webhook e `{{&cleanPrefix}}editwebhook <IdDoWebhook>` para editá-lo."
     }
 }
