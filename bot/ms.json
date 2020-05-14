@@ -168,7 +168,24 @@
             "one": "Trello Board"
         },
         "uptime": "Uptime",
-        "locale": "Lokal"
+        "locale": "Lokal",
+        "webhook": {
+            "many": "Webhook",
+            "one": "Webhook"
+        },
+        "prefix": {
+            "many": "Awalan",
+            "one": "Awalan"
+        },
+        "product": {
+            "many": "Produk",
+            "one": "Produk"
+        },
+        "checklist": {
+            "many": "Senarai Semakan",
+            "one": "Senarai Semakan"
+        },
+        "cooldown": "Cooldown"
     },
     "trello": {
         "member_type": {
@@ -231,13 +248,82 @@
         "invite_perms": {
             "admins": "Pentadbir",
             "members": "Semua Ahli"
-        }
+        },
+        "item_src": "Sumber Item",
+        "new_due": "Tarikh Cukup Tempoh Baru",
+        "old_due": "Tarikh Cukup Tempoh Lama",
+        "curr_list": "Senarai Semasa",
+        "prev_list": "Senarai Sebelumnya",
+        "voted": "Diundi",
+        "voting": "Pengundian",
+        "starred": "Dibintangkan"
     },
     "webhook_cmd": {
         "whitelist": "Senarai Izin",
         "blacklist": "Senarai Hitam",
         "not_found": "Webhook itu tidak wujud!",
-        "invalid": "Webhook ID tidah sah!"
+        "invalid": "Webhook ID tidah sah!",
+        "repaired": "Sebarang issu webhook telah diperbaiki.",
+        "repaired_wh": "Webhook Telah Dibaiki",
+        "repair_dwh_header": "Webhook Discord tidak dapat dicari. Bagaimanakah anda ingin membina webhook yang baru?",
+        "filter_update": "Penapis webhook telah dikemaskinikan.",
+        "deleted": "Webhook telah dibuangkan.",
+        "confirm_delete": "Adakah anda pasti ingin membuang webhook ini?",
+        "wh_on": "Webhook tersebut telah diaktifkan.",
+        "wh_off": "Webhook tersebut telah dinyahaktifkan.",
+        "wywtd": "Pilih tindakan anda untuk webhook ini.",
+        "no_server_link": "Webhook itu tiada dalam server ini!",
+        "no_link": "Saya tidak dapat menjumpai sebarang URL webhook dalam input!",
+        "input_link": "Tampalkan pautan webhook yang anda ingin gunakan.",
+        "choose_existwh": "Pilih webhook yang akan digunakan.",
+        "no_dwh": "Anda tidak mempunyai webhook Discord untuk dipautkan!",
+        "create_confirm": "Webhook untuk board Trello \"{{&name}}\" telah bermula! Tindakan-tindakan akan muncul sebentai lagi…",
+        "created": "Webhook untuk \"{{&name}}\" siap dibina.",
+        "couldnt_create": "Saya tidak dapat membina webhook! Ini mungkin kerana ada pertukaran keizinan telah berlaku!",
+        "choose_channel": "Pilih saluran yang webhook ini akan membuat pos.",
+        "no_channels": "Tiada saluran dijumpai yang mebenarkan saya untuk mentadbir webhook.",
+        "edit_menu": {
+            "blist": "Tukar penapis ke senarai hitam",
+            "wlist": "Tuker penapis ke senarai izin",
+            "cards": "Tukar kad tertapis",
+            "lists": "Tukar list tertapis",
+            "locale": "Tukar Lokal",
+            "repair": "Perbaiki webhook",
+            "delete": "Buang webhook",
+            "filter": "Sunting penapis",
+            "off": "Nyahaktifkan",
+            "on": "Aktifkan"
+        },
+        "menu": {
+            "link": "Guna pautan webhook",
+            "exist": "Guna webhook yang sedia ada",
+            "add": "Tambah webhook"
+        },
+        "add_header": "Bagaimana anda ingin webhook anda disiapkan?",
+        "try_repair": "Anda boleh perbaiki issue ini dengan `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "twh_missing": "Pengguna yang memasangkan webhook ini tidak dapat dicari. Ini mungkin menghalang webhook ini dari menghantar!",
+        "dwh_missing": "Webhook Discord yang dihubangkan ke webhook ini tidak dapat dicari!",
+        "owned_by": "Dimiliki Oleh",
+        "trello_webhook": "Webhook Trello",
+        "discord_webhook": "Webhook Discord",
+        "dwh": {
+            "many": "Webhook Discord",
+            "one": "Webhook Discord"
+        },
+        "allowed_actions": {
+            "many": "Tindakan Yang Dibenarkan",
+            "one": "Tindakan Yang Dibenarkan"
+        },
+        "filtered_card": {
+            "many": "Kad Tertapis",
+            "one": "Kad Tertapis"
+        },
+        "filtered_list": {
+            "many": "List Tertapis",
+            "one": "List Tertapis"
+        },
+        "none": "Tiada webhook dalam server ini yang dihubungkan ke Trello.",
+        "header": "Guna `{{&cleanPrefix}}webhook <webhookID>` untuk melihat webhook dan `{{&cleanPrefix}}editwebhook <webhookID>` untuk menyuntingnya."
     },
     "locale": {
         "server_locale": "Lokal Server: {{&locale}}",
@@ -250,7 +336,8 @@
         "server_unset": "Nyahtetapkan lokal server.",
         "user_unset": "Nyahtetapkan lokal pengguna.",
         "server_set": "Tetapkan the lokal server ke **{{&name}}**.",
-        "user_set": "Tetapkan lokal ke **{{&name}}**."
+        "user_set": "Tetapkan lokal ke **{{&name}}**.",
+        "header": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` untuk menetapkan lokal."
     },
     "shardinfo": {
         "title": "Informasi mengenai Shard {{&username}}",
