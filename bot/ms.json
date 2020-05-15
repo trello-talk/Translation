@@ -185,7 +185,21 @@
             "many": "Senarai Semakan",
             "one": "Senarai Semakan"
         },
-        "cooldown": "Cooldown"
+        "cooldown": "Cooldown",
+        "list": {
+            "one": "Senarai",
+            "many": "Senarai"
+        },
+        "in_lower": "dalam",
+        "in": "Dalam",
+        "checklist_item": {
+            "one": "Item Senarai Semakan",
+            "many": "Item Senarai Semakan"
+        },
+        "arch_list": {
+            "one": "Senarai Terarkib",
+            "many": "Senarai Terarkib"
+        }
     },
     "trello": {
         "member_type": {
@@ -256,7 +270,16 @@
         "prev_list": "Senarai Sebelumnya",
         "voted": "Diundi",
         "voting": "Pengundian",
-        "starred": "Dibintangkan"
+        "starred": "Dibintangkan",
+        "one_chkitem_name": "Nama Lama Senarai Semakan",
+        "one_chklist_name": "Name Lama Senarai Semakan",
+        "card_aging": "Kad Penuaan",
+        "card_age": {
+            "regular": "Biasa",
+            "pirate": "Lanun"
+        },
+        "card_covers": "Imej Kulit Kad",
+        "due": "Tarikh Cukup Tempoh"
     },
     "webhook_cmd": {
         "whitelist": "Senarai Izin",
@@ -323,7 +346,19 @@
             "one": "List Tertapis"
         },
         "none": "Tiada webhook dalam server ini yang dihubungkan ke Trello.",
-        "header": "Guna `{{&cleanPrefix}}webhook <webhookID>` untuk melihat webhook dan `{{&cleanPrefix}}editwebhook <webhookID>` untuk menyuntingnya."
+        "header": "Guna `{{&cleanPrefix}}webhook <webhookID>` untuk melihat webhook dan `{{&cleanPrefix}}editwebhook <webhookID>` untuk menyuntingnya.",
+        "unknown": "tidak diketahui",
+        "to_wlist": "Polisi penapisan telah ditukarkan ke senarai izin.",
+        "to_blist": "Polisi penapisan telah ditukarkan ke senarai hitam.",
+        "lists_updated": "Senarai tertapis itu telah disimpankan.",
+        "cards_updated": "Kad tertapis itu telah disimpankan.",
+        "choose_lists": "Pilih senarai untuk ditapis. Penapisan senarai akan dinyahaktifkan jika tiada senarai dipilih.",
+        "choose_cards": "Pilih kad untuk ditapis. Penapisan kad akan dinyahaktifkan jika tiada kad dipilih.",
+        "no_access": "Board ini tidak wujud, atau anda tidak mempunyai akses!",
+        "model_filter": "Mod Penapis Senarai/Kad",
+        "locale_unset": "Nyahtetapkan lokal webhook.",
+        "locale_set": "Tetapkan lokal webhook ke **{{&name}}**.",
+        "max_wh": "Anda telah mencapai had maksimum webhook untuk server ini! Anda boleh meningkatkan had ini dengan menjadi seorang patreon! (`{{&cleanPrefix}}donate`)"
     },
     "locale": {
         "server_locale": "Lokal Server: {{&locale}}",
@@ -359,5 +394,137 @@
     "reload": {
         "done": "Perintah telah dimuatkan.",
         "reloading": "Memuat semula perintah…"
+    },
+    "command_permissions": {
+        "userData": "Ketetapan anda tiada dalam database!",
+        "attach": "Perintah ini memerlukan kebenaran `Attach Files`!",
+        "embed": "Perintah ini memerlukan kebenaran `Embed Links`!",
+        "emoji": "Perintah ini memerlukan kebenaran `Use External Emojis`!",
+        "trelloRole": "Perintah ini hanya untuk pemilik server atau pengguna dengan role bernama `Trello`!",
+        "elevated": "Perintah ini hanya boleh digunakan oleh pengguna yang diizinkan!",
+        "auth": "Anda belum membenarkan akaun Trello anda dengan Discord!\nLakukan dengan perintah `{{&cleanPrefix}}auth`!",
+        "selectedBoard": "Tiada board dipilih!\nPilih board dengan perintah `{{&cleanPrefix}}switch`!",
+        "discordAuth": "Anda belum membenarkan akaun Trello anda dengan Discord!\nLakukan dengan perintah `{{&cleanPrefix}}auth`!",
+        "webhooks": "Perintah ini memerlukan kebenaran `Manage Webhooks`!"
+    },
+    "commands": {
+        "locale": {
+            "description": "Membenarkan anda menetapkan lokal untuk anda atau server. Laksanakan tanpa argumen untuk mendapatkan senarai lokal."
+        },
+        "switch": {
+            "description": "Ini akan memilih board untuk perintah-perintah lain. Gunakan perintah `{{&cleanPrefix}}boards` untuk melihat board mana yang boleh dipilih."
+        },
+        "boards": {
+            "description": "Menyenaraikan semua board yang diuruskan oleh anda."
+        },
+        "cardarchive": {
+            "description": "Menyenaraikan semua kad yang telah diarkibkan dalam board ini.",
+            "usage": "[muka]"
+        },
+        "editcard": {
+            "description": "Sunting ciri-ciri sesuatu kad. Lihat nota untuk sub-perintah and kegunaannya.",
+            "note": "`name [newName]` - Tukar nama kad\n`archive`, `unarchive` - Toggel arkib kad\n`desc [newDescription]` - Tetapkan deskripsi kad\n`removedesc` - Buang deskripsi kad\n`duedone` - Toggel tempoh akhir kad\n`removedue` - Buang tempoh akhir kad",
+            "usage": "[namaKad|idKad] [subperintah]…"
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "ping": {
+            "description": "Pong!"
+        },
+        "eval": {
+            "description": "Ini akan menilai kod."
+        },
+        "listarchive": {
+            "description": "Menyenaraikan semua senarai yang telah diarkibkan dalam board ini.",
+            "usage": "[muka]"
+        },
+        "auth": {
+            "description": "Dapatkan pautan kebenaran untuk menyambungkan akaun Discord anda ke akaun Trello anda."
+        },
+        "donate": {
+            "description": "Dapatkan pautan derma untuk pembangun."
+        },
+        "github": {
+            "description": "Ini akan menghantarpautan open source bot tersebut."
+        },
+        "invite": {
+            "description": "Ini akan menghantar pautan jemputan bot tersebut."
+        },
+        "serverinvite": {
+            "description": "Dapatkan jemputan untuk server bantuan."
+        },
+        "asynceval": {
+            "description": "Ini akan menilai kod secara tidak segerak."
+        },
+        "reload": {
+            "description": "Ulangmuat perintah."
+        },
+        "reloadlocale": {
+            "description": "Ulangmuat fail-fail lokal."
+        },
+        "reloadone": {
+            "description": "Ulangmuat perintah tunggal."
+        },
+        "reloadwebserver": {
+            "description": "Mulakan semula webserver."
+        },
+        "restart": {
+            "description": "Mulakan semula bot."
+        },
+        "help": {
+            "description": "Menunjukkan mesej bantuan and memberikan informasi untuk perintah-perintah.",
+            "usage": "[perintah]"
+        },
+        "info": {
+            "description": "Dapatkan informasi mengenai bot."
+        },
+        "prefix": {
+            "description": "Membenarkan anda menetapkan awalan untuk anda atau server."
+        },
+        "shardinfo": {
+            "description": "Memberikan anda statistik untuk setiap shard."
+        },
+        "me": {
+            "description": "Lihat informasi mengenai akaun Trello anda."
+        },
+        "board": {
+            "description": "Mendapatkan informasi mengenai board semasa."
+        },
+        "list": {
+            "description": "Menyenaraikan semua kad dalam senarai tersebut.",
+            "usage": "[namaSenarai|idSenarai] [muka]"
+        },
+        "card": {
+            "description": "Memberikan informasi mengenai kad tertentu.",
+            "usage": "[namaKad|idKad]"
+        },
+        "star": {
+            "usage": "[namaBoard|idBoard]"
+        },
+        "editlist": {
+            "description": "Sunting ciri-ciri sesuatu senarai. Lihat nota untuk sub-perintah and kegunaannya.",
+            "usage": "[namaSenarai|idSenarai] [subperintah]…"
+        },
+        "editboard": {
+            "description": "Sunting ciri-ciri board semasa. Lihat nota untuk sub-perintah and kegunaannya."
+        }
+    },
+    "cooldown_msg": "Perintah ini perlu ditenangkan! *({{seconds}})*",
+    "bad_args": "Hujah tidah mencukupi!",
+    "format": {
+        "second": {
+            "one": "{{seconds}} saat",
+            "many": "{{seconds}} saat"
+        }
+    },
+    "categories": {
+        "general": "Umum",
+        "user": "Pengurusan Pengguna",
+        "webhook": "Webhook",
+        "edit": "Menyunting",
+        "hidden": "Disorok",
+        "misc": "Lain-lain",
+        "dev": "Pembangun"
     }
 }
