@@ -1,1 +1,52 @@
-{}
+{
+    "reload": {
+        "done": "Komutlar yenilendi.",
+        "reloading": "Komutlar yenileniyor…"
+    },
+    "reloadlocale": {
+        "reloading": "Yerel ayarlar yenileniyor…",
+        "done": "Yerel ayarlar yenilendi."
+    },
+    "reloadone": {
+        "invalid": "Geçersiz komut!",
+        "file": "Belirtilen komutu olan bir dosya artık mevcut değil!",
+        "done": "Yenilendi {{&commands}}."
+    },
+    "reloadwebserver": {
+        "no": "Bu durumda web sunucusu yok!",
+        "reloading": "Webserver yeniden başlatılıyor…",
+        "done": "Webserver yeniden başlatıldı."
+    },
+    "responses": {
+        "restart": "Shard yeniden başlatılıyor…",
+        "hangman": "Ben oyun botu değilim.",
+        "eval": "{{ms}} ms sürdü."
+    },
+    "links": {
+        "auth": {
+            "start": "Trello hesabınızı Discord'unuzla buradan yetkilendirin:",
+            "fail": "Bot sahibi bir yetkilendirme bağlantısı sağlamadı!"
+        },
+        "donate": {
+            "start": "Bağış yaparak gelişimi destekleyin!",
+            "fail": "Bot sahibi herhangi bir bağış bağlantısı sağlamadı!"
+        },
+        "github": "İşte kaynak koduma bağlantı:",
+        "invite": {
+            "fail": "Bot sahibi herhangi bir davet bağlantısı sağlamadı!",
+            "start": "İşte beni diğer sunuculara davet etmek için bağlantılar!"
+        },
+        "serverinvite": {
+            "fail": "Bot sahibi destek sunucusu bağlantısı sağlamadı!",
+            "start": "Bu bağlantılardan herhangi biriyle destek sunucusuna katılın!"
+        }
+    },
+    "help": {
+        "not_found": "`{{&command}}` komutu bulanamadı.",
+        "footer": "Daha fazla yardım için `{{&cleanPrefix}}help [command]` for more info.",
+        "header": "{{&username}} (Snazzah tarafından değiştirilmiş [Faux] çalıştırılmakta (https://github.com/Snazzah/Faux) )\nSupport Server: {{&link}}"
+    },
+    "info": {
+        "title": "{{&username}} hakkında bilgi"
+    }
+}
