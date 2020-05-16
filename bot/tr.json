@@ -48,5 +48,9 @@
     },
     "info": {
         "title": "{{&username}} hakkında bilgi"
+    },
+    "_": {
+        "emoji": "tr",
+        "name": "Türk"
     }
 }
