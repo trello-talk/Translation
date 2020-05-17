@@ -2,7 +2,7 @@
     "reloadone": {
         "invalid": "Perintah tidak sah!",
         "done": "{{&commands}} telah dimuatkan.",
-        "file": "Fail yang mengandungi perintah yang ditentukan tidak wujud lagi!"
+        "file": "Fail yang mengandungi perintah spesifik itu tidak wujud lagi!"
     },
     "responses": {
         "hangman": "Saya bukan bot permainan.",
@@ -17,7 +17,7 @@
         },
         "auth": {
             "fail": "Pemilik bot belum memberikan pautan pengesahkuasaan!",
-            "start": "Kuat-kuasakan akaun Trello anda dengan Discord disini:"
+            "start": "Kuasakan akaun Trello anda dengan Discord disini:"
         },
         "serverinvite": {
             "fail": "Pemilik bot belum membekalkan pautan server bantuan!",
@@ -60,7 +60,7 @@
         },
         "version": "Versi",
         "alias": {
-            "many": "Alias-alias",
+            "many": "Alias",
             "one": "Alias"
         },
         "active": "Aktif",
@@ -77,8 +77,8 @@
             "many": "Bilangan"
         },
         "board": {
-            "many": "Board",
-            "one": "Board"
+            "many": "Papan",
+            "one": "Papan"
         },
         "bg_img": "Imej Later Belakang",
         "initials": "Inisial",
@@ -128,8 +128,8 @@
             "one": "Organisasi"
         },
         "arch_board": {
-            "many": "Board Dalam Arkib",
-            "one": "Board Dalam Arkib"
+            "many": "Papan Dalam Arkib",
+            "one": "Papan Dalam Arkib"
         },
         "arch_card": {
             "many": "Kad Dalam Arkib",
@@ -148,8 +148,8 @@
             "one": "Lampiran"
         },
         "member_type": {
-            "many": "Jenis-jenis Member",
-            "one": "Jenis Member"
+            "many": "Jenis-jenis Ahli",
+            "one": "Jenis Ahli"
         },
         "opt": {
             "many": "Opsyen",
@@ -164,8 +164,8 @@
             "one": "Label"
         },
         "trello_board": {
-            "many": "Trello Board",
-            "one": "Trello Board"
+            "many": "Papan Trello",
+            "one": "Papan Trello"
         },
         "uptime": "Uptime",
         "locale": "Lokal",
@@ -197,8 +197,12 @@
             "many": "Item Senarai Semakan"
         },
         "arch_list": {
-            "one": "Senarai Terarkib",
-            "many": "Senarai Terarkib"
+            "one": "Senarai Dalam Arkib",
+            "many": "Senarai Dalam Arkib"
+        },
+        "page": {
+            "one": "Laman",
+            "many": "Laman"
         }
     },
     "trello": {
@@ -228,22 +232,22 @@
         "perm_levels": {
             "public": "Awam",
             "private": "Peribadi",
-            "org": "Ahli Tampak"
+            "org": "Pasukan Terlihatan"
         },
         "products": {
             "38": "🌟 Trello Gold Tahunan",
             "37": "⭐ Trello Gold Bulanan",
             "10": "💼 Trello Emas dari Kelas Bisnes"
         },
-        "from_board": "Daripada Board",
-        "to_board": "Kepada Board",
+        "from_board": "Dari Papan",
+        "to_board": "Ke Papan",
         "archived_lower": "diarkibkan",
-        "add_rem_members": "Tambah/Buang Ahli",
-        "last_act": "Aktivity Terakhir",
+        "add_rem_members": "Tambah/Singkir Ahli",
+        "last_act": "Aktiviti Terakhir",
         "subbed": "Dilihat",
         "template": "Ini templat?",
-        "self_join": "Benarkan ahli pasukan untuk Sunting atau Sertai",
-        "hide_votes": "Sorok undian",
+        "self_join": "Benarkan Ahli Pasukan untuk Sunting atau Sertai",
+        "hide_votes": "Sorok Undian",
         "locale": "Lokal (dalam Trello)",
         "summ": "Hantar Rumusan",
         "colorblind": "Mod Buta Warna",
@@ -264,13 +268,13 @@
             "members": "Semua Ahli"
         },
         "item_src": "Sumber Item",
-        "new_due": "Tarikh Cukup Tempoh Baru",
-        "old_due": "Tarikh Cukup Tempoh Lama",
+        "new_due": "Tempoh Tamat Baru",
+        "old_due": "Tempoh Tamat Lama",
         "curr_list": "Senarai Semasa",
         "prev_list": "Senarai Sebelumnya",
         "voted": "Diundi",
         "voting": "Pengundian",
-        "starred": "Dibintangkan",
+        "starred": "Dibintang",
         "one_chkitem_name": "Nama Lama Senarai Semakan",
         "one_chklist_name": "Name Lama Senarai Semakan",
         "card_aging": "Kad Penuaan",
@@ -279,14 +283,16 @@
             "pirate": "Lanun"
         },
         "card_covers": "Imej Kulit Kad",
-        "due": "Tarikh Cukup Tempoh"
+        "due": "Tempot Tamat",
+        "marketing": "E-mel marketing (pilihan)",
+        "pinned": "Disepit"
     },
     "webhook_cmd": {
         "whitelist": "Senarai Izin",
         "blacklist": "Senarai Hitam",
         "not_found": "Webhook itu tidak wujud!",
-        "invalid": "Webhook ID tidah sah!",
-        "repaired": "Sebarang issu webhook telah diperbaiki.",
+        "invalid": "ID webhook tidah sah!",
+        "repaired": "Sebarang masalah webhook telah dibaiki.",
         "repaired_wh": "Webhook Telah Dibaiki",
         "repair_dwh_header": "Webhook Discord tidak dapat dicari. Bagaimanakah anda ingin membina webhook yang baru?",
         "filter_update": "Penapis webhook telah dikemaskinikan.",
@@ -296,15 +302,15 @@
         "wh_off": "Webhook tersebut telah dinyahaktifkan.",
         "wywtd": "Pilih tindakan anda untuk webhook ini.",
         "no_server_link": "Webhook itu tiada dalam server ini!",
-        "no_link": "Saya tidak dapat menjumpai sebarang URL webhook dalam input!",
+        "no_link": "Saya tidak dapat menjumpai sebarang URL webhook dalam input tersebut!",
         "input_link": "Tampalkan pautan webhook yang anda ingin gunakan.",
         "choose_existwh": "Pilih webhook yang akan digunakan.",
         "no_dwh": "Anda tidak mempunyai webhook Discord untuk dipautkan!",
-        "create_confirm": "Webhook untuk board Trello \"{{&name}}\" telah bermula! Tindakan-tindakan akan muncul sebentai lagi…",
-        "created": "Webhook untuk \"{{&name}}\" siap dibina.",
-        "couldnt_create": "Saya tidak dapat membina webhook! Ini mungkin kerana ada pertukaran keizinan telah berlaku!",
+        "create_confirm": "Webhook untuk papan Trello \"{{&name}}\" telah bermula! Tindakan-tindakan akan muncul sebentai lagi…",
+        "created": "Webhook untuk \"{{&name}}\" telah dibina.",
+        "couldnt_create": "Saya tidak dapat membina webhook! Ini mungkin kerana ada pertukaran keizinan yang telah berlaku!",
         "choose_channel": "Pilih saluran yang webhook ini akan membuat pos.",
-        "no_channels": "Tiada saluran dijumpai yang mebenarkan saya untuk mentadbir webhook.",
+        "no_channels": "Tiada saluran dijumpai yang membenarkan saya untuk mentadbir webhook.",
         "edit_menu": {
             "blist": "Tukar penapis ke senarai hitam",
             "wlist": "Tuker penapis ke senarai izin",
@@ -312,7 +318,7 @@
             "lists": "Tukar list tertapis",
             "locale": "Tukar Lokal",
             "repair": "Perbaiki webhook",
-            "delete": "Buang webhook",
+            "delete": "Padam webhook",
             "filter": "Sunting penapis",
             "off": "Nyahaktifkan",
             "on": "Aktifkan"
@@ -322,7 +328,7 @@
             "exist": "Guna webhook yang sedia ada",
             "add": "Tambah webhook"
         },
-        "add_header": "Bagaimana anda ingin webhook anda disiapkan?",
+        "add_header": "Bagaimanakah anda ingin webhook anda disiapkan?",
         "try_repair": "Anda boleh perbaiki issue ini dengan `{{&cleanPrefix}}editwebhook {{&id}} repair`",
         "twh_missing": "Pengguna yang memasangkan webhook ini tidak dapat dicari. Ini mungkin menghalang webhook ini dari menghantar!",
         "dwh_missing": "Webhook Discord yang dihubangkan ke webhook ini tidak dapat dicari!",
@@ -348,13 +354,13 @@
         "none": "Tiada webhook dalam server ini yang dihubungkan ke Trello.",
         "header": "Guna `{{&cleanPrefix}}webhook <webhookID>` untuk melihat webhook dan `{{&cleanPrefix}}editwebhook <webhookID>` untuk menyuntingnya.",
         "unknown": "tidak diketahui",
-        "to_wlist": "Polisi penapisan telah ditukarkan ke senarai izin.",
-        "to_blist": "Polisi penapisan telah ditukarkan ke senarai hitam.",
+        "to_wlist": "Polisi penapisan telah diubah ke senarai izin.",
+        "to_blist": "Polisi penapisan telah diubah ke senarai hitam.",
         "lists_updated": "Senarai tertapis itu telah disimpankan.",
         "cards_updated": "Kad tertapis itu telah disimpankan.",
         "choose_lists": "Pilih senarai untuk ditapis. Penapisan senarai akan dinyahaktifkan jika tiada senarai dipilih.",
         "choose_cards": "Pilih kad untuk ditapis. Penapisan kad akan dinyahaktifkan jika tiada kad dipilih.",
-        "no_access": "Board ini tidak wujud, atau anda tidak mempunyai akses!",
+        "no_access": "Papan ini tidak wujud atau anda tidak mempunyai akses!",
         "model_filter": "Mod Penapis Senarai/Kad",
         "locale_unset": "Nyahtetapkan lokal webhook.",
         "locale_set": "Tetapkan lokal webhook ke **{{&name}}**.",
@@ -363,16 +369,16 @@
     "locale": {
         "server_locale": "Lokal Server: {{&locale}}",
         "user_locale": "Lokal Pengguna: {{&locale}}",
-        "choose": "Pilih nombor lokal anda.",
+        "choose": "Pilih nombor lokal yang anda ingin tetapkan.",
         "unset_l": "Lokal tidak ditetapkan",
         "unset": "Tidak ditetapkan",
         "start": "Pilihan Lokal",
-        "no_guild": "Anda tidak melaksanakan perintah itu dalam guild (persatuan)!",
+        "no_guild": "Anda tidak melaksanakan perintah itu dalam persatuan (guild)!",
         "server_unset": "Nyahtetapkan lokal server.",
         "user_unset": "Nyahtetapkan lokal pengguna.",
-        "server_set": "Tetapkan the lokal server ke **{{&name}}**.",
+        "server_set": "Tetapkan lokal server ke **{{&name}}**.",
         "user_set": "Tetapkan lokal ke **{{&name}}**.",
-        "header": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` untuk menetapkan lokal."
+        "header": "`{{&prefix}}locale setuser [locale]` atau `{{&prefix}}locale setserver [locale]` untuk menetapkan lokal."
     },
     "shardinfo": {
         "title": "Informasi mengenai Shard {{&username}}",
@@ -383,13 +389,13 @@
         "faux": "Bot ini menggunakan versi [Faux](https://github.com/Snazzah/Faux) yang telah diubahsuai."
     },
     "reloadwebserver": {
-        "done": "Webserver telah dimulakan semula.",
+        "done": "Webserver telah dihidupkan semula.",
         "reloading": "Mulakan semula webserver…",
         "no": "Tiada webserver dalam instance ini!"
     },
     "reloadlocale": {
         "done": "Lokal the dimuatkan.",
-        "reloading": "Memuat lokal…"
+        "reloading": "Memuat semula lokal…"
     },
     "reload": {
         "done": "Perintah telah dimuatkan.",
@@ -400,30 +406,33 @@
         "attach": "Perintah ini memerlukan kebenaran `Attach Files`!",
         "embed": "Perintah ini memerlukan kebenaran `Embed Links`!",
         "emoji": "Perintah ini memerlukan kebenaran `Use External Emojis`!",
-        "trelloRole": "Perintah ini hanya untuk pemilik server atau pengguna dengan role bernama `Trello`!",
+        "trelloRole": "Perintah ini hanya untuk pemilik server atau pengguna dengan peranan bernama `Trello`!",
         "elevated": "Perintah ini hanya boleh digunakan oleh pengguna yang diizinkan!",
-        "auth": "Anda belum membenarkan akaun Trello anda dengan Discord!\nLakukan dengan perintah `{{&cleanPrefix}}auth`!",
-        "selectedBoard": "Tiada board dipilih!\nPilih board dengan perintah `{{&cleanPrefix}}switch`!",
-        "discordAuth": "Anda belum membenarkan akaun Trello anda dengan Discord!\nLakukan dengan perintah `{{&cleanPrefix}}auth`!",
+        "auth": "Anda belum mengizinkan akaun Trello anda dengan Discord!\nIzinkan dengan perintah `{{&cleanPrefix}}auth`!",
+        "selectedBoard": "Tiada papan dipilih!\nPilih papan dengan perintah `{{&cleanPrefix}}switch`!",
+        "discordAuth": "Anda belum mengizinkan akaun Trello anda dengan Discord!\nIzinkan dengan perintah `{{&cleanPrefix}}auth`!",
         "webhooks": "Perintah ini memerlukan kebenaran `Manage Webhooks`!"
     },
     "commands": {
         "locale": {
-            "description": "Membenarkan anda menetapkan lokal untuk anda atau server. Laksanakan tanpa argumen untuk mendapatkan senarai lokal."
+            "description": "Membenarkan anda menetapkan lokal untuk anda atau server. Laksanakan tanpa argumen untuk mendapatkan senarai lokal.",
+            "usage": "[\"userset\"|\"serverset\"] [lokal]"
         },
         "switch": {
-            "description": "Ini akan memilih board untuk perintah-perintah lain. Gunakan perintah `{{&cleanPrefix}}boards` untuk melihat board mana yang boleh dipilih."
+            "description": "Ini akan memilih papan untuk perintah-perintah lain. Gunakan perintah `{{&cleanPrefix}}boards` untuk melihat papan mana yang boleh dipilih.",
+            "usage": "[idPapan|namaPapan]"
         },
         "boards": {
-            "description": "Menyenaraikan semua board yang diuruskan oleh anda."
+            "description": "Menyenaraikan semua papan yang diuruskan oleh anda.",
+            "usage": "[laman]"
         },
         "cardarchive": {
-            "description": "Menyenaraikan semua kad yang telah diarkibkan dalam board ini.",
+            "description": "Menyenaraikan semua kad yang telah diarkibkan dalam papan semasa.",
             "usage": "[muka]"
         },
         "editcard": {
-            "description": "Sunting ciri-ciri sesuatu kad. Lihat nota untuk sub-perintah and kegunaannya.",
-            "note": "`name [newName]` - Tukar nama kad\n`archive`, `unarchive` - Toggel arkib kad\n`desc [newDescription]` - Tetapkan deskripsi kad\n`removedesc` - Buang deskripsi kad\n`duedone` - Toggel tempoh akhir kad\n`removedue` - Buang tempoh akhir kad",
+            "description": "Sunting ciri-ciri sesuatu kad. Lihat nota untuk sub-perintah dan kegunaannya.",
+            "note": "`name [newName]` - Ubah nama kad\n`archive`, `unarchive` - Toggel arkib kad\n`desc [newDescription]` - Tetapkan deskripsi kad\n`removedesc` - Buang deskripsi kad\n`duedone` - Toggel tempoh akhir kad\n`removedue` - Buang tempoh akhir kad",
             "usage": "[namaKad|idKad] [subperintah]…"
         },
         "hangman": {
@@ -433,10 +442,11 @@
             "description": "Pong!"
         },
         "eval": {
-            "description": "Ini akan menilai kod."
+            "description": "Ini akan menilai kod.",
+            "usage": "<kod>"
         },
         "listarchive": {
-            "description": "Menyenaraikan semua senarai yang telah diarkibkan dalam board ini.",
+            "description": "Menyenaraikan semua senarai yang telah diarkibkan dalam papan semasa.",
             "usage": "[muka]"
         },
         "auth": {
@@ -446,7 +456,7 @@
             "description": "Dapatkan pautan derma untuk pembangun."
         },
         "github": {
-            "description": "Ini akan menghantarpautan open source bot tersebut."
+            "description": "Ini akan menghantar pautan open source bot tersebut."
         },
         "invite": {
             "description": "Ini akan menghantar pautan jemputan bot tersebut."
@@ -455,7 +465,9 @@
             "description": "Dapatkan jemputan untuk server bantuan."
         },
         "asynceval": {
-            "description": "Ini akan menilai kod secara tidak segerak."
+            "description": "Ini akan menilai kod secara tidak segerak.",
+            "usage": "<kod>",
+            "note": "Oleh kerana async IIFE wrapper dalam perintah ini, perintah return diperlukan untuk memulangkan keputusan.\ncth: `{{&cleanPrefix}}aeval return 1`"
         },
         "reload": {
             "description": "Ulangmuat perintah."
@@ -464,7 +476,8 @@
             "description": "Ulangmuat fail-fail lokal."
         },
         "reloadone": {
-            "description": "Ulangmuat perintah tunggal."
+            "description": "Ulangmuat perintah tunggal.",
+            "usage": "<namaPerintah> [namaPerintah] …"
         },
         "reloadwebserver": {
             "description": "Mulakan semula webserver."
@@ -480,7 +493,8 @@
             "description": "Dapatkan informasi mengenai bot."
         },
         "prefix": {
-            "description": "Membenarkan anda menetapkan awalan untuk anda atau server."
+            "description": "Membenarkan anda menetapkan awalan untuk anda atau server.",
+            "usage": "[\"set\"|\"add\"|\"remove\"] [prefix]"
         },
         "shardinfo": {
             "description": "Memberikan anda statistik untuk setiap shard."
@@ -489,7 +503,7 @@
             "description": "Lihat informasi mengenai akaun Trello anda."
         },
         "board": {
-            "description": "Mendapatkan informasi mengenai board semasa."
+            "description": "Mendapatkan informasi mengenai papan semasa."
         },
         "list": {
             "description": "Menyenaraikan semua kad dalam senarai tersebut.",
@@ -500,14 +514,77 @@
             "usage": "[namaKad|idKad]"
         },
         "star": {
-            "usage": "[namaBoard|idBoard]"
+            "usage": "[namaPapan|idPapan]",
+            "description": "Toggel pembintangan papan. Jika tiada papan dikhususkan, papan semasa akan digunakan. Papan yang dibintangkan akan muncul di atas senarai papan dalam [Trello}(https://trello.com/)."
         },
         "editlist": {
-            "description": "Sunting ciri-ciri sesuatu senarai. Lihat nota untuk sub-perintah and kegunaannya.",
-            "usage": "[namaSenarai|idSenarai] [subperintah]…"
+            "description": "Sunting ciri-ciri sesuatu senarai. Lihat nota untuk sub-perintah dan kegunaannya.",
+            "usage": "[namaSenarai|idSenarai] [subperintah]…",
+            "note": "`name [newName]` - Ubah nama senarai\n`archive`, `unarchive` - Toggel pengarkiban senarai"
         },
         "editboard": {
-            "description": "Sunting ciri-ciri board semasa. Lihat nota untuk sub-perintah and kegunaannya."
+            "description": "Sunting ciri-ciri papan semasa. Lihat nota untuk sub-perintah and kegunaannya.",
+            "note": "`name [newName]` - Ubah nama papan (admin papan)\n`archive`, `unarchive` - Toggel pengarkiban papan(admin papan)\n`desc [newDescription]` - Tetapkan deskripsi papan\n`removedesc` - Buang deskripsi papan\n`commentperms` - Tukar sekatan komen (admin papan)\n`voteperms` - Tukar sekatan undian (admin papan)\n`inviteperms` - Tukar sekatan jemputan (admin papan)",
+            "usage": "[subperintah]…"
+        },
+        "editwebhook": {
+            "note": "`activate`, `deactivate` - Mengaktifkan atau mengnyahaktifkan webhook tersebut\n`filters` - Sunting penapis (dahulunya \"Webhook Bits\") untuk webhook ini\n`locale [locale]` - Tetapkan lokal untuk webhook\n`repair` - Perbaiki sebarang issu dengan webhook tersebut\n`delete` - Buang webhook tersebut\n`whitelist`, `blacklist` - Tukar polisi penapis untuk webhook tersebut\n`lists` - Sunting senarai tertapis\n`cards` - Sunting kad tertapis",
+            "description": "Menyunting webhook dalam server anda. Semak nota untuk sub-perintah dan kegunaannya.",
+            "usage": "<idWebhook> [subperintah]"
+        },
+        "lists": {
+            "usage": "[laman]",
+            "description": "Menyenaraikan semua senarai terbuka dalam papan semasa. Anda boleh melihat senarai arkib dengan `{{&cleanPrefix}}listarchive`."
+        },
+        "webhooks": {
+            "usage": "[laman]",
+            "description": "Menyenaraikan webhook dalam server anda."
+        },
+        "exec": {
+            "description": "Menggunakan `child_process.exec`.",
+            "usage": "<perintah>…"
+        },
+        "watchlist": {
+            "description": "Toggel pengawasan senarai. Senarai yang diawasi akan memberikan notifikasi kemas-kini di [Trello}(https://trello.com/).",
+            "usage": "[namaSenarai|idSenarai]"
+        },
+        "watchcard": {
+            "description": "Toggel pengawasan kad. Kad yang diawasi akan memberikan notifikasi kemas-kini di [Trello}(https://trello.com/).",
+            "usage": "[namaKad|idKad]"
+        },
+        "addcard": {
+            "description": "Bina kad.",
+            "usage": "[namaSenarai|idSenarai] [nama]"
+        },
+        "deletecard": {
+            "description": "Buang kad.",
+            "usage": "[namaKad|idKad]"
+        },
+        "addlist": {
+            "usage": "[nama]",
+            "description": "Bina senarai dalam papan semasa."
+        },
+        "comment": {
+            "usage": "[namaKad|idKad] [komen]",
+            "description": "Komen di kad dalam papan semasa."
+        },
+        "webhook": {
+            "description": "Dapatkan informasi mengenai webhook spesifik.",
+            "usage": "<idWebhook>"
+        },
+        "addwebhook": {
+            "description": "Membina webhook dalam server anda.",
+            "usage": "[idPapan|namaPapan]"
+        },
+        "watch": {
+            "usage": "[namaPapan|idPapan]",
+            "description": "Toggel pengawasan papan. Jika tiada papan dikhususkan, papan semasa akan digunakan. Papan yang diawasi akan memberikan notifikasi kemas-kini di [Trello}(https://trello.com/)."
+        },
+        "clearauth": {
+            "description": "Buangkan pengizinan Trello. Jangan lakukan perintah ini kecuali benar-benar diperlukan."
+        },
+        "cleardata": {
+            "description": "Membuangkan data pengguna anda dari Taco."
         }
     },
     "cooldown_msg": "Perintah ini perlu ditenangkan! *({{seconds}})*",
@@ -525,6 +602,302 @@
         "edit": "Menyunting",
         "hidden": "Disorok",
         "misc": "Lain-lain",
-        "dev": "Pembangun"
-    }
+        "dev": "Pembangun",
+        "view": "Melihat"
+    },
+    "cards": {
+        "error": "Saya tidak dapat menjumpai data kad! Ini mungkin kesalahan Trello, kecuali seseorang telah membuang kad tersebut sebelum permintaan ini!",
+        "choose": "Taipkan nombor kad yang anda ingin gunakan.",
+        "wywtd": "Pilih apa yang anda ingin lakukan dengan kad ini.",
+        "menu": {
+            "name": "Sunting nama kad",
+            "archive_on": "Arkibkan kad",
+            "attach": "Buat lampiran",
+            "sub_off": "Nyah-awasi kad ini",
+            "remove_due": "Buang tempoh tamat",
+            "due_on": "Tandakan tempoh tamat sebagai selesai",
+            "archive_off": "Keluarkan kad dari arkib",
+            "desc": "Sunting deskripsi kad",
+            "remove_desc": "Buang deskripsi kad",
+            "sub_on": "Awasi kad ini",
+            "due_off": "Tandakan tempoh tamat sebagai tidak selesai"
+        },
+        "unarchived": "Kad \"{{&name}}\" telah dikeluarkan dari arkib.",
+        "set_desc": "Tetapkan deskripsi kad untuk \"{{&name}}\".",
+        "input_desc": "Taipkan deskripsi baru untuk kad tersebut.",
+        "removed_desc": "Deskripsi kad \"{{&name}}\" telah dibuangkan.",
+        "input_new": "Taipkan nama kad yang anda ingin tambah.",
+        "created": "Kad \"{{&name}}\" siap dibuat. (`{{id}}`)",
+        "remove_confirm": "Adakah anda pasti ingin memadam \"{{&name}}\"? (`{{id}}`)",
+        "removed": "Kad \"{{&name}}\" telah dipadamkan. (`{{id}}`)",
+        "removed_due": "Tempoh tamat untuk kad \"{{&name}}\" telah dipadamkan.",
+        "due_on": "Tempoh tamat untuk kad \"{{&name}}\" telah ditandakan sebagai selesai.",
+        "due_off": "Tempoh tamat untuk kad \"{{&name}}\" telah ditandakan sebagai belum selesai.",
+        "input_comment": "Taipkan mesej yang anda ingin komen untuk kad ini.",
+        "commented": "Komen untuk \"{{&name}}\" telah dibuat.",
+        "input_attach": "Tampal URL untuk lampiran yang anda ingin tambahkan ke kad.",
+        "bad_attach": "URL lampiran tidak sah!",
+        "add_attach": "Lampiran untuk \"{{&name}}\" telah dibuat.",
+        "none": "Papan ini tidak mempunyai kad.",
+        "arch_none": "Papan ini tidak mempunyai kad yang diarkibkan.",
+        "arch_header": "Guna `{{&cleanPrefix}}editcard <listID|listName> unarchive` untuk membuka kad.",
+        "set_name": "Nama kad telah ditukar dari \"{{&old}}\" ke \"{{&new}}\".",
+        "input_name": "Taipkan nama baru untuk kad tersebut.",
+        "archived": "Kad \"{{&name}}\" telah diarkibkan."
+    },
+    "prefix": {
+        "already": "Awalan itu sudah wujud!",
+        "server": "Awalan server",
+        "can_add": {
+            "zero": "Anda tidak boleh menambah awalan lagi.",
+            "one": "Anda masih boleh menambahkan {{count}} lagi awalan.",
+            "many": "Anda masih boleh menambahkan {{count}} lagi awalan."
+        },
+        "no_arg_server": "Berikan awalan yang ingin anda tetapkan untuk server tersebut!",
+        "no_arg": "Berikan awalan yang anda ingin tambahkan!",
+        "footer": "Awalan dengan ikon 🔒 tidak dapat dipadamkan.",
+        "set_server": "Tetapkan awalan server ke `{{&prefix}}`.",
+        "added": "Awalan `{{&prefix}}` telah ditambahkan.",
+        "removed": "Awalan `{{&prefix}}` telah dipadamkan.",
+        "char_limit": "Awalan tidak boleh melebihi 32 aksara!",
+        "choose": "Taipkan nombor awalan yang anda ingin padamkan.",
+        "none": "Anda tidak mempunyai awalan untuk dipadamkan!",
+        "limit": "Anda mempunyai terlalu banyak awalan! Keluarkan sekurang-kurangnya satu untuk menambahkan lagi!",
+        "mention": "Anda tidak boleh mempunyai \"mentions\" dalam awalan!"
+    },
+    "webhooks": {
+        "checklist_create": "{{&member}} telah membina senarai-semak \"{{&checklist}}\" dalam kad \"{{&card}}\"",
+        "checklist_delete": "{{&member}} telah memadamkan senarai-semak \"{{&checklist}}\" dari kad \"{{&card}}\"",
+        "commented": "{{&member}} telah memberi komen dalam \"{{&card}}\"",
+        "delete_comment": "{{&member}} telah memadamkan komennya dalam \"{{&card}}\"",
+        "update_comment": "{{&member}} telah mengemas-kini komennya dalam \"{{&card}}\"",
+        "add_card_desc": "{{&member}} telah menambahkan deskripsi untuk kad \"{{&card}}\"",
+        "edit_card_desc": "{{&member}} telah mengubah deskripsi untuk kad \"{{&card}}\"",
+        "rem_card_desc": "{{&member}} telah memadamkan deskripsi untuk kad \"{{&card}}\"",
+        "move_card_in_list": "{{&member}} telah memindahkan \"{{&card}}\" ke posisi lain dalam senarai",
+        "move_card": "{{&member}} telah memindahkan kad \"{{&card}}\" ke senarai \"{{&list}}\"",
+        "due_on": "{{&member}} telah menyelesaikan tempoh tamat untuk kad \"{{&card}}\"",
+        "due_change": "{{&member}} telah mengubah tempoh tamat kad \"{{&card}}\"",
+        "due_add": "{{&member}} telah menambahkan tempoh tamat untuk kad \"{{&card}}\"",
+        "due_remove": "{{&member}} telah memadamkan tempoh tamat untuk kad \"{{&card}}\"",
+        "due_off": "{{&member}} telah menandakan tempoh tamat sebagai tidak selesai untuk kad \"{{&card}}\"",
+        "list_move": "{{&member}} telah memindahkan senarai \"{{&list}}\" ke posisi lain",
+        "create_label": "{{&member}} telah membina label \"{{&label}}\"",
+        "attach_card": "{{&member}} telah melampirkan \"{{&attachment}}\" ke kad \"{{&card}}\"",
+        "unattach_card": "{{&member}} telah memadamkan lampiran \"{{&attachment}}\" dari kad \"{{&card}}\"",
+        "card_add_label": "{{&member}} telah menambahkan label \"{{&label}}\" ke kad \"{{&card}}\"",
+        "card_remove_label": "{{&member}} telah memadamkan label \"{{&label}}\" dari kad \"{{&card}}\"",
+        "card_add_member": "{{&member}} telah menambahkan {{&member2}} ke kad \"{{&card}}\"",
+        "card_remove_member": "{{&member}} telah mengeluarkan {{&member2}} dari kad \"{{&card}}\"",
+        "card_add_self": "{{&member}} telah menambahkan mereka sendiri ke kad \"{{&card}}\"",
+        "card_remove_self": "{{&member}} telah mengeluarkan mereka sendiri dari kad \"{{&card}}\"",
+        "unarchive_card": "{{&member}} mengeluarkan kad \"{{&card}}\" dari arkib",
+        "checkitem_state_on": "{{&member}} telah menyelesaikan \"{{&checklistItem}}\" dalam kad \"{{&card}}\"",
+        "checkitem_delete": "{{&member}} telah memadamkan senarai-semak dalam kad \"{{&card}}\"",
+        "checkitem_tocard": "{{&member}} telah menukarkan senarai-semak \"{{&card}}\" kepada kad",
+        "unarchive_list": "{{&member}} telah membuang senarai \"{{&list}}\" dari arkib",
+        "label_recolor": "{{&member}} telah mengubah warna label \"{{&label}}\" dari {{&oldColor}} ke {{&color}}",
+        "board_left": "{{&member}} telah keluar dari papan tersebut",
+        "board_to_admin": "{{&member}} telah melantik {{&member2}} sebagai pentadbir papan tersebut",
+        "board_to_normal_self": "{{&member}} telah melantik diri sendiri sebagai ahli biasa papan tersebut",
+        "add_board_desc": "{{&member}} telah menambahkan deskripsi untuk papan tersebut",
+        "board_set_invite_perms": "{{&member}} telah menetapkan kebenaran jemputan dari {{&oldPerm}} ke {{&perm}}",
+        "board_set_perm_levels": "{{&member}} telah menetapkan keterlihatan dari {{&oldPerm}} ke {{&perm}}",
+        "move_in_card": "{{&member}} telah memindahkan kad \"{{&card}}\" dari papan lain",
+        "rename_card": "{{&member}} telah mengubah nama kad \"{{&oldName}}\" ke \"{{&card}}\"",
+        "archive_card": "{{&member}} telah mengarkibkan kad \"{{&card}}\"",
+        "create_card": "{{&member}} telah membina kad \"{{&card}}\"",
+        "delete_card": "{{&member}} telah memadamkan kad {{&cardID}}",
+        "vote_card": "{{&member}} telah mengundi dalam kad \"{{&card}}\"",
+        "unvote_card": "{{&member}} telah memadamkan undinya dalam kad \"{{&card}}\"",
+        "checkitem_state_off": "{{&member}} telah menandakan \"{{&checklistItem}}\" sebagai tidak selesai dalam kad \"{{&card}}\"",
+        "checkitem_create": "{{&member}} telah membina senarai-semak dalam kad \"{{&card}}\"",
+        "checkitem_move": "{{&member}} telah memindahkan senarai-semak dalam \"{{&card}}\" ke posisi lain",
+        "checkitem_rename": "{{&member}} telah mengubah nama senarai-semak dalam kad \"{{&card}}\"",
+        "checklist_move": "{{&member}} telah memindahkan senarai-semak dalam \"{{&card}}\" ke posisi lain",
+        "checklist_rename": "{{&member}} telah mengubah nama senarai-semak dalam kad \"{{&card}}\"",
+        "create_list": "{{&member}} telah membina senarai \"{{&list}}\"",
+        "archive_list": "{{&member}} telah mengarkibkan senarai \"{{&list}}\"",
+        "list_rename": "{{&member}} telah mengubah nama senarai \"{{&oldName}}\" ke \"{{&list}}\"",
+        "label_rename": "{{&member}} telah mengubah label \"{{&oldName}}\" ke \"{{&label}}\"",
+        "delete_label": "{{&member}} telah memadamkan label {{&labelID}}",
+        "board_add_member": "{{&member}} telah menambahkan {{&member2}} ke papan tersebut",
+        "board_remove_member": "{{&member}} telah mengeluarkan {{&member2}} daripada papan tersebut",
+        "board_join": "{{&member}} telah menyertai papan tersebut",
+        "board_to_normal": "{{&member}} telah melantik {{&member2}} sebagai ahli biasa papan tersebut",
+        "board_rename": "{{&member}} telah mengubah nama papan dari \"{{&oldName}}\" ke \"{{&board}}\"",
+        "edit_board_desc": "{{&member}} telah mengubah deskripsi papan tersebut",
+        "rem_board_desc": "{{&member}} telah memadamkan deskripsi papan tersebut",
+        "archive_board": "{{&member}} telah menutup papan tersebut",
+        "unarchive_board": "{{&member}} telah membuka papan tersebut",
+        "board_set_comment_perms": "{{&member}} telah menetapkan kebenaran mengulas (komen) dari {{&oldPerm}} ke {{&perm}}",
+        "board_set_vote_perms": "{{&member}} telah menetapkan kebenaran mengundi dari {{&oldPerm}} ke {{&perm}}",
+        "move_out_list": "{{&member}} telah memindahkan senarai \"{{&list}}\" ke papan lain",
+        "move_out_card": "{{&member}} telah memindahkan kad \"{{&card}}\" ke papan lain",
+        "move_in_list": "{{&member}} telah memindahkan senarai \"{{&list}}\" dari papan lain",
+        "copy_checklist": "{{&member}} telah menyalin kandungan senarai semak dari \"{{&sourceChecklist}}\" ke \"{{&checklist}}\"",
+        "copy_card": "{{&member}} telah menyalin kandungan kad dari \"{{&sourceCard}}\" ke \"{{&card}}\""
+    },
+    "lists": {
+        "none": "Papan ini tidak mempunyai senarai.",
+        "archived": "Senarai \"{{&name}}\" telah diarkibkan.",
+        "unarchived": "Senarai \"{{&name}}\" telah dikeluarkan dari arkib.",
+        "input_new": "Taipkan nama senarai yang anda ingin tambahkan.",
+        "created": "Senarai \"{{&name}}\" telah dibina. (`{{id}}`)",
+        "header": "Guna `{{&cleanPrefix}}list <listID|listName>` untuk melihat senarai.",
+        "list_header": "Guna `{{&cleanPrefix}}card <cardID|cardName>` untuk mendapatkan informasi kad.",
+        "input_name": "Taipkan nama baru untuk senarai tersebut.",
+        "list_none": "Senarai ini tidak mempunyai kad.",
+        "arch_none": "Papan ini tidak mempunyai senarai yang telah diarkibkan.",
+        "arch_header": "Guna `{{&cleanPrefix}}editlist <listID|listName> unarchive` untuk membuka senarai.",
+        "choose": "Taipkan nombor senarai yang anda ingin gunakan.",
+        "wywtd": "Pilih apa yang anda ingin lakukan dengan senarai ini.",
+        "menu": {
+            "name": "Sunting nama senarai",
+            "archive_on": "Arkibkan senarai",
+            "archive_off": "Keluarkan senarai dari arkib",
+            "sub_on": "Awasi senarai ini",
+            "sub_off": "Nyah-awasi senarai ini"
+        },
+        "set_name": "Nama senarai telah ditukarkan dari \"{{&old}}\" ke \"{{&new}}\"."
+    },
+    "user_mgmt": {
+        "clearauth": "Kebenaran anda telah dikosongkan.",
+        "cleardata_confirm": "Adakah anda pasti ingin membuang data anda? Perkara berikut akan berlaku:\n- Awalan dan tetapan lokal anda akan dipadamkan.\n- Kelayakan kebenaran anda akan dipadamkan.\n- Token Trello anda akan dibatalkan.\n- Semua webhook yang anda buat tidak akan berfungsi lagi dan perlu diperbaiki.",
+        "cleardata": "Data pengguna anda telah dikosongkan.",
+        "clearauth_confirm": "Adakah anda pasti ingin mengosongkan kebenaran anda? Perkara berikut akan berlaku:\n- Token Trello anda akan dibatalkan.\n- Semua webhook yang anda telah bina tidak akan berfungsi lagi dan perlu diperbaiki.",
+        "sub_card": "Sedang mengawasi kad \"{{&name}}\". (`{{id}}`)",
+        "unsub_card": "Tidak lagi mengawasi kad \"{{&name}}\". (`{{id}}`)",
+        "sub_list": "Sedang mengawasi senarai \"{{&name}}\". (`{{id}}`)",
+        "unsub_list": "Tidak lagi mengawasi senarai \"{{&name}}\". (`{{id}}`)",
+        "sub_board": "Sedang mengawasi papan \"{{&name}}\". (`{{id}}`)",
+        "unsub_board": "Tidak lagi mengawasi papan \"{{&name}}\". (`{{id}}`)",
+        "star_board": "Bintang the ditambahkan ke papan \"{{&name}}\". (`{{id}}`)",
+        "unstar_board": "Bintang telah dipadamkan dari papan \"{{&name}}\". (`{{id}}`)",
+        "star_error": "Bintang papan tidak dijumpai! Cuba lagi nanti!"
+    },
+    "trello_response": {
+        "aborted": "Trello mengambil masa terlalu lama untuk menghantar jawapan! Cuba lagi nanti!",
+        "unauthorized": "Token terakhir yang digunakan telah dibatalkan atau telah tidah sah! Beri kebenaran semula dengan perintah `{{&cleanPrefix}} auth`!",
+        "ratelimit": "Terlalu banyak permintaan dihantar! Cuba lagi nanti!",
+        "internal": "Ralat dalaman server telah berlaku di Trello! Cuba lagi nanti!"
+    },
+    "webhook_filter_group": {
+        "board": "Papan",
+        "boardUpdate": "Kemas-kini Papan",
+        "label": "Label",
+        "labelUpdate": "Kemas-kini label",
+        "card": "Kad",
+        "cardUpdate": "Kemas-kini kad",
+        "comment": "Komen",
+        "checklist": "Senarai semakan",
+        "checklistUpdate": "Kemas-kini Senarai Semakan",
+        "checkItem": "Item Senarai Semakan",
+        "checkItemUpdate": "Kemas-kini Item Senarai Semakan",
+        "list": "Senarai",
+        "listUpdate": "Kemas-kini Senarai"
+    },
+    "prompt": {
+        "input_canceled": "Input terakhir anda telah dibatalkan.",
+        "select_timeout": "Arahan terakhir anda telah tamat tempoh. Semua perubahan telah hilang.",
+        "no_search": "Tiada hasil dari carian itu.",
+        "cancel_input": "Menaip \"{{&cancelPrompt}}\" akan membatalkan input.",
+        "confirm": "Adakah anda pasti ingin melakukan ini?",
+        "no_confirm": "Pengesahan telah dibatalkan.",
+        "cancel_confirm": "Taip `yes` untuk mengesahkan. Sebarang mesej lain akan membatalkan pengesahan.",
+        "select": "Taipkan nombor item untuk menukar nilainya.",
+        "select_cancel": "Taipkan \"save\" untuk menyimpan pilihan, jika tidak, taipkan \"cancel\" untuk keluar.",
+        "select_canceled": "Arahan terakhir anda telah dibatalkan. Semua perubahan telah hilang.",
+        "input": "Taipkan mesej yang ingin anda masukkan.",
+        "list": "Senaraikan Arahan",
+        "timeout": "Arahan terakhir anda telah tamat tempoh.",
+        "canceled": "Permintaan terakhir anda telah dibatalkan.",
+        "choose": "Taipkan nombor item yang ingin anda gunakan.",
+        "cancel": "Menaip \"cancel\" akan menutup arahan ini."
+    },
+    "boards": {
+        "header": "Guna `{{&cleanPrefix}}switch <boardID|boardName>` untuk menukar papan.",
+        "menu": {
+            "desc": "Sunting deskripsi papan",
+            "comment": "Ubah kebenaran komen ({{&value}})",
+            "invite": "Ubah kebenaran untuk tambah/singkir ahli ({{&value}})",
+            "name": "Sunting nama papan",
+            "archive_on": "Tutup papan",
+            "archive_off": "Buka papan",
+            "remove_desc": "Buang deskripsi papan",
+            "sub_on": "Awasi papan ini",
+            "sub_off": "Nyah-awasi papan ini",
+            "vote": "Ubah kebenaran mengundi ({{&value}})"
+        },
+        "need_admin": "Anda memerlukan kebenaran pentadbir untuk papan ini!",
+        "none": "Anda tidak ditugaskan ke mana-mana papan. Anda boleh membuatnya di <https://trello.com/>.",
+        "switch": "Ditukar ke \"{{&name}}\" (`{{&id}}`).",
+        "gone": "Papan ini tidak lagi wujud! Tukar ke papan lain dengan `{{&cleanPrefix}}switch`!",
+        "choose": "Taipkan nombor papan yang anda ingin gunakan.",
+        "wywtd": "Pilih apa yang anda ingin lakukan dengan papan ini.",
+        "set_name": "Name papan telah ditukar dari \"{{&old}}\" ke \"{{&new}}\".",
+        "input_name": "Taipkan nama baru untuk papan tersebut.",
+        "archived": "Papan \"{{&name}}\" telah diarkibkan.",
+        "unarchived": "Papan \"{{&name}}\" telah dikeluarkan dari arkib.",
+        "set_desc": "Tetapkan deskripsi papan untuk \"{{&name}}\".",
+        "input_desc": "Taipkan deskripsi baru untuk papan tersebut.",
+        "removed_desc": "Deskripsi untuk papan \"{{&name}}\" telah dibuang.",
+        "set_comment_perms": "Tetapkan kebenaran memberi komen ke {{&value}}.",
+        "set_invite_perms": "Tetapkan kebenaran jemputan ke {{&value}}.",
+        "set_vote_perms": "Tetapkan kebenaran mengundi ke {{&value}}."
+    },
+    "webhook_filters": {
+        "ADD_MEMBER_TO_BOARD": "Tambahan ahli ke papan",
+        "DELETE_ATTACHMENT_FROM_CARD": "Penghapusan lampiran dari kad",
+        "MOVE_CARD_TO_BOARD": "Pemindahan kad ke papan",
+        "REMOVE_MEMBER_FROM_BOARD": "Penyingkiran ahli dari papan",
+        "DELETE_COMMENT": "Penghapusan komen",
+        "UPDATE_BOARD_DESC": "Pengemas-kinian deskripsi papan",
+        "ADD_ATTACHMENT_TO_CARD": "Tambahan lampiran pada kad",
+        "ADD_CHECKLIST_TO_CARD": "Tambahan senarai semak pada kad",
+        "COMMENT_CARD": "Komen baru pada kad",
+        "COPY_CARD": "Penduaan kad",
+        "ADD_LABEL_TO_CARD": "Tambahan senarai semak pada kad",
+        "ADD_MEMBER_TO_CARD": "Tambahan ahli pada kad",
+        "CONVERT_TO_CARD_FROM_CHECK_ITEM": "Item senarai semak telah ditukar menjadi kad",
+        "COPY_CHECKLIST": "Penduaan senarai semak",
+        "CREATE_LABEL": "Penciptaan label",
+        "CREATE_CARD": "Penbinaan kad",
+        "CREATE_LIST": "Pembinaan senari",
+        "DELETE_CARD": "Pemadaman kad",
+        "DELETE_CHECK_ITEM": "Pemadaman senarai semak",
+        "DELETE_LABEL": "Pemadaman label",
+        "MAKE_ADMIN_OF_BOARD": "Ahli papan dinaikkan pangkat menjadi pentadbir",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Pentadbir papan diturunkan menjadi anggota biasa",
+        "MOVE_CARD_FROM_BOARD": "Pemindahan kad keluar dari papan",
+        "MOVE_LIST_FROM_BOARD": "Pemindahan senarai keluar dari papan",
+        "MOVE_LIST_TO_BOARD": "Pemindahan senarai ke papan",
+        "REMOVE_CHECKLIST_FROM_CARD": "Penyingkiran senarai semak dari kad",
+        "REMOVE_LABEL_FROM_CARD": "Penyingkiran label dari kad",
+        "REMOVE_MEMBER_FROM_CARD": "Penyingkiran ahli dari kad",
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Kemas-kini status item senarai semak (dicentang/tidak dicentang)",
+        "VOTE_ON_CARD": "Undian kad",
+        "CREATE_CHECK_ITEM": "Penciptaan item senarai semak",
+        "UPDATE_COMMENT": "Pengemas-kinian komen",
+        "UPDATE_BOARD_NAME": "Pengemas-kinian nama papan",
+        "UPDATE_BOARD_PREFS": "Pengemas-kinian keutamaan papan",
+        "UPDATE_BOARD_CLOSED": "Pengemas-kinian arkib papan (ditutup/dibuka)",
+        "UPDATE_CARD_NAME": "Pengemas-kinian nama kad",
+        "UPDATE_CARD_DESC": "Pengemas-kinian deskripsi kad",
+        "UPDATE_CARD_LIST": "Pengemas-kinian senarai kad",
+        "UPDATE_CARD_POS": "Pengemas-kinian kedudukan kad (dalam senarai)",
+        "UPDATE_CARD_CLOSED": "Pengemas-kinian arkib kad (diarkibkan/tidak diarkibkan)",
+        "UPDATE_CARD_DUE": "Pengemas-kinian tempoh tamat kad",
+        "UPDATE_CHECK_ITEM_NAME": "Pengemas-kinian nama item senarai semakan",
+        "UPDATE_CHECK_ITEM_POS": "Pengemas-kinian posisi item senarai semakan",
+        "UPDATE_CHECKLIST_NAME": "Pengemas-kinian nama senarai semakan",
+        "UPDATE_CHECKLIST_POS": "Pengemas-kinian posisi senarai semakan",
+        "UPDATE_LABEL_NAME": "Pengemas-kinian nama label",
+        "UPDATE_LABEL_COLOR": "Pengemas-kinian warna label",
+        "UPDATE_LIST_NAME": "Pengemas-kinian nama senarai",
+        "UPDATE_LIST_POS": "Pengemas-kinian posisi senarai",
+        "UPDATE_LIST_CLOSED": "Pengemas-kinian arkib senarai (diarkibkan/tidak diarkibkan)"
+    },
+    "and_more": "dan {{count}} lagi…",
+    "error": "Ralat telah berlaku semasa memproses perintah itu!"
 }
