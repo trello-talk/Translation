@@ -144,33 +144,7 @@
         "member_type": {
             "one": "Tipul membrului",
             "many": "Tipurile membrilor"
-        },
-        "subcmd": {
-            "one": "Alt komut",
-            "many": "Alt komutlar"
-        },
-        "checklist_item": {
-            "many": "Kontrol Listesi Öğeleri",
-            "one": "Kontrol Listesi Öğesi"
-        },
-        "name": {
-            "one": "İsim",
-            "many": "İsimler"
-        },
-        "channel": {
-            "one": "Kanal",
-            "many": "Kanallar"
-        },
-        "arch_board": {
-            "one": "Arşiv Kurulu",
-            "many": "Arşiv Panosu"
-        },
-        "webhook": {
-            "one": "Webhook",
-            "many": "Webhooklar"
-        },
-        "active": "Aktif",
-        "locale": "Yerel"
+        }
     },
     "commands": {
         "github": {
@@ -506,10 +480,5 @@
     "shardinfo": {
         "title": "Informatii despre fragmentele lui {{&username}}",
         "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} bresle"
-    },
-    "reloadwebserver": {
-        "no": "Bu alanda web sunucusu yok!",
-        "reloading": "Web sunucusu yeniden başlatılıyor…",
-        "done": "Web sunucusu yeniden başlatıldı."
     }
 }
