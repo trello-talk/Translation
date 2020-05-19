@@ -352,7 +352,7 @@
     "prompt": {
         "list": "Lista prompta",
         "choose": "Tastati numarul articolului pe care doriti sa il utilizati.",
-        "cancel": "Tastati „anulare” vor inchide acest prompt.",
+        "cancel": "Tastati \"cancel\" vor inchide acest prompt.",
         "timeout": "Ultima dvs. solicitare a fost expusa.",
         "no_search": "Nu a aparut niciun rezultat cu acea cautare."
     },
