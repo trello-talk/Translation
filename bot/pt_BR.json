@@ -511,7 +511,7 @@
         "no_search": "Nenhum resultado veio com essa pesquisa.",
         "confirm": "Você tem certeza que deseja fazer isso?",
         "no_confirm": "Confirmação cancelada.",
-        "cancel_confirm": "Digite `yes`para confirmar. Qualquer outra mensagem irá cancelar a confirmação.",
+        "cancel_confirm": "Digite `yes` para confirmar. Qualquer outra mensagem irá cancelar a confirmação.",
         "input": "Digite a mensagem que deseja inserir.",
         "cancel_input": "Digitando \"{{&cancelPrompt}}\" você cancelará a entrada.",
         "input_canceled": "Sua última entrada foi cancelada.",
