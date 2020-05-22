@@ -657,7 +657,13 @@
         "whitelist": "Hvidliste",
         "invalid": "Ugyldigt webhook-ID!",
         "unknown": "ukendt",
-        "not_found": "Dette webhook findes ikke!"
+        "not_found": "Dette webhook findes ikke!",
+        "edit_menu": {
+            "delete": "Slet webhook",
+            "filter": "Rediger filtre",
+            "off": "Deaktivér",
+            "on": "Aktivér"
+        }
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
