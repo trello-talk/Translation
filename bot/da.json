@@ -599,7 +599,8 @@
         "attach": "Jeg behøver `Vedhæft filer` tilladelsen for at kunne bruge denne kommando!",
         "selectedBoard": "Der er ikke blevet valgt nogen tavle!\nVælg en tavle med `{{&cleanPrefix}}switch` kommandoen!",
         "trelloRole": "Denne kommando kræver du er ejeren af serveren eller du har en rolle der hedder `Trello`!",
-        "elevated": "Kun de hævede brugere af botten kan bruge denne kommando!"
+        "elevated": "Kun de hævede brugere af botten kan bruge denne kommando!",
+        "userData": "Dine indstillinger er ikke i databasen!"
     },
     "reloadwebserver": {
         "no": "Der er ingen webserver på denne instans!",
@@ -628,11 +629,23 @@
         "edit_card_desc": "{{&member}} ændrede beskrivelsen for kortet \"{{&card}}\"",
         "add_card_desc": "{{&member}} tilføjede en beskrivelse til kortet \"{{&card}}\"",
         "update_comment": "{{&member}} opdaterede sin kommentar på \"{{&card}}\"",
-        "board_set_perm_levels": "{{&member}} satte synligheden fra {{&oldPerm}} til {{&perm}}"
+        "board_set_perm_levels": "{{&member}} satte synligheden fra {{&oldPerm}} til {{&perm}}",
+        "move_in_list": "{{&member}} overførte listen \"{{&list}}\" fra en anden tavle",
+        "move_out_card": "{{&member}} overførte kortet \"{{&card}}\" til en anden tavle",
+        "board_join": "{{&member}} tilsluttede sig tavlen",
+        "board_left": "{{&member}} forlod tavlen",
+        "board_remove_member": "{{&member}} fjernede {{&member2}} fra tavlen",
+        "board_add_member": "{{&member}} tilføjede {{&member2}} til tavlen",
+        "card_remove_member": "{{&member}} fjernede {{&member2}} fra kortet \"{{&card}}\"",
+        "card_add_member": "{{&member}} tilføjede {{&member2}} til kortet \"{{&card}}\"",
+        "commented": "{{&member}} kommenterede på \"{{&card}}\""
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter",
-        "UPDATE_CARD_NAME": "Opdateringer af kortnavne"
+        "UPDATE_CARD_NAME": "Opdateringer af kortnavne",
+        "DELETE_CARD": "Kortsletninger",
+        "UPDATE_COMMENT": "Kommentaropdateringer",
+        "DELETE_COMMENT": "Kommentarsletninger"
     },
     "webhook_cmd": {
         "menu": {
