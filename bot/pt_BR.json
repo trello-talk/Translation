@@ -684,6 +684,30 @@
     "webhook_cmd": {
         "not_found": "Esse webhook não existe!",
         "invalid": "ID do webhook inválido!",
-        "header": "Use `{{&cleanPrefix}}webhook <IdDoWebhook>` para ver um webhook e `{{&cleanPrefix}}editwebhook <IdDoWebhook>` para editá-lo."
+        "header": "Use `{{&cleanPrefix}}webhook <IdDoWebhook>` para ver um webhook e `{{&cleanPrefix}}editwebhook <IdDoWebhook>` para editá-lo.",
+        "dwh_missing": "O webhook do Discord conectado a este webhook está faltando!",
+        "owned_by": "Proprietário",
+        "trello_webhook": "Webhook do Trello",
+        "discord_webhook": "Webhook do Discord",
+        "dwh": {
+            "many": "Webhooks do Discord",
+            "one": "Webhook do Discord"
+        },
+        "allowed_actions": {
+            "many": "Ações Permitidas",
+            "one": "Ação Permitida"
+        },
+        "filtered_card": {
+            "many": "Cartões Filtrados",
+            "one": "Cartão Filtrado"
+        },
+        "filtered_list": {
+            "many": "Filtros de Listas",
+            "one": "Filtro de Lista"
+        },
+        "blacklist": "Blacklist",
+        "whitelist": "Whitelist",
+        "model_filter": "Modo de Filtro Cartão/Lista",
+        "none": "Não existem webhooks conectados ao trello neste servidor."
     }
 }
