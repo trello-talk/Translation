@@ -638,7 +638,8 @@
         "board_add_member": "{{&member}} tilføjede {{&member2}} til tavlen",
         "card_remove_member": "{{&member}} fjernede {{&member2}} fra kortet \"{{&card}}\"",
         "card_add_member": "{{&member}} tilføjede {{&member2}} til kortet \"{{&card}}\"",
-        "commented": "{{&member}} kommenterede på \"{{&card}}\""
+        "commented": "{{&member}} kommenterede på \"{{&card}}\"",
+        "move_in_card": "{{&member}} overførte kortet \"{{&card}}\" fra en anden tavle"
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter",
