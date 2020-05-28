@@ -220,7 +220,8 @@
         "flag": {
             "many": "Flag",
             "one": "Flag"
-        }
+        },
+        "locale": "Sprogindstillinger"
     },
     "trello": {
         "template": "Er skabelon?",
@@ -646,7 +647,14 @@
         "UPDATE_CARD_NAME": "Opdateringer af kortnavne",
         "DELETE_CARD": "Kortsletninger",
         "UPDATE_COMMENT": "Kommentaropdateringer",
-        "DELETE_COMMENT": "Kommentarsletninger"
+        "DELETE_COMMENT": "Kommentarsletninger",
+        "ADD_MEMBER_TO_CARD": "Medlemstilføjelser til kort",
+        "ADD_MEMBER_TO_BOARD": "Medlemstilføjelser til tavle",
+        "COMMENT_CARD": "Nye kommentarer til kort",
+        "CREATE_LABEL": "Etiketoprettelser",
+        "CREATE_LIST": "Listeoprettelser",
+        "CREATE_CARD": "Kortoprettelser",
+        "UPDATE_LIST_NAME": "Listenavnopdateringer"
     },
     "webhook_cmd": {
         "menu": {
@@ -676,8 +684,11 @@
             "delete": "Slet webhook",
             "filter": "Rediger filtre",
             "off": "Deaktivér",
-            "on": "Aktivér"
-        }
+            "on": "Aktivér",
+            "locale": "Ændre sprogindstillinger"
+        },
+        "none": "Der er ingen webhooks på denne server der er forbundet til Trello.",
+        "add_header": "Hvordan vil du have dit webhook skal opsættes?"
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
