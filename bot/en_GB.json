@@ -428,6 +428,10 @@
             "usage": "<webhookID> [subcommand]",
             "description": "Edits a webhook on your server.  Check the note for sub-commands and usages.",
             "note": "`activate`, `deactivate` - Activates or deactivates the webhook\n`filters` - Edit the filters (formerly \"Webhook Bits\") for this webhook\n`locale [locale]` - Sets the locale for the webhook\n`repair` - Repairs any issues with the webhook\n`delete` - Deletes the webhook\n`whitelist`, `blacklist` - Changes the filter policy of the webhook\n`lists` - Edit filtered lists\n`cards` - Edit filtered cards"
+        },
+        "remwebhook": {
+            "usage": "<webhookID>",
+            "description": "Removes a webhook from your server."
         }
     },
     "boards": {
@@ -902,5 +906,7 @@
         "label": "Labels",
         "boardUpdate": "Board Updates",
         "board": "Board"
-    }
+    },
+    "use_this": "Use this command instead:",
+    "deprecated": "This command is no longer available!"
 }
