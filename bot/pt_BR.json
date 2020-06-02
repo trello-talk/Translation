@@ -708,6 +708,25 @@
         "blacklist": "Blacklist",
         "whitelist": "Whitelist",
         "model_filter": "Modo de Filtro Cartão/Lista",
-        "none": "Não existem webhooks conectados ao trello neste servidor."
+        "none": "Não existem webhooks conectados ao trello neste servidor.",
+        "no_dwh": "Você não possui um webhook conectado no Discord!",
+        "created": "Criado um webhook para \"{{&name}}\".",
+        "edit_menu": {
+            "blist": "Alterar filtro para blacklist",
+            "wlist": "Alterar filtro para whitelist",
+            "cards": "Alterar os cartões filtrados",
+            "lists": "Alterar a lista de filtros",
+            "locale": "Alterar idioma",
+            "repair": "Reparar webhook",
+            "delete": "Deletar webhook",
+            "filter": "Editar filtros",
+            "off": "Desativar",
+            "on": "Ativar"
+        },
+        "menu": {
+            "link": "Usar um link do webhook",
+            "add": "Adicionar um webhook",
+            "exist": "Usar um webhook existente"
+        }
     }
 }
