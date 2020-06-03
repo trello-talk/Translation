@@ -69,6 +69,16 @@
             "org": "단체 멤버",
             "members": "모든 멤버",
             "disabled": "비활성됨"
+        },
+        "self_join": "팀 멤버에게 수정과 초대 허용",
+        "template": "템플릿인가?",
+        "voting": "투표 중",
+        "starred": "별표된",
+        "item_src": "항목 소스",
+        "products": {
+            "37": "⭐ 주간 트렐로 골드",
+            "38": "🌟 연간 트렐로 골드",
+            "10": "💼 비즈니스 클래스 트렐로 골드"
         }
     },
     "words": {
@@ -230,7 +240,9 @@
         "usage": "사용법",
         "locale": "로케일",
         "cooldown": "쿨다운",
-        "active": "활성"
+        "active": "활성",
+        "in_lower": "안",
+        "in": "안"
     },
     "commands": {
         "help": {
@@ -247,6 +259,9 @@
         },
         "asynceval": {
             "usage": "<코드>"
+        },
+        "editwebhook": {
+            "note": "`activate`, `deactivate` - 웹훅 활성화 또는 비활성화\n`filters` - 웹훅의 필터 수정(이전의 \"Webhook Bits\")\n`locale [locale]` - 웹훅의 로케일 설정\n`repair` - 웹훅의 문제 복구\n`delete` - 웹훅 삭제\n`whitelist`, `blacklist` - 웹훅의 필터 정책 변경\n`lists` - 필터된 리스트 수정\n`cards` - 필터된 카드 수정"
         }
     },
     "locale": {
@@ -326,5 +341,88 @@
     "_": {
         "name": "한국어",
         "emoji": "kr"
-    }
+    },
+    "webhook_cmd": {
+        "header": "웹훅을 보려면 `{{&cleanPrefix}}webhook <webhookID>` 을 사용하고 웹훅을 수정하려면 `{{&cleanPrefix}}editwebhook <webhookID>`를 사용하세요.",
+        "twh_missing": "웹훅을 설정한 사용자가 없어서, 웹훅이 전송되는 것을 멈출 수 있습니다!",
+        "try_repair": "이 문제를 `{{&cleanPrefix}}editwebhook {{&id}} repair`로 복구할 수 있습니다",
+        "edit_menu": {
+            "wlist": "필터를 화이트리스트로 변경",
+            "on": "활성화",
+            "off": "비활성화",
+            "filter": "필터 수정",
+            "delete": "웹훅 삭제",
+            "repair": "웹훅 복구",
+            "locale": "로케일 변경",
+            "lists": "필터된 리스트 변경",
+            "cards": "필터된 카드 변경",
+            "blist": "필터를 블랙리스트로 변경"
+        },
+        "couldnt_create": "웹훅을 생성할 수 없습니다! 프로세스 중 권한 변경 때문일 수 있습니다!",
+        "input_link": "사용할 웹훅의 링크를 붙여넣으세요.",
+        "none": "이 서버에는 트렐로에 연결된 웹훅이 없습니다.",
+        "invalid": "유효하지 않은 웹훅 아이디입니다!",
+        "not_found": "웹훅이 존재하지 않습니다!",
+        "model_filter": "리스트/카드 필터 모드",
+        "whitelist": "화이트리스트",
+        "blacklist": "블랙리스트",
+        "filtered_list": {
+            "one": "필터된 리스트",
+            "many": "필터된 리스트"
+        },
+        "filtered_card": {
+            "one": "필터된 카드",
+            "many": "필터된 카드"
+        },
+        "allowed_actions": {
+            "one": "허용된 행동",
+            "many": "허용된 행동"
+        },
+        "dwh": {
+            "one": "디스코드 웹훅",
+            "many": "디스코드 웹훅"
+        },
+        "discord_webhook": "디스코드 웹훅",
+        "trello_webhook": "트렐로 웹훅",
+        "owned_by": "소유자",
+        "dwh_missing": "이 웹훅에 연결된 디스코드 웹훅이 없습니다!",
+        "add_header": "웹훅이 어떻게 설정되기를 원하나요?",
+        "menu": {
+            "add": "웹훅 추가",
+            "exist": "이미 있는 웹훅 사용",
+            "link": "웹훅 링크 사용"
+        },
+        "no_channels": "웹훅 관리를 허용하는 채널을 찾을 수 없습니다.",
+        "choose_channel": "웹훅이 게시할 채널을 고르세요.",
+        "created": "\"{{&name}}\"을 위한 웹훅이 생성되었습니다.",
+        "create_confirm": "트렐로 보드 \"{{&name}}\"를 위한 웹훅이 시작되었습니다! 액션은 곧 볼 수 있습니다…",
+        "no_dwh": "링크랑 디스코드 웹훅이 없습니다!",
+        "choose_existwh": "사용할 웹훅을 고르세요.",
+        "no_link": "입력에서 웹훅 URL을 찾을 수 없습니다!",
+        "no_server_link": "그 웹훅은 이 서버에 있는 웹훅이 아닙니다!",
+        "wywtd": "이 웹훅으로 무엇을 할 지 고르세요.",
+        "wh_off": "웹훅이 꺼졌습니다.",
+        "wh_on": "웹훅이 켜졌습니다.",
+        "repair_dwh_header": "디스코드 웹훅이 없습니다. 새로운 웹훅을 어떻게 생성하시겠어요?",
+        "repaired_wh": "복구된 웹훅",
+        "repaired": "웹훅의 모든 문제를 복구했습니다.",
+        "confirm_delete": "정말로 이 웹훅을 삭제하시겠습니까?",
+        "deleted": "웹훅이 삭제되었습니다.",
+        "filter_update": "웹훅의 필터가 업데이트 되었습니다.",
+        "to_wlist": "필터링 정책이 화이트리스트로 변경되었습니다.",
+        "to_blist": "필터링 정책이 블랙리스트로 변경되었습니다.",
+        "lists_updated": "필터된 리스트가 저장되었습니다.",
+        "cards_updated": "필터된 카드가 저장되었습니다.",
+        "choose_lists": "필터될 리스트를 선택하세요. 아무것도 선택하지 않으면 리스트 필터링을 비활성화 합니다.",
+        "choose_cards": "필터될 카드를 선택하세요. 아무것도 선택하지 않으면 카드 필터링을 비활성화 합니다.",
+        "no_access": "보드가 더 이상 존재하지 않거나 접근할 수 없습니다!",
+        "locale_unset": "웹훅 로케일을 설정 해제합니다.",
+        "locale_set": "웹훅 로케일이 **{{&name}}** 로 설정되었습니다.",
+        "max_wh": "이 서버의 최대 웹훅 수에 도달했습니다! 패트리온이 되어 이 제한을 증가시킬 수 있습니다! (`{{&cleanPrefix}}donate`)",
+        "unknown": "알 수 없음"
+    },
+    "deprecated": "이 명령어는 더이상 사용할 수 없습니다!",
+    "cooldown_msg": "이 명령어는 쿨다운이 필요합니다! *({{seconds}})*",
+    "bad_args": "인자가 충분하지 않습니다!",
+    "use_this": "대신 이 명령어를 사용하세요:"
 }
