@@ -585,6 +585,10 @@
         },
         "cleardata": {
             "description": "Membuangkan data pengguna anda dari Taco."
+        },
+        "remwebhook": {
+            "description": "Ini akan membuang webhook dari server anda.",
+            "usage": "<webhookID>"
         }
     },
     "cooldown_msg": "Perintah ini perlu ditenangkan! *({{seconds}})*",
@@ -899,5 +903,7 @@
         "UPDATE_LIST_CLOSED": "Pengemas-kinian arkib senarai (diarkibkan/tidak diarkibkan)"
     },
     "and_more": "dan {{count}} lagi…",
-    "error": "Ralat telah berlaku semasa memproses perintah itu!"
+    "error": "Ralat telah berlaku semasa memproses perintah itu!",
+    "deprecated": "Perintah ini sudah tidak boleh digunakan!",
+    "use_this": "Cuba gantikan dengan perantah ini:"
 }
