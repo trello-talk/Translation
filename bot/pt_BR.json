@@ -427,19 +427,19 @@
             "usage": "[nomeDaLista|idDaLista] [página]"
         },
         "watchlist": {
-            "description": "Altera o acompanhamento de uma lista. As listas acompanhadas fornecerão notificações de atualização no [Trello}(https://trello.com/).",
+            "description": "Altera o acompanhamento de uma lista. As listas acompanhadas fornecerão notificações de atualização no [Trello](https://trello.com/).",
             "usage": "[nomeDaLista|idDaLista]"
         },
         "watch": {
             "usage": "[nomeDoQuadro|idDoQuadro]",
-            "description": "Altera o acompanhamento de um quadro. Se nenhum quadro for definido, o quadro atual será usado. Os quadros acompanhados fornecerão notificações de atualização no [Trello}(https://trello.com/)."
+            "description": "Altera o acompanhamento de um quadro. Se nenhum quadro for definido, o quadro atual será usado. Os quadros acompanhados fornecerão notificações de atualização no [Trello](https://trello.com/)."
         },
         "star": {
             "usage": "[nomeDoQuadro|idDoQuadro]",
-            "description": "Altera os quadros favoritos. Se nenhum quadro for definido, o quadro atual será usado. Quadros favoritos serão exibidos no topo da sua lista de quadros no [Trello}(https://trello.com/)."
+            "description": "Altera os quadros favoritos. Se nenhum quadro for definido, o quadro atual será usado. Quadros favoritos serão exibidos no topo da sua lista de quadros no [Trello](https://trello.com/)."
         },
         "watchcard": {
-            "description": "Altere o acompanhamento do cartão. Os cartões acompanhados fornecerão notificações de atualização no [Trello}(https://trello.com/).",
+            "description": "Altere o acompanhamento do cartão. Os cartões acompanhados fornecerão notificações de atualização no [Trello](https://trello.com/).",
             "usage": "[nomeDoCartão|idDoCartão]"
         },
         "prefix": {

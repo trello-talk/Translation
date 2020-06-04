@@ -537,19 +537,19 @@
             "usage": "[page]"
         },
         "watchcard": {
-            "description": "Toggle watching a card. Watched cards will give you update notifications on [Trello}(https://trello.com/).",
+            "description": "Toggle watching a card. Watched cards will give you update notifications on [Trello](https://trello.com/).",
             "usage": "[cardName|cardID]"
         },
         "watchlist": {
-            "description": "Toggle watching a list. Watched lists will give you update notifications on [Trello}(https://trello.com/).",
+            "description": "Toggle watching a list. Watched lists will give you update notifications on [Trello](https://trello.com/).",
             "usage": "[listName|listID]"
         },
         "watch": {
-            "description": "Toggle watching a board. If no board is defined, the current board is used. Watched boards will give you update notifications on [Trello}(https://trello.com/).",
+            "description": "Toggle watching a board. If no board is defined, the current board is used. Watched boards will give you update notifications on [Trello](https://trello.com/).",
             "usage": "[boardName|boardID]"
         },
         "star": {
-            "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on [Trello}(https://trello.com/).",
+            "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on [Trello](https://trello.com/).",
             "usage": "[boardName|boardID]"
         },
         "editlist": {

@@ -369,7 +369,7 @@
         },
         "watchlist": {
             "usage": "[listenavn|listeID]",
-            "description": "Ændre overvågning af en liste. Overvågede lister vil give dig besked om opdateringer på [Trello}(https://trello.com/)."
+            "description": "Ændre overvågning af en liste. Overvågede lister vil give dig besked om opdateringer på [Trello](https://trello.com/)."
         },
         "exec": {
             "description": "Udnytter `child_process.exec`.",
@@ -404,7 +404,7 @@
         },
         "watchcard": {
             "usage": "[kortnavn|kortID]",
-            "description": "Ændre overvågning af kort. Overvågede kort vil give dig besked om opdateringer på [Trello}(https://trello.com/)."
+            "description": "Ændre overvågning af kort. Overvågede kort vil give dig besked om opdateringer på [Trello](https://trello.com/)."
         },
         "auth": {
             "description": "Få authoriserings linket til at forbinde din Discordkonto med din Trellokonto."
@@ -428,11 +428,11 @@
         },
         "star": {
             "usage": "[tavleNavn|tavleID]",
-            "description": "Ændrer stjernemarkeringen af en tavle. Hvis der ikke er defineret en tavle, vil den aktuelle tavle blive vist. Stjernemarkerede tavle vil blive vist i toppen af din tavleliste på [Trello}(https://trello.com/)."
+            "description": "Ændrer stjernemarkeringen af en tavle. Hvis der ikke er defineret en tavle, vil den aktuelle tavle blive vist. Stjernemarkerede tavle vil blive vist i toppen af din tavleliste på [Trello](https://trello.com/)."
         },
         "watch": {
             "usage": "{tavleNavn|tavleID]",
-            "description": "Ændre overvågning af en tavle. Hvis ingen tavle er defineret, vil den aktuelle tavle blive brugt. Overvågede tavler vil give dig besked om opdateringer på [Trello}(https://trello.com/)."
+            "description": "Ændre overvågning af en tavle. Hvis ingen tavle er defineret, vil den aktuelle tavle blive brugt. Overvågede tavler vil give dig besked om opdateringer på [Trello](https://trello.com/)."
         },
         "editlist": {
             "usage": "[listenavn|listeID] [underkommando] …",

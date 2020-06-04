@@ -515,7 +515,7 @@
         },
         "star": {
             "usage": "[namaPapan|idPapan]",
-            "description": "Toggel pembintangan papan. Jika tiada papan dikhususkan, papan semasa akan digunakan. Papan yang dibintangkan akan muncul di atas senarai papan dalam [Trello}(https://trello.com/)."
+            "description": "Toggel pembintangan papan. Jika tiada papan dikhususkan, papan semasa akan digunakan. Papan yang dibintangkan akan muncul di atas senarai papan dalam [Trello](https://trello.com/)."
         },
         "editlist": {
             "description": "Sunting ciri-ciri sesuatu senarai. Lihat nota untuk sub-perintah dan kegunaannya.",
@@ -545,11 +545,11 @@
             "usage": "<perintah>…"
         },
         "watchlist": {
-            "description": "Toggel pengawasan senarai. Senarai yang diawasi akan memberikan notifikasi kemas-kini di [Trello}(https://trello.com/).",
+            "description": "Toggel pengawasan senarai. Senarai yang diawasi akan memberikan notifikasi kemas-kini di [Trello](https://trello.com/).",
             "usage": "[namaSenarai|idSenarai]"
         },
         "watchcard": {
-            "description": "Toggel pengawasan kad. Kad yang diawasi akan memberikan notifikasi kemas-kini di [Trello}(https://trello.com/).",
+            "description": "Toggel pengawasan kad. Kad yang diawasi akan memberikan notifikasi kemas-kini di [Trello](https://trello.com/).",
             "usage": "[namaKad|idKad]"
         },
         "addcard": {
@@ -578,7 +578,7 @@
         },
         "watch": {
             "usage": "[namaPapan|idPapan]",
-            "description": "Toggel pengawasan papan. Jika tiada papan dikhususkan, papan semasa akan digunakan. Papan yang diawasi akan memberikan notifikasi kemas-kini di [Trello}(https://trello.com/)."
+            "description": "Toggel pengawasan papan. Jika tiada papan dikhususkan, papan semasa akan digunakan. Papan yang diawasi akan memberikan notifikasi kemas-kini di [Trello](https://trello.com/)."
         },
         "clearauth": {
             "description": "Buangkan pengizinan Trello. Jangan lakukan perintah ini kecuali benar-benar diperlukan."
