@@ -239,33 +239,174 @@
         "mem_usage": "메모리 사용량",
         "usage": "사용법",
         "locale": "로케일",
-        "cooldown": "쿨다운",
+        "cooldown": "재사용 대기",
         "active": "활성",
         "in_lower": "안",
         "in": "안"
     },
     "commands": {
         "help": {
-            "usage": "[명령어]"
+            "usage": "[명령어]",
+            "description": "도움 메세지를 보여주고 명령어의 정보를 줍니다."
         },
         "reloadone": {
-            "usage": "<명령어 이름> [명령어 이름] …"
+            "usage": "<명령어 이름> [명령어 이름] …",
+            "description": "각각의 명령어를 다시 불러옵니다."
         },
         "exec": {
-            "usage": "<명령어> …"
+            "usage": "<명령어> …",
+            "description": "`child_process.exec` 를 이용하세요."
         },
         "eval": {
-            "usage": "<코드>"
+            "usage": "<코드>",
+            "description": "코드를 평가합니다."
         },
         "asynceval": {
-            "usage": "<코드>"
+            "usage": "<코드>",
+            "note": "이 명령어에 비동기 IIFE 래퍼가 추가되었기 때문에, 결과를 리턴하려면 리턴문을 사용해야 합니다.\ne.g. `{{&cleanPrefix}}aeval return 1`",
+            "description": "코드를 비동기적으로 평가합니다."
         },
         "editwebhook": {
             "note": "`activate`, `deactivate` - 웹훅 활성화 또는 비활성화\n`filters` - 웹훅의 필터 수정(이전의 \"Webhook Bits\")\n`locale [locale]` - 웹훅의 로케일 설정\n`repair` - 웹훅의 문제 복구\n`delete` - 웹훅 삭제\n`whitelist`, `blacklist` - 웹훅의 필터 정책 변경\n`lists` - 필터된 리스트 수정\n`cards` - 필터된 카드 수정"
+        },
+        "reloadlocale": {
+            "description": "로케일 파일을 다시 불러옵니다."
+        },
+        "prefix": {
+            "usage": "[\"set\"|\"add\"|\"remove\"] [prefix]",
+            "description": "당신이나 서버의 접두사를 설정하게 합니다."
+        },
+        "locale": {
+            "usage": "[\"userset\"|\"serverset\"] [locale]",
+            "description": "당신이나 서버의 로케일을 설정하게 합니다. 로케일 리스트를 보려면 인자 없이 실행합니다."
+        },
+        "lists": {
+            "description": "현재 보드의 열린 리스트를 모두 나열합니다. 리스트의 보관소는 `{{&cleanPrefix}}listarchive` 로 볼 수 있습니다.",
+            "usage": "[페이지]"
+        },
+        "watchcard": {
+            "description": "카드 지켜보기를 토글합니다. 지켜본 카드는 [트렐로](https://trello.com/)에서 업데이트 알림을 줄 것입니다.",
+            "usage": "[카드이름|카드아이디]"
+        },
+        "watch": {
+            "description": "보드 지켜보기를 토글합니다. 정의된 보드가 없으면, 현재 보드가 사용됩니다. 지켜본 보드는 [트렐로](https://trello.com/) 에서 업데이트 알림을 줄 것입니다.",
+            "usage": "[보드이름|보드아이디]"
+        },
+        "editcard": {
+            "usage": "[카드이름|카드아이디] [하위명령어] …",
+            "note": "`name [newName]` - 카드 이름 변경\n`archive`, `unarchive` - 카드 보관 토글\n`desc [newDescription]` - 카드 설명 설정\n`removedesc` - 카드 설명 삭제\n`duedone` - 카드 기한 날짜 완료 토글\n`removedue` - 카드 기한 날짜 삭제",
+            "description": "카드의 속성을 수정합니다. 하위 명령어와 사용법을 확인하세요."
+        },
+        "editboard": {
+            "note": "`name [newName]` - 보드 이름 변경 (보드 관리자)\n`archive`, `unarchive` - 보드 보관 토글 (보드 관리자)\n`desc [newDescription]` - 보드 설명 설정\n`removedesc` - 보드 설명 삭제\n`commentperms` - 덧글 권한 변경 (보드 관리자)\n`voteperms` - 투표 권한 변경 (보드 관리자)\n`inviteperms` - 초대 권한 변경 (보드 관리자)",
+            "description": "현재 보드의 속성을 수정합니다. 하위 명령어와 사용법을 확인하세요.",
+            "usage": "[하위명령어] …"
+        },
+        "watchlist": {
+            "description": "리스트 지켜보기를 토글합니다. 지켜본 리스트는 [트렐로](https://trello.com/)에서 업데이트 알림을 줄 것입니다.",
+            "usage": "[리스트이름|리스트아이디]"
+        },
+        "star": {
+            "description": "보드 별표를 토글합니다. 정의된 보드가 없으면, 현재 보드가 사용됩니다. 별표된 보드는 [트렐로](https://trello.com/)에서 보드 리스트의 맨 위에 나타납니다.",
+            "usage": "[보드이름|보드아이디]"
+        },
+        "auth": {
+            "description": "디스코드 계정을 트렐로 계정에 연결하기 위한 인증 링크를 얻습니다."
+        },
+        "reload": {
+            "description": "명령어를 다시 불러옵니다."
+        },
+        "reloadwebserver": {
+            "description": "웹서버를 다시 시작합니다."
+        },
+        "restart": {
+            "description": "봇을 다시 시작합니다."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "info": {
+            "description": "봇에 대한 정보를 얻습니다."
+        },
+        "ping": {
+            "description": "퐁!"
+        },
+        "shardinfo": {
+            "description": "모든 데이터베이스 샤드의 통계를 줍니다."
+        },
+        "serverinvite": {
+            "description": "지원 서버의 초대를 얻습니다."
+        },
+        "donate": {
+            "description": "개발자를 위한 후원 링크를 얻습니다."
+        },
+        "github": {
+            "description": "봇의 오픈 소스 링크를 보냅니다."
+        },
+        "invite": {
+            "description": "봇 초대 링크를 보냅니다."
+        },
+        "me": {
+            "description": "당신의 트렐로 계정에 대한 정보를 봅니다."
+        },
+        "switch": {
+            "description": "다른 명령어를 위한 보드를 선택합니다. 선택할 수 있는 보드를 보려면 `{{&cleanPrefix}}boards` 명령어를 사용합니다.",
+            "usage": "[boardID|boardName]"
+        },
+        "board": {
+            "description": "현재 보드의 정보를 얻습니다."
+        },
+        "list": {
+            "description": "그 리스트에 있는 모든 카드를 나열합니다.",
+            "usage": "[리스트이름|리스트아이디] [페이지]"
+        },
+        "listarchive": {
+            "description": "현재 보드의 저장된 리스트를 모두 나열합니다.",
+            "usage": "[페이지]"
+        },
+        "cardarchive": {
+            "description": "현재 보드의 모든 저장된 카드를 나열합니다.",
+            "usage": "[페이지]"
+        },
+        "boards": {
+            "description": "당신이 관리할 수 있는 보드를 나열합니다.",
+            "usage": "[페이지]"
+        },
+        "editlist": {
+            "description": "리스트의 속성을 수정합니다. 하위 명령어와 사용법을 확인하세요.",
+            "usage": "[리스트이름|리스트아이디] [하위명령어] …",
+            "note": "`name [newName]` - 리스트 이름 변경\n`archive`, `unarchive` - 리스트 보관 토글"
+        },
+        "card": {
+            "usage": "[카드이름|카드아이디]",
+            "description": "특정 카드에 대한 정보를 얻습니다."
+        },
+        "addcard": {
+            "description": "카드를 만듭니다.",
+            "usage": "[리스트이름|리스트아이디] [이름]"
+        },
+        "deletecard": {
+            "description": "카드를 지웁니다.",
+            "usage": "[카드이름|카드아이디]"
+        },
+        "addlist": {
+            "description": "현재 보드에 리스트를 만듭니다.",
+            "usage": "[이름]"
+        },
+        "comment": {
+            "description": "현재 보드에 있는 카드에 덧글을 남깁니다.",
+            "usage": "[카드이름|카드아이디] [덧글]"
+        },
+        "webhooks": {
+            "description": "당신의 서버에 있는 웹훅을 나열합니다.",
+            "usage": "[페이지]"
+        },
+        "webhook": {
+            "description": "특정 웹훅에 대한 정보를 얻습니다."
         }
     },
     "locale": {
-        "no_guild": "guild에서 명령어를 실행 중이 아닙니다!",
+        "no_guild": "길드에서 명령어를 실행 중이 아닙니다!",
         "server_unset": "서버 로케일 설정 해제.",
         "user_unset": "사용자 로케일 설정 해제.",
         "unset_l": "로케일 설정 해제",
@@ -279,7 +420,7 @@
         "start": "사용 가능한 로케일"
     },
     "shardinfo": {
-        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} guilds",
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} 길드",
         "title": "{{&username}}의 샤드에 대한 정보"
     },
     "reloadwebserver": {
@@ -358,7 +499,7 @@
             "cards": "필터된 카드 변경",
             "blist": "필터를 블랙리스트로 변경"
         },
-        "couldnt_create": "웹훅을 생성할 수 없습니다! 프로세스 중 권한 변경 때문일 수 있습니다!",
+        "couldnt_create": "웹훅을 생성할 수 없습니다! 처리 중 권한 변경 때문일 수 있습니다!",
         "input_link": "사용할 웹훅의 링크를 붙여넣으세요.",
         "none": "이 서버에는 트렐로에 연결된 웹훅이 없습니다.",
         "invalid": "유효하지 않은 웹훅 아이디입니다!",
@@ -393,7 +534,7 @@
             "link": "웹훅 링크 사용"
         },
         "no_channels": "웹훅 관리를 허용하는 채널을 찾을 수 없습니다.",
-        "choose_channel": "웹훅이 게시할 채널을 고르세요.",
+        "choose_channel": "웹훅이 게시하게 될 채널을 고르세요.",
         "created": "\"{{&name}}\"을 위한 웹훅이 생성되었습니다.",
         "create_confirm": "트렐로 보드 \"{{&name}}\"를 위한 웹훅이 시작되었습니다! 액션은 곧 볼 수 있습니다…",
         "no_dwh": "링크랑 디스코드 웹훅이 없습니다!",
@@ -424,5 +565,43 @@
     "deprecated": "이 명령어는 더이상 사용할 수 없습니다!",
     "cooldown_msg": "이 명령어는 쿨다운이 필요합니다! *({{seconds}})*",
     "bad_args": "인자가 충분하지 않습니다!",
-    "use_this": "대신 이 명령어를 사용하세요:"
+    "use_this": "대신 이 명령어를 사용하세요:",
+    "command_permissions": {
+        "discordAuth": "디스코드에 트렐로 계정을 인증하지 않았습니다!\n`{{&cleanPrefix}}auth` 명령어로 인증하세요!",
+        "elevated": "봇에 높은 권한이 있는 유저만 이 명령어를 사용할 수 있습니다!",
+        "attach": "이 명령어를 사용하려면 `Attach Files` 권한이 필요합니다!",
+        "embed": "이 명령어를 사용하려면 `Embed Links` 권한이 필요합니다!",
+        "emoji": "이 명령어를 사용하려면 `Use External Emojis` 권한이 필요합니다!",
+        "trelloRole": "이 명령어를 사용하려면 서버 소유자이거나 `Trello` 역할이 필요합니다!",
+        "auth": "디스코드에 트렐로 계정을 인증하지 않았습니다!\n`{{&cleanPrefix}}auth` 명령어로 인증하세요!",
+        "selectedBoard": "선택된 보드가 없습니다!\n`{{&cleanPrefix}}switch` 명령어로 보드를 선택하세요!",
+        "webhooks": "이 명령어를 사용하려면 `Manage Webhooks` 권한이 필요합니다!",
+        "userData": "데이터베이스에서 설정을 찾을 수 없습니다!"
+    },
+    "cards": {
+        "menu": {
+            "remove_due": "기한 날짜 삭제",
+            "due_on": "기한 날짜 완료로 표시",
+            "due_off": "기한 날짜 미완으로 표시"
+        },
+        "due_on": "카드 \"{{&name}}\"의 기한 날짜가 완료로 표시되었습니다.",
+        "due_off": "카드 \"{{&name}}\"의 기한 날짜가 미완으로 표시되었습니다.",
+        "removed_due": "카드 \"{{&name}}\"의 기한 날짜가 삭제되었습니다."
+    },
+    "format": {
+        "second": {
+            "one": "{{seconds}} 초",
+            "many": "{{seconds}} 초"
+        }
+    },
+    "categories": {
+        "general": "일반",
+        "dev": "개발자",
+        "user": "사용자 관리",
+        "view": "보기",
+        "webhook": "웹훅",
+        "edit": "수정",
+        "hidden": "비밀",
+        "misc": "기타"
+    }
 }
