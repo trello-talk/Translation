@@ -10,5 +10,19 @@
     "reload": {
         "done": "Comandes refrescades.",
         "reloading": "Refrescant comandes…"
+    },
+    "responses": {
+        "hangman": "No sóc un bot de jocs.",
+        "eval": "Li ha costat {{ms}} ms."
+    },
+    "links": {
+        "auth": {
+            "start": "Autoritzeu el vostre compte de Trello amb Discord aquí:",
+            "fail": "El propietari del bot no ha subministrat cap enllaç d'autorització!"
+        },
+        "donate": {
+            "start": "Ajuda el desenvolupament donant!",
+            "fail": "El propietari del bot no ha subministrat cap enllaç per poder donar!"
+        }
     }
 }
