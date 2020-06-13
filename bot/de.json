@@ -53,5 +53,270 @@
     "_": {
         "name": "Deutsch",
         "emoji": "de"
+    },
+    "reloadwebserver": {
+        "no": "Diese Instanz hat keinen Webserver zu Verdügung!",
+        "reloading": "Der Webserver wird neu gestartet…",
+        "done": "Der Webserver wurde erfolgreich neu gestartet."
+    },
+    "shardinfo": {
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} Server",
+        "title": "Informationen über die Shards von {{&username}}"
+    },
+    "locale": {
+        "start": "Verfügbare Sprachen",
+        "unset": "Nicht gesetzt",
+        "user_locale": "Sprache des Benutzers: {{&locale}}",
+        "server_locale": "Sprache des Servers: {{&locale}}",
+        "server_set": "Serversprache auf **{{&name}}** gesetzt.",
+        "server_unset": "Serversprache zurücksetzten.",
+        "no_guild": "Du musst diesen Befehl in einem Server ausführen!",
+        "choose": "Schreibe die Nummer der Sprache auf die du ändern willst.",
+        "header": "`{{&prefix}}locale setuser [Sprache]` odee `{{&prefix}}locale setserver [Sprache]` um die Sprache zu ändern.",
+        "user_set": "Die Sprache des Benutzers auf **{{&name}}** gesetzt.",
+        "user_unset": "Benutzersprache zurücksetzten.",
+        "unset_l": "Sprache entfernen"
+    },
+    "words": {
+        "alias": {
+            "one": "Alias",
+            "many": "Aliase"
+        },
+        "cooldown": "Abklingzeit",
+        "usage": "Benutzung",
+        "initials": "Initialien",
+        "info": "Information",
+        "board": {
+            "many": "Boards",
+            "one": "Board"
+        },
+        "count": {
+            "many": "Anzahl",
+            "one": "Anzahl"
+        },
+        "list": {
+            "one": "Liste",
+            "many": "Listen"
+        },
+        "link": {
+            "one": "Link",
+            "many": "Links"
+        },
+        "cmd": {
+            "many": "Befehle",
+            "one": "Befehl"
+        },
+        "subcmd": {
+            "many": "Unterbefehle",
+            "one": "Unterbefehl"
+        },
+        "sticker": {
+            "many": "Sticker",
+            "one": "Sticker"
+        },
+        "user_pref": {
+            "many": "Nutzereinstellungen"
+        },
+        "opt": {
+            "one": "Option",
+            "many": "Optionen"
+        },
+        "orgs": {
+            "many": "Teams",
+            "one": "Team"
+        },
+        "mem_usage": "Arbeitsspeichernutzung",
+        "server": {
+            "many": "Server",
+            "one": "Server"
+        },
+        "website": {
+            "one": "Website",
+            "many": "Internetseiten"
+        },
+        "donate": "Spenden",
+        "id": "ID",
+        "version": "Version",
+        "active": "Aktiv",
+        "uptime": "Online seit",
+        "note": "Notiz",
+        "trello_board": {
+            "one": "Trello Board",
+            "many": "Trello Boards"
+        },
+        "card": {
+            "one": "Karte",
+            "many": "Karten"
+        },
+        "checklist": {
+            "one": "Checkliste",
+            "many": "Checklisten"
+        },
+        "checklist_item": {
+            "one": "Gegenstand auf Checkliste",
+            "many": "Gegenstände auf Checkliste"
+        },
+        "attachment": {
+            "one": "Anhang",
+            "many": "Anhänge"
+        },
+        "flag": {
+            "one": "Flagge",
+            "many": "Flaggen"
+        },
+        "page": {
+            "one": "Seite",
+            "many": "Seiten"
+        },
+        "label": {
+            "one": "Label",
+            "many": "Labels"
+        },
+        "arch_list": {
+            "one": "Archivierte Liste",
+            "many": "Archivierte Listen"
+        },
+        "arch_card": {
+            "one": "Archivierte Karte",
+            "many": "Archivierte Karten"
+        },
+        "arch_board": {
+            "one": "Archiviertes Board",
+            "many": "Archivierte Boards"
+        },
+        "product": {
+            "many": "Produkte",
+            "one": "Produkt"
+        },
+        "member": {
+            "one": "Mitglied",
+            "many": "Mitglieder"
+        },
+        "comment": {
+            "one": "Kommentar",
+            "many": "Kommentare"
+        },
+        "prefix": {
+            "one": "Präfix",
+            "many": "Präfixe"
+        },
+        "name": {
+            "one": "Name",
+            "many": "Namen"
+        },
+        "channel": {
+            "one": "Kanal",
+            "many": "Kanäle"
+        },
+        "visibility": "Sichtbarkeit",
+        "pref": {
+            "one": "Einstellung",
+            "many": "Einstellungen"
+        },
+        "bio": "Bio",
+        "bg_img": "Hintergrundbild",
+        "webhook": {
+            "one": "Webhook",
+            "many": "Webhooks"
+        },
+        "locale": "Sprache"
+    },
+    "trello": {
+        "comment_perms": {
+            "public": "Jeder Trellonutzer",
+            "disabled": "Deaktiviert",
+            "members": "Alle Mitglieder",
+            "org": "Teammitglieder"
+        },
+        "vote_perms": {
+            "disabled": "Deaktiviert",
+            "members": "Alle Mitglieder",
+            "org": "Teammitglieder",
+            "public": "Jeder Trellonutzer"
+        },
+        "label_color": {
+            "purple": "Lila",
+            "blue": "Blau",
+            "sky": "Hellblau",
+            "pink": "Pink",
+            "black": "Schwarz",
+            "none": "Keine Farbe",
+            "yellow": "Gelb",
+            "red": "Rot",
+            "green": "Grün",
+            "orange": "Orange",
+            "lime": "Hellgrün"
+        },
+        "new_due": "Neues Fälligkeitsdatum",
+        "to_board": "Zum Board",
+        "from_board": "Vom Board",
+        "invite_perms": {
+            "members": "Alle Mitglieder",
+            "admins": "Admins"
+        },
+        "member_type": {
+            "normal": "Normal",
+            "admin": "Admin"
+        },
+        "card_covers": "Karten Titelbild",
+        "subbed": "Beobachtet",
+        "self_join": "Teammitgliedern den Beitritt und das Bearbeiten erlauben",
+        "voted": "Abgestimmt",
+        "last_act": "Letzte Aktivität",
+        "add_rem_members": "Mitglieder hinzufügen/entfernen",
+        "colorblind": "Modus für Farbenblinde",
+        "marketing": "Werbe-E-Mails (opt-in)",
+        "locale": "Sprache (auf Trello)",
+        "pinned": "Angepinnt",
+        "archived_lower": "archiviert",
+        "old_desc": "Alte Beschreibung",
+        "new_desc": "Neue Beschreibung",
+        "prev_list": "Vorherige Liste",
+        "summ": "Berichte senden",
+        "hide_votes": "Abstimmung verbergen",
+        "old_name": "Alter Name",
+        "old_comment": "Alter Kommentar",
+        "new_comment": "Neuer Kommentar",
+        "old_due": "Altes Fälligkeitsdatum",
+        "products": {
+            "37": "⭐ Monatlich Trello Gold",
+            "38": "🌟 jährlichTrello Gold",
+            "10": "💼 Trello Gold durch Buisness Class"
+        },
+        "perm_levels": {
+            "public": "Öffentlich",
+            "org": "Für das Team sichtbar",
+            "private": "Privat"
+        },
+        "curr_list": "Aktuelle Liste",
+        "new_name": "Neuer Name",
+        "due": "Fälligkeitsdatum"
+    },
+    "webhook_cmd": {
+        "discord_webhook": "Discord Webhook",
+        "trello_webhook": "Trello Webhook",
+        "owned_by": "Erstellt von",
+        "dwh": {
+            "one": "Discord Webhook",
+            "many": "Discord Webhooks"
+        },
+        "none": "Auf diesem Server gibt es keine Webhooks, die mit Trello verbunden sind.",
+        "invalid": "Ungültige WebhookID!",
+        "not_found": "Dieser Webhook existiert nicht!",
+        "whitelist": "Whitelist",
+        "blacklist": "Blacklist",
+        "filtered_list": {
+            "one": "Gefilterte Liste",
+            "many": "Gefilterte Listen"
+        },
+        "filtered_card": {
+            "one": "Gefilterte Karte",
+            "many": "Gefilterte Karten"
+        },
+        "allowed_actions": {
+            "one": "Erlaubte Aktion",
+            "many": "Erlaubte Aktionen"
+        },
+        "header": "Benutze `{{&cleanPrefix}}webhook <webhookID>` um einen Webhook anzuzeigen und `{{&cleanPrefix}}editwebhook <webhookID>` um den Webhook zu bearbeiten."
     }
 }
