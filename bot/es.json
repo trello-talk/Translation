@@ -1,1 +1,381 @@
-{}
+{
+    "trello": {
+        "perm_levels": {
+            "private": "Privado",
+            "public": "Público"
+        },
+        "comment_perms": {
+            "disabled": "Desactivado",
+            "members": "Todos los miembros",
+            "org": "Miembros de la organización",
+            "public": "Cualquier usuario de Trello"
+        },
+        "vote_perms": {
+            "public": "Cualquier usuario de Trello",
+            "disabled": "Desactivado",
+            "members": "Todos los miembros",
+            "org": "Miembros de la organización"
+        },
+        "colorblind": "Modo daltónico",
+        "locale": "Idioma (en Trello)",
+        "card_covers": "Imágenes de portada de tarjeta",
+        "hide_votes": "Esconder votos",
+        "self_join": "Permitir a los miembros del equipo unirse y editar",
+        "template": "¿Es una plantilla?",
+        "pinned": "Fijado",
+        "starred": "Destacado",
+        "voting": "Votando",
+        "add_rem_members": "Agregar/Eliminar miembros",
+        "archived_lower": "archivado",
+        "old_desc": "Vieja descripción",
+        "new_desc": "Nueva descripción",
+        "prev_list": "Lista anterior",
+        "curr_list": "Lista actual",
+        "old_name": "Antiguo nombre",
+        "new_name": "Nuevo nombre",
+        "new_comment": "Comentario nuevo",
+        "products": {
+            "38": "🌟 Yearly Trello Gold",
+            "10": "💼 Trello Gold from Business Class",
+            "37": "⭐ Monthly Trello Gold"
+        },
+        "invite_perms": {
+            "members": "Todos los miembros",
+            "admins": "Administradores"
+        },
+        "card_age": {
+            "pirate": "Pirata"
+        },
+        "label_color": {
+            "green": "Verde",
+            "yellow": "Amarillo",
+            "red": "Rojo",
+            "orange": "Naranja",
+            "lime": "Verde lima",
+            "purple": "Morado",
+            "blue": "Azul",
+            "sky": "Azul cielo",
+            "pink": "Rosa",
+            "black": "Negro",
+            "none": "Sin color"
+        },
+        "member_type": {
+            "normal": "Normal",
+            "admin": "Adminsitrador"
+        },
+        "voted": "Votado",
+        "last_act": "Última actividad",
+        "old_comment": "Comentario antiguo"
+    },
+    "webhook_cmd": {
+        "whitelist": "Lista blanca",
+        "menu": {
+            "add": "Añadir webhook",
+            "exist": "Usar un webhook existente"
+        },
+        "choose_existwh": "Elija qué webhook usar.",
+        "unknown": "desconocido",
+        "invalid": "El ID del webhook es inválido!",
+        "blacklist": "Lista negra",
+        "filtered_list": {
+            "one": "Lista filtrada",
+            "many": "Listas filtradas"
+        },
+        "filtered_card": {
+            "one": "Tarjeta filtrada",
+            "many": "Tarjetas filtradas"
+        },
+        "allowed_actions": {
+            "one": "Acción permitida",
+            "many": "Acciones permitidas"
+        },
+        "owned_by": "Propiedad de",
+        "edit_menu": {
+            "on": "Activar",
+            "off": "Desactivar",
+            "filter": "Editar filtros",
+            "delete": "Eliminar webhook",
+            "locale": "Cambiar idioma"
+        }
+    },
+    "deprecated": "¡Este comando no está disponible!",
+    "use_this": "Utilice este comando en su lugar:",
+    "command_permissions": {
+        "userData": "¡Su configuración no está en la base de datos!"
+    },
+    "categories": {
+        "general": "General",
+        "user": "Gestión de usuarios",
+        "webhook": "Webhooks",
+        "dev": "Desarrollador",
+        "view": "Viendo",
+        "edit": "Editando"
+    },
+    "commands": {
+        "eval": {
+            "usage": ""
+        },
+        "restart": {
+            "description": "Reinicia el bot."
+        },
+        "hangman": {
+            "description": "¿¿??"
+        }
+    },
+    "bad_args": "¡No hay suficientes argumentos!",
+    "format": {
+        "second": {
+            "one": "{{seconds}} segundo",
+            "many": "{{seconds}} segundos"
+        }
+    },
+    "prompt": {
+        "input_canceled": "Su última entrada fue cancelada.",
+        "confirm": "¿Estás seguro de que quieres hacer esto?",
+        "no_confirm": "Confirmación cancelada.",
+        "select": "Escriba el número del elemento para alternar su valor.",
+        "select_cancel": "Escriba \"save\" para guardar la selección, de lo contrario, escriba \"cancel\" para salir.",
+        "cancel_confirm": "Escriba `yes` para confirmar. Cualquier otro mensaje cancelará la confirmación."
+    },
+    "reload": {
+        "done": "Comandos recargados.",
+        "reloading": "Recargando comandos…"
+    },
+    "help": {
+        "header": "{{&username}} (Funcionando una modificación de [Faux](https://github.com/Snazzah/Faux) por Snazzah)\nServidor de soporte: {{&link}}",
+        "not_found": "No se ha encontrado el comando: `{{&command}}`.",
+        "footer": "`{{&cleanPrefix}}help [command]` para más información."
+    },
+    "_": {
+        "emoji": "es",
+        "name": "Español (España)"
+    },
+    "reloadlocale": {
+        "done": "Idiomas recargados.",
+        "reloading": "Recargando idiomas…"
+    },
+    "reloadone": {
+        "invalid": "¡Comando inválido!",
+        "file": "¡Un archivo que tenía un comando especificado ya no existe!",
+        "done": "{{&commands}} recargado."
+    },
+    "reloadwebserver": {
+        "no": "¡No hay servidor web en esta instancia!",
+        "reloading": "Reiniciando el servidor web…",
+        "done": "Servidor web reiniciado."
+    },
+    "responses": {
+        "restart": "Recargando un fragmento…",
+        "hangman": "No soy un bot de juegos.",
+        "eval": "Tomó {{ms}} ms."
+    },
+    "links": {
+        "auth": {
+            "start": "Autorice su cuenta de Trello con su Discord aquí:",
+            "fail": "¡El propietario del bot no ha proporcionado un enlace de autorización!"
+        },
+        "donate": {
+            "start": "¡Apoye el desarrollo donando!",
+            "fail": "¡El propietario del bot no ha proporcionado ningún enlace de donación!"
+        },
+        "github": "Aquí está el enlace a mi código fuente:",
+        "invite": {
+            "start": "¡Aquí están los enlaces para invitarme a otros servidores!",
+            "fail": "¡El propietario del bot no ha proporcionado ningún enlace de invitación!"
+        },
+        "serverinvite": {
+            "start": "¡Únase al servidor de soporte con cualquiera de estos enlaces!",
+            "fail": "¡El propietario del bot no ha proporcionado ningún enlace de servidor de soporte!"
+        }
+    },
+    "info": {
+        "title": "Información sobre {{&username}}",
+        "faux": "Este bot está usando una versión modificada de [Faux](https://github.com/Snazzah/Faux)."
+    },
+    "ping": {
+        "message": "¡Pong!",
+        "ws": "WS: {{ms}} ms",
+        "rest": "REST: {{ms}} ms"
+    },
+    "shardinfo": {
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} servidores",
+        "title": ""
+    },
+    "locale": {
+        "start": "Idiomas disponibles",
+        "unset": "No establecido",
+        "unset_l": "Indefinir idioma",
+        "choose": "Escriba el número del idioma que desea establecer.",
+        "user_locale": "Idioma del usuario: {{&locale}}",
+        "server_locale": "Idioma del servidor: {{&locale}}",
+        "user_set": "Establezca el idioma del usuario al **{{&name}}**.",
+        "server_set": "Establezca el idioma del servidor al **{{&name}}**.",
+        "server_unset": "Indefinir idioma del servidor.",
+        "no_guild": "¡No estás ejecutando el comando en un servidor!",
+        "header": "`{{&prefix}}locale setuser [locale]` o `{{&prefix}}locale setserver [locale]` para establecer el idioma.",
+        "user_unset": "Indefinir idioma del usuario."
+    },
+    "words": {
+        "cooldown": "Enfriamiento",
+        "locale": "Idioma",
+        "alias": {
+            "one": "Alias",
+            "many": "Alias"
+        },
+        "version": "Versión",
+        "uptime": "Tiempo de actividad",
+        "note": "Nota",
+        "mem_usage": "Uso de memoria",
+        "server": {
+            "one": "Servidor",
+            "many": "Servidores"
+        },
+        "usage": "Uso",
+        "active": "Activo",
+        "trello_board": {
+            "one": "Tablero Trello",
+            "many": "Tableros Trello"
+        },
+        "website": {
+            "many": "Sitios web",
+            "one": "Sitio web"
+        },
+        "donate": "Donar",
+        "id": "ID",
+        "initials": "Iniciales",
+        "info": "Información",
+        "short_link": {
+            "one": "Enlace corto",
+            "many": "Enlaces cortos"
+        },
+        "count": {
+            "one": "Cuenta",
+            "many": "Cuentas"
+        },
+        "board": {
+            "one": "Tablero",
+            "many": "Tableros"
+        },
+        "page": {
+            "one": "Página",
+            "many": "Páginas"
+        },
+        "item": {
+            "many": "Artículos",
+            "one": "Artículo"
+        },
+        "list": {
+            "one": "Lista",
+            "many": "Listas"
+        },
+        "link": {
+            "one": "Enlace",
+            "many": "Enlaces"
+        },
+        "label": {
+            "one": "Etiqueta",
+            "many": "Etiquetas"
+        },
+        "card": {
+            "one": "Tarjeta",
+            "many": "Tarjetas"
+        },
+        "opt": {
+            "one": "Opción",
+            "many": "Opciones"
+        },
+        "member_type": {
+            "one": "Tipo de miembro",
+            "many": "Tipos de miembros"
+        },
+        "checklist": {
+            "one": "Lista de comprobación",
+            "many": "Listas de comprobación"
+        },
+        "checklist_item": {
+            "many": "Artículos de la lista de comprobación",
+            "one": "Artículo de la lista de comprobación"
+        },
+        "attachment": {
+            "one": "Archivo adjunto",
+            "many": "Archivos adjuntos"
+        },
+        "cmd": {
+            "one": "Comando",
+            "many": "Comandos"
+        },
+        "subcmd": {
+            "one": "Subcomando",
+            "many": "Subcomandos"
+        },
+        "sticker": {
+            "one": "Pegatina",
+            "many": "Pegatinas"
+        },
+        "arch_list": {
+            "one": "Lista archivada",
+            "many": "Listas archivadas"
+        },
+        "arch_card": {
+            "many": "Tarjetas archivadas",
+            "one": "Tarjeta archivada"
+        },
+        "arch_board": {
+            "one": "Tablero archivado",
+            "many": "Tableros archivados"
+        },
+        "orgs": {
+            "one": "Organización",
+            "many": "Organizaciones"
+        },
+        "pref": {
+            "one": "Preferencia",
+            "many": "Preferencias"
+        },
+        "user_pref": {
+            "many": "Preferencias del usuario",
+            "one": "Preferencia del usuario"
+        },
+        "product": {
+            "one": "Producto",
+            "many": "Productos"
+        },
+        "member": {
+            "one": "Miembro",
+            "many": "Miembros"
+        },
+        "comment": {
+            "one": "Comentario",
+            "many": "Comentarios"
+        },
+        "vote_lower": {
+            "one": "voto",
+            "many": "votos"
+        },
+        "prefix": {
+            "one": "Prefijo",
+            "many": "Prefijos"
+        },
+        "name": {
+            "one": "Nombre",
+            "many": "Nombres"
+        },
+        "channel": {
+            "one": "Canal",
+            "many": "Canales"
+        },
+        "flag": {
+            "many": "Banderas",
+            "one": "Bandera"
+        },
+        "visibility": "Visibilidad",
+        "in_lower": "en",
+        "in": "En",
+        "webhook": {
+            "one": "Webhook",
+            "many": "Webhooks"
+        },
+        "bio": "Bio",
+        "bg_img": "Imagen de fondo"
+    }
+}
