@@ -1,1 +1,14 @@
-{}
+{
+    "_": {
+        "emoji": "",
+        "name": "Català"
+    },
+    "reloadlocale": {
+        "done": "Idiomes refrescats.",
+        "reloading": "Refrescant idiomes…"
+    },
+    "reload": {
+        "done": "Comandes refrescades.",
+        "reloading": "Refrescant comandes…"
+    }
+}
