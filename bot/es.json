@@ -35,16 +35,17 @@
         "new_name": "Nuevo nombre",
         "new_comment": "Comentario nuevo",
         "products": {
-            "38": "🌟 Yearly Trello Gold",
-            "10": "💼 Trello Gold from Business Class",
-            "37": "⭐ Monthly Trello Gold"
+            "38": "🌟 Trello Gold anual",
+            "10": "💼 Trello Gold desde Business Class",
+            "37": "⭐ Trello Gold mensual"
         },
         "invite_perms": {
             "members": "Todos los miembros",
             "admins": "Administradores"
         },
         "card_age": {
-            "pirate": "Pirata"
+            "pirate": "Pirata",
+            "regular": "Regular"
         },
         "label_color": {
             "green": "Verde",
@@ -61,11 +62,14 @@
         },
         "member_type": {
             "normal": "Normal",
-            "admin": "Adminsitrador"
+            "admin": "Administrador"
         },
         "voted": "Votado",
         "last_act": "Última actividad",
-        "old_comment": "Comentario antiguo"
+        "old_comment": "Comentario antiguo",
+        "marketing": "Correos electrónicos de marketing (opt-in)",
+        "subbed": "Visto",
+        "from_board": "Desde el tablero"
     },
     "webhook_cmd": {
         "whitelist": "Lista blanca",
@@ -96,7 +100,14 @@
             "filter": "Editar filtros",
             "delete": "Eliminar webhook",
             "locale": "Cambiar idioma"
-        }
+        },
+        "not_found": "¡Ese webhook no existe!",
+        "dwh": {
+            "one": "Webhook de Discord",
+            "many": "Webhook de Discord"
+        },
+        "discord_webhook": "Webhook de Discord",
+        "trello_webhook": "Webhook de Trekllo"
     },
     "deprecated": "¡Este comando no está disponible!",
     "use_this": "Utilice este comando en su lugar:",
@@ -113,7 +124,7 @@
     },
     "commands": {
         "eval": {
-            "usage": ""
+            "usage": "<código>"
         },
         "restart": {
             "description": "Reinicia el bot."
@@ -199,21 +210,21 @@
     },
     "shardinfo": {
         "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} servidores",
-        "title": ""
+        "title": "Información sobre los fragmentos de {{&username}}"
     },
     "locale": {
         "start": "Idiomas disponibles",
         "unset": "No establecido",
-        "unset_l": "Indefinir idioma",
+        "unset_l": "Indeterminar idioma",
         "choose": "Escriba el número del idioma que desea establecer.",
         "user_locale": "Idioma del usuario: {{&locale}}",
         "server_locale": "Idioma del servidor: {{&locale}}",
         "user_set": "Establezca el idioma del usuario al **{{&name}}**.",
         "server_set": "Establezca el idioma del servidor al **{{&name}}**.",
-        "server_unset": "Indefinir idioma del servidor.",
+        "server_unset": "Indeterminar idioma del servidor.",
         "no_guild": "¡No estás ejecutando el comando en un servidor!",
         "header": "`{{&prefix}}locale setuser [locale]` o `{{&prefix}}locale setserver [locale]` para establecer el idioma.",
-        "user_unset": "Indefinir idioma del usuario."
+        "user_unset": "Indeterminar idioma del usuario."
     },
     "words": {
         "cooldown": "Enfriamiento",
