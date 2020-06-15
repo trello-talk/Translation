@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: Notify
+    conditions:
+      - base=master
+      - author!=@trello-talk
+    actions:
+      close:
+        message: |
+          If you want to contribute to the translation repository, head over to the [support server](https://tacobot.app) and request access.
+          PRs to the repository are not nessesary since Weblate automatically commits changes to the repository.
