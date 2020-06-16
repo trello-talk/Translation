@@ -21,6 +21,10 @@
         "reloading": "Restarting webserver…",
         "done": "Webserver restarted."
     },
+    "setmaxwebhooks": {
+        "set": "Set the maximum webhook limit for {{serverID}} to {{value}}.",
+        "invalid": "Invalid ID!"
+    },
     "responses": {
         "restart": "Restarting shard…",
         "hangman": "I'm not a game bot.",
@@ -609,6 +613,18 @@
         },
         "cleardata": {
             "description": "Removes your user data from Taco."
+        },
+        "setmaxwebhooks": {
+            "description": "Sets the limit of webhooks for that server.",
+            "usage": "<serverID> [limit]"
+        },
+        "toggleserver": {
+            "description": "Toggles server blacklist.",
+            "usage": "<serverID>"
+        },
+        "toggleuser": {
+            "description": "Toggles user blacklist",
+            "usage": "<userID>"
         }
     },
     "error": "An error occurred while processing that command!",
