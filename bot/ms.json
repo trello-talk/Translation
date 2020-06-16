@@ -589,6 +589,18 @@
         "remwebhook": {
             "description": "Ini akan membuang webhook dari server anda.",
             "usage": "<webhookID>"
+        },
+        "toggleuser": {
+            "usage": "<idPengguna>",
+            "description": "Toggel senarai hitam pengguna"
+        },
+        "toggleserver": {
+            "usage": "<idServer>",
+            "description": "Toggel senarai hitam server."
+        },
+        "setmaxwebhooks": {
+            "usage": "<idServer> [had]",
+            "description": "Tetapkan had webhook untuk server tersebut."
         }
     },
     "cooldown_msg": "Perintah ini perlu ditenangkan! *({{seconds}})*",
@@ -905,5 +917,9 @@
     "and_more": "dan {{count}} lagi…",
     "error": "Ralat telah berlaku semasa memproses perintah itu!",
     "deprecated": "Perintah ini sudah tidak boleh digunakan!",
-    "use_this": "Cuba gantikan dengan perantah ini:"
+    "use_this": "Cuba gantikan dengan perantah ini:",
+    "setmaxwebhooks": {
+        "invalid": "ID tidak sah!",
+        "set": "Tetapkan had webhook maksimum untuk {{serverID}} ke {{value}}."
+    }
 }
