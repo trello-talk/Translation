@@ -2,7 +2,8 @@
     "trello": {
         "perm_levels": {
             "private": "Privado",
-            "public": "Público"
+            "public": "Público",
+            "org": "Visible para el equipo"
         },
         "comment_perms": {
             "disabled": "Desactivado",
@@ -69,13 +70,21 @@
         "old_comment": "Comentario antiguo",
         "marketing": "Correos electrónicos de marketing (opt-in)",
         "subbed": "Visto",
-        "from_board": "Desde el tablero"
+        "from_board": "Desde el tablero",
+        "one_chklist_name": "Antiguo nombre de la lista de comprobación",
+        "one_chkitem_name": "Antiguo nombre del artículo de la lista de comprobación",
+        "item_src": "Origen del artículo",
+        "new_due": "Nueva fecha de vencimiento",
+        "old_due": "Antigua fecha de vencimiento",
+        "due": "Vencimiento",
+        "summ": "Enviar resúmenes"
     },
     "webhook_cmd": {
         "whitelist": "Lista blanca",
         "menu": {
             "add": "Añadir webhook",
-            "exist": "Usar un webhook existente"
+            "exist": "Usar un webhook existente",
+            "link": "Usar enlace de webhook"
         },
         "choose_existwh": "Elija qué webhook usar.",
         "unknown": "desconocido",
@@ -99,7 +108,12 @@
             "off": "Desactivar",
             "filter": "Editar filtros",
             "delete": "Eliminar webhook",
-            "locale": "Cambiar idioma"
+            "locale": "Cambiar idioma",
+            "blist": "Cambiar filtro a lista negra",
+            "wlist": "Cambiar filtro a lista blanca",
+            "cards": "Cambiar tarjetas filtradas",
+            "lists": "Cambiar listas filtradas",
+            "repair": "Reparar webhook"
         },
         "not_found": "¡Ese webhook no existe!",
         "dwh": {
@@ -107,12 +121,55 @@
             "many": "Webhook de Discord"
         },
         "discord_webhook": "Webhook de Discord",
-        "trello_webhook": "Webhook de Trekllo"
+        "trello_webhook": "Webhook de Trekllo",
+        "max_wh": "¡Has alcanzado tus webhooks máximos para este servidor! ¡Puedes aumentar este límite convirtiéndote en un patreon! (`{{&cleanPrefix}}donate`)",
+        "locale_set": "Definir el idioma del webhook en **{{&name}}**.",
+        "locale_unset": "Indeterminar el idioma del webhook.",
+        "no_access": "¡O este tablero ya no existe o no tienes acceso a ella!",
+        "choose_cards": "Elija qué tarjetas se filtrarán. Si no selecciona ninguna tarjeta, se deshabilitará el filtrado de tarjetas.",
+        "choose_lists": "Elija qué listas se filtrarán. Si no selecciona ninguna lista, se deshabilitará el filtrado de listas.",
+        "cards_updated": "Las tarjetas filtradas se guardaron.",
+        "lists_updated": "Las listas filtradas se guardaron.",
+        "to_blist": "Se modificó la política de filtrado a la lista negra.",
+        "to_wlist": "Se modificó la política de filtrado a la lista blanca.",
+        "repaired": "Cualquier problema con el webhook ha sido reparado.",
+        "repaired_wh": "Webhook reparado",
+        "model_filter": "Modo de filtro de lista/tarjeta",
+        "repair_dwh_header": "Falta el webhook de Discord. ¿Cómo quieres crear uno nuevo?",
+        "filter_update": "Se actualizaron los filtros del webhook.",
+        "deleted": "Webhook eliminado.",
+        "confirm_delete": "¿Estás seguro de que quieres eliminar este webhook?",
+        "wh_on": "El webhook ha sido encendido.",
+        "wh_off": "El webhook ha sido apagado.",
+        "wywtd": "Elija qué deseas hacer con este webhook.",
+        "no_server_link": "¡Ese webhook no está en este servidor!",
+        "no_link": "¡No pude encontrar una URL de webhook en la entrada!",
+        "input_link": "Pegue el enlace del webhook que desea usar.",
+        "no_dwh": "¡No tienes webhooks de Discord para vincular!",
+        "create_confirm": "¡Este webhook para el tablero de Trello \"{{&name}}\" ha empezado! Las acciones deberían aparecer en breve…",
+        "created": "Webhook creado para \"{{&name}}\".",
+        "couldnt_create": "¡No pude crear el webhook! ¡Esto probablemente se deba a algún cambio repentino de permiso en el proceso!",
+        "choose_channel": "Elija en qué canal se publicará el webhook.",
+        "no_channels": "No se han encontrado canales que me permitan administrar webhooks.",
+        "add_header": "¿Cómo le gustaría que se configurara su webhook?",
+        "try_repair": "Puede reparar este problema con `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "twh_missing": "Falta el usuario que configuró el webhook, ¡esto puede detener el envío del webhook!",
+        "dwh_missing": "¡Falta el webhook de Discord conectado a este webhook!",
+        "none": "No hay webhooks en este servidor conectados a Trello."
     },
     "deprecated": "¡Este comando no está disponible!",
     "use_this": "Utilice este comando en su lugar:",
     "command_permissions": {
-        "userData": "¡Su configuración no está en la base de datos!"
+        "userData": "¡Su configuración no está en la base de datos!",
+        "webhooks": "¡Necesito el permiso `Gestionar webhooks` para usar este comando!",
+        "discordAuth": "¡No ha autorizado su cuenta de Trello con Discord!\n¡Autorice con el comando `{{& cleanPrefix}}auth`!",
+        "selectedBoard": "¡No hay ningún tablero seleccionado!\n¡Seleccione un tablero con el comando `{{& cleanPrefix}}switch`!",
+        "auth": "¡No ha autorizado su cuenta de Trello con Discord!\n¡Autorice con el comando `{{&cleanPrefix}}auth`!",
+        "elevated": "¡Solo los usuarios elevados del bot pueden usar este comando!",
+        "trelloRole": "¡Este comando requiere que usted sea el propietario del servidor o que tenga un rol llamado `Trello`!",
+        "emoji": "¡Necesito el permiso `Usar emojis externos` para usar este comando!",
+        "embed": "¡Necesito el permiso `Insertar enlaces` para usar este comando!",
+        "attach": "¡Necesito el permiso `Adjuntar archivos` para usar este comando!"
     },
     "categories": {
         "general": "General",
@@ -120,17 +177,92 @@
         "webhook": "Webhooks",
         "dev": "Desarrollador",
         "view": "Viendo",
-        "edit": "Editando"
+        "edit": "Editando",
+        "misc": "Diverso",
+        "hidden": "Oculto"
     },
     "commands": {
         "eval": {
-            "usage": "<código>"
+            "usage": "<código>",
+            "description": "Evalúa el código."
         },
         "restart": {
             "description": "Reinicia el bot."
         },
         "hangman": {
             "description": "¿¿??"
+        },
+        "list": {
+            "usage": "[nombre de la lista|ID de la lista] [página]"
+        },
+        "lists": {
+            "usage": "[página]"
+        },
+        "board": {
+            "description": "Obtenga la información del tablero actual."
+        },
+        "boards": {
+            "usage": "[página]"
+        },
+        "switch": {
+            "usage": "[ID del tablero|nombre del tablero]"
+        },
+        "me": {
+            "description": "Ver información sobre su cuenta de Trello."
+        },
+        "prefix": {
+            "usage": "[\"set\"|\"add\"|\"remove\"] [prefijo]",
+            "description": "Le permite establecer los prefijos para usted o el servidor."
+        },
+        "locale": {
+            "usage": "[\"userset\"|\"serverset\"] [idioma]",
+            "description": "Le permite establecer el idioma para usted o el servidor. Ejecutar sin argumentos para obtener la lista de idiomas."
+        },
+        "ping": {
+            "description": "¡Pong!"
+        },
+        "info": {
+            "description": "Obtén información sobre el bot."
+        },
+        "help": {
+            "usage": "[comando]",
+            "description": "Muestra el mensaje de ayuda y proporciona información sobre los comandos."
+        },
+        "reloadwebserver": {
+            "description": "Reinicia el servidor web."
+        },
+        "reloadone": {
+            "description": "Recargar comandos singulares."
+        },
+        "reloadlocale": {
+            "description": "Recargar archivos de idiomas."
+        },
+        "reload": {
+            "description": "Recargar comandos."
+        },
+        "exec": {
+            "usage": "<comando>…",
+            "description": "Utiliza `child_process.exec`."
+        },
+        "asynceval": {
+            "usage": "<código>",
+            "note": "Debido al reiniciador asíncrono IIFE agregado en este comando, es necesario usar la instrucción return para devolver un resultado.\np.ej. `{{&cleanPrefix}}aeval return 1`",
+            "description": "Evalúa el código de forma asincrónica."
+        },
+        "serverinvite": {
+            "description": "Obtenga la invitación para el servidor de soporte."
+        },
+        "invite": {
+            "description": "Envía el enlace de invitación del bot."
+        },
+        "github": {
+            "description": "Envía el enlace de código abierto del bot."
+        },
+        "donate": {
+            "description": "Obtenga los enlaces de donación para el desarrollador."
+        },
+        "auth": {
+            "description": "Obtenga el enlace de autenticación para conectar su cuenta de Discord a su cuenta de Trello."
         }
     },
     "bad_args": "¡No hay suficientes argumentos!",
@@ -146,7 +278,10 @@
         "no_confirm": "Confirmación cancelada.",
         "select": "Escriba el número del elemento para alternar su valor.",
         "select_cancel": "Escriba \"save\" para guardar la selección, de lo contrario, escriba \"cancel\" para salir.",
-        "cancel_confirm": "Escriba `yes` para confirmar. Cualquier otro mensaje cancelará la confirmación."
+        "cancel_confirm": "Escriba `yes` para confirmar. Cualquier otro mensaje cancelará la confirmación.",
+        "cancel_input": "Escribir \"{{&cancelPrompt}}\" cancelará la entrada.",
+        "timeout": "Se agotó el tiempo de espera.",
+        "cancel": "Escribir \"cancel\" cerrará este mensaje."
     },
     "reload": {
         "done": "Comandos recargados.",
@@ -244,8 +379,8 @@
         "usage": "Uso",
         "active": "Activo",
         "trello_board": {
-            "one": "Tablero Trello",
-            "many": "Tableros Trello"
+            "one": "Tablero en Trello",
+            "many": "Tableros en Trello"
         },
         "website": {
             "many": "Sitios web",
@@ -388,5 +523,10 @@
         },
         "bio": "Bio",
         "bg_img": "Imagen de fondo"
+    },
+    "cooldown_msg": "¡Este comando necesita enfriarse! *({{seconds}})*",
+    "setmaxwebhooks": {
+        "set": "Establezca el límite máximo de webhook para {{serverID}} en {{value}}.",
+        "invalid": "¡ID inválido!"
     }
 }
