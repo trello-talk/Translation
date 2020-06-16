@@ -432,6 +432,18 @@
         "remwebhook": {
             "usage": "<webhookID>",
             "description": "Removes a webhook from your server."
+        },
+        "toggleuser": {
+            "usage": "<userID>",
+            "description": "Toggles user blacklist"
+        },
+        "toggleserver": {
+            "usage": "<serverID>",
+            "description": "Toggles server blacklist."
+        },
+        "setmaxwebhooks": {
+            "usage": "<serverID> [limit]",
+            "description": "Sets the limit of webhooks for that server."
         }
     },
     "boards": {
@@ -908,5 +920,9 @@
         "board": "Board"
     },
     "use_this": "Use this command instead:",
-    "deprecated": "This command is no longer available!"
+    "deprecated": "This command is no longer available!",
+    "setmaxwebhooks": {
+        "invalid": "Invalid ID!",
+        "set": "Set the maximum webhook limit for {{serverID}} to {{value}}."
+    }
 }
