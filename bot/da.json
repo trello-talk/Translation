@@ -688,7 +688,10 @@
             "locale": "Ændre sprogindstillinger"
         },
         "none": "Der er ingen webhooks på denne server der er forbundet til Trello.",
-        "add_header": "Hvordan vil du have dit webhook skal opsættes?"
+        "add_header": "Hvordan vil du have dit webhook skal opsættes?",
+        "no_server_link": "Det webhook findes ikke på denne server!",
+        "choose_existwh": "Vælg hvilket webhook du ønsker at bruge.",
+        "created": "Oprettede webhook for \"{{&name}}\"."
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
@@ -704,5 +707,8 @@
         "checklist": "Tjeklister",
         "comment": "Kommentarer",
         "list": "Lister"
+    },
+    "setmaxwebhooks": {
+        "invalid": "Ugyldigt ID!"
     }
 }
