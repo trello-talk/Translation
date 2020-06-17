@@ -91,8 +91,8 @@
             "one": "Board"
         },
         "count": {
-            "many": "Anzahl",
-            "one": "Anzahl"
+            "many": "Daten",
+            "one": "Daten"
         },
         "list": {
             "one": "Liste",
@@ -115,7 +115,8 @@
             "one": "Sticker"
         },
         "user_pref": {
-            "many": "Nutzereinstellungen"
+            "many": "Nutzereinstellungen",
+            "one": "Nutzereinstellung"
         },
         "opt": {
             "one": "Option",
@@ -219,7 +220,21 @@
             "one": "Webhook",
             "many": "Webhooks"
         },
-        "locale": "Sprache"
+        "locale": "Sprache",
+        "in_lower": "in",
+        "item": {
+            "many": "Gegenstände",
+            "one": "Gegenstand"
+        },
+        "in": "In",
+        "short_link": {
+            "many": "Kurzlinks",
+            "one": "Kurzlink"
+        },
+        "vote_lower": {
+            "many": "Stimmen",
+            "one": "Stimme"
+        }
     },
     "trello": {
         "comment_perms": {
@@ -290,7 +305,14 @@
         },
         "curr_list": "Aktuelle Liste",
         "new_name": "Neuer Name",
-        "due": "Fälligkeitsdatum"
+        "due": "Fälligkeitsdatum",
+        "one_chklist_name": "Alter Name der Checkliste",
+        "one_chkitem_name": "Alter Name des Checklistengegenstandes",
+        "card_aging": "Alter der Karte",
+        "item_src": "Quelle des Gegenstandes",
+        "voting": "Abstimmungen",
+        "starred": "Mit Stern markiert",
+        "template": "Ist es ein Vorlage?"
     },
     "webhook_cmd": {
         "discord_webhook": "Discord Webhook",
@@ -317,6 +339,167 @@
             "one": "Erlaubte Aktion",
             "many": "Erlaubte Aktionen"
         },
-        "header": "Benutze `{{&cleanPrefix}}webhook <webhookID>` um einen Webhook anzuzeigen und `{{&cleanPrefix}}editwebhook <webhookID>` um den Webhook zu bearbeiten."
+        "header": "Benutze `{{&cleanPrefix}}webhook <webhookID>` um einen Webhook anzuzeigen und `{{&cleanPrefix}}editwebhook <webhookID>` um den Webhook zu bearbeiten.",
+        "unknown": "Unbekannt",
+        "max_wh": "Du hast dein Maximum an webhooks erreicht! Du kannst dieses Limit erhöhen, indem du auf Patron spendest! (`{{&cleanPrefix}}donate`)",
+        "locale_set": "Die Webhook Sprache wurde zu **{{&name}}** gesetzt.",
+        "locale_unset": "Die Webhook Sprache wurde zurückgesetzt.",
+        "no_access": "Das Board existiert entweder nicht mehr, oder du hast keinen Zugriff mehr!",
+        "choose_cards": "Wähle die zu filternde Karten aus. Kein Auswahl wird den Filter deaktiviern.",
+        "choose_lists": "Wähle die zu filternde Listen aus. Kein Auswahl wird den Filter deaktiviern.",
+        "cards_updated": "Die Kartenfilter wurden gespeichert.",
+        "lists_updated": "Die Listenfilter wurden gespeichert.",
+        "to_blist": "Der Filtertyp wurden zu Blacklist geändert.",
+        "to_wlist": "Der Filtertyp wurden zu Whitelist geändert.",
+        "repaired": "Fehler, die bei der Benutzung des Webhooks aufgetreten sind, wurden behoben.",
+        "repaired_wh": "Webhook wurde repariert",
+        "repair_dwh_header": "Der Discord Webhook fehlt. Wie willst du einen neuen erstellen?",
+        "filter_update": "Die Filtereinstellungen des Webhooks wurden aktualisiert.",
+        "deleted": "Der Webhook wurde gelöscht.",
+        "confirm_delete": "Bist du sicher, dass du diesen Webhook löschen möchtest?",
+        "wh_on": "Der Webhook wurde wieder aktiviert.",
+        "wh_off": "Der Webhook wurde vorrübergehend deaktiviert.",
+        "wywtd": "Wähle aus, was du mit dem Webhook machen willst.",
+        "no_server_link": "Dieser Webhook existiert nicht auf diesem Server!",
+        "no_link": "Ich konnte in deinem Input keine Webhook URL finden!",
+        "input_link": "Füge den Link von dem Webhook ein, den du benutzen möchtest.",
+        "choose_existwh": "Wähle den Webhook aus, den ich benutzen soll.",
+        "no_dwh": "Es existieren keine Discord Webhooks, denen ich den Webhook anhängen könnte!",
+        "create_confirm": "Dieser Webhook empfängt ab jetzt Änderungen von dem Trello Board \"{{&name}}\"! Sie sollten bald anfangen, hier aufzutauchen…",
+        "created": "Ein Webhook mit dem Namen \"{{&name}}\" wurde erstellt.",
+        "couldnt_create": "Ich konnte keinen Webhook erstellen! Das lag wahrscheinlich an plötzlichen Berechtigungsänderungen während dem Erstellungsvorgang!",
+        "choose_channel": "Wähle einen Kanal aus, in dem der Webhook die Daten schicken soll.",
+        "no_channels": "Ich konnte keinen Kanal finden, in dem ich Webhooks bearbeiten darf.",
+        "edit_menu": {
+            "blist": "Filter zu einer Blacklist ändern",
+            "wlist": "Filter zu einer Whitelist ändern",
+            "cards": "Kartenfilter bearbeiten",
+            "lists": "Listenfilter bearbeiten",
+            "locale": "Webhooksprache änder",
+            "repair": "Webhook reparieren",
+            "delete": "Webhook löschen",
+            "filter": "Filter bearbeiten",
+            "off": "Deaktivieren",
+            "on": "Aktivieren"
+        },
+        "menu": {
+            "link": "Benutze einen Link zu einem bestehendem Webhook",
+            "exist": "Benutze einen bestehenden Webhook",
+            "add": "Erstelle einen neuen Webhook"
+        },
+        "add_header": "Wie soll dein Webhook eingerichtet werden?",
+        "try_repair": "Du kannst diesen Fehler mit `{{&cleanPrefix}}editwebhook {{&id}} repair` beheben",
+        "twh_missing": "Der Benutzer, der den Webhook erstellt hat, fehlt. Deswegen wird der Webhook keine Daten mehr senden!",
+        "dwh_missing": "Der Discord Webhook, der mit diesem Webhook verknüpft ist, fehlt!",
+        "model_filter": "Filtermodus der Liste/Karte"
+    },
+    "commands": {
+        "me": {
+            "description": "Zeigt dir Informationen über dein Trello-Board."
+        },
+        "shardinfo": {
+            "description": "Gibt dir die Informationen zu allen Shards."
+        },
+        "prefix": {
+            "usage": "[\"set\"|\"add\"|\"remove\"] [Präfix]",
+            "description": "Läst dich den Präfix für den Server oder dich bearbeiten."
+        },
+        "locale": {
+            "usage": "[\"userset\"|\"serverset\"] [Sprache]",
+            "description": "Lässt dich die Serversprache für den Bot einstellen. Führe den befehl ohne Argumente aus, um eine Liste mit verfügbaren Sprachen zu erhalten."
+        },
+        "ping": {
+            "description": "Pong!"
+        },
+        "info": {
+            "description": "Gibt Informationen zum Bot."
+        },
+        "help": {
+            "usage": "[Befehl]",
+            "description": "Zeigt die Hilfenachricht und gibt Informationen über Befehle."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "restart": {
+            "description": "Startet den Bot neu."
+        },
+        "reloadwebserver": {
+            "description": "Startet den Webserver neu."
+        },
+        "reloadone": {
+            "usage": "<Name des Befehls> [Name des Befehls] …",
+            "description": "Einzelnen Befehl neu laden."
+        },
+        "reloadlocale": {
+            "description": "Lokale Dateien neu laden."
+        },
+        "reload": {
+            "description": "Befehle neu laden."
+        },
+        "exec": {
+            "usage": "<Befehl> …",
+            "description": "Verwendet `child_process.exec`."
+        },
+        "eval": {
+            "usage": "<code>",
+            "description": "Liest den Code."
+        },
+        "asynceval": {
+            "usage": "<code>",
+            "note": "Wegen einem Hinzugefügtem async IIFE wrapper in diesem Befehl, ist es notwendig einen Rückgabe zu deklarieren.\nBsp.: `{{&cleanPrefix}}aeval return 1`",
+            "description": "Liest Code asynchron."
+        },
+        "serverinvite": {
+            "description": "Eine Einladung zum Support Server."
+        },
+        "invite": {
+            "description": "Der Einladungslink für den Bot."
+        },
+        "github": {
+            "description": "Gibt den Githublink zu dem OpenSource link des Bots zurück."
+        },
+        "donate": {
+            "description": "Gibt den Link zurück, um die Entwickler des Bots zu unterstützen."
+        },
+        "auth": {
+            "description": "Gibt den Authentifzierungslink zurück, um deinen Discord Account mit Trello zu vernüpfen."
+        }
+    },
+    "command_permissions": {
+        "elevated": "Nur privelegierte Nutzer können diesen Befehl ausführen!",
+        "userData": "Deine Einstellungen können nicht in der Datnebank gefunden werden!",
+        "webhooks": "Ich brauche die Berechtigung `Webhooks verwalten` um diesen Befehl auszuführen!",
+        "discordAuth": "Du hast deinen Trello Account nicht mit Discord verknüpft!\nMit `{{&cleanPrefix}}auth` kannst du das jetzt machen!",
+        "selectedBoard": "Du hast kein Board ausgewählt!\nWähle mit `{{&cleanPrefix}}switch`eins aus!",
+        "auth": "Du hast deinen Trello Account nicht mit Discord verknüpft!\nMit `{{&cleanPrefix}}auth` kannst du das jetzt machen!",
+        "trelloRole": "Um diesen Befehl auszuführen, muss der Server dir gehören oder du eine Rolle namens`Trello` zugewiesen haben!",
+        "emoji": "Ich brauche die Berechtigung `Externe Emojis benutzen` um diesen Befehl auszuführen!",
+        "embed": "Ich brauche die Berechtigung `Links einbetten` um diesen Befehl auszuführen!",
+        "attach": "Ich brauche die Berechtigung `Dateien anhängen` um diesen Befehl auszuführen!"
+    },
+    "categories": {
+        "misc": "Verschiedenes",
+        "hidden": "Versteckt",
+        "edit": "Bearbeitung",
+        "webhook": "Webhooks",
+        "view": "Einsehen",
+        "user": "Benutzerverwaltung",
+        "dev": "Entwickler",
+        "general": "Generell"
+    },
+    "format": {
+        "second": {
+            "many": "{{seconds}} Sekunden",
+            "one": "{{seconds}} Sekunde"
+        }
+    },
+    "use_this": "Benutze diesen Befehl:",
+    "deprecated": "Diesen Befehl gibt es nicht mehr!",
+    "bad_args": "Zu wenig Argumente!",
+    "cooldown_msg": "Nicht so schnell! Wir brauchen Zeit! *({{seconds}})*",
+    "setmaxwebhooks": {
+        "invalid": "Ungültige ID!",
+        "set": "Setzte das Webhooklimit für {{serverID}} zu {{value}}."
     }
 }
