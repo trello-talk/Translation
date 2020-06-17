@@ -464,6 +464,13 @@
         },
         "auth": {
             "description": "Gibt den Authentifzierungslink zurück, um deinen Discord Account mit Trello zu vernüpfen."
+        },
+        "boards": {
+            "description": "Eine Liste mit allen Boards, die du verwalten kannst."
+        },
+        "switch": {
+            "usage": "[ID des Boards| Name des Boards]",
+            "description": "Wählt ein Board aus, auf dem dann weitere Befehle ausgeführt werden können. Für ein Liste mit verfügbaren Boards, benutze den Befehl `{{&cleanPrefix}}boards`."
         }
     },
     "command_permissions": {
