@@ -193,7 +193,8 @@
             "description": "¿¿??"
         },
         "list": {
-            "usage": "[nombre de la lista|ID de la lista] [página]"
+            "usage": "[nombre de la lista|ID de la lista] [página]",
+            "description": "Enumera todas las tarjetas de esa lista."
         },
         "lists": {
             "usage": "[página]"
@@ -263,6 +264,68 @@
         },
         "auth": {
             "description": "Obtenga el enlace de autenticación para conectar su cuenta de Discord a su cuenta de Trello."
+        },
+        "toggleuser": {
+            "usage": "<ID del usuario>"
+        },
+        "toggleserver": {
+            "usage": "<ID del servidor]"
+        },
+        "setmaxwebhooks": {
+            "usage": "<ID del servidor> [límite]"
+        },
+        "remwebhook": {
+            "usage": "<ID del webhook>"
+        },
+        "addwebhook": {
+            "usage": "[Nombre del tablero|ID del tablero]"
+        },
+        "webhook": {
+            "usage": "<ID del webhook>"
+        },
+        "webhooks": {
+            "usage": "[página]"
+        },
+        "comment": {
+            "usage": "[Nombre de la tarjeta|ID de la tarjeta] [comentario]"
+        },
+        "addlist": {
+            "usage": "[nombre]"
+        },
+        "deletecard": {
+            "usage": "[Nombre de la tarjeta|ID de la tarjeta]",
+            "description": "Elimina una tarjeta."
+        },
+        "addcard": {
+            "usage": "[Nombre de la lista|ID de la lista] [nombre]",
+            "description": "Crea una tarjeta."
+        },
+        "star": {
+            "usage": "[Nombre del tablero|ID del tablero]"
+        },
+        "watch": {
+            "usage": "[Nombre del tablero|ID del tablero]",
+            "description": "Alternar viendo un tablero. Si no se define un tablero, se usa el tablero actual. Los tableros vigilados le darán notificaciones de actualización en [Trello](https://trello.com/)."
+        },
+        "watchlist": {
+            "usage": "[Nombre de la lista|ID de la lista]",
+            "description": "Alternar viendo una lista. Las listas observadas le darán notificaciones de actualización en [Trello](https://trello.com/)."
+        },
+        "watchcard": {
+            "usage": "[Nombre de la tarjeta|ID de la tarjeta]",
+            "description": "Alternar viendo una tarjeta. Las tarjetas observadas le darán notificaciones de actualización en [Trello](https://trello.com/)."
+        },
+        "cardarchive": {
+            "usage": "[página]",
+            "description": "Enumera todas las tarjetas archivadas en el tablero actual."
+        },
+        "card": {
+            "usage": "[Nombre de la tarjeta|ID de la tarjeta]",
+            "description": "Obtiene información sobre una tarjeta específica."
+        },
+        "listarchive": {
+            "usage": "[página]",
+            "description": "Enumera todas las listas archivadas en el tablero actual."
         }
     },
     "bad_args": "¡No hay suficientes argumentos!",
@@ -528,5 +591,15 @@
     "setmaxwebhooks": {
         "set": "Establezca el límite máximo de webhook para {{serverID}} en {{value}}.",
         "invalid": "¡ID inválido!"
-    }
+    },
+    "boards": {
+        "wywtd": "Elija lo que deseas hacer con este tablero.",
+        "choose": "Escriba el número del tablero que desea usar."
+    },
+    "trello_response": {
+        "aborted": "¡Trello tardó demasiado en enviar una respuesta! ¡Intenta nuevamente más tarde!",
+        "internal": "¡Se ha producido un error interno del servidor al final de Trello! ¡Intenta nuevamente más tarde!",
+        "ratelimit": "¡Se están enviando demasiadas solicitudes! ¡Intenta nuevamente más tarde!"
+    },
+    "error": "¡Se produjo un error al procesar ese comando!"
 }
