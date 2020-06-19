@@ -300,7 +300,8 @@
         "new_due": "Ny forfaldsdato",
         "old_due": "Gammel forfaldsdato",
         "new_comment": "Ny kommentar",
-        "old_comment": "Gammel kommentar"
+        "old_comment": "Gammel kommentar",
+        "one_chklist_name": "Gammelt tjeklistenavn"
     },
     "format": {
         "second": {
@@ -691,7 +692,13 @@
         "add_header": "Hvordan vil du have dit webhook skal opsættes?",
         "no_server_link": "Det webhook findes ikke på denne server!",
         "choose_existwh": "Vælg hvilket webhook du ønsker at bruge.",
-        "created": "Oprettede webhook for \"{{&name}}\"."
+        "created": "Oprettede webhook for \"{{&name}}\".",
+        "dwh": {
+            "one": "Discord webhook",
+            "many": "Discord webhooks"
+        },
+        "trello_webhook": "Trello webhook",
+        "discord_webhook": "Discord webhook"
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
@@ -710,5 +717,9 @@
     },
     "setmaxwebhooks": {
         "invalid": "Ugyldigt ID!"
+    },
+    "vote": {
+        "rate": "bedøm",
+        "review": "gennemgå"
     }
 }
