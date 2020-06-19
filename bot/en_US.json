@@ -25,6 +25,11 @@
         "set": "Set the maximum webhook limit for {{serverID}} to {{value}}.",
         "invalid": "Invalid ID!"
     },
+    "vote": {
+        "title": "You can vote, review or rate {{&username}} on these sites:",
+        "review": "review",
+        "rate": "rate"
+    },
     "responses": {
         "restart": "Restarting shard…",
         "hangman": "I'm not a game bot.",
@@ -617,6 +622,9 @@
         "setmaxwebhooks": {
             "description": "Sets the limit of webhooks for that server.",
             "usage": "<serverID> [limit]"
+        },
+        "vote": {
+            "description": "Shows the links to vote for Taco on."
         },
         "toggleserver": {
             "description": "Toggles server blacklist.",
