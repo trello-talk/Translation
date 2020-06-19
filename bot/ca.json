@@ -13,7 +13,8 @@
     },
     "responses": {
         "hangman": "No sóc un bot de jocs.",
-        "eval": "Li ha costat {{ms}} ms."
+        "eval": "Li ha costat {{ms}} ms.",
+        "restart": "Reiniciant fragment…"
     },
     "links": {
         "auth": {
@@ -23,6 +24,17 @@
         "donate": {
             "start": "Ajuda el desenvolupament donant!",
             "fail": "El propietari del bot no ha subministrat cap enllaç per poder donar!"
+        },
+        "serverinvite": {
+            "fail": "El propietari del bot no ha subministrat cap enllaç de servidor de suport!",
+            "start": "Uniu-vos al servidor d'assistència amb algun d'aquests enllaços!"
+        },
+        "invite": {
+            "fail": "El propietari del bot no ha subministrat cap enllaç d'invitació!",
+            "start": "Aquí teniu els enllaços per convidar-me a altres servidors!"
         }
+    },
+    "setmaxwebhooks": {
+        "invalid": "ID invàlida!"
     }
 }
