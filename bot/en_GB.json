@@ -444,6 +444,9 @@
         "setmaxwebhooks": {
             "usage": "<serverID> [limit]",
             "description": "Sets the limit of webhooks for that server."
+        },
+        "vote": {
+            "description": "Shows the links to vote for Taco on."
         }
     },
     "boards": {
@@ -924,5 +927,10 @@
     "setmaxwebhooks": {
         "invalid": "Invalid ID!",
         "set": "Set the maximum webhook limit for {{serverID}} to {{value}}."
+    },
+    "vote": {
+        "rate": "rate",
+        "review": "review",
+        "title": "You can vote, review or rate {{&username}} on these sites:"
     }
 }
