@@ -15,7 +15,16 @@
         "colorblind": "Tryb ślepy na kolory",
         "locale": "Język (na Trello)",
         "marketing": "E-maile marketingowe",
-        "summ": "Wyślij streszczenia"
+        "summ": "Wyślij streszczenia",
+        "new_comment": "Nowy komentarz",
+        "old_comment": "Stary komentarz",
+        "new_name": "Nowa nazwa",
+        "old_name": "Stara nazwa",
+        "curr_list": "Ta lista",
+        "prev_list": "Poprzednia lista",
+        "new_desc": "Nowy opis",
+        "old_desc": "Stary opis",
+        "archived_lower": "zarchiwizowany"
     },
     "words": {
         "cooldown": "Przerwa między",
