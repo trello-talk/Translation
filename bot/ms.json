@@ -927,6 +927,7 @@
     },
     "vote": {
         "rate": "menilai",
-        "review": "ulas"
+        "review": "ulas",
+        "title": "Anda boleh mengundi, menyemak atau menilai {{&username}} di laman web ini:"
     }
 }
