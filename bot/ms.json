@@ -601,6 +601,9 @@
         "setmaxwebhooks": {
             "usage": "<idServer> [had]",
             "description": "Tetapkan had webhook untuk server tersebut."
+        },
+        "vote": {
+            "description": "Menunjukkan pautan untuk mengundi Taco."
         }
     },
     "cooldown_msg": "Perintah ini perlu ditenangkan! *({{seconds}})*",
@@ -921,5 +924,9 @@
     "setmaxwebhooks": {
         "invalid": "ID tidak sah!",
         "set": "Tetapkan had webhook maksimum untuk {{serverID}} ke {{value}}."
+    },
+    "vote": {
+        "rate": "menilai",
+        "review": "ulas"
     }
 }
