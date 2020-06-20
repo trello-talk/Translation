@@ -44,7 +44,7 @@
     "help": {
         "not_found": "`{{&command}}` komutu bulanamadı.",
         "footer": "Daha fazla yardım için `{{&cleanPrefix}}help [command]` for more info.",
-        "header": "{{&username}} (Snazzah tarafından değiştirilmiş [Faux] çalıştırılmakta (https://github.com/Snazzah/Faux) )\nSupport Server: {{&link}}"
+        "header": "{{&username}} (Snazzah tarafından değiştirilmiş [Faux](https://github.com/Snazzah/Faux) çalıştırılmakta)\nSupport Server: {{&link}}"
     },
     "info": {
         "title": "{{&username}} hakkında bilgi"
