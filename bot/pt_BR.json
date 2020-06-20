@@ -491,6 +491,30 @@
         "comment": {
             "description": "Comenta em um cartão do quadro atual.",
             "usage": "[nomeDoCartão|idDoCartão] [comentário]"
+        },
+        "toggleuser": {
+            "usage": "<IdDoUsuário>"
+        },
+        "toggleserver": {
+            "usage": "<IdDoServidor>"
+        },
+        "setmaxwebhooks": {
+            "usage": "<IdDoServidor>[limite]"
+        },
+        "remwebhook": {
+            "usage": "<IdDoWebhook>"
+        },
+        "editwebhook": {
+            "usage": "<IdDoWebhook>[subComando]"
+        },
+        "addwebhook": {
+            "usage": "[IdDoQuadro|NomeDoQuadro]"
+        },
+        "webhook": {
+            "usage": "<IdDoWebhook>"
+        },
+        "webhooks": {
+            "usage": "[página]"
         }
     },
     "_": {
@@ -727,6 +751,23 @@
             "link": "Usar um link do webhook",
             "add": "Adicionar um webhook",
             "exist": "Usar um webhook existente"
-        }
+        },
+        "unknown": "desconhecido",
+        "locale_unset": "Idioma do webhook indefinido.",
+        "lists_updated": "As listas filtradas foram salvas.",
+        "cards_updated": "Os cartões filtrados foram salvos.",
+        "repaired_wh": "Webhook reparado",
+        "filter_update": "Filtros do webhook atualizados.",
+        "deleted": "Webhook deletado.",
+        "confirm_delete": "Você tem certeza que deseja deletar este webhook?",
+        "wh_off": "O webhook foi desativado.",
+        "wh_on": "O webhook foi ativado."
+    },
+    "deprecated": "Esse comando não está mais disponível!",
+    "vote": {
+        "review": "revisão"
+    },
+    "setmaxwebhooks": {
+        "invalid": "ID Inválido!"
     }
 }
