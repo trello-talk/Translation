@@ -285,7 +285,10 @@
         "card_covers": "Imej Kulit Kad",
         "due": "Tempot Tamat",
         "marketing": "E-mel marketing (pilihan)",
-        "pinned": "Disepit"
+        "pinned": "Disepit",
+        "custom_field": "Medan Tersuai",
+        "old_v": "Nilai Lama",
+        "new_v": "Nilai Baru"
     },
     "webhook_cmd": {
         "whitelist": "Senarai Izin",
@@ -755,7 +758,16 @@
         "move_out_card": "{{&member}} telah memindahkan kad \"{{&card}}\" ke papan lain",
         "move_in_list": "{{&member}} telah memindahkan senarai \"{{&list}}\" dari papan lain",
         "copy_checklist": "{{&member}} telah menyalin kandungan senarai semak dari \"{{&sourceChecklist}}\" ke \"{{&checklist}}\"",
-        "copy_card": "{{&member}} telah menyalin kandungan kad dari \"{{&sourceCard}}\" ke \"{{&card}}\""
+        "copy_card": "{{&member}} telah menyalin kandungan kad dari \"{{&sourceCard}}\" ke \"{{&card}}\"",
+        "customfield_create": "{{&member}} telah membina medan \"{{&customField}}\"",
+        "customfield_delete": "{{&member}} telah memadamkan medan \"{{&customField}}\"",
+        "customfield_carddisplay_false": "{{&member}} telah mematikan paparan kad untuk medan \"{{&customField}}\"",
+        "customfielditem_remove": "{{&member}} telah memadamkan medan \"{{&customField}}\" dari kad \"{{&card}}\"",
+        "customfield_rename": "{{&member}} telah menukarkan nama medan dari \"{{&oldName}}\" ke \"{{&customField}}\"",
+        "customfield_carddisplay_true": "{{&member}} telah mengaktifkan paparan kad untuk medan \"{{&customField}}\"",
+        "customfielditem_checkbox_false": "{{&member}} telah menyahaktifkan medan \"{{&customField}}\" dalam kad \"{{&card}}\"",
+        "customfielditem_checkbox_true": "{{&member}} telah mengaktifkan medan \"{{&customField}}\" dalam kad \"{{&card}}\"",
+        "customfielditem_update": "{{&member}} telah mengemas-kinikan medan \"{{&customField}}\" dalam kad \"{{&card}}\""
     },
     "lists": {
         "none": "Papan ini tidak mempunyai senarai.",
@@ -814,7 +826,9 @@
         "checkItem": "Item Senarai Semakan",
         "checkItemUpdate": "Kemas-kini Item Senarai Semakan",
         "list": "Senarai",
-        "listUpdate": "Kemas-kini Senarai"
+        "listUpdate": "Kemas-kini Senarai",
+        "customField": "Medan Tersuai",
+        "customFieldUpdate": "Kemas-kini Medan Tersuai"
     },
     "prompt": {
         "input_canceled": "Input terakhir anda telah dibatalkan.",
@@ -915,7 +929,12 @@
         "UPDATE_LABEL_COLOR": "Pengemas-kinian warna label",
         "UPDATE_LIST_NAME": "Pengemas-kinian nama senarai",
         "UPDATE_LIST_POS": "Pengemas-kinian posisi senarai",
-        "UPDATE_LIST_CLOSED": "Pengemas-kinian arkib senarai (diarkibkan/tidak diarkibkan)"
+        "UPDATE_LIST_CLOSED": "Pengemas-kinian arkib senarai (diarkibkan/tidak diarkibkan)",
+        "CREATE_CUSTOM_FIELD": "Pembinaan medan tersuai",
+        "UPDATE_CUSTOM_FIELD_NAME": "Kemas-kini nama medan tersuai",
+        "DELETE_CUSTOM_FIELD": "Pemadaman medan tersuai",
+        "UPDATE_CUSTOM_FIELD_DISPLAY": "Kemas-kini paparan medan tersuai",
+        "UPDATE_CUSTOM_FIELD_ITEM": "Kemas-kini kad medan tersuai"
     },
     "and_more": "dan {{count}} lagi…",
     "error": "Ralat telah berlaku semasa memproses perintah itu!",
@@ -929,5 +948,12 @@
         "rate": "menilai",
         "review": "ulas",
         "title": "Anda boleh mengundi, menyemak atau menilai {{&username}} di laman web ini:"
+    },
+    "custom_field_types": {
+        "checkbox": "Kotak semak",
+        "text": "Teks",
+        "number": "Nombor",
+        "date": "Tarikh",
+        "list": "Senarai Juntai Bawah"
     }
 }
