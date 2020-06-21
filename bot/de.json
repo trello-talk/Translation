@@ -466,11 +466,35 @@
             "description": "Gibt den Authentifzierungslink zurück, um deinen Discord Account mit Trello zu vernüpfen."
         },
         "boards": {
-            "description": "Eine Liste mit allen Boards, die du verwalten kannst."
+            "description": "Eine Liste mit allen Boards, die du verwalten kannst.",
+            "usage": "[Seite]"
         },
         "switch": {
             "usage": "[ID des Boards| Name des Boards]",
             "description": "Wählt ein Board aus, auf dem dann weitere Befehle ausgeführt werden können. Für ein Liste mit verfügbaren Boards, benutze den Befehl `{{&cleanPrefix}}boards`."
+        },
+        "board": {
+            "description": "Gibt Infomartionen über das aktuelle Board."
+        },
+        "lists": {
+            "description": "Listet alle offenen Listen auf dem aktuellen Board. Archivierte Listen können mit `{{&cleanPrefix}}listarchive` eingesehen werden.",
+            "usage": "[Seite]"
+        },
+        "list": {
+            "description": "Listet alle Karten in der Liste.",
+            "usage": "[Name|ID der Liste] [Seite]"
+        },
+        "listarchive": {
+            "description": "Listet alle archivierten Listen auf dem aktuellen Board.",
+            "usage": "[Seite]"
+        },
+        "card": {
+            "description": "Gibt Informationen über eine spezifische Karte.",
+            "usage": "[Kartenname|Kartenid]"
+        },
+        "cardarchive": {
+            "description": "Listet alle archivierten Karten auf dem aktuellen Board.",
+            "usage": "[Seite]"
         }
     },
     "command_permissions": {
