@@ -282,6 +282,9 @@
         "item_src": "Item Source",
         "to_board": "To Board",
         "from_board": "From Board",
+        "custom_field": "Custom Field",
+        "old_v": "Old Value",
+        "new_v": "New Value",
         "products": {
             "10": "💼 Trello Gold from Business Class",
             "37": "⭐ Monthly Trello Gold",
@@ -861,7 +864,16 @@
         "move_in_list": "{{&member}} transferred list \"{{&list}}\" from another board",
         "move_in_card": "{{&member}} transferred card \"{{&card}}\" from another board",
         "copy_checklist": "{{&member}} copied checklist contents from \"{{&sourceChecklist}}\" to \"{{&checklist}}\"",
-        "copy_card": "{{&member}} copied card contents from \"{{&sourceCard}}\" to \"{{&card}}\""
+        "copy_card": "{{&member}} copied card contents from \"{{&sourceCard}}\" to \"{{&card}}\"",
+        "customfield_create": "{{&member}} created custom field \"{{&customField}}\"",
+        "customfield_delete": "{{&member}} deleted custom field \"{{&customField}}\"",
+        "customfield_rename": "{{&member}} renamed custom field from \"{{&oldName}}\" to \"{{&customField}}\"",
+        "customfield_carddisplay_true": "{{&member}} turned on card display for custom field \"{{&customField}}\"",
+        "customfield_carddisplay_false": "{{&member}} turned off card display for custom field \"{{&customField}}\"",
+        "customfielditem_checkbox_false": "{{&member}} unchecked custom field \"{{&customField}}\" on card \"{{&card}}\"",
+        "customfielditem_checkbox_true": "{{&member}} checked custom field \"{{&customField}}\" on card \"{{&card}}\"",
+        "customfielditem_remove": "{{&member}} removed custom field \"{{&customField}}\" from card \"{{&card}}\"",
+        "customfielditem_update": "{{&member}} updated custom field \"{{&customField}}\" on card \"{{&card}}\""
     },
     "webhook_filters": {
         "ADD_ATTACHMENT_TO_CARD": "Attachment additions to cards",
@@ -913,7 +925,12 @@
         "UPDATE_LABEL_COLOR": "Label color updates",
         "UPDATE_LIST_NAME": "List name updates",
         "UPDATE_LIST_POS": "List position updates",
-        "UPDATE_LIST_CLOSED": "List archive updates (archived/unarchived)"
+        "UPDATE_LIST_CLOSED": "List archive updates (archived/unarchived)",
+        "CREATE_CUSTOM_FIELD": "Custom field creations",
+        "DELETE_CUSTOM_FIELD": "Custom field deletions",
+        "UPDATE_CUSTOM_FIELD_NAME": "Custom field name updates",
+        "UPDATE_CUSTOM_FIELD_DISPLAY": "Custom field display updates",
+        "UPDATE_CUSTOM_FIELD_ITEM": "Custom field card updates"
     },
     "webhook_filter_group": {
         "board": "Board",
@@ -928,6 +945,15 @@
         "checkItem": "Checklist Items",
         "checkItemUpdate": "Checklist Item Updates",
         "list": "Lists",
-        "listUpdate": "List Updates"
+        "listUpdate": "List Updates",
+        "customField": "Custom Fields",
+        "customFieldUpdate": "Custom Field Updates"
+    },
+    "custom_field_types": {
+        "checkbox": "Checkbox",
+        "text": "Text",
+        "number": "Number",
+        "date": "Date",
+        "list": "Dropdown"
     }
 }
