@@ -24,7 +24,65 @@
         "prev_list": "Poprzednia lista",
         "new_desc": "Nowy opis",
         "old_desc": "Stary opis",
-        "archived_lower": "zarchiwizowany"
+        "archived_lower": "zarchiwizowany",
+        "new_due": "Nowy termin",
+        "one_chklist_name": "Stara nazwa listy zadań",
+        "item_src": "Źródło przedmiotu",
+        "to_board": "Do tablicy",
+        "from_board": "Z tablicy",
+        "products": {
+            "10": "💼 Trello Gold z klasy biznesowej",
+            "37": "⭐ Miesięczne Trello Gold",
+            "38": "🌟 Roczne Trello Gold"
+        },
+        "perm_levels": {
+            "public": "Publiczny",
+            "org": "Widoczność zespołu",
+            "private": "Prywatne"
+        },
+        "invite_perms": {
+            "members": "Wszyscy użytkownicy",
+            "admins": "Admini"
+        },
+        "vote_perms": {
+            "disabled": "Wyłączone",
+            "members": "Wszyscy członkowie",
+            "org": "Członkowie organizaji",
+            "public": "Każdy użytkownik Trello"
+        },
+        "card_aging": "Starzenie się karty",
+        "card_age": {
+            "regular": "Regularny",
+            "pirate": "Pirackie"
+        },
+        "label_color": {
+            "green": "Zielony",
+            "yellow": "Żółty",
+            "red": "Czerwony",
+            "orange": "Pomarańczowy",
+            "lime": "Limonkowy zielony",
+            "purple": "Fioletowy",
+            "sky": "Błękitny",
+            "pink": "Różowy",
+            "blue": "Niebieski",
+            "black": "Czarny",
+            "none": "Bez koloru"
+        },
+        "old_due": "Stary termin",
+        "one_chkitem_name": "Stara pozycja listy kontrolnej Nazwy",
+        "old_v": "Stara wartość",
+        "comment_perms": {
+            "org": "Członkowie organizacji",
+            "public": "Każde użytkownik Trello",
+            "disabled": "Wyłączone",
+            "members": "Wszyscy użytkownicy"
+        },
+        "custom_field": "Konfigurowalne pole",
+        "new_v": "Nowa wartość",
+        "member_type": {
+            "normal": "Normalny",
+            "admin": "Admin"
+        }
     },
     "words": {
         "cooldown": "Przerwa między",
@@ -275,5 +333,47 @@
     "_": {
         "emoji": "pl",
         "name": "Polski"
+    },
+    "webhook_cmd": {
+        "model_filter": "Tryb filtrowania listy/karty",
+        "whitelist": "Biała lista",
+        "blacklist": "Czarna lista",
+        "filtered_list": {
+            "one": "Przefiltrowana lista",
+            "many": "Przefiltrowane listy"
+        },
+        "filtered_card": {
+            "one": "Przefiltrowana karta",
+            "many": "Przefiltrowane karty"
+        },
+        "allowed_actions": {
+            "one": "Dozwolone akcje",
+            "many": "Dozwolone akcje"
+        },
+        "owned_by": "Objęte przez",
+        "try_repair": "Możesz naprawić ten błąd wpisując `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "header": "Użyj `{{&cleanPrefix}}webhook <webhookID>`aby zobaczyć webhooka i `{{&cleanPrefix}}editwebhook <webhookID>` aby go edytować.",
+        "none": "Na tym serwerze nie ma webhooków podpiętych do Trello.",
+        "discord_webhook": "Webhook Discorda",
+        "trello_webhook": "Webhook Trello",
+        "dwh_missing": "Discord Webhook podpięty do tego webhooka nie istnieje!",
+        "twh_missing": "Brak użytkownika który stworzył webhooka, to spowoduje zakończenie wysyłania wiadomości przez webhooka!",
+        "edit_menu": {
+            "off": "Dezaktywuj",
+            "on": "Aktywuj",
+            "filter": "Edytuj filtry"
+        },
+        "invalid": "Niepoprawne ID webhooka!",
+        "not_found": "Ten webhook nie istnieje!",
+        "dwh": {
+            "one": "Discord Webhook",
+            "many": "Webhooki Discorda"
+        },
+        "add_header": "Jak chcesz aby webhook został zainstalowany?",
+        "menu": {
+            "add": "Dodaj webhooka",
+            "exist": "Użyj istniejącego webhooka",
+            "link": "Użyj linku webhooka"
+        }
     }
 }
