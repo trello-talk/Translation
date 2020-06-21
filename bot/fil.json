@@ -2,5 +2,8 @@
     "_": {
         "emoji": "ph",
         "name": "Pilipino"
+    },
+    "reload": {
+        "reloading": "Mga Reloading Command…"
     }
 }
