@@ -1,1 +1,690 @@
-{}
+{
+    "commands": {
+        "star": {
+            "description": "Toggle starring van een board. Indien geen board geselecteerd is zal het huidige board gebruikt worden. Starred boards zullen bovenaan weergeven worden op [Trello](https://trello.com/).",
+            "usage": "[BoardNaam|BoardID]"
+        },
+        "editlist": {
+            "note": "`name [newName]` - Pas de naam aan\n`archive`, `unarchive` - Toggel archief status",
+            "description": "Bewerk de eigenschappen van een lijst. Controleer de opmerking voor sub-commands en gebruik.",
+            "usage": "[LijstNaam|LijstID] [subcommand] …"
+        },
+        "editboard": {
+            "description": "Bewerk de eigenschappen van het huidige board. Controleer de opmerking voor sub-commands en gebruik.",
+            "usage": "[subcommand] …"
+        },
+        "comment": {
+            "usage": "[KaartNaam|KaartID] [commentaar]",
+            "description": "Commentaar op een kaart in het huidige board."
+        },
+        "webhook": {
+            "description": "Krijg informatie over een specifieke webhook.",
+            "usage": "<webhookID>"
+        },
+        "editwebhook": {
+            "usage": "<webhookID> [subcommand]",
+            "description": "Bewerk een webhook in uw server. Controleer de opmerking voor sub-commands en gebruik."
+        },
+        "setmaxwebhooks": {
+            "description": "Stelt de limiet voor webhooks in voor die server.",
+            "usage": "<serverID> [limiet]"
+        },
+        "toggleserver": {
+            "description": "Toggles server blacklist.",
+            "usage": "<serverID>"
+        },
+        "auth": {
+            "description": "Krijg de authenticatie link om uw Discord en Trello account te koppelen."
+        },
+        "donate": {
+            "description": "Krijg de Donatie link voor de ontwikkelaars."
+        },
+        "github": {
+            "description": "Krijg de link naar de open source code van de bot."
+        },
+        "invite": {
+            "description": "Stuurt de bot uitnodigingslink."
+        },
+        "serverinvite": {
+            "description": "Krijg uitnodigingslink voor de support server."
+        },
+        "asynceval": {
+            "usage": "<code>",
+            "description": "Evalueert code asynchroon.",
+            "note": "Door de toegevoegde async IIFE wrapper in deze command is het nodig om een return statement te gebruiken om een resulataat te krijgen.\nvb. `{{&cleanPrefix}}aeval return 1`"
+        },
+        "eval": {
+            "description": "Evalueert code.",
+            "usage": "<code>"
+        },
+        "exec": {
+            "description": "Gebruikt `child_process.exec`.",
+            "usage": "<command> …"
+        },
+        "reload": {
+            "description": "Herladen van de commands."
+        },
+        "reloadlocale": {
+            "description": "Herladen van de taal bestanden."
+        },
+        "reloadone": {
+            "description": "Herladen van enkelvoudige commands.",
+            "usage": "<commandNaam> [commandNaam] …"
+        },
+        "reloadwebserver": {
+            "description": "Herstart de webserver."
+        },
+        "restart": {
+            "description": "Herstart de bot."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "help": {
+            "description": "Toont het help bericht en geeft meer informatie over commands.",
+            "usage": "[command]"
+        },
+        "info": {
+            "description": "Krijg informatie over de bot."
+        },
+        "locale": {
+            "description": "Laat u de taal instellen voor de server. Gebruik zonder argumenten voor een lijst van talen.",
+            "usage": "[\"userset\"|\"serverset\"] [taal]"
+        },
+        "prefix": {
+            "usage": "[\"set\"|\"add\"|\"remove\"] [voorvoegsel]",
+            "description": "Laat u het voorvoegsel kiezen voor uzelf of voor de server."
+        },
+        "shardinfo": {
+            "description": "Geeft de statistieken voor elke shard."
+        },
+        "me": {
+            "description": "Toon informatie over uw Trello account."
+        },
+        "switch": {
+            "usage": "[boardID|boardNaam]",
+            "description": "Selecteer een board om te gebruiken voor andere commands. Gebruik de `{{&cleanPrefix}}boards` command om weer te geven welke boards u kan selecteren."
+        },
+        "boards": {
+            "description": "Lijst van alle boards die u kan aanpassen.",
+            "usage": "[pagina]"
+        },
+        "board": {
+            "description": "Krijg informatie over het huidige board."
+        },
+        "lists": {
+            "usage": "[pagina]",
+            "description": "Lijst van alle open lijsten op het huidige board. U kan de archief lijst zien met `{{&cleanPrefix}}listarchive`."
+        },
+        "list": {
+            "description": "Lijst van alle kaarten in die lijst.",
+            "usage": "[LijstNaam|LijstID] [Pagina]"
+        },
+        "listarchive": {
+            "description": "Lijst van alle gearchiveerde lijsten in het huidig board.",
+            "usage": "[pagina]"
+        },
+        "card": {
+            "description": "krijg de informatie over een specifieke kaart.",
+            "usage": "[KaartNaam|KaartID]"
+        },
+        "cardarchive": {
+            "description": "Lijst van alle gearchiveerde kaarten in het huidig board.",
+            "usage": "[pagina]"
+        },
+        "watchcard": {
+            "usage": "[KaartNaam|KaartID]",
+            "description": "Toggle het volgen van een kaart. Gevolgde kaarten geven een melding op [Trello](https://trello.com/)."
+        },
+        "watchlist": {
+            "description": "Toggle het volgen van een lijst. Gevolgde lijsten geven een melding op [Trello](https://trello.com/).",
+            "usage": "[LijstNaam|LijstID]"
+        },
+        "watch": {
+            "usage": "[BoardNaam|BoardID]",
+            "description": "Toggle het volgen van een board. Indien geen board geselecteerd is zal het huidige board gebruikt worden. Gevolgde boards geven een melding op [Trello](https://trello.com/)."
+        },
+        "editcard": {
+            "description": "Bewerk de eigenschappen van een kaart. Controleer de opmerking voor sub-commands en gebruik.",
+            "usage": "[KaartNaam|KaartID] [subcommand] …"
+        },
+        "addcard": {
+            "description": "Maak een kaart.",
+            "usage": "[LijstNaam|LijstID] [naam]"
+        },
+        "deletecard": {
+            "description": "Verwijder een kaart.",
+            "usage": "[KaartNaam|KaartID]"
+        },
+        "addlist": {
+            "description": "Maak een kaart op het huidige board.",
+            "usage": "[naam]"
+        },
+        "webhooks": {
+            "description": "Lijst van de webhooks in uw server.",
+            "usage": "[pagina]"
+        },
+        "addwebhook": {
+            "description": "Maakt een webhook in uw server.",
+            "usage": "[BoardID|BoardNaam]"
+        },
+        "remwebhook": {
+            "description": "Verwijdert een webhook van uw server.",
+            "usage": "<webhookID>"
+        },
+        "clearauth": {
+            "description": "Verwijderd uw Trello autorisatie. Voer dit niet uit tenzij dit echt nodig is."
+        },
+        "cleardata": {
+            "description": "Verwijderd uw gebruiker gegevens van Taco."
+        },
+        "vote": {
+            "description": "Toont de stem links om voor Taco te stemmen."
+        },
+        "toggleuser": {
+            "description": "Toggles gebruiker blacklist",
+            "usage": "<userID>"
+        },
+        "ping": {
+            "description": "Pong!"
+        }
+    },
+    "error": "Er is een fout opgetreden tijdens het uitvoeren van dit command!",
+    "prompt": {
+        "canceled": "Uw laatste proces is geannuleerd.",
+        "no_confirm": "Confirmatie geannuleerd.",
+        "cancel_confirm": "Type `yes` om te confirmeren. Alle andere berichten zullen leiden tot een annulatie.",
+        "list": "Lijstprompt",
+        "choose": "Type het aantal items dat u wenst te gebruiken.",
+        "input": "Type het bericht dat u wil invoeren.",
+        "cancel": "\"cancel\" typen zal dit proces stoppen.",
+        "timeout": "Uw laatste proces was timed out.",
+        "no_search": "Die zoekopdracht gaf geen resultaten.",
+        "cancel_input": "Het typen van \"{{&cancelPrompt}}\" zal de invoer annuleren.",
+        "input_canceled": "Uw laatste invoer is geannuleerd.",
+        "confirm": "Bent u zeker?",
+        "select_cancel": "Type \"save\" om de selectie op te slaan ,anders type \"cancel\" om te annuleren.",
+        "select_canceled": "Uw laatste proces is geannuleerd. Alle wijzigingen zijn verloren gegaan.",
+        "select_timeout": "Uw laatste proces was timed out. Alle wijzigingen zijn verloren gegaan.",
+        "select": "Type het nummer van het item om de waarde aan te passen."
+    },
+    "boards": {
+        "header": "Gebruik `{{&cleanPrefix}}switch <BoardID|BoardNaam>` om te wisselen tussen boards.",
+        "gone": "Dit board bestaat niet meer! Schakel over naar een ander board meth `{{&cleanPrefix}}switch`!",
+        "choose": "Type het nummer van het board dat u wenst te gebruiken.",
+        "none": "U bent niet toegewezen aan een board. U kan er een maken op <https://trello.com/>.",
+        "switch": "Overschakelt naar \"{{&name}}\" (`{{&id}}`).",
+        "wywtd": "Kies wat u wenst te doen met dit board.",
+        "menu": {
+            "name": "Board naam aanpassen",
+            "archive_on": "Board sluiten",
+            "archive_off": "Board openen",
+            "desc": "Beschrijving van board aanpassen",
+            "remove_desc": "Beschrijving van board verwijderen",
+            "sub_on": "Bekijk dit board",
+            "sub_off": "Stop het bekijken van dit board",
+            "vote": "Verander stem permissie ({{&value}})",
+            "invite": "Verander leden toevoegen/verwijderen permissie ({{&value}})",
+            "comment": "Verander commentaar permissie ({{&value}})"
+        },
+        "set_name": "Board naam veranderd van \"{{&old}}\" naar \"{{&new}}\".",
+        "archived": "Board \"{{&name}}\" gearchiveerd.",
+        "unarchived": "Board \"{{&name}}\" is verwijderd uit de archieven.",
+        "set_desc": "Stel de board beschrijving in voor \"{{&name}}\".",
+        "input_desc": "Type de nieuwe beschrijving.",
+        "set_comment_perms": "Commentaar permissie aangepast naar {{&value}}.",
+        "input_name": "Type de nieuwe naam van het board.",
+        "removed_desc": "Beschrijving van \"{{&name}}\" is verwijderd.",
+        "need_admin": "U heeft beheerders rechten nodig op het board!"
+    },
+    "reload": {
+        "reloading": "Commands herladen…",
+        "done": "Commands zijn herladen."
+    },
+    "reloadlocale": {
+        "reloading": "Vertalingen herladen…",
+        "done": "Vertalingen herladen."
+    },
+    "reloadone": {
+        "done": "{{&commands}} herladen.",
+        "invalid": "Ongeldige command!",
+        "file": "Een bestand dat een gespecificeerd command had bestaat niet meer!"
+    },
+    "reloadwebserver": {
+        "reloading": "Webserver herstarten…",
+        "done": "Webserver werd herstart.",
+        "no": "Er is geen webserver voor deze instantie !"
+    },
+    "setmaxwebhooks": {
+        "set": "Maximale webhook limiet voor {{serverID}} is naar {{value}} gezet.",
+        "invalid": "Ongeldig ID!"
+    },
+    "vote": {
+        "review": "review",
+        "rate": "beoordelen",
+        "title": "U kan stemmen, reviewen of een beoordeling geven voor {{&username}} op deze sites:"
+    },
+    "responses": {
+        "restart": "Shard herstart…",
+        "eval": "Duurde {{ms}} ms.",
+        "hangman": "Ik ben geen spelletjes bot."
+    },
+    "links": {
+        "auth": {
+            "start": "Koppel uw Trello en Discord account hier:",
+            "fail": "De eigenaar van de bot heeft geen autorisatie link voorzien!"
+        },
+        "donate": {
+            "start": "Ondersteun verdere ontwikkeling met een donatie!",
+            "fail": "De eigenaar van de bot heeft geen donatie link voorzien!"
+        },
+        "github": "Hier is een link naar mijn source code:",
+        "invite": {
+            "fail": "De eigenaar van de bot heeft geen uitnodigingslink voorzien!",
+            "start": "Hier is een link om mij uit te nodigen naar andere servers!"
+        },
+        "serverinvite": {
+            "start": "Join de support server met één van deze links!",
+            "fail": "De eigenaar van de bot heeft geen uitnodigingslink voor de support server voorzien!"
+        }
+    },
+    "help": {
+        "not_found": "De command `{{&command}}` is niet gevonden.",
+        "footer": "`{{&cleanPrefix}}help [command]` voor meer info.",
+        "header": "{{&username}} (Werkt op een aangepaste [Faux] versie (https://github.com/Snazzah/Faux) By Snazzah)\nSupport Server: {{&link}}"
+    },
+    "info": {
+        "title": "Informatie over {{&username}}",
+        "faux": "Deze bot gebruikt een aangepaste versie van [Faux](https://github.com/Snazzah/Faux)."
+    },
+    "ping": {
+        "message": "Pong!",
+        "ws": "WS: {{ms}} ms",
+        "rest": "REST: {{ms}} ms"
+    },
+    "shardinfo": {
+        "title": "Informatie over {{&username}}'s Shards",
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} servers"
+    },
+    "locale": {
+        "start": "Beschikbare Vertalingen",
+        "unset_l": "Taal verwijderd",
+        "choose": "Typ het nummer van de taal die u wenst te gebruiken.",
+        "user_locale": "Gebruiker taal: {{&locale}}",
+        "user_set": "Gebruiker taal aangepast naar **{{&name}}**.",
+        "server_set": "Server taal aangepast naar **{{&name}}**.",
+        "user_unset": "Gebruiker taal instellingen verwijderd.",
+        "server_unset": "Server taal instellingen verwijderd.",
+        "no_guild": "U voert dit command niet uit in een server!",
+        "unset": "Niet gedefinieerd",
+        "server_locale": "Server taal: {{&locale}}",
+        "header": "Gebruik `{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` om de taal te wijzigen."
+    },
+    "words": {
+        "active": "Actief",
+        "usage": "Gebruik",
+        "cooldown": "Cooldown",
+        "locale": "Taal",
+        "alias": {
+            "one": "Alias",
+            "many": "Aliases"
+        },
+        "version": "Versie",
+        "uptime": "Online tijd",
+        "note": "Notitie",
+        "mem_usage": "Geheugen gebruik",
+        "server": {
+            "one": "Server",
+            "many": "Servers"
+        },
+        "website": {
+            "one": "Website",
+            "many": "Websites"
+        },
+        "trello_board": {
+            "many": "Trello Boards",
+            "one": "Trello Board"
+        },
+        "donate": "Doneer",
+        "id": "ID",
+        "info": "Informatie",
+        "short_link": {
+            "one": "Korte link",
+            "many": "Korte links"
+        },
+        "count": {
+            "many": "Aantallen",
+            "one": "Aantal"
+        },
+        "board": {
+            "one": "Board",
+            "many": "Boards"
+        },
+        "page": {
+            "one": "Pagina",
+            "many": "Pagina's"
+        },
+        "item": {
+            "one": "Item",
+            "many": "Items"
+        },
+        "list": {
+            "one": "Lijst",
+            "many": "Lijsten"
+        },
+        "link": {
+            "one": "Link",
+            "many": "Links"
+        },
+        "label": {
+            "one": "Label",
+            "many": "Labels"
+        },
+        "card": {
+            "one": "Kaart",
+            "many": "Kaarten"
+        },
+        "opt": {
+            "one": "Optie",
+            "many": "Opties"
+        },
+        "member_type": {
+            "many": "Member Types",
+            "one": "Member Type"
+        },
+        "checklist": {
+            "one": "Checklijst",
+            "many": "Checklijsten"
+        },
+        "checklist_item": {
+            "one": "Checklijst item",
+            "many": "Checklijst items"
+        },
+        "attachment": {
+            "one": "Bijlage",
+            "many": "Bijlages"
+        },
+        "cmd": {
+            "one": "Command",
+            "many": "Commands"
+        },
+        "subcmd": {
+            "one": "Sub-command",
+            "many": "Sub-commands"
+        },
+        "sticker": {
+            "one": "Sticker",
+            "many": "Stickers"
+        },
+        "arch_list": {
+            "one": "Gearchiveerde lijst",
+            "many": "Gearchiveerde lijsten"
+        },
+        "arch_card": {
+            "one": "Gearchiveerde kaart",
+            "many": "Gearchiveerde kaarten"
+        },
+        "arch_board": {
+            "one": "Gearchiveerde Board",
+            "many": "Gearchiveerde Boards"
+        },
+        "orgs": {
+            "one": "Organisatie",
+            "many": "Organisaties"
+        },
+        "pref": {
+            "one": "Voorkeur",
+            "many": "Voorkeuren"
+        },
+        "user_pref": {
+            "one": "Gebruiker voorkeur",
+            "many": "Gebruiker voorkeuren"
+        },
+        "product": {
+            "one": "Product",
+            "many": "Producten"
+        },
+        "member": {
+            "one": "Lid",
+            "many": "Leden"
+        },
+        "comment": {
+            "one": "Commentaar",
+            "many": "Commentaren"
+        },
+        "vote_lower": {
+            "one": "Stem",
+            "many": "Stemmen"
+        },
+        "prefix": {
+            "one": "Voorvoegsel",
+            "many": "Voorvoegsels"
+        },
+        "name": {
+            "one": "Naam",
+            "many": "Namen"
+        },
+        "channel": {
+            "one": "Kanaal",
+            "many": "Kanalen"
+        },
+        "flag": {
+            "one": "Vlag",
+            "many": "Vlaggen"
+        },
+        "bio": "Bio",
+        "visibility": "Zichtbaarheid",
+        "in": "In",
+        "initials": "Initialen",
+        "bg_img": "Achtergrond afbeelding",
+        "webhook": {
+            "one": "Webhook",
+            "many": "Webhooks"
+        },
+        "in_lower": "in"
+    },
+    "trello": {
+        "summ": "Stuur Samenvattingen",
+        "locale": "Taal (op Trello)",
+        "card_covers": "Kaart Cover Afbeelding",
+        "hide_votes": "Verberg stemmen",
+        "template": "Is template?",
+        "pinned": "Pinned",
+        "subbed": "Gezien",
+        "starred": "Starred",
+        "voting": "Stemming",
+        "due": "Ten gevolge",
+        "voted": "Gestemd",
+        "last_act": "Laatste Activiteit",
+        "add_rem_members": "Leden toevoegen/verwijderen",
+        "archived_lower": "gearchiveerd",
+        "old_desc": "Oude beschrijving",
+        "new_desc": "Nieuwe beschrijving",
+        "prev_list": "Vorige lijst",
+        "curr_list": "Huidige lijst",
+        "old_name": "Oude naam",
+        "new_name": "Nieuwe naam",
+        "old_comment": "Oude commentaar",
+        "new_comment": "Nieuwe commentaar",
+        "new_due": "Nieuwe einddatum",
+        "old_due": "Oude einddatum",
+        "one_chkitem_name": "Oude checklijst item naam",
+        "item_src": "Item Bron",
+        "to_board": "Naar Board",
+        "custom_field": "Custom Veld",
+        "old_v": "Oude waarde",
+        "new_v": "Nieuwe Waarde",
+        "products": {
+            "37": "⭐ Maandelijkse Trello Gold",
+            "38": "🌟 Jaarlijkse Trello Gold",
+            "10": "💼 Trello Gold van Business Class"
+        },
+        "perm_levels": {
+            "public": "Publiek",
+            "org": "Team zichtbaar",
+            "private": "Privé"
+        },
+        "invite_perms": {
+            "members": "Alle leden",
+            "admins": "Admins"
+        },
+        "comment_perms": {
+            "disabled": "Uitgeschakeld",
+            "members": "Alle leden",
+            "org": "Organisatie leden",
+            "public": "Elke Trello Gebruiker"
+        },
+        "vote_perms": {
+            "disabled": "Uitgeschakeld",
+            "members": "Alle leden",
+            "org": "Organisatie Leden",
+            "public": "Elke Trello Gebruiker"
+        },
+        "card_aging": "Leeftijd van de kaart",
+        "card_age": {
+            "regular": "Normaal",
+            "pirate": "Piraat"
+        },
+        "label_color": {
+            "green": "Groen",
+            "red": "Rood",
+            "orange": "Oranje",
+            "lime": "Limoen Groen",
+            "purple": "Paars",
+            "blue": "Blauw",
+            "sky": "Lichtblauw",
+            "pink": "Roze",
+            "black": "Zwart",
+            "none": "Geen kleur",
+            "yellow": "Geel"
+        },
+        "member_type": {
+            "normal": "Normaal",
+            "admin": "Admin"
+        },
+        "colorblind": "Kleurenblindheid mode",
+        "marketing": "Marketing E-mails (opt-in)",
+        "self_join": "Sta teamleden toe om aan te passen en te joinen",
+        "one_chklist_name": "Oude checklijst naam",
+        "from_board": "Van Board"
+    },
+    "webhook_cmd": {
+        "none": "Er zijn geen webhooks op deze server geconnecteerd met Trello.",
+        "invalid": "Ongeldig webhook ID!",
+        "not_found": "Die webhook bestaat niet!",
+        "model_filter": "Lijst/Kaart Filter Modus",
+        "blacklist": "Blacklist",
+        "filtered_list": {
+            "one": "Gefilterde Lijst",
+            "many": "Gefilterde Lijsten"
+        },
+        "filtered_card": {
+            "one": "Gefilterde Kaart",
+            "many": "Gefilterde Kaarten"
+        },
+        "allowed_actions": {
+            "one": "Toegestane Actie",
+            "many": "Toegestane Acties"
+        },
+        "discord_webhook": "Discord Webhook",
+        "trello_webhook": "Trello Webhook",
+        "owned_by": "Eigenaar",
+        "dwh_missing": "De Discord webhook geconnecteerd met deze webhook is niet correct!",
+        "try_repair": "U kan dit probleem oplossen met `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "add_header": "Hoe wilt u de webhook opzetten?",
+        "menu": {
+            "add": "Voeg webhook toe",
+            "exist": "Gebruik bestaande webhook",
+            "link": "Gebruik webhook link"
+        },
+        "edit_menu": {
+            "on": "Activeer",
+            "off": "Deactiveren",
+            "filter": "Pas filters aan",
+            "delete": "Verwijder webhook",
+            "repair": "Herstel webhook",
+            "locale": "Verander de taal",
+            "lists": "Verander de gefilterde lijsten",
+            "cards": "Verander de gefilterde kaarten",
+            "blist": "Verander de filter naar blacklist",
+            "wlist": "Verander de filter naar whitelist"
+        },
+        "no_channels": "Geen kanalen gevonden waar ik de toestemming heb om webhooks aan te passen.",
+        "couldnt_create": "Ik kon geen webhook aanmaken! Dit is waarschijnlijk door een aanpassing in de permissies!",
+        "created": "Webhook gemaakt voor \"{{&name}}\".",
+        "no_dwh": "U heeft geen Discord webhooks om naar te linken!",
+        "choose_existwh": "Kies welke webhook ik moet gebruiken.",
+        "input_link": "Plak de link van de webhook die u wenst te gebruiken.",
+        "no_link": "Ik kon geen webhook URL vinden!",
+        "no_server_link": "Die webhook is niet in deze server!",
+        "wywtd": "Kies wat u wenst te doen met deze webhook.",
+        "wh_off": "De webhook is uitgeschakeld.",
+        "confirm_delete": "Bent u zeker dat u deze webhook wil verwijderen?",
+        "deleted": "Webhook is verwijderd.",
+        "filter_update": "Webhook filter aangepast.",
+        "repaired_wh": "Webhook Hersteld",
+        "repaired": "Problemen met de webhook zijn hersteld.",
+        "to_wlist": "Filter aangepast naar whitelist.",
+        "to_blist": "Filter aangepast naar blacklist.",
+        "lists_updated": "De gefilterde lijsten zijn opgeslagen.",
+        "cards_updated": "De gefilterde kaarten zijn opgeslagen.",
+        "locale_unset": "Webhook taal verwijderd.",
+        "locale_set": "Webhook taal is nu **{{&name}}**.",
+        "unknown": "Onbekend",
+        "header": "Gebruik `{{&cleanPrefix}}webhook <webhookID>`om de webhook te bekijken en `{{&cleanPrefix}}editwebhook <webhookID>` om deze aan te passen.",
+        "whitelist": "Whitelist",
+        "dwh": {
+            "one": "Discord Webhook",
+            "many": "Discord Webhooks"
+        },
+        "twh_missing": "De gebruiker die deze webhook heeft gemaakt is niet gevonden, hierdoor kan de webhook stoppen met verzenden!",
+        "choose_channel": "Kies in welk kanaal de webhook moet posten.",
+        "create_confirm": "Deze webhook voor het Trello Board \"{{&name}}\" is gestart! Acties zullen binnenkort weergegeven worden…",
+        "wh_on": "De webhook is ingeschakeld.",
+        "repair_dwh_header": "De Discord webhook is niet aanwezig! Hoe wilt u een nieuwe maken?",
+        "choose_lists": "Kies welke lijst gefilterd moet worden. Geen lijst kiezen zal het filteren uitschakelen.",
+        "choose_cards": "Kies welke kaarten gefilterd moet worden. Geen kaarten kiezen zal het filteren uitschakelen.",
+        "no_access": "Dit board bestaat niet meer of u heeft geen toegang!",
+        "max_wh": "U heeft uw maximaal aantal webhooks bereikt voor deze server! U kan deze limiet verhogen door patreon te worden! (`{{&cleanPrefix}}donate`)"
+    },
+    "cooldown_msg": "Deze command moet even afkoelen! *({{seconds}})*",
+    "bad_args": "Niet genoeg argumenten!",
+    "deprecated": "Deze command is niet meer beschikbaar!",
+    "use_this": "In plaats daarvan gebruik deze command:",
+    "command_permissions": {
+        "attach": "Ik heb de permissie `Bestanden bijvoegen` nodig om deze command uit te voeren!",
+        "embed": "Ik heb de permissie `Embed Links` nodig om deze command uit te voeren!",
+        "emoji": "Ik heb de permissie `Gebruik Externe Emoji's` nodig om deze command uit te voeren!",
+        "elevated": "Enkel de hogere gebruikers van de bot kunnen deze command uitvoeren!",
+        "auth": "U heeft uw Trello en Discord account niet gekoppeld!\nKoppel deze met `{{&cleanPrefix}}auth` command!",
+        "discordAuth": "U heeft uw Trello en Discord account niet gekoppeld!\nKoppel deze met `{{&cleanPrefix}}auth` command!",
+        "webhooks": "Ik heb de permissie `Manage Webhooks` nodig om dit command uit te voeren!",
+        "userData": "Uw instellingen staan niet in de database!",
+        "trelloRole": "Deze command vereist dat u de server beheerder bent of dat u de role `Trello` heeft!",
+        "selectedBoard": "Er is geen board geselecteerd!\nSelecteer een board met de `{{&cleanPrefix}}switch` command!"
+    },
+    "format": {
+        "second": {
+            "many": "{{seconds}} seconden",
+            "one": "{{seconds}} second"
+        }
+    },
+    "categories": {
+        "general": "Algemeen",
+        "dev": "Ontwikkelaar",
+        "user": "Gebruikers Beheer",
+        "view": "Kijken",
+        "edit": "Aanpassen",
+        "hidden": "Verborgen",
+        "misc": "Overig",
+        "webhook": "Webhooks"
+    },
+    "trello_response": {
+        "ratelimit": "Er zijn teveel aanvragen verzonden! Probeer later opnieuw!",
+        "internal": "Er is een interne server fout opgetreden bij Trello! Probeer later opnieuw!",
+        "aborted": "Trello deed er te lang over om te antwoorden! Probeer later opnieuw!"
+    },
+    "_": {
+        "name": "Engels (US)"
+    }
+}
