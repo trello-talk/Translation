@@ -254,7 +254,10 @@
         "one_chklist_name": "Old Checklist Name",
         "item_src": "Item Source",
         "to_board": "To Board",
-        "from_board": "From Board"
+        "from_board": "From Board",
+        "new_v": "New Value",
+        "old_v": "Old Value",
+        "custom_field": "Custom Field"
     },
     "commands": {
         "auth": {
@@ -774,7 +777,16 @@
         "move_out_card": "{{&member}} transferred card \"{{&card}}\" to another board",
         "move_in_list": "{{&member}} transferred list \"{{&list}}\" from another board",
         "move_in_card": "{{&member}} transferred card \"{{&card}}\" from another board",
-        "copy_card": "{{&member}} copied card contents from \"{{&sourceCard}}\" to \"{{&card}}\""
+        "copy_card": "{{&member}} copied card contents from \"{{&sourceCard}}\" to \"{{&card}}\"",
+        "customfielditem_update": "{{&member}} updated custom field \"{{&customField}}\" on card \"{{&card}}\"",
+        "customfielditem_remove": "{{&member}} removed custom field \"{{&customField}}\" from card \"{{&card}}\"",
+        "customfielditem_checkbox_true": "{{&member}} checked custom field \"{{&customField}}\" on card \"{{&card}}\"",
+        "customfielditem_checkbox_false": "{{&member}} unchecked custom field \"{{&customField}}\" on card \"{{&card}}\"",
+        "customfield_carddisplay_false": "{{&member}} turned off card display for custom field \"{{&customField}}\"",
+        "customfield_carddisplay_true": "{{&member}} turned on card display for custom field \"{{&customField}}\"",
+        "customfield_rename": "{{&member}} renamed custom field from \"{{&oldName}}\" to \"{{&customField}}\"",
+        "customfield_delete": "{{&member}} deleted custom field \"{{&customField}}\"",
+        "customfield_create": "{{&member}} created custom field \"{{&customField}}\""
     },
     "webhook_filters": {
         "UPDATE_LIST_CLOSED": "List archive updates (archived/unarchived)",
@@ -826,7 +838,12 @@
         "ADD_MEMBER_TO_BOARD": "Member additions to board",
         "ADD_LABEL_TO_CARD": "Label additions to cards",
         "ADD_CHECKLIST_TO_CARD": "Checklist additions to cards",
-        "ADD_ATTACHMENT_TO_CARD": "Attachment additions to cards"
+        "ADD_ATTACHMENT_TO_CARD": "Attachment additions to cards",
+        "UPDATE_CUSTOM_FIELD_ITEM": "Custom field card updates",
+        "UPDATE_CUSTOM_FIELD_DISPLAY": "Custom field display updates",
+        "UPDATE_CUSTOM_FIELD_NAME": "Custom field name updates",
+        "DELETE_CUSTOM_FIELD": "Custom field deletions",
+        "CREATE_CUSTOM_FIELD": "Custom field creations"
     },
     "webhook_cmd": {
         "choose_existwh": "Choose which webhook to use.",
@@ -920,7 +937,9 @@
         "labelUpdate": "Label Updates",
         "label": "Labels",
         "boardUpdate": "Board Updates",
-        "board": "Board"
+        "board": "Board",
+        "customFieldUpdate": "Custom Field Updates",
+        "customField": "Custom Fields"
     },
     "use_this": "Use this command instead:",
     "deprecated": "This command is no longer available!",
@@ -932,5 +951,12 @@
         "rate": "rate",
         "review": "review",
         "title": "You can vote, review or rate {{&username}} on these sites:"
+    },
+    "custom_field_types": {
+        "list": "Dropdown",
+        "date": "Date",
+        "number": "Number",
+        "text": "Text",
+        "checkbox": "Checkbox"
     }
 }
