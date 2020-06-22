@@ -2,5 +2,496 @@
     "_": {
         "emoji": "fr",
         "name": "Français"
+    },
+    "reload": {
+        "reloading": "Rechargement des commandes…",
+        "done": "Commandes rechargées."
+    },
+    "reloadlocale": {
+        "reloading": "Rechargement des paramètres régionaux…",
+        "done": "Paramètres régionaux rechargés."
+    },
+    "reloadone": {
+        "invalid": "Commande invalide !",
+        "done": "{{&commands}} rechargées.",
+        "file": "Un fichier avec une commande spécifique n'existe plus !"
+    },
+    "reloadwebserver": {
+        "no": "Il n'y a pas de serveur web sur cette instance !",
+        "reloading": "Redémarre le serveur web…",
+        "done": "Serveur web redémarré."
+    },
+    "setmaxwebhooks": {
+        "invalid": "Identifiant invalide !",
+        "set": "Définit la limite maximale de webhook pour {{serverID}} à {{value}}."
+    },
+    "vote": {
+        "title": "Vous pouvez voter, donner votre avis ou noter {{&username}} sur ces sites :",
+        "review": "avis",
+        "rate": "noter"
+    },
+    "responses": {
+        "restart": "Redémarre la partition…",
+        "hangman": "Je ne suis pas un robot de jeu.",
+        "eval": "A pris {{ms}} ms."
+    },
+    "links": {
+        "auth": {
+            "fail": "Le propriétaire du robot n'a pas fourni de lien d'autorisation !",
+            "start": "Autorisez votre compte Trello avec votre Discord ici :"
+        },
+        "donate": {
+            "start": "Soutenez le développement en faisant un don !",
+            "fail": "Le propriétaire du robot n'a pas fourni de lien de don !"
+        },
+        "github": "Voici le lien vers mon code source :",
+        "serverinvite": {
+            "start": "Rejoignez le serveur de support avec l'un de ces liens !",
+            "fail": "Le propriétaire du robot n'a pas fourni de lien vers le serveur de support !"
+        },
+        "invite": {
+            "start": "Voici les liens pour m'inviter sur d'autres serveurs !",
+            "fail": "Le propriétaire du robot n'a pas fourni de lien d'invitation !"
+        }
+    },
+    "help": {
+        "footer": "`{{&cleanPrefix}}help [command]` pour plus d'informations.",
+        "not_found": "La commande `{{&command}}` n'a pas été trouvée.",
+        "header": "{{&username}} (Exécute une version modifiée de [Faux](https://github.com/Snazzah/Faux) par Snazzah)\nServeur de support : {{&link}}"
+    },
+    "info": {
+        "title": "Informations à propos de {{&username}}",
+        "faux": "Ce robot utilise une version modifiée de [Faux](https://github.com/Snazzah/Faux)."
+    },
+    "ping": {
+        "message": "Pong !",
+        "ws": "WS : {{ms}} ms",
+        "rest": "REST : {{ms}} ms"
+    },
+    "shardinfo": {
+        "title": "Informations à propos des partitions de {{&username}}",
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} guildes"
+    },
+    "locale": {
+        "start": "Paramètres régionaux disponibles",
+        "unset": "Non défini",
+        "unset_l": "Enlève les paramètres régionaux",
+        "choose": "Saisissez le numéro de la région que vous souhaitez définir.",
+        "user_locale": "Région de l'utilisateur : {{&locale}}",
+        "header": "`{{&prefix}}locale setuser [locale]` ou `{{&prefix}}locale setserver [locale]` pour définir la région.",
+        "user_set": "Définit la région de l'utilisateur à **{{&name}}**.",
+        "user_unset": "Supprime la région de l'utilisateur.",
+        "server_unset": "Supprime la région du serveur.",
+        "no_guild": "Vous n'exécutez pas la commande dans une guilde !",
+        "server_locale": "Région du serveur : {{&locale}}",
+        "server_set": "Définit la région du serveur à **{{&name}}**."
+    },
+    "words": {
+        "cooldown": "Refroidissement",
+        "locale": "Région",
+        "alias": {
+            "one": "Alias",
+            "many": "Alias"
+        },
+        "version": "Version",
+        "uptime": "Temps de fonctionnement",
+        "note": "Note",
+        "mem_usage": "Usage de la mémoire",
+        "server": {
+            "one": "Serveur",
+            "many": "Serveurs"
+        },
+        "website": {
+            "one": "Site web",
+            "many": "Sites web"
+        },
+        "trello_board": {
+            "one": "Tableau Trello",
+            "many": "Tableaux Trello"
+        },
+        "donate": "Faites un don",
+        "id": "Identifiant",
+        "initials": "Initiales",
+        "info": "Informations",
+        "short_link": {
+            "one": "Lien raccourci",
+            "many": "Liens raccourcis"
+        },
+        "count": {
+            "one": "Compteur",
+            "many": "Compteurs"
+        },
+        "board": {
+            "one": "Tableau",
+            "many": "Tableaux"
+        },
+        "page": {
+            "one": "Page",
+            "many": "Pages"
+        },
+        "active": "Actif",
+        "item": {
+            "many": "Éléments",
+            "one": "Élément"
+        },
+        "list": {
+            "one": "Liste",
+            "many": "Listes"
+        },
+        "link": {
+            "one": "Lien",
+            "many": "Liens"
+        },
+        "label": {
+            "one": "Étiquette",
+            "many": "Étiquettes"
+        },
+        "card": {
+            "one": "Carte",
+            "many": "Cartes"
+        },
+        "opt": {
+            "one": "Option",
+            "many": "Options"
+        },
+        "member_type": {
+            "one": "Type de membre",
+            "many": "Types de membre"
+        },
+        "checklist": {
+            "one": "Check-list",
+            "many": "Check-lists"
+        },
+        "checklist_item": {
+            "one": "Élément de la check-list",
+            "many": "Éléments de la check-list"
+        },
+        "attachment": {
+            "one": "Pièce jointe",
+            "many": "Pièces jointes"
+        },
+        "cmd": {
+            "one": "Commande",
+            "many": "Commandes"
+        },
+        "subcmd": {
+            "one": "Sous-commande",
+            "many": "Sous-commandes"
+        },
+        "sticker": {
+            "one": "Autocollant",
+            "many": "Autocollants"
+        },
+        "arch_list": {
+            "one": "Liste archivée",
+            "many": "Listes archivées"
+        },
+        "arch_card": {
+            "one": "Carte archivée",
+            "many": "Cartes archivées"
+        },
+        "arch_board": {
+            "many": "Tableaux archivés",
+            "one": "Tableau archivé"
+        },
+        "orgs": {
+            "one": "Organisation",
+            "many": "Organisations"
+        },
+        "pref": {
+            "one": "Préférence",
+            "many": "Préférences"
+        },
+        "user_pref": {
+            "one": "Préférence utilisateur",
+            "many": "Préférences utilisateur"
+        },
+        "product": {
+            "one": "Produit",
+            "many": "Produits"
+        },
+        "member": {
+            "one": "Membre",
+            "many": "Membres"
+        },
+        "comment": {
+            "one": "Commentaire",
+            "many": "Commentaires"
+        },
+        "vote_lower": {
+            "one": "vote",
+            "many": "votes"
+        },
+        "prefix": {
+            "one": "Préfixe",
+            "many": "Préfixes"
+        },
+        "webhook": {
+            "many": "Webhooks",
+            "one": "Webhook"
+        },
+        "name": {
+            "one": "Nom",
+            "many": "Noms"
+        },
+        "channel": {
+            "one": "Canal",
+            "many": "Canaux"
+        },
+        "flag": {
+            "one": "Drapeau",
+            "many": "Drapeaux"
+        },
+        "bio": "Biographie",
+        "visibility": "Visibilité",
+        "in_lower": "dans",
+        "in": "Dans",
+        "usage": "Utilisation",
+        "bg_img": "Image d'arrière-plan"
+    },
+    "trello": {
+        "colorblind": "Mode daltonien",
+        "summ": "Envoi de résumés",
+        "marketing": "E-mails marketing (opt-in)",
+        "locale": "Région (sur Trello)",
+        "card_covers": "Images de couverture de carte",
+        "hide_votes": "Cacher les votes",
+        "template": "Est un modèle ?",
+        "pinned": "Épinglé",
+        "subbed": "Regardé",
+        "starred": "Favoris",
+        "voting": "Vote",
+        "due": "Échéance",
+        "voted": "Voté",
+        "last_act": "Dernière activité",
+        "add_rem_members": "Ajouter/supprimer des membres",
+        "old_desc": "Ancienne description",
+        "new_desc": "Nouvelle description",
+        "curr_list": "Liste actuelle",
+        "old_name": "Ancien nom",
+        "new_name": "Nouveau nom",
+        "old_comment": "Ancien commentaire",
+        "old_due": "Ancienne date limite",
+        "new_due": "Nouvelle date limite",
+        "one_chkitem_name": "Ancien nom d'élément de check-list",
+        "one_chklist_name": "Ancien nom de check-list",
+        "item_src": "Source de l'élément",
+        "to_board": "Au tableau",
+        "custom_field": "Champ personnalisé",
+        "old_v": "Ancienne valeur",
+        "new_v": "Nouvelle valeur",
+        "products": {
+            "37": "⭐ Trello Gold mensuel",
+            "38": "🌟 Trello Gold annuel",
+            "10": "💼 Trello Gold de la Classe Business"
+        },
+        "perm_levels": {
+            "public": "Public",
+            "org": "Équipe visible",
+            "private": "Privé"
+        },
+        "invite_perms": {
+            "members": "Tous les membres",
+            "admins": "Administrateurs"
+        },
+        "comment_perms": {
+            "disabled": "Désactivé",
+            "members": "Tous les membres",
+            "org": "Membres de l'organisation",
+            "public": "Tout utilisateur Trello"
+        },
+        "vote_perms": {
+            "disabled": "Désactivé",
+            "members": "Tous les membres",
+            "public": "Tout utilisateur Trello",
+            "org": "Membres de l'organisation"
+        },
+        "card_aging": "Vieillissement de la carte",
+        "card_age": {
+            "regular": "Habituel",
+            "pirate": "Pirate"
+        },
+        "label_color": {
+            "yellow": "Jaune",
+            "red": "Rouge",
+            "orange": "Orange",
+            "lime": "Vert citron",
+            "purple": "Violet",
+            "blue": "Bleu",
+            "sky": "Bleu ciel",
+            "pink": "Rose",
+            "none": "Pas de couleur",
+            "green": "Vert",
+            "black": "Noir"
+        },
+        "member_type": {
+            "normal": "Normal",
+            "admin": "Administrateur"
+        },
+        "self_join": "Autoriser les membres de l'équipe à modifier et rejoindre",
+        "archived_lower": "archivé",
+        "prev_list": "Liste précédente",
+        "new_comment": "Nouveau commentaire",
+        "from_board": "Du tableau"
+    },
+    "webhook_cmd": {
+        "none": "Il n'y a pas de webhook sur ce serveur connecté à Trello.",
+        "invalid": "Identifiant de webhook invalide !",
+        "not_found": "Ce webhook n'existe pas !",
+        "model_filter": "Mode filtrage de liste/carte",
+        "whitelist": "Liste blanche",
+        "blacklist": "Liste noire",
+        "filtered_list": {
+            "one": "Liste filtrée",
+            "many": "Listes filtrées"
+        },
+        "filtered_card": {
+            "one": "Carte filtrée",
+            "many": "Cartes filtrées"
+        },
+        "allowed_actions": {
+            "one": "Action autorisée",
+            "many": "Actions autorisées"
+        },
+        "dwh": {
+            "one": "Webhook Discord",
+            "many": "Webhooks Discord"
+        },
+        "discord_webhook": "Webhook Discord",
+        "trello_webhook": "Webhook Trello",
+        "owned_by": "Détenu par",
+        "dwh_missing": "Le webhook Discord connecté à ce webhook est manquant !",
+        "twh_missing": "L'utilisateur qui a installé le webhook est manquant, ce qui peut empêcher le webhook de pouvoir envoyer !",
+        "try_repair": "Vous pouvez réparer ce problème avec `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "add_header": "Comment souhaiteriez-vous que votre webhook soit configuré ?",
+        "menu": {
+            "add": "Ajouter un webhook",
+            "exist": "Utilisez un webhook existant",
+            "link": "Utilisez un lien vers le webhook"
+        },
+        "edit_menu": {
+            "on": "Activer",
+            "off": "Désactiver",
+            "filter": "Modifier les filtres",
+            "delete": "Supprimer un webhook",
+            "repair": "Réparer un webhook",
+            "locale": "Modifier la région",
+            "lists": "Modifier les listes filtrées",
+            "cards": "Modifier les cartes filtrées",
+            "wlist": "Modifier les filtres en liste blanche",
+            "blist": "Modifier les filtres en liste noire"
+        },
+        "no_channels": "Aucun canal m'autorisant à gérer les webhooks n'a été trouvé.",
+        "choose_channel": "Choisissez le canal dans lequel le webhook publiera.",
+        "couldnt_create": "Je n'ai pas pu créer le webhook ! Cela est probablement dû à un changement soudain de permission dans le processus !",
+        "created": "A créé le webhook pour \"{{&name}}\".",
+        "create_confirm": "Ce webhook pour le tableau Trello \"{{&name}}\" a débuté ! Les actions devraient apparaître sous peu…",
+        "no_dwh": "Vous n'avez pas de webhook Discord à lier !",
+        "choose_existwh": "Choisissez le webhook à utiliser.",
+        "input_link": "Collez le lien du webhook que vous souhaitez utiliser.",
+        "no_server_link": "Ce webhook n'est pas sur le serveur !",
+        "wywtd": "Choisissez ce que vous souhaitez faire avec ce webhook.",
+        "wh_off": "Le webhook a été désactivé.",
+        "wh_on": "Le webhook a été activé.",
+        "deleted": "A supprimé ce webhook.",
+        "filter_update": "A mis à jour les filtres du webhook.",
+        "repair_dwh_header": "Le webhook Discord est manquant. Comment souhaitez-vous créer un nouveau ?",
+        "repaired_wh": "Webhook réparé",
+        "repaired": "Aucun problème avec le webhook n'a été réparé.",
+        "to_wlist": "A modifié la stratégie de filtrage en liste blanche.",
+        "to_blist": "A modifié la stratégie de filtrage en liste noire.",
+        "lists_updated": "Les listes filtrées ont été sauvegardées.",
+        "cards_updated": "Les cartes filtrées ont été sauvegardées.",
+        "choose_lists": "Choisissez les listes qui seront filtrées. Ne choisir aucune liste équivaut à désactiver le filtrage de liste.",
+        "choose_cards": "Choisissez les cartes qui seront filtrées. Si vous ne choisissez aucune carte, le filtrage de carte sera désactivé.",
+        "no_access": "Soit ce tableau n'existe plus, soit vous n'y avez pas accès !",
+        "locale_unset": "Supprime la région du webhook.",
+        "locale_set": "Définit la région du webhook à **{{&name}}**.",
+        "unknown": "inconnu",
+        "header": "Utilisez `{{&cleanPrefix}}webhook <webhookID>` pour voir un webhook et `{{&cleanPrefix}}editwebhook <webhookID>` pour le modifier.",
+        "no_link": "Je n'ai pas pu trouver un lien au webhook en entrée !",
+        "confirm_delete": "Êtes-vous sûr(e) de vouloir supprimer ce webhook ?",
+        "max_wh": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un Patreon ! (`{{&cleanPrefix}}donate`)"
+    },
+    "cooldown_msg": "Cette commande doit être refroidie ! *({{seconds}})*",
+    "bad_args": "Pas assez d'arguments !",
+    "deprecated": "Cette commande n'est plus disponible !",
+    "use_this": "Utilisez plutôt cette commande :",
+    "command_permissions": {
+        "attach": "J'ai besoin de la permission `Attach Files` pour utiliser cette commande !",
+        "emoji": "J'ai besoin de la permission `Use External Emojis` pour utiliser cette commande !",
+        "embed": "J'ai besoin de la permission `Embed Links` pour utiliser cette commande !",
+        "trelloRole": "Cette commande requiert que vous soyez le propriétaire du serveur ou que vous ayez un rôle nommé `Trello` !",
+        "elevated": "Seuls les utilisateurs élevés du robot peuvent utiliser cette commande !",
+        "auth": "Vous n'avez pas autorisé votre compte Trello avec Discord !\nAutorisez-le avec la commande `{{&cleanPrefix}}auth` !",
+        "selectedBoard": "Il n'y a aucun tableau sélectionné !\nSélectionnez un tableau avec la commande `{{&cleanPrefix}}switch` !",
+        "discordAuth": "Vous n'avez pas autorisé votre compte Trello avec Discord !\nAutorisez-le avec la commande `{{&cleanPrefix}}auth` !",
+        "webhooks": "J'ai besoin de la permission `Manage Webhooks` pour utiliser cette commande !",
+        "userData": "Vos paramètres ne sont pas dans la base de données !"
+    },
+    "format": {
+        "second": {
+            "one": "{{seconds}} seconde",
+            "many": "{{seconds}} secondes"
+        }
+    },
+    "categories": {
+        "general": "Général",
+        "dev": "Développeur",
+        "user": "Gestion des utilisateurs",
+        "view": "Visualisation",
+        "webhook": "Webhooks",
+        "edit": "Modification",
+        "hidden": "Caché",
+        "misc": "Divers"
+    },
+    "commands": {
+        "github": {
+            "description": "Envoie le lien vers le robot open source."
+        },
+        "invite": {
+            "description": "Envoie le lien d'invitation du robot."
+        },
+        "serverinvite": {
+            "description": "Envoie l'invitation pour le serveur de support."
+        },
+        "asynceval": {
+            "description": "Évalue le code de manière asynchrone.",
+            "usage": "<code>",
+            "note": "À cause du wrapper asynchrone IIFE ajouté à cette commande, il est nécessaire d'utiliser l'instruction return pour retourner un résultat.\nPar exemple `{{&cleanPrefix}}aeval return 1`"
+        },
+        "eval": {
+            "description": "Évalue le code.",
+            "usage": "<code>"
+        },
+        "exec": {
+            "description": "Utilise `child_process.exec`.",
+            "usage": "<command> …"
+        },
+        "reload": {
+            "description": "Recharge les commandes."
+        },
+        "reloadlocale": {
+            "description": "Recharge les fichiers de paramètres régionaux."
+        },
+        "reloadone": {
+            "description": "Recharge les commandes habituelles.",
+            "usage": "<commandName> [commandName] …"
+        },
+        "reloadwebserver": {
+            "description": "Redémarre le serveur web."
+        },
+        "restart": {
+            "description": "Redémarre le robot."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "auth": {
+            "description": "Obtient le lien d'autorisation pour connecter votre compte Discord à votre compte Trello."
+        },
+        "donate": {
+            "description": "Obtient le lien de don pour le développeur."
+        }
     }
 }
