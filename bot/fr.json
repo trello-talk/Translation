@@ -492,6 +492,23 @@
         },
         "donate": {
             "description": "Obtient le lien de don pour le développeur."
+        },
+        "help": {
+            "description": "Affiche un message d'aide et donne des informations sur les commandes.",
+            "usage": "[command]"
+        },
+        "ping": {
+            "description": "Pong !"
+        },
+        "locale": {
+            "usage": "[\"réglage utilisateur\"|\"réglage serveur\"] [locale]",
+            "description": "Vous permet de définir votre région ou celle du serveur. S'exécute sans argument pour une liste de régions."
+        },
+        "prefix": {
+            "description": "Vous permet de définir vos préfixes ou ceux du serveur."
+        },
+        "info": {
+            "description": "Donne des informations à propos du robot."
         }
     }
 }
