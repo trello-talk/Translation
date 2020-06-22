@@ -77,7 +77,10 @@
         "new_due": "Nueva fecha de vencimiento",
         "old_due": "Antigua fecha de vencimiento",
         "due": "Vencimiento",
-        "summ": "Enviar resúmenes"
+        "summ": "Enviar resúmenes",
+        "custom_field": "Campo personalizado",
+        "old_v": "Valor antiguo",
+        "new_v": "Valor nuevo"
     },
     "webhook_cmd": {
         "whitelist": "Lista blanca",
@@ -146,7 +149,7 @@
         "no_link": "¡No pude encontrar una URL de webhook en la entrada!",
         "input_link": "Pegue el enlace del webhook que desea usar.",
         "no_dwh": "¡No tienes webhooks de Discord para vincular!",
-        "create_confirm": "¡Este webhook para el tablero de Trello \"{{&name}}\" ha empezado! Las acciones deberían aparecer en breve…",
+        "create_confirm": "¡Este webhook para el tablero de Trello \"{{&name}}\" ha sido activado! Las acciones deberían aparecer en breve…",
         "created": "Webhook creado para \"{{&name}}\".",
         "couldnt_create": "¡No pude crear el webhook! ¡Esto probablemente se deba a algún cambio repentino de permiso en el proceso!",
         "choose_channel": "Elija en qué canal se publicará el webhook.",
@@ -155,7 +158,8 @@
         "try_repair": "Puede reparar este problema con `{{&cleanPrefix}}editwebhook {{&id}} repair`",
         "twh_missing": "Falta el usuario que configuró el webhook, ¡esto puede detener el envío del webhook!",
         "dwh_missing": "¡Falta el webhook de Discord conectado a este webhook!",
-        "none": "No hay webhooks en este servidor conectados a Trello."
+        "none": "No hay webhooks en este servidor conectados a Trello.",
+        "header": "Usa `{{&cleanPrefix}}webhook <ID del webhook>` para ver un webhook i `{{&cleanPrefix}}editwebhook <ID del webhook>` para editarlo."
     },
     "deprecated": "¡Este comando no está disponible!",
     "use_this": "Utilice este comando en su lugar:",
@@ -197,16 +201,19 @@
             "description": "Enumera todas las tarjetas de esa lista."
         },
         "lists": {
-            "usage": "[página]"
+            "usage": "[página]",
+            "description": "Lista de todas las listas abiertas en este tablero. Puedes ver las listas archivadas con `{{&cleanPrefix}}listarchive`."
         },
         "board": {
             "description": "Obtenga la información del tablero actual."
         },
         "boards": {
-            "usage": "[página]"
+            "usage": "[página]",
+            "description": "Lista de todos los tableros que puedes editar."
         },
         "switch": {
-            "usage": "[ID del tablero|nombre del tablero]"
+            "usage": "[ID del tablero|nombre del tablero]",
+            "description": "Selecciona un tablero a usar para otro comando. Usa el comando `{{&cleanPrefix}}boards` para ver qué tablero tienes seleccionado."
         },
         "me": {
             "description": "Ver información sobre su cuenta de Trello."
@@ -233,7 +240,8 @@
             "description": "Reinicia el servidor web."
         },
         "reloadone": {
-            "description": "Recargar comandos singulares."
+            "description": "Recargar comandos singulares.",
+            "usage": "<Nombre del comando> [Nombre del comando] …"
         },
         "reloadlocale": {
             "description": "Recargar archivos de idiomas."
@@ -266,31 +274,39 @@
             "description": "Obtenga el enlace de autenticación para conectar su cuenta de Discord a su cuenta de Trello."
         },
         "toggleuser": {
-            "usage": "<ID del usuario>"
+            "usage": "<ID del usuario>",
+            "description": "Cambia la lista negra del usuario"
         },
         "toggleserver": {
-            "usage": "<ID del servidor]"
+            "usage": "<ID del servidor]",
+            "description": "Cambia la lista negra del servidor."
         },
         "setmaxwebhooks": {
             "usage": "<ID del servidor> [límite]"
         },
         "remwebhook": {
-            "usage": "<ID del webhook>"
+            "usage": "<ID del webhook>",
+            "description": "Elimina un webhook de tu servidor."
         },
         "addwebhook": {
-            "usage": "[Nombre del tablero|ID del tablero]"
+            "usage": "[Nombre del tablero|ID del tablero]",
+            "description": "Crea un webhook en tu servidor."
         },
         "webhook": {
-            "usage": "<ID del webhook>"
+            "usage": "<ID del webhook>",
+            "description": "Obtenga la información sobre un webhook específico."
         },
         "webhooks": {
-            "usage": "[página]"
+            "usage": "[página]",
+            "description": "Lista de los webhooks en tu servidor."
         },
         "comment": {
-            "usage": "[Nombre de la tarjeta|ID de la tarjeta] [comentario]"
+            "usage": "[Nombre de la tarjeta|ID de la tarjeta] [comentario]",
+            "description": "Comenta en una tarjeta en el tablero actual."
         },
         "addlist": {
-            "usage": "[nombre]"
+            "usage": "[nombre]",
+            "description": "Crea una lista en el tablero actual."
         },
         "deletecard": {
             "usage": "[Nombre de la tarjeta|ID de la tarjeta]",
@@ -326,6 +342,31 @@
         "listarchive": {
             "usage": "[página]",
             "description": "Enumera todas las listas archivadas en el tablero actual."
+        },
+        "editlist": {
+            "description": "Edita las propiedades de una lista. Comprueba la nota para subcomandos y usos.",
+            "note": "`name [nuevo nombre]` - Cambia el nombre de la lista\n`archive`, `unarchive` - Cambia si la lista debe estar archivada o no",
+            "usage": "[Nombre de la lista|ID de la lista] [subcomando] …"
+        },
+        "editwebhook": {
+            "description": "Edita un webhook en tu servidor.  Comprueba la nota para subcomandos y usos.",
+            "usage": "<ID del webhook> [subcomando]"
+        },
+        "shardinfo": {
+            "description": "Obtenga el estado de cada fragmento."
+        },
+        "editcard": {
+            "usage": "[Nombre de la tarjeta|ID de la tarjeta] [subcomando] …",
+            "description": "Edita las propiedades de una tarjeta. Comprueba la nota para subcomandos y usos.",
+            "note": "`name [nuevo nombre]` - Cambia el nombre de la tarjeta\n`archive`, `unarchive` - Cambia si la tarjeta debe estar archivada o no\n`desc [nueva descripción]` - Cambia la descripción de la tarjeta\n`removedesc` - Elimina la descripción de la tarjeta\n`duedone` - Cambia el estado de vencimiento de la tarjeta\n`removedue` - Elimina la fecha de vencimiento de la tarjeta"
+        },
+        "editboard": {
+            "description": "Edita las propiedades del tablero actual. Comprueba la nota para subcomandos y usos.",
+            "usage": "[subcomando] …",
+            "note": "`name [nuevo nombre]` - Cambia el nombre del tablero (administrador del tablero)\n`archive`, `unarchive` - Cambia si el tablero debe estar archivado o no (administrador del tablero)\n`desc [nueva descripción]` - Cambia la descripción del tablero\n`removedesc` - Elimina la descripción del tablero\n`commentperms` - Cambia los permisos para comentar (administrador del tablero)\n`voteperms` - Cambia los permisos para votar (administrador del tablero)\n`inviteperms` - Cambia los permisos para invitar (administrador del tablero)"
+        },
+        "cleardata": {
+            "description": "Elimina tu datos de usuario de Taco."
         }
     },
     "bad_args": "¡No hay suficientes argumentos!",
@@ -344,7 +385,8 @@
         "cancel_confirm": "Escriba `yes` para confirmar. Cualquier otro mensaje cancelará la confirmación.",
         "cancel_input": "Escribir \"{{&cancelPrompt}}\" cancelará la entrada.",
         "timeout": "Se agotó el tiempo de espera.",
-        "cancel": "Escribir \"cancel\" cerrará este mensaje."
+        "cancel": "Escribir \"cancel\" cerrará este mensaje.",
+        "no_search": "No hubo resultados con esa búsqueda."
     },
     "reload": {
         "done": "Comandos recargados.",
@@ -594,12 +636,71 @@
     },
     "boards": {
         "wywtd": "Elija lo que deseas hacer con este tablero.",
-        "choose": "Escriba el número del tablero que desea usar."
+        "choose": "Escriba el número del tablero que desea usar.",
+        "menu": {
+            "remove_desc": "Elimina la descripción del tablero",
+            "archive_on": "Cerrar tablero",
+            "archive_off": "Abrir tablero",
+            "desc": "Edita la descripción del tablero",
+            "name": "Edita el nombre del tablero",
+            "sub_on": "Sigue este tablero",
+            "sub_off": "Deja de seguir este tablero"
+        },
+        "unarchived": "El tablero \"{{&name}}\" archivado ha sido eliminado.",
+        "archived": "Tablero \"{{&name}}\" archivado.",
+        "set_desc": "Define la descripción del tablero \"{{&name}}\".",
+        "input_desc": "Escribe la nueva descripción para el tablero.",
+        "removed_desc": "Elimina la descripción del tablero \"{{&name}}\".",
+        "gone": "¡Este tablero ya no existe! ¡Cambie a otro con el comando: `{{&cleanPrefix}}switch`!",
+        "set_name": "Nombre del tablero cambiado de \"{{&old}} a \"{{&new}}\".",
+        "need_admin": "¡Necesitas permisos de administrador en el tablero!",
+        "none": "No estás asignado a ningún tablero. Puedes crear uno en <https://trello.com/>.",
+        "header": "Usa `{{&cleanPrefix}}switch <nombre del tablero|ID del tablero>` para cambiar de tablero.",
+        "switch": "Cambiado a \"{{&name}}\" (`{{&id}}`)."
     },
     "trello_response": {
         "aborted": "¡Trello tardó demasiado en enviar una respuesta! ¡Intenta nuevamente más tarde!",
         "internal": "¡Se ha producido un error interno del servidor al final de Trello! ¡Intenta nuevamente más tarde!",
         "ratelimit": "¡Se están enviando demasiadas solicitudes! ¡Intenta nuevamente más tarde!"
     },
-    "error": "¡Se produjo un error al procesar ese comando!"
+    "error": "¡Se produjo un error al procesar ese comando!",
+    "cards": {
+        "menu": {
+            "archive_off": "Elimina la tarjeta archivada",
+            "remove_desc": "Elimina la descripción de la tarjeta",
+            "remove_due": "Elimina la fecha de vencimiento",
+            "name": "Edita el nombre de la tarjeta",
+            "desc": "Edita la descripción de la tarjeta",
+            "sub_on": "Sigue esta tarjeta",
+            "sub_off": "Deja de seguir esta tarjeta",
+            "attach": "Crear archivo adjunto"
+        },
+        "remove_confirm": "¿Estás seguro de que deseas eliminar \"{{&name}}\"? (`{{id}}`)",
+        "wywtd": "Elija qué deseas hacer con esta tarjeta.",
+        "archived": "Tarjeta \"{{&name}}\" archivada.",
+        "set_desc": "Define la descripción de la tarjeta \"{{&name}}\".",
+        "removed": "Tarjeta \"{{&name}}\" eliminada. (`{{id}}`)",
+        "removed_due": "Fecha de vencimiento eliminada para la tarjeta \"{{&name}}\".",
+        "none": "Este tablero no tiene tarjetas.",
+        "arch_none": "Este tablero no tiene tarjetas archivadas.",
+        "set_name": "Nombre de la tarjeta cambiado de \"{{&old}} a \"{{&new}}\".",
+        "unarchived": "La tarjeta \"{{&name}}\" archivada ha sido eliminada.",
+        "input_desc": "Escribe la nueva descripción para la tarjeta."
+    },
+    "prefix": {
+        "footer": "Prefijos con el icono 🔒 no se pueden eliminar.",
+        "removed": "Prefijo `{{&prefix}}` eliminado.",
+        "limit": "¡Tienes demasiados prefijos! ¡Elimina al menos uno para poder añadir más!",
+        "none": "¡No tienes prefijos a eliminar!"
+    },
+    "vote": {
+        "review": "revisar",
+        "rate": "puntuar",
+        "title": "Puedes votar, revisar o puntuar a {{&username}} en estos sitios:"
+    },
+    "lists": {
+        "menu": {
+            "archive_off": "Elimina la lista archivada"
+        }
+    }
 }
