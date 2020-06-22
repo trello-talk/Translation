@@ -361,7 +361,14 @@
         "edit_menu": {
             "off": "Dezaktywuj",
             "on": "Aktywuj",
-            "filter": "Edytuj filtry"
+            "filter": "Edytuj filtry",
+            "delete": "Usuń webhook",
+            "repair": "Napraw webhook",
+            "locale": "Zmień język",
+            "lists": "Zmien filtry listy",
+            "wlist": "Zmień filtr na białą liste",
+            "blist": "Zmień filtr na czarną liste",
+            "cards": "Zmień przefiltrowane karty"
         },
         "invalid": "Niepoprawne ID webhooka!",
         "not_found": "Ten webhook nie istnieje!",
@@ -374,6 +381,19 @@
             "add": "Dodaj webhooka",
             "exist": "Użyj istniejącego webhooka",
             "link": "Użyj linku webhooka"
-        }
+        },
+        "choose_channel": "Wybierz kanał gdzie mam wysyłać webhook'a.",
+        "created": "Stworzono webhook dla \"{{&name}}\".",
+        "no_dwh": "Nie masz webhooków do podpięcia!",
+        "choose_existwh": "Wybierz którego webhooka chcesz użyć.",
+        "input_link": "Wklej link webhooka, którego chcesz użyć.",
+        "no_link": "Nie moge znaleźć linku w argumencie!",
+        "no_server_link": "Ten webhook nie jest na tym serwerze!",
+        "wywtd": "Wybierz co chcesz zrobić z tym webhookiem.",
+        "wh_off": "Webhook został wyłączony.",
+        "no_channels": "Nie znaleziono kanałów, które pozwalałyby mi zarządzać webhookami.",
+        "couldnt_create": "Nie mogłem utworzyć webhooka! Jest to prawdopodobnie spowodowane nagłą zmianą uprawnień w procesie!",
+        "create_confirm": "Webhook dla tablicy Trello \"{{&name}}\" zaczyna pracę! Akcje zaczną się pokazywac niedługo…",
+        "wh_on": "Webhook został włączony."
     }
 }
