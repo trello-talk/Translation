@@ -501,14 +501,459 @@
             "description": "Pong !"
         },
         "locale": {
-            "usage": "[\"réglage utilisateur\"|\"réglage serveur\"] [locale]",
+            "usage": "[\"userset\"|\"serverset\"] [locale]",
             "description": "Vous permet de définir votre région ou celle du serveur. S'exécute sans argument pour une liste de régions."
         },
         "prefix": {
-            "description": "Vous permet de définir vos préfixes ou ceux du serveur."
+            "description": "Vous permet de définir vos préfixes ou ceux du serveur.",
+            "usage": "[\"set\"|\"add\"|\"remove\"] [prefix]"
         },
         "info": {
             "description": "Donne des informations à propos du robot."
+        },
+        "shardinfo": {
+            "description": "Donne les statistiques de chaque partition."
+        },
+        "me": {
+            "description": "Voir les informations à propos de votre compte Trello."
+        },
+        "switch": {
+            "description": "Sélectionne un tableau à utiliser pour d'autres commandes. Utilisez la commande `{{&cleanPrefix}}` pour voir les tableaux que vous pouvez sélectionner.",
+            "usage": "[boardID|boardName]"
+        },
+        "boards": {
+            "description": "Liste tous les tableaux que vous pouvez gérer.",
+            "usage": "[page]"
+        },
+        "board": {
+            "description": "Donne des informations sur le tableau actuel."
+        },
+        "lists": {
+            "description": "Liste toutes les listes ouvertes du tableau actuel. Vous pouvez voir l'archive de la liste avec `{{&cleanPrefix}}listarchive`.",
+            "usage": "[page]"
+        },
+        "listarchive": {
+            "description": "Liste toutes les listes archivées dans le tableau actuel.",
+            "usage": "[page]"
+        },
+        "card": {
+            "description": "Donne des informations concernant une carte spécifique.",
+            "usage": "[cardName|cardID]"
+        },
+        "cardarchive": {
+            "description": "Liste toutes les cartes archivées dans le tableau actuel.",
+            "usage": "[page]"
+        },
+        "watchcard": {
+            "usage": "[cardName|cardID]",
+            "description": "Active/désactive l'observation d'une carte. Les cartes observées vous notifieront en cas de mise à jour sur [Trello](https://trello.com/)."
+        },
+        "watchlist": {
+            "description": "Active/désactive l'observation d'une liste. Les listes observées vous notifieront en cas de mise à jour sur [Trello](https://trello.com/).",
+            "usage": "[listName|listID]"
+        },
+        "watch": {
+            "usage": "[boardName|boardID]",
+            "description": "Active/désactive l'observation d'un tableau. Si aucun tableau n'est défini, le tableau actuel sera utilisé. Les tableaux observés vous notifieront en cas de mise à jour sur [Trello](https://trello.com/)."
+        },
+        "star": {
+            "description": "Active/désactive la mise en favori d'un tableau. Si aucun tableau n'est défini, le tableau actuel est utilisé. Les tableaux mis en favoris apparaîtront en haut de votre liste des tableaux sur [Trello](https://trello.com/).",
+            "usage": "[boardName|boardID]"
+        },
+        "editlist": {
+            "description": "Modifie les propriétés d'une liste. Vérifiez la note pour les sous-commandes et leur usage.",
+            "note": "`name [newName]` - Renomme la list\n`archive`, `unarchive` - Active/désactive l'archivage de la liste",
+            "usage": "[listName|listID] [subcommand] …"
+        },
+        "editcard": {
+            "description": "Modifie les propriétés d'une carte. Vérifiez la note pour les sous-commandes et leur usage.",
+            "usage": "[cardName|cardID] [subcommand] …",
+            "note": "`name [newName]` - Renomme la carte\n`archive`, `unarchive` - Active/désactive l'archivage de la carte\n`desc [newDescription]` - Définit la description de la carte\n`removedesc` - Supprime la description de la carte\n`duedone` - Active/désactive l'achèvement de la date limite de la carte\n`removedue` - Supprime la date limite de la carte"
+        },
+        "editboard": {
+            "description": "Modifie les propriétés de la carte actuelle. Vérifiez la note pour les sous-commandes et leur usage.",
+            "usage": "[subcommand] …",
+            "note": "`name [newName]` - Renomme le tableau (administrateur du tableau)\n`archive`, `unarchive` - Active/désactive l'archivage du tableau (administrateur du tableau)\n`desc [newDescription]` - Définit la description du tableau\n`removedesc` - Supprime la description du tableau\n`commentperms` - Modifie les droits de commentaire (administrateur du tableau)\n`voteperms` - Modifie les droits de vote (administrateur du tableau)\n`inviteperms` - Modifie les droits d'invitation (administrateur du tableau)"
+        },
+        "addcard": {
+            "description": "Créé une carte.",
+            "usage": "[listName|listID] [name]"
+        },
+        "deletecard": {
+            "description": "Supprime une carte.",
+            "usage": "[cardName|cardID]"
+        },
+        "addlist": {
+            "description": "Créé une liste dans le tableau actuel.",
+            "usage": "[name]"
+        },
+        "comment": {
+            "description": "Commentez une carte dans le tableau actuel.",
+            "usage": "[cardName|cardID] [comment]"
+        },
+        "webhooks": {
+            "description": "Liste les webhooks sur votre serveur.",
+            "usage": "[page]"
+        },
+        "webhook": {
+            "description": "Donne des informations à propos d'un webhook spécifique.",
+            "usage": "<webhookID>"
+        },
+        "addwebhook": {
+            "description": "Créé un webhook sur votre serveur.",
+            "usage": "[boardID|boardName]"
+        },
+        "editwebhook": {
+            "description": "Modifie un webhook sur votre serveur. Vérifiez la note pour les sous-commandes et leur usage.",
+            "usage": "<webhookID> [subcommand]",
+            "note": "`activate`, `deactivate` - Active/désactive le webhook\n`filters` - Modifie les filtres (anciennement \"Webhook Bits\") pour ce webhook\n`locale [locale]` - Définit la région pour le webhook\n`repair` - Répare tout problème avec le webhook\n`delete` - Supprime le webhook\n`whitelist`, `blacklist` - Modifie la stratégie de filtrage pour le webhook\n`lists` - Modifie les listes filtrées\n`cards` - Modifie les cartes filtrées"
+        },
+        "remwebhook": {
+            "description": "Supprime un webhook de votre serveur.",
+            "usage": "<webhookID>"
+        },
+        "clearauth": {
+            "description": "Retire votre autorisation Trello. N'exécutez pas cela à moins de devoir réellement le faire."
+        },
+        "setmaxwebhooks": {
+            "description": "Définit la limite de webhooks pour ce serveur.",
+            "usage": "<serverID> [limit]"
+        },
+        "vote": {
+            "description": "Affiche les liens pour voter pour Taco."
+        },
+        "toggleserver": {
+            "description": "Active/désactive la liste noire du serveur.",
+            "usage": "<serverID>"
+        },
+        "toggleuser": {
+            "description": "Active/désactive la liste noire de l'utilisateur",
+            "usage": "<userID>"
+        },
+        "list": {
+            "description": "Liste toutes les cartes de cette liste.",
+            "usage": "[listName|listID] [page]"
+        },
+        "cleardata": {
+            "description": "Supprime vos données utilisateur de Taco."
         }
-    }
+    },
+    "boards": {
+        "menu": {
+            "comment": "Modifier les droits de commentaire ({{&value}})",
+            "invite": "Modifier les droits d'ajout/de suppression de membre ({{&value}})",
+            "name": "Modifier le nom du tableau",
+            "archive_on": "Fermer le tableau",
+            "archive_off": "Ouvrir le tableau",
+            "desc": "Modifier la description du tableau",
+            "remove_desc": "Supprimer la description du tableau",
+            "sub_on": "Regarder ce tableau",
+            "sub_off": "Arrêter de regarder ce tableau",
+            "vote": "Modifier les droits de vote ({{&value}})"
+        },
+        "input_desc": "Tapez la nouvelle description du tableau.",
+        "set_invite_perms": "Définit les droits d'invitation à {{&value}}.",
+        "none": "Vous n'êtes assigné(e) à aucun tableau. Vous pouvez en créer un sur <https://trello.com/>.",
+        "switch": "Basculé à \"{{&name}}\" (`{{&id}}`).",
+        "gone": "Ce tableau n'existe plus ! Basculez sur un autre tableau avec `{{&cleanPrefix}}switch` !",
+        "set_name": "Renomme le tableau de \"{{&old}}\" en \"{{&new}}\".",
+        "input_name": "Tapez le nouveau nom que vous souhaitez donner au tableau.",
+        "archived": "A archivé le tableau \"{{&name}}\".",
+        "unarchived": "A supprimé le tableau \"{{&name}}\" des archives.",
+        "set_desc": "Définit la description du tableau \"{{&name}}\".",
+        "removed_desc": "A supprimé la description du tableau \"{{&name}}\".",
+        "need_admin": "Vous devez avoir les droits d'administrateur sur le tableau !",
+        "set_comment_perms": "Définit les droits de commentaire à {{&value}}.",
+        "set_vote_perms": "Définit les droits de vote à {{&value}}.",
+        "header": "Utilisez `{{&cleanPrefix}}switch <identifiantTableau|nomTableau>` pour basculer entre les tableaux.",
+        "choose": "Tapez le numéro du tableau que vous souhaitez utiliser.",
+        "wywtd": "Choisissez ce que vous souhaitez faire avec ce tableau."
+    },
+    "cards": {
+        "none": "Ce tableau n'a pas de carte.",
+        "arch_none": "Ce tableau n'a pas de carte archivée.",
+        "arch_header": "Utilisez `{{&cleanPrefix}}editcard <identifiantListe|nomListe> unarchive` pour ouvrir une carte.",
+        "menu": {
+            "remove_desc": "Supprimer la description de la carte",
+            "sub_on": "Regarder cette carte",
+            "due_on": "Marquer l'échéance comme terminée",
+            "attach": "Créer une pièce jointe",
+            "name": "Modifier le nom de la carte",
+            "archive_on": "Archiver la carte",
+            "archive_off": "Supprimer la carte des archives",
+            "desc": "Modifier la description de la carte",
+            "sub_off": "Arrêter de regarder cette carte",
+            "remove_due": "Supprimer l'échéance",
+            "due_off": "Marquer l'échéance comme non terminée"
+        },
+        "unarchived": "A supprimé la carte \"{{&name}}\" des archives.",
+        "input_new": "Tapez le nom de la carte que vous souhaitez ajouter.",
+        "removed_due": "A supprimé la date d'échéance pour la carte \"{{&name}}\".",
+        "due_off": "A marqué la date d'échéance comme inachevée pour la carte \"{{&name}}\".",
+        "input_comment": "Tapez le message que vous souhaitez commenter sur cette carte.",
+        "error": "Je n'ai pas pu obtenir les données de la carte ! À moins que quelqu'un l'ait supprimée avant la requête, ça pourrait être une erreur de la part de Trello !",
+        "choose": "Tapez le numéro de la carte que vous souhaitez utiliser.",
+        "wywtd": "Choisissez ce que vous souhaitez faire avec cette carte.",
+        "set_name": "A renommé la carte de \"{{&old}}\" en \"{{&new}}\".",
+        "input_name": "Tapez le nouveau nom de la carte que vous souhaitez renommer.",
+        "archived": "A archivé la carte \"{{&name}}\".",
+        "set_desc": "Définir la description de la carte pour \"{{&name}}\".",
+        "input_desc": "Tapez la nouvelle description de la carte.",
+        "removed_desc": "A supprimé la description de la carte pour \"{{&name}}\".",
+        "created": "A créé la carte \"{{&name}}\". (`{{id}}`)",
+        "remove_confirm": "Êtes-vous sûr(e) de vouloir supprimer \"{{&name}}\" ? (`{{id}}`)",
+        "removed": "A supprimé la carte \"{{&name}}\". (`{{id}}`)",
+        "due_on": "A marqué la date d'échéance comme terminée pour la carte \"{{&name}}\".",
+        "commented": "A créé le commentaire sur \"{{&name}}\".",
+        "input_attach": "Collez l'URL de la pièce jointe que vous souhaitez ajouter à la carte.",
+        "bad_attach": "URL de la pièce jointe invalide !",
+        "add_attach": "A créé une pièce jointe pour \"{{&name}}\"."
+    },
+    "lists": {
+        "list_none": "Cette liste n'a pas de cartes.",
+        "header": "Utilisez `{{&cleanPrefix}}list <identifiantListe|nomListe>` pour voir une liste.",
+        "wywtd": "Choisissez ce que vous souhaitez faire avec cette liste.",
+        "set_name": "A renommé la liste de \"{{&old}}\" en \"{{&new}}\".",
+        "input_new": "Tapez le nom de la liste que vous souhaitez ajouter.",
+        "created": "A créé la liste \"{{&name}}\". (`{{id}}`)",
+        "none": "Ce tableau n'a pas de listes.",
+        "arch_none": "Ce tableau n'a pas de liste archivée.",
+        "arch_header": "Utilisez `{{&cleanPrefix}}editlist <identifiantListe|nomListe> unarchive` pour ouvrir une liste.",
+        "list_header": "Utilisez `{{&cleanPrefix}}card <identifiantCarte|nomCarte` pour obtenir des informations sur une carte.",
+        "choose": "Tapez le numéro de la liste que vous souhaitez utiliser.",
+        "menu": {
+            "name": "Modifier le nom de la liste",
+            "archive_on": "Archiver la liste",
+            "archive_off": "Supprimer la liste des archives",
+            "sub_on": "Regarder cette liste",
+            "sub_off": "Arrêter de regarder cette liste"
+        },
+        "input_name": "Tapez le nouveau nom de la liste que vous souhaitez renommer.",
+        "archived": "A archivé la liste \"{{&name}}\".",
+        "unarchived": "A supprimé la liste \"{{&name}}\" des archives."
+    },
+    "trello_response": {
+        "ratelimit": "Trop de requêtes ont été envoyées ! Essayez une nouvelle fois !",
+        "internal": "Une erreur interne du serveur s'est produite de la part de Trello ! Essayez une nouvelle fois !",
+        "aborted": "Trello a pris trop de temps pour envoyer une réponse ! Essayez une nouvelle fois !",
+        "unauthorized": "Le dernier jeton utilisé a été invalidé ou révoqué ! Autorisez une nouvelle fois avec la commande `{{&cleanPrefix}}auth` !"
+    },
+    "prompt": {
+        "list": "Liste d'invités",
+        "input": "Tapez le message que vous souhaitez saisir.",
+        "timeout": "Votre dernière console a expiré.",
+        "canceled": "Votre dernière console a été annulée.",
+        "no_search": "Aucun résultat n'a été trouvé avec cette recherche.",
+        "input_canceled": "Votre dernière saisie a été annulée.",
+        "confirm": "Êtes-vous sûr(e) de vouloir faire cela ?",
+        "no_confirm": "Confirmation annulée.",
+        "select_cancel": "Tapez \"save\" pour sauvegarder la sélection, sinon tapez \"cancel\" pour quitter.",
+        "select_timeout": "Votre dernière invitation a pris trop de temps. Toutes les modifications ont été perdues.",
+        "choose": "Saisissez le nombre d'éléments que vous souhaitez utiliser.",
+        "cancel": "Tapez \"cancel\" pour fermer cette console.",
+        "cancel_input": "Taper \"{{&cancelPrompt}}\" annulera la saisie.",
+        "cancel_confirm": "Tapez `yes` pour confirmer. Tout autre message annulera cette confirmation.",
+        "select": "Tapez le numéro de l'élément pour changer sa valeur.",
+        "select_canceled": "Votre dernière invitation a été annulée. Toutes les modifications ont été perdues."
+    },
+    "prefix": {
+        "server": "Préfixe du serveur",
+        "can_add": {
+            "zero": "Vous ne pouvez pas ajouter d'autres préfixes.",
+            "one": "Vous pouvez ajouter {{count}} autres préfixes.",
+            "many": "Vous pouvez ajouter {{count}} autres préfixes."
+        },
+        "no_arg": "Indiquez le préfixe que vous souhaitez ajouter !",
+        "footer": "Les préfixes avec l'icône 🔒 ne peuvent pas être supprimés.",
+        "set_server": "Définissez le préfixe du serveur à `{{&prefix}}`.",
+        "removed": "A supprimé `{{&prefix}}` en tant que préfixe.",
+        "choose": "Tapez le numéro du préfixe que vous souhaitez supprimer.",
+        "char_limit": "Les préfixes ne peuvent pas dépasser 32 caractères !",
+        "mention": "Vous ne pouvez pas mentionner dans un préfixe !",
+        "already": "Ce préfixe existe déjà !",
+        "none": "Vous n'avez pas de préfixe à supprimer !",
+        "no_arg_server": "Indiquez le préfixe que vous souhaitez définir sur le serveur !",
+        "added": "A ajouté `{{&prefix}}` en tant que préfixe.",
+        "limit": "Vous avez trop de préfixes ! Supprimez-en au moins un pour pouvoir en ajouter d'autres !"
+    },
+    "user_mgmt": {
+        "sub_card": "En train de regarder la carte \"{{&name}}\". (`{{id}}`)",
+        "sub_list": "En train de regarder la liste \"{{&name}}\". (`{{id}}`)",
+        "sub_board": "Est en train de regarder le tableau \"{{&name}}\". (`{{id}}`)",
+        "unsub_board": "N'est plus en train de regarder le tableau \"{{&name}}\". (`{{id}}`)",
+        "star_board": "A créé une étoile pour le tableau \"{{&name}}\". (`{{id}}`)",
+        "star_error": "L'étoile du tableau n'a pas été trouvée ! Essayez encore plus tard !",
+        "clearauth": "Votre autorisation a été retirée.",
+        "cleardata": "Vos données personnelles ont été supprimées.",
+        "unsub_card": "N'est plus en train de regarder la carte \"{{&name}}\". (`{{id}}`)",
+        "unsub_list": "N'est plus en train de regarder la liste \"{{&name}}\". (`{{id}}`)",
+        "unstar_board": "A supprimé une étoile pour le tableau \"{{&name}}\". (`{{id}}`)",
+        "clearauth_confirm": "Êtes-vous sûr(e) de vouloir retirer votre autorisation ? Les événements suivants se produiront :\n- Votre jeton Trello sera invalidé.\n- Tout webhook créé ne fonctionnera plus et devra être réparé.",
+        "cleardata_confirm": "Êtes-vous sûr(e) de vouloir supprimer vos données ? Les événements suivants se produiront :\n- Vos préfixes et paramètres régionaux seront supprimés.\n- Vos identifiants seront supprimés.\n- Votre jeton Trello sera invalidé.\n- Tout webhook créé ne fonctionnera plus et devra être réparé."
+    },
+    "and_more": "Et {{count}} autres…",
+    "webhooks": {
+        "update_comment": "{{&member}} a mis à jour son commentaire sur \"{{&card}}\"",
+        "delete_comment": "{{&member}} a supprimé son commentaire sur \"{{&card}}\"",
+        "edit_card_desc": "{{&member}} a modifié la description pour la carte \"{{&card}}\"",
+        "rem_card_desc": "{{&member}} a supprimé la description pour la carte \"{{&card}}\"",
+        "move_card": "{{&member}} a déplacé la carte \"{{&card}}\" dans la liste \"{{&list}}\"",
+        "rename_card": "{{&member}} a renommé la carte \"{{&oldName}}\" en \"{{&card}}\"",
+        "due_on": "{{&member}} a complété la date d'échéance pour la carte \"{{&card}}\"",
+        "due_change": "{{&member}} a modifié la date d'échéance sur la carte \"{{&card}}\"",
+        "due_add": "{{&member}} a ajouté une date d'échéance pour la carte \"{{&card}}\"",
+        "due_remove": "{{&member}} a supprimé la date d'échéance de la carte \"{{&card}}\"",
+        "unarchive_card": "{{&member}} a supprimé la carte \"{{&card}}\" des archives",
+        "create_card": "{{&member}} a créé la carte \"{{&card}}\"",
+        "delete_card": "{{&member}} a supprimé la carte {{&cardID}}",
+        "unvote_card": "{{&member}} a supprimé son vote sur la carte \"{{&card}}\"",
+        "checkitem_state_on": "{{&member}} a complété \"{{&checklistItem}}\" sur la carte \"{{&card}}\"",
+        "checkitem_create": "{{&member}} a créé un élément de check-list pour \"{{&card}}\"",
+        "checkitem_delete": "{{&member}} a supprimé un élément de check-list de \"{{&card}}\"",
+        "checkitem_tocard": "{{&member}} a converti l'élément de check-list \"{{&card}}\" en une carte",
+        "checkitem_rename": "{{&member}} a renommé l'élément de la check-list dans la carte \"{{&card}}\"",
+        "checklist_move": "{{&member}} a déplacé une check-list dans \"{{&card}}\" à une autre position",
+        "checklist_rename": "{{&member}} a renommé une check-list dans la carte \"{{&card}}\"",
+        "checklist_delete": "{{&member}} a supprimé la check-list \"{{&checklist}}\" de \"{{&card}}\"",
+        "create_list": "{{&member}} a créé la liste \"{{&list}}\"",
+        "archive_list": "{{&member}} a archivé la liste \"{{&list}}\"",
+        "unarchive_list": "{{&member}} a supprimé la liste \"{{&list}}\" des archives",
+        "list_move": "{{&member}} a déplacé la liste \"{{&list}}\" à une autre position",
+        "create_label": "{{&member}} a créé une étiquette \"{{&label}}\"",
+        "label_rename": "{{&member}} a renommé l'étiquette \"{{&oldName}}\" en \"{{&label}}\"",
+        "delete_label": "{{&member}} a supprimé l'étiquette {{&labelID}}",
+        "unattach_card": "{{&member}} a supprimé la pièce jointe \"{{&attachment}}\" de la carte \"{{&card}}\"",
+        "card_remove_label": "{{&member}} a supprimé l'étiquette \"{{&label}}\" de la carte \"{{&card}}\"",
+        "card_add_member": "{{&member}} a ajouté {{&member2}} à la carte \"{{&card}}\"",
+        "card_remove_member": "{{&member}} a supprimé {{&member2}} de la carte \"{{&card}}\"",
+        "card_remove_self": "{{&member}} s'est supprimé de la carte \"{{&card}}\"",
+        "board_add_member": "{{&member}} a ajouté {{&member2}} au tableau",
+        "board_remove_member": "{{&member}} a supprimé {{&member2}} du tableau",
+        "board_left": "{{&member}} a quitté le tableau",
+        "board_join": "{{&member}} a rejoint le tableau",
+        "board_to_normal": "{{&member}} a désigné {{&member2}} en tant que membre régulier du tableau",
+        "board_to_normal_self": "{{&member}} s'est désigné en tant que membre régulier du tableau",
+        "add_board_desc": "{{&member}} a ajouté une description au tableau",
+        "edit_board_desc": "{{&member}} a modifié la description du tableau",
+        "archive_board": "{{&member}} a fermé le tableau",
+        "unarchive_board": "{{&member}} a ouvert le tableau",
+        "board_set_invite_perms": "{{&member}} a défini les droits d'invitation de {{&oldPerm}} en {{&perm}}",
+        "board_set_perm_levels": "{{&member}} a défini la visibilité de {{&oldPerm}} en {{&perm}}",
+        "move_out_card": "{{&member}} a transféré la carte \"{{&card}}\" à un autre tableau",
+        "move_in_card": "{{&member}} a transféré la carte \"{{&card}}\" d'un autre tableau",
+        "copy_checklist": "{{&member}} a copié le contenu de la check-list de \"{{&sourceChecklist}}\" vers \"{{&checklist}}\"",
+        "copy_card": "{{&member}} a copié le contenu des cartes de \"{{&sourceCard}}\" vers \"{{&card}}\"",
+        "customfield_create": "{{&member}} a créé le champ personnalisé \"{{&customField}}\"",
+        "customfield_carddisplay_true": "{{&member}} a activé l'affichage de la carte pour le champ personnalisé \"{{&customField}}\"",
+        "customfielditem_checkbox_false": "{{&member}} a décoché le champ personnalisé \"{{&customField}}\" sur la carte \"{{&card}}\"",
+        "customfielditem_checkbox_true": "{{&member}} a coché le champ personnalisé \"{{&customField}}\" sur la carte \"{{&card}}\"",
+        "customfielditem_update": "{{&member}} a mis à jour le champ personnalisé \"{{&customField}}\" sur la carte \"{{&card}}\"",
+        "commented": "{{&member}} a commenté sur \"{{&card}}\"",
+        "add_card_desc": "{{&member}} a ajouté une description à la carte \"{{&card}}\"",
+        "move_card_in_list": "{{&member}} a déplacé \"{{&card}}\" à une autre position dans la liste",
+        "due_off": "{{&member}} a marqué la date d'échéance comme inachevée sur la carte \"{{&card}}\"",
+        "archive_card": "{{&member}} a archivé la carte \"{{&card}}\"",
+        "vote_card": "{{&member}} a voté pour la carte \"{{&card}}\"",
+        "checkitem_state_off": "{{&member}} a marqué \"{{&checklistItem}}\" comme incomplet sur la carte \"{{&card}}\"",
+        "checkitem_move": "{{&member}} a déplacé l'élément de la check-list dans \"{{&card}}\" à une autre position",
+        "checklist_create": "{{&member}} a créé la check-list \"{{&checklist}}\" dans \"{{&card}}\"",
+        "list_rename": "{{&member}} a renommé la liste \"{{&oldName}}\" en \"{{&list}}\"",
+        "label_recolor": "{{&member}} a modifié la couleur de l'étiquette \"{{&label}}\" de {{&oldColor}} en {{&color}}",
+        "attach_card": "{{&member}} a joint \"{{&attachment}}\" à la carte \"{{&card}}\"",
+        "card_add_label": "{{&member}} a ajouté l'étiquette \"{{&label}}\" à la carte \"{{&card}}\"",
+        "card_add_self": "{{&member}} s'est ajouté à la carte \"{{&card}}\"",
+        "board_to_admin": "{{&member}} a désigné {{&member2}} en tant qu'administrateur du tableau",
+        "board_rename": "{{&member}} a renommé le tableau de \"{{&oldName}}\" en \"{{&board}}\"",
+        "rem_board_desc": "{{&member}} a supprimé la description du tableau",
+        "board_set_comment_perms": "{{&member}} a défini les droits de commentaire de {{&oldPerm}} en {{&perm}}",
+        "board_set_vote_perms": "{{&member}} a défini les droits de vote de {{&oldPerm}} en {{&perm}}",
+        "move_out_list": "{{&member}} a transféré la liste \"{{&list}}\" sur un autre tableau",
+        "move_in_list": "{{&member}} a transféré la liste \"{{&list}}\" d'un autre tableau",
+        "customfield_delete": "{{&member}} a supprimé le champ personnalisé \"{{&customField}}\"",
+        "customfield_rename": "{{&member}} a renommé le champ personnalisé de \"{{&oldName}}\" en \"{{&customField}}\"",
+        "customfield_carddisplay_false": "{{&member}} a désactivé l'affichage de la carte pour le champ personnalisé \"{{&customField}}\"",
+        "customfielditem_remove": "{{&member}} a supprimé le champ personnalisé \"{{&customField}}\" de la carte \"{{&card}}\""
+    },
+    "webhook_filters": {
+        "ADD_ATTACHMENT_TO_CARD": "Ajouts de pièces jointes aux cartes",
+        "ADD_CHECKLIST_TO_CARD": "Ajouts de check-list aux cartes",
+        "ADD_LABEL_TO_CARD": "Ajouts d'étiquettes aux cartes",
+        "ADD_MEMBER_TO_BOARD": "Ajouts de membres au tableau",
+        "ADD_MEMBER_TO_CARD": "Ajouts de membres aux cartes",
+        "COMMENT_CARD": "Nouveaux commentaires sur les cartes",
+        "CONVERT_TO_CARD_FROM_CHECK_ITEM": "Éléments de check-list convertis en cartes",
+        "COPY_CARD": "Duplications de cartes",
+        "COPY_CHECKLIST": "Duplications de check-list",
+        "CREATE_CARD": "Créations de cartes",
+        "CREATE_LIST": "Créations de listes",
+        "DELETE_ATTACHMENT_FROM_CARD": "Suppression des pièces jointes aux cartes",
+        "DELETE_CHECK_ITEM": "Suppressions d'éléments de check-list",
+        "DELETE_LABEL": "Suppressions d'étiquettes",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Les membres du tableau ont été rétrogradés en membre normal",
+        "MOVE_CARD_FROM_BOARD": "Transferts de cartes hors du tableau",
+        "MOVE_CARD_TO_BOARD": "Transferts de cartes à l'intérieur du tableau",
+        "MOVE_LIST_TO_BOARD": "Transferts de listes à l'intérieur du tableau",
+        "REMOVE_CHECKLIST_FROM_CARD": "Suppressions des check-list des cartes",
+        "REMOVE_LABEL_FROM_CARD": "Suppressions des étiquettes des cartes",
+        "REMOVE_MEMBER_FROM_BOARD": "Suppressions des membres du tableau",
+        "VOTE_ON_CARD": "Votes de carte",
+        "CREATE_CHECK_ITEM": "Créations d'éléments de check-list",
+        "DELETE_COMMENT": "Suppressions de commentaires",
+        "UPDATE_COMMENT": "Mises à jour de commentaires",
+        "UPDATE_BOARD_NAME": "Mises à jour du nom de tableau",
+        "UPDATE_BOARD_DESC": "Mises à jour de la description du tableau",
+        "UPDATE_BOARD_PREFS": "Mises à jour des préférences du tableau",
+        "UPDATE_CARD_NAME": "Mises à jour du nom de la carte",
+        "UPDATE_CARD_DESC": "Mises à jour de la description de la carte",
+        "UPDATE_CARD_LIST": "Mises à jour de la liste des cartes",
+        "UPDATE_CARD_POS": "Mises à jour de la position de la carte (à l'intérieur d'une liste)",
+        "UPDATE_CARD_DUE": "Mises à jour de la date d'échéance de la carte",
+        "UPDATE_CHECK_ITEM_NAME": "Mises à jour du nom de l'élément de la check-list",
+        "UPDATE_CHECK_ITEM_POS": "Mises à jour de la position de l'élément de la check-list",
+        "UPDATE_CHECKLIST_NAME": "Mises à jour du nom de la check-list",
+        "UPDATE_LABEL_NAME": "Mises à jour du nom de l'étiquette",
+        "UPDATE_LIST_NAME": "Mises à jour du nom de la liste",
+        "UPDATE_LIST_POS": "Mises à jour de la position de la liste",
+        "UPDATE_LIST_CLOSED": "Mises à jour des archives de la liste (archivée/non archivée)",
+        "CREATE_CUSTOM_FIELD": "Créations du champ personnalisé",
+        "UPDATE_CUSTOM_FIELD_NAME": "Mises à jour du nom du champ personnalisé",
+        "UPDATE_CUSTOM_FIELD_DISPLAY": "Mises à jour de l'affichage du champ personnalisé",
+        "UPDATE_CUSTOM_FIELD_ITEM": "Mises à jour de la carte du champ personnalisé",
+        "CREATE_LABEL": "Créations d'étiquettes",
+        "DELETE_CARD": "Suppressions de cartes",
+        "MAKE_ADMIN_OF_BOARD": "Membres du tableau promus administrateurs",
+        "MOVE_LIST_FROM_BOARD": "Transferts de listes hors du tableau",
+        "REMOVE_MEMBER_FROM_CARD": "Suppressions des membres des cartes",
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Mises à jour de l'état d'un élément de check-list (coché/décoché)",
+        "UPDATE_BOARD_CLOSED": "Mises à jour des archives du tableau (fermées/ouvertes)",
+        "UPDATE_CARD_CLOSED": "Mises à jour des archives de la carte (archivée/non archivée)",
+        "UPDATE_CHECKLIST_POS": "Mises à jour de la position de la check-list",
+        "UPDATE_LABEL_COLOR": "Mises à jour de la couleur de l'étiquette",
+        "DELETE_CUSTOM_FIELD": "Suppressions du champ personnalisé"
+    },
+    "webhook_filter_group": {
+        "board": "Tableau",
+        "boardUpdate": "Mises à jour du tableau",
+        "label": "Étiquettes",
+        "card": "Cartes",
+        "cardUpdate": "Mises à jour de la carte",
+        "comment": "Commentaires",
+        "checklist": "Check-lists",
+        "checklistUpdate": "Mises à jour de la check-list",
+        "checkItem": "Éléments de la check-list",
+        "list": "Listes",
+        "listUpdate": "Mises à jour de la liste",
+        "customField": "Champs personnalisés",
+        "customFieldUpdate": "Mises à jour du champ personnalisé",
+        "labelUpdate": "Mises à jour de l'étiquette",
+        "checkItemUpdate": "Mises à jour de l'élement de la check-list"
+    },
+    "custom_field_types": {
+        "checkbox": "Case à cocher",
+        "text": "Texte",
+        "number": "Nombre",
+        "date": "Date",
+        "list": "Déroulant"
+    },
+    "error": "Une erreur est survenue pendant l'exécution de cette commande !"
 }
