@@ -146,7 +146,8 @@
         },
         "editcard": {
             "description": "Bewerk de eigenschappen van een kaart. Controleer de opmerking voor sub-commands en gebruik.",
-            "usage": "[KaartNaam|KaartID] [subcommand] …"
+            "usage": "[KaartNaam|KaartID] [subcommand] …",
+            "note": "`name [newName]` - Hernoem de kaart\n`archive`, `unarchive` - Toggle de archief status\n`desc [newDescription]` - Pas de kaart beschrijving aan\n`removedesc` - Verwijder de kaart beschrijving.\n`duedone` - Toggle de deadline\n`removedue` - Verwijder de deadline"
         },
         "addcard": {
             "description": "Maak een kaart.",
@@ -235,7 +236,9 @@
         "set_comment_perms": "Commentaar permissie aangepast naar {{&value}}.",
         "input_name": "Type de nieuwe naam van het board.",
         "removed_desc": "Beschrijving van \"{{&name}}\" is verwijderd.",
-        "need_admin": "U heeft beheerders rechten nodig op het board!"
+        "need_admin": "U heeft beheerders rechten nodig op het board!",
+        "set_vote_perms": "Stem permissie is gezet naar {{&value}}.",
+        "set_invite_perms": "Invite permissie is gezet naar {{&value}}."
     },
     "reload": {
         "reloading": "Commands herladen…",
@@ -682,10 +685,64 @@
     "trello_response": {
         "ratelimit": "Er zijn teveel aanvragen verzonden! Probeer later opnieuw!",
         "internal": "Er is een interne server fout opgetreden bij Trello! Probeer later opnieuw!",
-        "aborted": "Trello deed er te lang over om te antwoorden! Probeer later opnieuw!"
+        "aborted": "Trello deed er te lang over om te antwoorden! Probeer later opnieuw!",
+        "unauthorized": "De laatst gebruikte token is niet meer geldig of ingetrokken! Autoriseer opnieuw met de `{{&cleanPrefix}}auth` command!"
     },
     "_": {
         "name": "Nederlands",
         "emoji": "nl"
+    },
+    "lists": {
+        "set_name": "Lijst hernoemd van \"{{&old}}\" naar\"{{&new}}\".",
+        "menu": {
+            "sub_off": "Stop het bekijken van deze lijst",
+            "sub_on": "Bekijk deze lijst",
+            "archive_off": "Verwijder lijst uit het archief",
+            "archive_on": "Archiveer lijst"
+        },
+        "header": "gebruik `{{&cleanPrefix}}list <listID|listName>` om een lijst weer te geven.",
+        "arch_none": "Dit board heeft geen gearchiveerde lijsten.",
+        "none": "Dit board heeft geen lijsten.",
+        "list_none": "Deze lijst heeft geen kaarten."
+    },
+    "cards": {
+        "add_attach": "Bijlage gemaakt aan \"{{&name}}\".",
+        "bad_attach": "Ongeldige bijlage URL!",
+        "input_attach": "Plak de URL naar de bijlage die u wil toevoegen.",
+        "commented": "Maakt een commentaar op \"{{&name}}\".",
+        "input_comment": "Type de commentaar die u wil toevoegen aan de kaart.",
+        "due_off": "Markeer deadline als onvoltooid voor \"{{&name}}\".",
+        "due_on": "Markeer deadline als voltooid voor \"{{&name}}\".",
+        "removed_due": "Deadline verwijderd voor \"{{&name}}\".",
+        "removed": "Kaart \"{{&name}}\". (`{{id}}`) verwijderd",
+        "remove_confirm": "Bent u zeker dat u deze kaart wil verwijderen \"{{&name}}\"? (`{{id}}`)",
+        "created": "Kaart gemaakt \"{{&name}}\". (`{{id}}`)",
+        "input_new": "Type de naam van de kaart die u wil toevoegen.",
+        "removed_desc": "Beschrijving voor \"{{&name}}\" verwijderd.",
+        "input_desc": "Type de nieuwe beschrijving voor de kaart.",
+        "set_desc": "Beschrijving aangepast voor \"{{&name}}\".",
+        "unarchived": "\"{{&name}}\" verwijderd uit archief.",
+        "archived": "\"{{&name}}\" gearchiveerd.",
+        "input_name": "Type de nieuwe naam van de kaart.",
+        "set_name": "Kaart hernoemd van \"{{&old}}\" naar \"{{&new}}\".",
+        "menu": {
+            "attach": "Maak bijlage",
+            "due_off": "Markeer deadline als onvoltooid",
+            "due_on": "Markeer deadline als voltooid",
+            "remove_due": "Verwijder deadline",
+            "sub_off": "Stop het bekijken van deze kaart",
+            "sub_on": "Bekijk deze kaart",
+            "remove_desc": "Verwijder de kaart beschrijving",
+            "desc": "Pas de kaart beschrijving aan",
+            "archive_off": "Verwijder de kaart uit het archief",
+            "archive_on": "Archiveer de kaart",
+            "name": "Hernoem de kaart"
+        },
+        "wywtd": "Kies wat u wil doen met de kaart.",
+        "choose": "Type het nummer van de kaart die u wil gebruiken.",
+        "error": "Ik kon de kaart niet lezen! Iemand kan deze verwijderd hebben. Indien dat niet het geval is heeft Trello een probleem!",
+        "arch_header": "Gebruik `{{&cleanPrefix}}editcard <listID|listName> unarchive` om een kaart te openen.",
+        "arch_none": "Dit board heeft geen archief.",
+        "none": "Dit board heeft geen kaarten."
     }
 }
