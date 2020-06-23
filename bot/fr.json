@@ -476,7 +476,7 @@
         },
         "reloadone": {
             "description": "Recharge les commandes habituelles.",
-            "usage": "<commandName> [commandName] …"
+            "usage": "<nomCommande> [nomCommande] …"
         },
         "reloadwebserver": {
             "description": "Redémarre le serveur web."
@@ -495,18 +495,18 @@
         },
         "help": {
             "description": "Affiche un message d'aide et donne des informations sur les commandes.",
-            "usage": "[command]"
+            "usage": "[commande]"
         },
         "ping": {
             "description": "Pong !"
         },
         "locale": {
-            "usage": "[\"userset\"|\"serverset\"] [locale]",
+            "usage": "[\"réglage utilisateur\"|\"réglage serveur\"] [région]",
             "description": "Vous permet de définir votre région ou celle du serveur. S'exécute sans argument pour une liste de régions."
         },
         "prefix": {
             "description": "Vous permet de définir vos préfixes ou ceux du serveur.",
-            "usage": "[\"set\"|\"add\"|\"remove\"] [prefix]"
+            "usage": "[\"définir\"|\"ajouter\"|\"supprimer\"] [préfixe]"
         },
         "info": {
             "description": "Donne des informations à propos du robot."
@@ -519,7 +519,7 @@
         },
         "switch": {
             "description": "Sélectionne un tableau à utiliser pour d'autres commandes. Utilisez la commande `{{&cleanPrefix}}` pour voir les tableaux que vous pouvez sélectionner.",
-            "usage": "[boardID|boardName]"
+            "usage": "[identifiantTableau|nomTableau]"
         },
         "boards": {
             "description": "Liste tous les tableaux que vous pouvez gérer.",
@@ -538,58 +538,58 @@
         },
         "card": {
             "description": "Donne des informations concernant une carte spécifique.",
-            "usage": "[cardName|cardID]"
+            "usage": "[nomCarte|identifiantCarte]"
         },
         "cardarchive": {
             "description": "Liste toutes les cartes archivées dans le tableau actuel.",
             "usage": "[page]"
         },
         "watchcard": {
-            "usage": "[cardName|cardID]",
+            "usage": "[nomCarte|identifiantCarte]",
             "description": "Active/désactive l'observation d'une carte. Les cartes observées vous notifieront en cas de mise à jour sur [Trello](https://trello.com/)."
         },
         "watchlist": {
             "description": "Active/désactive l'observation d'une liste. Les listes observées vous notifieront en cas de mise à jour sur [Trello](https://trello.com/).",
-            "usage": "[listName|listID]"
+            "usage": "[nomListe|identifiantListe]"
         },
         "watch": {
-            "usage": "[boardName|boardID]",
+            "usage": "[nomTableau|identifiantTableau]",
             "description": "Active/désactive l'observation d'un tableau. Si aucun tableau n'est défini, le tableau actuel sera utilisé. Les tableaux observés vous notifieront en cas de mise à jour sur [Trello](https://trello.com/)."
         },
         "star": {
             "description": "Active/désactive la mise en favori d'un tableau. Si aucun tableau n'est défini, le tableau actuel est utilisé. Les tableaux mis en favoris apparaîtront en haut de votre liste des tableaux sur [Trello](https://trello.com/).",
-            "usage": "[boardName|boardID]"
+            "usage": "[nomTableau|identifiantTableau]"
         },
         "editlist": {
             "description": "Modifie les propriétés d'une liste. Vérifiez la note pour les sous-commandes et leur usage.",
             "note": "`name [newName]` - Renomme la list\n`archive`, `unarchive` - Active/désactive l'archivage de la liste",
-            "usage": "[listName|listID] [subcommand] …"
+            "usage": "[nomListe|identifiantListe] [sous-commande] …"
         },
         "editcard": {
             "description": "Modifie les propriétés d'une carte. Vérifiez la note pour les sous-commandes et leur usage.",
-            "usage": "[cardName|cardID] [subcommand] …",
+            "usage": "[nomCarte|identifiantCarte] [sous-commande] …",
             "note": "`name [newName]` - Renomme la carte\n`archive`, `unarchive` - Active/désactive l'archivage de la carte\n`desc [newDescription]` - Définit la description de la carte\n`removedesc` - Supprime la description de la carte\n`duedone` - Active/désactive l'achèvement de la date limite de la carte\n`removedue` - Supprime la date limite de la carte"
         },
         "editboard": {
             "description": "Modifie les propriétés de la carte actuelle. Vérifiez la note pour les sous-commandes et leur usage.",
-            "usage": "[subcommand] …",
+            "usage": "[sous-commande] …",
             "note": "`name [newName]` - Renomme le tableau (administrateur du tableau)\n`archive`, `unarchive` - Active/désactive l'archivage du tableau (administrateur du tableau)\n`desc [newDescription]` - Définit la description du tableau\n`removedesc` - Supprime la description du tableau\n`commentperms` - Modifie les droits de commentaire (administrateur du tableau)\n`voteperms` - Modifie les droits de vote (administrateur du tableau)\n`inviteperms` - Modifie les droits d'invitation (administrateur du tableau)"
         },
         "addcard": {
             "description": "Créé une carte.",
-            "usage": "[listName|listID] [name]"
+            "usage": "[nomListe|identifiantListe] [nom]"
         },
         "deletecard": {
             "description": "Supprime une carte.",
-            "usage": "[cardName|cardID]"
+            "usage": "[nomCarte|identifiantCarte]"
         },
         "addlist": {
             "description": "Créé une liste dans le tableau actuel.",
-            "usage": "[name]"
+            "usage": "[nom]"
         },
         "comment": {
             "description": "Commentez une carte dans le tableau actuel.",
-            "usage": "[cardName|cardID] [comment]"
+            "usage": "[nomCarte|identifiantCarte] [commentaire]"
         },
         "webhooks": {
             "description": "Liste les webhooks sur votre serveur.",
@@ -597,42 +597,42 @@
         },
         "webhook": {
             "description": "Donne des informations à propos d'un webhook spécifique.",
-            "usage": "<webhookID>"
+            "usage": "<identifiantWebhook>"
         },
         "addwebhook": {
             "description": "Créé un webhook sur votre serveur.",
-            "usage": "[boardID|boardName]"
+            "usage": "[identifiantTableau|nomTableau]"
         },
         "editwebhook": {
             "description": "Modifie un webhook sur votre serveur. Vérifiez la note pour les sous-commandes et leur usage.",
-            "usage": "<webhookID> [subcommand]",
+            "usage": "<identifiantWebhook> [sous-commande]",
             "note": "`activate`, `deactivate` - Active/désactive le webhook\n`filters` - Modifie les filtres (anciennement \"Webhook Bits\") pour ce webhook\n`locale [locale]` - Définit la région pour le webhook\n`repair` - Répare tout problème avec le webhook\n`delete` - Supprime le webhook\n`whitelist`, `blacklist` - Modifie la stratégie de filtrage pour le webhook\n`lists` - Modifie les listes filtrées\n`cards` - Modifie les cartes filtrées"
         },
         "remwebhook": {
             "description": "Supprime un webhook de votre serveur.",
-            "usage": "<webhookID>"
+            "usage": "<identifiantWebhook>"
         },
         "clearauth": {
             "description": "Retire votre autorisation Trello. N'exécutez pas cela à moins de devoir réellement le faire."
         },
         "setmaxwebhooks": {
             "description": "Définit la limite de webhooks pour ce serveur.",
-            "usage": "<serverID> [limit]"
+            "usage": "<identifiantServeur> [limite]"
         },
         "vote": {
             "description": "Affiche les liens pour voter pour Taco."
         },
         "toggleserver": {
             "description": "Active/désactive la liste noire du serveur.",
-            "usage": "<serverID>"
+            "usage": "<identifiantServeur>"
         },
         "toggleuser": {
             "description": "Active/désactive la liste noire de l'utilisateur",
-            "usage": "<userID>"
+            "usage": "<identifiantUtilisateur>"
         },
         "list": {
             "description": "Liste toutes les cartes de cette liste.",
-            "usage": "[listName|listID] [page]"
+            "usage": "[nomListe|identifiantListe] [page]"
         },
         "cleardata": {
             "description": "Supprime vos données utilisateur de Taco."
@@ -719,7 +719,7 @@
         "none": "Ce tableau n'a pas de listes.",
         "arch_none": "Ce tableau n'a pas de liste archivée.",
         "arch_header": "Utilisez `{{&cleanPrefix}}editlist <identifiantListe|nomListe> unarchive` pour ouvrir une liste.",
-        "list_header": "Utilisez `{{&cleanPrefix}}card <identifiantCarte|nomCarte` pour obtenir des informations sur une carte.",
+        "list_header": "Utilisez `{{&cleanPrefix}}card <identifiantCarte|nomCarte>` pour obtenir des informations sur une carte.",
         "choose": "Tapez le numéro de la liste que vous souhaitez utiliser.",
         "menu": {
             "name": "Modifier le nom de la liste",
@@ -739,7 +739,7 @@
         "unauthorized": "Le dernier jeton utilisé a été invalidé ou révoqué ! Autorisez une nouvelle fois avec la commande `{{&cleanPrefix}}auth` !"
     },
     "prompt": {
-        "list": "Liste d'invités",
+        "list": "Affichage de la liste",
         "input": "Tapez le message que vous souhaitez saisir.",
         "timeout": "Votre dernière console a expiré.",
         "canceled": "Votre dernière console a été annulée.",
