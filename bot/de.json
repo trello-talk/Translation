@@ -312,7 +312,10 @@
         "item_src": "Quelle des Gegenstandes",
         "voting": "Abstimmungen",
         "starred": "Mit Stern markiert",
-        "template": "Ist es ein Vorlage?"
+        "template": "Ist es ein Vorlage?",
+        "new_v": "Neuer Wert",
+        "old_v": "Alter Wert",
+        "custom_field": "Persönliches Feld"
     },
     "webhook_cmd": {
         "discord_webhook": "Discord Webhook",
@@ -495,6 +498,22 @@
         "cardarchive": {
             "description": "Listet alle archivierten Karten auf dem aktuellen Board.",
             "usage": "[Seite]"
+        },
+        "star": {
+            "usage": "[Name|ID des Boards]",
+            "description": "Favorisiere ein Board. Wenn kein Board angeben wird, wird das aktuelle Board verwendet. Favorisierte Boards werden in deiner Boardliste auf [Trello] (https://trello.com/) ganz oben angezeigt."
+        },
+        "watch": {
+            "usage": "[Name|ID des Boards]",
+            "description": "Beobachte ein Board. Wenn kein Board angegeben wird, wird das aktuelle Board benutzt. Beobachtete Board schicken dir Updates per [Trello] (https://trello.com/) Benachricjtungen."
+        },
+        "watchlist": {
+            "usage": "[Name|ID der Liste]",
+            "description": "Beobachte eine Liste. Beobachtete Listen schicken dir Updates per [Trello] (https://trello.com) Benachrichtigungen."
+        },
+        "watchcard": {
+            "usage": "[Name|ID der Karte]",
+            "description": "Beobachte eine Karte. Beobachtete Karten schicken dir Ändrungen per [Trello] (https://trello.com) Benachrichtigungen."
         }
     },
     "command_permissions": {
