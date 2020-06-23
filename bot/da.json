@@ -301,7 +301,10 @@
         "old_due": "Gammel forfaldsdato",
         "new_comment": "Ny kommentar",
         "old_comment": "Gammel kommentar",
-        "one_chklist_name": "Gammelt tjeklistenavn"
+        "one_chklist_name": "Gammelt tjeklistenavn",
+        "new_v": "Ny værdi",
+        "old_v": "Gammel værdi",
+        "custom_field": "Skræddersyet felt"
     },
     "format": {
         "second": {
@@ -641,7 +644,10 @@
         "card_remove_member": "{{&member}} fjernede {{&member2}} fra kortet \"{{&card}}\"",
         "card_add_member": "{{&member}} tilføjede {{&member2}} til kortet \"{{&card}}\"",
         "commented": "{{&member}} kommenterede på \"{{&card}}\"",
-        "move_in_card": "{{&member}} overførte kortet \"{{&card}}\" fra en anden tavle"
+        "move_in_card": "{{&member}} overførte kortet \"{{&card}}\" fra en anden tavle",
+        "unarchive_board": "{{&member}} åbnede tavlen",
+        "rem_board_desc": "{{&member}} fjernede beskrivelsen fra tavlen",
+        "archive_board": "{{&member}} lukkede tavlen"
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter",
@@ -686,7 +692,10 @@
             "filter": "Rediger filtre",
             "off": "Deaktivér",
             "on": "Aktivér",
-            "locale": "Ændre sprogindstillinger"
+            "locale": "Ændre sprogindstillinger",
+            "cards": "Ændre filtrerede kort",
+            "lists": "Ændre filtrerede lister",
+            "repair": "Reparer webhook"
         },
         "none": "Der er ingen webhooks på denne server der er forbundet til Trello.",
         "add_header": "Hvordan vil du have dit webhook skal opsættes?",
@@ -698,7 +707,14 @@
             "many": "Discord webhooks"
         },
         "trello_webhook": "Trello webhook",
-        "discord_webhook": "Discord webhook"
+        "discord_webhook": "Discord webhook",
+        "deleted": "Slettede webhooken.",
+        "confirm_delete": "Er du sikker på du vil slette denne webhook?",
+        "wh_on": "Denne webhook er blevet tændt.",
+        "wh_off": "Denne webhook er blevet slukket.",
+        "wywtd": "Vælg hvad du vil gøre med denne webhook.",
+        "choose_channel": "Vælg hvilken kanal som webhooken skal postes i.",
+        "try_repair": "Du kan reparere dette problem med `{{&cleanPrefix}}editwebhook {{&id}} repair`"
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
@@ -721,5 +737,12 @@
     "vote": {
         "rate": "bedøm",
         "review": "gennemgå"
+    },
+    "custom_field_types": {
+        "list": "Rullemenu",
+        "date": "Dato",
+        "number": "Nummer",
+        "text": "Tekst",
+        "checkbox": "Tjekboks"
     }
 }
