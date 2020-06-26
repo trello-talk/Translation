@@ -661,7 +661,21 @@
         "CREATE_LABEL": "Etiketoprettelser",
         "CREATE_LIST": "Listeoprettelser",
         "CREATE_CARD": "Kortoprettelser",
-        "UPDATE_LIST_NAME": "Listenavnopdateringer"
+        "UPDATE_LIST_NAME": "Listenavnopdateringer",
+        "MOVE_LIST_TO_BOARD": "Liste overførsler til tavlen",
+        "MOVE_LIST_FROM_BOARD": "Liste overførsler ud af tavlen",
+        "REMOVE_MEMBER_FROM_CARD": "Medlemsfjernelser fra kort",
+        "REMOVE_MEMBER_FROM_BOARD": "Medlemsfjernelser fra tavlen",
+        "REMOVE_LABEL_FROM_CARD": "Etiket fjernelser fra kort",
+        "REMOVE_CHECKLIST_FROM_CARD": "Tjekliste fjernelser fra kort",
+        "ADD_CHECKLIST_TO_CARD": "Tjekliste tilføjelser til kort",
+        "ADD_LABEL_TO_CARD": "Etiket tilføjelser til kort",
+        "MOVE_CARD_TO_BOARD": "Kortoverførsler til tavlen",
+        "MOVE_CARD_FROM_BOARD": "Kortoverførsler ud af tavlen",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Tavleadministratorer degraderet til almindelige medlemmer",
+        "MAKE_ADMIN_OF_BOARD": "Tavlemedlemmer forfremmet til administrator",
+        "UPDATE_LABEL_COLOR": "Opdateringer af farver på etiketter",
+        "UPDATE_LABEL_NAME": "Opdateringer af navne på etiketter"
     },
     "webhook_cmd": {
         "menu": {
@@ -732,11 +746,13 @@
         "list": "Lister"
     },
     "setmaxwebhooks": {
-        "invalid": "Ugyldigt ID!"
+        "invalid": "Ugyldigt ID!",
+        "set": "Sæt den maksimale grænse af webhooks for {{serverID}} til {{value}}."
     },
     "vote": {
         "rate": "bedøm",
-        "review": "gennemgå"
+        "review": "gennemgå",
+        "title": "Du kan stemme på, anmelde eller vurdere {{&username}} på disse sider:"
     },
     "custom_field_types": {
         "list": "Rullemenu",
