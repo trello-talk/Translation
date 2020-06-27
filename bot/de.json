@@ -514,6 +514,79 @@
         "watchcard": {
             "usage": "[Name|ID der Karte]",
             "description": "Beobachte eine Karte. Beobachtete Karten schicken dir Ändrungen per [Trello] (https://trello.com) Benachrichtigungen."
+        },
+        "toggleuser": {
+            "usage": "<BenutzerID>",
+            "description": "Aktiviert/Deaktiviert die Nutzer Blacklist"
+        },
+        "toggleserver": {
+            "usage": "<ServerID>",
+            "description": "Aktiviert/Deaktiviert die Server Blacklist."
+        },
+        "vote": {
+            "description": "Zeigt dir die Links, auf denen du Taco bewerten kannst."
+        },
+        "setmaxwebhooks": {
+            "usage": "<serverID> [Limit]",
+            "description": "Setzte das Webhooklimit für diesen Server."
+        },
+        "cleardata": {
+            "description": "Enfernt alle Benutzerdaten von Taco."
+        },
+        "clearauth": {
+            "description": "Entfernt deine Authorisierung mit Trello. mache das nur, wenn es wirklich sein muss."
+        },
+        "remwebhook": {
+            "usage": "<webhookID>",
+            "description": "Löscht einen Webhook von deinem Server."
+        },
+        "editwebhook": {
+            "note": "`activate`, `deactivate` - Aktiviert oder deaktiviert einen Webhook\n`filters` - Bearbeitet die Filter (bis jetzt \"Webhook Bits\") dieses Webhooks\n`locale [locale]` - >Setzt die Sprache des Webhooks\n`repair` - Enfernt jeglichen Webhookfehler\n`delete` - Löscht den Webhook\n`whitelist`, `blacklist` - Ändert die Art des Webhookfilters\n`lists` - Bearbeite den Listenfilter\n`cards` - Bearbeite den Kartenfilter",
+            "usage": "<webhookID> [Unterbefehl]",
+            "description": "Bearbeitet einen Webhook auf deinem Server. Lies die Notizen für mehr Information zu Unterbefehlen und der Benutzung."
+        },
+        "addwebhook": {
+            "usage": "[ID|Name des Boards]",
+            "description": "Erstellt einen Webhook auf deinem Server."
+        },
+        "webhook": {
+            "usage": "<webhookID>",
+            "description": "Zeige Informationen zu einem spezifischem Webhook."
+        },
+        "webhooks": {
+            "usage": "[Seite]",
+            "description": "Listet die Webhooks auf deinem Server auf."
+        },
+        "comment": {
+            "usage": "[Name|ID der Karte] [Kommentar]",
+            "description": "Kommentiere eine Karte im aktuellen Board."
+        },
+        "addlist": {
+            "usage": "[Name]",
+            "description": "erstellt ein Karte im aktuellen Board."
+        },
+        "deletecard": {
+            "usage": "[Name|ID der Karte]",
+            "description": "Löscht eine Karte."
+        },
+        "addcard": {
+            "usage": "[Name|ID der Liste] [Name]",
+            "description": "Erstellt eine Karte."
+        },
+        "editcard": {
+            "note": "`name [newName]` - Karte umbenennen\n`archive`, `unarchive` - Karte archivieren/wiederherstellen\n`desc [newDescription]` - Setzte die Beschreibung der Karte\n`removedesc` - Entferne die beschreibung der Karte\n`duedone` - Markiert die Frist der Karte als erledigt\n`removedue` - Entfernt die Frist der Karte",
+            "usage": "[Name|ID der Karte] [Unterbefehl] …",
+            "description": "Bearbeite die Einstellungen der Karte. Schau die Notizen an, um Unterbefehle und die Benutzung zu sehen."
+        },
+        "editlist": {
+            "note": "`name [newName]` - Liste umbenennen\n`archive`, `unarchive` - Liste archivieren/wiederherstellen",
+            "usage": "[Name|ID der Liste] [Unterbefehl] …",
+            "description": "Bearbeite die Einstellungen der Liste. Schau die Notizen an, um Unterbefehle und die Benutzung zu sehen."
+        },
+        "editboard": {
+            "note": "`name [newName]` - Das Board umbenennen (nur Board-Admins)\n`archive`, `unarchive` - Das Board archivieren/weiderherstellen(nur Board-Admins)\n`desc [newDescription]` - Setzte die beschreibung des Boards\n`removedesc` - Entfernt die Beschreibung des Boards\n`commentperms` - Ändert die Kommentarberechtigung (nur Board-Admins)\n`voteperms` - Ändert die Abstimmungsberechtigung (nur Board-Admins)\n`inviteperms` - Ändert die Einladungsberechtigung (nur Board-Admins)",
+            "usage": "[Unterbefehl] …",
+            "description": "Bearbeite die Einstellungen des aktuellen Boards. Schau die Notizen an, um Unterbefehle und die Benutzung zu sehen."
         }
     },
     "command_permissions": {
@@ -551,5 +624,31 @@
     "setmaxwebhooks": {
         "invalid": "Ungültige ID!",
         "set": "Setzte das Webhooklimit für {{serverID}} zu {{value}}."
+    },
+    "prompt": {
+        "no_confirm": "Die Bestätigung wurde abgebrochen.",
+        "confirm": "Bist du sicher, dass du das machen willst?",
+        "input_canceled": "Deine letzte Eingabe wurde abgebrochen.",
+        "cancel_input": "Um die Eingabe abzubrechen, schreibe \"{{&cancelPrompt}}\".",
+        "no_search": "Die Suche ergab keinen Treffer.",
+        "canceled": "Deine letzte Anfrage wurde abgebrochen.",
+        "timeout": "Du hast zu lange zum Antworten gebraucht. Deine letzte Anfrage wurde deswegen abgebrochen.",
+        "cancel": "Schreibe \"cancel\" um diese Anfrage abzubrechen.",
+        "list": "Mögliche Eingaben",
+        "input": "Schreibe die Nachricht, die du einfügen willst.",
+        "choose": "Schreibe die Nummer des Gegenstandes, den du benutzen willst.",
+        "cancel_confirm": "Schreibe zum Bestätigen`yes`. Jede andere Nachricht wird die Bestätigung abbrechen."
+    },
+    "trello_response": {
+        "aborted": "Trello hat zu lange für eine Antwort gebraucht! Bitte versuche es später erneut!",
+        "ratelimit": "Es werden zu viele Anfragen gesendet! Bitte versuche es später erneut!",
+        "internal": "Ein interner Serverfehler ist auf Seiten von Trello aufgetreten! Bitte versuche es später erneut!",
+        "unauthorized": "Die letzte Authorisierung ist ungültig oder wurde aufgehoben. Bitte authorisiere dich erneut mit `{{&cleanPrefix}}auth`!"
+    },
+    "error": "Während der Bearbeitung des Befehls trat ein Fehler auf!",
+    "vote": {
+        "rate": "Bewertung",
+        "review": "Bewerung",
+        "title": "Du kannst {{&username}} auf diesen Seiten bewerten:"
     }
 }
