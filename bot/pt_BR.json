@@ -79,7 +79,10 @@
         "item_src": "Fonte do Item",
         "to_board": "Para o Quadro",
         "one_chklist_name": "Nome anterior da Checklist",
-        "one_chkitem_name": "Nome anterior do item da Checklist"
+        "one_chkitem_name": "Nome anterior do item da Checklist",
+        "new_v": "Novo Valor",
+        "old_v": "Valor Antigo",
+        "custom_field": "Campo Personalizado"
     },
     "ping": {
         "message": "Pong!",
@@ -703,7 +706,12 @@
         "edit_card_desc": "{{&member}} alterou a descrição do cartão \"{{&card}}\"",
         "add_card_desc": "{{&member}} adicionou descrição ao cartão \"{{&card}}\"",
         "delete_comment": "{{&member}} teve seu comentário no cartão \"{{&card}}\" removido",
-        "update_comment": "{{&member}} atualizou seu comentário no cartão \"{{&card}}\""
+        "update_comment": "{{&member}} atualizou seu comentário no cartão \"{{&card}}\"",
+        "board_rename": "{{&member}} renomeou o quadro \"{{&oldName}}\" para \"{{&board}}\"",
+        "board_to_normal": "{{&member}} tornou {{&member2}} um membro comum do quadro",
+        "board_to_admin": "{{&member}} tornou {{&member2}} um administrador do quadro",
+        "board_join": "{{&member}} entrou no quadro",
+        "board_left": "{{&member}} saiu do quadro"
     },
     "webhook_cmd": {
         "not_found": "Esse webhook não existe!",
@@ -765,7 +773,8 @@
     },
     "deprecated": "Esse comando não está mais disponível!",
     "vote": {
-        "review": "revisão"
+        "review": "revisão",
+        "rate": "taxa"
     },
     "setmaxwebhooks": {
         "invalid": "ID Inválido!"
