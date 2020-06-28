@@ -69,7 +69,7 @@
         "last_act": "Última actividad",
         "old_comment": "Comentario antiguo",
         "marketing": "Correos electrónicos de marketing (opt-in)",
-        "subbed": "Visto",
+        "subbed": "Siguiendo",
         "from_board": "Desde el tablero",
         "one_chklist_name": "Antiguo nombre de la lista de comprobación",
         "one_chkitem_name": "Antiguo nombre del artículo de la lista de comprobación",
@@ -155,11 +155,11 @@
         "choose_channel": "Elija en qué canal se publicará el webhook.",
         "no_channels": "No se han encontrado canales que me permitan administrar webhooks.",
         "add_header": "¿Cómo le gustaría que se configurara su webhook?",
-        "try_repair": "Puede reparar este problema con `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "try_repair": "Puedes reparar este problema con `{{&cleanPrefix}}editwebhook {{&id}} repair`",
         "twh_missing": "Falta el usuario que configuró el webhook, ¡esto puede detener el envío del webhook!",
         "dwh_missing": "¡Falta el webhook de Discord conectado a este webhook!",
         "none": "No hay webhooks en este servidor conectados a Trello.",
-        "header": "Usa `{{&cleanPrefix}}webhook <ID del webhook>` para ver un webhook i `{{&cleanPrefix}}editwebhook <ID del webhook>` para editarlo."
+        "header": "Usa `{{&cleanPrefix}}webhook <ID del webhook>` para ver un webhook y `{{&cleanPrefix}}editwebhook <ID del webhook>` para editarlo."
     },
     "deprecated": "¡Este comando no está disponible!",
     "use_this": "Utilice este comando en su lugar:",
@@ -271,7 +271,7 @@
             "description": "Obtenga los enlaces de donación para el desarrollador."
         },
         "auth": {
-            "description": "Obtenga el enlace de autenticación para conectar su cuenta de Discord a su cuenta de Trello."
+            "description": "Obtenga el enlace de autenticación para conectar su cuenta de Discord con la de Trello."
         },
         "toggleuser": {
             "usage": "<ID del usuario>",
@@ -366,7 +366,10 @@
             "note": "`name [nuevo nombre]` - Cambia el nombre del tablero (administrador del tablero)\n`archive`, `unarchive` - Cambia si el tablero debe estar archivado o no (administrador del tablero)\n`desc [nueva descripción]` - Cambia la descripción del tablero\n`removedesc` - Elimina la descripción del tablero\n`commentperms` - Cambia los permisos para comentar (administrador del tablero)\n`voteperms` - Cambia los permisos para votar (administrador del tablero)\n`inviteperms` - Cambia los permisos para invitar (administrador del tablero)"
         },
         "cleardata": {
-            "description": "Elimina tu datos de usuario de Taco."
+            "description": "Elimina tus datos de usuario de Taco."
+        },
+        "vote": {
+            "description": "Muestra los enlaces para votar por Taco."
         }
     },
     "bad_args": "¡No hay suficientes argumentos!",
@@ -378,7 +381,7 @@
     },
     "prompt": {
         "input_canceled": "Su última entrada fue cancelada.",
-        "confirm": "¿Estás seguro de que quieres hacer esto?",
+        "confirm": "¿Estás seguro de que deseas hacer esto?",
         "no_confirm": "Confirmación cancelada.",
         "select": "Escriba el número del elemento para alternar su valor.",
         "select_cancel": "Escriba \"save\" para guardar la selección, de lo contrario, escriba \"cancel\" para salir.",
@@ -386,7 +389,12 @@
         "cancel_input": "Escribir \"{{&cancelPrompt}}\" cancelará la entrada.",
         "timeout": "Se agotó el tiempo de espera.",
         "cancel": "Escribir \"cancel\" cerrará este mensaje.",
-        "no_search": "No hubo resultados con esa búsqueda."
+        "no_search": "No hubo resultados con esa búsqueda.",
+        "select_canceled": "Su última interacción ha sido cancelada. Todos los cambios se han perdido.",
+        "select_timeout": "Tu última interacción esperó demasiado. Todos los cambios se han perdido.",
+        "canceled": "Su última interacción ha sido cancelada.",
+        "input": "Escriba el mensaje que desea ingresar.",
+        "choose": "Escriba el número del elemento que desea usar."
     },
     "reload": {
         "done": "Comandos recargados.",
@@ -395,7 +403,7 @@
     "help": {
         "header": "{{&username}} (Funcionando una modificación de [Faux](https://github.com/Snazzah/Faux) por Snazzah)\nServidor de soporte: {{&link}}",
         "not_found": "No se ha encontrado el comando: `{{&command}}`.",
-        "footer": "`{{&cleanPrefix}}help [command]` para más información."
+        "footer": "\"{{&cleanPrefix}}help [comando]\" para más información"
     },
     "_": {
         "emoji": "es",
@@ -685,13 +693,30 @@
         "arch_none": "Este tablero no tiene tarjetas archivadas.",
         "set_name": "Nombre de la tarjeta cambiado de \"{{&old}} a \"{{&new}}\".",
         "unarchived": "La tarjeta \"{{&name}}\" archivada ha sido eliminada.",
-        "input_desc": "Escribe la nueva descripción para la tarjeta."
+        "input_desc": "Escribe la nueva descripción para la tarjeta.",
+        "arch_header": "Usa `{{&cleanPrefix}}editcard <ID de la lista|nombre de la lista> unarchive` para desarchivar una tarjeta.",
+        "choose": "Escriba el número de la tarjeta que desea usar.",
+        "error": "¡No pude obtener los datos de la tarjeta! A menos que alguien eliminó la tarjeta antes de la solicitud, ¡esto podría ser un error al final de Trello!"
     },
     "prefix": {
-        "footer": "Prefijos con el icono 🔒 no se pueden eliminar.",
+        "footer": "Los prefijos con el icono 🔒 no se pueden eliminar.",
         "removed": "Prefijo `{{&prefix}}` eliminado.",
         "limit": "¡Tienes demasiados prefijos! ¡Elimina al menos uno para poder añadir más!",
-        "none": "¡No tienes prefijos a eliminar!"
+        "none": "¡No tienes prefijos a eliminar!",
+        "already": "¡Ese prefijo ya existe!",
+        "mention": "¡Un prefijo no puede tener menciones!",
+        "char_limit": "¡Los prefijos no pueden tener más de 32 caracteres!",
+        "choose": "Escriba el número del prefijo que deseas eliminar.",
+        "added": "Prefijo `{{&prefix}}` agregado.",
+        "set_server": "Prefijo del servidor definido a `{{&prefix}}`.",
+        "no_arg": "¡Proporcione el prefijo que deseas agregar!",
+        "no_arg_server": "¡Proporcione el prefijo que deseas definir en el servidor!",
+        "can_add": {
+            "many": "Puedes añadir {{count}} prefijos más.",
+            "one": "Puedes añadir {{count}} prefijo más.",
+            "zero": "No puedes agregar más prefijos."
+        },
+        "server": "Prefijo del servidor"
     },
     "vote": {
         "review": "revisar",
@@ -700,7 +725,31 @@
     },
     "lists": {
         "menu": {
-            "archive_off": "Elimina la lista archivada"
-        }
+            "archive_off": "Elimina la lista archivada",
+            "sub_off": "Deja de seguir esta lista"
+        },
+        "created": "Lista \"{{&name}}\" creada. (`{{id}}`",
+        "input_new": "Escriba el nombre de la lista que desea agregar.",
+        "unarchived": "La lista \"{{&name}}\" archivada ha sido eliminada.",
+        "archived": "Lista \"{{&name}}\" archivada.",
+        "input_name": "Escriba el nombre al que desea cambiar el nombre de la lista.",
+        "set_name": "Nombre de la lista cambiado de \"{{&old}} a \"{{&new}}\"."
+    },
+    "webhook_filters": {
+        "CREATE_LABEL": "Creaciones de etiquetas",
+        "COPY_CARD": "Duplicaciones de tarjeta",
+        "COMMENT_CARD": "Comentarios nuevos en tarjetas"
+    },
+    "custom_field_types": {
+        "number": "Número",
+        "date": "Fecha"
+    },
+    "user_mgmt": {
+        "unsub_board": "Ya no sigues el tablero \"{{&name}}\". (`{{id}}`)",
+        "sub_board": "Siguiendo el tablero \"{{&name}}\". (`{{id}}`)",
+        "unsub_list": "Ya no sigues la lista \"{{&name}}\". (`{{id}}`)",
+        "sub_list": "Siguiendo la lista \"{{&name}}\". (`{{id}}`)",
+        "unsub_card": "Ya no sigues la tarjeta \"{{&name}}\". (`{{id}}`)",
+        "sub_card": "Siguiendo la tarjeta \"{{&name}}\". (`{{id}}`)"
     }
 }
