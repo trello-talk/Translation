@@ -647,7 +647,12 @@
         "move_in_card": "{{&member}} overførte kortet \"{{&card}}\" fra en anden tavle",
         "unarchive_board": "{{&member}} åbnede tavlen",
         "rem_board_desc": "{{&member}} fjernede beskrivelsen fra tavlen",
-        "archive_board": "{{&member}} lukkede tavlen"
+        "archive_board": "{{&member}} lukkede tavlen",
+        "rename_card": "{{&member}} omdøbte kortet \"{{&oldName}}\" til \"{{&card}}\"",
+        "board_to_normal": "{{&member}} gjorde {{&member2}} til en almindelig bruger af tavlen",
+        "board_to_admin": "{{&member}} gjorde {{&member2}} til en administrator af tavlen",
+        "card_add_self": "{{&member}} tilføjede sig selv til kortet \"{{&card}}\"",
+        "card_remove_self": "{{&member}} fjernede sig selv fra kortet \"{{&card}}\""
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter",
@@ -675,7 +680,8 @@
         "MAKE_NORMAL_MEMBER_OF_BOARD": "Tavleadministratorer degraderet til almindelige medlemmer",
         "MAKE_ADMIN_OF_BOARD": "Tavlemedlemmer forfremmet til administrator",
         "UPDATE_LABEL_COLOR": "Opdateringer af farver på etiketter",
-        "UPDATE_LABEL_NAME": "Opdateringer af navne på etiketter"
+        "UPDATE_LABEL_NAME": "Opdateringer af navne på etiketter",
+        "COPY_CARD": "Kortduplikeringer"
     },
     "webhook_cmd": {
         "menu": {
