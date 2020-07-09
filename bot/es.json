@@ -282,7 +282,8 @@
             "description": "Cambia la lista negra del servidor."
         },
         "setmaxwebhooks": {
-            "usage": "<ID del servidor> [límite]"
+            "usage": "<ID del servidor> [límite]",
+            "description": "Define el límite de webhooks para este servidor."
         },
         "remwebhook": {
             "usage": "<ID del webhook>",
@@ -350,7 +351,8 @@
         },
         "editwebhook": {
             "description": "Edita un webhook en tu servidor.  Comprueba la nota para subcomandos y usos.",
-            "usage": "<ID del webhook> [subcomando]"
+            "usage": "<ID del webhook> [subcomando]",
+            "note": "`activate`, `deactivate` - Activa o desactiva el webhook\n`filters` - Edita los filtros (formalmente \"Webhook Bits\") para este webhook\n`locale [idioma]` - Define el idioma para el webhook\n`repair` - Repara cualquier problema con el webhook\n`delete` - Elimina el webhook\n`whitelist`, `blacklist` - Cambia la política de filtros del webhook\n`lists` - Edita listas filtradas\n`cards` - Edita tarjetas filtradas"
         },
         "shardinfo": {
             "description": "Obtenga el estado de cada fragmento."
@@ -370,6 +372,9 @@
         },
         "vote": {
             "description": "Muestra los enlaces para votar por Taco."
+        },
+        "clearauth": {
+            "description": "Limpia tu autorización de Trello. No lo hagas si, realmente, no lo necesitas hacer."
         }
     },
     "bad_args": "¡No hay suficientes argumentos!",
@@ -664,7 +669,8 @@
         "need_admin": "¡Necesitas permisos de administrador en el tablero!",
         "none": "No estás asignado a ningún tablero. Puedes crear uno en <https://trello.com/>.",
         "header": "Usa `{{&cleanPrefix}}switch <nombre del tablero|ID del tablero>` para cambiar de tablero.",
-        "switch": "Cambiado a \"{{&name}}\" (`{{&id}}`)."
+        "switch": "Cambiado a \"{{&name}}\" (`{{&id}}`).",
+        "input_name": "Escriba el nombre qué desea para renombrar el tablero."
     },
     "trello_response": {
         "aborted": "¡Trello tardó demasiado en enviar una respuesta! ¡Intenta nuevamente más tarde!",
@@ -696,7 +702,12 @@
         "input_desc": "Escribe la nueva descripción para la tarjeta.",
         "arch_header": "Usa `{{&cleanPrefix}}editcard <ID de la lista|nombre de la lista> unarchive` para desarchivar una tarjeta.",
         "choose": "Escriba el número de la tarjeta que desea usar.",
-        "error": "¡No pude obtener los datos de la tarjeta! A menos que alguien eliminó la tarjeta antes de la solicitud, ¡esto podría ser un error al final de Trello!"
+        "error": "¡No pude obtener los datos de la tarjeta! A menos que alguien eliminó la tarjeta antes de la solicitud, ¡esto podría ser un error al final de Trello!",
+        "commented": "Comentario creado en \"{{&name}}\".",
+        "input_comment": "Escriba el mensaje qué deseas para comentar en la tarjeta.",
+        "created": "Tarjeta \"{{&name}}\" creada. (`{{id}}`)",
+        "input_new": "Escriba el nombre de la tarjeta qué deseas añadir.",
+        "input_name": "Escriba el nuevo nombre para la tarjeta."
     },
     "prefix": {
         "footer": "Los prefijos con el icono 🔒 no se pueden eliminar.",
@@ -726,14 +737,19 @@
     "lists": {
         "menu": {
             "archive_off": "Elimina la lista archivada",
-            "sub_off": "Deja de seguir esta lista"
+            "sub_off": "Deja de seguir esta lista",
+            "sub_on": "Sigue esta lista"
         },
         "created": "Lista \"{{&name}}\" creada. (`{{id}}`",
         "input_new": "Escriba el nombre de la lista que desea agregar.",
         "unarchived": "La lista \"{{&name}}\" archivada ha sido eliminada.",
         "archived": "Lista \"{{&name}}\" archivada.",
         "input_name": "Escriba el nombre al que desea cambiar el nombre de la lista.",
-        "set_name": "Nombre de la lista cambiado de \"{{&old}} a \"{{&new}}\"."
+        "set_name": "Nombre de la lista cambiado de \"{{&old}} a \"{{&new}}\".",
+        "wywtd": "Elija qué desea hacer con esta lista.",
+        "arch_none": "Este tablero no tiene listas archivadas.",
+        "list_none": "Esta lista no tiene tarjetas.",
+        "none": "Este tablero no tiene listas."
     },
     "webhook_filters": {
         "CREATE_LABEL": "Creaciones de etiquetas",
@@ -751,5 +767,14 @@
         "sub_list": "Siguiendo la lista \"{{&name}}\". (`{{id}}`)",
         "unsub_card": "Ya no sigues la tarjeta \"{{&name}}\". (`{{id}}`)",
         "sub_card": "Siguiendo la tarjeta \"{{&name}}\". (`{{id}}`)"
-    }
+    },
+    "webhooks": {
+        "vote_card": "{{&member}} ha votado en la tarjeta \"{{&card}}\"",
+        "create_card": "{{&member}} ha creado la tarjeta \"{{&card}}\"",
+        "archive_card": "{{&member}} ha archivado la tarjeta \"{{&card}}\"",
+        "move_card": "{{&member}} ha movido la tarjeta \"{{&card}}\" a la lista \"{{&list}}\"",
+        "edit_card_desc": "{{&member}} ha cambiado la descripción de la tarjeta \"{{&card}}\"",
+        "commented": "{{&member}} ha comentado en \"{{&card}}\""
+    },
+    "and_more": "Y {{count}} más…"
 }
