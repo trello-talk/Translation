@@ -460,6 +460,22 @@
         "addlist": {
             "usage": "[navn]",
             "description": "Opretter en liste på den aktuelle tavle."
+        },
+        "toggleuser": {
+            "usage": "<userID>"
+        },
+        "toggleserver": {
+            "usage": "<serverID>"
+        },
+        "setmaxwebhooks": {
+            "description": "Sætter begrænsningen af webhooks for den server."
+        },
+        "cleardata": {
+            "description": "Fjerner dine brugerdata fra Taco."
+        },
+        "remwebhook": {
+            "usage": "<webhookID>",
+            "description": "Fjerner et webhook fra din server."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -489,7 +505,9 @@
         "input_desc": "Indtast den nye beskrivelse for tavlen.",
         "unarchived": "Fjernede tavlen \"{{&name}}\" fra arkivet.",
         "archived": "Arkiverede tavlen \"{{&name}}\".",
-        "input_name": "Indtast det navn du ønsker at omdøbe tavlen til."
+        "input_name": "Indtast det navn du ønsker at omdøbe tavlen til.",
+        "removed_desc": "Fjernede tavlebeskrivelsen for \"{{&name}}\".",
+        "set_desc": "Satte tavlebeskrivelsen for \"{{&name}}\"."
     },
     "cards": {
         "none": "Denne tavle har ingen kort.",
@@ -515,7 +533,9 @@
             "name": "Rediger kortnavn",
             "sub_off": "Stop med at overvåge dette kort"
         },
-        "set_name": "Omdøbte kort fra \"{{&old}}\" til \"{{&new}}\"."
+        "set_name": "Omdøbte kort fra \"{{&old}}\" til \"{{&new}}\".",
+        "commented": "Oprettede en kommentar på \"{{&name}}\".",
+        "wywtd": "Vælg hvad du vil gøre med dette kort."
     },
     "prompt": {
         "no_search": "Der kom ikke nogen resultater ud af den søgning.",
@@ -715,7 +735,9 @@
             "locale": "Ændre sprogindstillinger",
             "cards": "Ændre filtrerede kort",
             "lists": "Ændre filtrerede lister",
-            "repair": "Reparer webhook"
+            "repair": "Reparer webhook",
+            "blist": "Ændre filter til sortliste",
+            "wlist": "Ændre filter til hvidliste"
         },
         "none": "Der er ingen webhooks på denne server der er forbundet til Trello.",
         "add_header": "Hvordan vil du have dit webhook skal opsættes?",
