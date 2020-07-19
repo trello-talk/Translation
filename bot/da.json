@@ -476,6 +476,9 @@
         "remwebhook": {
             "usage": "<webhookID>",
             "description": "Fjerner et webhook fra din server."
+        },
+        "comment": {
+            "description": "Kommenter på et kort på den aktuelle tavle."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -507,7 +510,9 @@
         "archived": "Arkiverede tavlen \"{{&name}}\".",
         "input_name": "Indtast det navn du ønsker at omdøbe tavlen til.",
         "removed_desc": "Fjernede tavlebeskrivelsen for \"{{&name}}\".",
-        "set_desc": "Satte tavlebeskrivelsen for \"{{&name}}\"."
+        "set_desc": "Satte tavlebeskrivelsen for \"{{&name}}\".",
+        "set_invite_perms": "Satte invitationstilladelser til {{&value}}.",
+        "set_vote_perms": "Satte afstmningstilladelser til {{&value}}."
     },
     "cards": {
         "none": "Denne tavle har ingen kort.",
@@ -544,7 +549,9 @@
         "cancel": "Skriver du \"cancel\" vil denne besked blive lukket.",
         "list": "Listeprompt",
         "no_confirm": "Bekræftelse annulleret.",
-        "confirm": "Er du sikker på du ønsker at gøre dette?"
+        "confirm": "Er du sikker på du ønsker at gøre dette?",
+        "select": "Indtast nummeret på tingen for at ændre dens værdi.",
+        "select_cancel": "Skriv \"save\" for at gemme udvalget, ellers skriv \"cancel\" for at annullere."
     },
     "lists": {
         "list_header": "Brug `{{&cleanPrefix}}card <cardID|cardName>` for at få oplysninger om et kort.",
@@ -756,7 +763,10 @@
         "wh_off": "Denne webhook er blevet slukket.",
         "wywtd": "Vælg hvad du vil gøre med denne webhook.",
         "choose_channel": "Vælg hvilken kanal som webhooken skal postes i.",
-        "try_repair": "Du kan reparere dette problem med `{{&cleanPrefix}}editwebhook {{&id}} repair`"
+        "try_repair": "Du kan reparere dette problem med `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "no_access": "Enten findes denne tavle ikke længere eller også har du ikke adgang til den!",
+        "cards_updated": "De filtrerede kort blev gemt.",
+        "lists_updated": "De filtrerede lister blev gemt."
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
@@ -788,5 +798,7 @@
         "number": "Nummer",
         "text": "Tekst",
         "checkbox": "Tjekboks"
-    }
+    },
+    "use_this": "Brug denne kommando i stedet:",
+    "deprecated": "Denne kommando er ikke længere tilgængelig!"
 }
