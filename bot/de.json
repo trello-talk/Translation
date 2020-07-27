@@ -234,6 +234,10 @@
         "vote_lower": {
             "many": "Stimmen",
             "one": "Stimme"
+        },
+        "member_type": {
+            "many": "Berechtigungsstufen",
+            "one": "Berechtigung"
         }
     },
     "trello": {
@@ -686,7 +690,50 @@
         "archive_card": "{{&member}} hat die Karte \"{{&card}}\" archiviert",
         "due_remove": "{{&member}} hat das Fälligkeitsdatum von der Karte \"{{&card}}\" entfernt",
         "due_add": "{{&member}} hat ein Fälligkeitsdatum zu Karte \"{{&card}}\" hinzugefügt",
-        "due_change": "{{&member}} hat das Fälligkeitsdatum der Karte \"{{&card}}\" wurde aktualisiert"
+        "due_change": "{{&member}} hat das Fälligkeitsdatum der Karte \"{{&card}}\" wurde aktualisiert",
+        "customfield_rename": "{{&member}} rhat das Benutzerdefinierte Feld von \"{{&oldName}}\" zu \"{{&customField}}\" umbenannt",
+        "customfield_delete": "{{&member}} hat das Benutzerdefinierte Feld \"{{&customField}}\" gelöscht",
+        "customfield_create": "{{&member}} hat das Benutzerdefinierte Feld \"{{&customField}}\" erstellt",
+        "copy_card": "{{&member}} hat die Karteninhalte von \"{{&sourceCard}}\" zu \"{{&card}}\" kopiert",
+        "copy_checklist": "{{&member}} hat die Checkliste \"{{&checklist}}\" von \"{{&sourceChecklist}}\" kopiert",
+        "move_in_card": "{{&member}} hat die Karte \"{{&card}}\" von einem anderen Board hierhin verschoben",
+        "move_in_list": "{{&member}} hat die List \"{{&list}}\" von einem anderen Board hierhin verschoben",
+        "move_out_card": "{{&member}} hat die Karte \"{{&card}}\" auf ein anderes Board verschoben",
+        "move_out_list": "{{&member}} hat die Liste \"{{&list}}\" in ein anderes Board verschoben",
+        "board_set_perm_levels": "{{&member}} hat die Sichtbarkeit des Boards von {{&oldPerm}} auf {{&perm}} gesetzt",
+        "board_set_vote_perms": "{{&member}} hat die Abstimmungsberechtigung von {{&oldPerm}} auf {{&perm}} gesetzt",
+        "board_set_comment_perms": "{{&member}} hat die Kommentarberechtigung von {{&oldPerm}} auf {{&perm}} gesetzt",
+        "board_set_invite_perms": "{{&member}} hat die Einladungsberechtigung von {{&oldPerm}} auf {{&perm}} gesetzt",
+        "unarchive_board": "{{&member}} hat das Board wieder geöffnet",
+        "archive_board": "{{&member}} hat das Board geschlossen",
+        "rem_board_desc": "{{&member}} hat die Beschreibung vom Board entfernt",
+        "edit_board_desc": "{{&member}} hat eine neue Beschreibung für das Board geschrieben",
+        "add_board_desc": "{{&member}} hat eine Beschreibung für das Board geschrieben",
+        "board_rename": "{{&member}} hat das Board \"{{&oldName}}\" zu \"{{&board}}\" umbenannt",
+        "board_to_normal_self": "{{&member}} hat wich selbst zu einem normalen Mitglied degradiert",
+        "board_to_normal": "{{&member}} zu einem {{&member2}} normalen Mitglied degradiert",
+        "board_to_admin": "{{&member}} hat {{&member2}} zum Administrator ernannt",
+        "board_join": "{{&member}} ist dem Board beigetreten",
+        "board_left": "{{&member}} hat das Board verlassen",
+        "board_remove_member": "{{&member}} hat {{&member2}} vom Board entfernt",
+        "board_add_member": "{{&member}} hat {{&member2}} zum Board hinzugefügt",
+        "card_remove_self": "{{&member}} hat sich selbst von der Karte \"{{&card}}\" entfernt",
+        "card_add_self": "{{&member}} hat sich selbst zur Karte \"{{&card}}\" hinzugefügt",
+        "card_remove_member": "{{&member}} hat {{&member2}} von der Karte \"{{&card}}\" entfernt",
+        "card_add_member": "{{&member}} hat {{&member2}} zur Karte \"{{&card}}\" hinzugefügt",
+        "card_remove_label": "{{&member}} hat des Label \"{{&label}}\" von der Karte \"{{&card}}\" entfernt",
+        "card_add_label": "{{&member}} hat das Label \"{{&label}}\" zur Karte \"{{&card}}\" hinzugefügt",
+        "unattach_card": "{{&member}} hat den Anhang\"{{&attachment}}\" von der Karte \"{{&card}}\" entfernt",
+        "attach_card": "{{&member}} hat \"{{&attachment}}\" an die Karte \"{{&card}}\" angehängt",
+        "delete_label": "{{&member}} hat das Label {{&labelID}} gelöscht",
+        "label_recolor": "{{&member}} hat die Farbe des Labems \"{{&label}}\" von {{&oldColor}} auf {{&color}} geändert",
+        "label_rename": "{{&member}} hat das Label \"{{&oldName}}\" zu \"{{&label}}\" umbenannt",
+        "create_label": "{{&member}} hat das Label \"{{&label}}\" erstellt",
+        "list_move": "{{&member}} hat die Liste \"{{&list}}\" an eine andere Stelle verschoben",
+        "list_rename": "{{&member}} hat die Liste \"{{&oldName}}\" zu \"{{&list}}\" umbennant",
+        "unarchive_list": "{{&member}} hat die Liste \"{{&list}}\" aus dem Archiv wiederhergestell",
+        "archive_list": "{{&member}} hat die Liste \"{{&list}}\" archiviert",
+        "create_list": "{{&member}} hat die Liste \"{{&list}}\" erstellt"
     },
     "and_more": "Und {{count}} mehr…",
     "user_mgmt": {
@@ -701,7 +748,8 @@
         "unsub_list": "Die Liste \"{{&name}}\" wird nicht länger beobachtet. (`{{id}}`)",
         "sub_list": "Die Liste \"{{&name}}\" wird jetzt beobachtet. (`{{id}}`)",
         "unsub_card": "Die Karte \"{{&name}}\" wird nicht mehr beobachtet. (`{{id}}`)",
-        "sub_card": "Die Karte \"{{&name}}\" wird jetzt beobachtet. (`{{id}}`)"
+        "sub_card": "Die Karte \"{{&name}}\" wird jetzt beobachtet. (`{{id}}`)",
+        "star_error": "Bei der Verarbeitung ist auf Seiten Trello's ein Fehler aufgetreten! Versuche es später nochmal!"
     },
     "prefix": {
         "none": "Du hast keine Präfixe, die du entfernen könntest!",
