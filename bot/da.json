@@ -479,6 +479,9 @@
         },
         "comment": {
             "description": "Kommenter på et kort på den aktuelle tavle."
+        },
+        "addwebhook": {
+            "description": "Opretter et webhook på din server."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -679,7 +682,10 @@
         "board_to_normal": "{{&member}} gjorde {{&member2}} til en almindelig bruger af tavlen",
         "board_to_admin": "{{&member}} gjorde {{&member2}} til en administrator af tavlen",
         "card_add_self": "{{&member}} tilføjede sig selv til kortet \"{{&card}}\"",
-        "card_remove_self": "{{&member}} fjernede sig selv fra kortet \"{{&card}}\""
+        "card_remove_self": "{{&member}} fjernede sig selv fra kortet \"{{&card}}\"",
+        "add_board_desc": "{{&member}} tilføjede en beskrivelse til tavlen",
+        "edit_board_desc": "{{&member}} ændrede tavlens beskrivelse",
+        "move_out_list": "{&member}} overførte listen \"{{&list}}\" til en anden tavle"
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter",
