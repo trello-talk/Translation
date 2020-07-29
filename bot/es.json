@@ -553,8 +553,8 @@
             "many": "Tipos de miembros"
         },
         "checklist": {
-            "one": "Lista de comprobación",
-            "many": "Listas de comprobación"
+            "one": "Checklist",
+            "many": "Checklists"
         },
         "checklist_item": {
             "many": "Artículos de la lista de comprobación",
@@ -758,7 +758,8 @@
     },
     "custom_field_types": {
         "number": "Número",
-        "date": "Fecha"
+        "date": "Fecha",
+        "text": "Texto"
     },
     "user_mgmt": {
         "unsub_board": "Ya no sigues el tablero \"{{&name}}\". (`{{id}}`)",
@@ -766,7 +767,11 @@
         "unsub_list": "Ya no sigues la lista \"{{&name}}\". (`{{id}}`)",
         "sub_list": "Siguiendo la lista \"{{&name}}\". (`{{id}}`)",
         "unsub_card": "Ya no sigues la tarjeta \"{{&name}}\". (`{{id}}`)",
-        "sub_card": "Siguiendo la tarjeta \"{{&name}}\". (`{{id}}`)"
+        "sub_card": "Siguiendo la tarjeta \"{{&name}}\". (`{{id}}`)",
+        "cleardata": "Tus datos han sido eliminados.",
+        "clearauth": "Tu autorización ha sido eliminada.",
+        "clearauth_confirm": "¿Estás seguro que deseas eliminar tu autorización? Ocurrirá lo siguiente:\n- Tu token de Trello será inválido.\n- Cualquier webhook que hayas creado dejará de funcionar y requerirá ser reparado.",
+        "cleardata_confirm": "¿Estás seguro de que deseas eliminar todos tus datos? Ocurrirá lo siguiente:\n- Tus prefijos y la configuración del idioma serán eliminados.\n- Tus credenciales de autorización serán eliminadas.\n- Tu token de Trello será inválido.\n- Cualquier webhook que hayas creado dejará de funcionar y requerirá ser reparado."
     },
     "webhooks": {
         "vote_card": "{{&member}} ha votado en la tarjeta \"{{&card}}\"",
@@ -776,5 +781,9 @@
         "edit_card_desc": "{{&member}} ha cambiado la descripción de la tarjeta \"{{&card}}\"",
         "commented": "{{&member}} ha comentado en \"{{&card}}\""
     },
-    "and_more": "Y {{count}} más…"
+    "and_more": "Y {{count}} más…",
+    "webhook_filter_group": {
+        "customField": "Campos personalizados",
+        "list": "Listas"
+    }
 }
