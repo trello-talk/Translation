@@ -319,7 +319,11 @@
         "template": "Ist es ein Vorlage?",
         "new_v": "Neuer Wert",
         "old_v": "Alter Wert",
-        "custom_field": "Persönliches Feld"
+        "custom_field": "Persönliches Feld",
+        "card_age": {
+            "pirate": "Pirat",
+            "regular": "Normal"
+        }
     },
     "webhook_cmd": {
         "discord_webhook": "Discord Webhook",
@@ -691,9 +695,9 @@
         "due_remove": "{{&member}} hat das Fälligkeitsdatum von der Karte \"{{&card}}\" entfernt",
         "due_add": "{{&member}} hat ein Fälligkeitsdatum zu Karte \"{{&card}}\" hinzugefügt",
         "due_change": "{{&member}} hat das Fälligkeitsdatum der Karte \"{{&card}}\" wurde aktualisiert",
-        "customfield_rename": "{{&member}} rhat das Benutzerdefinierte Feld von \"{{&oldName}}\" zu \"{{&customField}}\" umbenannt",
-        "customfield_delete": "{{&member}} hat das Benutzerdefinierte Feld \"{{&customField}}\" gelöscht",
-        "customfield_create": "{{&member}} hat das Benutzerdefinierte Feld \"{{&customField}}\" erstellt",
+        "customfield_rename": "{{&member}} hat das benutzerdefinierte Feld von \"{{&oldName}}\" zu \"{{&customField}}\" umbenannt",
+        "customfield_delete": "{{&member}} hat das benutzerdefinierte Feld \"{{&customField}}\" gelöscht",
+        "customfield_create": "{{&member}} hat das benutzerdefinierte Feld \"{{&customField}}\" erstellt",
         "copy_card": "{{&member}} hat die Karteninhalte von \"{{&sourceCard}}\" zu \"{{&card}}\" kopiert",
         "copy_checklist": "{{&member}} hat die Checkliste \"{{&checklist}}\" von \"{{&sourceChecklist}}\" kopiert",
         "move_in_card": "{{&member}} hat die Karte \"{{&card}}\" von einem anderen Board hierhin verschoben",
@@ -733,7 +737,11 @@
         "list_rename": "{{&member}} hat die Liste \"{{&oldName}}\" zu \"{{&list}}\" umbennant",
         "unarchive_list": "{{&member}} hat die Liste \"{{&list}}\" aus dem Archiv wiederhergestell",
         "archive_list": "{{&member}} hat die Liste \"{{&list}}\" archiviert",
-        "create_list": "{{&member}} hat die Liste \"{{&list}}\" erstellt"
+        "create_list": "{{&member}} hat die Liste \"{{&list}}\" erstellt",
+        "customfielditem_update": "{{&member}} hat das benutzerdefinierte Feld \"{{&customField}}\" auf der Karte \"{{&card}}\" bearbeitet",
+        "customfielditem_remove": "{{&member}} hat das benutzerdefinierte Feld \"{{&customField}}\" von der Karte \"{{&card}}\" gelöscht",
+        "customfielditem_checkbox_true": "{{&member}} hat das benutzerdefinierte Feld \"{{&customField}}\" auf der Karte \"{{&card}}\" als abgeschlossen markiert",
+        "customfielditem_checkbox_false": "{{&member}} hat das benutzerdefinierte Feld \"{{&customField}}\" auf der Karte \"{{&card}}\" als nicht abgeschlossen markiert"
     },
     "and_more": "Und {{count}} mehr…",
     "user_mgmt": {
@@ -864,5 +872,33 @@
         "switch": "Zu \"{{&name}}\" (`{{&id}}`) gewechselt.",
         "header": "Benutze `{{&cleanPrefix}}switch <boardID|boardName>` um zwischen Boards zu wechseln.",
         "none": "Du bist auf keinem Board. Du kannst auf <https://trello.com/> eins erstellen."
+    },
+    "webhook_filters": {
+        "REMOVE_MEMBER_FROM_CARD": "Mitglieder von Karten entfernt",
+        "REMOVE_MEMBER_FROM_BOARD": "Mitglieder vom Board entfernt",
+        "REMOVE_LABEL_FROM_CARD": "Labels von Karten entfernt",
+        "REMOVE_CHECKLIST_FROM_CARD": "Checklisten von Karten entfernt",
+        "MOVE_LIST_TO_BOARD": "Liste aus einem anderen Board hierher verschoben",
+        "MOVE_LIST_FROM_BOARD": "Liste in anderes Board verschoben",
+        "MOVE_CARD_TO_BOARD": "Karte aus einem anderen Board hierher verschoben",
+        "MOVE_CARD_FROM_BOARD": "Karte in anderes Board verschoben",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Boardmitglieder zu normalen Mitgliedern degradiert",
+        "MAKE_ADMIN_OF_BOARD": "Boardmitglieder zu Admins befördert",
+        "DELETE_LABEL": "Labels gelöscht",
+        "DELETE_CHECK_ITEM": "Checklistengegenstände gelöscht",
+        "DELETE_CARD": "Karten gelöscht",
+        "DELETE_ATTACHMENT_FROM_CARD": "Anhänge von Karten entfernt",
+        "CREATE_LIST": "Neue Listen",
+        "CREATE_CARD": "Neue Karten",
+        "CREATE_LABEL": "Neue Labels",
+        "COPY_CHECKLIST": "Verdoppelte Checklisten",
+        "COPY_CARD": "Verdoppelte Karten",
+        "CONVERT_TO_CARD_FROM_CHECK_ITEM": "Zu Karten konvertierte Checklistengegenstände",
+        "COMMENT_CARD": "Neue Kommtare zu Karten",
+        "ADD_MEMBER_TO_CARD": "Neue Mitglieder auf Karten",
+        "ADD_MEMBER_TO_BOARD": "Neue Mitglieder auf dem Board",
+        "ADD_LABEL_TO_CARD": "Neue Labels auf Karten",
+        "ADD_CHECKLIST_TO_CARD": "Neue Checklisten",
+        "ADD_ATTACHMENT_TO_CARD": "Neue Anhänge an Karten"
     }
 }
