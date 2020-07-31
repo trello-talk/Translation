@@ -26,7 +26,7 @@
         "pinned": "Fijado",
         "starred": "Destacado",
         "voting": "Votando",
-        "add_rem_members": "Agregar/Eliminar miembros",
+        "add_rem_members": "Agregar/Quitar miembros",
         "archived_lower": "archivado",
         "old_desc": "Vieja descripción",
         "new_desc": "Nueva descripción",
@@ -287,7 +287,7 @@
         },
         "remwebhook": {
             "usage": "<ID del webhook>",
-            "description": "Elimina un webhook de tu servidor."
+            "description": "Quita un webhook de tu servidor."
         },
         "addwebhook": {
             "usage": "[Nombre del tablero|ID del tablero]",
@@ -322,15 +322,15 @@
         },
         "watch": {
             "usage": "[Nombre del tablero|ID del tablero]",
-            "description": "Alternar viendo un tablero. Si no se define un tablero, se usa el tablero actual. Los tableros vigilados le darán notificaciones de actualización en [Trello](https://trello.com/)."
+            "description": "Alternar el seguir un tablero. Si no se define un tablero, se usa el tablero actual. Los tableros que sigas te darán notificaciones de actualización en [Trello](https://trello.com/)."
         },
         "watchlist": {
             "usage": "[Nombre de la lista|ID de la lista]",
-            "description": "Alternar viendo una lista. Las listas observadas le darán notificaciones de actualización en [Trello](https://trello.com/)."
+            "description": "Alternar el seguir una lista. Las listas que sigas te darán notificaciones de actualización en [Trello](https://trello.com/)."
         },
         "watchcard": {
             "usage": "[Nombre de la tarjeta|ID de la tarjeta]",
-            "description": "Alternar viendo una tarjeta. Las tarjetas observadas le darán notificaciones de actualización en [Trello](https://trello.com/)."
+            "description": "Alternar el seguir una tarjeta. Las tarjetas que sigas te darán notificaciones de actualización en [Trello](https://trello.com/)."
         },
         "cardarchive": {
             "usage": "[página]",
@@ -651,13 +651,14 @@
         "wywtd": "Elija lo que deseas hacer con este tablero.",
         "choose": "Escriba el número del tablero que desea usar.",
         "menu": {
-            "remove_desc": "Elimina la descripción del tablero",
+            "remove_desc": "Quita la descripción del tablero",
             "archive_on": "Cerrar tablero",
             "archive_off": "Abrir tablero",
             "desc": "Edita la descripción del tablero",
             "name": "Edita el nombre del tablero",
             "sub_on": "Sigue este tablero",
-            "sub_off": "Deja de seguir este tablero"
+            "sub_off": "Deja de seguir este tablero",
+            "invite": "Cambia añadir/quitar permisos de miembros ({{&value}})"
         },
         "unarchived": "El tablero \"{{&name}}\" archivado ha sido eliminado.",
         "archived": "Tablero \"{{&name}}\" archivado.",
@@ -687,7 +688,9 @@
             "desc": "Edita la descripción de la tarjeta",
             "sub_on": "Sigue esta tarjeta",
             "sub_off": "Deja de seguir esta tarjeta",
-            "attach": "Crear archivo adjunto"
+            "attach": "Crear archivo adjunto",
+            "due_on": "Marca la fecha de vencimiento como cumplida",
+            "due_off": "Marca la fecha de vencimiento como no cumplida"
         },
         "remove_confirm": "¿Estás seguro de que deseas eliminar \"{{&name}}\"? (`{{id}}`)",
         "wywtd": "Elija qué deseas hacer con esta tarjeta.",
@@ -707,7 +710,9 @@
         "input_comment": "Escriba el mensaje qué deseas para comentar en la tarjeta.",
         "created": "Tarjeta \"{{&name}}\" creada. (`{{id}}`)",
         "input_new": "Escriba el nombre de la tarjeta qué deseas añadir.",
-        "input_name": "Escriba el nuevo nombre para la tarjeta."
+        "input_name": "Escriba el nuevo nombre para la tarjeta.",
+        "bad_attach": "¡URL del archivo adjunto incorrecta!",
+        "input_attach": "Pega la URL del archivo adjunto que deseas añadir a la tarjeta."
     },
     "prefix": {
         "footer": "Los prefijos con el icono 🔒 no se pueden eliminar.",
