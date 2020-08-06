@@ -899,6 +899,14 @@
         "ADD_MEMBER_TO_BOARD": "Neue Mitglieder auf dem Board",
         "ADD_LABEL_TO_CARD": "Neue Labels auf Karten",
         "ADD_CHECKLIST_TO_CARD": "Neue Checklisten",
-        "ADD_ATTACHMENT_TO_CARD": "Neue Anhänge an Karten"
+        "ADD_ATTACHMENT_TO_CARD": "Neue Anhänge an Karten",
+        "UPDATE_BOARD_PREFS": "Boardeinstellungen geändert",
+        "UPDATE_BOARD_DESC": "Neue Boardbeschreibung",
+        "UPDATE_BOARD_NAME": "Veränderte Boardnamen",
+        "UPDATE_COMMENT": "Veränderte Kommentare",
+        "DELETE_COMMENT": "Gelöschte Kommentare",
+        "CREATE_CHECK_ITEM": "Neue Checklistengegenstände",
+        "VOTE_ON_CARD": "Abstimmungen auf Karten",
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Checklistengegenstände (nicht) abgeschlossen"
     }
 }
