@@ -622,7 +622,8 @@
             "due_on": "Mark due date as complete",
             "remove_due": "Remove due date",
             "due_off": "Mark due date as incomplete",
-            "attach": "Create attachment"
+            "attach": "Create attachment",
+            "due": "Set due date"
         },
         "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the card to.",
@@ -640,7 +641,10 @@
         "commented": "Created a comment on \"{{&name}}\".",
         "add_attach": "Created an attachment to \"{{&name}}\".",
         "bad_attach": "Invalid attachment URL!",
-        "input_attach": "Paste the URL of the attachment you want to add to the card."
+        "input_attach": "Paste the URL of the attachment you want to add to the card. You can also add an attachment to your message.",
+        "set_due": "Set due date to {{&date}}.",
+        "bad_due": "I could not recognize that date. Try something like \"Tomorrow at 9 AM\" or \"Next Friday\".",
+        "input_due": "Type the due date to set the card on."
     },
     "lists": {
         "arch_none": "This board has no archived lists.",
