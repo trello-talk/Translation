@@ -805,7 +805,7 @@
     "cards": {
         "add_attach": "Der Anhang wurde auf der Karte \"{{&name}}\" hinzugefügt.",
         "bad_attach": "Ungültiger Link!",
-        "input_attach": "Antworte mit einem Link zu dem Anhang, den du hinzufügen willst.",
+        "input_attach": "Antworte mit einem Link zu dem Anhang, den du hinzufügen willst. Du kannst auch mit einem Anhang antowrten.",
         "commented": "Auf der Karte \"{{&name}}\" wurde ein Kommentar hinzugefügt.",
         "input_comment": "Schreibe den Kommentar, den du zur Karte hinzufügen willst.",
         "due_off": "Das Fälligkeitsdatum der Karte \"{{&name}}\" wurde als unvollständig gekennzeichnet.",
@@ -833,14 +833,18 @@
             "desc": "Beschreibung bearbeiten",
             "archive_off": "Vom Archiv wiederherstellen",
             "archive_on": "Archivieren",
-            "name": "Den Namen bearbeiten"
+            "name": "Den Namen bearbeiten",
+            "due": "Fälligkeitsdatum setzten"
         },
         "wywtd": "Wähle aus, was du mit dieser Karte machen willst.",
         "choose": "Antworte mit der Nummer der Karte, die du benutzen willst.",
         "error": "Ich konnte die Daten der Karte nicht abrufen! Wenn die Karte nicht gelöscht wurde, war das wahrscheinlich ein Fehler von Trello!",
         "arch_header": "Um eine Karte zu öffnen, benutze `{{&cleanPrefix}}editcard <listID|listName> unarchive`.",
         "arch_none": "Es befinden sich keine archivierten Karten auf diesem Board.",
-        "none": "Auf diesem Board befinden sich keine Karten."
+        "none": "Auf diesem Board befinden sich keine Karten.",
+        "set_due": "Das Fälligkeitsdatum wurde auf {{&date}} gesetzt.",
+        "bad_due": "Das Datum habe ich nicht erkannt. Versuche es mit Ausdrücken wir \"Morgen um 9\" oder \"Nächsten Freitag\".",
+        "input_due": "Antworte mit dem Fälligkeitsdatum, auf das die Karte gesetzt werden soll."
     },
     "boards": {
         "menu": {
@@ -874,20 +878,20 @@
         "none": "Du bist auf keinem Board. Du kannst auf <https://trello.com/> eins erstellen."
     },
     "webhook_filters": {
-        "REMOVE_MEMBER_FROM_CARD": "Mitglieder von Karten entfernt",
-        "REMOVE_MEMBER_FROM_BOARD": "Mitglieder vom Board entfernt",
-        "REMOVE_LABEL_FROM_CARD": "Labels von Karten entfernt",
-        "REMOVE_CHECKLIST_FROM_CARD": "Checklisten von Karten entfernt",
-        "MOVE_LIST_TO_BOARD": "Liste aus einem anderen Board hierher verschoben",
-        "MOVE_LIST_FROM_BOARD": "Liste in anderes Board verschoben",
-        "MOVE_CARD_TO_BOARD": "Karte aus einem anderen Board hierher verschoben",
-        "MOVE_CARD_FROM_BOARD": "Karte in anderes Board verschoben",
-        "MAKE_NORMAL_MEMBER_OF_BOARD": "Boardmitglieder zu normalen Mitgliedern degradiert",
-        "MAKE_ADMIN_OF_BOARD": "Boardmitglieder zu Admins befördert",
-        "DELETE_LABEL": "Labels gelöscht",
-        "DELETE_CHECK_ITEM": "Checklistengegenstände gelöscht",
-        "DELETE_CARD": "Karten gelöscht",
-        "DELETE_ATTACHMENT_FROM_CARD": "Anhänge von Karten entfernt",
+        "REMOVE_MEMBER_FROM_CARD": "Von Karten entfernte Mitgleider",
+        "REMOVE_MEMBER_FROM_BOARD": "Vom Board entfernte Mitglieder",
+        "REMOVE_LABEL_FROM_CARD": "Von Karten entfernte Labels",
+        "REMOVE_CHECKLIST_FROM_CARD": "Von Karten entfernte Checklisten",
+        "MOVE_LIST_TO_BOARD": "Aus einem anderen Board hierher verschobene Listen",
+        "MOVE_LIST_FROM_BOARD": "In anders Board verschobene Listen",
+        "MOVE_CARD_TO_BOARD": "Aus einem anderen Board hierher verschobene Karten",
+        "MOVE_CARD_FROM_BOARD": "In ein anders Board verschobene Karten",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Zu normalen Mitgliedern degradierte Boardmitglieder",
+        "MAKE_ADMIN_OF_BOARD": "Zu Admins beförderte Boardmitglieder",
+        "DELETE_LABEL": "Entfernte Labels",
+        "DELETE_CHECK_ITEM": "Entfernte Checklistengegenstände",
+        "DELETE_CARD": "Entfernte Karten",
+        "DELETE_ATTACHMENT_FROM_CARD": "Entfernte Kartenanhänge",
         "CREATE_LIST": "Neue Listen",
         "CREATE_CARD": "Neue Karten",
         "CREATE_LABEL": "Neue Labels",
@@ -907,6 +911,21 @@
         "DELETE_COMMENT": "Gelöschte Kommentare",
         "CREATE_CHECK_ITEM": "Neue Checklistengegenstände",
         "VOTE_ON_CARD": "Abstimmungen auf Karten",
-        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Checklistengegenstände (nicht) abgeschlossen"
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Checklistengegenstände (nicht) abgeschlossen",
+        "UPDATE_LIST_POS": "Veränderte Listenreihenfolge",
+        "UPDATE_LIST_NAME": "Veränderter Listenname",
+        "UPDATE_LABEL_COLOR": "Veränderte Labelfarben",
+        "UPDATE_LABEL_NAME": "Veränderte Labelnamen",
+        "UPDATE_CHECKLIST_POS": "Positionsveränderungen von Checklisten",
+        "UPDATE_CHECKLIST_NAME": "Veränderter Checklistenname",
+        "UPDATE_CHECK_ITEM_POS": "Positionsveränderungen von Checklistengegenständen",
+        "UPDATE_CHECK_ITEM_NAME": "Veränderte Inhalte von Checklistengegenständen",
+        "UPDATE_CARD_CLOSED": "Archivierte/Wiederhegestellte Karten",
+        "UPDATE_CARD_DUE": "Veränderte Fälligkeitsdaten",
+        "UPDATE_CARD_POS": "Andere Position von Karten innerhalb von Listen",
+        "UPDATE_CARD_LIST": "Verschieben von Karten in andere Listen",
+        "UPDATE_CARD_DESC": "Veränderte Kartenbeschreibung",
+        "UPDATE_CARD_NAME": "Veränderter Katenname",
+        "UPDATE_BOARD_CLOSED": "Änderungen am Boardstatus(öffnen/schließen)"
     }
 }
