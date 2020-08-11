@@ -495,7 +495,8 @@
         "discordAuth": "You haven't authorised your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
         "auth": "You haven't authorised your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
         "webhooks": "I need the permission `Manage Webhooks` to use this command!",
-        "userData": "Your settings are not in the database!"
+        "userData": "Your settings are not in the database!",
+        "guild": "This command must be ran in a guild!"
     },
     "_": {
         "emoji": "gb",
