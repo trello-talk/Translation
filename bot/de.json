@@ -607,7 +607,8 @@
         "trelloRole": "Um diesen Befehl auszuführen, muss der Server dir gehören oder du eine Rolle namens`Trello` zugewiesen haben!",
         "emoji": "Ich brauche die Berechtigung `Externe Emojis benutzen` um diesen Befehl auszuführen!",
         "embed": "Ich brauche die Berechtigung `Links einbetten` um diesen Befehl auszuführen!",
-        "attach": "Ich brauche die Berechtigung `Dateien anhängen` um diesen Befehl auszuführen!"
+        "attach": "Ich brauche die Berechtigung `Dateien anhängen` um diesen Befehl auszuführen!",
+        "guild": "Dieser Befehl muss auf einem Server ausheführt werden!"
     },
     "categories": {
         "misc": "Verschiedenes",
