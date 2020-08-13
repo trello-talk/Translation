@@ -24,7 +24,8 @@
         },
         "editwebhook": {
             "usage": "<webhookID> [subcommand]",
-            "description": "Bewerk een webhook in uw server. Controleer de opmerking voor sub-commands en gebruik."
+            "description": "Bewerk een webhook in uw server. Controleer de opmerking voor sub-commands en gebruik.",
+            "note": "`activate`, `deactivate` - Activeer of deactiveer de webhook\n`filters` - Pas de filter aan (eerder gekend al s\"Webhook Bits\") voor deze webhook\n`locale [locale]` - Zet de taal voor de webhook\n`repair` - Herstel problemen met de webhook\n`delete` - Verwijder de webhook\n`whitelist`, `blacklist` - Filter policy aanpassen van webhook\n`lists` - Pas filter lijst aan\n`cards` - Pas filter kaarten aan"
         },
         "setmaxwebhooks": {
             "description": "Stelt de limiet voor webhooks in voor die server.",
@@ -665,7 +666,8 @@
         "webhooks": "Ik heb de permissie `Manage Webhooks` nodig om dit command uit te voeren!",
         "userData": "Uw instellingen staan niet in de database!",
         "trelloRole": "Deze command vereist dat u de server beheerder bent of dat u de role `Trello` heeft!",
-        "selectedBoard": "Er is geen board geselecteerd!\nSelecteer een board met de `{{&cleanPrefix}}switch` command!"
+        "selectedBoard": "Er is geen board geselecteerd!\nSelecteer een board met de `{{&cleanPrefix}}switch` command!",
+        "guild": "Dit commando moet uitgevoerd worden in een server!"
     },
     "format": {
         "second": {
@@ -699,7 +701,8 @@
             "sub_off": "Stop het bekijken van deze lijst",
             "sub_on": "Bekijk deze lijst",
             "archive_off": "Verwijder lijst uit het archief",
-            "archive_on": "Archiveer lijst"
+            "archive_on": "Archiveer lijst",
+            "name": "Pas de lijst naam aan"
         },
         "header": "gebruik `{{&cleanPrefix}}list <listID|listName>` om een lijst weer te geven.",
         "arch_none": "Dit board heeft geen gearchiveerde lijsten.",
@@ -710,12 +713,15 @@
         "unarchived": "Lijst met naam \"{{&name}}\" verwijderd uit het archief.",
         "choose": "Type het nummer van de lijst die je wil gebruiken.",
         "list_header": "Gebruik `{{&cleanPrefix}}card <cardID|cardName>`Om info te krijgen van de kaart.",
-        "arch_header": "Gebruik `{{&cleanPrefix}}editlist <listID|listName> unarchive` om een lijst te openen."
+        "arch_header": "Gebruik `{{&cleanPrefix}}editlist <listID|listName> unarchive` om een lijst te openen.",
+        "archived": "\"{{&name}}\" is gearchiveerd.",
+        "input_name": "Type de nieuwe naam voor de lijst.",
+        "wywtd": "Kies wat u wil doen met deze lijst."
     },
     "cards": {
         "add_attach": "Bijlage gemaakt aan \"{{&name}}\".",
         "bad_attach": "Ongeldige bijlage URL!",
-        "input_attach": "Plak de URL naar de bijlage die u wil toevoegen.",
+        "input_attach": "Plak de URL naar de bijlage die u wil toevoegen. U kan ook een bijlage bijvoegen aan uw bericht.",
         "commented": "Maakt een commentaar op \"{{&name}}\".",
         "input_comment": "Type de commentaar die u wil toevoegen aan de kaart.",
         "due_off": "Markeer deadline als onvoltooid voor \"{{&name}}\".",
@@ -743,18 +749,31 @@
             "desc": "Pas de kaart beschrijving aan",
             "archive_off": "Verwijder de kaart uit het archief",
             "archive_on": "Archiveer de kaart",
-            "name": "Hernoem de kaart"
+            "name": "Hernoem de kaart",
+            "due": "Zet deadline"
         },
         "wywtd": "Kies wat u wil doen met de kaart.",
         "choose": "Type het nummer van de kaart die u wil gebruiken.",
         "error": "Ik kon de kaart niet lezen! Iemand kan deze verwijderd hebben. Indien dat niet het geval is heeft Trello een probleem!",
         "arch_header": "Gebruik `{{&cleanPrefix}}editcard <listID|listName> unarchive` om een kaart te openen.",
         "arch_none": "Dit board heeft geen archief.",
-        "none": "Dit board heeft geen kaarten."
+        "none": "Dit board heeft geen kaarten.",
+        "set_due": "Zet deadline op {{&date}}.",
+        "bad_due": "Ik kon deze datum niet herkennen. Probeer \"Morgen om 9 uur\" of \"Volgende Vrijdag\".",
+        "input_due": "Type de deadline om in te stellen."
     },
     "user_mgmt": {
         "unsub_card": "U bekijkt kaart \"{{&name}}\". (`{{id}}`) niet meer",
-        "sub_card": "U bekijkt kaart \"{{&name}}\". (`{{id}}`)"
+        "sub_card": "U bekijkt kaart \"{{&name}}\". (`{{id}}`)",
+        "clearauth": "Uw authorization is cleared.",
+        "clearauth_confirm": "Ben je zeker dat je jou authorization wil verwijderen? Het volgende zal gebeuren:\n- Uw Trello token wordt invalidated.\n- Elke webhook die je gemaakt hebt is niet meer geldig en zal niet meer werken.",
+        "star_error": "De ster van voor deze board is niet gevonden! Probeer later opnieuw!",
+        "unstar_board": "Ster verwijderd voor board \"{{&name}}\". (`{{id}}`)",
+        "star_board": "Ster gemaakt voor board \"{{&name}}\". (`{{id}}`)",
+        "unsub_board": "Niet meer kijkend naar board \"{{&name}}\". (`{{id}}`)",
+        "sub_board": "Nu kijkend naar board \"{{&name}}\". (`{{id}}`)",
+        "unsub_list": "Niet meer kijkend naar lijst \"{{&name}}\". (`{{id}}`)",
+        "sub_list": "Nu kijkend naar lijst \"{{&name}}\". (`{{id}}`)"
     },
     "prefix": {
         "none": "U heeft geen voorvoegsels om te verwijderen!",
