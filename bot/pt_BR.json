@@ -327,7 +327,9 @@
         "discordAuth": "Você não sincronizou sua conta do discord com o trello!\nSincronize com o comando `{{&cleanPrefix}}auth`!",
         "selectedBoard": "Nenhum quadro selecionado!\nSelecione o quadro com o comando`{{&cleanPrefix}}switch`!",
         "attach": "Eu preciso da permissão de `Anexar Arquivos` para usar esse comando!",
-        "trelloRole": "Esse comando requer que você seja o dono do servidor ou possua o cargo `Trello`!"
+        "trelloRole": "Esse comando requer que você seja o dono do servidor ou possua o cargo `Trello`!",
+        "userData": "Suas configurações não estão na base de dados!",
+        "guild": "Esse comando precisa ser executado em um servidor!"
     },
     "format": {
         "second": {
@@ -517,7 +519,8 @@
             "usage": "<IdDoWebhook>"
         },
         "webhooks": {
-            "usage": "[página]"
+            "usage": "[página]",
+            "description": "Lista os webhooks em seu servidor."
         }
     },
     "_": {
@@ -545,7 +548,8 @@
         "select": "Digite o número do item para alterar o valor.",
         "select_cancel": "Digite \"save\" para salvar a seleção, ou digite \"cancel\" para sair.",
         "select_canceled": "Seu último prompt foi cancelado. Todas as alterações foram perdidas.",
-        "select_timeout": "Seu último prompt atingiu o tempo limite. Todas as alterações foram perdidas."
+        "select_timeout": "Seu último prompt atingiu o tempo limite. Todas as alterações foram perdidas.",
+        "canceled": "Seu último prompt foi cancelado."
     },
     "boards": {
         "header": "Use `{{&cleanPrefix}}switch <idDoQuadro|nomeDoQuadro>` para alternar entre quadros.",
@@ -594,7 +598,8 @@
             "archive_on": "Arquivar cartão",
             "remove_due": "Remover data de entrega",
             "due_on": "Marcar a data de entrega como completa",
-            "due_off": "Marcar a data de entrega como incompleta"
+            "due_off": "Marcar a data de entrega como incompleta",
+            "due": "Define uma data de vencimento"
         },
         "set_name": "Cartão renomeado de \"{{&old}}\" para \"{{&new}}\".",
         "input_name": "Digite um novo nome para o cartão.",
@@ -612,7 +617,9 @@
         "removed_due": "Data de entrega removida do cartão \"{{&name}}\".",
         "due_off": "Data de entrega marcada como incompleta para o cartão \"{{&name}}\".",
         "input_comment": "Digite a mensagem que você deseja comentar no cartão.",
-        "commented": "Comentário criado em \"{{&name}}\"."
+        "commented": "Comentário criado em \"{{&name}}\".",
+        "bad_attach": "URL do anexo Inválido!",
+        "set_due": "Data de vencimento definida para {{&date}}."
     },
     "lists": {
         "none": "Esse quadro não possui listas.",
@@ -666,7 +673,9 @@
         "sub_board": "Acompanhando agora o quadro \"{{&name}}\". (`{{id}}`)",
         "star_board": "Estrela adicionada ao quadro \"{{&name}}\". (`{{id}}`)",
         "unsub_card": "Não está mais acompanhando o cartão \"{{&name}}\". (`{{id}}`)",
-        "star_error": "O quadro com estrela não foi encontrado! Tente novamente mais tarde!"
+        "star_error": "O quadro com estrela não foi encontrado! Tente novamente mais tarde!",
+        "cleardata": "Os dados do seu usuário foram removidos com sucesso.",
+        "clearauth": "Sua autorização foi removida com sucesso."
     },
     "and_more": "E {{count}} mais…",
     "error": "Um erro ocorreu enquanto processava este comando!",
@@ -711,7 +720,15 @@
         "board_to_normal": "{{&member}} tornou {{&member2}} um membro comum do quadro",
         "board_to_admin": "{{&member}} tornou {{&member2}} um administrador do quadro",
         "board_join": "{{&member}} entrou no quadro",
-        "board_left": "{{&member}} saiu do quadro"
+        "board_left": "{{&member}} saiu do quadro",
+        "card_add_member": "{{&member}} adicionou {{&member2}} ao cartão \"{{&card}}\"",
+        "card_remove_label": "{{&member}} removeu a etiqueta \"{{&label}}\" do cartão \"{{&card}}\"",
+        "card_add_label": "{{&member}} adicionou a etiqueta \"{{&label}}\" ao cartão \"{{&card}}\"",
+        "delete_label": "{{&member}} deletou a etiqueta {{&labelID}}",
+        "list_rename": "{{&member}} renomeou a lista \"{{&oldName}}\" para \"{{&list}}\"",
+        "unarchive_list": "{{&member}} removeu a lista \"{{&list}}\" do arquivo",
+        "create_list": "{{&member}} criou a lista \"{{&list}}\"",
+        "archive_list": "{{&member}} arquivou a lista \"{{&list}}\""
     },
     "webhook_cmd": {
         "not_found": "Esse webhook não existe!",
@@ -769,7 +786,16 @@
         "deleted": "Webhook deletado.",
         "confirm_delete": "Você tem certeza que deseja deletar este webhook?",
         "wh_off": "O webhook foi desativado.",
-        "wh_on": "O webhook foi ativado."
+        "wh_on": "O webhook foi ativado.",
+        "locale_set": "Idioma do webhook definido para **{{&name}}**.",
+        "to_blist": "Política do filtro alterado para blacklist.",
+        "to_wlist": "Política do filtro alterado para whitelist.",
+        "repaired": "Os problemas com esse webhook foram corrigidos.",
+        "wywtd": "Escolha o que você deseja fazer com esse webhook.",
+        "no_server_link": "Esse webhook não está nesse servidor!",
+        "no_link": "Eu não pude encontrar o URL do webhook inserido!",
+        "input_link": "Cole o link do webhook que deseja usar.",
+        "choose_existwh": "Escolha o webhook que deseja usar."
     },
     "deprecated": "Esse comando não está mais disponível!",
     "vote": {
@@ -778,5 +804,6 @@
     },
     "setmaxwebhooks": {
         "invalid": "ID Inválido!"
-    }
+    },
+    "use_this": "Ao invés disso, você pode usar esse comando:"
 }
