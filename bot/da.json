@@ -772,7 +772,8 @@
         "try_repair": "Du kan reparere dette problem med `{{&cleanPrefix}}editwebhook {{&id}} repair`",
         "no_access": "Enten findes denne tavle ikke længere eller også har du ikke adgang til den!",
         "cards_updated": "De filtrerede kort blev gemt.",
-        "lists_updated": "De filtrerede lister blev gemt."
+        "lists_updated": "De filtrerede lister blev gemt.",
+        "repaired_wh": "Reparerede webhook"
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
