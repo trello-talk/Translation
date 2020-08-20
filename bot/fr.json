@@ -427,7 +427,8 @@
         "selectedBoard": "Il n'y a aucun tableau sélectionné !\nSélectionnez un tableau avec la commande `{{&cleanPrefix}}switch` !",
         "discordAuth": "Vous n'avez pas autorisé votre compte Trello avec Discord !\nAutorisez-le avec la commande `{{&cleanPrefix}}auth` !",
         "webhooks": "J'ai besoin de la permission `Manage Webhooks` pour utiliser cette commande !",
-        "userData": "Vos paramètres ne sont pas dans la base de données !"
+        "userData": "Vos paramètres ne sont pas dans la base de données !",
+        "guild": "Cette commande doit être exécutée dans une guilde !"
     },
     "format": {
         "second": {
@@ -684,7 +685,8 @@
             "desc": "Modifier la description de la carte",
             "sub_off": "Arrêter de regarder cette carte",
             "remove_due": "Supprimer l'échéance",
-            "due_off": "Marquer l'échéance comme non terminée"
+            "due_off": "Marquer l'échéance comme non terminée",
+            "due": "Définir la date d'échéance"
         },
         "unarchived": "A supprimé la carte \"{{&name}}\" des archives.",
         "input_new": "Tapez le nom de la carte que vous souhaitez ajouter.",
@@ -705,9 +707,12 @@
         "removed": "A supprimé la carte \"{{&name}}\". (`{{id}}`)",
         "due_on": "A marqué la date d'échéance comme terminée pour la carte \"{{&name}}\".",
         "commented": "A créé le commentaire sur \"{{&name}}\".",
-        "input_attach": "Collez l'URL de la pièce jointe que vous souhaitez ajouter à la carte.",
+        "input_attach": "Collez l'URL de la pièce jointe que vous souhaitez ajouter à la carte. Vous pouvez également ajouter une pièce jointe à votre message.",
         "bad_attach": "URL de la pièce jointe invalide !",
-        "add_attach": "A créé une pièce jointe pour \"{{&name}}\"."
+        "add_attach": "A créé une pièce jointe pour \"{{&name}}\".",
+        "set_due": "A défini la date d'échéance au {{&date}}.",
+        "bad_due": "Je ne parviens pas à reconnaître cette date. Essayez une date comme \"Demain à 9h\" ou \"Vendredi prochain\".",
+        "input_due": "Saisissez la date d'échéance pour activer la carte."
     },
     "lists": {
         "list_none": "Cette liste n'a pas de cartes.",
