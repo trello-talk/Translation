@@ -784,7 +784,13 @@
         "archive_card": "{{&member}} ha archivado la tarjeta \"{{&card}}\"",
         "move_card": "{{&member}} ha movido la tarjeta \"{{&card}}\" a la lista \"{{&list}}\"",
         "edit_card_desc": "{{&member}} ha cambiado la descripción de la tarjeta \"{{&card}}\"",
-        "commented": "{{&member}} ha comentado en \"{{&card}}\""
+        "commented": "{{&member}} ha comentado en \"{{&card}}\"",
+        "archive_list": "{{&member}} ha archivado la lista \"{{&list}}\"",
+        "create_list": "{{&member}} ha creado una lista nombrada \"{{&list}}\"",
+        "checkitem_rename": "{{&member}} ha renombrado un elemento en la checklist de la tarjeta \"{{&card}}\"",
+        "checkitem_move": "{{&member}} ha movido un elemento en la checklist de la tarjeta \"{{&card}}\" a otra posición",
+        "checkitem_create": "{{&member}} ha creado un elemento en la checklist de la tarjeta \"{{&card}}\"",
+        "checkitem_state_off": "{{&member}} ha marcado \"{{&checklistItem}}\" como incompleto en la tarjeta \"{{&card}}\""
     },
     "and_more": "Y {{count}} más…",
     "webhook_filter_group": {
