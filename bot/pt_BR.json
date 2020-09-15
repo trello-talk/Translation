@@ -296,7 +296,11 @@
             "one": "Webhook"
         },
         "locale": "Idioma",
-        "active": "Ativo"
+        "active": "Ativo",
+        "color": {
+            "many": "Cores",
+            "one": "Cor"
+        }
     },
     "shardinfo": {
         "title": "Informações sobre os Shards do {{&username}}",
@@ -329,7 +333,8 @@
         "attach": "Eu preciso da permissão de `Anexar Arquivos` para usar esse comando!",
         "trelloRole": "Esse comando requer que você seja o dono do servidor ou possua o cargo `Trello`!",
         "userData": "Suas configurações não estão na base de dados!",
-        "guild": "Esse comando precisa ser executado em um servidor!"
+        "guild": "Esse comando precisa ser executado em um servidor!",
+        "webhooks": "Eu preciso da permissão de `Gerenciar Webhooks` para usar esse comando!"
     },
     "format": {
         "second": {
@@ -476,7 +481,7 @@
         "editcard": {
             "description": "Edita as propriedades de um cartão. Verifique a nota para sub comandos e usos.",
             "usage": "[nomeDoCartão|idDoCartão] [sub comando] …",
-            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão\n`duedone` - Altera a data de vencimento do cartão\n`removedue` - Remove a data de vencimento do cartão"
+            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão\n`label` - Gerencia as etiquetas do cartão\n`members` - Gerencia os membros do cartão\n`move`, `mv` - Move o cartão para outra lista\n`due` - Define a data de vencimento do cartão\n`duedone` - Altera o status de vencimento do cartão\n`removedue` - Remove a data de vencimento do cartão"
         },
         "addcard": {
             "description": "Cria um cartão.",
@@ -498,16 +503,20 @@
             "usage": "[nomeDoCartão|idDoCartão] [comentário]"
         },
         "toggleuser": {
-            "usage": "<IdDoUsuário>"
+            "usage": "<IdDoUsuário>",
+            "description": "Alterna a blacklist do usuário"
         },
         "toggleserver": {
-            "usage": "<IdDoServidor>"
+            "usage": "<IdDoServidor>",
+            "description": "Alterna a blacklist do servidor."
         },
         "setmaxwebhooks": {
-            "usage": "<IdDoServidor>[limite]"
+            "usage": "<IdDoServidor>[limite]",
+            "description": "Define o limite de webhooks nesse servidor."
         },
         "remwebhook": {
-            "usage": "<IdDoWebhook>"
+            "usage": "<IdDoWebhook>",
+            "description": "Remove o webhook do seu servidor."
         },
         "editwebhook": {
             "usage": "<IdDoWebhook>[subComando]"
@@ -521,6 +530,30 @@
         "webhooks": {
             "usage": "[página]",
             "description": "Lista os webhooks em seu servidor."
+        },
+        "vote": {
+            "description": "Mostra o(s) link(s) para votar no Taco."
+        },
+        "cleardata": {
+            "description": "Remove seus dados de usuário do Taco."
+        },
+        "clearauth": {
+            "description": "Remove sua sincronização com o Trello. Não faça isso sem que você realmente precise fazer isso."
+        },
+        "deletelabel": {
+            "usage": "[nomeDaEtiqueta|IDDaEtiqueta]",
+            "description": "Deleta a etiqueta."
+        },
+        "editlabel": {
+            "note": "`name [newName]` - Renomeia a etiqueta\n`color [newColor]` - Altera a cor da etiqueta"
+        },
+        "label": {
+            "usage": "[nomeDaEtiqueta|IDDaEtiqueta]",
+            "description": "Mostra a informação de uma etiqueta no quadro atual."
+        },
+        "labels": {
+            "usage": "[página]",
+            "description": "Lista todas as etiquetas no quadro atual."
         }
     },
     "_": {
@@ -599,7 +632,11 @@
             "remove_due": "Remover data de entrega",
             "due_on": "Marcar a data de entrega como completa",
             "due_off": "Marcar a data de entrega como incompleta",
-            "due": "Define uma data de vencimento"
+            "due": "Define uma data de vencimento",
+            "member": "Gerencia a atribuição do membro",
+            "label": "Gerencia as etiquetas",
+            "move": "Move o cartão para outra lista",
+            "attach": "Cria um anexo"
         },
         "set_name": "Cartão renomeado de \"{{&old}}\" para \"{{&new}}\".",
         "input_name": "Digite um novo nome para o cartão.",
@@ -619,7 +656,11 @@
         "input_comment": "Digite a mensagem que você deseja comentar no cartão.",
         "commented": "Comentário criado em \"{{&name}}\".",
         "bad_attach": "URL do anexo Inválido!",
-        "set_due": "Data de vencimento definida para {{&date}}."
+        "set_due": "Data de vencimento definida para {{&date}}.",
+        "bad_due": "Eu não consegui reconhecer essa data. Tente algo como \"Tomorrow at 9 AM\" ou \"Next Friday\" (Apenas datas em Inglês são válidas).",
+        "input_due": "Insira a data de vencimento para definir o cartão.",
+        "move": "Cartão \"{{&card}}\" movido para a lista \"{{&list}}\".",
+        "same_list_move": "O cartão já está nessa lista!"
     },
     "lists": {
         "none": "Esse quadro não possui listas.",
@@ -795,15 +836,39 @@
         "no_server_link": "Esse webhook não está nesse servidor!",
         "no_link": "Eu não pude encontrar o URL do webhook inserido!",
         "input_link": "Cole o link do webhook que deseja usar.",
-        "choose_existwh": "Escolha o webhook que deseja usar."
+        "choose_existwh": "Escolha o webhook que deseja usar.",
+        "repair_dwh_header": "Está faltando o webhook do Discord. Gostaria de criar um novo?",
+        "try_repair": "Você pode corrigir esse problema usando `{{&cleanPrefix}}editwebhook {{&id}} repair`"
     },
     "deprecated": "Esse comando não está mais disponível!",
     "vote": {
         "review": "revisão",
-        "rate": "taxa"
+        "rate": "taxa",
+        "title": "Você pode votar, dar uma review ou avaliar {{&username}} nos seguintes sites:"
     },
     "setmaxwebhooks": {
-        "invalid": "ID Inválido!"
+        "invalid": "ID Inválido!",
+        "set": "Limite máximos de webhooks do servidor {{serverID}} definido para {{value}}."
     },
-    "use_this": "Ao invés disso, você pode usar esse comando:"
+    "use_this": "Ao invés disso, você pode usar esse comando:",
+    "webhook_filters": {
+        "COMMENT_CARD": "Novos comentários em cartões",
+        "ADD_LABEL_TO_CARD": "Adiciona uma Etiqueta ao cartão",
+        "ADD_CHECKLIST_TO_CARD": "Adiciona um Checklist ao cartão",
+        "ADD_ATTACHMENT_TO_CARD": "Adiciona anexo ao cartão",
+        "ADD_MEMBER_TO_CARD": "Adiciona um membro ao cartão",
+        "ADD_MEMBER_TO_BOARD": "Adiciona um membro ao quadro"
+    },
+    "labels": {
+        "removed": "A Etiqueta \"{{&name}}\" foi excluída. (`{{id}}`)",
+        "choose_color": "Insira o número da cor que você deseja definir na etiqueta.",
+        "set_color": "A Cor da etiqueta \"{{&label}}\" foi definida para {{&color}}.",
+        "input_name": "Insira um novo nome para a etiqueta.",
+        "set_name": "Etiqueta renomeada de \"{{&old}}\" para \"{{&new}}\".",
+        "menu": {
+            "color": "Define a cor da etiqueta",
+            "name": "Renomeia a etiqueta"
+        },
+        "none": "Esse quadro não possui etiquetas."
+    }
 }
