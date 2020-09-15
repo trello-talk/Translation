@@ -549,6 +549,10 @@
             "description": "Lists all the archived cards in the current board.",
             "usage": "[page]"
         },
+        "labels": {
+            "description": "Lists all of the labels on the current board.",
+            "usage": "[page]"
+        },
         "watchcard": {
             "description": "Toggle watching a card. Watched cards will give you update notifications on [Trello](https://trello.com/).",
             "usage": "[cardName|cardID]"
@@ -660,6 +664,7 @@
         "no_confirm": "Confirmation canceled.",
         "cancel_confirm": "Type `yes` to confirm. Any other message will cancel the confirmation.",
         "select": "Type the number of the item to toggle its value.",
+        "async_select": "Type the number of the item to toggle its value. **Changes will be made when a value is toggled.**",
         "select_cancel": "Type \"save\" to save the selection, otherwise type \"cancel\" to exit.",
         "select_canceled": "Your last prompt was canceled. All changes have been lost.",
         "select_timeout": "Your last prompt was timed out. All changes have been lost."
@@ -714,7 +719,8 @@
             "remove_due": "Remove due date",
             "due_on": "Mark due date as complete",
             "due_off": "Mark due date as incomplete",
-            "attach": "Create attachment"
+            "attach": "Create attachment",
+            "move": "Move card to another list"
         },
         "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the card to.",
@@ -731,6 +737,8 @@
         "due_on": "Marked due date as complete for card \"{{&name}}\".",
         "due_off": "Marked due date as incomplete for card \"{{&name}}\".",
         "input_comment": "Type the message you want to comment on the card.",
+        "same_list_move": "This card is already in this list!",
+        "move": "Moved \"{{&card}}\" to list \"{{&list}}\".",
         "commented": "Created a comment on \"{{&name}}\".",
         "input_due": "Type the due date to set the card on.",
         "bad_due": "I could not recognize that date. Try something like \"Tomorrow at 9 AM\" or \"Next Friday\".",
@@ -761,6 +769,9 @@
         "unarchived": "Removed list \"{{&name}}\" from the archive.",
         "input_new": "Type the name of the list that you want to add.",
         "created": "Created list \"{{&name}}\". (`{{id}}`)"
+    },
+    "labels": {
+        "none": "This board has no labels."
     },
     "prefix": {
         "server": "Server prefix",
