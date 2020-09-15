@@ -559,7 +559,16 @@
         },
         "label": {
             "description": "Shows information on a label on the current board.",
-            "usage": "[labelName|labeID]"
+            "usage": "[labelName|labelID]"
+        },
+        "editlabel": {
+            "description": "Edit a label's properties. Check the note for sub-commands and usages.",
+            "usage": "[labelName|labelID] [subcommand] …",
+            "note": "`name [newName]` - Rename the label\n`color [newColor]` - Changes the label's color"
+        },
+        "deletelabel": {
+            "description": "Deletes a label.",
+            "usage": "[labelName|labelID]"
         },
         "watchcard": {
             "description": "Toggle watching a card. Watched cards will give you update notifications on [Trello](https://trello.com/).",
@@ -781,7 +790,18 @@
     "labels": {
         "none": "This board has no labels.",
         "header": "Use `{{&cleanPrefix}}label <labelID|labelName>` to view a label.",
-        "choose": "Type the number of the label you want to use."
+        "choose": "Type the number of the label you want to use.",
+        "wywtd": "Choose what you want to do with this label.",
+        "menu": {
+            "name": "Rename label",
+            "color": "Set label color"
+        },
+        "set_name": "Renamed label from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the label to.",
+        "set_color": "Set color of label \"{{&label}}\" to {{&color}}.",
+        "choose_color": "Type the number of the color you want to set the label to.",
+        "remove_confirm": "Are you sure you want to delete \"{{&name}}\"? (`{{id}}`)\n**This removes the entire label, not just from one card.**",
+        "removed": "Deleted label \"{{&name}}\". (`{{id}}`)"
     },
     "prefix": {
         "server": "Server prefix",
