@@ -160,7 +160,11 @@
             "many": "Flags",
             "one": "Flag"
         },
-        "locale": "Locale"
+        "locale": "Locale",
+        "color": {
+            "many": "Colours",
+            "one": "Colour"
+        }
     },
     "format": {
         "second": {
@@ -376,7 +380,7 @@
             "usage": "[cardName|cardID]"
         },
         "editcard": {
-            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's description\n`removedesc` - Removes the card's description\n`duedone` - Toggles the card due date's completion\n`removedue` - Removes the card's due date",
+            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's description\n`removedesc` - Removes the card's description\n`label` - Manage card labels\n`members` - Manage card members\n`move`, `mv` - Moves the card to another list\n`due` - Set the card due date\n`duedone` - Toggles the card due date's completion\n`removedue` - Removes the card's due date",
             "description": "Edit a card's properties. Check the note for sub-commands and usages.",
             "usage": "[cardName|cardID] [subcommand] …"
         },
@@ -450,6 +454,23 @@
         },
         "vote": {
             "description": "Shows the links to vote for Taco on."
+        },
+        "deletelabel": {
+            "usage": "[labelName|labelID]",
+            "description": "Deletes a label."
+        },
+        "editlabel": {
+            "note": "`name [newName]` - Rename the label\n`color [newColor]` - Changes the label's color",
+            "usage": "[labelName|labelID] [subcommand] …",
+            "description": "Edit a label's properties. Check the note for sub-commands and usages."
+        },
+        "label": {
+            "usage": "[labelName|labelID]",
+            "description": "Shows information on a label on the current board."
+        },
+        "labels": {
+            "usage": "[page]",
+            "description": "Lists all of the labels on the current board."
         }
     },
     "boards": {
@@ -596,7 +617,8 @@
         "select_canceled": "Your last prompt was canceled. All changes have been lost.",
         "select_cancel": "Type \"save\" to save the selection, otherwise type \"cancel\" to exit.",
         "select": "Type the number of the item to toggle its value.",
-        "canceled": "Your last prompt was canceled."
+        "canceled": "Your last prompt was canceled.",
+        "async_select": "Type the number of the item to toggle its value. **Changes will be made when a value is toggled.**"
     },
     "reloadone": {
         "invalid": "Invalid command!",
@@ -624,7 +646,10 @@
             "remove_due": "Remove due date",
             "due_off": "Mark due date as incomplete",
             "attach": "Create attachment",
-            "due": "Set due date"
+            "due": "Set due date",
+            "member": "Manage member assignment",
+            "label": "Manage labels",
+            "move": "Move card to another list"
         },
         "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the card to.",
@@ -645,7 +670,11 @@
         "input_attach": "Paste the URL of the attachment you want to add to the card. You can also add an attachment to your message.",
         "set_due": "Set due date to {{&date}}.",
         "bad_due": "I could not recognize that date. Try something like \"Tomorrow at 9 AM\" or \"Next Friday\".",
-        "input_due": "Type the due date to set the card on."
+        "input_due": "Type the due date to set the card on.",
+        "members_updated": "Updated the member assignment on \"{{&name}}\".",
+        "labels_updated": "Updated the labels on \"{{&name}}\".",
+        "move": "Moved \"{{&card}}\" to list \"{{&list}}\".",
+        "same_list_move": "This card is already in this list!"
     },
     "lists": {
         "arch_none": "This board has no archived lists.",
@@ -963,5 +992,21 @@
         "number": "Number",
         "text": "Text",
         "checkbox": "Checkbox"
+    },
+    "labels": {
+        "removed": "Deleted label \"{{&name}}\". (`{{id}}`)",
+        "remove_confirm": "Are you sure you want to delete \"{{&name}}\"? (`{{id}}`)\n**This removes the entire label, not just from one card.**",
+        "choose_color": "Type the number of the colour you want to set the label to.",
+        "set_color": "Set colour of label \"{{&label}}\" to {{&color}}.",
+        "input_name": "Type the name you want to rename the label to.",
+        "set_name": "Renamed label from \"{{&old}}\" to \"{{&new}}\".",
+        "menu": {
+            "color": "Set label colour",
+            "name": "Rename label"
+        },
+        "wywtd": "Choose what you want to do with this label.",
+        "choose": "Type the number of the label you want to use.",
+        "header": "Use `{{&cleanPrefix}}label <labelID|labelName>` to view a label.",
+        "none": "This board has no labels."
     }
 }
