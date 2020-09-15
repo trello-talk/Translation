@@ -91,6 +91,10 @@
         "usage": "Usage",
         "cooldown": "Cooldown",
         "locale": "Locale",
+        "color": {
+            "one": "Color",
+            "many": "Colors"
+        },
         "alias": {
             "one": "Alias",
             "many": "Aliases"
@@ -553,6 +557,10 @@
             "description": "Lists all of the labels on the current board.",
             "usage": "[page]"
         },
+        "label": {
+            "description": "Shows information on a label on the current board.",
+            "usage": "[labelName|labeID]"
+        },
         "watchcard": {
             "description": "Toggle watching a card. Watched cards will give you update notifications on [Trello](https://trello.com/).",
             "usage": "[cardName|cardID]"
@@ -771,7 +779,9 @@
         "created": "Created list \"{{&name}}\". (`{{id}}`)"
     },
     "labels": {
-        "none": "This board has no labels."
+        "none": "This board has no labels.",
+        "header": "Use `{{&cleanPrefix}}label <labelID|labelName>` to view a label.",
+        "choose": "Type the number of the label you want to use."
     },
     "prefix": {
         "server": "Server prefix",
