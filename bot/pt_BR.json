@@ -519,10 +519,12 @@
             "description": "Remove o webhook do seu servidor."
         },
         "editwebhook": {
-            "usage": "<IdDoWebhook>[subComando]"
+            "usage": "<IdDoWebhook>[subComando]",
+            "description": "Edita um webhook no seu servidor. Verifique a nota para sub-comandos e usos."
         },
         "addwebhook": {
-            "usage": "[IdDoQuadro|NomeDoQuadro]"
+            "usage": "[IdDoQuadro|NomeDoQuadro]",
+            "description": "Cria um webhook no seu servidor."
         },
         "webhook": {
             "usage": "<IdDoWebhook>"
@@ -660,7 +662,9 @@
         "bad_due": "Eu não consegui reconhecer essa data. Tente algo como \"Tomorrow at 9 AM\" ou \"Next Friday\" (Apenas datas em Inglês são válidas).",
         "input_due": "Insira a data de vencimento para definir o cartão.",
         "move": "Cartão \"{{&card}}\" movido para a lista \"{{&list}}\".",
-        "same_list_move": "O cartão já está nessa lista!"
+        "same_list_move": "O cartão já está nessa lista!",
+        "labels_updated": "Etiquetas atualizadas em \"{{&name}}\".",
+        "add_attach": "Anexo criado em \"{{&name}}\"."
     },
     "lists": {
         "none": "Esse quadro não possui listas.",
@@ -869,6 +873,9 @@
             "color": "Define a cor da etiqueta",
             "name": "Renomeia a etiqueta"
         },
-        "none": "Esse quadro não possui etiquetas."
+        "none": "Esse quadro não possui etiquetas.",
+        "wywtd": "Escolha o que você quer fazer com essa etiqueta.",
+        "choose": "Digite o número da etiqueta que você deseja usar.",
+        "header": "Use `{{&cleanPrefix}}label <IDDaEtiqueta|nomeDaEtiqueta>` para ver uma etiqueta."
     }
 }
