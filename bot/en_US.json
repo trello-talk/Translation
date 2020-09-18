@@ -613,6 +613,10 @@
             "description": "Creates a list on the current board.",
             "usage": "[name]"
         },
+        "addlabel": {
+            "description": "Creates a label on the current board.",
+            "usage": "[name]"
+        },
         "comment": {
             "description": "Comment on a card in the current board.",
             "usage": "[cardName|cardID] [comment]"
@@ -805,7 +809,9 @@
         "set_color": "Set color of label \"{{&label}}\" to {{&color}}.",
         "choose_color": "Type the number of the color you want to set the label to.",
         "remove_confirm": "Are you sure you want to delete \"{{&name}}\"? (`{{id}}`)\n**This removes the entire label, not just from one card.**",
-        "removed": "Deleted label \"{{&name}}\". (`{{id}}`)"
+        "removed": "Deleted label \"{{&name}}\". (`{{id}}`)",
+        "input_new": "Type the name of the label that you want to add.",
+        "created": "Created label \"{{&name}}\". (`{{id}}`)"
     },
     "prefix": {
         "server": "Server prefix",
