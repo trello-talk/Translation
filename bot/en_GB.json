@@ -164,7 +164,8 @@
         "color": {
             "many": "Colours",
             "one": "Colour"
-        }
+        },
+        "url": "URL"
     },
     "format": {
         "second": {
@@ -261,7 +262,8 @@
         "from_board": "From Board",
         "new_v": "New Value",
         "old_v": "Old Value",
-        "custom_field": "Custom Field"
+        "custom_field": "Custom Field",
+        "cover_source": "Cover Source"
     },
     "commands": {
         "auth": {
@@ -380,7 +382,7 @@
             "usage": "[cardName|cardID]"
         },
         "editcard": {
-            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's description\n`removedesc` - Removes the card's description\n`label` - Manage card labels\n`members` - Manage card members\n`move`, `mv` - Moves the card to another list\n`due` - Set the card due date\n`duedone` - Toggles the card due date's completion\n`removedue` - Removes the card's due date",
+            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's description\n`removedesc` - Removes the card's description\n`label` - Manage card labels\n`members` - Manage card members\n`move`, `mv` - Moves the card to another list\n`due` - Set the card due date\n`duedone` - Toggles the card due date's completion\n`removedue` - Removes the card's due date\n`attach` - Creates an attachment on the card\n`attachments`, `atch` - Manage attachments",
             "description": "Edit a card's properties. Check the note for sub-commands and usages.",
             "usage": "[cardName|cardID] [subcommand] …"
         },
@@ -471,6 +473,14 @@
         "labels": {
             "usage": "[page]",
             "description": "Lists all of the labels on the current board."
+        },
+        "addlabel": {
+            "usage": "[name]",
+            "description": "Creates a label on the current board."
+        },
+        "attachment": {
+            "usage": "[cardName|cardID] [attachmentName|attachmentID]",
+            "description": "Shows an attachment that is on a card."
         }
     },
     "boards": {
@@ -649,7 +659,8 @@
             "due": "Set due date",
             "member": "Manage member assignment",
             "label": "Manage labels",
-            "move": "Move card to another list"
+            "move": "Move card to another list",
+            "attachments": "Edit attachments"
         },
         "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the card to.",
@@ -665,7 +676,7 @@
         "due_on": "Marked due date as complete for card \"{{&name}}\".",
         "input_comment": "Type the message you want to comment on the card.",
         "commented": "Created a comment on \"{{&name}}\".",
-        "add_attach": "Created an attachment to \"{{&name}}\".",
+        "add_attach": "Created an attachment on \"{{&name}}\".",
         "bad_attach": "Invalid attachment URL!",
         "input_attach": "Paste the URL of the attachment you want to add to the card. You can also add an attachment to your message.",
         "set_due": "Set due date to {{&date}}.",
@@ -1007,6 +1018,24 @@
         "wywtd": "Choose what you want to do with this label.",
         "choose": "Type the number of the label you want to use.",
         "header": "Use `{{&cleanPrefix}}label <labelID|labelName>` to view a label.",
-        "none": "This board has no labels."
+        "none": "This board has no labels.",
+        "created": "Created label \"{{&name}}\". (`{{id}}`)",
+        "input_new": "Type the name of the label that you want to add."
+    },
+    "attachments": {
+        "menu": {
+            "delete": "Delete this attachment",
+            "cover": "Set this attachment as the card cover",
+            "name": "Edit attachment name"
+        },
+        "set_cover": "Set attachment \"{{&attachment}}\" as a card cover for \"{{&card}}\".",
+        "removed": "Deleted attachment \"{{&name}}\".",
+        "remove_confirm": "Are you sure you want to delete \"{{&name}}\"?",
+        "input_name": "Type the name you want to rename the attachment to.",
+        "set_name": "Renamed attachment from \"{{&old}}\" to \"{{&new}}\".",
+        "is_cover": "Used as Card Cover",
+        "wywtd": "Choose what you want to do with this attachment.",
+        "choose": "Type the number of the attachment you want to use.",
+        "none": "This card has no attachments."
     }
 }
