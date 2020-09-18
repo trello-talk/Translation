@@ -87,6 +87,7 @@
         "no_guild": "You are not running the command in a guild!"
     },
     "words": {
+        "url": "URL",
         "active": "Active",
         "usage": "Usage",
         "cooldown": "Cooldown",
@@ -289,6 +290,7 @@
         "custom_field": "Custom Field",
         "old_v": "Old Value",
         "new_v": "New Value",
+        "cover_source": "Cover Source",
         "products": {
             "10": "💼 Trello Gold from Business Class",
             "37": "⭐ Monthly Trello Gold",
@@ -594,12 +596,16 @@
         "editcard": {
             "description": "Edit a card's properties. Check the note for sub-commands and usages.",
             "usage": "[cardName|cardID] [subcommand] …",
-            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's description\n`removedesc` - Removes the card's description\n`label` - Manage card labels\n`members` - Manage card members\n`move`, `mv` - Moves the card to another list\n`due` - Set the card due date\n`duedone` - Toggles the card due date's completion\n`removedue` - Removes the card's due date"
+            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's description\n`removedesc` - Removes the card's description\n`label` - Manage card labels\n`members` - Manage card members\n`move`, `mv` - Moves the card to another list\n`due` - Set the card due date\n`duedone` - Toggles the card due date's completion\n`removedue` - Removes the card's due date\n`attach` - Creates an attachment on the card\n`attachments`, `atch` - Manage attachments"
         },
         "editboard": {
             "description": "Edit the current board's properties. Check the note for sub-commands and usages.",
             "usage": "[subcommand] …",
             "note": "`name [newName]` - Rename the board (board admin)\n`archive`, `unarchive` - Toggles the board archive (board admin)\n`desc [newDescription]` - Sets the board's description\n`removedesc` - Removes the board's description\n`commentperms` - Change commenting permissions (board admin)\n`voteperms` - Change voting permissions (board admin)\n`inviteperms` - Change invitation permissions (board admin)"
+        },
+        "attachment": {
+            "description": "Shows an attachment that is on a card.",
+            "usage": "[cardName|cardID] [attachmentName|attachmentID]"
         },
         "addcard": {
             "description": "Creates a card.",
@@ -721,6 +727,22 @@
         "set_invite_perms": "Set invite permissions to {{&value}}.",
         "set_vote_perms": "Set voting permissions to {{&value}}."
     },
+    "attachments": {
+        "none": "This card has no attachments.",
+        "choose": "Type the number of the attachment you want to use.",
+        "wywtd": "Choose what you want to do with this attachment.",
+        "is_cover": "Used as Card Cover",
+        "set_name": "Renamed attachment from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the attachment to.",
+        "remove_confirm": "Are you sure you want to delete \"{{&name}}\"?",
+        "removed": "Deleted attachment \"{{&name}}\".",
+        "set_cover": "Set attachment \"{{&attachment}}\" as a card cover for \"{{&card}}\".",
+        "menu": {
+            "name": "Edit attachment name",
+            "cover": "Set this attachment as the card cover",
+            "delete": "Delete this attachment"
+        }
+    },
     "cards": {
         "none": "This board has no cards.",
         "arch_none": "This board has no archived cards.",
@@ -743,7 +765,8 @@
             "attach": "Create attachment",
             "move": "Move card to another list",
             "label": "Manage labels",
-            "member": "Manage member assignment"
+            "member": "Manage member assignment",
+            "attachments": "Edit attachments"
         },
         "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
         "input_name": "Type the name you want to rename the card to.",
@@ -768,7 +791,7 @@
         "set_due": "Set due date to {{&date}}.",
         "input_attach": "Paste the URL of the attachment you want to add to the card. You can also add an attachment to your message.",
         "bad_attach": "Invalid attachment URL!",
-        "add_attach": "Created an attachment to \"{{&name}}\".",
+        "add_attach": "Created an attachment on \"{{&name}}\".",
         "labels_updated": "Updated the labels on \"{{&name}}\".",
         "members_updated": "Updated the member assignment on \"{{&name}}\"."
     },
