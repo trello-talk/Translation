@@ -56,12 +56,12 @@
     },
     "help": {
         "not_found": "The command `{{&command}}` was not found.",
-        "header": "{{&username}} (Running Modified [Faux](https://github.com/Snazzah/Faux) By Snazzah)\nSupport Server: {{&link}}",
+        "header": "{{&username}} (Running Modified [Faux](https://github.com/Snazzah/Faux?ref=tacobot) By Snazzah)\nSupport Server: {{&link}}\n\nDon't know where to start? [Click Here!](https://tacobot.app/guide?ref=bot)",
         "footer": "`{{&cleanPrefix}}help [command]` for more info."
     },
     "info": {
         "title": "Information about {{&username}}",
-        "faux": "This bot is using a modified version of [Faux](https://github.com/Snazzah/Faux)."
+        "faux": "This bot is using a modified version of [Faux](https://github.com/Snazzah/Faux?ref=tacobot)."
     },
     "ping": {
         "message": "Pong!",
