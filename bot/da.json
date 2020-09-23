@@ -18,7 +18,7 @@
         },
         "github": "Her er linket til min kildekode:",
         "serverinvite": {
-            "start": "Tilslut dig supportserveret ved hjælp af et af disse links!",
+            "start": "Tilslut dig supportserveren ved hjælp af et af disse links!",
             "fail": "Botejeren har ikke angivet noget supportserver link!"
         }
     },
@@ -28,7 +28,7 @@
         "done": "Genindlæste {{&commands}}."
     },
     "help": {
-        "header": "{{&username}} (Kører en ændret version af [Faux](https://github.com/Snazzah/Faux) af Snazzah)\nSupport Server: {{&link}}",
+        "header": "{{&username}} (Kører en ændret version af [Faux](https://github.com/Snazzah/Faux?ref=tacobot) af Snazzah)\nSupportserver: {{&link}}\n\nVed du ikke hvor du skal starte? [Klik her!](https://tacobot.app/guide?ref=bot)",
         "not_found": "Kommandoen `{{&command}}` blev ikke fundet.",
         "footer": "`{{&cleanPrefix}}help [command]` for flere oplysninger."
     },
@@ -221,7 +221,12 @@
             "many": "Flag",
             "one": "Flag"
         },
-        "locale": "Sprogindstillinger"
+        "locale": "Sprogindstillinger",
+        "url": "URL",
+        "color": {
+            "many": "Farver",
+            "one": "Farve"
+        }
     },
     "trello": {
         "template": "Er skabelon?",
@@ -482,6 +487,9 @@
         },
         "addwebhook": {
             "description": "Opretter et webhook på din server."
+        },
+        "webhook": {
+            "usage": "<webhookID>"
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -539,11 +547,23 @@
             "archive_off": "Fjernede kort fra arkivet",
             "archive_on": "Arkiver kort",
             "name": "Rediger kortnavn",
-            "sub_off": "Stop med at overvåge dette kort"
+            "sub_off": "Stop med at overvåge dette kort",
+            "member": "Administrer medlemstildelinger",
+            "label": "Administrer etiketter",
+            "move": "Flyt kortet til en anden liste",
+            "attach": "Opret vedhæftning",
+            "remove_due": "Fjern forfaldsdato",
+            "due": "Sæt forfaldsdato",
+            "attachments": "Rediger vedhæftninger"
         },
         "set_name": "Omdøbte kort fra \"{{&old}}\" til \"{{&new}}\".",
         "commented": "Oprettede en kommentar på \"{{&name}}\".",
-        "wywtd": "Vælg hvad du vil gøre med dette kort."
+        "wywtd": "Vælg hvad du vil gøre med dette kort.",
+        "set_due": "Satte forfaldsdatoen til {{&date}}.",
+        "removed_due": "Fjernede forfaldsdatoen for kortet \"{{&name}}\".",
+        "input_name": "Indtast navnet du ønsker at omdøbe kortet til.",
+        "same_list_move": "Dette kort er allerede i denne liste!",
+        "move": "Flyttede \"{{&card}}\" til listen \"{{&list}}\"."
     },
     "prompt": {
         "no_search": "Der kom ikke nogen resultater ud af den søgning.",
@@ -580,7 +600,7 @@
         "created": "Oprettede listen \"{{&name}}\". (`{{id}}`)"
     },
     "info": {
-        "faux": "Denne bot bruger en ændret version af [Faux](https://github.com/Snazzah/Faux).",
+        "faux": "Denne bot bruger en ændret version af [Faux](https://github.com/Snazzah/Faux?ref=tacobot).",
         "title": "Oplysninger om {{&username}}"
     },
     "ping": {
@@ -624,7 +644,8 @@
         "star_board": "Oprettede stjerne for tavlen \"{{&name}}\". (`{{id}}`)",
         "star_error": "Tavlens stjerne blev ikke fundet! Prøv igen senere!",
         "unstar_board": "Fjernede stjernen for tavlen \"{{&name}}\". (`{{id}}`)",
-        "unsub_board": "Overvåger ikke længere tavlen \"{{&name}}\". (`{{id}}`)"
+        "unsub_board": "Overvåger ikke længere tavlen \"{{&name}}\". (`{{id}}`)",
+        "cleardata": "Dine brugeroplysninger er blevet ryddet."
     },
     "command_permissions": {
         "discordAuth": "Du har ikke autoriseret din Trellokonto med Discord!\nAutoriser med `{{&cleanPrefix}}auth` kommandoen!",
@@ -685,7 +706,9 @@
         "card_remove_self": "{{&member}} fjernede sig selv fra kortet \"{{&card}}\"",
         "add_board_desc": "{{&member}} tilføjede en beskrivelse til tavlen",
         "edit_board_desc": "{{&member}} ændrede tavlens beskrivelse",
-        "move_out_list": "{&member}} overførte listen \"{{&list}}\" til en anden tavle"
+        "move_out_list": "{&member}} overførte listen \"{{&list}}\" til en anden tavle",
+        "move_card": "{{&member}} flyttede kortet \"{{&card}}\" til listen \"{{&list}}\"",
+        "board_rename": "{{&member}} omdøbte tavlen fra \"{{&oldName}}\" til \"{{&board}}\""
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter",
@@ -807,5 +830,30 @@
         "checkbox": "Tjekboks"
     },
     "use_this": "Brug denne kommando i stedet:",
-    "deprecated": "Denne kommando er ikke længere tilgængelig!"
+    "deprecated": "Denne kommando er ikke længere tilgængelig!",
+    "attachments": {
+        "menu": {
+            "delete": "Slet denne vedhæftning",
+            "name": "Rediger navn på vedhæftning"
+        },
+        "remove_confirm": "Er du sikker på du vil slette \"{{&name}}\"?",
+        "input_name": "Indtast navnet du vil omdøbe vedhæftningen til.",
+        "set_name": "Omdøbte vedhæftningen fra \"{{&old}}\" til \"{{&new}}\".",
+        "wywtd": "Vælg hvad du vil gøre med denne vedhæftning.",
+        "removed": "Slettede vedhæftningen \"{{&name}}\"."
+    },
+    "labels": {
+        "choose": "Indtast nummeret på den etiket du ønsker at bruge.",
+        "none": "Denne tavle har ingen etiketter.",
+        "removed": "Slettede etiketten \"{{&name}}\". (`{{id}}`)",
+        "set_color": "Satte farven på etikken \"{{&label}}\" til {{&color}}.",
+        "input_name": "Indtast det navn du vil omdøbe etiketten til.",
+        "set_name": "Omdøbte etiketten fra \"{{&old}}\" til \"{{&new}}\".",
+        "menu": {
+            "color": "Sæt farve på etiket",
+            "name": "Omdøb etiket"
+        },
+        "wywtd": "Vælg hvad du har lyst til at gøre med denne etiket.",
+        "created": "Oprettede etiketten \"{{&name}}\". (`{{id}}`)"
+    }
 }
