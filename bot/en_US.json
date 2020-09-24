@@ -108,6 +108,10 @@
             "one": "Server",
             "many": "Servers"
         },
+        "style": {
+            "one": "Style",
+            "many": "Styles"
+        },
         "website": {
             "one": "Website",
             "many": "Websites"
@@ -386,7 +390,22 @@
             "lists": "Change filtered lists",
             "cards": "Change filtered cards",
             "wlist": "Change filter to whitelist",
-            "blist": "Change filter to blacklist"
+            "blist": "Change filter to blacklist",
+            "style": "Change style"
+        },
+        "styles": {
+            "default": {
+                "name": "Default",
+                "description": "Regular messages, showing as much information as possible"
+            },
+            "small": {
+                "name": "Small",
+                "description": "Small version of default webhooks, only showing the descriptive title"
+            },
+            "compact": {
+                "name": "Compact",
+                "description": "Stacks multiple events into one embed, much like GitHub webhook commits"
+            }
         },
         "no_channels": "No channels have been found that allows me to manage webhooks.",
         "choose_channel": "Choose which channel that the webhook will post in.",
