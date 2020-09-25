@@ -80,7 +80,10 @@
         "summ": "Enviar resúmenes",
         "custom_field": "Campo personalizado",
         "old_v": "Valor antiguo",
-        "new_v": "Valor nuevo"
+        "new_v": "Valor nuevo",
+        "cover_source": "Origen de la portada",
+        "to_board": "Hacia el tablero",
+        "card_aging": "Vencimiento de la tarjeta"
     },
     "webhook_cmd": {
         "whitelist": "Lista blanca",
@@ -116,7 +119,8 @@
             "wlist": "Cambiar filtro a lista blanca",
             "cards": "Cambiar tarjetas filtradas",
             "lists": "Cambiar listas filtradas",
-            "repair": "Reparar webhook"
+            "repair": "Reparar webhook",
+            "style": "Cambiar estilo"
         },
         "not_found": "¡Ese webhook no existe!",
         "dwh": {
@@ -159,7 +163,22 @@
         "twh_missing": "Falta el usuario que configuró el webhook, ¡esto puede detener el envío del webhook!",
         "dwh_missing": "¡Falta el webhook de Discord conectado a este webhook!",
         "none": "No hay webhooks en este servidor conectados a Trello.",
-        "header": "Usa `{{&cleanPrefix}}webhook <ID del webhook>` para ver un webhook y `{{&cleanPrefix}}editwebhook <ID del webhook>` para editarlo."
+        "header": "Usa `{{&cleanPrefix}}webhook <ID del webhook>` para ver un webhook y `{{&cleanPrefix}}editwebhook <ID del webhook>` para editarlo.",
+        "style_set": "Defina el estilo del webhook en **{{&name}}**.",
+        "choose_style": "Escriba el número del estilo en el que desea definir el webhook.",
+        "styles": {
+            "compact": {
+                "name": "Compacto"
+            },
+            "small": {
+                "description": "Pequeña versión de los webhooks por defecto, solamente mostrando el título descriptivo",
+                "name": "Pequeño"
+            },
+            "default": {
+                "description": "Mensajes regulares, mostrando toda la información como sea posible",
+                "name": "Por defecto"
+            }
+        }
     },
     "deprecated": "¡Este comando no está disponible!",
     "use_this": "Utilice este comando en su lugar:",
@@ -173,7 +192,8 @@
         "trelloRole": "¡Este comando requiere que usted sea el propietario del servidor o que tenga un rol llamado `Trello`!",
         "emoji": "¡Necesito el permiso `Usar emojis externos` para usar este comando!",
         "embed": "¡Necesito el permiso `Insertar enlaces` para usar este comando!",
-        "attach": "¡Necesito el permiso `Adjuntar archivos` para usar este comando!"
+        "attach": "¡Necesito el permiso `Adjuntar archivos` para usar este comando!",
+        "guild": "¡Este comando debe ser ejecutado en un servidor!"
     },
     "categories": {
         "general": "General",
@@ -352,7 +372,7 @@
         "editwebhook": {
             "description": "Edita un webhook en tu servidor.  Comprueba la nota para subcomandos y usos.",
             "usage": "<ID del webhook> [subcomando]",
-            "note": "`activate`, `deactivate` - Activa o desactiva el webhook\n`filters` - Edita los filtros (formalmente \"Webhook Bits\") para este webhook\n`locale [idioma]` - Define el idioma para el webhook\n`repair` - Repara cualquier problema con el webhook\n`delete` - Elimina el webhook\n`whitelist`, `blacklist` - Cambia la política de filtros del webhook\n`lists` - Edita listas filtradas\n`cards` - Edita tarjetas filtradas"
+            "note": "`activate`, `deactivate` - Activa o desactiva el webhook\n`filters` - Edita los filtros (formalmente \"Webhook Bits\") para este webhook\n`locale [idioma]` - Define el idioma para el webhook\n`repair` - Repara cualquier problema con el webhook\n`delete` - Elimina el webhook\n`policy` - Cambia la política de filtros del webhook (lista blanca/lista negra)\n`style` - Cambia el estilo del webhook\n`lists` - Edita listas filtradas\n`cards` - Edita tarjetas filtradas"
         },
         "shardinfo": {
             "description": "Obtenga el estado de cada fragmento."
@@ -360,7 +380,7 @@
         "editcard": {
             "usage": "[Nombre de la tarjeta|ID de la tarjeta] [subcomando] …",
             "description": "Edita las propiedades de una tarjeta. Comprueba la nota para subcomandos y usos.",
-            "note": "`name [nuevo nombre]` - Cambia el nombre de la tarjeta\n`archive`, `unarchive` - Cambia si la tarjeta debe estar archivada o no\n`desc [nueva descripción]` - Cambia la descripción de la tarjeta\n`removedesc` - Elimina la descripción de la tarjeta\n`duedone` - Cambia el estado de vencimiento de la tarjeta\n`removedue` - Elimina la fecha de vencimiento de la tarjeta"
+            "note": "`name [nuevo nombre]` - Cambia el nombre de la tarjeta\n`archive`, `unarchive` - Cambia si la tarjeta debe estar archivada o no\n`desc [nueva descripción]` - Cambia la descripción de la tarjeta\n`removedesc` - Elimina la descripción de la tarjeta\n`label` - Gestiona las etiquetas de la tarjeta\n`members` - Gestiona los miembros de la tarjeta\n`move`, `mv` - Mueva la tarjeta a otra lista\n`due` - Cambia la fecha de vencimiento de la tarjeta\n`duedone` - Cambia el estado de vencimiento de la tarjeta\n`removedue` - Elimina la fecha de vencimiento de la tarjeta\n`attach` - Crea un archivo adjunto en la tarjeta\n`attchments`, `atch` - Gestiona los archivos adjuntos"
         },
         "editboard": {
             "description": "Edita las propiedades del tablero actual. Comprueba la nota para subcomandos y usos.",
@@ -375,6 +395,23 @@
         },
         "clearauth": {
             "description": "Limpia tu autorización de Trello. No lo hagas si, realmente, no lo necesitas hacer."
+        },
+        "deletelabel": {
+            "usage": "[nombre de la etiqueta|ID de la etiqueta]",
+            "description": "Elimina una etiqueta."
+        },
+        "editlabel": {
+            "note": "`name [nuevo nombre]` - Renombra la etiqueta\n`color [nuevo color]` - Cambia el color de la etiqueta",
+            "usage": "[nombre la etiqueta|ID de la etiqueta] [subcomando] …",
+            "description": "Edita las propiedades de una etiqueta. Consulte la nota para ver los subcomandos y usos."
+        },
+        "label": {
+            "usage": "[nombre de la etiqueta|ID de la etiqueta]",
+            "description": "Muestra información de una etiqueta del tablero actual."
+        },
+        "labels": {
+            "description": "Enumera todas las etiquetas del tablero actual.",
+            "usage": "[página]"
         }
     },
     "bad_args": "¡No hay suficientes argumentos!",
@@ -406,7 +443,7 @@
         "reloading": "Recargando comandos…"
     },
     "help": {
-        "header": "{{&username}} (Funcionando una modificación de [Faux](https://github.com/Snazzah/Faux) por Snazzah)\nServidor de soporte: {{&link}}",
+        "header": "{{&username}} (Funcionando una modificación de [Faux](https://github.com/Snazzah/Faux?ref=tacobot) por Snazzah)\nServidor de soporte: {{&link}}\n\n¿No sabes dónde empezar? [Clic aquí](https://tacobot.app/guide?ref=bot)",
         "not_found": "No se ha encontrado el comando: `{{&command}}`.",
         "footer": "\"{{&cleanPrefix}}help [comando]\" para más información"
     },
@@ -454,7 +491,7 @@
     },
     "info": {
         "title": "Información sobre {{&username}}",
-        "faux": "Este bot está usando una versión modificada de [Faux](https://github.com/Snazzah/Faux)."
+        "faux": "Este bot está usando una versión modificada de [Faux](https://github.com/Snazzah/Faux?ref=tacobot)."
     },
     "ping": {
         "message": "¡Pong!",
@@ -640,7 +677,16 @@
             "many": "Webhooks"
         },
         "bio": "Bio",
-        "bg_img": "Imagen de fondo"
+        "bg_img": "Imagen de fondo",
+        "style": {
+            "many": "Estilos",
+            "one": "Estilo"
+        },
+        "color": {
+            "many": "Colores",
+            "one": "Color"
+        },
+        "url": "Enlace"
     },
     "cooldown_msg": "¡Este comando necesita enfriarse! *({{seconds}})*",
     "setmaxwebhooks": {
@@ -712,7 +758,7 @@
         "input_new": "Escriba el nombre de la tarjeta qué deseas añadir.",
         "input_name": "Escriba el nuevo nombre para la tarjeta.",
         "bad_attach": "¡URL del archivo adjunto incorrecta!",
-        "input_attach": "Pega la URL del archivo adjunto que deseas añadir a la tarjeta."
+        "input_attach": "Pega la URL del archivo adjunto que deseas añadir a la tarjeta. Incluso puedes añadir un archivo adjunto en tu mensaje."
     },
     "prefix": {
         "footer": "Los prefijos con el icono 🔒 no se pueden eliminar.",
