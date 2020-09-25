@@ -39,11 +39,11 @@
     "help": {
         "not_found": "Der Befehl `{{&command}}` wurde nicht gefunden.",
         "footer": "`{{&cleanPrefix}}help [Befehl]` für weitere Informationen.",
-        "header": "{{&username}} (Läuft einem modifzierten [Faux](https://github.com/Snazzah/Faux) von Snazzah)\nSupport-Server: {{&link}}"
+        "header": "{{&username}} (Läuft einem modifzierten [Faux](https://github.com/Snazzah/Faux?ref=tacobot) von Snazzah)\nSupport-Server: {{&link}}\n\nDu weißt nicht, wie du anfangen sollst? [Hier klicken!](https://tacobot.app/guide?ref=bot)"
     },
     "info": {
         "title": "Informationen über {{&username}}",
-        "faux": "Dieser Bot verwendet eine modifizierte Version von [Faux](https://github.com/Snazzah/Faux)."
+        "faux": "Dieser Bot verwendet eine modifizierte Version von [Faux](https://github.com/Snazzah/Faux?ref=tacobot)."
     },
     "ping": {
         "message": "Pong!",
@@ -238,7 +238,16 @@
         "member_type": {
             "many": "Berechtigungsstufen",
             "one": "Berechtigung"
-        }
+        },
+        "style": {
+            "many": "Stile",
+            "one": "Stil"
+        },
+        "color": {
+            "many": "Farben",
+            "one": "Farbe"
+        },
+        "url": "URL"
     },
     "trello": {
         "comment_perms": {
@@ -391,7 +400,8 @@
             "delete": "Webhook löschen",
             "filter": "Filter bearbeiten",
             "off": "Deaktivieren",
-            "on": "Aktivieren"
+            "on": "Aktivieren",
+            "style": "Stil ändern"
         },
         "menu": {
             "link": "Benutze einen Link zu einem bestehendem Webhook",
@@ -402,7 +412,21 @@
         "try_repair": "Du kannst diesen Fehler mit `{{&cleanPrefix}}editwebhook {{&id}} repair` beheben",
         "twh_missing": "Der Benutzer, der den Webhook erstellt hat, fehlt. Deswegen wird der Webhook keine Daten mehr senden!",
         "dwh_missing": "Der Discord Webhook, der mit diesem Webhook verknüpft ist, fehlt!",
-        "model_filter": "Filtermodus der Liste/Karte"
+        "model_filter": "Filtermodus der Liste/Karte",
+        "styles": {
+            "compact": {
+                "description": "Kombiniert mehrere Events in ein einziges Embed, ähnlich zu Github Webhook commits",
+                "name": "Komprimiert"
+            },
+            "small": {
+                "description": "Eine verkleinerte Version, die nur einen Beschreibenden Titel beinaltet",
+                "name": "Klein"
+            },
+            "default": {
+                "description": "Normale Nachrichten, die so viel Informationen zeigen, wie möglich",
+                "name": "Standard"
+            }
+        }
     },
     "commands": {
         "me": {
