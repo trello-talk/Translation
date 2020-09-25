@@ -435,6 +435,7 @@
         "no_access": "Either this board no longer exists or you do not have access to it!",
         "locale_unset": "Unset the webhook locale.",
         "locale_set": "Set the webhook locale to **{{&name}}**.",
+        "choose_style": "Type the number of the style you want to set the webhook to.",
         "style_set": "Set the webhook style to **{{&name}}**.",
         "max_wh": "You have reached your maximum webhooks for this server! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
         "unknown": "unknown"
@@ -662,7 +663,7 @@
         "editwebhook": {
             "description": "Edits a webhook on your server.  Check the note for sub-commands and usages.",
             "usage": "<webhookID> [subcommand]",
-            "note": "`activate`, `deactivate` - Activates or deactivates the webhook\n`filters` - Edit the filters (formerly \"Webhook Bits\") for this webhook\n`locale [locale]` - Sets the locale for the webhook\n`repair` - Repairs any issues with the webhook\n`delete` - Deletes the webhook\n`whitelist`, `blacklist` - Changes the filter policy of the webhook\n`lists` - Edit filtered lists\n`cards` - Edit filtered cards"
+            "note": "`activate`, `deactivate` - Activates or deactivates the webhook\n`filters` - Edit the filters (formerly \"Webhook Bits\") for this webhook\n`locale [locale]` - Sets the locale for the webhook\n`repair` - Repairs any issues with the webhook\n`delete` - Deletes the webhook\n`policy` - Changes the filter policy of the webhook (whitelist/blacklist)\n`style` - Change the style of the webhook\n`lists` - Edit filtered lists\n`cards` - Edit filtered cards"
         },
         "remwebhook": {
             "description": "Removes a webhook from your server.",
@@ -973,6 +974,9 @@
         "customfielditem_checkbox_true": "{{&member}} checked custom field \"{{&customField}}\" on card \"{{&card}}\"",
         "customfielditem_remove": "{{&member}} removed custom field \"{{&customField}}\" from card \"{{&card}}\"",
         "customfielditem_update": "{{&member}} updated custom field \"{{&customField}}\" on card \"{{&card}}\""
+    },
+    "webhooks_extended": {
+        "delete_card": "{{&member}} deleted card {{&cardID}} from list \"{{&list}}\""
     },
     "webhook_filters": {
         "ADD_ATTACHMENT_TO_CARD": "Attachment additions to cards",
