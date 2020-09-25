@@ -226,6 +226,10 @@
         "color": {
             "many": "Farver",
             "one": "Farve"
+        },
+        "style": {
+            "many": "Stile",
+            "one": "Stil"
         }
     },
     "trello": {
@@ -490,6 +494,20 @@
         },
         "webhook": {
             "usage": "<webhookID>"
+        },
+        "addlabel": {
+            "usage": "[navn]",
+            "description": "Opretter en etiket på den aktuelle tavle."
+        },
+        "deletelabel": {
+            "description": "Sletter en etiket."
+        },
+        "label": {
+            "description": "Viser oplysninger om en etiket på den aktuelle tavle."
+        },
+        "labels": {
+            "usage": "[side]",
+            "description": "Lister alle etikkerterne på den aktuelle tavle."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -656,7 +674,8 @@
         "selectedBoard": "Der er ikke blevet valgt nogen tavle!\nVælg en tavle med `{{&cleanPrefix}}switch` kommandoen!",
         "trelloRole": "Denne kommando kræver du er ejeren af serveren eller du har en rolle der hedder `Trello`!",
         "elevated": "Kun de hævede brugere af botten kan bruge denne kommando!",
-        "userData": "Dine indstillinger er ikke i databasen!"
+        "userData": "Dine indstillinger er ikke i databasen!",
+        "guild": "Denne kommando skal bruges i en server!"
     },
     "reloadwebserver": {
         "no": "Der er ingen webserver på denne instans!",
@@ -773,7 +792,8 @@
             "lists": "Ændre filtrerede lister",
             "repair": "Reparer webhook",
             "blist": "Ændre filter til sortliste",
-            "wlist": "Ændre filter til hvidliste"
+            "wlist": "Ændre filter til hvidliste",
+            "style": "Ændre stil"
         },
         "none": "Der er ingen webhooks på denne server der er forbundet til Trello.",
         "add_header": "Hvordan vil du have dit webhook skal opsættes?",
@@ -796,7 +816,18 @@
         "no_access": "Enten findes denne tavle ikke længere eller også har du ikke adgang til den!",
         "cards_updated": "De filtrerede kort blev gemt.",
         "lists_updated": "De filtrerede lister blev gemt.",
-        "repaired_wh": "Reparerede webhook"
+        "repaired_wh": "Reparerede webhook",
+        "styles": {
+            "compact": {
+                "name": "Kompakt"
+            },
+            "small": {
+                "name": "Lille"
+            },
+            "default": {
+                "name": "Standard"
+            }
+        }
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
