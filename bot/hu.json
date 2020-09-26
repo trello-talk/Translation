@@ -1,1 +1,82 @@
-{}
+{
+    "locale": {
+        "server_locale": "Szerver nyelv: {{&locale}}",
+        "user_locale": "Felhasználói nyelv: {{&locale}}",
+        "choose": "Írd be a beállítani kívánt nyelv beállítási számát erre.",
+        "unset_l": "Beállítása nyelv törlése",
+        "unset": "Nincs beállítva",
+        "start": "Elérhető nyelvek"
+    },
+    "shardinfo": {
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} szerverek",
+        "title": "Informátció a {{&username}}-nak a shardjairól"
+    },
+    "ping": {
+        "rest": "REST: {{ms}} ms",
+        "ws": "WS: {{ms}} ms",
+        "message": "Pong!"
+    },
+    "info": {
+        "faux": "Ez a bot használja a modifikált [Faux](https://github.com/Snazzah/Faux?ref=tacobot)-t.",
+        "title": "Informátció a {{&username}}-ról"
+    },
+    "help": {
+        "footer": "`{{&cleanPrefix}}help [command]` további infókért.",
+        "header": "{{&username}} (Futatja Modifikált [Faux](https://github.com/Snazzah/Faux?ref=tacobot) Snazzah által)\nSegítségkérő Szerver: {{&link}}\n\nNem tudod merre kezd? [Kattints ide!](https://tacobot.app/guide?ref=bot)",
+        "not_found": "A parancs `{{&command}}` nem található."
+    },
+    "links": {
+        "serverinvite": {
+            "fail": "A bot tulajdonos nem adott meg segítségkérő szerver linkeket!",
+            "start": "Csatlakozz a segítségkérő szerverre ezen linkek bármelyikével!"
+        },
+        "invite": {
+            "fail": "A bot tulajdonos nem adott meg meghívó linket!",
+            "start": "Itt a linkek amivel meghívhatsz engem más szerverre!"
+        },
+        "github": "Itt a link a source kódomhoz:",
+        "donate": {
+            "fail": "A bot tulajdonos nem adott fel támogadási linkeket!",
+            "start": "Támogasd a fejlesztést a támogatásoddal!"
+        },
+        "auth": {
+            "fail": "A bot tulajdonos nem adott meg engedélyezési linket!",
+            "start": "Engedélyezze a te Trello fiókodat a discordoddal itt:"
+        }
+    },
+    "responses": {
+        "eval": "Tartott {{ms}} ms.",
+        "hangman": "Én nem egy játék bot vagyok.",
+        "restart": "Shard újraindítása…"
+    },
+    "vote": {
+        "rate": "értékelés",
+        "review": "áttekintés",
+        "title": "Tudsz szavazni, áttekinteni és értékelni {{&username}} ezeken az oldalakon:"
+    },
+    "setmaxwebhooks": {
+        "invalid": "Érvénytelen ID!",
+        "set": "Állítsd be a maximum webhook korlátot a {{serverID}}-nak {{value}}-nek."
+    },
+    "reloadwebserver": {
+        "done": "Webszerver újraindult.",
+        "reloading": "Webszerver újraindítása…",
+        "no": "Itt nincs ilyen webszerver ezen a létesítményen."
+    },
+    "reloadone": {
+        "done": "Újratöltve {{&commands}}.",
+        "file": "A fájl ami ezzel a meghatározott parancssal már nem létezik!",
+        "invalid": "Érvénytelen parancs!"
+    },
+    "reloadlocale": {
+        "done": "Nyelvek újratöltöttek.",
+        "reloading": "Nyelvek újratöltése…"
+    },
+    "reload": {
+        "done": "Parancsok újratöltöttek.",
+        "reloading": "Parancsok újratöltése…"
+    },
+    "_": {
+        "name": "Angol (Egyesült Államok)"
+    }
+}
