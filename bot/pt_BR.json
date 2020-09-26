@@ -129,11 +129,11 @@
     "help": {
         "footer": "Use `{{&cleanPrefix}}help [command]` para mais informações.",
         "not_found": "O comando `{{&command}}` não foi encontrado.",
-        "header": "{{&username}} (Executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux) Criado por Snazzah)\nServidor de Suporte: {{&link}}"
+        "header": "{{&username}} (Executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux?ref=tacobot) Criado por Snazzah)\nServidor de Suporte: {{&link}}\n\nNão sabe por onde começar? [Clique Aqui!](https://tacobot.app/guide?ref=bot)"
     },
     "info": {
         "title": "Informações sobre {{&username}}",
-        "faux": "Esse bot está executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux)."
+        "faux": "Esse bot está executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux?ref=tacobot)."
     },
     "words": {
         "short_link": {
@@ -300,7 +300,8 @@
         "color": {
             "many": "Cores",
             "one": "Cor"
-        }
+        },
+        "url": "URL"
     },
     "shardinfo": {
         "title": "Informações sobre os Shards do {{&username}}",
@@ -481,7 +482,7 @@
         "editcard": {
             "description": "Edita as propriedades de um cartão. Verifique a nota para sub comandos e usos.",
             "usage": "[nomeDoCartão|idDoCartão] [sub comando] …",
-            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão\n`label` - Gerencia as etiquetas do cartão\n`members` - Gerencia os membros do cartão\n`move`, `mv` - Move o cartão para outra lista\n`due` - Define a data de vencimento do cartão\n`duedone` - Altera o status de vencimento do cartão\n`removedue` - Remove a data de vencimento do cartão"
+            "note": "`name [novoNome]` - Renomeia o cartão\n`archive`, `unarchive` - Altera o arquivamento do cartão\n`desc [novaDescrição]` - Define a descrição do cartão\n`removedesc` - Remove a descrição do cartão\n`label` - Gerencia as etiquetas do cartão\n`members` - Gerencia os membros do cartão\n`move`, `mv` - Move o cartão para outra lista\n`due` - Define a data de vencimento do cartão\n`duedone` - Altera o status de vencimento do cartão\n`removedue` - Remove a data de vencimento do cartão\n`attach` - Cria um anexo no cartão\n`attachments`, `atch` - Gerencia os anexos"
         },
         "addcard": {
             "description": "Cria um cartão.",
@@ -556,6 +557,9 @@
         "labels": {
             "usage": "[página]",
             "description": "Lista todas as etiquetas no quadro atual."
+        },
+        "addlabel": {
+            "usage": "[nome]"
         }
     },
     "_": {
@@ -638,7 +642,8 @@
             "member": "Gerencia a atribuição do membro",
             "label": "Gerencia as etiquetas",
             "move": "Move o cartão para outra lista",
-            "attach": "Cria um anexo"
+            "attach": "Cria um anexo",
+            "attachments": "Editar anexos"
         },
         "set_name": "Cartão renomeado de \"{{&old}}\" para \"{{&new}}\".",
         "input_name": "Digite um novo nome para o cartão.",
@@ -842,7 +847,15 @@
         "input_link": "Cole o link do webhook que deseja usar.",
         "choose_existwh": "Escolha o webhook que deseja usar.",
         "repair_dwh_header": "Está faltando o webhook do Discord. Gostaria de criar um novo?",
-        "try_repair": "Você pode corrigir esse problema usando `{{&cleanPrefix}}editwebhook {{&id}} repair`"
+        "try_repair": "Você pode corrigir esse problema usando `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "styles": {
+            "compact": {
+                "name": "Compacto"
+            },
+            "default": {
+                "name": "Padrão"
+            }
+        }
     },
     "deprecated": "Esse comando não está mais disponível!",
     "vote": {
@@ -877,5 +890,11 @@
         "wywtd": "Escolha o que você quer fazer com essa etiqueta.",
         "choose": "Digite o número da etiqueta que você deseja usar.",
         "header": "Use `{{&cleanPrefix}}label <IDDaEtiqueta|nomeDaEtiqueta>` para ver uma etiqueta."
+    },
+    "attachments": {
+        "menu": {
+            "delete": "Deletar esse anexo",
+            "name": "Editar o nome do anexo"
+        }
     }
 }
