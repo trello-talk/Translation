@@ -47,10 +47,37 @@
         "header": "{{&username}} (Snazzah tarafından değiştirilmiş [Faux](https://github.com/Snazzah/Faux) çalıştırılmakta)\nSupport Server: {{&link}}"
     },
     "info": {
-        "title": "{{&username}} hakkında bilgi"
+        "title": "{{&username}} hakkında bilgi",
+        "faux": "Bu bot, şunun değiştirilmiş bir sürümünü kullanıyor [Faux] (https://github.com/Snazzah/Faux?ref=tacobot)."
     },
     "_": {
         "emoji": "tr",
         "name": "Türk"
+    },
+    "locale": {
+        "server_locale": "Sunucu Konumu: {{&locale}}",
+        "user_locale": "Kullanıcı Konumu: {{&locale}}",
+        "choose": "Ayarlamak istediğin konum numarasını yaz.",
+        "unset_l": "Konumu boz",
+        "unset": "Ayarlanmadı",
+        "start": "Mevcut Konumlar"
+    },
+    "shardinfo": {
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms değeri, {{guilds}} lonca",
+        "title": "{{&username}} Parçaları hakkında bilgi"
+    },
+    "ping": {
+        "rest": "REST: {{ms}} ms değeri",
+        "ws": "WS: {{ms]] ms değeri",
+        "message": "Ping:"
+    },
+    "vote": {
+        "rate": "oran",
+        "review": "Gözden Geçir",
+        "title": "Oy verebilirsin, bu sitelerde {{&username}} inceleyin veya değerlendirin:"
+    },
+    "setmaxwebhooks": {
+        "invalid": "Geçersiz ID!",
+        "set": "Webhook limitini {{serverID}} den {{value}} yap."
     }
 }
