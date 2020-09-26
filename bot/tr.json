@@ -48,7 +48,7 @@
     },
     "info": {
         "title": "{{&username}} hakkında bilgi",
-        "faux": "Bu bot, şunun değiştirilmiş bir sürümünü kullanıyor [Faux] (https://github.com/Snazzah/Faux?ref=tacobot)."
+        "faux": "Bu bot, şunun değiştirilmiş bir sürümünü kullanıyor [Faux](https://github.com/Snazzah/Faux?ref=tacobot)."
     },
     "_": {
         "emoji": "tr",
