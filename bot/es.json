@@ -380,7 +380,7 @@
         "editcard": {
             "usage": "[Nombre de la tarjeta|ID de la tarjeta] [subcomando] …",
             "description": "Edita las propiedades de una tarjeta. Comprueba la nota para subcomandos y usos.",
-            "note": "`name [nuevo nombre]` - Cambia el nombre de la tarjeta\n`archive`, `unarchive` - Cambia si la tarjeta debe estar archivada o no\n`desc [nueva descripción]` - Cambia la descripción de la tarjeta\n`removedesc` - Elimina la descripción de la tarjeta\n`label` - Gestiona las etiquetas de la tarjeta\n`members` - Gestiona los miembros de la tarjeta\n`move`, `mv` - Mueva la tarjeta a otra lista\n`due` - Cambia la fecha de vencimiento de la tarjeta\n`duedone` - Cambia el estado de vencimiento de la tarjeta\n`removedue` - Elimina la fecha de vencimiento de la tarjeta\n`attach` - Crea un archivo adjunto en la tarjeta\n`attchments`, `atch` - Gestiona los archivos adjuntos"
+            "note": "`name [nuevo nombre]` - Cambia el nombre de la tarjeta\n`archive`, `unarchive` - Cambia si la tarjeta debe estar archivada o no\n`desc [nueva descripción]` - Cambia la descripción de la tarjeta\n`removedesc` - Elimina la descripción de la tarjeta\n`label` - Gestiona las etiquetas de la tarjeta\n`members` - Gestiona los miembros de la tarjeta\n`move`, `mv` - Mueva la tarjeta a otra lista\n`due` - Cambia la fecha de vencimiento de la tarjeta\n`duedone` - Cambia el estado de vencimiento de la tarjeta\n`removedue` - Elimina la fecha de vencimiento de la tarjeta\n`attach` - Crea un archivo adjunto en la tarjeta\n`attachments`, `atch` - Gestiona los archivos adjuntos"
         },
         "editboard": {
             "description": "Edita las propiedades del tablero actual. Comprueba la nota para subcomandos y usos.",
