@@ -338,7 +338,8 @@
             "description": "Crea una tarjeta."
         },
         "star": {
-            "usage": "[Nombre del tablero|ID del tablero]"
+            "usage": "[Nombre del tablero|ID del tablero]",
+            "description": "Alternar el marcar un tablero como favorito. Si un tablero no es definido, el actual será usado. Los tablero marcados como favorito aparecerán entre los primeros de su lista de tableros en [Trello](https://trello.com/)."
         },
         "watch": {
             "usage": "[Nombre del tablero|ID del tablero]",
