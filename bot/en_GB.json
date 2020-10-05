@@ -165,7 +165,11 @@
             "many": "Colours",
             "one": "Colour"
         },
-        "url": "URL"
+        "url": "URL",
+        "style": {
+            "many": "Styles",
+            "one": "Style"
+        }
     },
     "format": {
         "second": {
@@ -436,7 +440,7 @@
         "editwebhook": {
             "usage": "<webhookID> [subcommand]",
             "description": "Edits a webhook on your server.  Check the note for sub-commands and usages.",
-            "note": "`activate`, `deactivate` - Activates or deactivates the webhook\n`filters` - Edit the filters (formerly \"Webhook Bits\") for this webhook\n`locale [locale]` - Sets the locale for the webhook\n`repair` - Repairs any issues with the webhook\n`delete` - Deletes the webhook\n`whitelist`, `blacklist` - Changes the filter policy of the webhook\n`lists` - Edit filtered lists\n`cards` - Edit filtered cards"
+            "note": "`activate`, `deactivate` - Activates or deactivates the webhook\n`filters` - Edit the filters (formerly \"Webhook Bits\") for this webhook\n`locale [locale]` - Sets the locale for the webhook\n`repair` - Repairs any issues with the webhook\n`delete` - Deletes the webhook\n`policy` - Changes the filter policy of the webhook (whitelist/blacklist)\n`style` - Change the style of the webhook\n`lists` - Edit filtered lists\n`cards` - Edit filtered cards"
         },
         "remwebhook": {
             "usage": "<webhookID>",
@@ -956,7 +960,8 @@
             "wlist": "Change filter to whitelist",
             "cards": "Change filtered cards",
             "lists": "Change filtered lists",
-            "locale": "Change locale"
+            "locale": "Change locale",
+            "style": "Change style"
         },
         "no_access": "Either this board no longer exists or you do not have access to it!",
         "choose_cards": "Choose which cards will be filtered. Choosing no cards will disable card filtering.",
@@ -967,7 +972,23 @@
         "to_wlist": "Changed filtering policy to whitelist.",
         "max_wh": "You have reached your maximum webhooks for this server! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
         "locale_set": "Set the webhook locale to **{{&name}}**.",
-        "locale_unset": "Unset the webhook locale."
+        "locale_unset": "Unset the webhook locale.",
+        "style_set": "Set the webhook style to **{{&name}}**.",
+        "choose_style": "Type the number of the style you want to set the webhook to.",
+        "styles": {
+            "compact": {
+                "description": "Stacks multiple events into one embed, much like GitHub webhook commits",
+                "name": "Compact"
+            },
+            "small": {
+                "description": "Small version of default webhooks, only showing the descriptive title",
+                "name": "Small"
+            },
+            "default": {
+                "description": "Regular messages, showing as much information as possible",
+                "name": "Default"
+            }
+        }
     },
     "webhook_filter_group": {
         "listUpdate": "List Updates",
@@ -1037,5 +1058,8 @@
         "wywtd": "Choose what you want to do with this attachment.",
         "choose": "Type the number of the attachment you want to use.",
         "none": "This card has no attachments."
+    },
+    "webhooks_extended": {
+        "delete_card": "{{&member}} deleted card {{&cardID}} from list \"{{&list}}\""
     }
 }
