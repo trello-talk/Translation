@@ -508,6 +508,9 @@
         "labels": {
             "usage": "[side]",
             "description": "Lister alle etikkerterne på den aktuelle tavle."
+        },
+        "attachment": {
+            "description": "Viser en vedhæftning som er på et kort."
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
@@ -541,7 +544,8 @@
         "removed_desc": "Fjernede tavlebeskrivelsen for \"{{&name}}\".",
         "set_desc": "Satte tavlebeskrivelsen for \"{{&name}}\".",
         "set_invite_perms": "Satte invitationstilladelser til {{&value}}.",
-        "set_vote_perms": "Satte afstmningstilladelser til {{&value}}."
+        "set_vote_perms": "Satte afstmningstilladelser til {{&value}}.",
+        "need_admin": "Du skal have administrator tilladelser på tavlen!"
     },
     "cards": {
         "none": "Denne tavle har ingen kort.",
@@ -581,7 +585,8 @@
         "removed_due": "Fjernede forfaldsdatoen for kortet \"{{&name}}\".",
         "input_name": "Indtast navnet du ønsker at omdøbe kortet til.",
         "same_list_move": "Dette kort er allerede i denne liste!",
-        "move": "Flyttede \"{{&card}}\" til listen \"{{&list}}\"."
+        "move": "Flyttede \"{{&card}}\" til listen \"{{&list}}\".",
+        "add_attach": "Oprettede en vedhæftning på \"{{&name}}\"."
     },
     "prompt": {
         "no_search": "Der kom ikke nogen resultater ud af den søgning.",
@@ -592,7 +597,8 @@
         "no_confirm": "Bekræftelse annulleret.",
         "confirm": "Er du sikker på du ønsker at gøre dette?",
         "select": "Indtast nummeret på tingen for at ændre dens værdi.",
-        "select_cancel": "Skriv \"save\" for at gemme udvalget, ellers skriv \"cancel\" for at annullere."
+        "select_cancel": "Skriv \"save\" for at gemme udvalget, ellers skriv \"cancel\" for at annullere.",
+        "cancel_confirm": "Skriv `yes` for at bekræfte. Alle andre beskeder vil annullere bekræftelsen."
     },
     "lists": {
         "list_header": "Brug `{{&cleanPrefix}}card <cardID|cardName>` for at få oplysninger om et kort.",
@@ -819,15 +825,19 @@
         "repaired_wh": "Reparerede webhook",
         "styles": {
             "compact": {
-                "name": "Kompakt"
+                "name": "Kompakt",
+                "description": "Stabler adskillige begivenheder i en embed, meget ligesom GitHub webhook commits"
             },
             "small": {
-                "name": "Lille"
+                "name": "Lille",
+                "description": "Lille version af standard webhooks, viser kun den beskrivende titel"
             },
             "default": {
-                "name": "Standard"
+                "name": "Standard",
+                "description": "Regulære beskeder, viser så mange oplysninger som muligt"
             }
-        }
+        },
+        "style_set": "Satte webhookstilen til **{{&name}}**."
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
@@ -871,7 +881,8 @@
         "input_name": "Indtast navnet du vil omdøbe vedhæftningen til.",
         "set_name": "Omdøbte vedhæftningen fra \"{{&old}}\" til \"{{&new}}\".",
         "wywtd": "Vælg hvad du vil gøre med denne vedhæftning.",
-        "removed": "Slettede vedhæftningen \"{{&name}}\"."
+        "removed": "Slettede vedhæftningen \"{{&name}}\".",
+        "none": "Dette kort har ingen vedhæftninger."
     },
     "labels": {
         "choose": "Indtast nummeret på den etiket du ønsker at bruge.",
