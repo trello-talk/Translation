@@ -313,7 +313,9 @@
         "one_chklist_name": "Gammelt tjeklistenavn",
         "new_v": "Ny værdi",
         "old_v": "Gammel værdi",
-        "custom_field": "Skræddersyet felt"
+        "custom_field": "Skræddersyet felt",
+        "item_src": "Emnekilde",
+        "one_chkitem_name": "Gammelt navn for tjeklisteemne"
     },
     "format": {
         "second": {
@@ -733,7 +735,10 @@
         "edit_board_desc": "{{&member}} ændrede tavlens beskrivelse",
         "move_out_list": "{&member}} overførte listen \"{{&list}}\" til en anden tavle",
         "move_card": "{{&member}} flyttede kortet \"{{&card}}\" til listen \"{{&list}}\"",
-        "board_rename": "{{&member}} omdøbte tavlen fra \"{{&oldName}}\" til \"{{&board}}\""
+        "board_rename": "{{&member}} omdøbte tavlen fra \"{{&oldName}}\" til \"{{&board}}\"",
+        "delete_comment": "{{&member}} fik sin kommentar fjernet fra \"{{&card}}\"",
+        "card_remove_label": "{{&member}} fjernede etiketten \"{{&label}}\" fra kortet \"{{&card}}\"",
+        "card_add_label": "{{&member}} tilføjede etiketten \"{{&label}}\" til kortet \"{{&card}}\""
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter",
@@ -837,7 +842,13 @@
                 "description": "Regulære beskeder, viser så mange oplysninger som muligt"
             }
         },
-        "style_set": "Satte webhookstilen til **{{&name}}**."
+        "style_set": "Satte webhookstilen til **{{&name}}**.",
+        "to_blist": "Ændrede filtreringspolitikken til sortliste.",
+        "to_wlist": "Ændrede filtreringspolitikken til hvidliste.",
+        "repaired": "Ethvert problem med webhooket er blevet repareret.",
+        "filter_update": "Opdaterede webhookets filtrer.",
+        "input_link": "Indsæt linket til det webhook du ønsker at bruge.",
+        "model_filter": "Liste/Kort filtreringstilstand"
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
@@ -897,5 +908,8 @@
         },
         "wywtd": "Vælg hvad du har lyst til at gøre med denne etiket.",
         "created": "Oprettede etiketten \"{{&name}}\". (`{{id}}`)"
+    },
+    "webhooks_extended": {
+        "delete_card": "{{&member}} slettede kortet {{&cardID}} fra listen \"{{&list}}\""
     }
 }
