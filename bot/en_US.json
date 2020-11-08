@@ -341,7 +341,8 @@
         },
         "member_type": {
             "normal": "Normal",
-            "admin": "Admin"
+            "admin": "Admin",
+            "observer": "Observer"
         }
     },
     "webhook_cmd": {
