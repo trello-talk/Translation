@@ -56,7 +56,7 @@
     },
     "help": {
         "not_found": "The command `{{&command}}` was not found.",
-        "header": "{{&username}} (Running Modified [Faux](https://github.com/Snazzah/Faux?ref=tacobot) By Snazzah)\nSupport Server: {{&link}}\n\nDon't know where to start? [Click Here!](https://tacobot.app/guide?ref=bot)",
+        "header": "{{&username}} (Running Modified [Faux](https://github.com/Snazzah/Faux?ref=tacobot) By Snazzah)\nSupport Server: {{&link}}\n\nDon't know where to start? [Click Here!](https://tacobot.app/guide?ref=bot)\nLike Taco? Support us via [Patreon](https://patreon.com/trello_talk) or by voting. (`T!vote`)",
         "footer": "`{{&cleanPrefix}}help [command]` for more info."
     },
     "info": {
@@ -454,7 +454,7 @@
         "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
         "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
         "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
-        "webhooks": "I need the permission `Manage Webhooks` to use this command!",
+        "webhooks": "I need the permission `Manage Webhooks` to use this command! **This permission must be enabled on a role rather than a channel!**",
         "userData": "Your settings are not in the database!",
         "guild": "This command must be ran in a guild!"
     },
