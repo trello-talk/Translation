@@ -57,11 +57,11 @@
     "help": {
         "footer": "`{{&cleanPrefix}}help [command]` pour plus d'informations.",
         "not_found": "La commande `{{&command}}` n'a pas été trouvée.",
-        "header": "{{&username}} (Exécute une version modifiée de [Faux](https://github.com/Snazzah/Faux) par Snazzah)\nServeur de support : {{&link}}"
+        "header": "{{&username}} (Exécute une version modifiée de [Faux](https://github.com/Snazzah/Faux?ref=tacobot) par Snazzah)\nServeur de support : {{&link}}\n\nVous ne savez pas par où commencer ? [Cliquez ici !](https://tacobot.app/guide?ref=bot)\nVous aimez Taco ? Soutenez-nous via [Patreon](https://patreon.com/trello_talk) ou en votant. (`T!vote`)"
     },
     "info": {
         "title": "Informations à propos de {{&username}}",
-        "faux": "Ce robot utilise une version modifiée de [Faux](https://github.com/Snazzah/Faux)."
+        "faux": "Ce robot utilise une version modifiée de [Faux](https://github.com/Snazzah/Faux?ref=tacobot)."
     },
     "ping": {
         "message": "Pong !",
@@ -247,7 +247,16 @@
         "in_lower": "dans",
         "in": "Dans",
         "usage": "Utilisation",
-        "bg_img": "Image d'arrière-plan"
+        "bg_img": "Image d'arrière-plan",
+        "style": {
+            "many": "Styles",
+            "one": "Style"
+        },
+        "color": {
+            "many": "Couleurs",
+            "one": "Couleur"
+        },
+        "url": "URL"
     },
     "trello": {
         "colorblind": "Mode daltonien",
@@ -326,13 +335,15 @@
         },
         "member_type": {
             "normal": "Normal",
-            "admin": "Administrateur"
+            "admin": "Administrateur",
+            "observer": "Observateur"
         },
         "self_join": "Autoriser les membres de l'équipe à modifier et rejoindre",
         "archived_lower": "archivé",
         "prev_list": "Liste précédente",
         "new_comment": "Nouveau commentaire",
-        "from_board": "Du tableau"
+        "from_board": "Du tableau",
+        "cover_source": "Source de couverture"
     },
     "webhook_cmd": {
         "none": "Il n'y a pas de webhook sur ce serveur connecté à Trello.",
@@ -379,7 +390,8 @@
             "lists": "Modifier les listes filtrées",
             "cards": "Modifier les cartes filtrées",
             "wlist": "Modifier les filtres en liste blanche",
-            "blist": "Modifier les filtres en liste noire"
+            "blist": "Modifier les filtres en liste noire",
+            "style": "Changer le style"
         },
         "no_channels": "Aucun canal m'autorisant à gérer les webhooks n'a été trouvé.",
         "choose_channel": "Choisissez le canal dans lequel le webhook publiera.",
@@ -411,7 +423,23 @@
         "header": "Utilisez `{{&cleanPrefix}}webhook <webhookID>` pour voir un webhook et `{{&cleanPrefix}}editwebhook <webhookID>` pour le modifier.",
         "no_link": "Je n'ai pas pu trouver un lien au webhook en entrée !",
         "confirm_delete": "Êtes-vous sûr(e) de vouloir supprimer ce webhook ?",
-        "max_wh": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un Patreon ! (`{{&cleanPrefix}}donate`)"
+        "max_wh": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un Patreon ! (`{{&cleanPrefix}}donate`)",
+        "style_set": "Définit le style du webhook à **{{&name}}**.",
+        "choose_style": "Saisissez le numéro du style que vous souhaitez affecter au webhook.",
+        "styles": {
+            "compact": {
+                "description": "Empile plusieurs événements dans une seule intégration, un peu comme les commits de webhook GitHub",
+                "name": "Compact"
+            },
+            "small": {
+                "description": "Version minime des webhooks par défaut, affichant uniquement le titre descriptif",
+                "name": "Petit"
+            },
+            "default": {
+                "description": "Messages réguliers, montrant autant d'informations que possible",
+                "name": "Défaut"
+            }
+        }
     },
     "cooldown_msg": "Cette commande doit être refroidie ! *({{seconds}})*",
     "bad_args": "Pas assez d'arguments !",
@@ -426,7 +454,7 @@
         "auth": "Vous n'avez pas autorisé votre compte Trello avec Discord !\nAutorisez-le avec la commande `{{&cleanPrefix}}auth` !",
         "selectedBoard": "Il n'y a aucun tableau sélectionné !\nSélectionnez un tableau avec la commande `{{&cleanPrefix}}switch` !",
         "discordAuth": "Vous n'avez pas autorisé votre compte Trello avec Discord !\nAutorisez-le avec la commande `{{&cleanPrefix}}auth` !",
-        "webhooks": "J'ai besoin de la permission `Manage Webhooks` pour utiliser cette commande !",
+        "webhooks": "J'ai besoin de la permission `Manage Webhooks` pour utiliser cette commande ! **Cette permission doit être activée pour un rôle plutôt que pour un canal !**",
         "userData": "Vos paramètres ne sont pas dans la base de données !",
         "guild": "Cette commande doit être exécutée dans une guilde !"
     },
@@ -569,7 +597,7 @@
         "editcard": {
             "description": "Modifie les propriétés d'une carte. Vérifiez la note pour les sous-commandes et leur usage.",
             "usage": "[nomCarte|identifiantCarte] [sous-commande] …",
-            "note": "`name [newName]` - Renomme la carte\n`archive`, `unarchive` - Active/désactive l'archivage de la carte\n`desc [newDescription]` - Définit la description de la carte\n`removedesc` - Supprime la description de la carte\n`duedone` - Active/désactive l'achèvement de la date limite de la carte\n`removedue` - Supprime la date limite de la carte"
+            "note": "`nom [nouveauNom]` - Renomme la carte\n`archiver`, `desarchiver` - Active/désactive l'archivage de la carte\n`desc [nouvelleDescription]` - Définit la description de la carte\n`supprimedesc` - Supprime la description de la carte\n`datelim` - Active/désactive l'achèvement de la date limite de la carte\n`supprimedatelim` - Supprime la date limite de la carte\n`piecejointe` - Crée une pièce jointe à la carte\n`piecesjointes`, `pjs` - Gère les pièces jointes"
         },
         "editboard": {
             "description": "Modifie les propriétés de la carte actuelle. Vérifiez la note pour les sous-commandes et leur usage.",
@@ -607,7 +635,7 @@
         "editwebhook": {
             "description": "Modifie un webhook sur votre serveur. Vérifiez la note pour les sous-commandes et leur usage.",
             "usage": "<identifiantWebhook> [sous-commande]",
-            "note": "`activate`, `deactivate` - Active/désactive le webhook\n`filters` - Modifie les filtres (anciennement \"Webhook Bits\") pour ce webhook\n`locale [locale]` - Définit la région pour le webhook\n`repair` - Répare tout problème avec le webhook\n`delete` - Supprime le webhook\n`whitelist`, `blacklist` - Modifie la stratégie de filtrage pour le webhook\n`lists` - Modifie les listes filtrées\n`cards` - Modifie les cartes filtrées"
+            "note": "`activate`, `deactivate` - Active/désactive le webhook\n`filters` - Modifie les filtres (anciennement \"Webhook Bits\") pour ce webhook\n`locale [locale]` - Définit la région pour le webhook\n`repair` - Répare tout problème avec le webhook\n`delete` - Supprime le webhook\n`policy` - Modifie la politique de filtrage du webhook (liste blanche/liste noire)\n`style`- Change le style du webhook\n`lists` - Modifie les listes filtrées\n`cards` - Modifie les cartes filtrées"
         },
         "remwebhook": {
             "description": "Supprime un webhook de votre serveur.",
@@ -637,6 +665,31 @@
         },
         "cleardata": {
             "description": "Supprime vos données utilisateur de Taco."
+        },
+        "addlabel": {
+            "usage": "[nom]",
+            "description": "Crée une étiquette sur le tableau actuel."
+        },
+        "attachment": {
+            "usage": "[nomCarte|idCarte] [nomPieceJointe|idPieceJointe]",
+            "description": "Affiche une pièce jointe qui est sur une carte."
+        },
+        "deletelabel": {
+            "usage": "[nomLabel|idLabel]",
+            "description": "Supprime une étiquette."
+        },
+        "editlabel": {
+            "note": "`nom [nouveauNom]` - Renomme l'étiquette\n`couleur [nouvelleCouleur]` - Modifie la couleur de l'étiquette",
+            "usage": "[nomLabel|idLabel] [sous-commande] …",
+            "description": "Modifie les propriétés d'une étiquette. Consultez la note pour les sous-commandes et les utilisations."
+        },
+        "label": {
+            "usage": "[nomLabel|idLabel]",
+            "description": "Affiche des informations sur une étiquette du tableau actuel."
+        },
+        "labels": {
+            "usage": "[page]",
+            "description": "Liste toutes les étiquettes du tableau actuel."
         }
     },
     "boards": {
@@ -686,7 +739,11 @@
             "sub_off": "Arrêter de regarder cette carte",
             "remove_due": "Supprimer l'échéance",
             "due_off": "Marquer l'échéance comme non terminée",
-            "due": "Définir la date d'échéance"
+            "due": "Définir la date d'échéance",
+            "attachments": "Modifier les pièces jointes",
+            "member": "Gérer l'affectation des membres",
+            "label": "Gérer les étiquettes",
+            "move": "Déplace la carte dans une autre liste"
         },
         "unarchived": "A supprimé la carte \"{{&name}}\" des archives.",
         "input_new": "Tapez le nom de la carte que vous souhaitez ajouter.",
@@ -712,7 +769,11 @@
         "add_attach": "A créé une pièce jointe pour \"{{&name}}\".",
         "set_due": "A défini la date d'échéance au {{&date}}.",
         "bad_due": "Je ne parviens pas à reconnaître cette date. Essayez une date comme \"Demain à 9h\" ou \"Vendredi prochain\".",
-        "input_due": "Saisissez la date d'échéance pour activer la carte."
+        "input_due": "Saisissez la date d'échéance pour activer la carte.",
+        "members_updated": "A mis à jour l'affectation des membres pour \"{{&name}}\".",
+        "labels_updated": "A mis à jour les étiquettes pour \"{{&name}}\".",
+        "move": "A déplacé \"{{&card}}\" dans la liste \"{{&list}}\".",
+        "same_list_move": "Cette carte est déjà dans la liste !"
     },
     "lists": {
         "list_none": "Cette liste n'a pas de cartes.",
@@ -759,7 +820,8 @@
         "cancel_input": "Taper \"{{&cancelPrompt}}\" annulera la saisie.",
         "cancel_confirm": "Tapez `yes` pour confirmer. Tout autre message annulera cette confirmation.",
         "select": "Tapez le numéro de l'élément pour changer sa valeur.",
-        "select_canceled": "Votre dernière invitation a été annulée. Toutes les modifications ont été perdues."
+        "select_canceled": "Votre dernière invitation a été annulée. Toutes les modifications ont été perdues.",
+        "async_select": "Saisissez le numéro de l'élément dont vous souhaitez changer sa valeur. **Les changements seront effectués quand la valeur sera modifiée.**"
     },
     "prefix": {
         "server": "Préfixe du serveur",
@@ -960,5 +1022,42 @@
         "date": "Date",
         "list": "Déroulant"
     },
-    "error": "Une erreur est survenue pendant l'exécution de cette commande !"
+    "error": "Une erreur est survenue pendant l'exécution de cette commande !",
+    "webhooks_extended": {
+        "delete_card": "{{&member}} a supprimé la carte {{&cardID}} de la liste \"{{&list}}\""
+    },
+    "labels": {
+        "created": "A créé l'étiquette \"{{&name}}\". (`{{id}}`)",
+        "input_new": "Saisissez le nom de l'étiquette que vous souhaitez ajouter.",
+        "removed": "A supprimé l'étiquette \"{{&name}}\". (`{{id}}`)",
+        "remove_confirm": "Êtes-vous sûr(e) de vouloir supprimer \"{{&name}}\" ? (`{{id}}`)\n**Ceci supprimera l'étiquette définitivement, pas seulement d'une carte.**",
+        "menu": {
+            "name": "Renommer l'étiquette",
+            "color": "Définir la couleur de l'étiquette"
+        },
+        "choose_color": "Saisissez le numéro de la couleur que vous souhaitez définir pour l'étiquette.",
+        "set_color": "A défini la couleur de l'étiquette \"{{&label}}\" en {{&color}}.",
+        "input_name": "Saisissez le nom de l'étiquette que vous souhaitez renommer.",
+        "set_name": "A renommé l'étiquette de \"{{&old}}\" en \"{{&new}}\".",
+        "wywtd": "Choisissez ce que vous souhaitez faire avec cette étiquette.",
+        "choose": "Saisissez le numéro de l'étiquette que vous souhaitez utiliser.",
+        "header": "Utilisez `{{&cleanPrefix}}étiquette <idEtiquette|nomEtiquette>` pour voir une étiquette.",
+        "none": "Ce tableau n'a pas d'étiquette."
+    },
+    "attachments": {
+        "menu": {
+            "delete": "Supprime cette pièce jointe",
+            "cover": "Définit cette pièce jointe en tant que couverture de carte",
+            "name": "Modifie le nom de la pièce jointe"
+        },
+        "set_cover": "Définit la pièce jointe \"{{&attachment}}\" comme couverture de carte pour \"{{&card}}\".",
+        "removed": "A supprimé la pièce jointe \"{{&name}}\".",
+        "remove_confirm": "Êtes-vous sûr(e) de vouloir supprimer \"{{&name}}\" ?",
+        "input_name": "Saisissez le nom de la pièce jointe que vous souhaitez renommer.",
+        "set_name": "A renommé la pièce jointe de \"{{&old}}\" en \"{{&new}}\".",
+        "is_cover": "Utilisée en tant que couverture de carte",
+        "wywtd": "Choisissez ce que vous souhaitez faire avec cette pièce jointe.",
+        "choose": "Saisissez le numéro de la pièce jointe que vous souhaitez utiliser.",
+        "none": "Cette carte n'a pas de pièce jointe."
+    }
 }
