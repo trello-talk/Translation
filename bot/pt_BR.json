@@ -63,7 +63,8 @@
         },
         "member_type": {
             "normal": "Normal",
-            "admin": "Admin"
+            "admin": "Admin",
+            "observer": "Observador"
         },
         "prev_list": "Lista Anterior",
         "new_name": "Novo Nome",
@@ -82,7 +83,8 @@
         "one_chkitem_name": "Nome anterior do item da Checklist",
         "new_v": "Novo Valor",
         "old_v": "Valor Antigo",
-        "custom_field": "Campo Personalizado"
+        "custom_field": "Campo Personalizado",
+        "cover_source": "Fonte da Capa"
     },
     "ping": {
         "message": "Pong!",
@@ -129,7 +131,7 @@
     "help": {
         "footer": "Use `{{&cleanPrefix}}help [command]` para mais informações.",
         "not_found": "O comando `{{&command}}` não foi encontrado.",
-        "header": "{{&username}} (Executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux?ref=tacobot) Criado por Snazzah)\nServidor de Suporte: {{&link}}\n\nNão sabe por onde começar? [Clique Aqui!](https://tacobot.app/guide?ref=bot)"
+        "header": "{{&username}} (Executando uma versão modificada do [Faux](https://github.com/Snazzah/Faux?ref=tacobot) Criado por Snazzah)\nServidor de Suporte: {{&link}}\n\nNão sabe por onde começar? [Clique Aqui!](https://tacobot.app/guide?ref=bot)\nGosta do Taco? Nos apoie via [Patreon](https://patreon.com/trello_talk) ou votando. (`T!vote`)"
     },
     "info": {
         "title": "Informações sobre {{&username}}",
@@ -301,7 +303,11 @@
             "many": "Cores",
             "one": "Cor"
         },
-        "url": "URL"
+        "url": "URL",
+        "style": {
+            "many": "Estilos",
+            "one": "Estilo"
+        }
     },
     "shardinfo": {
         "title": "Informações sobre os Shards do {{&username}}",
@@ -335,7 +341,7 @@
         "trelloRole": "Esse comando requer que você seja o dono do servidor ou possua o cargo `Trello`!",
         "userData": "Suas configurações não estão na base de dados!",
         "guild": "Esse comando precisa ser executado em um servidor!",
-        "webhooks": "Eu preciso da permissão de `Gerenciar Webhooks` para usar esse comando!"
+        "webhooks": "Eu preciso da permissão de `Gerenciar Webhooks` para usar esse comando! **Essa permissão precisa ser configurada no meu cargo, e não em um canal!**"
     },
     "format": {
         "second": {
@@ -548,7 +554,8 @@
             "description": "Deleta a etiqueta."
         },
         "editlabel": {
-            "note": "`name [newName]` - Renomeia a etiqueta\n`color [newColor]` - Altera a cor da etiqueta"
+            "note": "`name [newName]` - Renomeia a etiqueta\n`color [newColor]` - Altera a cor da etiqueta",
+            "usage": "[nomeDaEtiqueta|idDaEtiqueta] [subcomando] …"
         },
         "label": {
             "usage": "[nomeDaEtiqueta|IDDaEtiqueta]",
@@ -820,7 +827,8 @@
             "delete": "Deletar webhook",
             "filter": "Editar filtros",
             "off": "Desativar",
-            "on": "Ativar"
+            "on": "Ativar",
+            "style": "Alterar Estilo"
         },
         "menu": {
             "link": "Usar um link do webhook",
@@ -854,8 +862,13 @@
             },
             "default": {
                 "name": "Padrão"
+            },
+            "small": {
+                "name": "Pequeno"
             }
-        }
+        },
+        "add_header": "Como você quer configurar seu webhook?",
+        "twh_missing": "O usuário que configurou o webhook não foi encontrado, isso pode parar o envio do webhook!"
     },
     "deprecated": "Esse comando não está mais disponível!",
     "vote": {
