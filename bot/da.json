@@ -28,7 +28,7 @@
         "done": "Genindlæste {{&commands}}."
     },
     "help": {
-        "header": "{{&username}} (Kører en ændret version af [Faux](https://github.com/Snazzah/Faux?ref=tacobot) af Snazzah)\nSupportserver: {{&link}}\n\nVed du ikke hvor du skal starte? [Klik her!](https://tacobot.app/guide?ref=bot)",
+        "header": "{{&username}} (Kører en ændret version af [Faux](https://github.com/Snazzah/Faux?ref=tacobot) af Snazzah)\nSupportserver: {{&link}}\n\nVed du ikke hvor du skal starte? [Klik her!](https://tacobot.app/guide?ref=bot)\nKan du godt lide Taco? Støt os via [Patreon](https://patreon.com/trello_talk) eller ved at stemme. (`T!vote`)",
         "not_found": "Kommandoen `{{&command}}` blev ikke fundet.",
         "footer": "`{{&cleanPrefix}}help [command]` for flere oplysninger."
     },
