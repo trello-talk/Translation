@@ -296,7 +296,8 @@
         "card_covers": "Billeder af kortomslag",
         "member_type": {
             "admin": "Administrator",
-            "normal": "Normal"
+            "normal": "Normal",
+            "observer": "Observatør"
         },
         "old_desc": "Gammel beskrivelse",
         "curr_list": "Aktuelle liste",
