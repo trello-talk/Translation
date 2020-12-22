@@ -597,7 +597,7 @@
         "editcard": {
             "description": "Modifie les propriétés d'une carte. Vérifiez la note pour les sous-commandes et leur usage.",
             "usage": "[nomCarte|identifiantCarte] [sous-commande] …",
-            "note": "`nom [nouveauNom]` - Renomme la carte\n`archiver`, `desarchiver` - Active/désactive l'archivage de la carte\n`desc [nouvelleDescription]` - Définit la description de la carte\n`supprimedesc` - Supprime la description de la carte\n`datelim` - Active/désactive l'achèvement de la date limite de la carte\n`supprimedatelim` - Supprime la date limite de la carte\n`piecejointe` - Crée une pièce jointe à la carte\n`piecesjointes`, `pjs` - Gère les pièces jointes"
+            "note": "`name [newName]` - Renomme la carte\n`archive`, `unarchive` - Active/désactive l'archivage de la carte\n`desc [newDescription]` - Définit la description de la carte\n`removedesc` - Supprime la description de la carte\n`label` - Gère les étiquettes de carte\n`members`- Gère les membres de la carte\n`move`, `mv`- Déplace la carte dans une autre liste\n`due`- Définit l'échéance de la carte\n`duedone` - Active/désactive l'achèvement de la date limite de la carte\n`removedue` - Supprime la date limite de la carte\n`attach` - Crée une pièce jointe à la carte\n`attachments`, `atch` - Gère les pièces jointes"
         },
         "editboard": {
             "description": "Modifie les propriétés de la carte actuelle. Vérifiez la note pour les sous-commandes et leur usage.",
