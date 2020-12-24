@@ -247,7 +247,7 @@
         }
     },
     "help": {
-        "header": "{{&username}} (запуск модифицированного [Faux](https://github.com/Snazzah/Faux) от Snazzah)\nСервер поддержки: {{&link}}",
+        "header": "{{&username}} (Запуск модифицированного [Faux](https://github.com/Snazzah/Faux) от Snazzah)\nСервер Поддержки: {{&link}}\n\nНе знаете с чего начать? [Нажми на меня!](https://tacobot.app/guide?ref=bot)\nПонравился Taco? Поддержите нас! [Patreon](https://patreon.com/trello_talk) or by voting.  (`T!vote`)",
         "footer": "`{{&cleanPrefix}}help [command]` для получения дополнительной информации.",
         "not_found": "Команда `{{&command}}` не была найдена."
     },
@@ -441,7 +441,24 @@
         "channel": {
             "many": "Каналы",
             "one": "Канал"
-        }
+        },
+        "name": {
+            "many": "Имена",
+            "one": "Имя"
+        },
+        "webhook": {
+            "many": "ВебХуки",
+            "one": "ВебХук"
+        },
+        "style": {
+            "many": "Стили",
+            "one": "Стиль"
+        },
+        "color": {
+            "many": "Цвета",
+            "one": "Цвет"
+        },
+        "url": "URL"
     },
     "boards": {
         "header": "Используйте `{{&cleanPrefix}}switch <boardID|boardName>` для переключения между платами.",
@@ -475,7 +492,7 @@
         "set_vote_perms": "Установка разрешений для голосования {{&value}}."
     },
     "info": {
-        "faux": "Этот бот использует модифицированную версию [Faux](https://github.com/Snazzah/Faux).",
+        "faux": "Этот бот использует платную версию [Faux](https://github.com/Snazzah/Faux).",
         "title": "Информация о {{&username}}"
     },
     "trello": {
@@ -557,8 +574,13 @@
         "card_aging": "Возраст Карт",
         "member_type": {
             "normal": "Обычный",
-            "admin": "Администратор"
-        }
+            "admin": "Администратор",
+            "observer": "Наблюдатель"
+        },
+        "cover_source": "Источник Обложки",
+        "new_v": "Новое Значение",
+        "old_v": "Старое Значение",
+        "custom_field": "Пользовательское Поле"
     },
     "cards": {
         "error": "Я не мог получить данные карты! Если только кто-то не удалил его до запроса, это может быть ошибка на стороне Trello!",
@@ -692,7 +714,7 @@
         "rest": "REST: {{ms}} ms"
     },
     "shardinfo": {
-        "title": "Информация о черепках {{&username}}",
+        "title": "Информация о {{&username}}`s Шарде",
         "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} гильдий"
     },
     "bad_args": "Не хватает аргументов!",
@@ -756,7 +778,9 @@
             "delete": "Удалить вебхуки",
             "filter": "Редактировать фильтры",
             "off": "Дезактивировать",
-            "on": "Активировать"
+            "on": "Активировать",
+            "style": "Отредактировать стиль",
+            "wlist": "Отредактируйте фильтр для вайт-листа"
         },
         "menu": {
             "link": "Использовать ссылку вебхука",
@@ -792,7 +816,20 @@
         },
         "blacklist": "Черный список",
         "whitelist": "Белый список",
-        "header": "Используйте `{{&cleanPrefix}}webhook <webhookID>` для просмотра и `{{&cleanPrefix}}editwebhook <webhookID>` для редактирования."
+        "header": "Используйте `{{&cleanPrefix}}webhook <webhookID>` для просмотра и `{{&cleanPrefix}}editwebhook <webhookID>` для редактирования.",
+        "styles": {
+            "compact": {
+                "name": "Компактный"
+            },
+            "small": {
+                "description": "Небольшая версия веб-ключей по умолчанию , показывающих только заголовок",
+                "name": "Маленький"
+            },
+            "default": {
+                "description": "Регулярные сообщения показывающие много полезной информации",
+                "name": "По умолчанию"
+            }
+        }
     },
     "setmaxwebhooks": {
         "set": "Установить максимальный лимит вебхуков для {{serverID}} в {{value}}.",
