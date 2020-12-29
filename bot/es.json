@@ -63,7 +63,8 @@
         },
         "member_type": {
             "normal": "Normal",
-            "admin": "Administrador"
+            "admin": "Administrador",
+            "observer": "Observador"
         },
         "voted": "Votado",
         "last_act": "Última actividad",
@@ -184,7 +185,7 @@
     "use_this": "Utilice este comando en su lugar:",
     "command_permissions": {
         "userData": "¡Su configuración no está en la base de datos!",
-        "webhooks": "¡Necesito el permiso `Gestionar webhooks` para usar este comando!",
+        "webhooks": "¡Necesito el permiso `Gestionar webhooks` para usar este comando! **¡Este permiso debe habilitarse en un rol en lugar de en un canal!**",
         "discordAuth": "¡No ha autorizado su cuenta de Trello con Discord!\n¡Autorice con el comando `{{& cleanPrefix}}auth`!",
         "selectedBoard": "¡No hay ningún tablero seleccionado!\n¡Seleccione un tablero con el comando `{{& cleanPrefix}}switch`!",
         "auth": "¡No ha autorizado su cuenta de Trello con Discord!\n¡Autorice con el comando `{{&cleanPrefix}}auth`!",
@@ -413,6 +414,14 @@
         "labels": {
             "description": "Enumera todas las etiquetas del tablero actual.",
             "usage": "[página]"
+        },
+        "attachment": {
+            "usage": "[Nombre de la tarjeta|ID de la tarjeta] [Nombre del archivo adjunto|ID del archivo adjunto]",
+            "description": "Muestra un archivo adjunto que hay en la tarjeta."
+        },
+        "addlabel": {
+            "usage": "[nombre}",
+            "description": "Crea una etiqueta en el tablero actual."
         }
     },
     "bad_args": "¡No hay suficientes argumentos!",
@@ -437,14 +446,15 @@
         "select_timeout": "Tu última interacción esperó demasiado. Todos los cambios se han perdido.",
         "canceled": "Su última interacción ha sido cancelada.",
         "input": "Escriba el mensaje que desea ingresar.",
-        "choose": "Escriba el número del elemento que desea usar."
+        "choose": "Escriba el número del elemento que desea usar.",
+        "async_select": "Escriba el número del elemento para alternar su valor. **Se realizarán cambios cuando se cambie un valor.**"
     },
     "reload": {
         "done": "Comandos recargados.",
         "reloading": "Recargando comandos…"
     },
     "help": {
-        "header": "{{&username}} (Funcionando una modificación de [Faux](https://github.com/Snazzah/Faux?ref=tacobot) por Snazzah)\nServidor de soporte: {{&link}}\n\n¿No sabes dónde empezar? [Clic aquí](https://tacobot.app/guide?ref=bot)",
+        "header": "{{&username}} (Funcionando una modificación de [Faux](https://github.com/Snazzah/Faux?ref=tacobot) por Snazzah)\nServidor de soporte: {{&link}}\n\n¿No sabes dónde empezar? [Clic aquí](https://tacobot.app/guide?ref=bot)\n¿Te gusta Taco? Apóyanos a través de [Patreon](https://patreon.com/trello_talk) o votándonos (`T!vote`)",
         "not_found": "No se ha encontrado el comando: `{{&command}}`.",
         "footer": "\"{{&cleanPrefix}}help [comando]\" para más información"
     },
@@ -705,7 +715,9 @@
             "name": "Edita el nombre del tablero",
             "sub_on": "Sigue este tablero",
             "sub_off": "Deja de seguir este tablero",
-            "invite": "Cambia añadir/quitar permisos de miembros ({{&value}})"
+            "invite": "Cambia los permisos para añadir o quitar miembros ({{&value}})",
+            "vote": "Cambia los permisos para votar ({{&value}})",
+            "comment": "Cambia los permisos para comentar ({{&value}})"
         },
         "unarchived": "El tablero \"{{&name}}\" archivado ha sido eliminado.",
         "archived": "Tablero \"{{&name}}\" archivado.",
@@ -837,7 +849,10 @@
         "checkitem_rename": "{{&member}} ha renombrado un elemento en la checklist de la tarjeta \"{{&card}}\"",
         "checkitem_move": "{{&member}} ha movido un elemento en la checklist de la tarjeta \"{{&card}}\" a otra posición",
         "checkitem_create": "{{&member}} ha creado un elemento en la checklist de la tarjeta \"{{&card}}\"",
-        "checkitem_state_off": "{{&member}} ha marcado \"{{&checklistItem}}\" como incompleto en la tarjeta \"{{&card}}\""
+        "checkitem_state_off": "{{&member}} ha marcado \"{{&checklistItem}}\" como incompleto en la tarjeta \"{{&card}}\"",
+        "edit_board_desc": "{{&member}} ha cambiado la descripción del tablero",
+        "label_recolor": "{{&member}} ha cambiado el color de la etiqueta \"{{&label}}\" del {{&oldColor}} al {{&color}}",
+        "due_change": "{{&member}} ha cambiado la fecha de vencimiento en la tarjeta \"{{&card}}\""
     },
     "and_more": "Y {{count}} más…",
     "webhook_filter_group": {
