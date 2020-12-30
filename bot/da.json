@@ -849,7 +849,10 @@
         "repaired": "Ethvert problem med webhooket er blevet repareret.",
         "filter_update": "Opdaterede webhookets filtrer.",
         "input_link": "Indsæt linket til det webhook du ønsker at bruge.",
-        "model_filter": "Liste/Kort filtreringstilstand"
+        "model_filter": "Liste/Kort filtreringstilstand",
+        "choose_cards": "Vælg hvilke kort der vil blive filteret. Hvis ingen kort vælges vil filtrering af kort blive deaktiveret.",
+        "choose_lists": "Vælg hvilke lister der vil blive filteret. Hvis ingen lister vælges vil filtrering af lister blive deaktiveret.",
+        "create_confirm": "Webhooket for Trello tavlen \"{{&name}}\" er gået i gang! Handlinger skulle begynde at komme frem inden længe…"
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
