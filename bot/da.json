@@ -536,7 +536,9 @@
             "name": "Redigér navn på tavle",
             "sub_off": "Stop med at overvåge denne tavle",
             "remove_desc": "Fjern tavlebeskrivelse",
-            "desc": "Redigér tavlebeskrivelse"
+            "desc": "Redigér tavlebeskrivelse",
+            "vote": "Ændre afstemningstilladelser ({{&value}})",
+            "comment": "Ændre kommentartilladelser ({{&value}})"
         },
         "wywtd": "Vælg hvad du vil gøre med denne tavle.",
         "set_name": "Omdøbte tavlen fra \"{{&old}}\" til \"{{&new}}\".",
@@ -548,7 +550,8 @@
         "set_desc": "Satte tavlebeskrivelsen for \"{{&name}}\".",
         "set_invite_perms": "Satte invitationstilladelser til {{&value}}.",
         "set_vote_perms": "Satte afstmningstilladelser til {{&value}}.",
-        "need_admin": "Du skal have administrator tilladelser på tavlen!"
+        "need_admin": "Du skal have administrator tilladelser på tavlen!",
+        "set_comment_perms": "Satte kommentartilladelser til {{&value}}."
     },
     "cards": {
         "none": "Denne tavle har ingen kort.",
@@ -589,7 +592,8 @@
         "input_name": "Indtast navnet du ønsker at omdøbe kortet til.",
         "same_list_move": "Dette kort er allerede i denne liste!",
         "move": "Flyttede \"{{&card}}\" til listen \"{{&list}}\".",
-        "add_attach": "Oprettede en vedhæftning på \"{{&name}}\"."
+        "add_attach": "Oprettede en vedhæftning på \"{{&name}}\".",
+        "labels_updated": "Opdaterede etiketterne på \"{{&name}}\"."
     },
     "prompt": {
         "no_search": "Der kom ikke nogen resultater ud af den søgning.",
@@ -739,7 +743,8 @@
         "board_rename": "{{&member}} omdøbte tavlen fra \"{{&oldName}}\" til \"{{&board}}\"",
         "delete_comment": "{{&member}} fik sin kommentar fjernet fra \"{{&card}}\"",
         "card_remove_label": "{{&member}} fjernede etiketten \"{{&label}}\" fra kortet \"{{&card}}\"",
-        "card_add_label": "{{&member}} tilføjede etiketten \"{{&label}}\" til kortet \"{{&card}}\""
+        "card_add_label": "{{&member}} tilføjede etiketten \"{{&label}}\" til kortet \"{{&card}}\"",
+        "board_set_invite_perms": "{{&member}} satte invitationstilladelser fra {{&oldPerm}} til {{&perm}}"
     },
     "webhook_filters": {
         "DELETE_LABEL": "Sletninger af etiketter",
@@ -897,7 +902,8 @@
         "set_name": "Omdøbte vedhæftningen fra \"{{&old}}\" til \"{{&new}}\".",
         "wywtd": "Vælg hvad du vil gøre med denne vedhæftning.",
         "removed": "Slettede vedhæftningen \"{{&name}}\".",
-        "none": "Dette kort har ingen vedhæftninger."
+        "none": "Dette kort har ingen vedhæftninger.",
+        "choose": "Indtast nummeret på den vedhæftning du ønsker at bruge."
     },
     "labels": {
         "choose": "Indtast nummeret på den etiket du ønsker at bruge.",
@@ -911,7 +917,8 @@
             "name": "Omdøb etiket"
         },
         "wywtd": "Vælg hvad du har lyst til at gøre med denne etiket.",
-        "created": "Oprettede etiketten \"{{&name}}\". (`{{id}}`)"
+        "created": "Oprettede etiketten \"{{&name}}\". (`{{id}}`)",
+        "input_new": "Indtast navnet på den etiket du ønsker at tilføje."
     },
     "webhooks_extended": {
         "delete_card": "{{&member}} slettede kortet {{&cardID}} fra listen \"{{&list}}\""
