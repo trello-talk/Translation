@@ -247,7 +247,8 @@
         },
         "member_type": {
             "admin": "Admin",
-            "normal": "Normal"
+            "normal": "Normal",
+            "observer": "Observer"
         },
         "old_desc": "Old Description",
         "new_desc": "New Description",
@@ -529,7 +530,7 @@
         "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
         "discordAuth": "You haven't authorised your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
         "auth": "You haven't authorised your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
-        "webhooks": "I need the permission `Manage Webhooks` to use this command!",
+        "webhooks": "I need the permission `Manage Webhooks` to use this command! **This permission must be enabled on a role rather than a channel!**",
         "userData": "Your settings are not in the database!",
         "guild": "This command must be ran in a guild!"
     },
@@ -572,7 +573,7 @@
     "help": {
         "not_found": "The command `{{&command}}` was not found.",
         "footer": "`{{&cleanPrefix}}help [command]` for more info.",
-        "header": "{{&username}} (Running Modified [Faux](https://github.com/Snazzah/Faux?ref=tacobot) By Snazzah)\nSupport Server: {{&link}}\n\nDon't know where to start? [Click Here!](https://tacobot.app/guide?ref=bot)"
+        "header": "{{&username}} (Running Modified [Faux](https://github.com/Snazzah/Faux?ref=tacobot) By Snazzah)\nSupport Server: {{&link}}\n\nDon't know where to start? [Click Here!](https://tacobot.app/guide?ref=bot)\nLike Taco? Support us via [Patreon](https://patreon.com/trello_talk) or by voting. (`T!vote`)"
     },
     "info": {
         "title": "Information about {{&username}}",
@@ -835,7 +836,8 @@
         "customfield_carddisplay_true": "{{&member}} turned on card display for custom field \"{{&customField}}\"",
         "customfield_rename": "{{&member}} renamed custom field from \"{{&oldName}}\" to \"{{&customField}}\"",
         "customfield_delete": "{{&member}} deleted custom field \"{{&customField}}\"",
-        "customfield_create": "{{&member}} created custom field \"{{&customField}}\""
+        "customfield_create": "{{&member}} created custom field \"{{&customField}}\"",
+        "create_card_email": "{{&member}} created card \"{{&card}}\" by e-mail"
     },
     "webhook_filters": {
         "UPDATE_LIST_CLOSED": "List archive updates (archived/unarchived)",
@@ -892,7 +894,8 @@
         "UPDATE_CUSTOM_FIELD_DISPLAY": "Custom field display updates",
         "UPDATE_CUSTOM_FIELD_NAME": "Custom field name updates",
         "DELETE_CUSTOM_FIELD": "Custom field deletions",
-        "CREATE_CUSTOM_FIELD": "Custom field creations"
+        "CREATE_CUSTOM_FIELD": "Custom field creations",
+        "EMAIL_CARD": "Card creations by e-mail"
     },
     "webhook_cmd": {
         "choose_existwh": "Choose which webhook to use.",
