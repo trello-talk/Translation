@@ -939,7 +939,8 @@
         "customfield_delete": "{{&member}} a supprimé le champ personnalisé \"{{&customField}}\"",
         "customfield_rename": "{{&member}} a renommé le champ personnalisé de \"{{&oldName}}\" en \"{{&customField}}\"",
         "customfield_carddisplay_false": "{{&member}} a désactivé l'affichage de la carte pour le champ personnalisé \"{{&customField}}\"",
-        "customfielditem_remove": "{{&member}} a supprimé le champ personnalisé \"{{&customField}}\" de la carte \"{{&card}}\""
+        "customfielditem_remove": "{{&member}} a supprimé le champ personnalisé \"{{&customField}}\" de la carte \"{{&card}}\"",
+        "create_card_email": "{{&member}} a créé la carte \"{{&card}}\" par email"
     },
     "webhook_filters": {
         "ADD_ATTACHMENT_TO_CARD": "Ajouts de pièces jointes aux cartes",
@@ -996,7 +997,8 @@
         "UPDATE_CARD_CLOSED": "Mises à jour des archives de la carte (archivée/non archivée)",
         "UPDATE_CHECKLIST_POS": "Mises à jour de la position de la check-list",
         "UPDATE_LABEL_COLOR": "Mises à jour de la couleur de l'étiquette",
-        "DELETE_CUSTOM_FIELD": "Suppressions du champ personnalisé"
+        "DELETE_CUSTOM_FIELD": "Suppressions du champ personnalisé",
+        "EMAIL_CARD": "Créations de carte par email"
     },
     "webhook_filter_group": {
         "board": "Tableau",
