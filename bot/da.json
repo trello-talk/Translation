@@ -857,7 +857,11 @@
         "model_filter": "Liste/Kort filtreringstilstand",
         "choose_cards": "Vælg hvilke kort der vil blive filteret. Hvis ingen kort vælges vil filtrering af kort blive deaktiveret.",
         "choose_lists": "Vælg hvilke lister der vil blive filteret. Hvis ingen lister vælges vil filtrering af lister blive deaktiveret.",
-        "create_confirm": "Webhooket for Trello tavlen \"{{&name}}\" er gået i gang! Handlinger skulle begynde at komme frem inden længe…"
+        "create_confirm": "Webhooket for Trello tavlen \"{{&name}}\" er gået i gang! Handlinger skulle begynde at komme frem inden længe…",
+        "no_dwh": "Du har ingen Discord webhooks at linke til!",
+        "couldnt_create": "Jeg kunne ikke oprette webhooken! Dette kan skyldes pludselige ændringer i tilladelser der er kommet i mellemtiden!",
+        "no_channels": "Der blev ikke fundet nogen kanaler der tillader mig at administrere webhooks.",
+        "twh_missing": "Brugeren der opsatte webhooken mangler, dette kan forhindre webhooken fra at blive sendt!"
     },
     "webhook_filter_group": {
         "listUpdate": "Opdateringer af lister",
