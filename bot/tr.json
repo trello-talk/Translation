@@ -1,50 +1,50 @@
 {
     "reload": {
-        "done": "Komutlar yenilendi.",
-        "reloading": "Komutlar yenileniyor…"
+        "done": "Buyruklar yeniden yüklendi.",
+        "reloading": "Buyruklar yeniden yükleniyor…"
     },
     "reloadlocale": {
-        "reloading": "Yerel ayarlar yenileniyor…",
-        "done": "Yerel ayarlar yenilendi."
+        "reloading": "Yöreler yeniden yükleniyor…",
+        "done": "Yöreler yeniden yüklendi."
     },
     "reloadone": {
-        "invalid": "Geçersiz komut!",
-        "file": "Belirtilen komutu olan bir dosya artık mevcut değil!",
-        "done": "Yenilendi {{&commands}}."
+        "invalid": "Geçersiz buyruk!",
+        "file": "Belirtilen buyrukta olan bir dosya artık var değil!",
+        "done": "{{&commands}} yeniden yüklendi."
     },
     "reloadwebserver": {
-        "no": "Bu durumda web sunucusu yok!",
-        "reloading": "Webserver yeniden başlatılıyor…",
-        "done": "Webserver yeniden başlatıldı."
+        "no": "Bu örnekte ağ sunucusu yok!",
+        "reloading": "Ağsunucusu yeniden başlatılıyor…",
+        "done": "Ağsunucusu yeniden başlatıldı."
     },
     "responses": {
-        "restart": "Shard yeniden başlatılıyor…",
+        "restart": "Paylam yeniden başlatılıyor…",
         "hangman": "Ben oyun botu değilim.",
-        "eval": "{{ms}} ms sürdü."
+        "eval": "{{ms}} ms aldı."
     },
     "links": {
         "auth": {
-            "start": "Trello hesabınızı Discord'unuzla buradan yetkilendirin:",
-            "fail": "Bot sahibi bir yetkilendirme bağlantısı sağlamadı!"
+            "start": "Trello üyeliğini Discord'unla buradan yetkilendir:",
+            "fail": "Bot iyesi bir yetkilendirme örkü sağlamadı!"
         },
         "donate": {
             "start": "Bağış yaparak gelişimi destekleyin!",
-            "fail": "Bot sahibi herhangi bir bağış bağlantısı sağlamadı!"
+            "fail": "Bot iyesi herhangi bir bağış örkü sağlamadı!"
         },
-        "github": "İşte kaynak koduma bağlantı:",
+        "github": "İşte kaynak koduma örk:",
         "invite": {
-            "fail": "Bot sahibi herhangi bir davet bağlantısı sağlamadı!",
-            "start": "İşte beni diğer sunuculara davet etmek için bağlantılar!"
+            "fail": "Bot iyesi herhangi bir katılım örkü sağlamadı!",
+            "start": "İşte beni diğer sunuculara çağırmak için örkler!"
         },
         "serverinvite": {
-            "fail": "Bot sahibi destek sunucusu bağlantısı sağlamadı!",
-            "start": "Bu bağlantılardan herhangi biriyle destek sunucusuna katılın!"
+            "fail": "Bot sahibi destek sunucusu örkü sağlamadı!",
+            "start": "Bu örklerden herhangi biriyle destek sunucusuna katılın!"
         }
     },
     "help": {
-        "not_found": "`{{&command}}` komutu bulanamadı.",
-        "footer": "Daha fazla yardım için `{{&cleanPrefix}}help [command]` for more info.",
-        "header": "{{&username}} (Snazzah tarafından değiştirilmiş [Faux](https://github.com/Snazzah/Faux) çalıştırılmakta)\nSupport Server: {{&link}}"
+        "not_found": "`{{&command}}` buyruğu bulanamadı.",
+        "footer": "Daha çok yardım için `{{&cleanPrefix}}yardım [command]`.",
+        "header": "{{&username}} (Snazzah elinden değiştirilmiş [Faux](https://github.com/Snazzah/Faux?ref=tacobot) çalışmakta)\nSunucu Desteği: {{&link}}\n\nNereden başlayacağını bilmiyor musun? [Tıkla buraya!](https://tacobot.app/guide?ref=bot)\nTaco'yu beğendin mi? Bizi şöyle destekleyin [Patreon](https://patreon.com/trello_talk) ya da oylama eliyle. (T!vote)"
     },
     "info": {
         "title": "{{&username}} hakkında bilgi",
@@ -52,32 +52,785 @@
     },
     "_": {
         "emoji": "tr",
-        "name": "Türk"
+        "name": "Türkçe"
     },
     "locale": {
-        "server_locale": "Sunucu Konumu: {{&locale}}",
-        "user_locale": "Kullanıcı Konumu: {{&locale}}",
-        "choose": "Ayarlamak istediğin konum numarasını yaz.",
-        "unset_l": "Konumu boz",
-        "unset": "Ayarlanmadı",
-        "start": "Mevcut Konumlar"
+        "server_locale": "Sunucu yöresi: {{&locale}}",
+        "user_locale": "Kullanıcı Yöresi: {{&locale}}",
+        "choose": "Ayarlamak istediğin konum sayıtını türle.",
+        "unset_l": "Yerel ayarı boz",
+        "unset": "Ayarlı değil",
+        "start": "Mevcut Yereller",
+        "no_guild": "Bir konatta komut çalıştırmıyorsunuz!",
+        "server_unset": "Sunucunun yöre ayarını boz.",
+        "user_unset": "Kullanıcının yöre ayarını boz.",
+        "server_set": "Sunucunun yöresini **{{&name}}** olarak ayarla.",
+        "user_set": "Kulanıcının yöresini **{{&name}}** olara ayarla.",
+        "header": "Yöre ayarlamak için `{{&prefix}}locale setuser [locale]` veya `{{&prefix}}locale setserver [locale]`."
     },
     "shardinfo": {
-        "line": "**`{{id}}:`** {{status}}, {{ms}} ms değeri, {{guilds}} lonca",
-        "title": "{{&username}} Parçaları hakkında bilgi"
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} konat",
+        "title": "{{&username}} Paylamları hakkında bilgilenim"
     },
     "ping": {
-        "rest": "REST: {{ms}} ms değeri",
-        "ws": "WS: {{ms]] ms değeri",
+        "rest": "REST: {{ms}} ms",
+        "ws": "WS: {{ms]] ms",
         "message": "Ping:"
     },
     "vote": {
         "rate": "oran",
-        "review": "Gözden Geçir",
-        "title": "Oy verebilirsin, bu sitelerde {{&username}} inceleyin veya değerlendirin:"
+        "review": "görüş",
+        "title": "Bu yerliklerde oy, görüş ya da oran verebilirsin {{&username}}:"
     },
     "setmaxwebhooks": {
         "invalid": "Geçersiz ID!",
-        "set": "Webhook limitini {{serverID}} den {{value}} yap."
+        "set": "Üstdüzey ağkancası kısıtını {{serverID}} den {{value}} yap."
+    },
+    "webhook_cmd": {
+        "header": "Bir ağkancasını görüntülemek için `{{&cleanPrefix}}ağkancası <ağkancasıKimliği>` ve düzenlemek için `{{&cleanPrefix}}ağkancasıdüzenle <ağkancasıKimliği>` komutunu kullan.",
+        "max_wh": "Bu sunucu için aşık ağkancasına ulaştınız! Bu kısıtı bir bağışçı olarak arttırabilirsiniz! (`{{&cleanPrefix}}donate`)",
+        "confirm_delete": "Bu ağkancasını silmek istediğine vargın mısın?",
+        "wh_on": "Ağkancası açık kılındı.",
+        "wh_off": "Bu ağkancası kapalı kılındı.",
+        "wywtd": "Bu ağkancası ile ne yapmak istediğini seç.",
+        "no_server_link": "O ağkancası bu sunucuda değil!",
+        "no_link": "Girdide bir ağkanca URLsi bulamadım!",
+        "input_link": "Kullanmak istediğin ağkancasının örkünü yapıştır.",
+        "choose_existwh": "Kullanmak için ağkancasını seçin.",
+        "no_dwh": "Örklenecek Discord ağkancalarınız bulunmuyor!",
+        "add_header": "Ağkancanın kurulmasını nasıl istersin?",
+        "twh_missing": "Ağkancasını kuran kullanıcı yitik, ağkancasını göndermekten ötürü bu durabilir!",
+        "owned_by": "Elinden İyeli",
+        "model_filter": "Kart/Dizme Süzücü Kipi",
+        "unknown": "bilinmeyen",
+        "style_set": "**{{&name}}**'a ağkancası kılığı ayarla.",
+        "choose_style": "Ayarlamak istediğin ağkancasının kılık sayıtını türle.",
+        "locale_set": "**{{&name}}**'e ağkancası yöresini ayarla.",
+        "locale_unset": "Ağkancası yöresinin ayarını boz.",
+        "no_access": "Ya bu yazısalık yok, ya da yazısalığa erişiminiz yok!",
+        "choose_cards": "Hangi kartların süzüleceğini seçin. Kart seçimi yoksa kart süzüşü tıyılacaktır.",
+        "choose_lists": "Hangi dizmelerin süzüleceğini seçin. Dizme seçimi yoksa dizme süzüşü tıyılacaktır.",
+        "cards_updated": "Süzülü kartlar kaydedildi.",
+        "lists_updated": "Süzülü dizmeler kaydedildi.",
+        "to_blist": "Kara dizmeye yürütüm süzüşü değişti.",
+        "to_wlist": "Ak dizmeye yürütüm süzüşü değişti.",
+        "repaired": "Ağkancası ile ilgili kimi sorunlar onarıldı.",
+        "repaired_wh": "Ağkancası onarıldı",
+        "repair_dwh_header": "Discord ağkancası yitiyor. Yeni birini yaratmayı nasıl istersiniz?",
+        "filter_update": "Ağkancasının süzücüleri güncellendi.",
+        "deleted": "Ağkancası silindi.",
+        "not_found": "O ağkancası var değil!",
+        "invalid": "Geçersiz ağkancası kimliği!",
+        "none": "Trello'ya bağlı bu sunucuda ağkancaları yok.",
+        "styles": {
+            "compact": {
+                "name": "Sıkışık"
+            },
+            "small": {
+                "description": "Varsayılan ağkancalarının yalnızca açıklayıcı alınlığını (bir tür başlık) gösteren küçük sürümü",
+                "name": "Küçük"
+            },
+            "default": {
+                "description": "Olabildiğince çok bilgileme gösteren düzenli iletiler",
+                "name": "Varsayılan"
+            }
+        },
+        "edit_menu": {
+            "style": "Kılığı değiştir",
+            "blist": "Kara dizmeye süzmeyi değiştir",
+            "wlist": "Ak dizmeye süzmeyi değiştir",
+            "cards": "Süzülü kartları değiştir",
+            "lists": "Süzülü dizmeleri değiştir",
+            "locale": "Yöre değiştir",
+            "repair": "Ağkancası onar",
+            "delete": "Ağkancası sil",
+            "filter": "Süzücüleri düzenle",
+            "off": "Etkinsizleştir",
+            "on": "Etkinleştir"
+        },
+        "menu": {
+            "link": "Ağkancası örkünü kullan",
+            "exist": "Var olan ağkancasını kullan",
+            "add": "Ağkancası ekle"
+        },
+        "dwh_missing": "Bu ağkancası yitmesine Discord ağkancası bağlandı!",
+        "trello_webhook": "Trello Ağkancası",
+        "discord_webhook": "Discord Ağkancası",
+        "dwh": {
+            "many": "Discord Ağkancaları",
+            "one": "Discord Ağkancası"
+        },
+        "allowed_actions": {
+            "many": "İzinli Etkiler",
+            "one": "İzinli Etki"
+        },
+        "filtered_card": {
+            "many": "Süzülü Kartlar",
+            "one": "Süzülü Kart"
+        },
+        "filtered_list": {
+            "many": "Süzülü Dizmeler",
+            "one": "Süzülü Dizme"
+        },
+        "blacklist": "Kara dizme",
+        "whitelist": "Ak dizme",
+        "try_repair": "`{{&cleanPrefix}}ağkancasıdüzenle {{&id}} onar` ile bu sorunları onarabilirsin"
+    },
+    "trello": {
+        "perm_levels": {
+            "public": "Toplumluk",
+            "private": "Özel",
+            "org": "Takım Görünür"
+        },
+        "card_aging": "Kart Kağşaması",
+        "member_type": {
+            "observer": "Gözlemci",
+            "admin": "Yöneten",
+            "normal": "Normal"
+        },
+        "label_color": {
+            "none": "Tüs (Renk) Yok",
+            "black": "Kara",
+            "pink": "Pembe",
+            "sky": "Uzay Göğülü",
+            "blue": "Göğül/Mavi",
+            "purple": "Mor",
+            "lime": "Limon Yeşili",
+            "orange": "Turuncu",
+            "red": "Al/Kırmızı",
+            "yellow": "Sarı",
+            "green": "Yeşil"
+        },
+        "card_age": {
+            "pirate": "Kaçak",
+            "regular": "Düzenli"
+        },
+        "vote_perms": {
+            "public": "Kimi Trello Kullanıcısı",
+            "org": "Örgütlem Üyeleri",
+            "members": "Tüm Üyeler",
+            "disabled": "Tıyılı/Devredışı"
+        },
+        "comment_perms": {
+            "public": "Kimi Trello Kullanıcıları",
+            "org": "Örgütlem Üyeleri",
+            "members": "Tüm Üyeler",
+            "disabled": "Tıyılı/Devredışı"
+        },
+        "invite_perms": {
+            "admins": "Yönetenler",
+            "members": "Tüm Üyeler"
+        },
+        "products": {
+            "38": "🌟 Yıllık Trello Gold",
+            "37": "⭐ Aylık Trello Gold",
+            "10": "💼 İşletme Sınıfından Trello Gold"
+        },
+        "cover_source": "Kapak Kaynağı",
+        "new_v": "Yeni Değer",
+        "old_v": "Eski Değer",
+        "custom_field": "Özel Alan",
+        "from_board": "Yazısalıktan",
+        "to_board": "Yazısalığa",
+        "item_src": "Nesne Kaynağı",
+        "one_chklist_name": "Eski Denetim Dizmesi Adı",
+        "one_chkitem_name": "Eski Denetim Dizme Nesnesi Adı",
+        "new_comment": "Yeni Yorum",
+        "old_comment": "Eski Yorum",
+        "new_name": "Yeni Ad",
+        "old_name": "Eski Ad",
+        "curr_list": "Sonraki Dizme",
+        "prev_list": "Önceki Dizme",
+        "new_desc": "Yeni Açıklama",
+        "old_desc": "Eski Açıklama",
+        "archived_lower": "arşivli",
+        "add_rem_members": "Üyeleri Ekle/Kaldır",
+        "last_act": "Son Etkinlik",
+        "voted": "Oylu",
+        "voting": "Oylama",
+        "starred": "Yıldızlı",
+        "subbed": "İzlendi",
+        "pinned": "Saplı",
+        "template": "Tasarım mı?",
+        "self_join": "Düzenlemek ve Katılmak için Takım Üyelerini Geçir",
+        "hide_votes": "Oyları Gizle",
+        "card_covers": "Kart Kapağı Görselleri",
+        "locale": "Yöre (Trello'da)",
+        "marketing": "Pazarlama E-postaları (opt-in)",
+        "summ": "Özetleri Gönder",
+        "colorblind": "Renk Körlüğü Kipi"
+    },
+    "words": {
+        "cooldown": "Yatışma",
+        "visibility": "Görünürlük",
+        "flag": {
+            "many": "Bayraklar",
+            "one": "Bayrak"
+        },
+        "channel": {
+            "many": "Kanallar",
+            "one": "Kanal"
+        },
+        "name": {
+            "many": "Adlar",
+            "one": "Ad"
+        },
+        "webhook": {
+            "many": "Ağkancaları",
+            "one": "Ağkancası"
+        },
+        "prefix": {
+            "many": "Ön ekler",
+            "one": "Ön ek"
+        },
+        "vote_lower": {
+            "many": "oylar",
+            "one": "oy"
+        },
+        "comment": {
+            "many": "Yorumlar",
+            "one": "Yorum"
+        },
+        "member": {
+            "many": "Üyeler",
+            "one": "Üye"
+        },
+        "product": {
+            "many": "Ürünler",
+            "one": "Ürün"
+        },
+        "user_pref": {
+            "many": "Kullanıcı Yeğlemleri",
+            "one": "Kullanıcı Yeğlemi"
+        },
+        "pref": {
+            "many": "Yeğlemler",
+            "one": "Yeğlem"
+        },
+        "orgs": {
+            "many": "Örgütlemler",
+            "one": "Örgütlem"
+        },
+        "arch_board": {
+            "many": "Arşivli Yazısalıklar",
+            "one": "Arşivli Yazısalık"
+        },
+        "arch_card": {
+            "many": "Arşivli Kartlar",
+            "one": "Arşivli Kart"
+        },
+        "arch_list": {
+            "many": "Arşivli Dizmeler",
+            "one": "Arşivli Dizme"
+        },
+        "sticker": {
+            "many": "Çıkartmalar",
+            "one": "Çıkartma"
+        },
+        "subcmd": {
+            "many": "Alt-yorumlar",
+            "one": "Alt-yorum"
+        },
+        "cmd": {
+            "many": "Yorumlar",
+            "one": "Buyruk"
+        },
+        "attachment": {
+            "many": "Ek-Dosyalar",
+            "one": "Ek-Dosya"
+        },
+        "checklist_item": {
+            "many": "Denetim Dizmesi Nesneleri",
+            "one": "Denetim Dizmesi Nesnesi"
+        },
+        "checklist": {
+            "many": "Denetim Dizmeleri",
+            "one": "Denetim Dizmesi"
+        },
+        "member_type": {
+            "many": "Üye Türleri",
+            "one": "Üye Türü"
+        },
+        "opt": {
+            "many": "Seçenekler",
+            "one": "Seçenek"
+        },
+        "card": {
+            "many": "Kartlar",
+            "one": "Kart"
+        },
+        "label": {
+            "many": "Etiketler",
+            "one": "Etiket"
+        },
+        "link": {
+            "many": "Örkler",
+            "one": "Örk"
+        },
+        "list": {
+            "many": "Dizmeler",
+            "one": "Dizme"
+        },
+        "item": {
+            "many": "Nesneler",
+            "one": "Nesne"
+        },
+        "page": {
+            "many": "Betler",
+            "one": "Bet"
+        },
+        "board": {
+            "many": "Yazısalıklar",
+            "one": "Yazısalık"
+        },
+        "count": {
+            "many": "Sayışlar",
+            "one": "Sayış"
+        },
+        "short_link": {
+            "many": "Kısa Örkler",
+            "one": "Kısa Örk"
+        },
+        "bg_img": "Arkayüzey Görseli",
+        "info": "Bilgileme",
+        "initials": "Baş Harfler",
+        "id": "ID",
+        "donate": "Bağış",
+        "trello_board": {
+            "many": "Trello Yazısalıklar",
+            "one": "Trello Yazısalık"
+        },
+        "website": {
+            "many": "Ağyerlikleri",
+            "one": "Ağyerliği"
+        },
+        "style": {
+            "many": "Kılıklar",
+            "one": "Kılık"
+        },
+        "server": {
+            "many": "Sunucular",
+            "one": "Sunucu"
+        },
+        "mem_usage": "Bellek Kullanımı",
+        "note": "Bilgicik",
+        "uptime": "Çalışma süresi",
+        "version": "Sürüm",
+        "alias": {
+            "many": "Takma Adlar",
+            "one": "Takma Ad"
+        },
+        "color": {
+            "many": "Tüsler (Renkler)",
+            "one": "Tüs (Renk)"
+        },
+        "locale": "Yöre",
+        "usage": "Kullanım",
+        "active": "Etkin",
+        "url": "URL"
+    },
+    "commands": {
+        "watch": {
+            "usage": "[yazısalıkAdı|yazısalıkKimliği]",
+            "description": "Bir yazısalığı izlemeyi aç/kapa. Hiç yazısalık tanımlanmadı ise geçerli yazısalık kullanılır. İzlenmiş yazısalıklar sana [Trello](https://trello.com/)'da güncelleme bildirimleri verecek."
+        },
+        "watchlist": {
+            "usage": "[dizmeAdı|dizmeKimliği]",
+            "description": "Bir dizmeyi izlemeyi aç/kapa. İzlenmiş dizmeler sana [Trello](https://trello.com/)'da güncelleme bildirimleri verecek."
+        },
+        "watchcard": {
+            "description": "Bir kart izlemeyi aç/kapa. İzlenmiş kartlar sana [Trello](https://trello.com/)'da güncelleme bildirimleri verecek.",
+            "usage": "[kartAdı|kartKimliği]"
+        },
+        "deletelabel": {
+            "usage": "[etiketAdı|etiketKimliği]",
+            "description": "Bir etiket siler."
+        },
+        "editlabel": {
+            "note": "`ad [yeniAd]` - Etiketi yeniden adla\n`tüs [yeniTüs]` - Etiketin tüssünü değiştirir",
+            "usage": "[etiketAdı|etiketKimliği] [altkomut] …"
+        },
+        "label": {
+            "usage": "[etiketAdı|etiketKimliği]",
+            "description": "Geçerli yazısalıkta bir etikette bilgileme gösterir."
+        },
+        "labels": {
+            "usage": "[bet]",
+            "description": "Geçerli yazısalıkta etiketlerin tümünü dizer."
+        },
+        "cardarchive": {
+            "usage": "[bet]",
+            "description": "Geçerli yazısalıkta tüm arşivli kartları dizer."
+        },
+        "card": {
+            "usage": "[kartAdı|kartKimliği]",
+            "description": "Bir belirli kart ile ilgili bilgileme edinir."
+        },
+        "listarchive": {
+            "usage": "[bet]",
+            "description": "Gerçeli yazısalıkta tüm arşivli dizmeleri dizer."
+        },
+        "list": {
+            "usage": "[dizmeAdı|dizmeKimliği] [bet]",
+            "description": "O dizmedeki tüm kartları dizer."
+        },
+        "lists": {
+            "usage": "[bet]",
+            "description": "Geçerli yazısalıkta tüm açık dizmeleri dizer. `{{&cleanPrefix}}listarchive` ile arşiv dizmesini görebilirsin."
+        },
+        "board": {
+            "description": "Geçerli yazısalıkta bilgileme edin."
+        },
+        "boards": {
+            "usage": "[bet]",
+            "description": "Yönetebileceğin tüm yazısalıkların dizmeleri."
+        },
+        "me": {
+            "description": "Trello üyeliğine ilişkin bilgileme görüntüle."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "shardinfo": {
+            "description": "Değme paylam için durum verir."
+        },
+        "prefix": {
+            "usage": "[\"ayarla\"|\"ekle\"|\"kaldır\"] [ön-ek]",
+            "description": "Sen ya da sunucu için ön ekleri ayarlamana izin verir."
+        },
+        "locale": {
+            "usage": "[\"kullanıcıayarla\"|\"sunucuayarla\"] [yöre]",
+            "description": "Sen ya da sunucu için yöreyi ayarlamana izin verir. Yöreler dizmesi için savlar yokken ile çalış."
+        },
+        "ping": {
+            "description": "Ping!"
+        },
+        "info": {
+            "description": "Bot ile ilgili bilgileme edin."
+        },
+        "help": {
+            "usage": "[command]",
+            "description": "Komutlarda bilgileme verir ve yardım iletisini gösterir."
+        },
+        "restart": {
+            "description": "Bot'u yeniden başlatır."
+        },
+        "reloadwebserver": {
+            "description": "Ağsunucusunu yeniden başlatır."
+        },
+        "reloadone": {
+            "usage": "<commandName> [komutAdı] …",
+            "description": "Baştak komutları yeniden yükle."
+        },
+        "reloadlocale": {
+            "description": "Yerel dosyaları yeniden yükle."
+        },
+        "reload": {
+            "description": "Komutları yeniden yükle."
+        },
+        "exec": {
+            "usage": "<command> …",
+            "description": "`child_process.exec`kullanır."
+        },
+        "eval": {
+            "usage": "<code>",
+            "description": "Kodu değerletir."
+        },
+        "asynceval": {
+            "usage": "<code>"
+        },
+        "serverinvite": {
+            "description": "Destek sunucusu için çağrı edin."
+        },
+        "github": {
+            "description": "Bot'un açık kaynak örkünü gönderir."
+        },
+        "invite": {
+            "description": "Bot çağrı örkü gönderir."
+        },
+        "donate": {
+            "description": "Geliştiriciler için bağış örklerini edinin."
+        },
+        "auth": {
+            "description": "Discord üyeliğini Trello üyeliğine bağlamak için yetki örkünü edinin."
+        }
+    },
+    "webhooks": {
+        "unvote_card": "{{&member}}, \"{{&card}}\" kartı üstünde onların oyunu kaldırdı",
+        "vote_card": "{{&member}}, \"{{&card}}\" üstünde oyladı",
+        "delete_card": "{{&member}}, {{&cardID}} kartını sildi",
+        "create_card_email": "{{&member}} \"{{&card}}\" kartını e-posta eliyle oluşturdu",
+        "create_card": "{{&member}}, \"{{&card}}\" kartını oluşturdu",
+        "unarchive_card": "{{&member}} \"{{&card}}\" kartını arşivden kaldırdı",
+        "archive_card": "{{&member}}, \"{{&card}}\" kartını arşivledi",
+        "rename_card": "{{&member}}, \"{{&oldName}}\" adlı kartı \"{{&card}}\" olarak yeniden adladı",
+        "move_card": "{{&member}}, \"{{&list}}\" dizmesine \"{{&card}}\" kartını kotardı.",
+        "customfielditem_update": "{{&member}} \"{{&card}}\" kartındaki \"{{&customField}}\" özel alanını güncelledi",
+        "customfielditem_remove": "{{&member}} \"{{&card}}\" kartındaki \"{{&customField}}\" özel alanını kaldırdı",
+        "customfielditem_checkbox_true": "{{&member}} \"{{&card}}\" kartındaki \"{{&customField}}\" özel alanını denetledi",
+        "customfielditem_checkbox_false": "{{&member}} \"{{&card}}\" kartındaki \"{{&customField}}\" özel alanını denetlemedi",
+        "customfield_carddisplay_false": "{{&member}} \"{{&customField}}\" özel alanı için kart görüntüsünü kapadı",
+        "customfield_carddisplay_true": "{{&member}} \"{{&customField}}\" özel alanı için kart görüntüsünü açtı",
+        "customfield_rename": "{{&member}} özel alanı \"{{&oldName}}\" iken \"{{&customField}}\" olarak yeniden adlandırdı",
+        "customfield_delete": "{{&member}} \"{{&customField}}\" özel alanı sildi",
+        "customfield_create": "{{&member}} \"{{&customField}}\" özel alanı oluşturdu",
+        "copy_card": "{{&member}} kart içeriklerini \"{{&sourceCard}}\"dan \"{{&card}}\"a kopyaladı",
+        "copy_checklist": "{{&member}} denetim dizmesi içeriklerini \"{{&sourceChecklist}}\"dan \"{{&checklist}}\"a kopyaladı",
+        "move_in_card": "{{&member}} başka yazısalıktan \"{{&card}}\" kartını aktardı",
+        "move_in_list": "{{&member}} başka yazısalıktan \"{{&list}}\" dizmesini aktardı",
+        "move_out_card": "{{&member}} başka yazısalığa \"{{&card}}\" kartını aktardı",
+        "move_out_list": "{{&member}} başka yazısalığa \"{{&list}}\" dizmesini aktardı",
+        "board_set_perm_levels": "{{&member}} görünürlüğü {{&oldPerm}} iken {{&perm}} olarak ayarladı",
+        "board_set_vote_perms": "{{&member}} oylama izinlerini {{&oldPerm}} iken {{&perm}} olarak ayarladı",
+        "board_set_comment_perms": "{{&member}} yorumlama izinlerini {{&oldPerm}} iken {{&perm}} olarak ayarladı",
+        "board_set_invite_perms": "{{&member}} çağrım izinlerini {{&oldPerm}} iken {{&perm}} olarak ayarladı",
+        "unarchive_board": "{{&member}} yazısalığı açtı",
+        "archive_board": "{{&member}} yazısalığı kapadı",
+        "rem_board_desc": "{{&member}} yazısalıktan açıklamayı kaldırdı",
+        "edit_board_desc": "{{&member}} yazısalığın açıklamasını değiştirdi",
+        "add_board_desc": "{{&member}} yazısalığa bir açıklama ekledi",
+        "board_rename": "{{&member}} yazısalığı \"{{&oldName}}\" iken \"{{&board}}\" olarak yeniden adlandırdı",
+        "board_to_normal": "{{&member}} {{&member2}}'yi yazısalığın düzenli bir üyesi yaptı",
+        "board_to_normal_self": "{{&member}} kendilerini yazısalığın düzenli bir üyesi yaptı",
+        "board_to_admin": "{{&member}} {{&member2}}'yi yazısalığın bir yöneteni yaptı",
+        "board_join": "{{&member}} yazısalığa katıldı",
+        "board_left": "{{&member}} yazısalıktan ayrıldı",
+        "board_remove_member": "{{&member}} yazısalıktan {{&member2}}'yi kaldırdı",
+        "board_add_member": "{{&member}} yazısalığa {{&member2}}'yi ekledi",
+        "card_remove_self": "{{&member}} \"{{&card}}\" kartından kendilerini kaldırdı",
+        "card_add_self": "{{&member}} \"{{&card}}\" kartına kendilerini ekledi",
+        "card_remove_member": "{{&member}} \"{{&card}}\" kartından {{&member2}}'yi kaldırdı",
+        "card_add_member": "{{&member}} \"{{&card}}\" kartına {{&member2}}'yi ekledi",
+        "card_remove_label": "{{&member}} \"{{&card}}\" kartından \"{{&label}}\" etiketini kaldırdı",
+        "card_add_label": "{{&member}} \"{{&card}}\" kartına \"{{&label}}\" etiketini ekledi",
+        "unattach_card": "{{&member}} \"{{&card}}\" kartından \"{{&attachment}}\" ek dosyayı kaldırdı",
+        "attach_card": "{{&member}} \"{{&card}}\" kartına \"{{&attachment}}\" iliştirdi",
+        "delete_label": "{{&member}} {{&labelID}} etiketini sildi",
+        "label_recolor": "{{&member}} \"{{&label}}\" etiketinin tüssünü/rengini {{&oldColor}} iken {{&color}} olarak değiştirdi",
+        "label_rename": "{{&member}} \"{{&oldName}}\" etiketini \"{{&label}}\" olarak yeniden adlandırdı",
+        "create_label": "{{&member}} \"{{&label}}\" etiketi oluşturdu",
+        "list_move": "{{&member}} \"{{&list}}\" dizmesini bir başka konuma taşıdı",
+        "list_rename": "{{&member}} \"{{&oldName}}\" dizmesini \"{{&list}}\" olarak yeniden adlandırdı",
+        "unarchive_list": "{{&member}} arşivden \"{{&list}}\" dizmesini kaldırdı",
+        "archive_list": "{{&member}} \"{{&list}}\" dizmesini arşivledi",
+        "create_list": "{{&member}} \"{{&list}}\" dizmesini oluşturdu",
+        "checklist_delete": "{{&member}} \"{{&card}}\"dan \"{{&checklist}}\" denetim dizmesini kaldırdı",
+        "checklist_create": "{{&member}} \"{{&card}}\"da \"{{&checklist}}\" denetim dizmesini oluşturdu",
+        "checklist_rename": "{{&member}} \"{{&card}}\" kartında bir denetim dizmesini yeniden adlandırdı",
+        "checklist_move": "{{&member}} \"{{&card}}\"da bir denetim dizmesini başka konuma taşıdı",
+        "checkitem_rename": "{{&member}} \"{{&card}}\" kartında bir denetim dizme nesnesini yeniden adlandırdı",
+        "checkitem_move": "{{&member}} \"{{&card}}\"da bir denetim dizme nesnesini bir başka konuma taşıdı",
+        "checkitem_tocard": "{{&member}} denetim dizme nesnesi \"{{&card}}\"ı bir karta dönüştürdü",
+        "checkitem_delete": "{{&member}} \"{{&card}}\" kartından bir denetim dizme nesenesi kaldırdı",
+        "checkitem_create": "{{&member}} \"{{&card}}\"da denetim dizme nesnesi oluşturdu",
+        "checkitem_state_off": "{{&member}} \"{{&card}}\" kartında \"{{&checklistItem}}\" nesnesini tamamlanmamış olarak imledi",
+        "checkitem_state_on": "{{&member}} \"{{&card}}\" kartında \"{{&checklistItem}}\" nesnesini tamamladı",
+        "due_remove": "{{&member}} \"{{&card}}\" kartından bitiş tarihini kaldırdı",
+        "due_add": "{{&member}} \"{{&card}}\" kartında bir bitiş tarihi ekledi",
+        "due_change": "{{&member}} \"{{&card}}\" kartında bitiş tarihi değiştirdi",
+        "due_off": "{{&member}} \"{{&card}}\" kartında tamamlanmamış olarak bitiş tarihi imledi",
+        "due_on": "{{&member}} \"{{&card}}\" kartta bitiş tarihini tamamladı",
+        "move_card_in_list": "{{&member}} \"{{&card}}\"ı dizmede bir başka konuma taşıdı",
+        "rem_card_desc": "{{&member}} \"{{&card}}\" kartı için açıklamayı kaldırdı",
+        "edit_card_desc": "{{&member}} \"{{&card}}\" kartı için açıklamayı değiştirdi",
+        "add_card_desc": "{{&member}} \"{{&card}}\"ına bir açıklama ekledi",
+        "delete_comment": "{{&member}}'ın yorumu \"{{&card}}\"ta silindi",
+        "update_comment": "{{&member}}, \"{{&card}}\"taki yorumunu güncelledi",
+        "commented": "{{&member}}, \"{{&card}}\"ta yorumladı"
+    },
+    "webhook_filters": {
+        "UPDATE_CARD_CLOSED": "Kart arşivi güncellemesi (arşivli/arşivsiz)",
+        "CREATE_CHECK_ITEM": "Denetim dizmesi nesne yaratımları",
+        "VOTE_ON_CARD": "Kart oyları",
+        "UPDATE_COMMENT": "Yorum güncellemeleri",
+        "DELETE_COMMENT": "Yorum silimleri",
+        "UPDATE_CUSTOM_FIELD_DISPLAY": "Özel alan görüntüleme güncellemeleri",
+        "UPDATE_CUSTOM_FIELD_NAME": "Özel alan adı güncellemeleri",
+        "DELETE_CUSTOM_FIELD": "Özel alan silimleri",
+        "CREATE_CUSTOM_FIELD": "Özel alan yaratımları",
+        "EMAIL_CARD": "E-posta eliyle kart oluşturumları",
+        "DELETE_LABEL": "Etiket silimleri",
+        "DELETE_CHECK_ITEM": "Denetim dizmesi nesnesi silimleri",
+        "DELETE_CARD": "Kart silimleri",
+        "DELETE_ATTACHMENT_FROM_CARD": "Ek dosyalar karttan kaldırılır",
+        "CREATE_LIST": "Dizme oluşturumları",
+        "CREATE_CARD": "Kart oluşturumları",
+        "CREATE_LABEL": "Etiket oluşturumları",
+        "COPY_CHECKLIST": "Denetim dizmesi yinelemeleri",
+        "COPY_CARD": "Kart yinelemeleri",
+        "CONVERT_TO_CARD_FROM_CHECK_ITEM": "Denetim dizmesi nesneleri kartlara dönüştürüldü",
+        "COMMENT_CARD": "Kartlarda yeni yorumlar",
+        "ADD_MEMBER_TO_CARD": "Kartlara üye eklemeleri",
+        "ADD_MEMBER_TO_BOARD": "Yazısalığa üye eklemeleri",
+        "ADD_LABEL_TO_CARD": "Kartlara etiket eklemeleri",
+        "ADD_CHECKLIST_TO_CARD": "Kartlara denetim dizmesi eklemeleri",
+        "ADD_ATTACHMENT_TO_CARD": "Kartlara ek dosya eklemeleri",
+        "UPDATE_LIST_CLOSED": "Dizme arşivi güncellemeleri (arşivli/arşivlisiz)",
+        "UPDATE_LIST_POS": "Dizme konumu güncellemeleri",
+        "UPDATE_LIST_NAME": "Dizme adı güncellemeleri",
+        "UPDATE_LABEL_COLOR": "Etiket rengi (tüsü) güncellemeleri",
+        "UPDATE_LABEL_NAME": "Etiket adı güncellemeleri",
+        "UPDATE_CHECKLIST_POS": "Denetim dizmesi konum güncellemeleri",
+        "UPDATE_CHECKLIST_NAME": "Denetim dizmesi adı güncellemeleri",
+        "UPDATE_CHECK_ITEM_POS": "Denetim dizmesi nesne konumu güncellemeleri",
+        "UPDATE_CHECK_ITEM_NAME": "Denetim dizmesi nesne adı güncellemeleri",
+        "UPDATE_CARD_POS": "Kart konumu güncellemeleri (bir dizme içinde)",
+        "UPDATE_CARD_LIST": "Kart dizme güncellemeleri",
+        "UPDATE_CARD_DESC": "Kart açıklaması güncellemeleri",
+        "UPDATE_CARD_NAME": "Kart adı güncellemeleri",
+        "UPDATE_BOARD_CLOSED": "Yazısalık arşiv güncellemeleri (kapalı/açık)",
+        "UPDATE_BOARD_PREFS": "Yazısalık yeğlem güncellemeleri",
+        "UPDATE_BOARD_DESC": "Yazısalık açıklama güncellemeleri",
+        "UPDATE_BOARD_NAME": "Yazısalık adı güncellemeleri"
+    },
+    "categories": {
+        "misc": "Türlü türlü",
+        "hidden": "Gizli",
+        "edit": "Düzenleme",
+        "view": "Görüntüleme",
+        "webhook": "Ağkancaları",
+        "user": "Kullanıcı Yönetimi",
+        "dev": "Geliştirici",
+        "general": "Genel"
+    },
+    "format": {
+        "second": {
+            "many": "{{seconds}} saniye",
+            "one": "{{seconds}} saniye"
+        }
+    },
+    "command_permissions": {
+        "webhooks": "Bu komutu kullanmaya \"Ağkancaları Yönetimi\" izni gerek duyuyorum! **Bu izin bir kanaldansa rol üstünde etkinleştirilmiş olmalı!**",
+        "guild": "Bu komut konatta çalışır olmalı!",
+        "userData": "Ayarlarınız veritabanında değil!",
+        "discordAuth": "Trello üyeliğin ile Discordu yetkili kılmadın! \n`{{&cleanPrefix}}auth` komutu ile yetkile!",
+        "auth": "Trello üyeliğin ile Discordu yetkili kılmadın! \n`{{&cleanPrefix}}auth` komutu ile yetkile!",
+        "selectedBoard": "Orada yazısalık seçili değil!\n`{{&cleanPrefix}}switch` komutu ile bir yazısalık seç!",
+        "elevated": "Yalnızca botun yüce kullanıcıları bu komutu kullanabilir!",
+        "trelloRole": "Bu komut sunucu iyesi olmanı ya da `Trello` adlı role iye olmanı gerektirir!",
+        "emoji": "Bu komutu kullanmak için `Dışçıl Emojiler Kullan` iznine gerek duyuyorum!",
+        "embed": "Bu komutu kullanmak için `Gömülü Örkler` iznine gerek duyuyorum!",
+        "attach": "Bu komutu kullanmak için `Eklenmiş Dosyalar` iznine gerek duyuyorum!"
+    },
+    "use_this": "Bu komut yerine kullan:",
+    "deprecated": "Bu komut artık var değil!",
+    "bad_args": "Savlar yeterli değil!",
+    "cooldown_msg": "Bu komutun yatışması gerekir! *({{seconds}})*",
+    "custom_field_types": {
+        "date": "Tarih",
+        "number": "Sayıt",
+        "text": "Metin",
+        "checkbox": "Denetim Kutusu"
+    },
+    "webhook_filter_group": {
+        "customFieldUpdate": "Özel Alan Güncellemeleri",
+        "customField": "Özel Alanlar",
+        "listUpdate": "Dizme Güncellemesi",
+        "list": "Dizmeler",
+        "checkItemUpdate": "Denetim Dizme Güncellemeleri",
+        "checkItem": "Denetim Dizme Nesneleri",
+        "checklistUpdate": "Denetim Dizmeleri Güncellemeleri",
+        "checklist": "Denetim Dizmeleri",
+        "comment": "Yorumlar",
+        "cardUpdate": "Kart Güncellemeleri",
+        "card": "Kartlar",
+        "labelUpdate": "Etiket Güncelleştirme",
+        "label": "Etiketler",
+        "boardUpdate": "Yazısalık Güncellemeleri",
+        "board": "Yazısalık"
+    },
+    "webhooks_extended": {
+        "delete_card": "{{&member}} \"{{&list}}\" dizmesinden {{&cardID}} kartını sildi"
+    },
+    "and_more": "Ve {{count}} tane daha…",
+    "user_mgmt": {
+        "cleardata": "Kullanıcı verin temizlendi.",
+        "cleardata_confirm": "Verilerinizi kaldırmak istediğinize vargın mısın? Aşağıdakiler gerçekleşecek:\n- Ön ekleriniz ve yerel ayarlarınız kaldırılacaktır.\n- Yetkilendirme kimlik bilgileriniz kaldırılacaktır.\n- Trello jetonunuz geçersiz kılınacaktır.\n- Oluşturduğunuz ağkancaları artık çalışmayacak ve onarılması gerekecek.",
+        "clearauth": "Yetkiniz temizlendi.",
+        "clearauth_confirm": "Yetkinizi silmek istediğinize vargın mısınız? Aşağıdakiler gerçekleşecek:\n- Trello jetonunuz geçersiz kılınacaktır.\n- Oluşturduğunuz ağkancaları artık çalışmayacak ve onarılması gerekecek.",
+        "star_error": "Yazısalığın yıldızı bulunamadı! Sonra yine dene!",
+        "unstar_board": "\"{{&name}}\" yazısalığı için yıldız kaldırıldı. (`{{id}}`)",
+        "star_board": "\"{{&name}}\" yazısalığı için yıldız oluşturuldu. (`{{id}}`)",
+        "unsub_board": "Artık \"{{&name}}\" yazısalığını izlemeyeceksiniz. (`{{id}}`)",
+        "sub_board": "Şimdi \"{{&name}}\" yazısalığını izliyoruz. (`{{id}}`)",
+        "unsub_list": "Artık \"{{&name}}\" dizmesini izlemiyorsunuz. (`{{id}}`)",
+        "sub_list": "Şimdi \"{{& name}}\" dizmesi izleniyor. (`{{id}}`)",
+        "unsub_card": "Artık \"{{& name}}\" kartını izlemeyeceksiniz. (`{{id}}`)",
+        "sub_card": "Şimdi \"{{&name}}\" kartı izleniyor. (`{{id}}`)"
+    },
+    "prefix": {
+        "none": "Kaldırılacak ön ekiniz yok!",
+        "already": "Hali hazırda o ön ek var!",
+        "mention": "Bir ön ekte anamazsınız!",
+        "limit": "Çok fazla ön ekiniz var! Daha fazlasını ekleyebilmek için en az birini kaldırın!",
+        "char_limit": "Ön ekler 32 damgadan aşa olamaz!",
+        "choose": "Silmek istediğiniz ön ekin sayıtını yazın.",
+        "removed": "Bir ön ek olarak `{{&prefix}}` kaldırıldı.",
+        "added": "Bir ön ek olarak `{{&prefix}}` eklendi.",
+        "set_server": "Sunucunun ön ekini `{{&prefix}}` olarak ayarla.",
+        "footer": "🔒 simgeli ön ekler kaldırılamaz.",
+        "no_arg": "Eklemek istediğiniz ön eki sağlayın!",
+        "no_arg_server": "Sunucuya ayarlamak istediğiniz ön eki sağlayın!",
+        "can_add": {
+            "many": "{{Count}} ön ek daha ekleyebilirsin.",
+            "one": "{{Count}} ön ek daha ekleyebilirsin.",
+            "zero": "Daha fazla ön ek ekleyemezsiniz."
+        },
+        "server": "Sunucu ön eki"
+    },
+    "labels": {
+        "created": "\"{{&name}}\" etiketi oluştu. (`{{id}}`)",
+        "input_new": "Eklemek istediğin etiketin adını yazın.",
+        "removed": "\"{{&name}}\" etiketi silindi. (`{{id}}`)",
+        "remove_confirm": "\"{{&name}}\" silmek istediğine vargın mısın? (`{{id}}`)\n**Bu, yalnızca bir karttan değil, bütün etiketi kaldırır.**",
+        "choose_color": "Etiketi ayarlamak istediğiniz rengin/tüssün sayıtı yazın.",
+        "set_color": "\"{{&label}}\" etiketin tüssünü/rengini {{&color}} olarak ayarla.",
+        "input_name": "Etikete yeniden adlandırmak istediğiniz adı yazın."
+    },
+    "cards": {
+        "due_off": "\"{{&name}}\" kartı için tamamlanmamış olarak bitiş tarihi imlendi.",
+        "due_on": "\"{{&name}}\" kartı için tamamlanmış olarak bitiş tarihi imlendi.",
+        "removed_due": "\"{{&name}}\" kart için bitiş tarihini kaldır.",
+        "removed": "\"{{&name}}\" kart silindi. (`{{id}}`)",
+        "remove_confirm": "\"{{&name}}\" silmeyi istediğine vargın mısın? (`{{id}}`)",
+        "created": "\"{{&name}}\" (`{{id}}`) kart oluştu",
+        "input_new": "Eklemeyi istediğiniz kartın adını yazın.",
+        "removed_desc": "\"{{&name}}\" için kart açıklamasını kaldır.",
+        "input_desc": "Kart için yeni açıklama yazın.",
+        "set_desc": "\"{{&name}}\" için kart açıklaması ayarla.",
+        "unarchived": "Arşivden kaldırılmış kart \"{{&name}}\".",
+        "archived": "Arşivli kart \"{{&name}}\".",
+        "input_name": "Karta yeniden adlandırmak istediğiniz adı yazın.",
+        "set_name": "Kart adı \"{{&old}}\" iken \"{{&new}}\" olarak adlandırıldı.",
+        "menu": {
+            "attachments": "Ek dosyaları düzenle",
+            "member": "Üye atamasını yönet",
+            "label": "Etikeleri yönet",
+            "move": "Birbaşka dizmeye kartı taşı",
+            "attach": "Ek dosya oluştur",
+            "due_off": "Tamamlanmamış gibi bitiş tarihini imle",
+            "due_on": "Tamamlanmış gibi bitiş tarihini imle",
+            "remove_due": "Bitiş tarihini kaldır",
+            "due": "Bitiş tarihini ayarla",
+            "sub_off": "Bu kartı izlemeyi durdur",
+            "sub_on": "Bu kartı izle",
+            "remove_desc": "Kart açıklamasını kaldır",
+            "desc": "Kart açıklamasını düzenle",
+            "archive_off": "Arşivden kartı kaldır",
+            "name": "Kart adını düzenle"
+        },
+        "wywtd": "Bu kartla yapmak istediğin neyse seç.",
+        "choose": "Kullanmak istediğin kartın sayıtını yazın.",
+        "error": "Kartın verisini elde edemiyorum! Bu istekten önce birisi silmedikçe Trello'nun ucunda bu bir hata olabilir!",
+        "arch_header": "Bir kart açmak için `{{&cleanPrefix}}editcard <listID|listName> unarchive` kullanın.",
+        "arch_none": "Bu yazısalıkta arşivli kartlar bulunmuyor.",
+        "none": "Bu yazısalıkta kart bulunmuyor."
+    },
+    "attachments": {
+        "menu": {
+            "delete": "Bu ek dosyayı sil",
+            "cover": "Kart kapağı gibi bu ek dosyayı ayarla",
+            "name": "Ek dosya adını düzenle"
+        }
     }
 }
