@@ -534,7 +534,8 @@
             "description": "Cria um webhook no seu servidor."
         },
         "webhook": {
-            "usage": "<IdDoWebhook>"
+            "usage": "<IdDoWebhook>",
+            "description": "Obtém informações sobre um webhook específico."
         },
         "webhooks": {
             "usage": "[página]",
@@ -566,7 +567,11 @@
             "description": "Lista todas as etiquetas no quadro atual."
         },
         "addlabel": {
-            "usage": "[nome]"
+            "usage": "[nome]",
+            "description": "Cria uma etiqueta no quadro atual."
+        },
+        "attachment": {
+            "description": "Mostra os anexos que estão no cartão."
         }
     },
     "_": {
@@ -868,7 +873,8 @@
             }
         },
         "add_header": "Como você quer configurar seu webhook?",
-        "twh_missing": "O usuário que configurou o webhook não foi encontrado, isso pode parar o envio do webhook!"
+        "twh_missing": "O usuário que configurou o webhook não foi encontrado, isso pode parar o envio do webhook!",
+        "style_set": "Estilo do webhook definido para **{{&name}}**."
     },
     "deprecated": "Esse comando não está mais disponível!",
     "vote": {
@@ -908,6 +914,9 @@
         "menu": {
             "delete": "Deletar esse anexo",
             "name": "Editar o nome do anexo"
-        }
+        },
+        "set_name": "Anexo renomeado de \"{{&old}}\" para \"{{&new}}\".",
+        "choose": "Digite o número do anexo que você deseja usar.",
+        "none": "Esse cartão não tem anexos."
     }
 }
