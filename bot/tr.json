@@ -74,7 +74,7 @@
     },
     "ping": {
         "rest": "REST: {{ms}} ms",
-        "ws": "WS: {{ms]] ms",
+        "ws": "WS: {{ms}} ms",
         "message": "İlinç!"
     },
     "vote": {
