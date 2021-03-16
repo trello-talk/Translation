@@ -43,11 +43,11 @@
     },
     "help": {
         "not_found": "`{{&command}}` buyruğu bulanamadı.",
-        "footer": "Daha çok yardım için `{{&cleanPrefix}}yardım [command]`.",
+        "footer": "Daha çok bilgi için `{{&cleanPrefix}}yardım [komut]`.",
         "header": "{{&username}} (Snazzah elinden değiştirilmiş [Faux](https://github.com/Snazzah/Faux?ref=tacobot) çalışmakta)\nSunucu Desteği: {{&link}}\n\nNereden başlayacağını bilmiyor musun? [Tıkla buraya!](https://tacobot.app/guide?ref=bot)\nTaco'yu beğendin mi? Bizi şöyle destekleyin [Patreon](https://patreon.com/trello_talk) ya da oylama eliyle. (T!vote)"
     },
     "info": {
-        "title": "{{&username}} hakkında bilgi",
+        "title": "{{&username}} hakkında bilgileme",
         "faux": "Bu bot, şunun değiştirilmiş bir sürümünü kullanıyor [Faux](https://github.com/Snazzah/Faux?ref=tacobot)."
     },
     "_": {
@@ -75,7 +75,7 @@
     "ping": {
         "rest": "REST: {{ms}} ms",
         "ws": "WS: {{ms]] ms",
-        "message": "Ping:"
+        "message": "İlinç!"
     },
     "vote": {
         "rate": "oran",
