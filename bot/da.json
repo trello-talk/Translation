@@ -464,7 +464,8 @@
             "description": "Sletter et kort."
         },
         "addcard": {
-            "description": "Opretter et kort."
+            "description": "Opretter et kort.",
+            "usage": "[listeNavn|listeID] [navn]"
         },
         "webhooks": {
             "usage": "[side]"
@@ -514,6 +515,9 @@
         },
         "attachment": {
             "description": "Viser en vedhæftning som er på et kort."
+        },
+        "editlabel": {
+            "note": "`name [newName]` - Omdøb etiketten\n`color [newColor]` - Ændrer på etikettens farve"
         }
     },
     "error": "Der opstod en fejl under behandlingen af den kommando!",
