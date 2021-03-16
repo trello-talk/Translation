@@ -174,7 +174,11 @@
         },
         "blacklist": "Kara dizme",
         "whitelist": "Ak dizme",
-        "try_repair": "`{{&cleanPrefix}}ağkancasıdüzenle {{&id}} onar` ile bu sorunları onarabilirsin"
+        "try_repair": "`{{&cleanPrefix}}ağkancasıdüzenle {{&id}} onar` ile bu sorunları onarabilirsin",
+        "created": "\"{{&name}}\" için ağkancası oluşturuldu.",
+        "couldnt_create": "Ağkancasını oluşturamadım! Bu bir olasılık süreçteki ani izin değişikliğinden kaynaklanıyor!",
+        "choose_channel": "Ağkancasının göndereceği kanalı seçin.",
+        "no_channels": "Ağkancaları yönetmek için izin veren hiçbir kanal bulunamadı."
     },
     "trello": {
         "perm_levels": {
@@ -258,7 +262,10 @@
         "locale": "Yöre (Trello'da)",
         "marketing": "Pazarlama E-postaları (opt-in)",
         "summ": "Özetleri Gönder",
-        "colorblind": "Renk Körlüğü Kipi"
+        "colorblind": "Renk Körlüğü Kipi",
+        "old_due": "Eski Bitiş Güngeni",
+        "new_due": "Yeni Bitiş Güngeni",
+        "due": "Bitiş"
     },
     "words": {
         "cooldown": "Yatışma",
@@ -448,7 +455,8 @@
         },
         "editlabel": {
             "note": "`ad [yeniAd]` - Etiketi yeniden adla\n`tüs [yeniTüs]` - Etiketin tüssünü değiştirir",
-            "usage": "[etiketAdı|etiketKimliği] [altkomut] …"
+            "usage": "[etiketAdı|etiketKimliği] [altkomut] …",
+            "description": "Bir etiketin özelliklerini düzenleyin. Alt komutlar ve kullanımlar için nota/bilgiciğe bakın."
         },
         "label": {
             "usage": "[etiketAdı|etiketKimliği]",
@@ -537,7 +545,8 @@
             "description": "Kodu değerletir."
         },
         "asynceval": {
-            "usage": "<code>"
+            "usage": "<code>",
+            "description": "Oğurdaşsızca kodu değerlendir."
         },
         "serverinvite": {
             "description": "Destek sunucusu için çağrı edin."
@@ -553,6 +562,94 @@
         },
         "auth": {
             "description": "Discord üyeliğini Trello üyeliğine bağlamak için yetki örkünü edinin."
+        },
+        "toggleuser": {
+            "usage": "<kullanıcıKimliği>",
+            "description": "Kullanıcı karadizmesini değiştirir"
+        },
+        "toggleserver": {
+            "usage": "<sunucuKimliği>",
+            "description": "Sunucu karadizmesini değiştirir."
+        },
+        "vote": {
+            "description": "Taco için oy verilecek örkleri gösterir."
+        },
+        "setmaxwebhooks": {
+            "usage": "<sunucuKimliği> [kısıt]",
+            "description": "Bir sunucu için ağkancalarının kısıtını ayarlar."
+        },
+        "cleardata": {
+            "description": "Taco'dan kullanıcı verinizi kaldırır."
+        },
+        "clearauth": {
+            "description": "Trello yetkinizi temizler. Sakın gerçekten gerekmedikçe bunu çalıştırmayın."
+        },
+        "remwebhook": {
+            "usage": "<ağkancasıKimliği>",
+            "description": "Sunucundan bir ağkancası kaldırır."
+        },
+        "editwebhook": {
+            "note": "`activate`, `deactivate` - Ağkancasını etkinleştir veya etkinsizleştir.\n`filters` - Bu ağkancaları için süzücüleri düzenle. (Eski biçimiyle \"Ağkancası bitleri\")\n`locale [locale]` - Ağkancası için yöreyi ayarlar\n`repair` - Ağkazancası ile kimi sorunları onarır\n`delete` - Ağkancasını siler.\n`policy` - Ağkancasının süzme yönergesini değiştirir. (akdizme/karadizme)\n`style` - Ağkacasının kılığını değiştir\n`lists` - Süzülü dizmeleri düzenle\n`cards` - Süzülü kartları düzenle",
+            "usage": "<ağkancasıKimliği> [altkomut]",
+            "description": "Sunucundaki bir ağkancasını düzenler. Alt komutlar ve kullanımlar için nota/bilgiciğe bakın."
+        },
+        "addwebhook": {
+            "usage": "[yazısalıkKimliği|yazısalıkAdı]",
+            "description": "Sunucunda bir ağkancası oluşturur."
+        },
+        "webhook": {
+            "usage": "<ağkancasıKimliği>",
+            "description": "Belirli bir ağkancası ile ilgili bilgilenme alın."
+        },
+        "webhooks": {
+            "usage": "[bet]",
+            "description": "Sunucunda ağkancalarını dizer."
+        },
+        "comment": {
+            "usage": "[kartAdı|kartKimliği] [yorum]",
+            "description": "Mevcut yazısalıktaki bir kartta olan yorum."
+        },
+        "addlabel": {
+            "usage": "[ad]",
+            "description": "Mevcut yazısalıkta bir etiket oluşturur."
+        },
+        "addlist": {
+            "usage": "[ad]",
+            "description": "Mevcut yazısalıkta bir dizme oluşturur."
+        },
+        "deletecard": {
+            "usage": "[kartAdı|kartKimliği]",
+            "description": "Bir kart siler."
+        },
+        "addcard": {
+            "usage": "[dizmeAdı|dizmeKimliği] [ad]",
+            "description": "Bir kart oluşturur."
+        },
+        "attachment": {
+            "usage": "[kartAdı|kartKimliği] [ekdosyaAdı|ekdosyaKimliği]",
+            "description": "Bir karttaki ek dosyaları gösterir."
+        },
+        "editboard": {
+            "note": "`name [newName]` - Yazısalığı yeniden adlandır (yazısalık yöneteni)\n`archive`, `unarchive` - Yazısalık arşivini değiştir (yazısalık yöneteni)\n`desc [newDescription]` - Yazısalığın açıklamasını ayarla\n`removedesc` - Yazısalığın açıklamasını kaldır\n`commentperms` - Yorumlama izinlerini değiştir (yazısalık yöneteni)\n`voteperms` - Oylama izinlerini değiştir (yazısalık yöneteni)\n`inviteperms` - Çağrım izinlerini değiştir (yazısalık yöneteni)",
+            "usage": "[altkomut] …",
+            "description": "Mevcut yazısalığın özelliklerini düzenleyin. Alt komutlar ve kullanımlar için nota/bilgiciğe bakın."
+        },
+        "editcard": {
+            "note": "`name [newName]` - Kartı yeniden adlandır\n`archive`, `unarchive` - Kart arşivini değiştir\n`desc [newDescription]` - Kartın açıklamasını ayarla\n`removedesc` - Kartın açıklamasını kaldır\n`label` - Kart etiketlerini yönet\n`members` - Kart üyelerini yönet\n`move`, `mv` - Kartı bir başka dizmeye taşı\n`due` - Kart bitiş güngenini ayarla\n`duedone` - Kart bitiş güngeninin tamamlanmasını değiştir\n`removedue` - Kart bitiş güngenini kaldır\n`attach` - Kartta bir ek dosya oluşturur\n`attachments`, `atch` - Ek dosyaları yönet",
+            "usage": "[kartAdı|kartKimliği] [altkomut] …",
+            "description": "Bir kartın özelliklerini düzenleyin. Alt komutlar ve kullanımlar için nota/bilgiciğe bakın."
+        },
+        "editlist": {
+            "note": "`name [newName]` - Dizmeyi yeniden adlandır\n`archive`, `unarchive` - Dizme arşivini değiştir",
+            "usage": "[dizmeAdı|dizmeKimliği] [altkomut] …",
+            "description": "Bir dizmenin özelliklerini düzenleyin. Alt komutlar ve kullanımlar için nota/bilgiciğe bakın."
+        },
+        "star": {
+            "usage": "[yazısalıkAdı|yazısalıkKimliği]"
+        },
+        "switch": {
+            "usage": "[yazısalıkKimliği|yazısalıkAdı]",
+            "description": "Diğer komutlar için kullanılacak bir yazısalık seçilir. Hangi yazısalıkları seçebileceğinizi görmek için `{{&cleanPrefix}}yazısalık` komutunu kullanın."
         }
     },
     "webhooks": {
@@ -681,7 +778,20 @@
         "UPDATE_BOARD_CLOSED": "Yazısalık arşiv güncellemeleri (kapalı/açık)",
         "UPDATE_BOARD_PREFS": "Yazısalık yeğlem güncellemeleri",
         "UPDATE_BOARD_DESC": "Yazısalık açıklama güncellemeleri",
-        "UPDATE_BOARD_NAME": "Yazısalık adı güncellemeleri"
+        "UPDATE_BOARD_NAME": "Yazısalık adı güncellemeleri",
+        "UPDATE_CUSTOM_FIELD_ITEM": "Özel alan kartı güncellemeleri",
+        "UPDATE_CARD_DUE": "Kart bitiş güngeni güncellemeleri",
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Denetim dizmesi nesne durumu güncellemeleri (denetlendi/denetlenmedi)",
+        "REMOVE_MEMBER_FROM_CARD": "Üye kartlardan kaldırıldı",
+        "REMOVE_MEMBER_FROM_BOARD": "Üye yazısalıktan kaldırıldı",
+        "REMOVE_LABEL_FROM_CARD": "Etiket kartlardan kaldırıldı",
+        "REMOVE_CHECKLIST_FROM_CARD": "Denetim dizmesi kartlardan kaldırılır",
+        "MOVE_LIST_TO_BOARD": "Dizme yazısalığın içine aktarılır",
+        "MOVE_LIST_FROM_BOARD": "Dizme yazısalığın içine aktarılır",
+        "MOVE_CARD_TO_BOARD": "Kart yazısalığın içine aktarılır",
+        "MOVE_CARD_FROM_BOARD": "Kart yazısalığın dışına aktarılır",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Yazısalık yönetenleri sıradan üyeliğe orunlandı",
+        "MAKE_ADMIN_OF_BOARD": "Yazısalık üyeleri yöneten olarak orunlandı"
     },
     "categories": {
         "misc": "Türlü türlü",
@@ -785,7 +895,16 @@
         "remove_confirm": "\"{{&name}}\" silmek istediğine vargın mısın? (`{{id}}`)\n**Bu, yalnızca bir karttan değil, bütün etiketi kaldırır.**",
         "choose_color": "Etiketi ayarlamak istediğiniz rengin/tüssün sayıtı yazın.",
         "set_color": "\"{{&label}}\" etiketin tüssünü/rengini {{&color}} olarak ayarla.",
-        "input_name": "Etikete yeniden adlandırmak istediğiniz adı yazın."
+        "input_name": "Etikete yeniden adlandırmak istediğiniz adı yazın.",
+        "set_name": "Etiket \"{{&old}}\" iken \"{{&new}}\" olarak yeniden adlandırıldı.",
+        "menu": {
+            "color": "Etiket tüssünü/rengini ayarla",
+            "name": "Etiketi yeniden adlandır"
+        },
+        "wywtd": "Bu etiket ile yapmak istediğinizi seçin.",
+        "choose": "Kullanmak istediğiniz etiketin adını yazın.",
+        "header": "Bir etiketi görüntülemek için `{{&cleanPrefix}}label <labelID|labelName>` kullanın.",
+        "none": "Bu dizmenin etiketleri yok."
     },
     "cards": {
         "due_off": "\"{{&name}}\" kartı için tamamlanmamış olarak bitiş tarihi imlendi.",
@@ -817,20 +936,121 @@
             "remove_desc": "Kart açıklamasını kaldır",
             "desc": "Kart açıklamasını düzenle",
             "archive_off": "Arşivden kartı kaldır",
-            "name": "Kart adını düzenle"
+            "name": "Kart adını düzenle",
+            "archive_on": "Kartı arşivle"
         },
         "wywtd": "Bu kartla yapmak istediğin neyse seç.",
         "choose": "Kullanmak istediğin kartın sayıtını yazın.",
         "error": "Kartın verisini elde edemiyorum! Bu istekten önce birisi silmedikçe Trello'nun ucunda bu bir hata olabilir!",
         "arch_header": "Bir kart açmak için `{{&cleanPrefix}}editcard <listID|listName> unarchive` kullanın.",
         "arch_none": "Bu yazısalıkta arşivli kartlar bulunmuyor.",
-        "none": "Bu yazısalıkta kart bulunmuyor."
+        "none": "Bu yazısalıkta kart bulunmuyor.",
+        "members_updated": "\"{{&name}}\"da üye ataması güncellendi.",
+        "labels_updated": "\"{{&name}}\"da etiketler güncellendi.",
+        "add_attach": "\"{{&name}}\"da bir ek dosya oluşturuldu.",
+        "bad_attach": "Geçersiz ek dosya URLsi!",
+        "input_attach": "Karta eklemek istediğiniz ek dosyanın URL'sini yapıştırın. İletinize bir ek dosya da ekleyebilirsiniz.",
+        "set_due": "{{&date}} olarak bitiş güngeni ayarla.",
+        "input_due": "Karta ayarlamak amacıyla bitiş güngenini yazın.",
+        "commented": "\"{{&name}}\"da bir yorum oluşturuldu.",
+        "move": "\"{{&card}}\" \"{{&list}}\" dizmesine taşındı.",
+        "same_list_move": "Bu kart hali hazırda bu dizmede!",
+        "input_comment": "Karta yorum yapmak istediğiniz iletiyi yazın."
     },
     "attachments": {
         "menu": {
             "delete": "Bu ek dosyayı sil",
             "cover": "Kart kapağı gibi bu ek dosyayı ayarla",
             "name": "Ek dosya adını düzenle"
-        }
+        },
+        "set_cover": "\"{{&attachment}}\" ek dosyasını \"{{&card}}\" için bir kart kapağı gibi ayarlayın.",
+        "removed": "\"{{&name}}\" ek dosya silindi.",
+        "remove_confirm": "\"{{&name}}\"'yi silmek istediğine vargın mısın?",
+        "input_name": "Ek dosyaya yeniden adlandırmak istediğiniz adı yazın.",
+        "set_name": "Ek dosya \"{{&old}}\" iken \"{{&new}}\" olarak yeniden adlandırıldı.",
+        "is_cover": "Kart Kapağı gibi kullanıldı",
+        "wywtd": "Bu ek dosya ile ne yapmak istediğinizi seçiniz.",
+        "choose": "Kullanmak istediğiniz ek dosyanın sayıtını yazınız.",
+        "none": "Bu kartın ek dosyası yok."
+    },
+    "lists": {
+        "created": "\"{{&name}}\" dizmesi oluşturuldu. (`{{id}}`)",
+        "input_new": "eklemek istediğiniz dizmenin adını yazınız.",
+        "unarchived": "Arşivden \"{{&name}}\" dizmesi kaldırıldı.",
+        "archived": "\"{{&name}}\" arşivli dizmesi.",
+        "input_name": "Dizmeye yeniden adlandırmayı istediğin adı yazın.",
+        "set_name": "Dizme \"{{&old}}\" iken \"{{&new}}\" olarak yeniden adlandırıldı.",
+        "menu": {
+            "sub_off": "Bu dizmeyi izlemeyi durdur",
+            "sub_on": "Bu dizmeyi izle",
+            "archive_off": "Arşivden dizme kaldır",
+            "archive_on": "Dizmeyi arşivle",
+            "name": "Dizme adını düzenle"
+        },
+        "wywtd": "Bu dizme ile yapmak istediğiniz ne ise seçin.",
+        "choose": "Kullanmak istediğiniz dizmenin sayıtını yazın.",
+        "list_header": "Bir kartta bilgileme almak için `{{&cleanPrefix}}card <cardID|cardName>` kullanın.",
+        "arch_header": "Bir dizmeyi açmak için `{{&cleanPrefix}}editlist <listID|listName> unarchive` kullanın.",
+        "header": "Bir dizmeyi görüntülemek için `{{&cleanPrefix}}list <listID|listName>` kullanın.",
+        "arch_none": "Bu yazısalıkta arşivli dizmeler yok.",
+        "list_none": "Bu dizmede kartlar yok.",
+        "none": "Bu kartta dizmeler yok."
+    },
+    "trello_response": {
+        "ratelimit": "Aşırı istek gönderiliyor! Daha sonra yine deneyin!",
+        "unauthorized": "Kullanılan son jeton geçersiz kılındı veya iptal edildi! `{{&CleanPrefix}} auth` komutuyla yeniden yetkilendirin!",
+        "aborted": "Trello'nun yanıt göndermesi uzan sürdü! Sonra yine deneyin!",
+        "internal": "Trello'nun ucunda dahili bir sunucu hatası oluştu! Sonra yine deneyin!"
+    },
+    "error": "Bu komutu işlerken bir hata oluştu!",
+    "boards": {
+        "set_vote_perms": "{{&value}} olarak oylama izinlerini ayarla.",
+        "set_invite_perms": "{{&value}} olarak çağrım izinlerini ayarla.",
+        "set_comment_perms": "{{&value}} olarak yorumlama izinlerini ayarla.",
+        "need_admin": "Kartta yönetedurmacılık izinlerine gerek duyuyorsun!",
+        "removed_desc": "\"{{&name}}\" için yazısalık açıklaması kaldırıldı.",
+        "input_desc": "Yazısalık için yeni açıklama yazın.",
+        "set_desc": "\"{{&name}}\" için yazısalık açıklamasını ayarla.",
+        "unarchived": "Arşivden kaldırılmış yazısalık \"{{&name}}\".",
+        "archived": "Arşivli yazısalık \"{{&name}}\".",
+        "input_name": "Yazısalığa yeniden adlandırmak istediğiniz adı yazın.",
+        "set_name": "Yazısalık \"{{&old}}\" iken \"{{&new}}\" olarak yeniden adlandırıldı.",
+        "menu": {
+            "invite": "Üye izinlerini eklemeyi/kaldırmayı ({{&value}}) değiştir",
+            "vote": "Oylama izinlerini ({{&value}}) değiştir",
+            "comment": "Yorum izinlerini ({{&value}}) değiştir",
+            "sub_off": "Bu yazısalığı izlemeyi durdur",
+            "sub_on": "Bu yazısalığı izle",
+            "remove_desc": "Yazısalık açıklamasını kaldır",
+            "desc": "Yazısalık açıklamasını düzenle",
+            "archive_off": "Yazısalığı aç",
+            "archive_on": "Yazısalığı kapa",
+            "name": "Yazısalık adını düzenle"
+        },
+        "wywtd": "Bu yazısalık ile ne yapmak istediğinizi seçin.",
+        "choose": "Kullanmak istediğiniz yazısalığın sayıtını yazınız.",
+        "gone": "Bu yazısalık artık yok! Başka birine `{{&cleanPrefix}}switch` ile geçin!",
+        "switch": "\"{{&name}}\" (`{{&id}}`) geçildi.",
+        "header": "Yazısalıklar arasında geçiş yapmak için `{{&cleanPrefix}}switch <boardID|boardName>` kullanın.",
+        "none": "Herhangi bir yazısalığa atanmadınız. <https://trello.com/> üzerinde birini oluşturun."
+    },
+    "prompt": {
+        "select_timeout": "İsteminiz zaman aşımlı oldu. Tüm değişiklikler yok olacak.",
+        "select_canceled": "Son isteminiz iptal oldu. Tüm değişiklikler yok olacak.",
+        "select_cancel": "Seçimi saklamak için \"save\" yazın, öbür tutumca \"cancel\" yazıp çıkın.",
+        "async_select": "Değerini değiştirmek için nesnenin sayıtını yazın. ** Bir değer değiştirildiğinde değişiklikler yapılacaktır. **",
+        "select": "Değerini değiştirmek için nesnenin sayıtını yazın.",
+        "cancel_confirm": "Onaylamak için `yes` yazın. Değme başka ileti onaylamayı iptal edecektir.",
+        "no_confirm": "Onaylama iptal edildi.",
+        "confirm": "Bunu yapmak istediğine vargın mısın?",
+        "input_canceled": "Son girdiniz iptal edildi.",
+        "cancel_input": "\"{{&cancelPrompt}}\" yazmak girdiyi iptal eder.",
+        "no_search": "Bu aramayla hiçbir sonuç çıkmadı.",
+        "canceled": "Son isteminiz iptâl edildi.",
+        "timeout": "Son isteminiz zaman aşımına uğradı.",
+        "cancel": "\"cancel\" yazmak bu istemi kapayacak.",
+        "input": "Girmek istediğiniz iletiyi yazın.",
+        "choose": "Kullanmak istediğiniz nesnenin sayıtını yazın.",
+        "list": "Dizme İstemi"
     }
 }
