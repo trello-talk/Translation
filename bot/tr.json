@@ -1,19 +1,19 @@
 {
     "reload": {
-        "done": "Buyruklar yeniden yüklendi.",
-        "reloading": "Buyruklar yeniden yükleniyor…"
+        "done": "Komutlar yeniden yüklendi.",
+        "reloading": "Komutlar yeniden yükleniyor…"
     },
     "reloadlocale": {
         "reloading": "Yöreler yeniden yükleniyor…",
         "done": "Yöreler yeniden yüklendi."
     },
     "reloadone": {
-        "invalid": "Geçersiz buyruk!",
-        "file": "Belirtilen buyrukta olan bir dosya artık var değil!",
+        "invalid": "Geçersiz komut!",
+        "file": "Belirtilen komutta olan bir dosya artık yok!",
         "done": "{{&commands}} yeniden yüklendi."
     },
     "reloadwebserver": {
-        "no": "Bu örnekte ağ sunucusu yok!",
+        "no": "Bu örnekte ağsunucusu yok!",
         "reloading": "Ağsunucusu yeniden başlatılıyor…",
         "done": "Ağsunucusu yeniden başlatıldı."
     },
@@ -28,13 +28,13 @@
             "fail": "Bot iyesi bir yetkilendirme örkü sağlamadı!"
         },
         "donate": {
-            "start": "Bağış yaparak gelişimi destekleyin!",
+            "start": "Bağış yaparak geliştirmeyi destekleyin!",
             "fail": "Bot iyesi herhangi bir bağış örkü sağlamadı!"
         },
         "github": "İşte kaynak koduma örk:",
         "invite": {
             "fail": "Bot iyesi herhangi bir katılım örkü sağlamadı!",
-            "start": "İşte beni diğer sunuculara çağırmak için örkler!"
+            "start": "İşte beni başka sunuculara çağırmak için örkler!"
         },
         "serverinvite": {
             "fail": "Bot sahibi destek sunucusu örkü sağlamadı!",
@@ -42,7 +42,7 @@
         }
     },
     "help": {
-        "not_found": "`{{&command}}` buyruğu bulanamadı.",
+        "not_found": "`{{&command}}` komutu bulanamadı.",
         "footer": "Daha çok bilgi için `{{&cleanPrefix}}yardım [komut]`.",
         "header": "{{&username}} (Snazzah elinden değiştirilmiş [Faux](https://github.com/Snazzah/Faux?ref=tacobot) çalışmakta)\nSunucu Desteği: {{&link}}\n\nNereden başlayacağını bilmiyor musun? [Tıkla buraya!](https://tacobot.app/guide?ref=bot)\nTaco'yu beğendin mi? Bizi şöyle destekleyin [Patreon](https://patreon.com/trello_talk) ya da oylama eliyle. (T!vote)"
     },
@@ -80,11 +80,11 @@
     "vote": {
         "rate": "oran",
         "review": "görüş",
-        "title": "Bu yerliklerde oy, görüş ya da oran verebilirsin {{&username}}:"
+        "title": "Bu yerliklerde {{&username}}'a oy, görüş ya da kur verebilirsin :"
     },
     "setmaxwebhooks": {
-        "invalid": "Geçersiz ID!",
-        "set": "Üstdüzey ağkancası kısıtını {{serverID}} den {{value}} yap."
+        "invalid": "Geçersiz Kimlik!",
+        "set": "Aşık ağkancası kısıtını {{serverID}} iken {{value}} yap."
     },
     "webhook_cmd": {
         "header": "Bir ağkancasını görüntülemek için `{{&cleanPrefix}}ağkancası <ağkancasıKimliği>` ve düzenlemek için `{{&cleanPrefix}}ağkancasıdüzenle <ağkancasıKimliği>` komutunu kullan.",
@@ -335,12 +335,12 @@
             "one": "Çıkartma"
         },
         "subcmd": {
-            "many": "Alt-yorumlar",
-            "one": "Alt-yorum"
+            "many": "Alt-komutlar",
+            "one": "Alt-komut"
         },
         "cmd": {
-            "many": "Yorumlar",
-            "one": "Buyruk"
+            "many": "Komutlar",
+            "one": "Komut"
         },
         "attachment": {
             "many": "Ek-Dosyalar",
@@ -517,7 +517,7 @@
             "description": "Bot ile ilgili bilgileme edin."
         },
         "help": {
-            "usage": "[command]",
+            "usage": "[komut]",
             "description": "Komutlarda bilgileme verir ve yardım iletisini gösterir."
         },
         "restart": {
@@ -661,7 +661,7 @@
         "unarchive_card": "{{&member}} \"{{&card}}\" kartını arşivden kaldırdı",
         "archive_card": "{{&member}}, \"{{&card}}\" kartını arşivledi",
         "rename_card": "{{&member}}, \"{{&oldName}}\" adlı kartı \"{{&card}}\" olarak yeniden adladı",
-        "move_card": "{{&member}}, \"{{&list}}\" dizmesine \"{{&card}}\" kartını kotardı.",
+        "move_card": "{{&member}}, \"{{&list}}\" dizmesine \"{{&card}}\" kartını taşıdı",
         "customfielditem_update": "{{&member}} \"{{&card}}\" kartındaki \"{{&customField}}\" özel alanını güncelledi",
         "customfielditem_remove": "{{&member}} \"{{&card}}\" kartındaki \"{{&customField}}\" özel alanını kaldırdı",
         "customfielditem_checkbox_true": "{{&member}} \"{{&card}}\" kartındaki \"{{&customField}}\" özel alanını denetledi",
@@ -818,12 +818,12 @@
         "selectedBoard": "Orada yazısalık seçili değil!\n`{{&cleanPrefix}}switch` komutu ile bir yazısalık seç!",
         "elevated": "Yalnızca botun yüce kullanıcıları bu komutu kullanabilir!",
         "trelloRole": "Bu komut sunucu iyesi olmanı ya da `Trello` adlı role iye olmanı gerektirir!",
-        "emoji": "Bu komutu kullanmak için `Dışçıl Emojiler Kullan` iznine gerek duyuyorum!",
-        "embed": "Bu komutu kullanmak için `Gömülü Örkler` iznine gerek duyuyorum!",
-        "attach": "Bu komutu kullanmak için `Eklenmiş Dosyalar` iznine gerek duyuyorum!"
+        "emoji": "Bu komutu kullanmak için `Harici Emojileri Kullan` iznine gerek duyuyorum!",
+        "embed": "Bu komutu kullanmak için `Örkleri Göm` iznine gerek duyuyorum!",
+        "attach": "Bu komutu kullanmak için `Dosyaları Ekle` iznine gerek duyuyorum!"
     },
-    "use_this": "Bu komut yerine kullan:",
-    "deprecated": "Bu komut artık var değil!",
+    "use_this": "Bu komutun yerine kullan:",
+    "deprecated": "Bu komut artık mevcut değil!",
     "bad_args": "Savlar yeterli değil!",
     "cooldown_msg": "Bu komutun yatışması gerekir! *({{seconds}})*",
     "custom_field_types": {
