@@ -69,7 +69,7 @@
         "voted": "Votado",
         "last_act": "Última actividad",
         "old_comment": "Comentario antiguo",
-        "marketing": "Correos electrónicos de marketing (opt-in)",
+        "marketing": "Correos electrónicos de marketing (optar en)",
         "subbed": "Siguiendo",
         "from_board": "Desde el tablero",
         "one_chklist_name": "Antiguo nombre de la lista de comprobación",
@@ -201,8 +201,8 @@
         "user": "Gestión de usuarios",
         "webhook": "Webhooks",
         "dev": "Desarrollador",
-        "view": "Viendo",
-        "edit": "Editando",
+        "view": "Visualización",
+        "edit": "Edición",
         "misc": "Diverso",
         "hidden": "Oculto"
     },
@@ -447,7 +447,8 @@
         "canceled": "Su última interacción ha sido cancelada.",
         "input": "Escriba el mensaje que desea ingresar.",
         "choose": "Escriba el número del elemento que desea usar.",
-        "async_select": "Escriba el número del elemento para alternar su valor. **Se realizarán cambios cuando se cambie un valor.**"
+        "async_select": "Escriba el número del elemento para alternar su valor. **Se realizarán cambios cuando se cambie un valor.**",
+        "list": "Posibles interacciones"
     },
     "reload": {
         "done": "Comandos recargados.",
@@ -520,8 +521,8 @@
         "choose": "Escriba el número del idioma que desea establecer.",
         "user_locale": "Idioma del usuario: {{&locale}}",
         "server_locale": "Idioma del servidor: {{&locale}}",
-        "user_set": "Establezca el idioma del usuario al **{{&name}}**.",
-        "server_set": "Establezca el idioma del servidor al **{{&name}}**.",
+        "user_set": "Idioma del usuario establecido al **{{&name}}**.",
+        "server_set": "Idioma del servidor establecido al **{{&name}}**.",
         "server_unset": "Indeterminar idioma del servidor.",
         "no_guild": "¡No estás ejecutando el comando en un servidor!",
         "header": "`{{&prefix}}locale setuser [locale]` o `{{&prefix}}locale setserver [locale]` para establecer el idioma.",
