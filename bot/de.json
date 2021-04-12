@@ -39,7 +39,7 @@
     "help": {
         "not_found": "Der Befehl `{{&command}}` wurde nicht gefunden.",
         "footer": "`{{&cleanPrefix}}help [Befehl]` für weitere Informationen.",
-        "header": "{{&username}} (Läuft einem modifzierten [Faux](https://github.com/Snazzah/Faux?ref=tacobot) von Snazzah)\nSupport-Server: {{&link}}\n\nDu weißt nicht, wie du anfangen sollst? [Hier klicken!](https://tacobot.app/guide?ref=bot)"
+        "header": "{{&username}} (Läuft einen modifizierten [Faux](https://github.com/Snazzah/Faux?ref=tacobot) von Snazzah)\nSupport-Server: {{&link}}\n\nDu weißt nicht, wie du anfangen sollst? [Hier klicken!](https://tacobot.app/guide?ref=bot)\nDir gefällt Taco? Dann unterstütz uns doch auf [Patreon](https://patreon.com/trello_talk) oder indem du für uns abstimmst (`T!vote`)"
     },
     "info": {
         "title": "Informationen über {{&username}}",
@@ -284,7 +284,8 @@
         },
         "member_type": {
             "normal": "Normal",
-            "admin": "Admin"
+            "admin": "Admin",
+            "observer": "Beobachter"
         },
         "card_covers": "Karten Titelbild",
         "subbed": "Beobachtet",
@@ -332,7 +333,8 @@
         "card_age": {
             "pirate": "Pirat",
             "regular": "Normal"
-        }
+        },
+        "cover_source": "Quelle des Titelbilds"
     },
     "webhook_cmd": {
         "discord_webhook": "Discord Webhook",
@@ -624,7 +626,7 @@
     "command_permissions": {
         "elevated": "Nur privelegierte Nutzer können diesen Befehl ausführen!",
         "userData": "Deine Einstellungen können nicht in der Datnebank gefunden werden!",
-        "webhooks": "Ich brauche die Berechtigung `Webhooks verwalten` um diesen Befehl auszuführen!",
+        "webhooks": "Ich brauche die Berechtigung `Webhooks verwalten` um diesen Befehl auszuführen! **Diese Berechtigung sollte besser Serverweit der Rolle gegeben werden, als nur in einem Kanal**",
         "discordAuth": "Du hast deinen Trello Account nicht mit Discord verknüpft!\nMit `{{&cleanPrefix}}auth` kannst du das jetzt machen!",
         "selectedBoard": "Du hast kein Board ausgewählt!\nWähle mit `{{&cleanPrefix}}switch`eins aus!",
         "auth": "Du hast deinen Trello Account nicht mit Discord verknüpft!\nMit `{{&cleanPrefix}}auth` kannst du das jetzt machen!",
