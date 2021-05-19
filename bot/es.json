@@ -731,7 +731,8 @@
         "none": "No estás asignado a ningún tablero. Puedes crear uno en <https://trello.com/>.",
         "header": "Usa `{{&cleanPrefix}}switch <nombre del tablero|ID del tablero>` para cambiar de tablero.",
         "switch": "Cambiado a \"{{&name}}\" (`{{&id}}`).",
-        "input_name": "Escriba el nombre qué desea para renombrar el tablero."
+        "input_name": "Escriba el nombre qué desea para renombrar el tablero.",
+        "set_comment_perms": "Define los permisos de comentar a {{&value}}."
     },
     "trello_response": {
         "aborted": "¡Trello tardó demasiado en enviar una respuesta! ¡Intenta nuevamente más tarde!",
@@ -847,17 +848,32 @@
         "commented": "{{&member}} ha comentado en \"{{&card}}\"",
         "archive_list": "{{&member}} ha archivado la lista \"{{&list}}\"",
         "create_list": "{{&member}} ha creado una lista nombrada \"{{&list}}\"",
-        "checkitem_rename": "{{&member}} ha renombrado un elemento en la checklist de la tarjeta \"{{&card}}\"",
+        "checkitem_rename": "{{&member}} ha cambiado el nombre de un elemento en una checklist de la tarjeta \"{{&card}}\"",
         "checkitem_move": "{{&member}} ha movido un elemento en la checklist de la tarjeta \"{{&card}}\" a otra posición",
         "checkitem_create": "{{&member}} ha creado un elemento en la checklist de la tarjeta \"{{&card}}\"",
         "checkitem_state_off": "{{&member}} ha marcado \"{{&checklistItem}}\" como incompleto en la tarjeta \"{{&card}}\"",
         "edit_board_desc": "{{&member}} ha cambiado la descripción del tablero",
         "label_recolor": "{{&member}} ha cambiado el color de la etiqueta \"{{&label}}\" del {{&oldColor}} al {{&color}}",
-        "due_change": "{{&member}} ha cambiado la fecha de vencimiento en la tarjeta \"{{&card}}\""
+        "due_change": "{{&member}} ha cambiado la fecha de vencimiento en la tarjeta \"{{&card}}\"",
+        "board_rename": "{{&member}} ha cambiado el nombre del tablero \"{{&oldName}}\" a {{&board}}",
+        "label_rename": "{{&member}} ha cambiado el nombre de la etiqueta \"{{&oldName}}\" a \"{{&label}}\"",
+        "list_rename": "{{&member}} ha cambiado el nombre de la lista \"{{&oldName}}\" a \"{{&list}}\"",
+        "checklist_rename": "{{&member}} ha cambiado el nombre de una checklist de la tarjeta \"{{&card}}\"",
+        "rename_card": "{{&member}} ha cambiado el nombre de la tarjeta de \"{{&old}}\" a \"{{&new}}\""
     },
     "and_more": "Y {{count}} más…",
     "webhook_filter_group": {
         "customField": "Campos personalizados",
         "list": "Listas"
+    },
+    "labels": {
+        "set_name": "Nombre de la etiqueta cambiado de \"{{&old}}\" a \"{{&new}}\"."
+    },
+    "attachments": {
+        "set_name": "Nombre del archivo adjunto cambiado de \"{{&old}}\" a \"{{&new}}\".",
+        "is_cover": "Usado como portada de la tarjeta",
+        "wywtd": "Elija que desea hacer con este archivo adjunto.",
+        "choose": "Escriba el número del archivo adjunto que desea usar.",
+        "none": "Esta tarjeta no tiene archivos adjuntos."
     }
 }
