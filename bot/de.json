@@ -428,7 +428,9 @@
                 "description": "Normale Nachrichten, die so viel Informationen zeigen, wie möglich",
                 "name": "Standard"
             }
-        }
+        },
+        "style_set": "Der Webhook Stil wurde auf **{{&name}}** gesetzt.",
+        "choose_style": "Antworte mit der Nummer des Stils in dem du den Webhook zukünftig angezeigt bekommen willst."
     },
     "commands": {
         "me": {
@@ -575,7 +577,7 @@
             "description": "Löscht einen Webhook von deinem Server."
         },
         "editwebhook": {
-            "note": "`activate`, `deactivate` - Aktiviert oder deaktiviert einen Webhook\n`filters` - Bearbeitet die Filter (bis jetzt \"Webhook Bits\") dieses Webhooks\n`locale [locale]` - >Setzt die Sprache des Webhooks\n`repair` - Enfernt jeglichen Webhookfehler\n`delete` - Löscht den Webhook\n`whitelist`, `blacklist` - Ändert die Art des Webhookfilters\n`lists` - Bearbeite den Listenfilter\n`cards` - Bearbeite den Kartenfilter",
+            "note": "`activate`, `deactivate` - Aktiviert oder deaktiviert einen Webhook\n`filters` - Bearbeitet die Filter (bis jetzt \"Webhook Bits\") dieses Webhooks\n`locale [locale]` - >Setzt die Sprache des Webhooks\n`repair` - Enfernt jeglichen Webhookfehler\n`delete` - Löscht den Webhook\n`policy` - Ändert die Art des Webhookfilters (whitelist/blacklist)\n`style` - Ändert den Stil des Webhooks\n`lists` - Bearbeite den Listenfilter\n`cards` - Bearbeite den Kartenfilter",
             "usage": "<webhookID> [Unterbefehl]",
             "description": "Bearbeitet einen Webhook auf deinem Server. Lies die Notizen für mehr Information zu Unterbefehlen und der Benutzung."
         },
@@ -608,7 +610,7 @@
             "description": "Erstellt eine Karte."
         },
         "editcard": {
-            "note": "`name [newName]` - Karte umbenennen\n`archive`, `unarchive` - Karte archivieren/wiederherstellen\n`desc [newDescription]` - Setzte die Beschreibung der Karte\n`removedesc` - Entferne die beschreibung der Karte\n`duedone` - Markiert die Frist der Karte als erledigt\n`removedue` - Entfernt die Frist der Karte",
+            "note": "`name [newName]` - Karte umbenennen\n`archive`, `unarchive` - Karte archivieren/wiederherstellen\n`desc [newDescription]` - Setzte die Beschreibung der Karte\n`removedesc` - Entferne die beschreibung der Karte\n`label` - Verwalte die Labels der Karte\n`members` Verwalte die Mitglieder der Karte\n`move`, `mv` - Verschiebt die Karte zu einer anderen Liste\n`due` - Setzt die Frist der Karte\n`duedone` - Markiert die Frist der Karte als erledigt\n`removedue` - Entfernt die Frist der Karte\n`attach` - Erstellt einen neuen Anhang an die Karte\n`attachments`, `atch` - Verwalte die Anhänge",
             "usage": "[Name|ID der Karte] [Unterbefehl] …",
             "description": "Bearbeite die Einstellungen der Karte. Schau die Notizen an, um Unterbefehle und die Benutzung zu sehen."
         },
@@ -621,6 +623,30 @@
             "note": "`name [newName]` - Das Board umbenennen (nur Board-Admins)\n`archive`, `unarchive` - Das Board archivieren/weiderherstellen(nur Board-Admins)\n`desc [newDescription]` - Setzte die beschreibung des Boards\n`removedesc` - Entfernt die Beschreibung des Boards\n`commentperms` - Ändert die Kommentarberechtigung (nur Board-Admins)\n`voteperms` - Ändert die Abstimmungsberechtigung (nur Board-Admins)\n`inviteperms` - Ändert die Einladungsberechtigung (nur Board-Admins)",
             "usage": "[Unterbefehl] …",
             "description": "Bearbeite die Einstellungen des aktuellen Boards. Schau die Notizen an, um Unterbefehle und die Benutzung zu sehen."
+        },
+        "addlabel": {
+            "usage": "[Name]",
+            "description": "Erstellt ein Label auf dem aktuell ausgewähltem Board."
+        },
+        "attachment": {
+            "usage": "[Name|ID der Karte] [Name|ID des Anhangs]",
+            "description": "Zeigt einen Anhang, der an die Karte angehängt ist."
+        },
+        "deletelabel": {
+            "usage": "[labelName|labelID]",
+            "description": "Löscht ein Label."
+        },
+        "editlabel": {
+            "note": "`name [neuerName]` - Das Label umbennen\n`color [neueFarbe]` - Ändere die Farbe des Labels",
+            "usage": "[labelName|labelID] [subcommand] …"
+        },
+        "label": {
+            "usage": "[labelName|labelID]",
+            "description": "Zeigt genauere Informationen zu einem Label auf dem aktuellen Board."
+        },
+        "labels": {
+            "usage": "[Seite]",
+            "description": "Listet alle Labels des aktuell ausgewählten Boards auf."
         }
     },
     "command_permissions": {
@@ -676,7 +702,8 @@
         "select_timeout": "Du hast zu lange gebraucht, um auf die letzte Anfrage zu antworten. Alle Änderungen wurden verworfen.",
         "select_canceled": "Deine letzte Anfrage wurde abgebrochen. Alle Änderungen wurden verworfen.",
         "select_cancel": "Schreibe \"save\", um die Eingabe zu speichern oder \"cancel\" um die Eingabe anzubrechen.",
-        "select": "Tippe die Nummer des Gegenstandes, dessen Wert du ändern willst."
+        "select": "Tippe die Nummer des Gegenstandes, dessen Wert du ändern willst.",
+        "async_select": "Antworte mit der Nummer des Gegenstandes, um seinen Wert zu ändern. **Änderungen werden gespeichert, sobald geantwortet wird.**"
     },
     "trello_response": {
         "aborted": "Trello hat zu lange für eine Antwort gebraucht! Bitte versuche es später erneut!",
@@ -861,7 +888,11 @@
             "archive_off": "Vom Archiv wiederherstellen",
             "archive_on": "Archivieren",
             "name": "Den Namen bearbeiten",
-            "due": "Fälligkeitsdatum setzten"
+            "due": "Fälligkeitsdatum setzten",
+            "attachments": "Anhänge bearbeiten",
+            "member": "Mitgliederzuordnung verwalten",
+            "label": "Labels verwalten",
+            "move": "Karte in eine andere Liste verschieben"
         },
         "wywtd": "Wähle aus, was du mit dieser Karte machen willst.",
         "choose": "Antworte mit der Nummer der Karte, die du benutzen willst.",
@@ -871,7 +902,11 @@
         "none": "Auf diesem Board befinden sich keine Karten.",
         "set_due": "Das Fälligkeitsdatum wurde auf {{&date}} gesetzt.",
         "bad_due": "Das Datum habe ich nicht erkannt. Versuche es mit Ausdrücken wir \"Morgen um 9\" oder \"Nächsten Freitag\".",
-        "input_due": "Antworte mit dem Fälligkeitsdatum, auf das die Karte gesetzt werden soll."
+        "input_due": "Antworte mit dem Fälligkeitsdatum, auf das die Karte gesetzt werden soll.",
+        "members_updated": "Die Mitgliederzuordnung für \"{{&name}}\" wurde geändert.",
+        "labels_updated": "Die Labels wurden für \"{{&name}}\" geändert.",
+        "move": "Die Karte \"{{&card}}\" wurde zur Liste \"{{&list}}\" verschoben.",
+        "same_list_move": "Diese Karte ist schon in dieser Liste!"
     },
     "boards": {
         "menu": {
@@ -954,5 +989,29 @@
         "UPDATE_CARD_DESC": "Veränderte Kartenbeschreibung",
         "UPDATE_CARD_NAME": "Veränderter Katenname",
         "UPDATE_BOARD_CLOSED": "Änderungen am Boardstatus(öffnen/schließen)"
+    },
+    "labels": {
+        "input_name": "Antworte mit dem neuen Namen, zu dem du das Label umbenennen willst.",
+        "set_name": "Label wurde von \"{{&old}}\" zu \"{{&new}}\" umbenannt.",
+        "menu": {
+            "color": "Die Labelfarbe ändern",
+            "name": "Label umbenennen"
+        },
+        "wywtd": "Wähle aus, was du mit diesem Label machen willst.",
+        "choose": "Antworte mit der Nummer des Labels, dass du benutzen willst.",
+        "none": "Dieses Board hat keine Labels."
+    },
+    "attachments": {
+        "menu": {
+            "delete": "Diesen Anahng löschen",
+            "name": "Anhang umbenennen"
+        },
+        "removed": "Der Anhang \"{{&name}}\" wurde gelöscht.",
+        "remove_confirm": "Bist du sicher, dass du \"{{&name}}\" löschen willst?",
+        "input_name": "Antworte mit dem Namen, zu dem du den Anhang umbenennen willst.",
+        "set_name": "Anhang von \"{{&old}}\" zu \"{{&new}}\" umbenannt.",
+        "wywtd": "Wähle aus, was du mit dem Anhang machen willst.",
+        "choose": "Antworte mit der Nummer des Anhangs, den du benutzen willst.",
+        "none": "Diese Karte hat keine Anhänge."
     }
 }
