@@ -319,6 +319,7 @@
             "disabled": "Disabled",
             "members": "All Members",
             "org": "Organization Members",
+            "observers": "Observers",
             "public": "Any Trello User"
         },
         "card_aging": "Card Aging",
