@@ -277,7 +277,8 @@
             "disabled": "Deaktiveret",
             "members": "Alle medlemmer",
             "org": "Medlemmer i organisationen",
-            "public": "Enhver Trellobruger"
+            "public": "Enhver Trellobruger",
+            "observers": "Observatører"
         },
         "last_act": "Sidste aktivitet",
         "add_rem_members": "Tilføj/Fjern medlemmer",
