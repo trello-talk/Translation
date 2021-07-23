@@ -1,4 +1,4 @@
-# [Trello Bot Translation](http://translate.trellobot.xyz/projects/trellobot/) ![StatusWidget](http://translate.trellobot.xyz/widgets/trellobot/-/svg-badge.svg)
-The translation for Trello Bot.
+# [Trello Bot Translation](https://translate.tacobot.app/projects/trellobot/) ![StatusWidget](https://translate.tacobot.app/widgets/trellobot/-/svg-badge.svg)
+The translation for Taco.
 
-![Chart](http://translate.trellobot.xyz/widgets/trellobot/-/multi-auto.svg)
+![Chart](https://translate.tacobot.app/widgets/trellobot/-/multi-auto.svg)
