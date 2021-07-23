@@ -440,6 +440,7 @@
         "choose_style": "Type the number of the style you want to set the webhook to.",
         "style_set": "Set the webhook style to **{{&name}}**.",
         "max_wh": "You have reached your maximum webhooks for this server! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
+        "wh_expire": "This webhook is unavailable since it exceeds your current webhook limit! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
         "unknown": "unknown"
     },
     "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
