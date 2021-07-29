@@ -313,7 +313,8 @@
             "disabled": "Désactivé",
             "members": "Tous les membres",
             "public": "Tout utilisateur Trello",
-            "org": "Membres de l'organisation"
+            "org": "Membres de l'organisation",
+            "observers": "Observateurs"
         },
         "card_aging": "Vieillissement de la carte",
         "card_age": {
