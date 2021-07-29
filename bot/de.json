@@ -260,7 +260,8 @@
             "disabled": "Deaktiviert",
             "members": "Alle Mitglieder",
             "org": "Teammitglieder",
-            "public": "Jeder Trellonutzer"
+            "public": "Jeder Trellonutzer",
+            "observers": "Beobachter"
         },
         "label_color": {
             "purple": "Lila",
@@ -638,7 +639,8 @@
         },
         "editlabel": {
             "note": "`name [neuerName]` - Das Label umbennen\n`color [neueFarbe]` - Ändere die Farbe des Labels",
-            "usage": "[labelName|labelID] [subcommand] …"
+            "usage": "[labelName|labelID] [subcommand] …",
+            "description": "Bearbeite die Eigenschaften eines Labels. Schau dir für Unterbefehle und die Benutzung die Notizen an."
         },
         "label": {
             "usage": "[labelName|labelID]",
@@ -1012,6 +1014,7 @@
         "set_name": "Anhang von \"{{&old}}\" zu \"{{&new}}\" umbenannt.",
         "wywtd": "Wähle aus, was du mit dem Anhang machen willst.",
         "choose": "Antworte mit der Nummer des Anhangs, den du benutzen willst.",
-        "none": "Diese Karte hat keine Anhänge."
+        "none": "Diese Karte hat keine Anhänge.",
+        "is_cover": "Als Titelbild der Karte benutzt"
     }
 }
