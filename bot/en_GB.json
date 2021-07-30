@@ -199,7 +199,8 @@
             "org": "Organisation Members",
             "disabled": "Disabled",
             "members": "All Members",
-            "public": "Any Trello User"
+            "public": "Any Trello User",
+            "observers": "Observers"
         },
         "hide_votes": "Hide Votes",
         "self_join": "Allow Team Members to Edit and Join",
@@ -991,7 +992,8 @@
                 "description": "Regular messages, showing as much information as possible",
                 "name": "Default"
             }
-        }
+        },
+        "wh_expire": "This webhook is unavailable since it exceeds your current webhook limit! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)"
     },
     "webhook_filter_group": {
         "listUpdate": "List Updates",
