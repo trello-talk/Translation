@@ -440,7 +440,8 @@
                 "description": "Messages réguliers, montrant autant d'informations que possible",
                 "name": "Défaut"
             }
-        }
+        },
+        "wh_expire": "Ce webhook n'est pas disponible car il dépasse votre limite de webhook actuelle ! Vous pouvez augmenter cette limite en devenant un donateur Patreon ! (`{{&cleanPrefix}}donate`)"
     },
     "cooldown_msg": "Cette commande doit être refroidie ! *({{seconds}})*",
     "bad_args": "Pas assez d'arguments !",
