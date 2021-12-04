@@ -39,7 +39,7 @@
     "list_move": "{{member}} moved list \"{{list}}\" to a different position",
     "create_label": "{{member}} created label \"{{label}}\"",
     "label_rename": "{{member}} renamed label \"{{oldName}}\" to \"{{label}}\"",
-    "label_recolor": "{{member}} changed label \"{{label}}\" colour from {{oldColor}} to {{color}}",
+    "label_recolor": "{{member}} changed label \"{{label}}\" color from {{oldColor}} to {{color}}",
     "delete_label": "{{member}} deleted label {{labelID}}",
     "attach_card": "{{member}} attached \"{{attachment}}\" to card \"{{card}}\"",
     "unattach_card": "{{member}} removed attachment \"{{attachment}}\" from card \"{{card}}\"",
