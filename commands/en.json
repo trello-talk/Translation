@@ -35,8 +35,8 @@
     "prompt_action_invalid_type": "🔥 The action to this prompt has an invalid type. Contact support if you see this.",
     "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this.",
     "prompt_select_item": "Select an item below...",
-    "items_selected_one": "{{count}} item selected",
-    "items_selected_other": "{{count}} items selected"
+    "items_selected_one": "{{count, number}} item selected",
+    "items_selected_other": "{{count, number}} items selected"
   },
   "auth": {
     "content": "You can authenticate with Trello using the button below:",
