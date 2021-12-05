@@ -4,16 +4,18 @@
     "emoji": "us"
   },
   "common": {
+    "yes": "Yes",
+    "no": "no",
     "done": "Done",
     "page": "Page",
     "board": "Board",
     "boards": "Boards",
     "list": "List",
     "lists": "Lists",
-    "board_count_one": "{{count}} board",
-    "board_count_other": "{{count}} boards",
-    "org_count_one": "{{count}} organization",
-    "org_count_other": "{{count}} organizations"
+    "board_count_one": "{{count, number}} board",
+    "board_count_other": "{{count, number}} boards",
+    "org_count_one": "{{count, number}} organization",
+    "org_count_other": "{{count, number}} organizations"
   },
   "query": {
     "not_found_list": "Couldn't find that list.",
@@ -32,6 +34,23 @@
     "prompt_action_expired": "❌ The action to this prompt has expired, try again later.",
     "prompt_action_invalid_type": "🔥 The action to this prompt has an invalid type. Contact support if you see this.",
     "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this."
+  },
+  "auth": {
+    "content": "You can authenticate with Trello using the button below:",
+    "button": "Authenticate with Trello"
+  },
+  "list": {
+    "title": "Cards in \"{{list}}\" ({{cards, number}})"
+  },
+  "cleardata": {
+    "no_data": "No user data was found.",
+    "confirm": "Are you sure you want to remove **ALL** of your user data?",
+    "done": "Removed user data."
+  },
+  "clearauth": {
+    "no_auth": "No authentication data was found.",
+    "confirm": "Are you sure you want to remove your authentication data?",
+    "done": "Removed authentication data."
   },
   "me": {
     "footer": "You are in $t(common.board_count, {\"count\": {{boards}} }) and $t(common.org_count, {\"count\": {{orgs}} })."
