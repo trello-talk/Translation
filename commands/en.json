@@ -1,0 +1,39 @@
+{
+  "_": {
+    "name": "English (United States)",
+    "emoji": "us"
+  },
+  "common": {
+    "done": "Done",
+    "page": "Page",
+    "board": "Board",
+    "boards": "Boards",
+    "list": "List",
+    "lists": "Lists",
+    "board_count_one": "{{count}} board",
+    "board_count_other": "{{count}} boards",
+    "org_count_one": "{{count}} organization",
+    "org_count_other": "{{count}} organizations"
+  },
+  "query": {
+    "not_found_list": "Couldn't find that list.",
+    "not_found_board": "Couldn't find that board, try selecting a board first.",
+    "no_list_board": "No boards to list.",
+    "no_list_list": "No lists to list."
+  },
+  "interactions": {
+    "wrong_user": "❌ Only the person who executed this command can do this.",
+    "delete_wrong_user": "❌ Only the person who executed this command can delete the response.",
+    "prompt_wrong_user": "❌ Only the person who executed this command can interact with this prompt.",
+    "prompt_expired": "This prompt has expired.",
+    "prompt_no_function": "🔥 This type of prompt does not have a function. Contact support if you see this.",
+    "prompt_no_action_id": "🔥 No action ID was provided. Contact support if you see this.",
+    "prompt_no_action_id_or_type": "🔥 No action ID was provided. Contact support if you see this.",
+    "prompt_action_expired": "❌ The action to this prompt has expired, try again later.",
+    "prompt_action_invalid_type": "🔥 The action to this prompt has an invalid type. Contact support if you see this.",
+    "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this."
+  },
+  "me": {
+    "footer": "You are in $t(common.board_count, {\"count\": {{boards}} }) and $t(common.org_count, {\"count\": {{orgs}} })."
+  }
+}
