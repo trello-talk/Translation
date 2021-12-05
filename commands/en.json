@@ -33,7 +33,10 @@
     "prompt_no_action_id_or_type": "🔥 No action ID was provided. Contact support if you see this.",
     "prompt_action_expired": "❌ The action to this prompt has expired, try again later.",
     "prompt_action_invalid_type": "🔥 The action to this prompt has an invalid type. Contact support if you see this.",
-    "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this."
+    "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this.",
+    "prompt_select_item": "Select an item below...",
+    "items_selected_one": "{{count}} item selected",
+    "items_selected_other": "{{count}} items selected"
   },
   "auth": {
     "content": "You can authenticate with Trello using the button below:",
@@ -51,6 +54,18 @@
     "no_auth": "No authentication data was found.",
     "confirm": "Are you sure you want to remove your authentication data?",
     "done": "Removed authentication data."
+  },
+  "watchboard": {
+    "watched": "Started watching the \"{{board}}\" board.",
+    "unwatched": "Stopped watching the \"{{board}}\" board."
+  },
+  "star": {
+    "star": "Starred the \"{{board}}\" board.",
+    "unstar": "Unstarred the \"{{board}}\" board."
+  },
+  "switch": {
+    "success": "Switched to the \"{{board}}\" board.",
+    "not_found": "Couldn't find that board."
   },
   "me": {
     "footer": "You are in $t(common.board_count, {\"count\": {{boards}} }) and $t(common.org_count, {\"count\": {{orgs}} })."
