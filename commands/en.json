@@ -10,10 +10,15 @@
     "page": "Page",
     "board": "Board",
     "boards": "Boards",
+    "link": "Link",
     "list": "List",
     "lists": "Lists",
     "card": "Card",
     "cards": "Cards",
+    "org": "Organization",
+    "info": "Information",
+    "bg_img": "Background Image",
+    "last_activity": "Last Activity",
     "board_count_one": "{{count, number}} board",
     "board_count_other": "{{count, number}} boards",
     "org_count_one": "{{count, number}} organization",
@@ -21,6 +26,7 @@
   },
   "query": {
     "not_found_list": "Couldn't find that list.",
+    "not_found_label": "Couldn't find that label.",
     "not_found_board": "Couldn't find that board, try selecting a board first.",
     "no_list_board": "No boards to list.",
     "no_list_list": "No lists to list.",
@@ -48,6 +54,9 @@
   "list": {
     "title": "Cards in \"{{list}}\" ({{cards, number}})"
   },
+  "label": {
+    "title": "Cards in \"{{label}}\" ({{cards, number}})"
+  },
   "cleardata": {
     "no_data": "No user data was found.",
     "confirm": "Are you sure you want to remove **ALL** of your user data?",
@@ -69,6 +78,35 @@
   "switch": {
     "success": "Switched to the \"{{board}}\" board.",
     "not_found": "Couldn't find that board."
+  },
+  "board": {
+    "is_archived": "This board is archived."
+  },
+  "cards": {
+    "list_all": "All Cards",
+    "list_archived": "Archived Cards",
+    "list_open": "Open Cards",
+    "list_watched": "Cards You've Watched",
+    "list_overdue": "Overdue Cards",
+    "list_labels": "Cards with Any Labels",
+    "list_no_labels": "Cards with No Labels"
+  },
+  "lists": {
+    "list_all": "All Lists",
+    "list_archived": "Archived Lists",
+    "list_open": "Open Lists",
+    "list_watched": "Lists You've Watched"
+  },
+  "boards": {
+    "list_all": "All Boards",
+    "list_archived": "Archived Boards",
+    "list_open": "Open Boards",
+    "list_watched": "Boards You've Watched",
+    "list_starred": "Boards You've Starred"
+  },
+  "labels": {
+    "list_all": "All Labels",
+    "list_cards": "Labels with Cards"
   },
   "me": {
     "footer": "You are in $t(common.board_count, {\"count\": {{boards}} }) and $t(common.org_count, {\"count\": {{orgs}} })."
