@@ -1,114 +1,142 @@
 {
-    "_": {
-        "name": "English (United States)",
-        "emoji": "us"
+  "_": {
+    "name": "English (United States)",
+    "emoji": "us"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "no",
+    "done": "Done",
+    "page": "Page",
+    "board": "Board",
+    "boards": "Boards",
+    "link": "Link",
+    "list": "List",
+    "lists": "Lists",
+    "card": "Card",
+    "cards": "Cards",
+    "org": "Organization",
+    "visibility": "Visibility",
+    "info": "Information",
+    "bg_img": "Background Image",
+    "last_activity": "Last Activity",
+    "board_count_one": "{{count, number}} board",
+    "board_count_other": "{{count, number}} boards",
+    "org_count_one": "{{count, number}} organization",
+    "org_count_other": "{{count, number}} organizations",
+    "list_count_one": "{{count, number}} list",
+    "list_count_other": "{{count, number}} lists",
+    "card_count_one": "{{count, number}} card",
+    "card_count_other": "{{count, number}} cards",
+    "label_color": {
+      "green": "Green",
+      "yellow": "Yellow",
+      "red": "Red",
+      "orange": "Orange",
+      "lime": "Lime Green",
+      "purple": "Purple",
+      "blue": "Blue",
+      "sky": "Sky Blue",
+      "pink": "Pink",
+      "black": "Black",
+      "none": "No Color"
     },
-    "common": {
-        "yes": "Yes",
-        "no": "no",
-        "done": "Done",
-        "page": "Page",
-        "board": "Board",
-        "boards": "Boards",
-        "link": "Link",
-        "list": "List",
-        "lists": "Lists",
-        "card": "Card",
-        "cards": "Cards",
-        "org": "Organization",
-        "info": "Information",
-        "bg_img": "Background Image",
-        "last_activity": "Last Activity",
-        "board_count_one": "{{count, number}} board",
-        "board_count_other": "{{count, number}} boards",
-        "org_count_one": "{{count, number}} organization",
-        "org_count_other": "{{count, number}} organizations"
-    },
-    "query": {
-        "not_found_list": "Couldn't find that list.",
-        "not_found_label": "Couldn't find that label.",
-        "not_found_board": "Couldn't find that board, try selecting a board first.",
-        "no_list_board": "No boards to list.",
-        "no_list_list": "No lists to list.",
-        "no_list_card": "No cards to list."
-    },
-    "interactions": {
-        "wrong_user": "❌ Only the person who executed this command can do this.",
-        "delete_wrong_user": "❌ Only the person who executed this command can delete the response.",
-        "prompt_wrong_user": "❌ Only the person who executed this command can interact with this prompt.",
-        "prompt_expired": "This prompt has expired.",
-        "prompt_no_function": "🔥 This type of prompt does not have a function. Contact support if you see this.",
-        "prompt_no_action_id": "🔥 No action ID was provided. Contact support if you see this.",
-        "prompt_no_action_id_or_type": "🔥 No action ID was provided. Contact support if you see this.",
-        "prompt_action_expired": "❌ The action to this prompt has expired, try again later.",
-        "prompt_action_invalid_type": "🔥 The action to this prompt has an invalid type. Contact support if you see this.",
-        "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this.",
-        "prompt_select_item": "Select an item below…",
-        "items_selected_one": "{{count, number}} item selected",
-        "items_selected_other": "{{count, number}} items selected"
-    },
-    "auth": {
-        "content": "You can authenticate with Trello using the button below:",
-        "button": "Authenticate with Trello"
-    },
-    "list": {
-        "title": "Cards in \"{{list}}\" ({{cards, number}})"
-    },
-    "label": {
-        "title": "Cards in \"{{label}}\" ({{cards, number}})"
-    },
-    "cleardata": {
-        "no_data": "No user data was found.",
-        "confirm": "Are you sure you want to remove **ALL** of your user data?",
-        "done": "Removed user data."
-    },
-    "clearauth": {
-        "no_auth": "No authentication data was found.",
-        "confirm": "Are you sure you want to remove your authentication data?",
-        "done": "Removed authentication data."
-    },
-    "watchboard": {
-        "watched": "Started watching the \"{{board}}\" board.",
-        "unwatched": "Stopped watching the \"{{board}}\" board."
-    },
-    "star": {
-        "star": "Starred the \"{{board}}\" board.",
-        "unstar": "Unstarred the \"{{board}}\" board."
-    },
-    "switch": {
-        "success": "Switched to the \"{{board}}\" board.",
-        "not_found": "Couldn't find that board."
-    },
-    "board": {
-        "is_archived": "This board is archived."
-    },
-    "cards": {
-        "list_all": "All Cards",
-        "list_archived": "Archived Cards",
-        "list_open": "Open Cards",
-        "list_watched": "Cards You've Watched",
-        "list_overdue": "Overdue Cards",
-        "list_labels": "Cards with Any Labels",
-        "list_no_labels": "Cards with No Labels"
-    },
-    "lists": {
-        "list_all": "All Lists",
-        "list_archived": "Archived Lists",
-        "list_open": "Open Lists",
-        "list_watched": "Lists You've Watched"
-    },
-    "boards": {
-        "list_all": "All Boards",
-        "list_archived": "Archived Boards",
-        "list_open": "Open Boards",
-        "list_watched": "Boards You've Watched",
-        "list_starred": "Boards You've Starred"
-    },
-    "labels": {
-        "list_all": "All Labels",
-        "list_cards": "Labels with Cards"
-    },
-    "me": {
-        "footer": "You are in $t(common.board_count, {\"count\": {{boards}} }) and $t(common.org_count, {\"count\": {{orgs}} })."
+    "perm_levels": {
+        "public": "Public",
+        "org": "Team Visible",
+        "private": "Private"
     }
+  },
+  "query": {
+    "not_found_list": "Couldn't find that list.",
+    "not_found_label": "Couldn't find that label.",
+    "not_found_board": "Couldn't find that board, try selecting a board first.",
+    "no_list_board": "No boards to list.",
+    "no_list_list": "No lists to list.",
+    "no_list_card": "No cards to list."
+  },
+  "interactions": {
+    "wrong_user": "❌ Only the person who executed this command can do this.",
+    "delete_wrong_user": "❌ Only the person who executed this command can delete the response.",
+    "prompt_wrong_user": "❌ Only the person who executed this command can interact with this prompt.",
+    "prompt_expired": "This prompt has expired.",
+    "prompt_no_function": "🔥 This type of prompt does not have a function. Contact support if you see this.",
+    "prompt_no_action_id": "🔥 No action ID was provided. Contact support if you see this.",
+    "prompt_no_action_id_or_type": "🔥 No action ID was provided. Contact support if you see this.",
+    "prompt_action_expired": "❌ The action to this prompt has expired, try again later.",
+    "prompt_action_invalid_type": "🔥 The action to this prompt has an invalid type. Contact support if you see this.",
+    "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this.",
+    "prompt_select_item": "Select an item below…",
+    "items_selected_one": "{{count, number}} item selected",
+    "items_selected_other": "{{count, number}} items selected"
+  },
+  "auth": {
+    "content": "You can authenticate with Trello using the button below:",
+    "no_auth": "You must authenticate your Trello account to use this command.",
+    "expired": "Your authentication token has expired! Please re-authenticate to continue.",
+    "button": "Authenticate with Trello"
+  },
+  "list": {
+    "title": "Cards in \"{{list}}\" ({{cards, number}})",
+    "none": "No cards are in this list."
+  },
+  "label": {
+    "title": "Cards in \"{{label}}\" ({{cards, number}})",
+    "none": "No cards are assigned this label."
+  },
+  "cleardata": {
+    "no_data": "No user data was found.",
+    "confirm": "Are you sure you want to remove **ALL** of your user data?",
+    "done": "Removed user data."
+  },
+  "clearauth": {
+    "no_auth": "No authentication data was found.",
+    "confirm": "Are you sure you want to remove your authentication data?",
+    "done": "Removed authentication data."
+  },
+  "watchboard": {
+    "watched": "Started watching the \"{{board}}\" board.",
+    "unwatched": "Stopped watching the \"{{board}}\" board."
+  },
+  "star": {
+    "star": "Starred the \"{{board}}\" board.",
+    "unstar": "Unstarred the \"{{board}}\" board."
+  },
+  "switch": {
+    "success": "Switched to the \"{{board}}\" board.",
+    "not_found": "Couldn't find that board."
+  },
+  "board": {
+    "is_archived": "This board is archived.",
+    "footer": "This board has $t(common.card_count, {\"count\": {{cards}} }) and $t(common.list_count, {\"count\": {{lists}} })."
+  },
+  "cards": {
+    "list_all": "All Cards",
+    "list_archived": "Archived Cards",
+    "list_open": "Open Cards",
+    "list_watched": "Cards You've Watched",
+    "list_overdue": "Overdue Cards",
+    "list_labels": "Cards with Any Labels",
+    "list_no_labels": "Cards with No Labels"
+  },
+  "lists": {
+    "list_all": "All Lists",
+    "list_archived": "Archived Lists",
+    "list_open": "Open Lists",
+    "list_watched": "Lists You've Watched"
+  },
+  "boards": {
+    "list_all": "All Boards",
+    "list_archived": "Archived Boards",
+    "list_open": "Open Boards",
+    "list_watched": "Boards You've Watched",
+    "list_starred": "Boards You've Starred"
+  },
+  "labels": {
+    "list_all": "All Labels",
+    "list_cards": "Labels with Cards"
+  },
+  "me": {
+    "footer": "You are in $t(common.board_count, {\"count\": {{boards}} }) and $t(common.org_count, {\"count\": {{orgs}} })."
+  }
 }
