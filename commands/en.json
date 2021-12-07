@@ -6,20 +6,24 @@
   "common": {
     "yes": "Yes",
     "no": "no",
+    "link": "Link",
     "done": "Done",
     "page": "Page",
     "board": "Board",
     "boards": "Boards",
-    "link": "Link",
     "list": "List",
     "lists": "Lists",
     "card": "Card",
     "cards": "Cards",
+    "label": "Label",
+    "labels": "Labels",
     "org": "Organization",
     "visibility": "Visibility",
     "info": "Information",
     "bg_img": "Background Image",
     "last_activity": "Last Activity",
+    "cover_source": "Cover Source",
+    "more": "+ {{count, number}} more…",
     "board_count_one": "{{count, number}} board",
     "board_count_other": "{{count, number}} boards",
     "org_count_one": "{{count, number}} organization",
@@ -48,9 +52,11 @@
     }
   },
   "query": {
+    "not_found_card": "Couldn't find that card.",
     "not_found_list": "Couldn't find that list.",
     "not_found_label": "Couldn't find that label.",
     "not_found_board": "Couldn't find that board, try selecting a board first.",
+    "no_list_label": "No labes to list.",
     "no_list_board": "No boards to list.",
     "no_list_list": "No lists to list.",
     "no_list_card": "No cards to list."
@@ -68,7 +74,8 @@
     "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this.",
     "prompt_select_item": "Select an item below…",
     "items_selected_one": "{{count, number}} item selected",
-    "items_selected_other": "{{count, number}} items selected"
+    "items_selected_other": "{{count, number}} items selected",
+    "dismiss": "You can dismiss this message."
   },
   "auth": {
     "content": "You can authenticate with Trello using the button below:",
@@ -109,6 +116,9 @@
   "board": {
     "is_archived": "This board is archived.",
     "footer": "This board has $t(common.card_count, {\"count\": {{cards}} }) and $t(common.list_count, {\"count\": {{lists}} })."
+  },
+  "card": {
+    "is_archived": "This card is archived."
   },
   "cards": {
     "list_all": "All Cards",
