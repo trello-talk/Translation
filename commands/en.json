@@ -7,16 +7,17 @@
     "yes": "Yes",
     "no": "no",
     "link": "Link",
+    "due": "Due",
     "done": "Done",
     "page": "Page",
-    "board": "Board",
-    "boards": "Boards",
     "list": "List",
     "lists": "Lists",
-    "card": "Card",
-    "cards": "Cards",
-    "label": "Label",
     "labels": "Labels",
+    "votes": "Votes",
+    "attachments": "Attachments",
+    "checklists": "Checklists",
+    "stickers": "Stickers",
+    "members": "Members",
     "org": "Organization",
     "visibility": "Visibility",
     "info": "Information",
@@ -118,7 +119,8 @@
     "footer": "This board has $t(common.card_count, {\"count\": {{cards}} }) and $t(common.list_count, {\"count\": {{lists}} })."
   },
   "card": {
-    "is_archived": "This card is archived."
+    "is_archived": "This card is archived.",
+    "vote_include": "(including you)"
   },
   "cards": {
     "list_all": "All Cards",
