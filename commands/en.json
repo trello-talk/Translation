@@ -103,16 +103,28 @@
     "done": "Removed authentication data."
   },
   "watchboard": {
-    "watched": "Started watching the \"{{board}}\" board.",
-    "unwatched": "Stopped watching the \"{{board}}\" board."
+    "watched": "Started watching the **{{board}}** board.",
+    "unwatched": "Stopped watching the **{{board}}** board."
+  },
+  "watchlist": {
+    "watched": "Started watching the **{{list}}** list.",
+    "unwatched": "Stopped watching the **{{list}}** list."
+  },
+  "watchcard": {
+    "watched": "Started watching the **{{card}}** card.",
+    "unwatched": "Stopped watching the **{{card}}** card."
+  },
+  "addlabel": {
+    "done": "Created new **{{label}}** label."
   },
   "star": {
-    "star": "Starred the \"{{board}}\" board.",
-    "unstar": "Unstarred the \"{{board}}\" board."
+    "star": "Starred the **{{board}}** board.",
+    "unstar": "Unstarred the **{{board}}** board."
   },
   "switch": {
-    "success": "Switched to the \"{{board}}\" board.",
-    "not_found": "Couldn't find that board."
+    "success": "Switched to the **{{board}}** board.",
+    "not_found": "Couldn't find that board.",
+    "no_board_command": "Select a board to switch to before using this command!"
   },
   "board": {
     "is_archived": "This board is archived.",
