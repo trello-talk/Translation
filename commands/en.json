@@ -115,7 +115,20 @@
     "unwatched": "Stopped watching the **{{card}}** card."
   },
   "addlabel": {
-    "done": "Created new **{{label}}** label."
+    "done": "Created new **{{label}}** label.",
+    "limited": "You have too many labels! Try editing other labels or deleting unused labels."
+  },
+  "deletelabel": {
+    "confirm": "Are you sure you want to delete the **{{label}}** label?",
+    "done": "Successfully deleted the label."
+  },
+  "addlist": {
+    "done": "Created new **{{list}}** list.",
+    "limited": "You have too many lists! Try editing other archived lists."
+  },
+  "deletecard": {
+    "confirm": "Are you sure you want to delete the **{{card}}** card?",
+    "done": "Successfully deleted the card."
   },
   "star": {
     "star": "Starred the **{{board}}** board.",
