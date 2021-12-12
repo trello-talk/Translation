@@ -1,4 +1,64 @@
 {
+  "common": {
+    "old_desc": "Old Description",
+    "new_desc": "New Description",
+    "prev_list": "Previous List",
+    "curr_list": "Current List",
+    "old_name": "Old Name",
+    "new_name": "New Name",
+    "old_comment": "Old Comment",
+    "new_comment": "New Comment",
+    "old_due": "Old Due Date",
+    "new_due": "New Due Date",
+    "one_chkitem_name": "Old Checklist Item Name",
+    "one_chklist_name": "Old Checklist Name",
+    "item_src": "Item Source",
+    "to_board": "To Board",
+    "from_board": "From Board",
+    "custom_field": "Custom Field",
+    "old_v": "Old Value",
+    "new_v": "New Value",
+    "perm_levels": {
+        "public": "Public",
+        "org": "Team Visible",
+        "private": "Private"
+    },
+    "invite_perms": {
+        "members": "All Members",
+        "admins": "Admins"
+    },
+    "comment_perms": {
+        "disabled": "Disabled",
+        "members": "All Members",
+        "org": "Organization Members",
+        "public": "Any Trello User"
+    },
+    "vote_perms": {
+        "disabled": "Disabled",
+        "members": "All Members",
+        "org": "Organization Members",
+        "observers": "Observers",
+        "public": "Any Trello User"
+    },
+    "member_type": {
+        "normal": "Normal",
+        "admin": "Admin",
+        "observer": "Observer"
+    },
+    "label_color": {
+      "green": "Green",
+      "yellow": "Yellow",
+      "red": "Red",
+      "orange": "Orange",
+      "lime": "Lime Green",
+      "purple": "Purple",
+      "blue": "Blue",
+      "sky": "Sky Blue",
+      "pink": "Pink",
+      "black": "Black",
+      "none": "No Color"
+    }
+  },
   "webhook": {
     "commented": "{{member}} commented on \"{{card}}\"",
     "update_comment": "{{member}} updated their comment on \"{{card}}\"",
