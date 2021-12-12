@@ -5,8 +5,9 @@
   },
   "common": {
     "yes": "Yes",
-    "no": "no",
+    "no": "No",
     "link": "Link",
+    "url": "URL",
     "due": "Due",
     "done": "Done",
     "page": "Page",
@@ -21,6 +22,7 @@
     "org": "Organization",
     "visibility": "Visibility",
     "info": "Information",
+    "attachment": "Attachment",
     "bg_img": "Background Image",
     "last_activity": "Last Activity",
     "cover_source": "Cover Source",
@@ -76,6 +78,8 @@
     "prompt_select_item": "Select an item below…",
     "items_selected_one": "{{count, number}} item selected",
     "items_selected_other": "{{count, number}} items selected",
+    "visit_card": "View Card on Trello",
+    "visit_board": "View Board on Trello",
     "dismiss": "You can dismiss this message."
   },
   "auth": {
@@ -126,9 +130,16 @@
     "done": "Created new **{{list}}** list.",
     "limited": "You have too many lists! Try editing other archived lists."
   },
+  "addcard": {
+    "done": "Created new **{{card}}** card.",
+    "limited": "You have too many cards! Try deleting unused cards."
+  },
   "deletecard": {
     "confirm": "Are you sure you want to delete the **{{card}}** card?",
     "done": "Successfully deleted the card."
+  },
+  "comment": {
+    "commented": "Commented on the **{{card}}** card."
   },
   "star": {
     "star": "Starred the **{{board}}** board.",
