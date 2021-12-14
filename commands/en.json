@@ -80,7 +80,8 @@
     "items_selected_other": "{{count, number}} items selected",
     "visit_card": "View Card on Trello",
     "visit_board": "View Board on Trello",
-    "dismiss": "You can dismiss this message."
+    "dismiss": "You can dismiss this message.",
+    "bad_subcommand": "Invalid subcommand. Contact support if you see this."
   },
   "auth": {
     "content": "You can authenticate with Trello using the button below:",
@@ -137,16 +138,19 @@
     "header_list": "Made the following changes to the **{{name}}** list:",
     "header_label": "Made the following changes to the **{{name}}** label:",
     "header_board": "Made the following changes to the **{{name}}** board:",
-    "move": "- Moved card **{{card}}** to list **{{list}}**.",
+    "labels_title": "Select labels for \"{{card}}\"",
+    "labels_updated": "Updated the card's labels.",
+    "labels_placeholder": "Select labels to add to this card…",
+    "members_title": "Select members for \"{{card}}\"",
+    "members_updated": "Updated the card's members.",
+    "members_placeholder": "Select members to add to this card…",
+    "move": "Moved card **{{card}}** to list **{{list}}**.",
     "rename": "- Renamed to **{{name}}**",
     "recolor": "- Changed color to **{{color}}**",
     "archive": "- Archived",
     "unarchive": "- Removed from archive",
     "description": "- Edited the description",
-    "remove_description": "- Removed the description",
-    "vote_perms": "- Set vote permissions to **{{perm}}**",
-    "comment_perms": "- Set comment permissions to **{{perm}}**",
-    "invite_perms": "- Set invite permissions to **{{perm}}**"
+    "remove_description": "- Removed the description"
   },
   "addcard": {
     "done": "Created new **{{card}}** card.",
