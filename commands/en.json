@@ -1,6 +1,6 @@
 {
   "_": {
-    "name": "English (United States)",
+    "name": "English",
     "emoji": "us"
   },
   "common": {
@@ -10,6 +10,7 @@
     "url": "URL",
     "due": "Due",
     "done": "Done",
+    "none": "None",
     "page": "Page",
     "list": "List",
     "lists": "Lists",
@@ -65,6 +66,8 @@
     "no_list_card": "No cards to list."
   },
   "interactions": {
+    "no_server": "This command can only be used in a server.",
+    "no_admin_perms": "This command requires the \"Manage Server\" permission.",
     "wrong_user": "❌ Only the person who executed this command can do this.",
     "delete_wrong_user": "❌ Only the person who executed this command can delete the response.",
     "prompt_wrong_user": "❌ Only the person who executed this command can interact with this prompt.",
@@ -209,5 +212,19 @@
   },
   "me": {
     "footer": "You are in $t(common.board_count, {\"count\": {{boards}} }) and $t(common.org_count, {\"count\": {{orgs}} })."
+  },
+  "user_settings": {
+    "locale": "Your locale is set to **{{name}}**.",
+    "invalid_locale": "That locale was invalid!",
+    "set_locale": "Set your locale to **{{name}}**."
+  },
+  "server_settings": {
+    "no_locale_set": "This server has not set a locale.",
+    "locale": "This server's locale is set to **{{name}}**.",
+    "invalid_locale": "That locale was invalid!",
+    "set_locale": "Set your locale to **{{name}}**.",
+    "role": "The Trello management role is set to **{{role}}**.",
+    "no_role_set": "The Trello management role has not been set in this server.",
+    "set_role": "Set the Trello management role to **{{role}}**."
   }
 }
