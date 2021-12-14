@@ -81,7 +81,8 @@
     "visit_card": "View Card on Trello",
     "visit_board": "View Board on Trello",
     "dismiss": "You can dismiss this message.",
-    "bad_subcommand": "Invalid subcommand. Contact support if you see this."
+    "bad_subcommand": "Invalid subcommand. Contact support if you see this.",
+    "error": "An error occurred while handling this interaction."
   },
   "auth": {
     "content": "You can authenticate with Trello using the button below:",
