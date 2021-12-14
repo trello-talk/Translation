@@ -130,6 +130,24 @@
     "done": "Created new **{{list}}** list.",
     "limited": "You have too many lists! Try editing other archived lists."
   },
+  "edit": {
+    "need_admin": "You need administrator permissions on the board to do this!",
+    "no_edit": "No edits were made.",
+    "header_card": "Made the following changes to the **{{name}}** card:",
+    "header_list": "Made the following changes to the **{{name}}** list:",
+    "header_label": "Made the following changes to the **{{name}}** label:",
+    "header_board": "Made the following changes to the **{{name}}** board:",
+    "move": "- Moved card **{{card}}** to list **{{list}}**.",
+    "rename": "- Renamed to **{{name}}**",
+    "recolor": "- Changed color to **{{color}}**",
+    "archive": "- Archived",
+    "unarchive": "- Removed from archive",
+    "description": "- Edited the description",
+    "remove_description": "- Removed the description",
+    "vote_perms": "- Set vote permissions to **{{perm}}**",
+    "comment_perms": "- Set comment permissions to **{{perm}}**",
+    "invite_perms": "- Set invite permissions to **{{perm}}**"
+  },
   "addcard": {
     "done": "Created new **{{card}}** card.",
     "limited": "You have too many cards! Try deleting unused cards."
