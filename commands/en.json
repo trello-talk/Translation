@@ -9,6 +9,7 @@
     "link": "Link",
     "url": "URL",
     "due": "Due",
+    "cancel": "Cancel",
     "done": "Done",
     "none": "None",
     "page": "Page",
@@ -59,15 +60,18 @@
     "not_found_card": "Couldn't find that card.",
     "not_found_list": "Couldn't find that list.",
     "not_found_label": "Couldn't find that label.",
+    "not_found_webhook": "Couldn't find that webhook.",
     "not_found_board": "Couldn't find that board, try selecting a board first.",
     "no_list_label": "No labes to list.",
     "no_list_board": "No boards to list.",
     "no_list_list": "No lists to list.",
-    "no_list_card": "No cards to list."
+    "no_list_card": "No cards to list.",
+    "no_list_webhook": "No webhooks to list."
   },
   "interactions": {
     "no_server": "This command can only be used in a server.",
     "no_admin_perms": "This command requires the \"Manage Server\" permission.",
+    "no_trello_perms": "This command requires you to have the Trello management role or have the \"Manage Server\" permission.",
     "wrong_user": "❌ Only the person who executed this command can do this.",
     "delete_wrong_user": "❌ Only the person who executed this command can delete the response.",
     "prompt_wrong_user": "❌ Only the person who executed this command can interact with this prompt.",
@@ -226,5 +230,63 @@
     "role": "The Trello management role is set to **{{role}}**.",
     "no_role_set": "The Trello management role has not been set in this server.",
     "set_role": "Set the Trello management role to **{{role}}**."
+  },
+  "webhook": {
+    "unnamed": "Unnamed Webhook",
+    "new_wh_name": "Board Updates by Taco",
+    "list_all": "All Webhooks",
+    "list_active": "Active Webhooks",
+    "list_inactive": "Inactive Webhooks",
+    "list_unnamed": "Unnamed Webhooks",
+    "dwh_fail": "Couldn't fetch Discord webhooks! Make sure I have the `Manage Webhooks` permission.",
+    "dwh_fail_create": "Couldn't create a Discord webhook! Make sure I have the `Manage Webhooks` permission.",
+    "filter_policy": "Filter Policy",
+    "style": "Style",
+    "id": "ID",
+    "active": "Active",
+    "locale": "Locale",
+    "filtering": "Filtering",
+    "not_set": "Not Set",
+    "wh_owner": "Webhook Owner",
+    "dwh": "Discord Webhook",
+    "dwh_creator": "Discord Webhook Creator",
+    "filters_one": "{{count, number}} filtered action shown",
+    "filters_other": "{{count, number}} filtered actions shown",
+    "filter_card_one": "{{count, number}} card filtered",
+    "filter_card_other": "{{count, number}} cards filtered",
+    "filter_list_one": "{{count, number}} list filtered",
+    "filter_list_other": "{{count, number}} lists filtered",
+    "repair_header": "This webhook has the following issues:",
+    "trello_member_missing": "> • Couldn't find the user who created the webhook!",
+    "discord_webhook_missing": "> • Couldn't find the Discord webhook!",
+    "repair_footer": "You can fix these issues with `/webhook repair`",
+    "delete_confirm": "Are you sure you want to delete the **{{webhook}}** webhook?",
+    "delete_done": "Successfully deleted the webhook.",
+    "board_unauthorized": "You don't have permission to view this board!",
+    "board_invalid": "This board does not exist!",
+    "max": "You have reached your maximum webhooks for this server! You can increase this limit by becoming a patreon! (`/bot donate`)",
+    "select_webhook": "Select a Discord webhook to use, or choose to create a new one.",
+    "select_webhook_max": "There are too many webhooks on this channel! Choose an existing one to use.",
+    "create_new": "Create a new webhook",
+    "select_webhook_placeholder": "Select a webhook to use…",
+    "created_by": "Created by {{user}}",
+    "no_dwh_available": "Multiple other applications have too many webhooks in this channel. Consider removing Discord webhooks in this channel you no longer use.",
+    "wh_expire": "This webhook is unavailable since it exceeds your current webhook limit! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
+    "add_done": "Created a webhook for **{{board}}**.",
+    "add_wh_content": "This webhook for the Trello board **{{name}}** has started! Actions should be showing up shortly…",
+    "styles": {
+      "default": {
+        "name": "Default",
+        "description": "Regular messages, showing as much information as possible"
+      },
+      "small": {
+        "name": "Small",
+        "description": "Small version of default webhooks, only showing the descriptive title"
+      },
+      "compact": {
+        "name": "Compact",
+        "description": "Stacks multiple events into one embed, much like GitHub webhook commits"
+      }
+    }
   }
 }
