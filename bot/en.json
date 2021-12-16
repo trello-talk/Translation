@@ -1,0 +1,1067 @@
+{
+    "_": {
+        "name": "English",
+        "emoji": "us"
+    },
+    "reload": {
+        "reloading": "Reloading commands…",
+        "done": "Reloaded commands."
+    },
+    "reloadlocale": {
+        "reloading": "Reloading locales…",
+        "done": "Reloaded locales."
+    },
+    "reloadone": {
+        "invalid": "Invalid command!",
+        "file": "A file that had a specified command no longer exists!",
+        "done": "Reloaded {{&commands}}."
+    },
+    "reloadwebserver": {
+        "no": "There is no webserver on this instance!",
+        "reloading": "Restarting webserver…",
+        "done": "Webserver restarted."
+    },
+    "setmaxwebhooks": {
+        "set": "Set the maximum webhook limit for {{serverID}} to {{value}}.",
+        "invalid": "Invalid ID!"
+    },
+    "vote": {
+        "title": "You can vote, review or rate {{&username}} on these sites:",
+        "review": "review",
+        "rate": "rate"
+    },
+    "responses": {
+        "restart": "Restarting shard…",
+        "hangman": "I'm not a game bot.",
+        "eval": "Took {{ms}} ms."
+    },
+    "links": {
+        "auth": {
+            "start": "Authorize your Trello account with your Discord here:",
+            "fail": "The bot owner hasn't supplied an authorization link!"
+        },
+        "donate": {
+            "start": "Support development by donating!",
+            "fail": "The bot owner hasn't supplied any donation links!"
+        },
+        "github": "Here is the link to my source code:",
+        "invite": {
+            "start": "Here are the links to invite me to other servers!",
+            "fail": "The bot owner hasn't supplied any invite links!"
+        },
+        "serverinvite": {
+            "start": "Join the support server with any of these links!",
+            "fail": "The bot owner hasn't supplied any support server links!"
+        }
+    },
+    "help": {
+        "not_found": "The command `{{&command}}` was not found.",
+        "header": "{{&username}} (Running Modified [Faux](https://github.com/Snazzah/Faux?ref=tacobot) By Snazzah)\nSupport Server: {{&link}}\n\nDon't know where to start? [Click Here!](https://tacobot.app/guide?ref=bot)\nLike Taco? Support us via [Patreon](https://patreon.com/trello_talk) or by voting. (`T!vote`)",
+        "footer": "`{{&cleanPrefix}}help [command]` for more info."
+    },
+    "info": {
+        "title": "Information about {{&username}}",
+        "faux": "This bot is using a modified version of [Faux](https://github.com/Snazzah/Faux?ref=tacobot)."
+    },
+    "ping": {
+        "message": "Pong!",
+        "ws": "WS: {{ms}} ms",
+        "rest": "REST: {{ms}} ms"
+    },
+    "shardinfo": {
+        "title": "Information about {{&username}}'s Shards",
+        "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} guilds"
+    },
+    "locale": {
+        "start": "Available Locales",
+        "unset": "Not set",
+        "unset_l": "Unset locale",
+        "choose": "Type the number of the locale you want to set to.",
+        "user_locale": "User locale: {{&locale}}",
+        "server_locale": "Server locale: {{&locale}}",
+        "header": "`{{&prefix}}locale setuser [locale]` or `{{&prefix}}locale setserver [locale]` to set locale.",
+        "user_set": "Set the user locale to **{{&name}}**.",
+        "server_set": "Set the server's locale to **{{&name}}**.",
+        "user_unset": "Unset the user locale.",
+        "server_unset": "Unset the server's locale.",
+        "no_guild": "You are not running the command in a guild!"
+    },
+    "words": {
+        "url": "URL",
+        "active": "Active",
+        "usage": "Usage",
+        "cooldown": "Cooldown",
+        "locale": "Locale",
+        "color": {
+            "one": "Color",
+            "many": "Colors"
+        },
+        "alias": {
+            "one": "Alias",
+            "many": "Aliases"
+        },
+        "version": "Version",
+        "uptime": "Uptime",
+        "note": "Note",
+        "mem_usage": "Memory Usage",
+        "server": {
+            "one": "Server",
+            "many": "Servers"
+        },
+        "style": {
+            "one": "Style",
+            "many": "Styles"
+        },
+        "website": {
+            "one": "Website",
+            "many": "Websites"
+        },
+        "trello_board": {
+            "one": "Trello Board",
+            "many": "Trello Boards"
+        },
+        "donate": "Donate",
+        "id": "ID",
+        "initials": "Initials",
+        "info": "Information",
+        "bg_img": "Background Image",
+        "short_link": {
+            "one": "Short Link",
+            "many": "Short Links"
+        },
+        "count": {
+            "one": "Count",
+            "many": "Counts"
+        },
+        "board": {
+            "one": "Board",
+            "many": "Boards"
+        },
+        "page": {
+            "one": "Page",
+            "many": "Pages"
+        },
+        "item": {
+            "one": "Item",
+            "many": "Items"
+        },
+        "list": {
+            "one": "List",
+            "many": "Lists"
+        },
+        "link": {
+            "one": "Link",
+            "many": "Links"
+        },
+        "label": {
+            "one": "Label",
+            "many": "Labels"
+        },
+        "card": {
+            "one": "Card",
+            "many": "Cards"
+        },
+        "opt": {
+            "one": "Option",
+            "many": "Options"
+        },
+        "member_type": {
+            "one": "Member Type",
+            "many": "Member Types"
+        },
+        "checklist": {
+            "one": "Checklist",
+            "many": "Checklists"
+        },
+        "checklist_item": {
+            "one": "Checklist Item",
+            "many": "Checklist Items"
+        },
+        "attachment": {
+            "one": "Attachment",
+            "many": "Attachments"
+        },
+        "cmd": {
+            "one": "Command",
+            "many": "Commands"
+        },
+        "subcmd": {
+            "one": "Sub-command",
+            "many": "Sub-commands"
+        },
+        "sticker": {
+            "one": "Sticker",
+            "many": "Stickers"
+        },
+        "arch_list": {
+            "one": "Archived List",
+            "many": "Archived Lists"
+        },
+        "arch_card": {
+            "one": "Archived Card",
+            "many": "Archived Cards"
+        },
+        "arch_board": {
+            "one": "Archived Board",
+            "many": "Archived Boards"
+        },
+        "orgs": {
+            "one": "Organization",
+            "many": "Organizations"
+        },
+        "pref": {
+            "one": "Preference",
+            "many": "Preferences"
+        },
+        "user_pref": {
+            "one": "User Preference",
+            "many": "User Preferences"
+        },
+        "product": {
+            "one": "Product",
+            "many": "Products"
+        },
+        "member": {
+            "one": "Member",
+            "many": "Members"
+        },
+        "comment": {
+            "one": "Comment",
+            "many": "Comments"
+        },
+        "vote_lower": {
+            "one": "vote",
+            "many": "votes"
+        },
+        "prefix": {
+            "one": "Prefix",
+            "many": "Prefixes"
+        },
+        "webhook": {
+            "one": "Webhook",
+            "many": "Webhooks"
+        },
+        "name": {
+            "one": "Name",
+            "many": "Names"
+        },
+        "channel": {
+            "one": "Channel",
+            "many": "Channels"
+        },
+        "flag": {
+            "one": "Flag",
+            "many": "Flags"
+        },
+        "bio": "Bio",
+        "visibility": "Visibility",
+        "in_lower": "in",
+        "in": "In"
+    },
+    "trello": {
+        "colorblind": "Color Blind Mode",
+        "summ": "Send Summaries",
+        "marketing": "Marketing E-mails (opt-in)",
+        "locale": "Locale (on Trello)",
+        "card_covers": "Card Cover Images",
+        "hide_votes": "Hide Votes",
+        "self_join": "Allow Team Members to Edit and Join",
+        "template": "Is template?",
+        "pinned": "Pinned",
+        "subbed": "Watched",
+        "starred": "Starred",
+        "voting": "Voting",
+        "due": "Due",
+        "voted": "Voted",
+        "last_act": "Last Activity",
+        "add_rem_members": "Add/Remove Members",
+        "archived_lower": "archived",
+        "old_desc": "Old Description",
+        "new_desc": "New Description",
+        "prev_list": "Previous List",
+        "curr_list": "Current List",
+        "old_name": "Old Name",
+        "new_name": "New Name",
+        "old_comment": "Old Comment",
+        "new_comment": "New Comment",
+        "old_due": "Old Due Date",
+        "new_due": "New Due Date",
+        "one_chkitem_name": "Old Checklist Item Name",
+        "one_chklist_name": "Old Checklist Name",
+        "item_src": "Item Source",
+        "to_board": "To Board",
+        "from_board": "From Board",
+        "custom_field": "Custom Field",
+        "old_v": "Old Value",
+        "new_v": "New Value",
+        "cover_source": "Cover Source",
+        "products": {
+            "10": "💼 Trello Gold from Business Class",
+            "37": "⭐ Monthly Trello Gold",
+            "38": "🌟 Yearly Trello Gold"
+        },
+        "perm_levels": {
+            "public": "Public",
+            "org": "Team Visible",
+            "private": "Private"
+        },
+        "invite_perms": {
+            "members": "All Members",
+            "admins": "Admins"
+        },
+        "comment_perms": {
+            "disabled": "Disabled",
+            "members": "All Members",
+            "org": "Organization Members",
+            "public": "Any Trello User"
+        },
+        "vote_perms": {
+            "disabled": "Disabled",
+            "members": "All Members",
+            "org": "Organization Members",
+            "observers": "Observers",
+            "public": "Any Trello User"
+        },
+        "card_aging": "Card Aging",
+        "card_age": {
+            "regular": "Regular",
+            "pirate": "Pirate"
+        },
+        "label_color": {
+            "green": "Green",
+            "yellow": "Yellow",
+            "red": "Red",
+            "orange": "Orange",
+            "lime": "Lime Green",
+            "purple": "Purple",
+            "blue": "Blue",
+            "sky": "Sky Blue",
+            "pink": "Pink",
+            "black": "Black",
+            "none": "No Color"
+        },
+        "member_type": {
+            "normal": "Normal",
+            "admin": "Admin",
+            "observer": "Observer"
+        }
+    },
+    "webhook_cmd": {
+        "header": "Use `{{&cleanPrefix}}webhook <webhookID>` to view a webhook and `{{&cleanPrefix}}editwebhook <webhookID>` to edit it.",
+        "none": "There are no webhooks on this server connected to Trello.",
+        "invalid": "Invalid webhook ID!",
+        "not_found": "That webhook does not exist!",
+        "model_filter": "List/Card Filter Mode",
+        "whitelist": "Whitelist",
+        "blacklist": "Blacklist",
+        "filtered_list": {
+            "one": "Filtered List",
+            "many": "Filtered Lists"
+        },
+        "filtered_card": {
+            "one": "Filtered Card",
+            "many": "Filtered Cards"
+        },
+        "allowed_actions": {
+            "one": "Allowed Action",
+            "many": "Allowed Actions"
+        },
+        "dwh": {
+            "one": "Discord Webhook",
+            "many": "Discord Webhooks"
+        },
+        "discord_webhook": "Discord Webhook",
+        "trello_webhook": "Trello Webhook",
+        "owned_by": "Owned By",
+        "dwh_missing": "The Discord webhook connected to this webhook is missing!",
+        "twh_missing": "The user who setup the webhook is missing, this may stop the webhook from sending!",
+        "try_repair": "You can repair this issue with `{{&cleanPrefix}}editwebhook {{&id}} repair`",
+        "add_header": "How would you want your webhook to be set up?",
+        "menu": {
+            "add": "Add webhook",
+            "exist": "Use existing webhook",
+            "link": "Use webhook link"
+        },
+        "edit_menu": {
+            "on": "Activate",
+            "off": "Deactivate",
+            "filter": "Edit filters",
+            "delete": "Delete webhook",
+            "repair": "Repair webhook",
+            "locale": "Change locale",
+            "lists": "Change filtered lists",
+            "cards": "Change filtered cards",
+            "wlist": "Change filter to whitelist",
+            "blist": "Change filter to blacklist",
+            "style": "Change style"
+        },
+        "styles": {
+            "default": {
+                "name": "Default",
+                "description": "Regular messages, showing as much information as possible"
+            },
+            "small": {
+                "name": "Small",
+                "description": "Small version of default webhooks, only showing the descriptive title"
+            },
+            "compact": {
+                "name": "Compact",
+                "description": "Stacks multiple events into one embed, much like GitHub webhook commits"
+            }
+        },
+        "no_channels": "No channels have been found that allows me to manage webhooks.",
+        "choose_channel": "Choose which channel that the webhook will post in.",
+        "couldnt_create": "I could not create the webhook! This is probably due to some sudden permission change in the process!",
+        "created": "Created the webhook for \"{{&name}}\".",
+        "create_confirm": "This webhook for the Trello board \"{{&name}}\" has started! Actions should be showing up shortly…",
+        "no_dwh": "You have no Discord webhooks to link to!",
+        "choose_existwh": "Choose which webhook to use.",
+        "input_link": "Paste the link of the webhook you want to use.",
+        "no_link": "I couldn't find a webhook URL in the input!",
+        "no_server_link": "That webhook is not on this server!",
+        "wywtd": "Choose what you want to do with this webhook.",
+        "wh_off": "The webhook has been turned off.",
+        "wh_on": "The webhook has been turned on.",
+        "confirm_delete": "Are you sure you want to delete this webhook?",
+        "deleted": "Deleted the webhook.",
+        "filter_update": "Updated the webhook's filters.",
+        "repair_dwh_header": "The Discord webhook is missing. How do you want to create a new one?",
+        "repaired_wh": "Repaired Webhook",
+        "repaired": "Any issues with the webhook have been repaired.",
+        "to_wlist": "Changed filtering policy to whitelist.",
+        "to_blist": "Changed filtering policy to blacklist.",
+        "lists_updated": "The filtered lists were saved.",
+        "cards_updated": "The filtered cards were saved.",
+        "choose_lists": "Choose which lists will be filtered. Choosing no lists will disable list filtering.",
+        "choose_cards": "Choose which cards will be filtered. Choosing no cards will disable card filtering.",
+        "no_access": "Either this board no longer exists or you do not have access to it!",
+        "locale_unset": "Unset the webhook locale.",
+        "locale_set": "Set the webhook locale to **{{&name}}**.",
+        "choose_style": "Type the number of the style you want to set the webhook to.",
+        "style_set": "Set the webhook style to **{{&name}}**.",
+        "max_wh": "You have reached your maximum webhooks for this server! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
+        "wh_expire": "This webhook is unavailable since it exceeds your current webhook limit! You can increase this limit by becoming a patreon! (`{{&cleanPrefix}}donate`)",
+        "unknown": "unknown"
+    },
+    "cooldown_msg": "This command needs to cool down! *({{seconds}})*",
+    "bad_args": "Not enough arguments!",
+    "deprecated": "This command is no longer available!",
+    "use_this": "Use this command instead:",
+    "command_permissions": {
+        "attach": "I need the permission `Attach Files` to use this command!",
+        "embed": "I need the permission `Embed Links` to use this command!",
+        "emoji": "I need the permission `Use External Emojis` to use this command!",
+        "trelloRole": "This command requires you to be the server owner or have a role named `Trello`!",
+        "elevated": "Only the elevated users of the bot can use this command!",
+        "auth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
+        "selectedBoard": "There is no board selected!\nSelect a board with the `{{&cleanPrefix}}switch` command!",
+        "discordAuth": "You haven't authorized your Trello account with Discord!\nAuthorize with the `{{&cleanPrefix}}auth` command!",
+        "webhooks": "I need the permission `Manage Webhooks` to use this command! **This permission must be enabled on a role rather than a channel!**",
+        "userData": "Your settings are not in the database!",
+        "guild": "This command must be ran in a guild!"
+    },
+    "format": {
+        "second": {
+            "one": "{{seconds}} second",
+            "many": "{{seconds}} seconds"
+        }
+    },
+    "categories": {
+        "general": "General",
+        "dev": "Developer",
+        "user": "User Management",
+        "view": "Viewing",
+        "webhook": "Webhooks",
+        "edit": "Editing",
+        "hidden": "Hidden",
+        "misc": "Miscellaneous"
+    },
+    "commands": {
+        "auth": {
+            "description": "Get the auth link to connect your Discord account to your Trello account."
+        },
+        "donate": {
+            "description": "Get the donation links for the developer."
+        },
+        "github": {
+            "description": "Sends the bot's open source link."
+        },
+        "invite": {
+            "description": "Sends the bot invite link."
+        },
+        "serverinvite": {
+            "description": "Get the invite for the support server."
+        },
+        "asynceval": {
+            "description": "Evaluates code asynchronously.",
+            "note": "Due to the added async IIFE wrapper in this command, it is necessary to use the return statement to return a result.\ne.g. `{{&cleanPrefix}}aeval return 1`",
+            "usage": "<code>"
+        },
+        "eval": {
+            "description": "Evaluates code.",
+            "usage": "<code>"
+        },
+        "exec": {
+            "description": "Utilizes `child_process.exec`.",
+            "usage": "<command> …"
+        },
+        "reload": {
+            "description": "Reload commands."
+        },
+        "reloadlocale": {
+            "description": "Reload locale files."
+        },
+        "reloadone": {
+            "description": "Reload singular commands.",
+            "usage": "<commandName> [commandName] …"
+        },
+        "reloadwebserver": {
+            "description": "Restarts the webserver."
+        },
+        "restart": {
+            "description": "Restarts the bot."
+        },
+        "hangman": {
+            "description": "???"
+        },
+        "help": {
+            "description": "Shows the help message and gives information on commands.",
+            "usage": "[command]"
+        },
+        "info": {
+            "description": "Get information about the bot."
+        },
+        "ping": {
+            "description": "Pong!"
+        },
+        "locale": {
+            "description": "Lets you set the locale for you or the server. Run with no arguments for a list of locales.",
+            "usage": "[\"userset\"|\"serverset\"] [locale]"
+        },
+        "prefix": {
+            "description": "Lets you set the prefixes for you or the server.",
+            "usage": "[\"set\"|\"add\"|\"remove\"] [prefix]"
+        },
+        "shardinfo": {
+            "description": "Gives the stats for every shard."
+        },
+        "me": {
+            "description": "View information about your Trello account."
+        },
+        "switch": {
+            "description": "Selects a board to use for other commands. Use the `{{&cleanPrefix}}boards` command to see what boards you can select.",
+            "usage": "[boardID|boardName]"
+        },
+        "boards": {
+            "description": "Lists all of the boards you can manage.",
+            "usage": "[page]"
+        },
+        "board": {
+            "description": "Gets information on the current board."
+        },
+        "lists": {
+            "description": "Lists all of the open lists on the current board. You can see the list archive with `{{&cleanPrefix}}listarchive`.",
+            "usage": "[page]"
+        },
+        "list": {
+            "description": "Lists all cards in that list.",
+            "usage": "[listName|listID] [page]"
+        },
+        "listarchive": {
+            "description": "Lists all the archived lists in the current board.",
+            "usage": "[page]"
+        },
+        "card": {
+            "description": "Gets information about a specific card.",
+            "usage": "[cardName|cardID]"
+        },
+        "cardarchive": {
+            "description": "Lists all the archived cards in the current board.",
+            "usage": "[page]"
+        },
+        "labels": {
+            "description": "Lists all of the labels on the current board.",
+            "usage": "[page]"
+        },
+        "label": {
+            "description": "Shows information on a label on the current board.",
+            "usage": "[labelName|labelID]"
+        },
+        "editlabel": {
+            "description": "Edit a label's properties. Check the note for sub-commands and usages.",
+            "usage": "[labelName|labelID] [subcommand] …",
+            "note": "`name [newName]` - Rename the label\n`color [newColor]` - Changes the label's color"
+        },
+        "deletelabel": {
+            "description": "Deletes a label.",
+            "usage": "[labelName|labelID]"
+        },
+        "watchcard": {
+            "description": "Toggle watching a card. Watched cards will give you update notifications on [Trello](https://trello.com/).",
+            "usage": "[cardName|cardID]"
+        },
+        "watchlist": {
+            "description": "Toggle watching a list. Watched lists will give you update notifications on [Trello](https://trello.com/).",
+            "usage": "[listName|listID]"
+        },
+        "watch": {
+            "description": "Toggle watching a board. If no board is defined, the current board is used. Watched boards will give you update notifications on [Trello](https://trello.com/).",
+            "usage": "[boardName|boardID]"
+        },
+        "star": {
+            "description": "Toggles starring a board. If no board is defined, the current board is used. Starred boards will show up at the top of your boards list on [Trello](https://trello.com/).",
+            "usage": "[boardName|boardID]"
+        },
+        "editlist": {
+            "description": "Edit a list's properties. Check the note for sub-commands and usages.",
+            "usage": "[listName|listID] [subcommand] …",
+            "note": "`name [newName]` - Rename the list\n`archive`, `unarchive` - Toggles the list archive"
+        },
+        "editcard": {
+            "description": "Edit a card's properties. Check the note for sub-commands and usages.",
+            "usage": "[cardName|cardID] [subcommand] …",
+            "note": "`name [newName]` - Rename the card\n`archive`, `unarchive` - Toggles the card archive\n`desc [newDescription]` - Sets the card's description\n`removedesc` - Removes the card's description\n`label` - Manage card labels\n`members` - Manage card members\n`move`, `mv` - Moves the card to another list\n`due` - Set the card due date\n`duedone` - Toggles the card due date's completion\n`removedue` - Removes the card's due date\n`attach` - Creates an attachment on the card\n`attachments`, `atch` - Manage attachments"
+        },
+        "editboard": {
+            "description": "Edit the current board's properties. Check the note for sub-commands and usages.",
+            "usage": "[subcommand] …",
+            "note": "`name [newName]` - Rename the board (board admin)\n`archive`, `unarchive` - Toggles the board archive (board admin)\n`desc [newDescription]` - Sets the board's description\n`removedesc` - Removes the board's description\n`commentperms` - Change commenting permissions (board admin)\n`voteperms` - Change voting permissions (board admin)\n`inviteperms` - Change invitation permissions (board admin)"
+        },
+        "attachment": {
+            "description": "Shows an attachment that is on a card.",
+            "usage": "[cardName|cardID] [attachmentName|attachmentID]"
+        },
+        "addcard": {
+            "description": "Creates a card.",
+            "usage": "[listName|listID] [name]"
+        },
+        "deletecard": {
+            "description": "Deletes a card.",
+            "usage": "[cardName|cardID]"
+        },
+        "addlist": {
+            "description": "Creates a list on the current board.",
+            "usage": "[name]"
+        },
+        "addlabel": {
+            "description": "Creates a label on the current board.",
+            "usage": "[name]"
+        },
+        "comment": {
+            "description": "Comment on a card in the current board.",
+            "usage": "[cardName|cardID] [comment]"
+        },
+        "webhooks": {
+            "description": "Lists the webhooks on your server.",
+            "usage": "[page]"
+        },
+        "webhook": {
+            "description": "Get information about a specific webhook.",
+            "usage": "<webhookID>"
+        },
+        "addwebhook": {
+            "description": "Creates a webhook on your server.",
+            "usage": "[boardID|boardName]"
+        },
+        "editwebhook": {
+            "description": "Edits a webhook on your server.  Check the note for sub-commands and usages.",
+            "usage": "<webhookID> [subcommand]",
+            "note": "`activate`, `deactivate` - Activates or deactivates the webhook\n`filters` - Edit the filters (formerly \"Webhook Bits\") for this webhook\n`locale [locale]` - Sets the locale for the webhook\n`repair` - Repairs any issues with the webhook\n`delete` - Deletes the webhook\n`policy` - Changes the filter policy of the webhook (whitelist/blacklist)\n`style` - Change the style of the webhook\n`lists` - Edit filtered lists\n`cards` - Edit filtered cards"
+        },
+        "remwebhook": {
+            "description": "Removes a webhook from your server.",
+            "usage": "<webhookID>"
+        },
+        "clearauth": {
+            "description": "Clears your Trello authorization. Do not run this unless you really need to."
+        },
+        "cleardata": {
+            "description": "Removes your user data from Taco."
+        },
+        "setmaxwebhooks": {
+            "description": "Sets the limit of webhooks for that server.",
+            "usage": "<serverID> [limit]"
+        },
+        "vote": {
+            "description": "Shows the links to vote for Taco on."
+        },
+        "toggleserver": {
+            "description": "Toggles server blacklist.",
+            "usage": "<serverID>"
+        },
+        "toggleuser": {
+            "description": "Toggles user blacklist",
+            "usage": "<userID>"
+        }
+    },
+    "error": "An error occurred while processing that command!",
+    "trello_response": {
+        "unauthorized": "The last token used has been invalidated or revoked! Reauthorize with the `{{&cleanPrefix}}auth` command!",
+        "ratelimit": "Too many requests are being sent! Try again later!",
+        "internal": "An internal server error has occurred on Trello's end! Try again later!",
+        "aborted": "Trello took too long to send a response! Try again later!"
+    },
+    "prompt": {
+        "list": "List Prompt",
+        "choose": "Type the number of the item you want to use.",
+        "input": "Type the message you want to input.",
+        "cancel": "Typing \"cancel\" will close this prompt.",
+        "timeout": "Your last prompt was timed out.",
+        "canceled": "Your last prompt was canceled.",
+        "no_search": "No results came up with that search.",
+        "cancel_input": "Typing \"{{&cancelPrompt}}\" will cancel the input.",
+        "input_canceled": "Your last input was canceled.",
+        "confirm": "Are you sure you want to do this?",
+        "no_confirm": "Confirmation canceled.",
+        "cancel_confirm": "Type `yes` to confirm. Any other message will cancel the confirmation.",
+        "select": "Type the number of the item to toggle its value.",
+        "async_select": "Type the number of the item to toggle its value. **Changes will be made when a value is toggled.**",
+        "select_cancel": "Type \"save\" to save the selection, otherwise type \"cancel\" to exit.",
+        "select_canceled": "Your last prompt was canceled. All changes have been lost.",
+        "select_timeout": "Your last prompt was timed out. All changes have been lost."
+    },
+    "boards": {
+        "none": "You are not assigned to any boards. You can create one on <https://trello.com/>.",
+        "header": "Use `{{&cleanPrefix}}switch <boardID|boardName>` to switch between boards.",
+        "switch": "Switched to \"{{&name}}\" (`{{&id}}`).",
+        "gone": "This board no longer exists! Switch to another one with `{{&cleanPrefix}}switch`!",
+        "choose": "Type the number of the board you want to use.",
+        "wywtd": "Choose what you want to do with this board.",
+        "menu": {
+            "name": "Edit board name",
+            "archive_on": "Close board",
+            "archive_off": "Open board",
+            "desc": "Edit board description",
+            "remove_desc": "Remove board description",
+            "sub_on": "Watch this board",
+            "sub_off": "Stop watching this board",
+            "comment": "Change comment permissions ({{&value}})",
+            "vote": "Change voting permissions ({{&value}})",
+            "invite": "Change add/remove member permissions ({{&value}})"
+        },
+        "set_name": "Renamed board from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the board to.",
+        "archived": "Archived board \"{{&name}}\".",
+        "unarchived": "Removed board \"{{&name}}\" from the archive.",
+        "set_desc": "Set the board description for \"{{&name}}\".",
+        "input_desc": "Type the new description for the board.",
+        "removed_desc": "Removed the board description for \"{{&name}}\".",
+        "need_admin": "You need administrator permissions on the board!",
+        "set_comment_perms": "Set commenting permissions to {{&value}}.",
+        "set_invite_perms": "Set invite permissions to {{&value}}.",
+        "set_vote_perms": "Set voting permissions to {{&value}}."
+    },
+    "attachments": {
+        "none": "This card has no attachments.",
+        "choose": "Type the number of the attachment you want to use.",
+        "wywtd": "Choose what you want to do with this attachment.",
+        "is_cover": "Used as Card Cover",
+        "set_name": "Renamed attachment from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the attachment to.",
+        "remove_confirm": "Are you sure you want to delete \"{{&name}}\"?",
+        "removed": "Deleted attachment \"{{&name}}\".",
+        "set_cover": "Set attachment \"{{&attachment}}\" as a card cover for \"{{&card}}\".",
+        "menu": {
+            "name": "Edit attachment name",
+            "cover": "Set this attachment as the card cover",
+            "delete": "Delete this attachment"
+        }
+    },
+    "cards": {
+        "none": "This board has no cards.",
+        "arch_none": "This board has no archived cards.",
+        "arch_header": "Use `{{&cleanPrefix}}editcard <listID|listName> unarchive` to open a card.",
+        "error": "I could not get the card's data! Unless someone deleted before the request, this might be an error on Trello's end!",
+        "choose": "Type the number of the card you want to use.",
+        "wywtd": "Choose what you want to do with this card.",
+        "menu": {
+            "name": "Edit card name",
+            "archive_on": "Archive card",
+            "archive_off": "Remove card from archive",
+            "desc": "Edit card description",
+            "remove_desc": "Remove card description",
+            "sub_on": "Watch this card",
+            "sub_off": "Stop watching this card",
+            "due": "Set due date",
+            "remove_due": "Remove due date",
+            "due_on": "Mark due date as complete",
+            "due_off": "Mark due date as incomplete",
+            "attach": "Create attachment",
+            "move": "Move card to another list",
+            "label": "Manage labels",
+            "member": "Manage member assignment",
+            "attachments": "Edit attachments"
+        },
+        "set_name": "Renamed card from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the card to.",
+        "archived": "Archived card \"{{&name}}\".",
+        "unarchived": "Removed card \"{{&name}}\" from the archive.",
+        "set_desc": "Set the card description for \"{{&name}}\".",
+        "input_desc": "Type the new description for the card.",
+        "removed_desc": "Removed the card description for \"{{&name}}\".",
+        "input_new": "Type the name of the card that you want to add.",
+        "created": "Created card \"{{&name}}\". (`{{id}}`)",
+        "remove_confirm": "Are you sure you want to delete \"{{&name}}\"? (`{{id}}`)",
+        "removed": "Deleted card \"{{&name}}\". (`{{id}}`)",
+        "removed_due": "Removed the due date for card \"{{&name}}\".",
+        "due_on": "Marked due date as complete for card \"{{&name}}\".",
+        "due_off": "Marked due date as incomplete for card \"{{&name}}\".",
+        "input_comment": "Type the message you want to comment on the card.",
+        "same_list_move": "This card is already in this list!",
+        "move": "Moved \"{{&card}}\" to list \"{{&list}}\".",
+        "commented": "Created a comment on \"{{&name}}\".",
+        "input_due": "Type the due date to set the card on.",
+        "bad_due": "I could not recognize that date. Try something like \"Tomorrow at 9 AM\" or \"Next Friday\".",
+        "set_due": "Set due date to {{&date}}.",
+        "input_attach": "Paste the URL of the attachment you want to add to the card. You can also add an attachment to your message.",
+        "bad_attach": "Invalid attachment URL!",
+        "add_attach": "Created an attachment on \"{{&name}}\".",
+        "labels_updated": "Updated the labels on \"{{&name}}\".",
+        "members_updated": "Updated the member assignment on \"{{&name}}\"."
+    },
+    "lists": {
+        "none": "This board has no lists.",
+        "list_none": "This list has no cards.",
+        "arch_none": "This board has no archived lists.",
+        "header": "Use `{{&cleanPrefix}}list <listID|listName>` to view a list.",
+        "arch_header": "Use `{{&cleanPrefix}}editlist <listID|listName> unarchive` to open a list.",
+        "list_header": "Use `{{&cleanPrefix}}card <cardID|cardName>` to get information on a card.",
+        "choose": "Type the number of the list you want to use.",
+        "wywtd": "Choose what you want to do with this list.",
+        "menu": {
+            "name": "Edit list name",
+            "archive_on": "Archive list",
+            "archive_off": "Remove list from archive",
+            "sub_on": "Watch this list",
+            "sub_off": "Stop watching this list"
+        },
+        "set_name": "Renamed list from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the list to.",
+        "archived": "Archived list \"{{&name}}\".",
+        "unarchived": "Removed list \"{{&name}}\" from the archive.",
+        "input_new": "Type the name of the list that you want to add.",
+        "created": "Created list \"{{&name}}\". (`{{id}}`)"
+    },
+    "labels": {
+        "none": "This board has no labels.",
+        "header": "Use `{{&cleanPrefix}}label <labelID|labelName>` to view a label.",
+        "choose": "Type the number of the label you want to use.",
+        "wywtd": "Choose what you want to do with this label.",
+        "menu": {
+            "name": "Rename label",
+            "color": "Set label color"
+        },
+        "set_name": "Renamed label from \"{{&old}}\" to \"{{&new}}\".",
+        "input_name": "Type the name you want to rename the label to.",
+        "set_color": "Set color of label \"{{&label}}\" to {{&color}}.",
+        "choose_color": "Type the number of the color you want to set the label to.",
+        "remove_confirm": "Are you sure you want to delete \"{{&name}}\"? (`{{id}}`)\n**This removes the entire label, not just from one card.**",
+        "removed": "Deleted label \"{{&name}}\". (`{{id}}`)",
+        "input_new": "Type the name of the label that you want to add.",
+        "created": "Created label \"{{&name}}\". (`{{id}}`)"
+    },
+    "prefix": {
+        "server": "Server prefix",
+        "can_add": {
+            "zero": "You can't add any more prefixes.",
+            "one": "You can add {{count}} more prefix.",
+            "many": "You can add {{count}} more prefixes."
+        },
+        "no_arg_server": "Provide the prefix you want to set to the server!",
+        "no_arg": "Provide the prefix you want to add!",
+        "footer": "Prefixes with the 🔒 icon cannot be removed.",
+        "set_server": "Set the server's prefix to `{{&prefix}}`.",
+        "added": "Added `{{&prefix}}` as a prefix.",
+        "removed": "Removed `{{&prefix}}` as a prefix.",
+        "choose": "Type the number of the prefix you want to delete.",
+        "char_limit": "Prefixes can not be more than 32 characters!",
+        "limit": "You have too many prefixes! Remove at least one to be able to add any more!",
+        "mention": "You cannot have mentions in a prefix!",
+        "already": "That prefix already exists!",
+        "none": "You have no prefixes to remove!"
+    },
+    "user_mgmt": {
+        "sub_card": "Now watching card \"{{&name}}\". (`{{id}}`)",
+        "unsub_card": "No longer watching card \"{{&name}}\". (`{{id}}`)",
+        "sub_list": "Now watching list \"{{&name}}\". (`{{id}}`)",
+        "unsub_list": "No longer watching list \"{{&name}}\". (`{{id}}`)",
+        "sub_board": "Now watching board \"{{&name}}\". (`{{id}}`)",
+        "unsub_board": "No longer watching board \"{{&name}}\". (`{{id}}`)",
+        "star_board": "Created star for board \"{{&name}}\". (`{{id}}`)",
+        "unstar_board": "Removed star for board \"{{&name}}\". (`{{id}}`)",
+        "star_error": "The board's star was not found! Try again later!",
+        "clearauth_confirm": "Are you sure you want to clear your authorization? The following will happen:\n- Your Trello token will be invalidated.\n- Any webhooks you created will no longer work and will be required to be repaired.",
+        "clearauth": "Your authorization has been cleared.",
+        "cleardata_confirm": "Are you sure you want to remove your data? The following will happen:\n- Your prefixes and locale settings will be removed.\n- Your authorization credentials will be removed.\n- Your Trello token will be invalidated.\n- Any webhooks you created will no longer work and will be required to be repaired.",
+        "cleardata": "Your user data has been cleared."
+    },
+    "and_more": "And {{count}} more…",
+    "webhooks": {
+        "commented": "{{&member}} commented on \"{{&card}}\"",
+        "update_comment": "{{&member}} updated their comment on \"{{&card}}\"",
+        "delete_comment": "{{&member}} had their comment deleted on \"{{&card}}\"",
+        "add_card_desc": "{{&member}} added a description to card \"{{&card}}\"",
+        "edit_card_desc": "{{&member}} changed the description for card \"{{&card}}\"",
+        "rem_card_desc": "{{&member}} removed the description for card \"{{&card}}\"",
+        "move_card_in_list": "{{&member}} moved \"{{&card}}\" to a different position in the list",
+        "move_card": "{{&member}} moved card \"{{&card}}\" to list \"{{&list}}\"",
+        "rename_card": "{{&member}} renamed card \"{{&oldName}}\" to \"{{&card}}\"",
+        "due_on": "{{&member}} completed due date on card \"{{&card}}\"",
+        "due_off": "{{&member}} marked due date as incomplete on card \"{{&card}}\"",
+        "due_change": "{{&member}} changed the due date on card \"{{&card}}\"",
+        "due_add": "{{&member}} added a due date on card \"{{&card}}\"",
+        "due_remove": "{{&member}} removed the due date from card \"{{&card}}\"",
+        "archive_card": "{{&member}} archived card \"{{&card}}\"",
+        "unarchive_card": "{{&member}} removed card \"{{&card}}\" from the archive",
+        "create_card": "{{&member}} created card \"{{&card}}\"",
+        "create_card_email": "{{&member}} created card \"{{&card}}\" by e-mail",
+        "delete_card": "{{&member}} deleted card {{&cardID}}",
+        "vote_card": "{{&member}} voted on card \"{{&card}}\"",
+        "unvote_card": "{{&member}} removed their vote on card \"{{&card}}\"",
+        "checkitem_state_on": "{{&member}} completed \"{{&checklistItem}}\" on card \"{{&card}}\"",
+        "checkitem_state_off": "{{&member}} marked \"{{&checklistItem}}\" as incomplete on card \"{{&card}}\"",
+        "checkitem_create": "{{&member}} created a checklist item on \"{{&card}}\"",
+        "checkitem_delete": "{{&member}} removed a checklist item from \"{{&card}}\"",
+        "checkitem_tocard": "{{&member}} converted checklist item \"{{&card}}\" into a card",
+        "checkitem_move": "{{&member}} moved a checklist item in \"{{&card}}\" to a different position",
+        "checkitem_rename": "{{&member}} renamed a checklist item in card \"{{&card}}\"",
+        "checklist_move": "{{&member}} moved a checklist in \"{{&card}}\" to a different position",
+        "checklist_rename": "{{&member}} renamed a checklist in card \"{{&card}}\"",
+        "checklist_create": "{{&member}} created checklist \"{{&checklist}}\" on \"{{&card}}\"",
+        "checklist_delete": "{{&member}} removed checklist \"{{&checklist}}\" from \"{{&card}}\"",
+        "create_list": "{{&member}} created list \"{{&list}}\"",
+        "archive_list": "{{&member}} archived list \"{{&list}}\"",
+        "unarchive_list": "{{&member}} removed list \"{{&list}}\" from the archive",
+        "list_rename": "{{&member}} renamed list \"{{&oldName}}\" to \"{{&list}}\"",
+        "list_move": "{{&member}} moved list \"{{&list}}\" to a different position",
+        "create_label": "{{&member}} created label \"{{&label}}\"",
+        "label_rename": "{{&member}} renamed label \"{{&oldName}}\" to \"{{&label}}\"",
+        "label_recolor": "{{&member}} changed label \"{{&label}}\" color from {{&oldColor}} to {{&color}}",
+        "delete_label": "{{&member}} deleted label {{&labelID}}",
+        "attach_card": "{{&member}} attached \"{{&attachment}}\" to card \"{{&card}}\"",
+        "unattach_card": "{{&member}} removed attachment \"{{&attachment}}\" from card \"{{&card}}\"",
+        "card_add_label": "{{&member}} added label \"{{&label}}\" to card \"{{&card}}\"",
+        "card_remove_label": "{{&member}} removed label \"{{&label}}\" from card \"{{&card}}\"",
+        "card_add_member": "{{&member}} added {{&member2}} to card \"{{&card}}\"",
+        "card_remove_member": "{{&member}} removed {{&member2}} from card \"{{&card}}\"",
+        "card_add_self": "{{&member}} added themselves to card \"{{&card}}\"",
+        "card_remove_self": "{{&member}} removed themselves from card \"{{&card}}\"",
+        "board_add_member": "{{&member}} added {{&member2}} to the board",
+        "board_remove_member": "{{&member}} removed {{&member2}} from the board",
+        "board_left": "{{&member}} left the board",
+        "board_join": "{{&member}} joined the board",
+        "board_to_admin": "{{&member}} made {{&member2}} an admin of the board",
+        "board_to_normal": "{{&member}} made {{&member2}} a regular member of the board",
+        "board_to_normal_self": "{{&member}} made themselves a regular member of the board",
+        "board_rename": "{{&member}} renamed board from \"{{&oldName}}\" to \"{{&board}}\"",
+        "add_board_desc": "{{&member}} added a description to the board",
+        "edit_board_desc": "{{&member}} changed the description of the board",
+        "rem_board_desc": "{{&member}} removed the description from the board",
+        "archive_board": "{{&member}} closed the board",
+        "unarchive_board": "{{&member}} opened the board",
+        "board_set_invite_perms": "{{&member}} set invitation permissions from {{&oldPerm}} to {{&perm}}",
+        "board_set_comment_perms": "{{&member}} set commenting permissions from {{&oldPerm}} to {{&perm}}",
+        "board_set_vote_perms": "{{&member}} set voting permissions from {{&oldPerm}} to {{&perm}}",
+        "board_set_perm_levels": "{{&member}} set visibility from {{&oldPerm}} to {{&perm}}",
+        "move_out_list": "{{&member}} transferred list \"{{&list}}\" to another board",
+        "move_out_card": "{{&member}} transferred card \"{{&card}}\" to another board",
+        "move_in_list": "{{&member}} transferred list \"{{&list}}\" from another board",
+        "move_in_card": "{{&member}} transferred card \"{{&card}}\" from another board",
+        "copy_checklist": "{{&member}} copied checklist contents from \"{{&sourceChecklist}}\" to \"{{&checklist}}\"",
+        "copy_card": "{{&member}} copied card contents from \"{{&sourceCard}}\" to \"{{&card}}\"",
+        "customfield_create": "{{&member}} created custom field \"{{&customField}}\"",
+        "customfield_delete": "{{&member}} deleted custom field \"{{&customField}}\"",
+        "customfield_rename": "{{&member}} renamed custom field from \"{{&oldName}}\" to \"{{&customField}}\"",
+        "customfield_carddisplay_true": "{{&member}} turned on card display for custom field \"{{&customField}}\"",
+        "customfield_carddisplay_false": "{{&member}} turned off card display for custom field \"{{&customField}}\"",
+        "customfielditem_checkbox_false": "{{&member}} unchecked custom field \"{{&customField}}\" on card \"{{&card}}\"",
+        "customfielditem_checkbox_true": "{{&member}} checked custom field \"{{&customField}}\" on card \"{{&card}}\"",
+        "customfielditem_remove": "{{&member}} removed custom field \"{{&customField}}\" from card \"{{&card}}\"",
+        "customfielditem_update": "{{&member}} updated custom field \"{{&customField}}\" on card \"{{&card}}\""
+    },
+    "webhooks_extended": {
+        "delete_card": "{{&member}} deleted card {{&cardID}} from list \"{{&list}}\""
+    },
+    "webhook_filters": {
+        "ADD_ATTACHMENT_TO_CARD": "Attachment additions to cards",
+        "ADD_CHECKLIST_TO_CARD": "Checklist additions to cards",
+        "ADD_LABEL_TO_CARD": "Label additions to cards",
+        "ADD_MEMBER_TO_BOARD": "Member additions to board",
+        "ADD_MEMBER_TO_CARD": "Member additions to cards",
+        "COMMENT_CARD": "New comments on cards",
+        "CONVERT_TO_CARD_FROM_CHECK_ITEM": "Checklist items converted into cards",
+        "COPY_CARD": "Card duplications",
+        "COPY_CHECKLIST": "Checklist duplications",
+        "CREATE_LABEL": "Label creations",
+        "CREATE_CARD": "Card creations",
+        "CREATE_LIST": "List creations",
+        "DELETE_ATTACHMENT_FROM_CARD": "Attachments removals from cards",
+        "DELETE_CARD": "Card deletions",
+        "DELETE_CHECK_ITEM": "Checklist item deletions",
+        "DELETE_LABEL": "Label deletions",
+        "EMAIL_CARD": "Card creations by e-mail",
+        "MAKE_ADMIN_OF_BOARD": "Board members promoted to admin",
+        "MAKE_NORMAL_MEMBER_OF_BOARD": "Board admins demoted to normal member",
+        "MOVE_CARD_FROM_BOARD": "Card transfers out of the board",
+        "MOVE_CARD_TO_BOARD": "Card transfers into the board",
+        "MOVE_LIST_FROM_BOARD": "List transfers out of the board",
+        "MOVE_LIST_TO_BOARD": "List transfers into the board",
+        "REMOVE_CHECKLIST_FROM_CARD": "Checklist removals from cards",
+        "REMOVE_LABEL_FROM_CARD": "Label removals from cards",
+        "REMOVE_MEMBER_FROM_BOARD": "Member removals from the board",
+        "REMOVE_MEMBER_FROM_CARD": "Member removals from cards",
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Checklist item state updates (checked/unchecked)",
+        "VOTE_ON_CARD": "Card votes",
+        "CREATE_CHECK_ITEM": "Checklist item creations",
+        "DELETE_COMMENT": "Comment deletions",
+        "UPDATE_COMMENT": "Comment updates",
+        "UPDATE_BOARD_NAME": "Board name updates",
+        "UPDATE_BOARD_DESC": "Board description updates",
+        "UPDATE_BOARD_PREFS": "Board preference updates",
+        "UPDATE_BOARD_CLOSED": "Board archive updates (closed/open)",
+        "UPDATE_CARD_NAME": "Card name updates",
+        "UPDATE_CARD_DESC": "Card description updates",
+        "UPDATE_CARD_LIST": "Card listing updates",
+        "UPDATE_CARD_POS": "Card position updates (within a list)",
+        "UPDATE_CARD_CLOSED": "Card archive updates (archived/unarchived)",
+        "UPDATE_CARD_DUE": "Card due date updates",
+        "UPDATE_CHECK_ITEM_NAME": "Checklist item name updates",
+        "UPDATE_CHECK_ITEM_POS": "Checklist item position updates",
+        "UPDATE_CHECKLIST_NAME": "Checklist name updates",
+        "UPDATE_CHECKLIST_POS": "Checklist position updates",
+        "UPDATE_LABEL_NAME": "Label name updates",
+        "UPDATE_LABEL_COLOR": "Label color updates",
+        "UPDATE_LIST_NAME": "List name updates",
+        "UPDATE_LIST_POS": "List position updates",
+        "UPDATE_LIST_CLOSED": "List archive updates (archived/unarchived)",
+        "CREATE_CUSTOM_FIELD": "Custom field creations",
+        "DELETE_CUSTOM_FIELD": "Custom field deletions",
+        "UPDATE_CUSTOM_FIELD_NAME": "Custom field name updates",
+        "UPDATE_CUSTOM_FIELD_DISPLAY": "Custom field display updates",
+        "UPDATE_CUSTOM_FIELD_ITEM": "Custom field card updates"
+    },
+    "webhook_filter_group": {
+        "board": "Board",
+        "boardUpdate": "Board Updates",
+        "label": "Labels",
+        "labelUpdate": "Label Updates",
+        "card": "Cards",
+        "cardUpdate": "Card Updates",
+        "comment": "Comments",
+        "checklist": "Checklists",
+        "checklistUpdate": "Checklist Updates",
+        "checkItem": "Checklist Items",
+        "checkItemUpdate": "Checklist Item Updates",
+        "list": "Lists",
+        "listUpdate": "List Updates",
+        "customField": "Custom Fields",
+        "customFieldUpdate": "Custom Field Updates"
+    },
+    "custom_field_types": {
+        "checkbox": "Checkbox",
+        "text": "Text",
+        "number": "Number",
+        "date": "Date",
+        "list": "Dropdown"
+    }
+}
