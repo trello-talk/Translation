@@ -1,0 +1,59 @@
+{
+  "common": {
+    "old_desc": "이전 설명",
+    "new_desc": "새로운 설명",
+    "prev_list": "이전 리스트",
+    "curr_list": "현재 리스트",
+    "old_name": "이전 이름",
+    "new_name": "새로운 이름",
+    "old_comment": "이전 덧글",
+    "new_comment": "새로운 덧글",
+    "old_due": "이전 기한 날짜",
+    "new_due": "새로운 기한 날짜",
+    "one_chkitem_name": "이전 체크리스트 항목 이름",
+    "one_chklist_name": "이전 체크리스트 이름",
+    "item_src": "항목 소스",
+    "to_board": "보드로",
+    "from_board": "보드에서",
+    "old_v": "이전 값",
+    "new_v": "새로운 값",
+    "perm_levels": {
+      "private": "비공개",
+      "org": "팀 보이기",
+      "public": "공개"
+    },
+    "invite_perms": {
+      "admins": "관리자",
+      "members": "모든 멤버"
+    },
+    "comment_perms": {
+      "public": "아무 트렐로 사용자",
+      "org": "단체 멤버",
+      "members": "모든 멤버",
+      "disabled": "비활성됨"
+    },
+    "vote_perms": {
+      "public": "아무 트렐로 사용자",
+      "org": "단체 멤버",
+      "members": "모든 멤버",
+      "disabled": "비활성됨"
+    },
+    "member_type": {
+      "normal": "일반",
+      "admin": "관리자"
+    },
+    "label_color": {
+      "none": "색 없음",
+      "black": "검정",
+      "pink": "분홍",
+      "sky": "하늘",
+      "blue": "파랑",
+      "purple": "보라",
+      "lime": "라임 초록",
+      "orange": "오렌지",
+      "red": "빨강",
+      "yellow": "노랑",
+      "green": "초록"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "_": {
+    "emoji": "pl",
+    "name": "Polski"
+  },
+  "common": {
+    "label_color": {
+      "green": "Zielony",
+      "yellow": "Żółty",
+      "red": "Czerwony",
+      "orange": "Pomarańczowy",
+      "lime": "Limonkowy zielony",
+      "purple": "Fioletowy",
+      "sky": "Błękitny",
+      "pink": "Różowy",
+      "blue": "Niebieski",
+      "black": "Czarny",
+      "none": "Bez koloru"
+    },
+    "perm_levels": {
+      "public": "Publiczny",
+      "org": "Widoczność zespołu",
+      "private": "Prywatne"
+    },
+    "link": "Link",
+    "due": "z powodu",
+    "page": "Strona",
+    "list": "Lista",
+    "lists": "Listy",
+    "labels": "Oznaczenia",
+    "attachment": "Załącznik",
+    "attachments": "Załączniki",
+    "checklists": "Listy kontrolne",
+    "stickers": "Naklejki",
+    "members": "Użytkownicy",
+    "org": "Organizacja",
+    "visibility": "Widoczność",
+    "info": "Informacja",
+    "last_activity": "Ostatnia aktywność"
+  },
+  "cards": {
+    "list_archived": "Zarchiwizowane karty"
+  },
+  "lists": {
+    "list_archived": "Zarchiwizowane listy"
+  },
+  "boards": {
+    "list_archived": "Zarchiwizowane tablice"
+  },
+  "webhook": {
+    "id": "ID",
+    "active": "Aktywny",
+    "locale": "Język",
+    "whitelist": "Biała lista",
+    "blacklist": "Czarna lista",
+    "dwh": "Discord Webhook"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "_": {
+    "emoji": "fr",
+    "name": "Français"
+  },
+  "common": {
+    "label_color": {
+      "yellow": "Jaune",
+      "red": "Rouge",
+      "orange": "Orange",
+      "lime": "Vert citron",
+      "purple": "Violet",
+      "blue": "Bleu",
+      "sky": "Bleu ciel",
+      "pink": "Rose",
+      "none": "Pas de couleur",
+      "green": "Vert",
+      "black": "Noir"
+    },
+    "perm_levels": {
+      "public": "Public",
+      "org": "Équipe visible",
+      "private": "Privé"
+    },
+    "link": "Lien",
+    "due": "Échéance",
+    "page": "Page",
+    "list": "Liste",
+    "lists": "Listes",
+    "labels": "Étiquettes",
+    "attachment": "Pièce jointe",
+    "attachments": "Pièces jointes",
+    "checklists": "Check-lists",
+    "stickers": "Autocollants",
+    "members": "Membres",
+    "org": "Organisation",
+    "visibility": "Visibilité",
+    "info": "Informations",
+    "last_activity": "Dernière activité",
+    "cover_source": "Source de couverture"
+  },
+  "cleardata": {
+    "done": "Vos données personnelles ont été supprimées."
+  },
+  "clearauth": {
+    "done": "Votre autorisation a été retirée."
+  },
+  "cards": {
+    "list_archived": "Cartes archivées"
+  },
+  "lists": {
+    "list_archived": "Listes archivées"
+  },
+  "boards": {
+    "list_archived": "Tableaux archivés"
+  },
+  "webhook": {
+    "style": "Style",
+    "id": "Identifiant",
+    "active": "Actif",
+    "locale": "Langue",
+    "whitelist": "Liste blanche",
+    "blacklist": "Liste noire",
+    "dwh": "Webhook Discord",
+    "filters_updated": "A mis à jour les filtres du webhook.",
+    "repair_done": "Aucun problème avec le webhook n'a été réparé.",
+    "choose_cards": "Choisissez les cartes qui seront filtrées. Si vous ne choisissez aucune carte, le filtrage de carte sera désactivé.",
+    "choose_lists": "Choisissez les listes qui seront filtrées. Ne choisir aucune liste équivaut à désactiver le filtrage de liste.",
+    "max_wh": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un Patreon !",
+    "wh_expire": "Ce webhook n'est pas disponible car il dépasse votre limite de webhook actuelle ! Vous pouvez augmenter cette limite en devenant un donateur Patreon !",
+    "styles": {
+      "compact": {
+        "description": "Empile plusieurs événements dans une seule intégration, un peu comme les commits de webhook GitHub",
+        "name": "Compact"
+      },
+      "small": {
+        "description": "Version minime des webhooks par défaut, affichant uniquement le titre descriptif",
+        "name": "Petit"
+      },
+      "default": {
+        "description": "Messages réguliers, montrant autant d'informations que possible",
+        "name": "Défaut"
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "common": {
+    "old_desc": "Stary opis",
+    "new_desc": "Nowy opis",
+    "prev_list": "Poprzednia lista",
+    "curr_list": "Ta lista",
+    "old_name": "Stara nazwa",
+    "new_name": "Nowa nazwa",
+    "old_comment": "Stary komentarz",
+    "new_comment": "Nowy komentarz",
+    "old_due": "Stary termin",
+    "new_due": "Nowy termin",
+    "one_chkitem_name": "Stara pozycja listy kontrolnej Nazwy",
+    "one_chklist_name": "Stara nazwa listy zadań",
+    "item_src": "Źródło przedmiotu",
+    "to_board": "Do tablicy",
+    "from_board": "Z tablicy",
+    "old_v": "Stara wartość",
+    "new_v": "Nowa wartość",
+    "perm_levels": {
+      "public": "Publiczny",
+      "org": "Widoczność zespołu",
+      "private": "Prywatne"
+    },
+    "invite_perms": {
+      "members": "Wszyscy użytkownicy",
+      "admins": "Admini"
+    },
+    "comment_perms": {
+      "org": "Członkowie organizacji",
+      "public": "Każde użytkownik Trello",
+      "disabled": "Wyłączone",
+      "members": "Wszyscy użytkownicy"
+    },
+    "vote_perms": {
+      "disabled": "Wyłączone",
+      "members": "Wszyscy członkowie",
+      "org": "Członkowie organizaji",
+      "public": "Każdy użytkownik Trello"
+    },
+    "member_type": {
+      "normal": "Normalny",
+      "admin": "Admin"
+    },
+    "label_color": {
+      "green": "Zielony",
+      "yellow": "Żółty",
+      "red": "Czerwony",
+      "orange": "Pomarańczowy",
+      "lime": "Limonkowy zielony",
+      "purple": "Fioletowy",
+      "sky": "Błękitny",
+      "pink": "Różowy",
+      "blue": "Niebieski",
+      "black": "Czarny",
+      "none": "Bez koloru"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "_": {
+    "emoji": "tr",
+    "name": "Türkçe"
+  },
+  "common": {
+    "label_color": {
+      "none": "Tüs (Renk) Yok",
+      "black": "Kara",
+      "pink": "Pembe",
+      "sky": "Uzay Göğülü",
+      "blue": "Göğül/Mavi",
+      "purple": "Mor",
+      "lime": "Limon Yeşili",
+      "orange": "Turuncu",
+      "red": "Al/Kırmızı",
+      "yellow": "Sarı",
+      "green": "Yeşil"
+    },
+    "perm_levels": {
+      "public": "Toplumluk",
+      "private": "Özel",
+      "org": "Takım Görünür"
+    },
+    "link": "Örk",
+    "due": "Bitiş",
+    "page": "Bet",
+    "list": "Dizme",
+    "lists": "Dizmeler",
+    "labels": "Etiketler",
+    "attachment": "Ek-Dosya",
+    "attachments": "Ek-Dosyalar",
+    "checklists": "Denetim Dizmeleri",
+    "stickers": "Çıkartmalar",
+    "members": "Üyeler",
+    "org": "Örgütlem",
+    "visibility": "Görünürlük",
+    "info": "Bilgileme",
+    "last_activity": "Son Etkinlik",
+    "cover_source": "Kapak Kaynağı"
+  },
+  "cleardata": {
+    "done": "Kullanıcı verin temizlendi."
+  },
+  "clearauth": {
+    "done": "Yetkiniz temizlendi."
+  },
+  "cards": {
+    "list_archived": "Arşivli Kartlar"
+  },
+  "lists": {
+    "list_archived": "Arşivli Dizmeler"
+  },
+  "boards": {
+    "list_archived": "Arşivli Yazısalıklar"
+  },
+  "webhook": {
+    "style": "Kılık",
+    "id": "ID",
+    "active": "Etkin",
+    "locale": "Yöre",
+    "whitelist": "Ak dizme",
+    "blacklist": "Kara dizme",
+    "dwh": "Discord Ağkancası",
+    "filters_updated": "Ağkancasının süzücüleri güncellendi.",
+    "repair_done": "Ağkancası ile ilgili kimi sorunlar onarıldı.",
+    "choose_cards": "Hangi kartların süzüleceğini seçin. Kart seçimi yoksa kart süzüşü tıyılacaktır.",
+    "choose_lists": "Hangi dizmelerin süzüleceğini seçin. Dizme seçimi yoksa dizme süzüşü tıyılacaktır.",
+    "max_wh": "Bu sunucu için aşık ağkancasına ulaştınız! Bu kısıtı bir bağışçı olarak arttırabilirsiniz!",
+    "styles": {
+      "compact": {
+        "name": "Sıkışık"
+      },
+      "small": {
+        "description": "Varsayılan ağkancalarının yalnızca açıklayıcı alınlığını (bir tür başlık) gösteren küçük sürümü",
+        "name": "Küçük"
+      },
+      "default": {
+        "description": "Olabildiğince çok bilgileme gösteren düzenli iletiler",
+        "name": "Varsayılan"
+      }
+    }
+  }
+}

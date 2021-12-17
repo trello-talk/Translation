@@ -1,0 +1,66 @@
+{
+  "_": {
+    "name": "Nederlands",
+    "emoji": "nl"
+  },
+  "common": {
+    "label_color": {
+      "green": "Groen",
+      "red": "Rood",
+      "orange": "Oranje",
+      "lime": "Limoen Groen",
+      "purple": "Paars",
+      "blue": "Blauw",
+      "sky": "Lichtblauw",
+      "pink": "Roze",
+      "black": "Zwart",
+      "none": "Geen kleur",
+      "yellow": "Geel"
+    },
+    "perm_levels": {
+      "public": "Publiek",
+      "org": "Team zichtbaar",
+      "private": "Privé"
+    },
+    "link": "Link",
+    "due": "Ten gevolge",
+    "page": "Pagina",
+    "list": "Lijst",
+    "lists": "Lijsten",
+    "labels": "Labels",
+    "attachment": "Bijlage",
+    "attachments": "Bijlages",
+    "checklists": "Checklijsten",
+    "stickers": "Stickers",
+    "members": "Leden",
+    "org": "Organisatie",
+    "visibility": "Zichtbaarheid",
+    "info": "Informatie",
+    "last_activity": "Laatste Activiteit"
+  },
+  "clearauth": {
+    "done": "Uw authorization is cleared."
+  },
+  "cards": {
+    "list_archived": "Gearchiveerde kaarten"
+  },
+  "lists": {
+    "list_archived": "Gearchiveerde lijsten"
+  },
+  "boards": {
+    "list_archived": "Gearchiveerde Boards"
+  },
+  "webhook": {
+    "id": "ID",
+    "active": "Actief",
+    "locale": "Taal",
+    "whitelist": "Whitelist",
+    "blacklist": "Blacklist",
+    "dwh": "Discord Webhook",
+    "filters_updated": "Webhook filter aangepast.",
+    "repair_done": "Problemen met de webhook zijn hersteld.",
+    "choose_cards": "Kies welke kaarten gefilterd moet worden. Geen kaarten kiezen zal het filteren uitschakelen.",
+    "choose_lists": "Kies welke lijst gefilterd moet worden. Geen lijst kiezen zal het filteren uitschakelen.",
+    "max_wh": "U heeft uw maximaal aantal webhooks bereikt voor deze server! U kan deze limiet verhogen door patreon te worden!"
+  }
+}

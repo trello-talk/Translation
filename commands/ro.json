@@ -1,0 +1,49 @@
+{
+  "_": {
+    "emoji": "ro",
+    "name": "Romana"
+  },
+  "common": {
+    "label_color": {
+      "green": "Verde",
+      "yellow": "Galben",
+      "red": "Rosu",
+      "orange": "Portocaliu",
+      "lime": "Verzui",
+      "purple": "Violet",
+      "blue": "albastru",
+      "sky": "Albastru deschis",
+      "pink": "Roz",
+      "black": "Negru"
+    },
+    "perm_levels": {
+      "public": "public",
+      "private": "Privat",
+      "org": "Echipa vizibila"
+    },
+    "link": "Legatura",
+    "due": "Datorat",
+    "page": "Pagina",
+    "list": "Lista",
+    "lists": "Liste",
+    "labels": "Etichete",
+    "attachment": "Atasament",
+    "attachments": "Atasamente",
+    "checklists": "Liste de verificare",
+    "stickers": "stichere",
+    "members": "Membrii",
+    "org": "Organizatie",
+    "visibility": "Vizibilitate",
+    "info": "Informatie",
+    "last_activity": "Ultima Activitate"
+  },
+  "cards": {
+    "list_archived": "Carduri arhivate"
+  },
+  "lists": {
+    "list_archived": "Liste arhivate"
+  },
+  "webhook": {
+    "id": "id"
+  }
+}

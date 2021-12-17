@@ -1,0 +1,84 @@
+{
+  "_": {
+    "emoji": "es",
+    "name": "Español"
+  },
+  "common": {
+    "label_color": {
+      "green": "Verde",
+      "yellow": "Amarillo",
+      "red": "Rojo",
+      "orange": "Naranja",
+      "lime": "Verde lima",
+      "purple": "Morado",
+      "blue": "Azul",
+      "sky": "Azul cielo",
+      "pink": "Rosa",
+      "black": "Negro",
+      "none": "Sin color"
+    },
+    "perm_levels": {
+      "private": "Privado",
+      "public": "Público",
+      "org": "Visible para el equipo"
+    },
+    "link": "Enlace",
+    "due": "Vencimiento",
+    "page": "Página",
+    "list": "Lista",
+    "lists": "Listas",
+    "labels": "Etiquetas",
+    "attachment": "Archivo adjunto",
+    "attachments": "Archivos adjuntos",
+    "checklists": "Checklists",
+    "stickers": "Pegatinas",
+    "members": "Miembros",
+    "org": "Organización",
+    "visibility": "Visibilidad",
+    "info": "Información",
+    "last_activity": "Última actividad",
+    "cover_source": "Origen de la portada"
+  },
+  "cleardata": {
+    "done": "Tus datos han sido eliminados."
+  },
+  "clearauth": {
+    "done": "Tu autorización ha sido eliminada."
+  },
+  "cards": {
+    "list_archived": "Tarjetas archivadas"
+  },
+  "lists": {
+    "list_archived": "Listas archivadas"
+  },
+  "boards": {
+    "list_archived": "Tableros archivados"
+  },
+  "webhook": {
+    "style": "Estilo",
+    "id": "ID",
+    "active": "Activo",
+    "locale": "Idioma",
+    "whitelist": "Lista blanca",
+    "blacklist": "Lista negra",
+    "dwh": "Webhook de Discord",
+    "filters_updated": "Se actualizaron los filtros del webhook.",
+    "repair_done": "Cualquier problema con el webhook ha sido reparado.",
+    "choose_cards": "Elija qué tarjetas se filtrarán. Si no selecciona ninguna tarjeta, se deshabilitará el filtrado de tarjetas.",
+    "choose_lists": "Elija qué listas se filtrarán. Si no selecciona ninguna lista, se deshabilitará el filtrado de listas.",
+    "max_wh": "¡Has alcanzado tus webhooks máximos para este servidor! ¡Puedes aumentar este límite convirtiéndote en un patreon!",
+    "styles": {
+      "compact": {
+        "name": "Compacto"
+      },
+      "small": {
+        "description": "Pequeña versión de los webhooks por defecto, solamente mostrando el título descriptivo",
+        "name": "Pequeño"
+      },
+      "default": {
+        "description": "Mensajes regulares, mostrando toda la información como sea posible",
+        "name": "Por defecto"
+      }
+    }
+  }
+}

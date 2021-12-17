@@ -17,6 +17,7 @@
     "lists": "Lists",
     "labels": "Labels",
     "votes": "Votes",
+    "attachment": "Attachment",
     "attachments": "Attachments",
     "checklists": "Checklists",
     "stickers": "Stickers",
@@ -24,7 +25,6 @@
     "org": "Organization",
     "visibility": "Visibility",
     "info": "Information",
-    "attachment": "Attachment",
     "bg_img": "Background Image",
     "last_activity": "Last Activity",
     "cover_source": "Cover Source",
@@ -107,13 +107,13 @@
   },
   "cleardata": {
     "no_data": "No user data was found.",
-    "confirm": "Are you sure you want to remove **ALL** of your user data?",
-    "done": "Removed user data."
+    "confirm": "Are you sure you want to remove **ALL** of your user data?\n\n• Your locale settings will be removed.\n• Your authorization credentials will be removed.\n• Your Trello token will be invalidated.\n• Any webhooks you created will no longer work and will be required to be repaired.",
+    "done": "Your user data has been cleared."
   },
   "clearauth": {
     "no_auth": "No authentication data was found.",
-    "confirm": "Are you sure you want to remove your authentication data?",
-    "done": "Removed authentication data."
+    "confirm": "Are you sure you want to remove your authentication data?\n\n• Your Trello token will be invalidated.\n• Any webhooks you created will no longer work and will be required to be repaired.",
+    "done": "Your authorization has been cleared."
   },
   "watchboard": {
     "watched": "Started watching the **{{board}}** board.",
@@ -249,7 +249,7 @@
     "list_inactive": "Inactive Webhooks",
     "list_unnamed": "Unnamed Webhooks",
     "dwh_fail": "Couldn't fetch Discord webhooks! Make sure I have the `Manage Webhooks` permission.",
-    "dwh_fail_create": "Couldn't create a Discord webhook! Make sure I have the `Manage Webhooks` permission.",
+    "dwh_fail_create": "Couldn't create a Discord webhook! Make sure I have the `Manage Webhooks` permission in the selected channel.",
     "filter_policy": "Filter Policy",
     "style": "Style",
     "id": "ID",
@@ -271,7 +271,7 @@
     "filter_list_other": "{{count, number}} lists filtered",
     "repair_header": "This webhook has the following issues:",
     "trello_member_missing": "> • Couldn't find the user who created the webhook!",
-    "discord_webhook_missing": "> • Couldn't find the Discord webhook!",
+    "discord_webhook_missing": "> • Couldn't find the connected Discord webhook!",
     "repair_footer": "You can fix these issues with `/webhook repair`",
     "delete_confirm": "Are you sure you want to delete the **{{webhook}}** webhook?\nNote: Deleting a webhook will **not** delete the Discord webhook.",
     "delete_done": "Successfully deleted the webhook.",
@@ -296,8 +296,8 @@
     "invalid_style": "That display style was invalid!",
     "already_active": "This webhook is already active!",
     "already_inactive": "This webhook is already inactive!",
-    "set_active": "Activated the webhook.",
-    "set_inactive": "Deactivated the webhook.",
+    "set_active": "Activated the webhook. Events will display from the Discord webhook.",
+    "set_inactive": "Deactivated the webhook. Events will no longer display from the Discord webhook.",
     "filters_title": "Select filters for \"{{webhook}}\"",
     "filters_updated": "Updated the webhook's filters.",
     "filters_placeholder": "Select filters to use in this webhook…",
@@ -315,6 +315,8 @@
     "select_channel_placeholder": "Select a channel to use…",
     "repair_wh_title": "And, we're back!",
     "repair_wh_content": "The webhook **{{name}}** has been repaired! Events should be showing up again shortly…",
+    "choose_lists": "Choose which lists will be filtered. Choosing no lists will disable list filtering.",
+    "choose_cards": "Choose which cards will be filtered. Choosing no cards will disable card filtering.",
     "styles": {
       "default": {
         "name": "Default",

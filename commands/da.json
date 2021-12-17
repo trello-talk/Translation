@@ -1,0 +1,80 @@
+{
+  "_": {
+    "name": "Dansk",
+    "emoji": "dk"
+  },
+  "common": {
+    "label_color": {
+      "orange": "Orange",
+      "green": "Grøn",
+      "yellow": "Gul",
+      "red": "Rød",
+      "purple": "Lilla",
+      "lime": "Lime grøn",
+      "blue": "Blå",
+      "sky": "Himmelblå",
+      "pink": "Lyserød",
+      "black": "Sort",
+      "none": "Ingen farve"
+    },
+    "perm_levels": {
+      "public": "Offentlig",
+      "private": "Privat",
+      "org": "Team synlig"
+    },
+    "link": "Link",
+    "due": "Forfald",
+    "page": "Side",
+    "list": "Liste",
+    "lists": "Lister",
+    "labels": "Etiketter",
+    "attachment": "Vedhæftning",
+    "attachments": "Vedhæftninger",
+    "checklists": "Tjeklister",
+    "stickers": "Klistermærker",
+    "members": "Medlemmer",
+    "org": "Organisation",
+    "visibility": "Synlighed",
+    "info": "Oplysninger",
+    "last_activity": "Sidste aktivitet"
+  },
+  "cleardata": {
+    "done": "Dine brugeroplysninger er blevet ryddet."
+  },
+  "cards": {
+    "list_archived": "Arkiverede kort"
+  },
+  "lists": {
+    "list_archived": "Arkiverede lister"
+  },
+  "boards": {
+    "list_archived": "Arkiverede tavler"
+  },
+  "webhook": {
+    "style": "Stil",
+    "id": "ID",
+    "active": "Aktiv",
+    "locale": "Sprog",
+    "whitelist": "Hvidliste",
+    "blacklist": "Sortliste",
+    "dwh": "Discord webhook",
+    "filters_updated": "Opdaterede webhookets filtrer.",
+    "repair_done": "Ethvert problem med webhooket er blevet repareret.",
+    "choose_cards": "Vælg hvilke kort der vil blive filteret. Hvis ingen kort vælges vil filtrering af kort blive deaktiveret.",
+    "choose_lists": "Vælg hvilke lister der vil blive filteret. Hvis ingen lister vælges vil filtrering af lister blive deaktiveret.",
+    "styles": {
+      "compact": {
+        "name": "Kompakt",
+        "description": "Stabler adskillige begivenheder i en embed, meget ligesom GitHub webhook commits"
+      },
+      "small": {
+        "name": "Lille",
+        "description": "Lille version af standard webhooks, viser kun den beskrivende titel"
+      },
+      "default": {
+        "name": "Standard",
+        "description": "Regulære beskeder, viser så mange oplysninger som muligt"
+      }
+    }
+  }
+}

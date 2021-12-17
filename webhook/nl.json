@@ -1,0 +1,59 @@
+{
+  "common": {
+    "old_desc": "Oude beschrijving",
+    "new_desc": "Nieuwe beschrijving",
+    "prev_list": "Vorige lijst",
+    "curr_list": "Huidige lijst",
+    "old_name": "Oude naam",
+    "new_name": "Nieuwe naam",
+    "old_comment": "Oude commentaar",
+    "new_comment": "Nieuwe commentaar",
+    "old_due": "Oude einddatum",
+    "new_due": "Nieuwe einddatum",
+    "one_chkitem_name": "Oude checklijst item naam",
+    "one_chklist_name": "Oude checklijst naam",
+    "item_src": "Item Bron",
+    "to_board": "Naar Board",
+    "from_board": "Van Board",
+    "old_v": "Oude waarde",
+    "new_v": "Nieuwe Waarde",
+    "perm_levels": {
+      "public": "Publiek",
+      "org": "Team zichtbaar",
+      "private": "Privé"
+    },
+    "invite_perms": {
+      "members": "Alle leden",
+      "admins": "Admins"
+    },
+    "comment_perms": {
+      "disabled": "Uitgeschakeld",
+      "members": "Alle leden",
+      "org": "Organisatie leden",
+      "public": "Elke Trello Gebruiker"
+    },
+    "vote_perms": {
+      "disabled": "Uitgeschakeld",
+      "members": "Alle leden",
+      "org": "Organisatie Leden",
+      "public": "Elke Trello Gebruiker"
+    },
+    "member_type": {
+      "normal": "Normaal",
+      "admin": "Admin"
+    },
+    "label_color": {
+      "green": "Groen",
+      "red": "Rood",
+      "orange": "Oranje",
+      "lime": "Limoen Groen",
+      "purple": "Paars",
+      "blue": "Blauw",
+      "sky": "Lichtblauw",
+      "pink": "Roze",
+      "black": "Zwart",
+      "none": "Geen kleur",
+      "yellow": "Geel"
+    }
+  }
+}

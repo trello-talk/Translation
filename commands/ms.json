@@ -1,0 +1,69 @@
+{
+  "_": {
+    "name": "Bahasa Melayu",
+    "emoji": "my"
+  },
+  "common": {
+    "label_color": {
+      "none": "Tiada Warna",
+      "black": "Hitam",
+      "pink": "Merah Jambu",
+      "sky": "Biru Langit",
+      "blue": "Biru",
+      "purple": "Ungu",
+      "lime": "Hijau Limau",
+      "orange": "Jingga",
+      "red": "Merah",
+      "yellow": "Kuning",
+      "green": "Hijau"
+    },
+    "perm_levels": {
+      "public": "Awam",
+      "private": "Peribadi",
+      "org": "Pasukan Terlihatan"
+    },
+    "link": "Pautan",
+    "due": "Tempot Tamat",
+    "page": "Laman",
+    "list": "Senarai",
+    "lists": "Senarai",
+    "labels": "Label-label",
+    "attachment": "Lampiran",
+    "attachments": "Lampiran",
+    "checklists": "Senarai Semakan",
+    "stickers": "Stiker",
+    "members": "Ahli",
+    "org": "Organisasi",
+    "visibility": "Keterlihatan",
+    "info": "Informasi",
+    "last_activity": "Aktiviti Terakhir"
+  },
+  "cleardata": {
+    "done": "Data pengguna anda telah dikosongkan."
+  },
+  "clearauth": {
+    "done": "Kebenaran anda telah dikosongkan."
+  },
+  "cards": {
+    "list_archived": "Kad Dalam Arkib"
+  },
+  "lists": {
+    "list_archived": "Senarai Dalam Arkib"
+  },
+  "boards": {
+    "list_archived": "Papan Dalam Arkib"
+  },
+  "webhook": {
+    "id": "ID",
+    "active": "Aktif",
+    "locale": "Lokal",
+    "whitelist": "Senarai Izin",
+    "blacklist": "Senarai Hitam",
+    "dwh": "Webhook Discord",
+    "filters_updated": "Penapis webhook telah dikemaskinikan.",
+    "repair_done": "Sebarang masalah webhook telah dibaiki.",
+    "choose_cards": "Pilih kad untuk ditapis. Penapisan kad akan dinyahaktifkan jika tiada kad dipilih.",
+    "choose_lists": "Pilih senarai untuk ditapis. Penapisan senarai akan dinyahaktifkan jika tiada senarai dipilih.",
+    "max_wh": "Anda telah mencapai had maksimum webhook untuk server ini! Anda boleh meningkatkan had ini dengan menjadi seorang patreon!"
+  }
+}

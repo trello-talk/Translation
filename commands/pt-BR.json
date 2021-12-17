@@ -3,9 +3,77 @@
     "name": "Português (Brasil)",
     "emoji": "br"
   },
-  "commmon": {
+  "common": {
+    "label_color": {
+      "green": "Verde",
+      "yellow": "Amarelo",
+      "red": "Vermelho",
+      "orange": "Laranja",
+      "lime": "Verde Limão",
+      "purple": "Roxo",
+      "blue": "Azul",
+      "sky": "Azul Céu",
+      "pink": "Rosa",
+      "black": "Preto",
+      "none": "Sem Cor"
+    },
+    "perm_levels": {
+      "public": "Público",
+      "org": "Time Visível",
+      "private": "Privado"
+    },
+    "link": "Link",
+    "due": "Vencimento",
     "page": "Página",
-    "board": "Quadro",
-    "boards": "Quadros"
+    "list": "Lista",
+    "lists": "Listas",
+    "labels": "Etiquetas",
+    "attachment": "Anexo",
+    "attachments": "Anexos",
+    "checklists": "Checklists",
+    "stickers": "Adesivos",
+    "members": "Membros",
+    "org": "Organização",
+    "visibility": "Visibilidade",
+    "info": "Informação",
+    "last_activity": "Última Atividade",
+    "cover_source": "Fonte da Capa"
+  },
+  "cleardata": {
+    "done": "Os dados do seu usuário foram removidos com sucesso."
+  },
+  "clearauth": {
+    "done": "Sua autorização foi removida com sucesso."
+  },
+  "cards": {
+    "list_archived": "Cartões Arquivados"
+  },
+  "lists": {
+    "list_archived": "Listas Arquivadas"
+  },
+  "boards": {
+    "list_archived": "Quadros Arquivados"
+  },
+  "webhook": {
+    "style": "Estilo",
+    "id": "ID",
+    "active": "Ativo",
+    "locale": "Idioma",
+    "whitelist": "Whitelist",
+    "blacklist": "Blacklist",
+    "dwh": "Webhook do Discord",
+    "filters_updated": "Filtros do webhook atualizados.",
+    "repair_done": "Os problemas com esse webhook foram corrigidos.",
+    "styles": {
+      "compact": {
+        "name": "Compacto"
+      },
+      "default": {
+        "name": "Padrão"
+      },
+      "small": {
+        "name": "Pequeno"
+      }
+    }
   }
 }

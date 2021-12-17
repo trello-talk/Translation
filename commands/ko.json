@@ -1,0 +1,66 @@
+{
+  "_": {
+    "name": "한국어",
+    "emoji": "kr"
+  },
+  "common": {
+    "label_color": {
+      "none": "색 없음",
+      "black": "검정",
+      "pink": "분홍",
+      "sky": "하늘",
+      "blue": "파랑",
+      "purple": "보라",
+      "lime": "라임 초록",
+      "orange": "오렌지",
+      "red": "빨강",
+      "yellow": "노랑",
+      "green": "초록"
+    },
+    "perm_levels": {
+      "private": "비공개",
+      "org": "팀 보이기",
+      "public": "공개"
+    },
+    "link": "링크",
+    "due": "기한",
+    "page": "페이지",
+    "list": "리스트",
+    "lists": "리스트",
+    "labels": "라벨",
+    "attachment": "첨부 파일",
+    "attachments": "첨부 파일",
+    "checklists": "체크리스트",
+    "stickers": "스티커",
+    "members": "멤버",
+    "org": "단체",
+    "visibility": "가시성",
+    "info": "정보",
+    "last_activity": "마지막 활동"
+  },
+  "clearauth": {
+    "done": "당신의 인증이 지워졌습니다."
+  },
+  "cards": {
+    "list_archived": "보관된 카드"
+  },
+  "lists": {
+    "list_archived": "보관된 리스트"
+  },
+  "boards": {
+    "list_archived": "보관된 보드"
+  },
+  "webhook": {
+    "id": "아이디",
+    "active": "활성",
+    "locale": "로케일",
+    "whitelist": "화이트리스트",
+    "blacklist": "블랙리스트",
+    "dwh": "디스코드 웹훅",
+    "filters_updated": "웹훅의 필터가 업데이트 되었습니다.",
+    "repair_done": "웹훅의 모든 문제를 복구했습니다.",
+    "choose_cards": "필터될 카드를 선택하세요. 아무것도 선택하지 않으면 카드 필터링을 비활성화 합니다.",
+    "choose_lists": "필터될 리스트를 선택하세요. 아무것도 선택하지 않으면 리스트 필터링을 비활성화 합니다.",
+    "max_wh": "이 서버의 최대 웹훅 수에 도달했습니다! 패트리온이 되어 이 제한을 증가시킬 수 있습니다!"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "common": {
+    "perm_levels": {
+      "public": "public",
+      "private": "Privat",
+      "org": "Echipa vizibila"
+    },
+    "invite_perms": {
+      "members": "Toti membrii",
+      "admins": "Admini"
+    },
+    "comment_perms": {
+      "disabled": "Dezactivat",
+      "members": "Toti membrii",
+      "org": "Membrii organizatiei",
+      "public": "Toti utilizatorii Trello"
+    },
+    "vote_perms": {
+      "disabled": "Dezactivat",
+      "members": "Toti membrii",
+      "org": "Membrii organizatiei",
+      "public": "Toti utilizatorii Trello"
+    },
+    "label_color": {
+      "green": "Verde",
+      "yellow": "Galben",
+      "red": "Rosu",
+      "orange": "Portocaliu",
+      "lime": "Verzui",
+      "purple": "Violet",
+      "blue": "albastru",
+      "sky": "Albastru deschis",
+      "pink": "Roz",
+      "black": "Negru"
+    }
+  }
+}

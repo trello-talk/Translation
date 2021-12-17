@@ -1,0 +1,91 @@
+{
+  "common": {
+    "old_desc": "Vieja descripción",
+    "new_desc": "Nueva descripción",
+    "prev_list": "Lista anterior",
+    "curr_list": "Lista actual",
+    "old_name": "Antiguo nombre",
+    "new_name": "Nuevo nombre",
+    "old_comment": "Comentario antiguo",
+    "new_comment": "Comentario nuevo",
+    "old_due": "Antigua fecha de vencimiento",
+    "new_due": "Nueva fecha de vencimiento",
+    "one_chkitem_name": "Antiguo nombre del artículo de la lista de comprobación",
+    "one_chklist_name": "Antiguo nombre de la lista de comprobación",
+    "item_src": "Origen del artículo",
+    "to_board": "Hacia el tablero",
+    "from_board": "Desde el tablero",
+    "old_v": "Valor antiguo",
+    "new_v": "Valor nuevo",
+    "perm_levels": {
+      "private": "Privado",
+      "public": "Público",
+      "org": "Visible para el equipo"
+    },
+    "invite_perms": {
+      "members": "Todos los miembros",
+      "admins": "Administradores"
+    },
+    "comment_perms": {
+      "disabled": "Desactivado",
+      "members": "Todos los miembros",
+      "org": "Miembros de la organización",
+      "public": "Cualquier usuario de Trello"
+    },
+    "vote_perms": {
+      "public": "Cualquier usuario de Trello",
+      "disabled": "Desactivado",
+      "members": "Todos los miembros",
+      "org": "Miembros de la organización"
+    },
+    "member_type": {
+      "normal": "Normal",
+      "admin": "Administrador",
+      "observer": "Observador"
+    },
+    "label_color": {
+      "green": "Verde",
+      "yellow": "Amarillo",
+      "red": "Rojo",
+      "orange": "Naranja",
+      "lime": "Verde lima",
+      "purple": "Morado",
+      "blue": "Azul",
+      "sky": "Azul cielo",
+      "pink": "Rosa",
+      "black": "Negro",
+      "none": "Sin color"
+    }
+  },
+  "webhook": {
+    "vote_card": "{{member}} ha votado en la tarjeta \"{{card}}\"",
+    "create_card": "{{member}} ha creado la tarjeta \"{{card}}\"",
+    "archive_card": "{{member}} ha archivado la tarjeta \"{{card}}\"",
+    "move_card": "{{member}} ha movido la tarjeta \"{{card}}\" a la lista \"{{list}}\"",
+    "edit_card_desc": "{{member}} ha cambiado la descripción de la tarjeta \"{{card}}\"",
+    "commented": "{{member}} ha comentado en \"{{card}}\"",
+    "archive_list": "{{member}} ha archivado la lista \"{{list}}\"",
+    "create_list": "{{member}} ha creado una lista nombrada \"{{list}}\"",
+    "checkitem_rename": "{{member}} ha cambiado el nombre de un elemento en una checklist de la tarjeta \"{{card}}\"",
+    "checkitem_move": "{{member}} ha movido un elemento en la checklist de la tarjeta \"{{card}}\" a otra posición",
+    "checkitem_create": "{{member}} ha creado un elemento en la checklist de la tarjeta \"{{card}}\"",
+    "checkitem_state_off": "{{member}} ha marcado \"{{checklistItem}}\" como incompleto en la tarjeta \"{{card}}\"",
+    "edit_board_desc": "{{member}} ha cambiado la descripción del tablero",
+    "label_recolor": "{{member}} ha cambiado el color de la etiqueta \"{{label}}\" del {{oldColor}} al {{color}}",
+    "due_change": "{{member}} ha cambiado la fecha de vencimiento en la tarjeta \"{{card}}\"",
+    "board_rename": "{{member}} ha cambiado el nombre del tablero \"{{oldName}}\" a {{board}}",
+    "label_rename": "{{member}} ha cambiado el nombre de la etiqueta \"{{oldName}}\" a \"{{label}}\"",
+    "list_rename": "{{member}} ha cambiado el nombre de la lista \"{{oldName}}\" a \"{{list}}\"",
+    "checklist_rename": "{{member}} ha cambiado el nombre de una checklist de la tarjeta \"{{card}}\"",
+    "rename_card": "{{member}} ha cambiado el nombre de la tarjeta de \"{{old}}\" a \"{{new}}\""
+  },
+  "filters": {
+    "CREATE_LABEL": "Creaciones de etiquetas",
+    "COPY_CARD": "Duplicaciones de tarjeta",
+    "COMMENT_CARD": "Comentarios nuevos en tarjetas"
+  },
+  "group": {
+    "customField": "Campos personalizados",
+    "list": "Listas"
+  }
+}
