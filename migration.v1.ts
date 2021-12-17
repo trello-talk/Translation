@@ -73,7 +73,7 @@ function allowKeys(...keys: string[]) {
 // #region Commands Converts
 convertTo('commands', '_', '_');
 convertTo('commands', 'trello', 'common', allowKeys(
-  'label_color', 'perm_levels'
+  'label_color', 'perm_levels', 'custom_field'
 ));
 convertTo('commands', 'words.link.one', 'common.link');
 convertTo('commands', 'trello.due', 'common.due');
@@ -119,7 +119,7 @@ convertTo('commands', 'webhook_cmd.styles', 'webhook.styles');
 convertTo('webhook', 'trello', 'common', allowKeys(
   'old_desc', 'new_desc', 'prev_list', 'curr_list', 'old_name', 'new_name',
   'old_comment', 'new_comment', 'old_due', 'new_due', 'one_chkitem_name', 'one_chklist_name',
-  'item_src', 'to_board', 'from_board', 'old_v', 'new_v',
+  'item_src', 'to_board', 'from_board', 'old_v', 'new_v', 'custom_field',
   'perm_levels', 'invite_perms', 'comment_perms', 'vote_perms',
   'member_type', 'label_color'
 ));

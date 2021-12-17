@@ -17,6 +17,7 @@
     "from_board": "Fra tavle",
     "old_v": "Gammel værdi",
     "new_v": "Ny værdi",
+    "custom_field": "Skræddersyet felt",
     "perm_levels": {
       "public": "Offentlig",
       "private": "Privat",

@@ -17,6 +17,7 @@
     "from_board": "Dari Papan",
     "old_v": "Nilai Lama",
     "new_v": "Nilai Baru",
+    "custom_field": "Medan Tersuai",
     "perm_levels": {
       "public": "Awam",
       "private": "Peribadi",

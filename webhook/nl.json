@@ -17,6 +17,7 @@
     "from_board": "Van Board",
     "old_v": "Oude waarde",
     "new_v": "Nieuwe Waarde",
+    "custom_field": "Custom Veld",
     "perm_levels": {
       "public": "Publiek",
       "org": "Team zichtbaar",

@@ -22,6 +22,7 @@
       "org": "Équipe visible",
       "private": "Privé"
     },
+    "custom_field": "Champ personnalisé",
     "link": "Lien",
     "due": "Échéance",
     "page": "Page",
@@ -66,8 +67,8 @@
     "repair_done": "Aucun problème avec le webhook n'a été réparé.",
     "choose_cards": "Choisissez les cartes qui seront filtrées. Si vous ne choisissez aucune carte, le filtrage de carte sera désactivé.",
     "choose_lists": "Choisissez les listes qui seront filtrées. Ne choisir aucune liste équivaut à désactiver le filtrage de liste.",
-    "max_wh": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un Patreon !",
-    "wh_expire": "Ce webhook n'est pas disponible car il dépasse votre limite de webhook actuelle ! Vous pouvez augmenter cette limite en devenant un donateur Patreon !",
+    "max_wh": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un Patreon!",
+    "wh_expire": "Ce webhook n'est pas disponible car il dépasse votre limite de webhook actuelle ! Vous pouvez augmenter cette limite en devenant un donateur Patreon!",
     "styles": {
       "compact": {
         "description": "Empile plusieurs événements dans une seule intégration, un peu comme les commits de webhook GitHub",

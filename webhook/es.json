@@ -17,6 +17,7 @@
     "from_board": "Desde el tablero",
     "old_v": "Valor antiguo",
     "new_v": "Valor nuevo",
+    "custom_field": "Campo personalizado",
     "perm_levels": {
       "private": "Privado",
       "public": "Público",

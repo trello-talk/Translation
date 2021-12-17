@@ -22,6 +22,7 @@
       "public": "Público",
       "org": "Visible para el equipo"
     },
+    "custom_field": "Campo personalizado",
     "link": "Enlace",
     "due": "Vencimiento",
     "page": "Página",

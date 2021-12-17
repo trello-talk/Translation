@@ -17,6 +17,7 @@
     "from_board": "Z tablicy",
     "old_v": "Stara wartość",
     "new_v": "Nowa wartość",
+    "custom_field": "Konfigurowalne pole",
     "perm_levels": {
       "public": "Publiczny",
       "org": "Widoczność zespołu",

@@ -17,6 +17,7 @@
     "from_board": "Do Quadro",
     "old_v": "Valor Antigo",
     "new_v": "Novo Valor",
+    "custom_field": "Campo Personalizado",
     "perm_levels": {
       "public": "Público",
       "org": "Time Visível",

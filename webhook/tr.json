@@ -17,6 +17,7 @@
     "from_board": "Yazısalıktan",
     "old_v": "Eski Değer",
     "new_v": "Yeni Değer",
+    "custom_field": "Özel Alan",
     "perm_levels": {
       "public": "Toplumluk",
       "private": "Özel",

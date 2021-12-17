@@ -17,6 +17,7 @@
     "from_board": "Vom Board",
     "old_v": "Alter Wert",
     "new_v": "Neuer Wert",
+    "custom_field": "Persönliches Feld",
     "perm_levels": {
       "public": "Öffentlich",
       "org": "Für das Team sichtbar",

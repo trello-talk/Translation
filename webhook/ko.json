@@ -17,6 +17,7 @@
     "from_board": "보드에서",
     "old_v": "이전 값",
     "new_v": "새로운 값",
+    "custom_field": "임의의 필드",
     "perm_levels": {
       "private": "비공개",
       "org": "팀 보이기",

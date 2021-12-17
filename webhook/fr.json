@@ -17,6 +17,7 @@
     "from_board": "Du tableau",
     "old_v": "Ancienne valeur",
     "new_v": "Nouvelle valeur",
+    "custom_field": "Champ personnalisé",
     "perm_levels": {
       "public": "Public",
       "org": "Équipe visible",
