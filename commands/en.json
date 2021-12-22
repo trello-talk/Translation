@@ -255,6 +255,8 @@
     "id": "ID",
     "active": "Active",
     "locale": "Locale",
+    "select_all": "Select All",
+    "deselect_all": "Deselect All",
     "filtering": "Filtering",
     "whitelist": "Whitelist",
     "blacklist": "Blacklist",
