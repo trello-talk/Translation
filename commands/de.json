@@ -1,86 +1,95 @@
 {
-  "_": {
-    "name": "Deutsch",
-    "emoji": "de"
-  },
-  "common": {
-    "label_color": {
-      "purple": "Lila",
-      "blue": "Blau",
-      "sky": "Hellblau",
-      "pink": "Pink",
-      "black": "Schwarz",
-      "none": "Keine Farbe",
-      "yellow": "Gelb",
-      "red": "Rot",
-      "green": "Grün",
-      "orange": "Orange",
-      "lime": "Hellgrün"
+    "_": {
+        "name": "Deutsch",
+        "emoji": "de"
     },
-    "perm_levels": {
-      "public": "Öffentlich",
-      "org": "Für das Team sichtbar",
-      "private": "Privat"
+    "common": {
+        "label_color": {
+            "purple": "Lila",
+            "blue": "Blau",
+            "sky": "Hellblau",
+            "pink": "Pink",
+            "black": "Schwarz",
+            "none": "Keine Farbe",
+            "yellow": "Gelb",
+            "red": "Rot",
+            "green": "Grün",
+            "orange": "Orange",
+            "lime": "Hellgrün"
+        },
+        "perm_levels": {
+            "public": "Öffentlich",
+            "org": "Für das Team sichtbar",
+            "private": "Privat"
+        },
+        "custom_field": "Persönliches Feld",
+        "link": "Link",
+        "due": "Fälligkeitsdatum",
+        "page": "Seite",
+        "list": "Liste",
+        "lists": "Listen",
+        "labels": "Labels",
+        "attachment": "Anhang",
+        "attachments": "Anhänge",
+        "checklists": "Checklisten",
+        "stickers": "Sticker",
+        "members": "Mitglieder",
+        "org": "Team",
+        "visibility": "Sichtbarkeit",
+        "info": "Information",
+        "last_activity": "Letzte Aktivität",
+        "cover_source": "Quelle des Titelbilds",
+        "yes": "Ja",
+        "no": "Nein",
+        "url": "URL",
+        "cancel": "Abbrechen",
+        "done": "Fertig",
+        "none": "Nichts",
+        "more": "+ {{count, number}} weitere…",
+        "votes": "Stimmen",
+        "bg_img": "Hintergrundbild"
     },
-    "custom_field": "Persönliches Feld",
-    "link": "Link",
-    "due": "Fälligkeitsdatum",
-    "page": "Seite",
-    "list": "Liste",
-    "lists": "Listen",
-    "labels": "Labels",
-    "attachment": "Anhang",
-    "attachments": "Anhänge",
-    "checklists": "Checklisten",
-    "stickers": "Sticker",
-    "members": "Mitglieder",
-    "org": "Team",
-    "visibility": "Sichtbarkeit",
-    "info": "Information",
-    "last_activity": "Letzte Aktivität",
-    "cover_source": "Quelle des Titelbilds"
-  },
-  "cleardata": {
-    "done": "Deine Benutzerdaten wurde vollständig gelöscht."
-  },
-  "clearauth": {
-    "done": "Deine Authorization wurde entfernt."
-  },
-  "cards": {
-    "list_archived": "Archivierte Karten"
-  },
-  "lists": {
-    "list_archived": "Archivierte Listen"
-  },
-  "boards": {
-    "list_archived": "Archivierte Boards"
-  },
-  "webhook": {
-    "style": "Stil",
-    "id": "ID",
-    "active": "Aktiv",
-    "locale": "Sprache",
-    "whitelist": "Whitelist",
-    "blacklist": "Blacklist",
-    "dwh": "Discord Webhook",
-    "filters_updated": "Die Filtereinstellungen des Webhooks wurden aktualisiert.",
-    "repair_done": "Fehler, die bei der Benutzung des Webhooks aufgetreten sind, wurden behoben.",
-    "choose_cards": "Wähle die zu filternde Karten aus. Kein Auswahl wird den Filter deaktiviern.",
-    "choose_lists": "Wähle die zu filternde Listen aus. Kein Auswahl wird den Filter deaktiviern.",
-    "max_wh": "Du hast dein Maximum an webhooks erreicht! Du kannst dieses Limit erhöhen, indem du auf Patron spendest!",
-    "styles": {
-      "compact": {
-        "description": "Kombiniert mehrere Events in ein einziges Embed, ähnlich zu Github Webhook commits",
-        "name": "Komprimiert"
-      },
-      "small": {
-        "description": "Eine verkleinerte Version, die nur einen Beschreibenden Titel beinaltet",
-        "name": "Klein"
-      },
-      "default": {
-        "description": "Normale Nachrichten, die so viel Informationen zeigen, wie möglich",
-        "name": "Standard"
-      }
+    "cleardata": {
+        "done": "Deine Benutzerdaten wurde vollständig gelöscht."
+    },
+    "clearauth": {
+        "done": "Deine Authorization wurde entfernt."
+    },
+    "cards": {
+        "list_archived": "Archivierte Karten"
+    },
+    "lists": {
+        "list_archived": "Archivierte Listen"
+    },
+    "boards": {
+        "list_archived": "Archivierte Boards"
+    },
+    "webhook": {
+        "style": "Stil",
+        "id": "ID",
+        "active": "Aktiv",
+        "locale": "Sprache",
+        "whitelist": "Whitelist",
+        "blacklist": "Blacklist",
+        "dwh": "Discord Webhook",
+        "filters_updated": "Die Filtereinstellungen des Webhooks wurden aktualisiert.",
+        "repair_done": "Fehler, die bei der Benutzung des Webhooks aufgetreten sind, wurden behoben.",
+        "choose_cards": "Wähle die zu filternde Karten aus. Kein Auswahl wird den Filter deaktiviern.",
+        "choose_lists": "Wähle die zu filternde Listen aus. Kein Auswahl wird den Filter deaktiviern.",
+        "max_wh": "Du hast dein Maximum an webhooks erreicht! Du kannst dieses Limit erhöhen, indem du auf Patron spendest!",
+        "styles": {
+            "compact": {
+                "description": "Kombiniert mehrere Events in ein einziges Embed, ähnlich zu Github Webhook commits",
+                "name": "Komprimiert"
+            },
+            "small": {
+                "description": "Eine verkleinerte Version, die nur einen Beschreibenden Titel beinaltet",
+                "name": "Klein"
+            },
+            "default": {
+                "description": "Normale Nachrichten, die so viel Informationen zeigen, wie möglich",
+                "name": "Standard"
+            }
+        }
     }
-  }
 }
