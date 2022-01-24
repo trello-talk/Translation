@@ -189,9 +189,13 @@
         "UPDATE_CARD_LIST": "Verschieben von Karten in andere Listen",
         "UPDATE_CARD_DESC": "Veränderte Kartenbeschreibung",
         "UPDATE_CARD_NAME": "Veränderter Katenname",
-        "UPDATE_BOARD_CLOSED": "Änderungen am Boardstatus(öffnen/schließen)"
+        "UPDATE_BOARD_CLOSED": "Änderungen am Boardstatus(öffnen/schließen)",
+        "EMAIL_CARD": "Per E-Mail erstellte Karten"
     },
     "extended": {
         "delete_card": "{{member}} hat die Karte {{cardID}} von der Liste \"{{list}}\" gelöscht"
+    },
+    "group": {
+        "board": "Board"
     }
 }
