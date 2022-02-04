@@ -144,6 +144,32 @@
         "member_type": {
             "one": "Tipul membrului",
             "many": "Tipurile membrilor"
+        },
+        "subcmd": {
+            "one": "Alt komut",
+            "many": "Alt komutlar"
+        },
+        "active": "Aktif",
+        "locale": "Yerel",
+        "name": {
+            "one": "İsim",
+            "many": "İsimler"
+        },
+        "arch_board": {
+            "one": "Arşiv Kurulu",
+            "many": "Arşiv Panosu"
+        },
+        "webhook": {
+            "many": "Webhooklar",
+            "one": "Webhook"
+        },
+        "checklist_item": {
+            "one": "Kontrol Listesi Öğesi",
+            "many": "Kontrol Listesi Öğeleri"
+        },
+        "channel": {
+            "one": "Kanal",
+            "many": "Kanallar"
         }
     },
     "commands": {
@@ -400,15 +426,15 @@
         "char_limit": "Prefixele nu pot avea mai mult de 32 de caractere!"
     },
     "user_mgmt": {
-        "sub_card": "Acum urmariti cardul \"{{&name}}\". ( `{{Id}}`)",
-        "unsub_card": "Nu mai urmariti cardul \"{{&name}}\". ( `{{Id}}`)",
-        "sub_list": "Acum urmariti lista \"{{&name}}\". ( `{{Id}}`)",
-        "unsub_list": "Nu mai urmariti lista \"{{&name}}\". ( `{{Id}}`)",
-        "star_board": "Stea creata pentru bordul \"{{&name}}\". ( `{{Id}}`)",
-        "unstar_board": "Stea indepartata pentru bordul \"{{&name}}\". ( `{{Id}}`)",
+        "sub_card": "Acum urmariti cardul \"{{&name}}\". ( `{{id}}`)",
+        "unsub_card": "Nu mai urmariti cardul \"{{&name}}\". ( `{{id}}`)",
+        "sub_list": "Acum urmariti lista \"{{&name}}\". ( `{{id}}`)",
+        "unsub_list": "Nu mai urmariti lista \"{{&name}}\". ( `{{id}}`)",
+        "star_board": "Stea creata pentru bordul \"{{&name}}\". ( `{{id}}`)",
+        "unstar_board": "Stea indepartata pentru bordul \"{{&name}}\". ( `{{id}}`)",
         "star_error": "Steaua bordului nu a fost gasita! Incercati mai tarziu!",
-        "sub_board": "Nu mai urmăriți forumul \"{{&name}}\". ( `{{Id}}`)",
-        "unsub_board": "Nu mai urmariti bordul \"{{&name}}\". ( `{{Id}}`)"
+        "sub_board": "Nu mai urmăriți forumul \"{{&name}}\". ( `{{id}}`)",
+        "unsub_board": "Nu mai urmariti bordul \"{{&name}}\". ( `{{id}}`)"
     },
     "links": {
         "invite": {
@@ -458,7 +484,7 @@
         "invalid": "Comanda invalida!",
         "done": "Reincarcate {{&commands}}."
     },
-    "cooldown_msg": "Aceasta comanda trebuie sa se termine! *({{seconds})*",
+    "cooldown_msg": "Aceasta comanda trebuie sa se termine! *({{seconds}})*",
     "info": {
         "faux": "Acest bot foloseste o versiune modificata a [Faux](https://github.com/Snazzah/Faux).",
         "title": "Informatii despre {{&username}}"
@@ -480,5 +506,10 @@
     "shardinfo": {
         "title": "Informatii despre fragmentele lui {{&username}}",
         "line": "**`{{id}}:`** {{status}}, {{ms}} ms, {{guilds}} bresle"
+    },
+    "reloadwebserver": {
+        "done": "Web sunucusu yeniden başlatıldı.",
+        "no": "Bu alanda web sunucusu yok!",
+        "reloading": "Web sunucusu yeniden başlatılıyor…"
     }
 }
