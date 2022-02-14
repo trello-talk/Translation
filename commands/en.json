@@ -17,6 +17,9 @@
     "lists": "Lists",
     "labels": "Labels",
     "votes": "Votes",
+    "name": "Name",
+    "description": "Description",
+    "empty_input": "Type something…",
     "attachment": "Attachment",
     "attachments": "Attachments",
     "checklists": "Checklists",
@@ -82,6 +85,7 @@
     "prompt_action_expired": "❌ The action to this prompt has expired, try again later.",
     "prompt_action_invalid_type": "🔥 The action to this prompt has an invalid type. Contact support if you see this.",
     "prompt_action_requires_data": "🔥 The action to this component requires data. Contact support if you see this.",
+    "modal_unknown": "🔥 This modad never linked anywhere. Contact support if you see this.",
     "prompt_select_item": "Select an item below…",
     "items_selected_one": "{{count, number}} item selected",
     "items_selected_other": "{{count, number}} items selected",
@@ -161,6 +165,7 @@
     "remove_description": "- Removed the description"
   },
   "addcard": {
+    "modal_title": "Add a card in \"{{list}}\"",
     "done": "Created new **{{card}}** card.",
     "limited": "You have too many cards! Try deleting unused cards."
   },
