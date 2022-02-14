@@ -165,7 +165,7 @@
     "remove_description": "- Removed the description"
   },
   "addcard": {
-    "modal_title": "Add a card in \"{{list}}\"",
+    "modal_title": "Add card to list",
     "done": "Created new **{{card}}** card.",
     "limited": "You have too many cards! Try deleting unused cards."
   },
