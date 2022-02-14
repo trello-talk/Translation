@@ -164,6 +164,11 @@
     "description": "- Edited the description",
     "remove_description": "- Removed the description"
   },
+  "addattachment": {
+    "no_url": "You need to provide either an attachment or a URL!",
+    "done": "Added an attachment to the **{{card}}** card.",
+    "limited": "You have too many attachments! Try deleting unnessesary attachments."
+  },
   "addcard": {
     "modal_title": "Add card to list",
     "done": "Created new **{{card}}** card.",
@@ -237,7 +242,7 @@
     "set_role": "Set the Trello management role to **{{role}}**."
   },
   "bot": {
-    "info_content": "**Taco** is a Discord bot that allows users to manage their Trello board in Discord.",
+    "info_content": "**Taco** is a Discord bot that allows users to manage their Trello boards in Discord.",
     "donate_content": "Support the development of Taco by becoming a Patron! You get perks like extra webhooks and Taco+!",
     "donate_button": "Support via Patreon",
     "github_content": "You can view the open-source GitHub repository of this bot by clicking the button below!",
