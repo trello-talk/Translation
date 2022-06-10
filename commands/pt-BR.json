@@ -1,80 +1,116 @@
 {
-  "_": {
-    "name": "Português (Brasil)",
-    "emoji": "br"
-  },
-  "common": {
-    "label_color": {
-      "green": "Verde",
-      "yellow": "Amarelo",
-      "red": "Vermelho",
-      "orange": "Laranja",
-      "lime": "Verde Limão",
-      "purple": "Roxo",
-      "blue": "Azul",
-      "sky": "Azul Céu",
-      "pink": "Rosa",
-      "black": "Preto",
-      "none": "Sem Cor"
+    "_": {
+        "name": "Português (Brasil)",
+        "emoji": "br"
     },
-    "perm_levels": {
-      "public": "Público",
-      "org": "Time Visível",
-      "private": "Privado"
+    "common": {
+        "label_color": {
+            "green": "Verde",
+            "yellow": "Amarelo",
+            "red": "Vermelho",
+            "orange": "Laranja",
+            "lime": "Verde Limão",
+            "purple": "Roxo",
+            "blue": "Azul",
+            "sky": "Azul Céu",
+            "pink": "Rosa",
+            "black": "Preto",
+            "none": "Sem Cor"
+        },
+        "perm_levels": {
+            "public": "Público",
+            "org": "Time Visível",
+            "private": "Privado"
+        },
+        "custom_field": "Campo Personalizado",
+        "link": "Link",
+        "due": "Vencimento",
+        "page": "Página",
+        "list": "Lista",
+        "lists": "Listas",
+        "labels": "Etiquetas",
+        "attachment": "Anexo",
+        "attachments": "Anexos",
+        "checklists": "Checklists",
+        "stickers": "Adesivos",
+        "members": "Membros",
+        "org": "Organização",
+        "visibility": "Visibilidade",
+        "info": "Informação",
+        "last_activity": "Última Atividade",
+        "cover_source": "Fonte da Capa",
+        "yes": "Sim",
+        "no": "Não",
+        "done": "Concluído",
+        "board_count_one": "{{count, number}} quadro",
+        "org_count_one": "{{count, number}} organização",
+        "org_count_other": "{{count, number}} organizações",
+        "list_count_one": "{{count, number}} lista",
+        "more": "+ {{count, number}} mais…",
+        "url": "URL",
+        "votes": "Votos",
+        "bg_img": "Plano de Fundo",
+        "none": "Nenhum",
+        "cancel": "Cancelar",
+        "name": "Nome",
+        "description": "Descrição",
+        "empty_input": "Digite algo…",
+        "board_count_other": "{{count, number}} quadros",
+        "list_count_other": "{{count, number}} listas",
+        "card_count_one": "{{count, number}} cartão",
+        "card_count_other": "{{count, number}} cartões"
     },
-    "custom_field": "Campo Personalizado",
-    "link": "Link",
-    "due": "Vencimento",
-    "page": "Página",
-    "list": "Lista",
-    "lists": "Listas",
-    "labels": "Etiquetas",
-    "attachment": "Anexo",
-    "attachments": "Anexos",
-    "checklists": "Checklists",
-    "stickers": "Adesivos",
-    "members": "Membros",
-    "org": "Organização",
-    "visibility": "Visibilidade",
-    "info": "Informação",
-    "last_activity": "Última Atividade",
-    "cover_source": "Fonte da Capa"
-  },
-  "cleardata": {
-    "done": "Os dados do seu usuário foram removidos com sucesso."
-  },
-  "clearauth": {
-    "done": "Sua autorização foi removida com sucesso."
-  },
-  "cards": {
-    "list_archived": "Cartões Arquivados"
-  },
-  "lists": {
-    "list_archived": "Listas Arquivadas"
-  },
-  "boards": {
-    "list_archived": "Quadros Arquivados"
-  },
-  "webhook": {
-    "style": "Estilo",
-    "id": "ID",
-    "active": "Ativo",
-    "locale": "Idioma",
-    "whitelist": "Whitelist",
-    "blacklist": "Blacklist",
-    "dwh": "Webhook do Discord",
-    "filters_updated": "Filtros do webhook atualizados.",
-    "repair_done": "Os problemas com esse webhook foram corrigidos.",
-    "styles": {
-      "compact": {
-        "name": "Compacto"
-      },
-      "default": {
-        "name": "Padrão"
-      },
-      "small": {
-        "name": "Pequeno"
-      }
+    "cleardata": {
+        "done": "Os dados do seu usuário foram removidos com sucesso."
+    },
+    "clearauth": {
+        "done": "Sua autorização foi removida com sucesso."
+    },
+    "cards": {
+        "list_archived": "Cartões Arquivados"
+    },
+    "lists": {
+        "list_archived": "Listas Arquivadas"
+    },
+    "boards": {
+        "list_archived": "Quadros Arquivados"
+    },
+    "webhook": {
+        "style": "Estilo",
+        "id": "ID",
+        "active": "Ativo",
+        "locale": "Idioma",
+        "whitelist": "Whitelist",
+        "blacklist": "Blacklist",
+        "dwh": "Webhook do Discord",
+        "filters_updated": "Filtros do webhook atualizados.",
+        "repair_done": "Os problemas com esse webhook foram corrigidos.",
+        "styles": {
+            "compact": {
+                "name": "Compacto"
+            },
+            "default": {
+                "name": "Padrão"
+            },
+            "small": {
+                "name": "Pequeno"
+            }
+        }
+    },
+    "query": {
+        "not_found_card": "Não foi possível encontrar o cartão.",
+        "not_found_webhook": "Não foi possível encontrar o webhook.",
+        "no_list_webhook": "Nenhum webhook na lista.",
+        "not_found_list": "Não foi possível encontrar a lista.",
+        "not_found_label": "Não foi possível encontrar a etiqueta.",
+        "not_found_board": "Não foi possível encontrar o quadro, tente selecioná-lo primeiro.",
+        "no_list_label": "Nenhuma etiqueta na lista.",
+        "no_list_board": "Nenhum quadro na lista.",
+        "no_list_list": "Nenhuma lista na lista.",
+        "no_list_card": "Nenhum cartão na lista."
+    },
+    "interactions": {
+        "no_server": "Esse comando só pode ser usado em um servidor.",
+        "no_admin_perms": "Esse comando requer a permissão \"Gerenciar Servidores\"."
     }
-  }
 }
