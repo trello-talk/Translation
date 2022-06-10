@@ -138,7 +138,9 @@
         "customfielditem_remove": "{{member}} hat das benutzerdefinierte Feld \"{{customField}}\" von der Karte \"{{card}}\" gelöscht",
         "customfielditem_checkbox_true": "{{member}} hat das benutzerdefinierte Feld \"{{customField}}\" auf der Karte \"{{card}}\" als abgeschlossen markiert",
         "customfielditem_checkbox_false": "{{member}} hat das benutzerdefinierte Feld \"{{customField}}\" auf der Karte \"{{card}}\" als nicht abgeschlossen markiert",
-        "create_card_email": "{{member}} hat die Karte \"{{card}}\" via E-Mail erstellt"
+        "create_card_email": "{{member}} hat die Karte \"{{card}}\" via E-Mail erstellt",
+        "customfield_carddisplay_true": "{{member}} hat die Sichtbarkeit des benutzerdefinierten Felds \"{{customField}}\" aktiviert",
+        "customfield_carddisplay_false": "{{member}} hat die Sichtbarkeit des benutzerdefinierten Felds \"{{customField}}\" deaktiviert"
     },
     "filters": {
         "REMOVE_MEMBER_FROM_CARD": "Von Karten entfernte Mitgleider",
@@ -190,12 +192,31 @@
         "UPDATE_CARD_DESC": "Veränderte Kartenbeschreibung",
         "UPDATE_CARD_NAME": "Veränderter Katenname",
         "UPDATE_BOARD_CLOSED": "Änderungen am Boardstatus(öffnen/schließen)",
-        "EMAIL_CARD": "Per E-Mail erstellte Karten"
+        "EMAIL_CARD": "Per E-Mail erstellte Karten",
+        "UPDATE_CUSTOM_FIELD_NAME": "Namensänderungen benutzerdefinierter Felder",
+        "UPDATE_CUSTOM_FIELD_DISPLAY": "Sichtbarkeitsänderungen benutzerdefinierter Felder",
+        "UPDATE_LIST_CLOSED": "Aktualisierungen des Listenarchivs (archiviert/unarchiviert)",
+        "CREATE_CUSTOM_FIELD": "Erstellungen benutzerdefinierter Felder",
+        "DELETE_CUSTOM_FIELD": "Löschungen benutzerdfinierter Felder"
     },
     "extended": {
         "delete_card": "{{member}} hat die Karte {{cardID}} von der Liste \"{{list}}\" gelöscht"
     },
     "group": {
-        "board": "Board"
+        "board": "Board",
+        "boardUpdate": "Änderungen am Board",
+        "label": "Labels",
+        "labelUpdate": "Label Änderungen",
+        "card": "Karten",
+        "cardUpdate": "Karten Änderungen",
+        "comment": "Kommentare",
+        "checklist": "Checklisten",
+        "checkItemUpdate": "Änderungen an Gegenständen auf Checklisten",
+        "list": "Listen",
+        "listUpdate": "Änderungen an Listen",
+        "customField": "Benutzerdefinierte Felder",
+        "customFieldUpdate": "Änderungen an benutzerdefinierten Feldern",
+        "checklistUpdate": "Änderungen an Checklisten",
+        "checkItem": "Gegenstände auf Checklisten"
     }
 }
