@@ -61,10 +61,14 @@
         "card_count_other": "{{count, number}} cartões"
     },
     "cleardata": {
-        "done": "Os dados do seu usuário foram removidos com sucesso."
+        "done": "Os dados do seu usuário foram removidos com sucesso.",
+        "no_data": "Nenhum dado do usuário foi encontrado.",
+        "confirm": "Você tem certeza que deseja remover **TODOS** seus dados?\n\n• Suas configurações de idiomas serão removidas.\n• Suas credenciais de autenticação serão removidas.\n• Seu token do Trello será invalidado.\n• Qualquer webhook criado por você não irá mais funcionar e precisará ser corrigido."
     },
     "clearauth": {
-        "done": "Sua autorização foi removida com sucesso."
+        "done": "Sua autenticação foi removida com sucesso.",
+        "no_auth": "Nenhum dado de autenticação foi encontrado.",
+        "confirm": "Você tem certeza que deseja remover os dados de autenticação?\n\n• Seu token do Trello será invalidado\n• Qualquer webhook criado por você não irá mais funcionar e precisará ser corrigido."
     },
     "cards": {
         "list_archived": "Cartões Arquivados"
@@ -111,6 +115,40 @@
     },
     "interactions": {
         "no_server": "Esse comando só pode ser usado em um servidor.",
-        "no_admin_perms": "Esse comando requer a permissão \"Gerenciar Servidores\"."
+        "no_admin_perms": "Esse comando requer a permissão \"Gerenciar Servidores\".",
+        "dismiss": "Você pode dispensar essa mensagem.",
+        "bad_subcommand": "Sub-Comando inválido. Contate o suporte se você vir isso.",
+        "error": "Ocorreu um erro enquanto processávamos esta interação.",
+        "no_trello_perms": "Este comando requer que você tenha o cargo de gerenciamento do Trello ou a permissão \"Gerenciar Servidor\".",
+        "wrong_user": "❌ Apenas a pessoa que executou o comando pode fazer isso.",
+        "delete_wrong_user": "❌ Apenas a pessoa que executou o comando pode excluir a resposta.",
+        "prompt_wrong_user": "❌ Apenas a pessoa que executou o comando pode interagir com este prompt.",
+        "prompt_expired": "Este prompt expirou.",
+        "prompt_no_function": "🔥 Esse tipo de prompt não tem nenhuma função alguma. Contate o suporte se você ver isso.",
+        "prompt_no_action_id": "🔥 Nenhum id foi informado. Contate o suporte se você ver isso.",
+        "prompt_no_action_id_or_type": "🔥 Nenhum ID de ação foi provido. Contate o suporte se você ver isso.",
+        "prompt_action_requires_data": "🔥 A ação deste componente requer datas. Contate o suporte se você vir isso.",
+        "prompt_select_item": "Selecione um item abaixo…",
+        "items_selected_other": "{{count, number}} itens selecionados",
+        "visit_card": "Ver cartão no Trello",
+        "visit_board": "Ver quadro no Trello",
+        "prompt_action_expired": "❌ A ação deste prompt expirou, tente novamente mais tarde.",
+        "prompt_action_invalid_type": "🔥 A ação deste prompt tem um tipo inválido. Contate o suporte se você ver isso.",
+        "items_selected_one": "{{count, number}} item selecionado",
+        "modal_unknown": "🔥 Esse modal nunca foi vinculado a lugar algum. Contate o suporte se você vir isso."
+    },
+    "auth": {
+        "content": "Você pode autenticar com o Trello usando o botão abaixo:",
+        "no_auth": "Você precisa autentica com usa conta do Trello para usar esse commando.",
+        "button": "Autenticar com o Trello",
+        "expired": "Seu token de autenticação expirou! Por favor, re-autentique para continuar."
+    },
+    "list": {
+        "title": "Cartões em \"{{list}}\" ({{cards, number}})",
+        "none": "Não existe nenhum cartão nesta lista."
+    },
+    "label": {
+        "title": "Cartões em \"{{label}}\" ({{cards, number}})",
+        "none": "Nenhum cartão tem essa etiqueta atribuída."
     }
 }
