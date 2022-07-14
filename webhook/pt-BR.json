@@ -160,12 +160,18 @@
         "EMAIL_CARD": "Cartões criados por email",
         "MAKE_NORMAL_MEMBER_OF_BOARD": "Membros do quadro rebaixados para membros comuns",
         "DELETE_LABEL": "Etiquetas excluídas",
-        "MOVE_LIST_FROM_BOARD": "Listas transferidas para outros quadros",
-        "MOVE_LIST_TO_BOARD": "Listas transferidas de outros quadros",
+        "MOVE_LIST_FROM_BOARD": "Lista transferida para outros quadros",
+        "MOVE_LIST_TO_BOARD": "Lista transferida de outros quadros",
         "CONVERT_TO_CARD_FROM_CHECK_ITEM": "Itens da checklist convertidos em cartões",
         "MAKE_ADMIN_OF_BOARD": "Membros do quadro promovidos para admin",
         "MOVE_CARD_FROM_BOARD": "Cartões transferidos para outros quadros",
-        "MOVE_CARD_TO_BOARD": "Cartões transferidos de outros quadros"
+        "MOVE_CARD_TO_BOARD": "Cartões transferidos de outros quadros",
+        "REMOVE_CHECKLIST_FROM_CARD": "Checklist removida dos cartões",
+        "REMOVE_LABEL_FROM_CARD": "Etiqueta removida dos cartões",
+        "REMOVE_MEMBER_FROM_CARD": "Membro removido dos cartões",
+        "UPDATE_CHECK_ITEM_STATE_ON_CARD": "Estado do item da checklist atualizado (marcado/desmarcado)",
+        "VOTE_ON_CARD": "Votos no cartão",
+        "REMOVE_MEMBER_FROM_BOARD": "Membro removido do quadro"
     },
     "group": {
         "label": "Etiquetas",
