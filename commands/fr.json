@@ -1,87 +1,369 @@
 {
-  "_": {
-    "emoji": "fr",
-    "name": "Français"
-  },
-  "common": {
-    "label_color": {
-      "yellow": "Jaune",
-      "red": "Rouge",
-      "orange": "Orange",
-      "lime": "Vert citron",
-      "purple": "Violet",
-      "blue": "Bleu",
-      "sky": "Bleu ciel",
-      "pink": "Rose",
-      "none": "Pas de couleur",
-      "green": "Vert",
-      "black": "Noir"
+    "_": {
+        "emoji": "fr",
+        "name": "Français"
     },
-    "perm_levels": {
-      "public": "Public",
-      "org": "Équipe visible",
-      "private": "Privé"
+    "common": {
+        "label_color": {
+            "yellow": "Jaune",
+            "red": "Rouge",
+            "orange": "Orange",
+            "lime": "Vert citron",
+            "purple": "Violet",
+            "blue": "Bleu",
+            "sky": "Bleu ciel",
+            "pink": "Rose",
+            "none": "Pas de couleur",
+            "green": "Vert",
+            "black": "Noir",
+            "green_light": "Vert clair",
+            "lime_light": "Vert lime clair",
+            "black_light": "Noir clair",
+            "red_dark": "Rouge foncé",
+            "yellow_light": "Jaune clair",
+            "red_light": "Rouge clair",
+            "orange_light": "Orange clair",
+            "purple_light": "Violet clair",
+            "blue_light": "Bleu clair",
+            "sky_light": "Bleu ciel clair",
+            "pink_light": "Rose clair",
+            "green_dark": "Vert foncé",
+            "yellow_dark": "Jaune foncé",
+            "orange_dark": "Orange foncé",
+            "lime_dark": "Vert lime foncé",
+            "purple_dark": "Violet foncé",
+            "blue_dark": "Bleu foncé",
+            "sky_dark": "Bleu ciel foncé",
+            "pink_dark": "Rose foncé",
+            "black_dark": "Noir foncé"
+        },
+        "perm_levels": {
+            "public": "Public",
+            "org": "Équipe visible",
+            "private": "Privé"
+        },
+        "custom_field": "Champ personnalisé",
+        "link": "Lien",
+        "due": "Échéance",
+        "page": "Page",
+        "list": "Liste",
+        "lists": "Listes",
+        "labels": "Étiquettes",
+        "attachment": "Pièce jointe",
+        "attachments": "Pièces jointes",
+        "checklists": "Check-lists",
+        "stickers": "Autocollants",
+        "members": "Membres",
+        "org": "Organisation",
+        "visibility": "Visibilité",
+        "info": "Informations",
+        "last_activity": "Dernière activité",
+        "cover_source": "Source de couverture",
+        "name": "Nom",
+        "description": "Description",
+        "empty_input": "Saisissez quelque chose…",
+        "bg_img": "Image d'arrière-plan",
+        "more": "+ {{count, number}} de plus…",
+        "board_count_one": "{{count, number}} tableau",
+        "board_count_other": "{{count, number}} tableaux",
+        "org_count_one": "{{count, number}} organisation",
+        "org_count_other": "{{count, number}} organisations",
+        "list_count_one": "{{count, number}} liste",
+        "list_count_other": "{{count, number}} listes",
+        "card_count_one": "{{count, number}} carte",
+        "card_count_other": "{{count, number}} cartes",
+        "yes": "Oui",
+        "no": "Non",
+        "url": "URL",
+        "cancel": "Annuler",
+        "done": "Effectué",
+        "none": "Aucun(e)",
+        "votes": "Votes"
     },
-    "custom_field": "Champ personnalisé",
-    "link": "Lien",
-    "due": "Échéance",
-    "page": "Page",
-    "list": "Liste",
-    "lists": "Listes",
-    "labels": "Étiquettes",
-    "attachment": "Pièce jointe",
-    "attachments": "Pièces jointes",
-    "checklists": "Check-lists",
-    "stickers": "Autocollants",
-    "members": "Membres",
-    "org": "Organisation",
-    "visibility": "Visibilité",
-    "info": "Informations",
-    "last_activity": "Dernière activité",
-    "cover_source": "Source de couverture"
-  },
-  "cleardata": {
-    "done": "Vos données personnelles ont été supprimées."
-  },
-  "clearauth": {
-    "done": "Votre autorisation a été retirée."
-  },
-  "cards": {
-    "list_archived": "Cartes archivées"
-  },
-  "lists": {
-    "list_archived": "Listes archivées"
-  },
-  "boards": {
-    "list_archived": "Tableaux archivés"
-  },
-  "webhook": {
-    "style": "Style",
-    "id": "Identifiant",
-    "active": "Actif",
-    "locale": "Langue",
-    "whitelist": "Liste blanche",
-    "blacklist": "Liste noire",
-    "dwh": "Webhook Discord",
-    "filters_updated": "A mis à jour les filtres du webhook.",
-    "repair_done": "Aucun problème avec le webhook n'a été réparé.",
-    "choose_cards": "Choisissez les cartes qui seront filtrées. Si vous ne choisissez aucune carte, le filtrage de carte sera désactivé.",
-    "choose_lists": "Choisissez les listes qui seront filtrées. Ne choisir aucune liste équivaut à désactiver le filtrage de liste.",
-    "max_wh": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un Patreon!",
-    "wh_expire": "Ce webhook n'est pas disponible car il dépasse votre limite de webhook actuelle ! Vous pouvez augmenter cette limite en devenant un donateur Patreon!",
-    "styles": {
-      "compact": {
-        "description": "Empile plusieurs événements dans une seule intégration, un peu comme les commits de webhook GitHub",
-        "name": "Compact"
-      },
-      "small": {
-        "description": "Version minime des webhooks par défaut, affichant uniquement le titre descriptif",
-        "name": "Petit"
-      },
-      "default": {
-        "description": "Messages réguliers, montrant autant d'informations que possible",
-        "name": "Défaut"
-      }
+    "cleardata": {
+        "done": "Vos données personnelles ont été supprimées.",
+        "confirm": "Êtes-vous sûr(e) de vouloir supprimer **TOUTES** vos données utilisateur ?\n\n• Vos paramètres régionaux seront supprimés.\n• Vos données d'autorisation seront supprimées.\n• Votre jeton Trello sera invalidé.\n• Tous les webhooks que vous avez créés ne fonctionneront plus et devront être réparés.",
+        "no_data": "Aucune donnée utilisateur n'a été trouvée."
+    },
+    "clearauth": {
+        "done": "Votre autorisation a été retirée.",
+        "no_auth": "Aucune donnée d'authentification n'a été trouvée.",
+        "confirm": "Êtes-vous sûr(e) de vouloir supprimer vos données d'authentification ?\n\n• Votre jeton Trello a été invalidé.\n• Tout webhook que vous avez créé ne fonctionnera pas et devra être réparé."
+    },
+    "cards": {
+        "list_archived": "Cartes archivées",
+        "list_no_labels": "Cartes sans étiquette",
+        "list_all": "Toutes les cartes",
+        "list_open": "Cartes ouvertes",
+        "list_watched": "Cartes que vous avez regardées",
+        "list_overdue": "Cartes en retard",
+        "list_labels": "Cartes avec étiquette"
+    },
+    "lists": {
+        "list_archived": "Listes archivées",
+        "list_open": "Listes ouvertes",
+        "list_all": "Toutes les listes",
+        "list_watched": "Listes que vous avez regardées"
+    },
+    "boards": {
+        "list_archived": "Tableaux archivés",
+        "list_open": "Tableaux ouverts",
+        "list_all": "Tous les tableaux",
+        "list_watched": "Tableaux que vous avez regardé",
+        "list_starred": "Tableaux que vous avez mis en favori"
+    },
+    "webhook": {
+        "style": "Style",
+        "id": "Identifiant",
+        "active": "Actif",
+        "locale": "Langue",
+        "whitelist": "Liste blanche",
+        "blacklist": "Liste noire",
+        "dwh": "Webhook Discord",
+        "filters_updated": "A mis à jour les filtres du webhook.",
+        "repair_done": "Aucun problème avec le webhook n'a été réparé.",
+        "choose_cards": "Choisissez les cartes qui seront filtrées. Si vous ne choisissez aucune carte, le filtrage de carte sera désactivé.",
+        "choose_lists": "Choisissez les listes qui seront filtrées. Ne choisir aucune liste équivaut à désactiver le filtrage de liste.",
+        "max_wh": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un Patreon!",
+        "wh_expire": "Ce webhook n'est pas disponible car il dépasse votre limite de webhook actuelle ! Vous pouvez augmenter cette limite en devenant un donateur !",
+        "styles": {
+            "compact": {
+                "description": "Empile plusieurs événements dans une seule intégration, un peu comme les commits de webhook GitHub",
+                "name": "Compact"
+            },
+            "small": {
+                "description": "Version minime des webhooks par défaut, affichant uniquement le titre descriptif",
+                "name": "Petit"
+            },
+            "default": {
+                "description": "Messages réguliers, montrant autant d'informations que possible",
+                "name": "Défaut"
+            }
+        },
+        "repair_wh_title": "Et nous voilà de retour !",
+        "dwh_fail_create": "Impossible de créer un webhook Discord ! Assurez-vous que j'ai la permission `Gérer les webhooks` dans le canal sélectionné.",
+        "dwh_channel": "Publication dans le canal",
+        "discord_webhook_missing": "> • Impossible de trouver le webhook connecté à Discord !",
+        "delete_confirm": "Êtes-vous sûr(e) de vouloir supprimer le webhook **{{webhook}}** ?\nNote : Supprimer un webhook ne supprimera **pas** le webhook Discord.",
+        "select_webhook_max": "Il y a trop de webhooks sur ce canal ! Choisissez un webhook existant à utiliser.",
+        "no_dwh_available": "Plusieurs autres applications ont trop de webhooks dans ce canal. Envisagez de supprimer les webhooks Discord dans ce canal que vous n'utilisez plus.",
+        "set_style": "Définissez le style d'affichage du webhook à **{{style}}**.",
+        "delete_done": "Webhook supprimé avec succès.",
+        "select_all": "Tout sélectionner",
+        "deselect_all": "Tout désélectionner",
+        "filtering": "Filtrage",
+        "not_set": "Non défini",
+        "wh_owner": "Propriétaire du webhoook",
+        "dwh_creator": "Créateur du webhook Discord",
+        "filters_one": "{{count, number}} action filtrée affichée",
+        "filters_other": "{{count, number}} actions filtrées affichées",
+        "set_filter_policy": "Définissez la politique de filtrage du webhook à **{{policy}}**.",
+        "set_active": "Activation du webhook. Les événements s'afficheront à partir du webhook Discord.",
+        "filters_title": "Sélectionner les filtres pour \"{{webhook}}\"",
+        "cards_title": "Sélectionner les cartes filtrées pour \"{{webhook}}\"",
+        "twh_repair_failed": "Échec de la réparation du webhook interne ! Assurez-vous d'avoir accès au tableau sur votre compte Trello !",
+        "repair_wh_content": "Le webhook **{{name}}** a été réparé ! Les événements devraient réapparaître sous peu…",
+        "unnamed": "Webhook sans nom",
+        "new_wh_name": "Mises à jour des tableaux par Taco",
+        "list_all": "Tous les webhooks",
+        "list_active": "Webhooks actifs",
+        "list_inactive": "Webhooks inactifs",
+        "list_unnamed": "Webhooks sans nom",
+        "dwh_fail": "Impossible de récupérer les webhooks Discord ! Assurez-vous que j'ai la permission `Gérer les webhooks`.",
+        "filter_policy": "Politique de filtrage",
+        "filter_card_one": "{{count, number}} carte filtrée",
+        "filter_card_other": "{{count, number}} cartes filtrées",
+        "filter_list_one": "{{count, number}} liste filtrée",
+        "filter_list_other": "{{count, number}} listes filtrées",
+        "repair_header": "Ce webhook possède les problèmes suivants :",
+        "trello_member_missing": "> • Impossible de trouver l'utilisateur ayant créé ce webhook !",
+        "repair_footer": "Vous pouvez corriger ces problèmes avec `/webhook repair`",
+        "board_unauthorized": "Vous n'avez pas la permission de voir ce tableau !",
+        "board_invalid": "Ce tableau n'existe pas !",
+        "create_new": "Créer un nouveau webhook",
+        "select_webhook": "Sélectionner un webhook Discord à utiliser ou choisir d'en créer un nouveau.",
+        "select_webhook_placeholder": "Sélectionnez un webhook à utiliser…",
+        "max": "Vous avez atteint votre nombre maximal de webhooks pour ce serveur ! Vous pouvez augmenter cette limite en devenant un donateur !",
+        "created_by": "Créé par {{user}}",
+        "add_done": "A créé un webhook pour **{{board}}**.",
+        "add_wh_title": "Un nouveau départ !",
+        "add_wh_content": "Ce webhook pour le tableau Trello **{{name}}** a démarré ! Les événements devraient apparaître sous peu…",
+        "invalid_locale": "Cette locale est invalide !",
+        "set_locale": "Définissez la locale de votre webhook à **{{name}}**.",
+        "set_name": "Définissez le nom du webhook à **{{name}}**.",
+        "invalid_style": "Ce style d'affichage est invalide !",
+        "already_active": "Ce webhook est déjà actif !",
+        "already_inactive": "Ce webhook est déjà inactif !",
+        "set_inactive": "Désactivation du webhook. Les événements ne s'afficheront plus à partir du webhook Discord.",
+        "filters_placeholder": "Sélectionnez les filtres à utiliser dans ce webhook…",
+        "view_group_placeholder": "Sélectionnez un groupe de filtres à utiliser…",
+        "cards_updated": "Mise à jour des cartes filtrées du webhook.",
+        "cards_placeholder": "Sélectionnez les cartes à filtrer dans ce webhook…",
+        "lists_title": "Sélectionner les listes filtrées pour \"{{webhook}}\"",
+        "lists_updated": "Mise à jour des listes filtrées du webhook.",
+        "lists_placeholder": "Sélectionnez les listes à filtrer dans ce webhook…",
+        "dwh_fail_no_channel": "Impossible de recréer un webhook Discord, assurez-vous qu'il y a un canal qui n'a pas de webhooks d'autres applications !",
+        "select_channel": "Il semble que le webhook Discord pour ce webhook soit manquant. Sélectionnez un canal Discord pour y poster des événements.",
+        "select_channel_placeholder": "Sélectionnez un canal à utiliser…"
+    },
+    "edit": {
+        "members_placeholder": "Sélectionnez les membres à ajouter à cette carte…",
+        "recolor": "- Couleur modifiée en **{{color}}**",
+        "unarchive": "- Supprimé de l'archive",
+        "description": "- A modifié la description",
+        "remove_description": "- A supprimé la description",
+        "rename": "- Renommé en **{{name}}**",
+        "no_edit": "Aucune modification n'a été apportée.",
+        "labels_updated": "A mis à jour les étiquettes de la carte.",
+        "archive": "- Archivé",
+        "need_admin": "Pour ce faire, vous devez disposer de droits d'administrateur sur le tableau !",
+        "header_list": "Les modifications suivantes ont été apportées à la liste **{{name}}** :",
+        "header_label": "Les modifications suivantes ont été apportées à l'étiquette **{{name}}** :",
+        "labels_title": "Sélectionner les étiquettes pour \"{{card}}\"",
+        "labels_placeholder": "Sélectionnez les étiquettes à ajouter à cette carte…",
+        "members_title": "Sélectionnez les membres pour \"{{card}}\"",
+        "members_updated": "A mis à jour les membres de la carte.",
+        "move": "A déplacé la carte **{{card}}** vers la liste **{{list}}**.",
+        "header_card": "Les modifications suivantes ont été apportées à la carte **{{name}}** :",
+        "header_board": "Les modifications suivantes ont été apportées à la carte **{{name}}** :"
+    },
+    "addattachment": {
+        "no_url": "Vous devez fournir une pièce jointe ou une URL !",
+        "done": "A ajouté une pièce jointe à la carte **{{card}}**.",
+        "limited": "Vous avez trop de pièces jointes ! Essayez de supprimer les pièces jointes inutiles."
+    },
+    "query": {
+        "not_found_list": "Impossible de trouver cette liste.",
+        "not_found_card": "Impossible de trouver cette carte.",
+        "not_found_label": "Impossible de trouver cette étiquette.",
+        "no_list_board": "Pas de tableau à lister.",
+        "not_found_webhook": "Impossible de trouver ce webhook.",
+        "not_found_board": "Impossible de trouver ce tableau, essayez d'abord de sélectionner un tableau.",
+        "no_list_label": "Pas d'étiquettes à lister.",
+        "no_list_list": "Pas de liste à énumérer.",
+        "no_list_card": "Pas de cartes à énumérer.",
+        "no_list_webhook": "Pas de webhook à énumérer."
+    },
+    "interactions": {
+        "dismiss": "Vous pouvez ignorer ce message.",
+        "bad_subcommand": "Sous-commande invalide. Contactez le support si vous voyez ceci.",
+        "no_server": "Cette commande peut être utilisée uniquement dans un serveur.",
+        "no_trello_perms": "Cette commande nécessite que vous ayez le rôle d'administration Trello ou que vous ayez la permission \"Gérer le serveur\".",
+        "prompt_no_function": "🔥 Ce type de prompt n'a pas de fonction. Contactez le support si vous voyez ceci.",
+        "prompt_action_invalid_type": "🔥 L'action liée à ce prompt a un type invalide. Contactez le support si vous voyez ceci.",
+        "items_selected_other": "{{count, number}} éléments sélectionnés",
+        "no_admin_perms": "Cette commande requiert la permission \"Gérer le serveur\".",
+        "wrong_user": "❌ Seule la personne ayant exécutée la commande peut effectuer ceci.",
+        "delete_wrong_user": "❌ Seule la personne ayant exécutée cette commande peut supprimer la réponse.",
+        "prompt_wrong_user": "❌ Seule la personne ayant exécutée cette commande peut interagir avec ce prompt.",
+        "prompt_expired": "Ce prompt a expiré.",
+        "prompt_no_action_id": "🔥 Aucun ID d'action (action ID) n'a été fourni. Contactez le support si vous voyez ceci.",
+        "prompt_no_action_id_or_type": "🔥 Aucun ID d'action (action ID) n'a été fourni. Contactez le support si vous voyez ceci.",
+        "prompt_action_expired": "❌ L'action liée à ce prompt a expiré, essayez plus tard.",
+        "prompt_action_requires_data": "🔥 L'action liée à ce composant requiert des données. Contactez le support si vous voyez ceci.",
+        "modal_unknown": "🔥 Cette modale n'a été liée à rien d'autre. Contactez le support si vous voyez ceci.",
+        "prompt_select_item": "Sélectionnez un élément ci-dessous…",
+        "items_selected_one": "{{count, number}} élément sélectionné",
+        "visit_card": "Voir la carte sur Trello",
+        "visit_board": "Voir le tableau sur Trello",
+        "error": "Une erreur s'est produite lors du traitement de cette interaction."
+    },
+    "watchboard": {
+        "watched": "A commencé à regarder le tableau **{{board}}**.",
+        "unwatched": "A arrêté de regarder le tableau **{{board}}**."
+    },
+    "watchcard": {
+        "unwatched": "A arrêté de regarder la carte **{{card}}**.",
+        "watched": "A commencé à regarder la carte **{{card}}**."
+    },
+    "addlabel": {
+        "done": "A créé la nouvelle étiquette **{{label}}**.",
+        "limited": "Vous avez trop d'étiquettes ! Essayez de modifier les autres étiquettes ou de supprimer des étiquettes inutilisées."
+    },
+    "deletelabel": {
+        "confirm": "Êtes-vous sûr(e) de vouloir supprimer l'étiquette **{{label}}** ?",
+        "done": "Suppression de l'étiquette effectuée avec succès."
+    },
+    "addcard": {
+        "modal_title": "Ajouter la carte à la liste",
+        "done": "A créé la nouvelle carte **{{card}}**.",
+        "limited": "Vous avez trop de cartes ! Essayez de supprimer les cartes inutilisées."
+    },
+    "star": {
+        "star": "Met en favori le tableau **{{board}}**.",
+        "unstar": "Supprime des favoris le tableau **{{board}}**."
+    },
+    "comment": {
+        "commented": "A commenté la carte **{{card}}**."
+    },
+    "switch": {
+        "success": "A basculé sur le tableau **{{board}}**.",
+        "not_found": "Impossible de trouver ce tableau.",
+        "no_board_command": "Sélectionnez un tableau sur lequel basculer avant d'utiliser cette commande !"
+    },
+    "labels": {
+        "list_all": "Toutes les étiquettes",
+        "list_cards": "Étiquettes avec cartes"
+    },
+    "deletecard": {
+        "confirm": "Êtes-vous sûr(e) de supprimer la carte **{{card}}** ?",
+        "done": "Suppression de la carte effectuée avec succès."
+    },
+    "board": {
+        "footer": "Ce tableau a $t(common.card_count, {\"count\": {{cards}} }) et $t(common.list_count, {\"count\": {{lists}} }).",
+        "is_archived": "Ce tableau est archivé."
+    },
+    "me": {
+        "footer": "Vous êtes dans $t(common.board_count, {\"count\": {{boards}} }) et $t(common.org_count, {\"count\": {{orgs}} })."
+    },
+    "server_settings": {
+        "locale": "La région du serveur est définie sur **{{name}}**.",
+        "role": "Le rôle d'administration Trello est défini sur **{{role}}**.",
+        "set_role": "Définissez le rôle d'administration Trello en tant que **{{role}}**.",
+        "no_locale_set": "Ce serveur n'a pas de région définie.",
+        "invalid_locale": "Cette région est invalide !",
+        "set_locale": "Définissez votre région sur **{{name}}**.",
+        "no_role_set": "Le rôle d'administration Trello n'a pas encore été défini sur ce serveur."
+    },
+    "bot": {
+        "info_content": "**Taco** est un bot Discord qui permet aux utilisateurs de gérer leurs tableaux Trello dans Discord.",
+        "github_content": "Vous pouvez consulter le dépôt open-source GitHub de ce bot en cliquant sur le bouton ci-dessous !",
+        "github_button": "Voir les sources sur GitHub",
+        "support_content": "Vous pouvez rejoindre le serveur du support à partir de cette invitation : {{invite}}",
+        "donate_content": "Soutenez le développement de Taco en devenant mécène ! Vous bénéficiez d'avantages comme des webhooks supplémentaires et Taco+ !",
+        "invite_content": "Vous pouvez m'inviter sur d'autres serveurs en cliquant sur le bouton ci-dessous !",
+        "invite_button": "Invitez Taco",
+        "donate_button": "Soutenez via Patreon"
+    },
+    "card": {
+        "is_archived": "Cette carte est archivée.",
+        "vote_include": "(vous y compris)"
+    },
+    "auth": {
+        "content": "Vous pouvez vous authentifier avec Trello en utilisant le bouton ci-dessous :",
+        "no_auth": "Vous devez vous authentifier à votre compte Trello en utilisant cette commande.",
+        "expired": "Votre jeton d'authentification a expiré ! Veuillez vous authentifier à nouveau pour continuer.",
+        "button": "S'authentifier avec Trello"
+    },
+    "list": {
+        "none": "Aucune carte ne figure dans cette liste.",
+        "title": "Cartes dans \"{{list}}\" ({{cards, number}})"
+    },
+    "label": {
+        "none": "Aucune carte n'est assignée à cette étiquette.",
+        "title": "Cartes dans \"{{label}}\" ({{cards, number}})"
+    },
+    "watchlist": {
+        "watched": "A commencé à regarder la liste **{{list}}**.",
+        "unwatched": "A arrêté de regarder la liste **{{list}}**."
+    },
+    "addlist": {
+        "done": "A créé une nouvelle liste **{{list}}**.",
+        "limited": "Vous avez trop de listes ! Essayez de modifier d'autres listes archivées."
+    },
+    "user_settings": {
+        "invalid_locale": "Cette région est invalide !",
+        "locale": "Votre région est défini sur **{{name}}**.",
+        "set_locale": "Définissez votre région sur **{{name}}**."
     }
-  }
 }
