@@ -263,7 +263,7 @@
   },
   "bot": {
     "info_content": "**Taco** is a Discord bot that allows users to manage their Trello boards in Discord.",
-    "donate_content": "Support the development of Taco by becoming a Patron! You get perks like extra webhooks and Taco+!",
+    "donate_content": "Support the development of Taco by becoming a supporter and be able to create extra webhooks!",
     "donate_button": "Support via Patreon",
     "github_content": "You can view the open-source GitHub repository of this bot by clicking the button below!",
     "github_button": "View Source on GitHub",
