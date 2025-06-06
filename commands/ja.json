@@ -11,10 +11,216 @@
         "link": "リンク",
         "url": "URL",
         "page": "ページ",
-        "list": "リスト"
+        "list": "リスト",
+        "votes": "投票",
+        "name": "名前",
+        "description": "説明",
+        "empty_input": "何か入力してください…",
+        "attachment": "添付ファイル",
+        "attachments": "添付ファイル",
+        "stickers": "スタンプ",
+        "members": "メンバー",
+        "org": "ワークスペース",
+        "visibility": "公開範囲",
+        "info": "情報",
+        "bg_img": "背景",
+        "last_activity": "最終編集",
+        "more": "+ {{count, number}} 個…",
+        "board_count_one": "{{count, number}} ボード",
+        "board_count_other": "{{count, number}} ボード",
+        "list_count_other": "{{count, number}} リスト",
+        "card_count_one": "{{count, number}} カード",
+        "card_count_other": "{{count, number}} カード",
+        "label_color": {
+            "green": "緑",
+            "yellow": "黄色",
+            "red": "赤",
+            "lime": "ライム",
+            "purple": "紫",
+            "sky": "スカイブルー",
+            "pink": "ピンク",
+            "black": "黒",
+            "red_light": "ライトレッド",
+            "lime_light": "ライトライトグリーン",
+            "purple_light": "ライトパープル",
+            "blue_light": "ライトブルー",
+            "sky_light": "ライトスカイブルー",
+            "black_light": "ライトブラック",
+            "green_dark": "ダークグリーン",
+            "yellow_dark": "ダークイエロー",
+            "red_dark": "ダークレッド",
+            "lime_dark": "ダークライムグリーン",
+            "purple_dark": "ダークパープル",
+            "blue_dark": "ダークブルー",
+            "sky_dark": "ダークスカイブルー",
+            "black_dark": "ダークブラック",
+            "none": "なし",
+            "blue": "青",
+            "orange": "オレンジ",
+            "orange_dark": "ダークオレンジ",
+            "green_light": "ライトグリーン",
+            "yellow_light": "ライトイエロー",
+            "orange_light": "ライトオレンジ",
+            "pink_light": "ライトピンク",
+            "pink_dark": "ダークピンク"
+        },
+        "perm_levels": {
+            "public": "公開",
+            "org": "ワークスペース",
+            "private": "非公開"
+        },
+        "checklists": "チェックリスト",
+        "cover_source": "カバーソース",
+        "list_count_one": "{{count, number}} リスト",
+        "org_count_one": "{{count, number}} ワークスペース",
+        "org_count_other": "{{count, number}} ワークスペース"
     },
     "_": {
         "name": "日本語",
         "emoji": "jp"
+    },
+    "query": {
+        "not_found_list": "そのリストは見つかりませんでした。",
+        "not_found_label": "そのラベルは見つかりませんでした。",
+        "no_list_label": "ラベルがありません。",
+        "no_list_board": "ボードがありません。",
+        "no_list_list": "リストがありません。",
+        "no_list_card": "カードがありません。",
+        "no_list_webhook": "webhookがありません。",
+        "not_found_webhook": "そのwebhookは見つかりませんでした。",
+        "not_found_card": "そのカードは見つかりませんでした。",
+        "not_found_board": "そのボードは見つかりませんでした。まずはボードを選択してください。"
+    },
+    "interactions": {
+        "no_admin_perms": "このコマンドを実行するためには「サーバー管理」権限が必要です。",
+        "wrong_user": "❌ コマンド実行者のみが実行できます。",
+        "delete_wrong_user": "❌ コマンド実行者のみが返信を削除できます。",
+        "prompt_wrong_user": "❌ コマンド実行者のみがこのプロンプトを操作できます。",
+        "prompt_expired": "このプロンプトは期限切れです。",
+        "prompt_no_action_id": "🔥 アクションIDが提供されていません。このメッセージが表示された場合はサポートに連絡してください。",
+        "prompt_action_expired": "❌ このプロンプトに対するアクションは期限切れです。後で再度お試しください。",
+        "prompt_action_requires_data": "🔥 このコンポーネントへのアクションにはデータが必要です。このメッセージが表示された場合はサポートに連絡してください。",
+        "modal_unknown": "🔥 このモーダルはどこにもリンクされていません。このメッセージが表示された場合はサポートに連絡してください。",
+        "prompt_select_item": "下の項目を選択してください…",
+        "items_selected_other": "{{count, number}} 個選択されました",
+        "visit_card": "Trelloでカードを見る",
+        "dismiss": "このメッセージは削除しても構いません。",
+        "error": "このインタラクションの処理中にエラーが発生しました。",
+        "no_trello_perms": "このコマンドを実行するためには、Trello管理ロールを持っているか、「サーバー管理」権限を持っている必要があります。",
+        "prompt_no_function": "🔥 このタイプのプロンプトには機能がありません。このメッセージが表示された場合はサポートに連絡してください。",
+        "prompt_no_action_id_or_type": "🔥 アクションIDが提供されていません。このメッセージが表示された場合はサポートに連絡してください。",
+        "items_selected_one": "{{count, number}} 個選択されました",
+        "no_server": "このコマンドはサーバーでのみ使用できます。",
+        "visit_board": "Trelloでボードを見る",
+        "prompt_action_invalid_type": "🔥 このプロンプトに対するアクションのタイプが無効です。このメッセージが表示された場合はサポートに連絡してください。",
+        "bad_subcommand": "無効なサブコマンドです。このメッセージが表示された場合はサポートに連絡してください。"
+    },
+    "auth": {
+        "content": "Trelloの認証は以下のボタンから行う事ができます:",
+        "expired": "認証トークンの有効期限が切れています! 続行するには再認証してください。",
+        "button": "Trelloで認証する",
+        "no_auth": "このコマンドを使用するには、Trelloアカウントを認証する必要があります。"
+    },
+    "list": {
+        "title": "「{{list}}」のカード ({{cards, number}})",
+        "none": "このリストにはカードがありません。"
+    },
+    "label": {
+        "none": "このラベルが貼られたカードはありません。",
+        "title": "「{{label}}」が付いたカード ({{cards, number}})"
+    },
+    "cleardata": {
+        "no_data": "ユーザーデータは見つかりませんでした。",
+        "done": "ユーザーデータが削除されました。",
+        "confirm": "本当に**すべて**のユーザーデータを削除しますか？\n\n• 言語設定は削除されます。\n• あなたの認証情報は削除されます。\n• あなたのTrelloトークンは無効化されます。\n• 作成したwebhookは機能しなくなり、修復が必要になります。"
+    },
+    "clearauth": {
+        "no_auth": "認証データが見つかりませんでした。",
+        "done": "あなたの認証情報は削除されました。",
+        "confirm": "本当に認証データを削除しますか？\n\n- あなたのTrelloトークンは無効化されます。\n- 作成したwebhookはすべて機能しなくなり、修復が必要になります。"
+    },
+    "watchboard": {
+        "watched": "ボード「 **{{board}}** 」のサブスクライブを開始しました。",
+        "unwatched": "ボード「 **{{board}}** 」のサブスクライブを停止しました。"
+    },
+    "watchlist": {
+        "watched": "ボード「 **{{list}}** 」のサブスクライブを開始しました。",
+        "unwatched": "ボード「 **{{list}}** 」のサブスクライブを停止しました。"
+    },
+    "watchcard": {
+        "watched": "ボード「 **{{card}}** 」のサブスクライブを開始しました。",
+        "unwatched": "ボード「 **{{card}}** 」のサブスクライブを停止しました。"
+    },
+    "deletelabel": {
+        "confirm": "本当にラベル「**{{label}}**」を削除しますか？",
+        "done": "ラベルの削除に成功しました。"
+    },
+    "addlist": {
+        "done": "新しく「**{{list}}**」と言うリストを作成しました。",
+        "limited": "リストが多すぎます! 他のアーカイブされたリストを編集してみてください。"
+    },
+    "edit": {
+        "no_edit": "編集は行われませんでした。",
+        "header_card": "カード「**{{name}}**」に以下の変更を加えました:",
+        "header_board": "ボード「**{{name}}**」に以下の変更を加えました:",
+        "labels_title": "カード「{{card}}」に割り当てられたラベル",
+        "labels_updated": "カードのラベルを更新しました。",
+        "members_title": "カード「{{card}}」に割り当てられたメンバー",
+        "members_updated": "カードのメンバーを更新しました。",
+        "move": "カード「**{{card}}**」をリスト「**{{list}}**」に移動させました。",
+        "rename": "- 名前を「**{{name}}**」に変更しました",
+        "recolor": "- 色を「**{{color}}**」に変更しました",
+        "archive": "- アーカイブしました",
+        "description": "- 説明を編集しました",
+        "remove_description": "- 説明を削除しました",
+        "members_placeholder": "このカードに割り当てるメンバーを選択してください…",
+        "header_list": "リスト「**{{name}}**」に以下の変更を加えました:",
+        "need_admin": "この操作を行うには、ボードの管理者権限が必要です!",
+        "header_label": "ラベル「**{{name}}**」に以下の変更を加えました:",
+        "unarchive": "- アーカイブから復元しました",
+        "labels_placeholder": "このカードに追加するラベルを選択してください…"
+    },
+    "addattachment": {
+        "done": "カード「**{{card}}**」に添付ファイルを追加しました。",
+        "limited": "添付ファイルが多すぎます! 不要な添付ファイルを削除してください。",
+        "no_url": "添付ファイルまたはURLのいずれかを入力する必要があります!"
+    },
+    "addcard": {
+        "modal_title": "リストにカードを追加する",
+        "done": "新しく「**{{card}}**」と言うカードを作成しました。",
+        "limited": "カードの枚数が多すぎます! 未使用のカードを削除してみてください。"
+    },
+    "deletecard": {
+        "confirm": "本当にカード「**{{card}}**」を削除しますか？",
+        "done": "カードの削除に成功しました。"
+    },
+    "star": {
+        "star": "ボード「**{{board}}**」にスターを付けました。",
+        "unstar": "ボード「**{{board}}**」からスターを外しました。"
+    },
+    "switch": {
+        "not_found": "そのボードは見つかりませんでした。",
+        "no_board_command": "このコマンドを使用する前に、切り替えるボードを選択してください!",
+        "success": "ボード「**{{board}}**」に切り替えました。"
+    },
+    "card": {
+        "is_archived": "このカードはアーカイブされています。",
+        "vote_include": "(あなたを含む)"
+    },
+    "cards": {
+        "list_all": "全てのカード",
+        "list_archived": "アーカイブされたカード",
+        "list_open": "開いているカード"
+    },
+    "addlabel": {
+        "limited": "ラベルが多すぎます! 他のラベルを編集するか、未使用のラベルを削除してみてください。",
+        "done": "新しく「**{{label}}**」と言うラベルを作成しました。"
+    },
+    "comment": {
+        "commented": "カード「**{{card}}**」にコメントしました。"
+    },
+    "board": {
+        "is_archived": "このボードはアーカイブされています。",
+        "footer": "このボードには$t(common.card_count, {\"count\": {{cards}} })個のカードと$t(common.list_count, {\"count\": {{lists}} })個のリストがあります。"
     }
 }
