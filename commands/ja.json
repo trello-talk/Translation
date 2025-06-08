@@ -86,8 +86,8 @@
         "no_list_board": "ボードがありません。",
         "no_list_list": "リストがありません。",
         "no_list_card": "カードがありません。",
-        "no_list_webhook": "webhookがありません。",
-        "not_found_webhook": "そのwebhookは見つかりませんでした。",
+        "no_list_webhook": "ウェブフックがありません。",
+        "not_found_webhook": "そのウェブフックは見つかりませんでした。",
         "not_found_card": "そのカードは見つかりませんでした。",
         "not_found_board": "そのボードは見つかりませんでした。まずはボードを選択してください。"
     },
@@ -132,12 +132,12 @@
     "cleardata": {
         "no_data": "ユーザーデータは見つかりませんでした。",
         "done": "ユーザーデータが削除されました。",
-        "confirm": "本当に**すべて**のユーザーデータを削除しますか？\n\n• 言語設定は削除されます。\n• あなたの認証情報は削除されます。\n• あなたのTrelloトークンは無効化されます。\n• 作成したwebhookは機能しなくなり、修復が必要になります。"
+        "confirm": "本当に**すべて**のユーザーデータを削除しますか？\n\n• 言語設定は削除されます。\n• あなたの認証情報は削除されます。\n• あなたのTrelloトークンは無効化されます。\n• 作成したウェブフックは機能しなくなり、修復が必要になります。"
     },
     "clearauth": {
         "no_auth": "認証データが見つかりませんでした。",
         "done": "あなたの認証情報は削除されました。",
-        "confirm": "本当に認証データを削除しますか？\n\n- あなたのTrelloトークンは無効化されます。\n- 作成したwebhookはすべて機能しなくなり、修復が必要になります。"
+        "confirm": "本当に認証データを削除しますか？\n\n- あなたのTrelloトークンは無効化されます。\n- 作成したウェブフックはすべて機能しなくなり、修復が必要になります。"
     },
     "watchboard": {
         "watched": "ボード「 **{{board}}** 」のサブスクライブを開始しました。",
@@ -208,9 +208,13 @@
         "vote_include": "(あなたを含む)"
     },
     "cards": {
-        "list_all": "全てのカード",
+        "list_all": "すべてのカード",
         "list_archived": "アーカイブされたカード",
-        "list_open": "開いているカード"
+        "list_open": "開いているカード",
+        "list_watched": "あなたがサブスクライブしたカード",
+        "list_overdue": "期限切れのカード",
+        "list_no_labels": "ラベルの付いていないカード",
+        "list_labels": "ラベルが付いているカード"
     },
     "addlabel": {
         "limited": "ラベルが多すぎます! 他のラベルを編集するか、未使用のラベルを削除してみてください。",
@@ -222,5 +226,60 @@
     "board": {
         "is_archived": "このボードはアーカイブされています。",
         "footer": "このボードには$t(common.card_count, {\"count\": {{cards}} })個のカードと$t(common.list_count, {\"count\": {{lists}} })個のリストがあります。"
+    },
+    "lists": {
+        "list_all": "すべてのリスト",
+        "list_archived": "アーカイブされたリスト",
+        "list_watched": "あなたがサブスクライブしたリスト",
+        "list_open": "開いているリスト"
+    },
+    "boards": {
+        "list_archived": "アーカイブされたボード",
+        "list_open": "開いているボード",
+        "list_starred": "あなたがスターを付けたボード",
+        "list_all": "すべてのボード",
+        "list_watched": "あなたがサブスクライブしたボード"
+    },
+    "labels": {
+        "list_all": "すべてのラベル",
+        "list_cards": "カードについているラベル"
+    },
+    "user_settings": {
+        "invalid_locale": "その言語は無効です!",
+        "locale": "あなたの言語設定は「**{{name}}**」に設定されています。",
+        "set_locale": "あなたの言語設定を「**{{name}}**」に設定しました。"
+    },
+    "server_settings": {
+        "no_locale_set": "このサーバーは言語設定を設定していません。",
+        "locale": "このサーバーの言語設定は「**{{name}}**」に設定されています。",
+        "set_locale": "このサーバーの言語設定を「**{{name}}**」に設定しました。",
+        "no_role_set": "このサーバーにはTrello管理ロールが設定されていません。",
+        "set_role": "Trello管理ロールを**{{role}}**に設定しました。",
+        "role": "Trello管理ロールは「**{{role}}**」に設定されています。",
+        "invalid_locale": "その言語は無効です!"
+    },
+    "bot": {
+        "donate_button": "Patreonでサポートする",
+        "github_button": "GitHubでコードを見る",
+        "invite_content": "次のボタンをクリックすれば、ボットを他のサーバーに招待することができます!",
+        "invite_button": "Tacoを招待する",
+        "info_content": "「**Taco**」は、DiscordでTrelloボードを管理できるDiscordボットです。",
+        "github_content": "次のボタンをクリックすると、このボットのオープンソースGitHubリポジトリを見ることができます!",
+        "donate_extra": "PatreonまたはDiscord Storeからサポーターになることができます",
+        "support_content": "こちらの招待リンクからサポートサーバーに参加することが出来ます: {{invite}}",
+        "donate_content": "サポーターになることでTacoの開発をサポートし、追加のウェブフックを作成できるようになります!"
+    },
+    "webhook": {
+        "new_wh_name": "Tacoによるボードの更新",
+        "unnamed": "名前の無いウェブフック",
+        "list_all": "すべてのウェブフック",
+        "list_active": "有効なウェブフック",
+        "list_inactive": "無効なウェブフック",
+        "list_unnamed": "名前の無いウェブフック",
+        "dwh_fail": "Discordのウェブフックを取得できませんでした! ボットに`ウェブフックの管理`権限があるか確認してください。",
+        "dwh_fail_create": "Discordのウェブフックを作成できませんでした! 選択されたチャンネルにボットの`ウェブフックの管理`権限があるか確認してください。"
+    },
+    "me": {
+        "footer": "あなたは$t(common.board_count, {\"count\": {{boards}} })個のボードと$t(common.org_count, {\"count\": {{orgs}} })個のワークスペースに所属しています。"
     }
 }
