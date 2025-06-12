@@ -350,7 +350,29 @@
         "thread_parent_mismatch": "このスレッドはウェブフックのチャンネルのスレッドではありません! `/webhook set thread`コマンドを使って新しいスレッドを設定してください。",
         "set_locale": "あなたのウェブフックの言語設定を **{{name}}** に変更しました。",
         "repair_need_thread": "ウェブフックに関する問題はすべて修復されましたが、フォーラムに投稿する際には**必ず**スレッドを設定する必要があります。スレッドは `/webhook set thread` コマンドで設定できます。",
-        "choose_lists": "フィルターするリストを選択してください。リストなしを選択すると、リストのフィルターは無効になります。"
+        "choose_lists": "フィルターするリストを選択してください。リストなしを選択すると、リストのフィルターは無効になります。",
+        "thread_send_fail": "このウェブフックはスレッドを指定せずに送信しようとしました。`/webhook set thread` コマンドでスレッドを指定してください。",
+        "thread_was_unset": "スレッドが事前に設定されていなかったため、`/webhook set thread`で新しいスレッドを設定してください。",
+        "set_thread_bad_parent": "このスレッドはDiscordのウェブフックのチャンネル「{{channel}}」の物ではありません。",
+        "set_thread_locked": "このスレッドはロックされています。このスレッドに設定を行う前にロックを解除してください。",
+        "set_thread_invalid": "無効なスレッドです。",
+        "unset_thread": "このウェブフックのスレッドの設定を削除しました。",
+        "styles": {
+            "default": {
+                "name": "デフォルト",
+                "description": "一般的な表示形式です。可能な限り多くの情報を表示します"
+            },
+            "small": {
+                "name": "スモール",
+                "description": "デフォルト設定の簡略版です。説明的なタイトルのみが表示されます"
+            },
+            "compact": {
+                "name": "コンパクト",
+                "description": "GitHubのウェブフックのコミットのように、複数のイベントを1つのembedにまとめて送信します"
+            }
+        },
+        "set_thread": "スレッド「{{thread}}」に投稿するようにウェブフックを設定しました。",
+        "set_thread_disconnected_dwh": "このウェブフックにはDiscordのウェブフックが接続されていないため、修復する必要があります。"
     },
     "me": {
         "footer": "あなたは$t(common.board_count, {\"count\": {{boards}} })個のボードと$t(common.org_count, {\"count\": {{orgs}} })個のワークスペースに所属しています。"
