@@ -1,1 +1,91 @@
-{}
+{
+    "common": {
+        "old_desc": "編集前の「説明」",
+        "new_desc": "編集後の「説明」",
+        "prev_list": "移動前の「リスト」",
+        "curr_list": "移動後の「リスト」",
+        "old_comment": "編集前の「コメント」",
+        "new_comment": "編集後の「コメント」",
+        "old_due": "編集前の「期限」",
+        "new_due": "編集後の「期限」",
+        "one_chkitem_name": "編集前の「チェックリスト」の項目名",
+        "one_chklist_name": "編集前の「チェックリスト」名",
+        "item_src": "変換前の項目の場所",
+        "to_board": "移動先の「ボード」",
+        "from_board": "移動元の「ボード」",
+        "custom_field": "カスタムフィールド",
+        "old_v": "以前の内容",
+        "new_v": "新しい内容",
+        "perm_levels": {
+            "public": "公開",
+            "org": "ワークスペース",
+            "private": "非公開"
+        },
+        "invite_perms": {
+            "members": "全てのメンバー",
+            "admins": "管理者"
+        },
+        "comment_perms": {
+            "disabled": "無効化",
+            "members": "全てのメンバー",
+            "org": "ワークスペース メンバー",
+            "public": "すべてのTrelloユーザー"
+        },
+        "vote_perms": {
+            "disabled": "無効化",
+            "members": "全てのメンバー",
+            "org": "ワークスペース メンバー",
+            "observers": "メンバーと閲覧者",
+            "public": "すべてのTrelloユーザー"
+        },
+        "member_type": {
+            "normal": "メンバー",
+            "admin": "管理者",
+            "observer": "閲覧者"
+        },
+        "label_color": {
+            "green": "緑",
+            "yellow": "黄",
+            "red": "赤",
+            "orange": "橙",
+            "lime": "黄緑",
+            "purple": "紫",
+            "blue": "青",
+            "sky": "スカイブルー",
+            "pink": "ピンク",
+            "black": "黒",
+            "green_light": "サトゥル グリーン",
+            "yellow_light": "サトゥル イエロー",
+            "red_light": "サトゥル レッド",
+            "orange_light": "サトゥル オレンジ",
+            "lime_light": "サトゥル ライム",
+            "purple_light": "サトゥル パープル",
+            "blue_light": "サトゥル ブルー",
+            "sky_light": "サトゥル スカイ",
+            "pink_light": "サトゥル ピンク",
+            "black_light": "サトゥル ブラック",
+            "green_dark": "ボールド グリーン",
+            "yellow_dark": "ボールド イエロー",
+            "red_dark": "ボールド レッド",
+            "orange_dark": "ボールド オレンジ",
+            "lime_dark": "ボールド ライム",
+            "purple_dark": "ボールド パープル",
+            "blue_dark": "ボールド ブルー",
+            "sky_dark": "ボールド スカイ",
+            "pink_dark": "ボールド ピンク",
+            "black_dark": "ボールド ブラック",
+            "none": "色なし"
+        }
+    },
+    "webhook": {
+        "commented": "{{member}}が、カード「{{card}}」にコメントしました",
+        "update_comment": "{{member}}が、カード「{{card}}」のコメントを編集しました",
+        "delete_comment": "{{member}}が、カード「{{card}}」のコメントを削除しました",
+        "add_card_desc": "{{member}}が、カード「{{card}}」の説明を追加しました",
+        "edit_card_desc": "{{member}}が、カード「{{card}}」の説明を編集しました",
+        "rem_card_desc": "{{member}}が、カード「{{card}}」の説明を削除しました",
+        "move_card_in_list": "{{member}}が、カード「{{card}}」をリスト内の別の位置に移動しました",
+        "move_card": "{{member}}が、カード「{{card}}」をリスト「{{list}}」へ移動しました",
+        "rename_card": "{{member}}が、カードの名前を「{{oldName}}」から「{{card}}」に変更しました"
+    }
+}
